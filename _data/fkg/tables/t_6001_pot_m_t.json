@@ -2,19 +2,63 @@
     "name": "t_6001_pot_m_t",
     "columns": [
         {
-            "name": "magasin_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 9,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_basis_magasin.magasin_kode"
+                "fkg.generel.versions_id"
             ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "gyldig_fra",
+            "type": "date",
+            "comment": null,
+            "_num": 2,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "gyldig_til",
+            "type": "date",
+            "comment": null,
+            "_num": 3,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -25,19 +69,17 @@
             "_short_name": null
         },
         {
-            "name": "kotesystem_kode",
-            "type": "integer",
+            "name": "potentialekort",
+            "type": "character varying(250)",
             "comment": null,
-            "_num": 12,
-            "_typname": "int4",
+            "_num": 4,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_kotesystem.kotesystem_kode"
-            ],
+            "_character_maximum_length": 250,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1000,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -65,6 +107,27 @@
             "_is_unique": false,
             "_is_primary": false,
             "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "dgu_nr",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
             "_index_method": null,
             "_checks": null,
@@ -117,17 +180,19 @@
             "_short_name": null
         },
         {
-            "name": "usikkerhed",
-            "type": "character varying(250)",
+            "name": "magasin_kode",
+            "type": "integer",
             "comment": null,
-            "_num": 13,
-            "_typname": "varchar",
+            "_num": 9,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 250,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1000,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_magasin.magasin_kode"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -138,31 +203,10 @@
             "_short_name": null
         },
         {
-            "name": "potentialekort",
-            "type": "character varying(250)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 250,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1000,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "dgu_nr",
+            "name": "pejling",
             "type": "character varying(50)",
             "comment": null,
-            "_num": 6,
+            "_num": 10,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 50,
@@ -201,6 +245,50 @@
             "_short_name": null
         },
         {
+            "name": "kotesystem_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 12,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_kotesystem.kotesystem_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "usikkerhed",
+            "type": "character varying(250)",
+            "comment": null,
+            "_num": 13,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 250,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1000,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -218,94 +306,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "pejling",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 10,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "gyldig_til",
-            "type": "date",
-            "comment": null,
-            "_num": 3,
-            "_typname": "date",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "gyldig_fra",
-            "type": "date",
-            "comment": null,
-            "_num": 2,
-            "_typname": "date",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -366,7 +366,7 @@
             "columns": [
                 "stoettep_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -377,7 +377,7 @@
             "columns": [
                 "kotesystem_kode"
             ],
-            "referenced_table": "fkg.d_basis_kotesystem",
+            "referenced_table": "d_basis_kotesystem",
             "referenced_columns": [
                 "kotesystem_kode"
             ]
@@ -388,7 +388,7 @@
             "columns": [
                 "magasin_kode"
             ],
-            "referenced_table": "fkg.d_basis_magasin",
+            "referenced_table": "d_basis_magasin",
             "referenced_columns": [
                 "magasin_kode"
             ]
@@ -404,7 +404,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

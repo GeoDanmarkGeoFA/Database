@@ -2,27 +2,29 @@
     "name": "t_5601_hasti_daemp_t",
     "columns": [
         {
-            "name": "hastighed_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 4,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_basis_hastighed.hastighed_kode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
+            "_is_unique": true,
+            "_is_primary": true,
             "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
-            "_short_name": "hastig_k"
+            "_short_name": null
         },
         {
             "name": "h_daemp_kode",
@@ -69,6 +71,71 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "omfang_k"
+        },
+        {
+            "name": "hastighed_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 4,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_hastighed.hastighed_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "hastig_k"
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "link"
+        },
+        {
+            "name": "foto_link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "foto_link"
         },
         {
             "name": "foto_link1",
@@ -176,27 +243,6 @@
             "_short_name": "geofafoto1"
         },
         {
-            "name": "geofafoto3",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 13,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "geofafoto3"
-        },
-        {
             "name": "geofafoto2",
             "type": "character varying(1024)",
             "comment": null,
@@ -218,10 +264,10 @@
             "_short_name": "geofafoto2"
         },
         {
-            "name": "link",
+            "name": "geofafoto3",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 5,
+            "_num": 13,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -236,53 +282,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "link"
-        },
-        {
-            "name": "foto_link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 6,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "foto_link"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
+            "_short_name": "geofafoto3"
         },
         {
             "name": "geometri",
@@ -336,7 +336,7 @@
             "columns": [
                 "h_daemp_kode"
             ],
-            "referenced_table": "fkg.d_5601_h_daemp_type",
+            "referenced_table": "d_5601_h_daemp_type",
             "referenced_columns": [
                 "h_daemp_kode"
             ]
@@ -347,7 +347,7 @@
             "columns": [
                 "omfang_kode"
             ],
-            "referenced_table": "fkg.d_5601_omfang",
+            "referenced_table": "d_5601_omfang",
             "referenced_columns": [
                 "omfang_kode"
             ]
@@ -358,7 +358,7 @@
             "columns": [
                 "hastighed_kode"
             ],
-            "referenced_table": "fkg.d_basis_hastighed",
+            "referenced_table": "d_basis_hastighed",
             "referenced_columns": [
                 "hastighed_kode"
             ]
@@ -369,7 +369,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

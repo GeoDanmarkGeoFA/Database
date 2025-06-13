@@ -2,6 +2,31 @@
     "name": "t_5717_hoeringspart_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "part_type_kode",
             "type": "integer",
             "comment": null,
@@ -25,6 +50,69 @@
             "_short_name": "part_ty_k"
         },
         {
+            "name": "part_navn",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "part_navn"
+        },
+        {
+            "name": "cvr_opslag",
+            "type": "character varying(8)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 8,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 32,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "cvr_opslag"
+        },
+        {
+            "name": "part_formand",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "p_formand"
+        },
+        {
             "name": "part_formand_tlf",
             "type": "integer",
             "comment": null,
@@ -44,52 +132,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "pform_tlf"
-        },
-        {
-            "name": "vejkode",
-            "type": "integer",
-            "comment": null,
-            "_num": 14,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_vejnavn.vejkode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "vejkode"
-        },
-        {
-            "name": "postnr",
-            "type": "integer",
-            "comment": null,
-            "_num": 13,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_postnr.postnr"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "postnr"
         },
         {
             "name": "part_formand_mail",
@@ -178,16 +220,16 @@
             "_short_name": "link"
         },
         {
-            "name": "cvf_vejkode",
-            "type": "character varying(7)",
+            "name": "adr_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 16,
-            "_typname": "varchar",
+            "_num": 11,
+            "_typname": "uuid",
             "_is_array": false,
-            "_character_maximum_length": 7,
+            "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 28,
+            "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -196,41 +238,22 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "cvf_vejkode"
+            "_short_name": "adr_id"
         },
         {
-            "name": "part_navn",
-            "type": "character varying(50)",
+            "name": "postnr",
+            "type": "integer",
             "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
+            "_num": 13,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "part_navn"
-        },
-        {
-            "name": "cvr_opslag",
-            "type": "character varying(8)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 8,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 32,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -238,20 +261,22 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "cvr_opslag"
+            "_short_name": "postnr"
         },
         {
-            "name": "part_formand",
-            "type": "character varying(128)",
+            "name": "vejkode",
+            "type": "integer",
             "comment": null,
-            "_num": 5,
-            "_typname": "varchar",
+            "_num": 14,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -259,7 +284,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "p_formand"
+            "_short_name": "vejkode"
         },
         {
             "name": "husnr",
@@ -283,16 +308,16 @@
             "_short_name": "husnr"
         },
         {
-            "name": "adr_id",
-            "type": "uuid",
+            "name": "cvf_vejkode",
+            "type": "character varying(7)",
             "comment": null,
-            "_num": 11,
-            "_typname": "uuid",
+            "_num": 16,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 7,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
+            "_max_bytes": 28,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -301,38 +326,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "adr_id"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
+            "_short_name": "cvf_vejkode"
         },
         {
             "name": "geometri",
-            "type": "geometry(MultiPoint,25832)",
+            "type": "geometry(MultiPolygon,25832)",
             "comment": null,
-            "_num": 12,
+            "_num": 17,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -343,13 +343,13 @@
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
+            "is_nullable": true,
             "default_value": null,
             "_index_method": [
                 "gist"
             ],
             "_checks": null,
-            "_geom_type": "MultiPoint",
+            "_geom_type": "MultiPolygon",
             "_srid": "25832",
             "_short_name": "the_geom"
         }
@@ -380,7 +380,7 @@
             "columns": [
                 "part_type_kode"
             ],
-            "referenced_table": "fkg.d_5717_part_type",
+            "referenced_table": "d_5717_part_type",
             "referenced_columns": [
                 "part_type_kode"
             ]
@@ -391,7 +391,7 @@
             "columns": [
                 "adr_beskyt_kode"
             ],
-            "referenced_table": "fkg.d_basis_adr_beskyt",
+            "referenced_table": "d_basis_adr_beskyt",
             "referenced_columns": [
                 "adr_beskyt_kode"
             ]
@@ -402,7 +402,7 @@
             "columns": [
                 "postnr"
             ],
-            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
                 "postnr"
             ]
@@ -413,7 +413,7 @@
             "columns": [
                 "vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -424,7 +424,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

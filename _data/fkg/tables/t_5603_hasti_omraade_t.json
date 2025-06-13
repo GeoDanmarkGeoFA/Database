@@ -2,6 +2,31 @@
     "name": "t_5603_hasti_omraade_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "hastighed_kode",
             "type": "integer",
             "comment": null,
@@ -23,6 +48,27 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "hastig_k"
+        },
+        {
+            "name": "tavle_nr",
+            "type": "character varying(5)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 20,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "tavle_nr"
         },
         {
             "name": "hastighed_art_kode",
@@ -48,27 +94,6 @@
             "_short_name": "hast_art_k"
         },
         {
-            "name": "tavle_nr",
-            "type": "character varying(5)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 5,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 20,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "tavle_nr"
-        },
-        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -88,31 +113,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
         },
         {
             "name": "geometri",
@@ -166,7 +166,7 @@
             "columns": [
                 "hastighed_art_kode"
             ],
-            "referenced_table": "fkg.d_5603_hastighed_art",
+            "referenced_table": "d_5603_hastighed_art",
             "referenced_columns": [
                 "hastighed_art_kode"
             ]
@@ -177,7 +177,7 @@
             "columns": [
                 "hastighed_kode"
             ],
-            "referenced_table": "fkg.d_basis_hastighed",
+            "referenced_table": "d_basis_hastighed",
             "referenced_columns": [
                 "hastighed_kode"
             ]
@@ -188,7 +188,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

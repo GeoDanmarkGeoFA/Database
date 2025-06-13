@@ -2,6 +2,31 @@
     "name": "t_5613_p_plads_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "p_brug_kode",
             "type": "integer",
             "comment": null,
@@ -25,6 +50,27 @@
             "_short_name": "p_brug_k"
         },
         {
+            "name": "p_brug_tekst",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "p_brug_txt"
+        },
+        {
             "name": "p_antal",
             "type": "integer",
             "comment": null,
@@ -46,48 +92,6 @@
                 "p_antal >= 1 AND p_antal <= 99"
             ],
             "_short_name": "p_antal"
-        },
-        {
-            "name": "link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 7,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "link"
-        },
-        {
-            "name": "p_brug_tekst",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "p_brug_txt"
         },
         {
             "name": "p_zone_nr",
@@ -132,29 +136,25 @@
             "_short_name": "omraade"
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
+            "name": "link",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
+            "_num": 7,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
+            "_max_bytes": 4096,
+            "_reference": null,
             "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
+            "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
@@ -208,7 +208,7 @@
             "columns": [
                 "p_brug_kode"
             ],
-            "referenced_table": "fkg.d_5613_p_tid",
+            "referenced_table": "d_5613_p_tid",
             "referenced_columns": [
                 "p_brug_kode"
             ]
@@ -219,7 +219,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

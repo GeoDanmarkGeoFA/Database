@@ -2,6 +2,31 @@
     "name": "t_5900_jordfl_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "afs_vejkode",
             "type": "integer",
             "comment": null,
@@ -25,16 +50,16 @@
             "_short_name": null
         },
         {
-            "name": "modt_cvr_kode",
-            "type": "integer",
+            "name": "afs_cvf_vejkode",
+            "type": "character(7)",
             "comment": null,
-            "_num": 14,
-            "_typname": "int4",
+            "_num": 3,
+            "_typname": "bpchar",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -42,9 +67,28 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "modt_cvr_kode >= 10000000 AND modt_cvr_kode <= 99999999"
-            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "afs_husnr",
+            "type": "character varying(4)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
             "_short_name": null
         },
         {
@@ -71,42 +115,17 @@
             "_short_name": null
         },
         {
-            "name": "modt_kommunekode",
-            "type": "integer",
+            "name": "afs_cvr_navn",
+            "type": "character varying(128)",
             "comment": null,
-            "_num": 16,
-            "_typname": "int4",
+            "_num": 6,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
             "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "modt_kommunekode >= 100 AND modt_kommunekode <= 999"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "modt_postnr",
-            "type": "integer",
-            "comment": null,
-            "_num": 17,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_postnr.postnr"
-            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -163,6 +182,52 @@
             "_short_name": null
         },
         {
+            "name": "jordflyt_dato_start",
+            "type": "date",
+            "comment": null,
+            "_num": 9,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "jordflyt_dato_start >= '2006-12-13'::date AND jordflyt_dato_start <= '2999-12-31'::date"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "jordflyt_dato_slut",
+            "type": "date",
+            "comment": null,
+            "_num": 10,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "jordflyt_dato_slut >= '2006-12-31'::date AND jordflyt_dato_slut <= '2999-12-31'::date"
+            ],
+            "_short_name": null
+        },
+        {
             "name": "modt_vejkode",
             "type": "integer",
             "comment": null,
@@ -186,73 +251,6 @@
             "_short_name": null
         },
         {
-            "name": "jordmaengde_anmeldt",
-            "type": "double precision",
-            "comment": null,
-            "_num": 20,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "jordmaengde_anmeldt >= 1.0::double precision AND jordmaengde_anmeldt <= 9999.9::double precision"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "jordmaengde_faktisk",
-            "type": "double precision",
-            "comment": null,
-            "_num": 19,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "jordmaengde_faktisk >= 1.0::double precision AND jordmaengde_faktisk <= 9999.9::double precision"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "afs_cvf_vejkode",
-            "type": "character(7)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "bpchar",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": null,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "modt_cvf_vejkode",
             "type": "character(7)",
             "comment": null,
@@ -263,69 +261,6 @@
             "_numeric_precision": null,
             "_numeric_scale": null,
             "_max_bytes": null,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "sagsnr",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 21,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "afs_husnr",
-            "type": "character varying(4)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 4,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "afs_cvr_navn",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 6,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -358,10 +293,169 @@
             "_short_name": null
         },
         {
+            "name": "modt_cvr_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 14,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "modt_cvr_kode >= 10000000 AND modt_cvr_kode <= 99999999"
+            ],
+            "_short_name": null
+        },
+        {
             "name": "modt_cvr_navn",
             "type": "character varying(128)",
             "comment": null,
             "_num": 15,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "modt_kommunekode",
+            "type": "integer",
+            "comment": null,
+            "_num": 16,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "modt_kommunekode >= 100 AND modt_kommunekode <= 999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "modt_postnr",
+            "type": "integer",
+            "comment": null,
+            "_num": 17,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "tillad_dato",
+            "type": "date",
+            "comment": null,
+            "_num": 18,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "tillad_dato >= '2006-12-31'::date AND tillad_dato <= '2999-12-31'::date"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "jordmaengde_faktisk",
+            "type": "double precision",
+            "comment": null,
+            "_num": 19,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "jordmaengde_faktisk >= 1.0::double precision AND jordmaengde_faktisk <= 9999.9::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "jordmaengde_anmeldt",
+            "type": "double precision",
+            "comment": null,
+            "_num": 20,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "jordmaengde_anmeldt >= 1.0::double precision AND jordmaengde_anmeldt <= 9999.9::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 21,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 128,
@@ -396,100 +490,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "jordflyt_dato_slut",
-            "type": "date",
-            "comment": null,
-            "_num": 10,
-            "_typname": "date",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "jordflyt_dato_slut >= '2006-12-31'::date AND jordflyt_dato_slut <= '2999-12-31'::date"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "jordflyt_dato_start",
-            "type": "date",
-            "comment": null,
-            "_num": 9,
-            "_typname": "date",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "jordflyt_dato_start >= '2006-12-13'::date AND jordflyt_dato_start <= '2999-12-31'::date"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "tillad_dato",
-            "type": "date",
-            "comment": null,
-            "_num": 18,
-            "_typname": "date",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "tillad_dato >= '2006-12-31'::date AND tillad_dato <= '2999-12-31'::date"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -555,7 +555,7 @@
             "columns": [
                 "afs_postnr"
             ],
-            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
                 "postnr"
             ]
@@ -566,7 +566,7 @@
             "columns": [
                 "modt_postnr"
             ],
-            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
                 "postnr"
             ]
@@ -577,7 +577,7 @@
             "columns": [
                 "afs_vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -588,7 +588,7 @@
             "columns": [
                 "modt_vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -599,7 +599,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

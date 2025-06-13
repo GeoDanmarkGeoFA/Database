@@ -2,27 +2,29 @@
     "name": "t_5605_vejbyggel_t",
     "columns": [
         {
-            "name": "vejkode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 3,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_vejnavn.vejkode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
-            "_short_name": "vejkode"
+            "_short_name": null
         },
         {
             "name": "dekl_type_kode",
@@ -46,6 +48,71 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "dekl_ty_k"
+        },
+        {
+            "name": "vejkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vejkode"
+        },
+        {
+            "name": "cvf_vejkode",
+            "type": "character varying(7)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 7,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 28,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "cvf_vejkode"
+        },
+        {
+            "name": "dekl_link",
+            "type": "character varying(254)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "dekl_link"
         },
         {
             "name": "bredde",
@@ -115,48 +182,6 @@
             "_short_name": "sagsnr"
         },
         {
-            "name": "cvf_vejkode",
-            "type": "character varying(7)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 7,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 28,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "cvf_vejkode"
-        },
-        {
-            "name": "dekl_link",
-            "type": "character varying(254)",
-            "comment": null,
-            "_num": 5,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 254,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1016,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "dekl_link"
-        },
-        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -176,31 +201,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
         },
         {
             "name": "geometri",
@@ -259,7 +259,7 @@
             "columns": [
                 "dekl_type_kode"
             ],
-            "referenced_table": "fkg.d_5605_dekl_type",
+            "referenced_table": "d_5605_dekl_type",
             "referenced_columns": [
                 "dekl_type_kode"
             ]
@@ -270,7 +270,7 @@
             "columns": [
                 "vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -286,7 +286,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

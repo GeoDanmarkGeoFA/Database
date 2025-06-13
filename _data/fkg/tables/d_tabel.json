@@ -25,29 +25,6 @@
             "_short_name": null
         },
         {
-            "name": "geo",
-            "type": "character(1)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "bpchar",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": null,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "geo = ANY (ARRAY['P'::bpchar, 'L'::bpchar, 'F'::bpchar]"
-            ],
-            "_short_name": null
-        },
-        {
             "name": "tema_navn",
             "type": "character varying",
             "comment": null,
@@ -68,6 +45,29 @@
                 "btree"
             ],
             "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geo",
+            "type": "character(1)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "bpchar",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "geo = ANY (ARRAY['P'::bpchar, 'L'::bpchar, 'F'::bpchar]"
+            ],
             "_short_name": null
         },
         {
@@ -151,7 +151,7 @@
             "columns": [
                 "temagruppe_id"
             ],
-            "referenced_table": "fkg.d_temagruppe",
+            "referenced_table": "d_temagruppe",
             "referenced_columns": [
                 "temagruppe_id"
             ]

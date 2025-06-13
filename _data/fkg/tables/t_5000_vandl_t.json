@@ -2,10 +2,98 @@
     "name": "t_5000_vandl_t",
     "columns": [
         {
-            "name": "dvfi_bedoemmelse_kode",
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "navn",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "dmu_ref",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "vandloeb_nr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "maalsaetning_kode",
             "type": "integer",
             "comment": null,
-            "_num": 14,
+            "_num": 5,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -13,7 +101,7 @@
             "_numeric_scale": 0,
             "_max_bytes": 4,
             "_reference": [
-                "fkg.d_basis_dvfi_bedoemmelse.dvfi_bedoemmelse_kode"
+                "fkg.d_5000_maalsaetning.maalsaetning_kode"
             ],
             "_restriction": null,
             "_is_unique": false,
@@ -48,6 +136,117 @@
             "_short_name": null
         },
         {
+            "name": "ejerstatus_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ejerstatus.ejerstatus_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "klasse_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 8,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5000_klasse.klasse_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "tidl_amt_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ja_nej.ja_nej_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "vedligehold",
+            "type": "character varying(100)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 100,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 400,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "ansvar_vedligehold",
+            "type": "character varying(254)",
+            "comment": null,
+            "_num": 11,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "p3vandloeb_kode",
             "type": "integer",
             "comment": null,
@@ -71,10 +270,31 @@
             "_short_name": null
         },
         {
-            "name": "ejerstatus_kode",
+            "name": "sejlads",
+            "type": "character varying(100)",
+            "comment": null,
+            "_num": 13,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 100,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 400,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "dvfi_bedoemmelse_kode",
             "type": "integer",
             "comment": null,
-            "_num": 7,
+            "_num": 14,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -82,7 +302,7 @@
             "_numeric_scale": 0,
             "_max_bytes": 4,
             "_reference": [
-                "fkg.d_basis_ejerstatus.ejerstatus_kode"
+                "fkg.d_basis_dvfi_bedoemmelse.dvfi_bedoemmelse_kode"
             ],
             "_restriction": null,
             "_is_unique": false,
@@ -91,6 +311,75 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "station_fra",
+            "type": "double precision",
+            "comment": null,
+            "_num": 15,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "station_fra >= 0.0::double precision AND station_fra <= 200000.0::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "station_til",
+            "type": "double precision",
+            "comment": null,
+            "_num": 16,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "station_til >= 0.0::double precision AND station_til <= 200000.0::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "vandloebs_bredde",
+            "type": "double precision",
+            "comment": null,
+            "_num": 17,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "vandloebs_bredde >= 0.1::double precision AND vandloebs_bredde <= 99.9::double precision"
+            ],
             "_short_name": null
         },
         {
@@ -186,249 +475,6 @@
             "_short_name": null
         },
         {
-            "name": "klasse_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 8,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_5000_klasse.klasse_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "tidl_amt_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 9,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_ja_nej.ja_nej_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "maalsaetning_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 5,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_5000_maalsaetning.maalsaetning_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "station_til",
-            "type": "double precision",
-            "comment": null,
-            "_num": 16,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "station_til >= 0.0::double precision AND station_til <= 200000.0::double precision"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "vandloebs_bredde",
-            "type": "double precision",
-            "comment": null,
-            "_num": 17,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "vandloebs_bredde >= 0.1::double precision AND vandloebs_bredde <= 99.9::double precision"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "station_fra",
-            "type": "double precision",
-            "comment": null,
-            "_num": 15,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "station_fra >= 0.0::double precision AND station_fra <= 200000.0::double precision"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "ansvar_vedligehold",
-            "type": "character varying(254)",
-            "comment": null,
-            "_num": 11,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 254,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1016,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "navn",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "dmu_ref",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "vandloeb_nr",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "vedligehold",
-            "type": "character varying(100)",
-            "comment": null,
-            "_num": 10,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 100,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 400,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -446,52 +492,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "sejlads",
-            "type": "character varying(100)",
-            "comment": null,
-            "_num": 13,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 100,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 400,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -547,7 +547,7 @@
             "columns": [
                 "klasse_kode"
             ],
-            "referenced_table": "fkg.d_5000_klasse",
+            "referenced_table": "d_5000_klasse",
             "referenced_columns": [
                 "klasse_kode"
             ]
@@ -558,7 +558,7 @@
             "columns": [
                 "maalsaetning_kode"
             ],
-            "referenced_table": "fkg.d_5000_maalsaetning",
+            "referenced_table": "d_5000_maalsaetning",
             "referenced_columns": [
                 "maalsaetning_kode"
             ]
@@ -569,7 +569,7 @@
             "columns": [
                 "vandl_type_kode"
             ],
-            "referenced_table": "fkg.d_5000_vandl_type",
+            "referenced_table": "d_5000_vandl_type",
             "referenced_columns": [
                 "vandl_type_kode"
             ]
@@ -580,7 +580,7 @@
             "columns": [
                 "dvfi_bedoemmelse_kode"
             ],
-            "referenced_table": "fkg.d_basis_dvfi_bedoemmelse",
+            "referenced_table": "d_basis_dvfi_bedoemmelse",
             "referenced_columns": [
                 "dvfi_bedoemmelse_kode"
             ]
@@ -591,7 +591,7 @@
             "columns": [
                 "ejerstatus_kode"
             ],
-            "referenced_table": "fkg.d_basis_ejerstatus",
+            "referenced_table": "d_basis_ejerstatus",
             "referenced_columns": [
                 "ejerstatus_kode"
             ]
@@ -602,7 +602,7 @@
             "columns": [
                 "maalsaetning_opfyldt_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -613,7 +613,7 @@
             "columns": [
                 "p3vandloeb_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -624,7 +624,7 @@
             "columns": [
                 "tidl_amt_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -635,7 +635,7 @@
             "columns": [
                 "trussel_vand_kode"
             ],
-            "referenced_table": "fkg.d_basis_trussel_vand",
+            "referenced_table": "d_basis_trussel_vand",
             "referenced_columns": [
                 "trussel_vand_kode"
             ]
@@ -651,7 +651,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

@@ -2,27 +2,29 @@
     "name": "t_5600_vintervedl_t",
     "columns": [
         {
-            "name": "sted_metode_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 8,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_basis_sted_metode.sted_metode_kode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
-            "_short_name": "sted_met_k"
+            "_short_name": null
         },
         {
             "name": "vinterklasse_kode",
@@ -163,6 +165,29 @@
             "_short_name": "tilm"
         },
         {
+            "name": "sted_metode_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 8,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_sted_metode.sted_metode_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "sted_met_k"
+        },
+        {
             "name": "sagsnr",
             "type": "character varying(128)",
             "comment": null,
@@ -203,31 +228,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
         },
         {
             "name": "geometri",
@@ -286,7 +286,7 @@
             "columns": [
                 "vinterklasse_kode"
             ],
-            "referenced_table": "fkg.d_5600_vinterklasse",
+            "referenced_table": "d_5600_vinterklasse",
             "referenced_columns": [
                 "vinterklasse_kode"
             ]
@@ -297,7 +297,7 @@
             "columns": [
                 "sted_metode_kode"
             ],
-            "referenced_table": "fkg.d_basis_sted_metode",
+            "referenced_table": "d_basis_sted_metode",
             "referenced_columns": [
                 "sted_metode_kode"
             ]
@@ -318,7 +318,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

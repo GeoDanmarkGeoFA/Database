@@ -2,69 +2,67 @@
     "name": "t_6003_besk_zone_t",
     "columns": [
         {
-            "name": "tilladelse",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 7,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "tilladelse >= 1 AND tilladelse <= 999999"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "beskyt_zone",
-            "type": "integer",
-            "comment": null,
-            "_num": 9,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "beskyt_zone >= 1 AND beskyt_zone <= 9999"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "zone_type_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 12,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_6003_zone_type.zone_type_kode"
+                "fkg.generel.versions_id"
             ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "dgu_nr",
+            "type": "character varying(10)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 10,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 40,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "kildeplads",
+            "type": "character varying(254)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
             "_index_method": null,
             "_checks": null,
@@ -136,6 +134,29 @@
             "_short_name": null
         },
         {
+            "name": "tilladelse",
+            "type": "integer",
+            "comment": null,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "tilladelse >= 1 AND tilladelse <= 999999"
+            ],
+            "_short_name": null
+        },
+        {
             "name": "tilladelse_gyldig",
             "type": "character varying(50)",
             "comment": null,
@@ -154,6 +175,29 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "beskyt_zone",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "beskyt_zone >= 1 AND beskyt_zone <= 9999"
+            ],
             "_short_name": null
         },
         {
@@ -199,63 +243,23 @@
             "_short_name": null
         },
         {
-            "name": "link",
-            "type": "character varying(1024)",
+            "name": "zone_type_kode",
+            "type": "integer",
             "comment": null,
-            "_num": 15,
-            "_typname": "varchar",
+            "_num": 12,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6003_zone_type.zone_type_kode"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "dgu_nr",
-            "type": "character varying(10)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 10,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 40,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "kildeplads",
-            "type": "character varying(254)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 254,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1016,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "is_nullable": false,
             "default_value": null,
             "_index_method": null,
             "_checks": null,
@@ -304,27 +308,23 @@
             "_short_name": null
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
+            "name": "link",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
+            "_num": 15,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
+            "_max_bytes": 4096,
+            "_reference": null,
             "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
+            "_index_method": null,
             "_checks": null,
             "_short_name": null
         },
@@ -385,7 +385,7 @@
             "columns": [
                 "zone_type_kode"
             ],
-            "referenced_table": "fkg.d_6003_zone_type",
+            "referenced_table": "d_6003_zone_type",
             "referenced_columns": [
                 "zone_type_kode"
             ]
@@ -396,7 +396,7 @@
             "columns": [
                 "vandv_nr"
             ],
-            "referenced_table": "fkg.d_basis_vandv_nr",
+            "referenced_table": "d_basis_vandv_nr",
             "referenced_columns": [
                 "vandv_nr"
             ]
@@ -407,7 +407,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

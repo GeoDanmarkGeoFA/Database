@@ -2,6 +2,75 @@
     "name": "t_6203_landk_vur_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "omraade_nr",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_omraade.omraade_nr"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "delomraade_nr",
+            "type": "character varying(4)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "karakterstyrke_kode",
             "type": "integer",
             "comment": null,
@@ -25,19 +94,38 @@
             "_short_name": null
         },
         {
-            "name": "saarbarhed_kode",
-            "type": "integer",
+            "name": "karakterstyrke_notat",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 10,
-            "_typname": "int4",
+            "_num": 5,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_6203_saarbarhed.saarbarhed_kode"
-            ],
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "visuel_notat",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -60,29 +148,6 @@
             "_max_bytes": 4,
             "_reference": [
                 "fkg.d_basis_tilstand.tilstand_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "omraade_nr",
-            "type": "integer",
-            "comment": null,
-            "_num": 2,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_omraade.omraade_nr"
             ],
             "_restriction": null,
             "_is_unique": false,
@@ -136,17 +201,19 @@
             "_short_name": null
         },
         {
-            "name": "saarbarhed_notat",
-            "type": "character varying(1024)",
+            "name": "saarbarhed_kode",
+            "type": "integer",
             "comment": null,
-            "_num": 11,
-            "_typname": "varchar",
+            "_num": 10,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6203_saarbarhed.saarbarhed_kode"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -157,10 +224,10 @@
             "_short_name": null
         },
         {
-            "name": "link",
+            "name": "saarbarhed_notat",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 13,
+            "_num": 11,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -199,31 +266,10 @@
             "_short_name": null
         },
         {
-            "name": "delomraade_nr",
-            "type": "character varying(4)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 4,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "karakterstyrke_notat",
+            "name": "link",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 5,
+            "_num": 13,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -237,52 +283,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "visuel_notat",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 6,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -338,7 +338,7 @@
             "columns": [
                 "karakterstyrke_kode"
             ],
-            "referenced_table": "fkg.d_6203_karakterstyrke",
+            "referenced_table": "d_6203_karakterstyrke",
             "referenced_columns": [
                 "karakterstyrke_kode"
             ]
@@ -349,7 +349,7 @@
             "columns": [
                 "saarbarhed_kode"
             ],
-            "referenced_table": "fkg.d_6203_saarbarhed",
+            "referenced_table": "d_6203_saarbarhed",
             "referenced_columns": [
                 "saarbarhed_kode"
             ]
@@ -360,7 +360,7 @@
             "columns": [
                 "omraade_nr"
             ],
-            "referenced_table": "fkg.d_basis_omraade",
+            "referenced_table": "d_basis_omraade",
             "referenced_columns": [
                 "omraade_nr"
             ]
@@ -371,7 +371,7 @@
             "columns": [
                 "tilstand_kode"
             ],
-            "referenced_table": "fkg.d_basis_tilstand",
+            "referenced_table": "d_basis_tilstand",
             "referenced_columns": [
                 "tilstand_kode"
             ]
@@ -382,7 +382,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

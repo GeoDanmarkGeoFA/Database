@@ -2,6 +2,31 @@
     "name": "t_5506_spildev_pl_pkt_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "anlaeg_type_kode",
             "type": "integer",
             "comment": null,
@@ -69,31 +94,6 @@
             "_short_name": null
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "geometri",
             "type": "geometry(MultiPoint,25832)",
             "comment": null,
@@ -145,7 +145,7 @@
             "columns": [
                 "anlaeg_type_kode"
             ],
-            "referenced_table": "fkg.d_5506_anlaegtype",
+            "referenced_table": "d_5506_anlaegtype",
             "referenced_columns": [
                 "anlaeg_type_kode"
             ]
@@ -156,7 +156,7 @@
             "columns": [
                 "planstatus_kode"
             ],
-            "referenced_table": "fkg.d_basis_planstatus",
+            "referenced_table": "d_basis_planstatus",
             "referenced_columns": [
                 "planstatus_kode"
             ]
@@ -167,7 +167,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

@@ -2,6 +2,31 @@
     "name": "t_5507_fiberkabel_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "fs_cvr",
             "type": "integer",
             "comment": null,
@@ -21,6 +46,50 @@
             "_index_method": null,
             "_checks": [
                 "fs_cvr >= 10000000 AND fs_cvr <= 99999999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "fs_navn",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "dybde",
+            "type": "double precision",
+            "comment": null,
+            "_num": 4,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "dybde >= 0.1::double precision AND dybde <= 9.9::double precision"
             ],
             "_short_name": null
         },
@@ -71,29 +140,6 @@
             "_short_name": null
         },
         {
-            "name": "dybde",
-            "type": "double precision",
-            "comment": null,
-            "_num": 4,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "dybde >= 0.1::double precision AND dybde <= 9.9::double precision"
-            ],
-            "_short_name": null
-        },
-        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -111,52 +157,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "fs_navn",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -232,7 +232,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

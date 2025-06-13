@@ -2,69 +2,46 @@
     "name": "t_6200_nat_geo_t",
     "columns": [
         {
-            "name": "terraen_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 7,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_6200_terraen.terraen_kode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
+            "_is_unique": true,
+            "_is_primary": true,
             "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": null
         },
         {
-            "name": "geologi_kode",
-            "type": "integer",
+            "name": "data_oprindelse",
+            "type": "character varying(128)",
             "comment": null,
-            "_num": 4,
-            "_typname": "int4",
+            "_num": 2,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_6200_geologi.geologi_kode"
-            ],
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "kompleksitet_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 9,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_6200_kompleksitet.kompleksitet_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
+            "is_nullable": true,
             "default_value": null,
             "_index_method": null,
             "_checks": null,
@@ -94,6 +71,50 @@
             "_short_name": null
         },
         {
+            "name": "geologi_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 4,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6200_geologi.geologi_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geo_ref",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "jordtype_kode",
             "type": "integer",
             "comment": null,
@@ -111,6 +132,94 @@
             "_is_unique": false,
             "_is_primary": false,
             "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "terraen_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6200_terraen.terraen_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "terraen_ref",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 8,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "kompleksitet_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6200_kompleksitet.kompleksitet_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "vandelement",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
             "_index_method": null,
             "_checks": null,
@@ -222,27 +331,6 @@
             "_short_name": null
         },
         {
-            "name": "link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 17,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "naturgeo_beskrivelse",
             "type": "character varying(1024)",
             "comment": null,
@@ -264,31 +352,10 @@
             "_short_name": null
         },
         {
-            "name": "data_oprindelse",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "geo_ref",
+            "name": "link",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 5,
+            "_num": 17,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -302,73 +369,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "terraen_ref",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 8,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "vandelement",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 10,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -424,7 +424,7 @@
             "columns": [
                 "kompleksitet_kode"
             ],
-            "referenced_table": "fkg.d_6200_kompleksitet",
+            "referenced_table": "d_6200_kompleksitet",
             "referenced_columns": [
                 "kompleksitet_kode"
             ]
@@ -435,7 +435,7 @@
             "columns": [
                 "geologi_kode"
             ],
-            "referenced_table": "fkg.d_6200_geologi",
+            "referenced_table": "d_6200_geologi",
             "referenced_columns": [
                 "geologi_kode"
             ]
@@ -446,7 +446,7 @@
             "columns": [
                 "jordtype_kode"
             ],
-            "referenced_table": "fkg.d_6200_jordtype",
+            "referenced_table": "d_6200_jordtype",
             "referenced_columns": [
                 "jordtype_kode"
             ]
@@ -457,7 +457,7 @@
             "columns": [
                 "terraen_kode"
             ],
-            "referenced_table": "fkg.d_6200_terraen",
+            "referenced_table": "d_6200_terraen",
             "referenced_columns": [
                 "terraen_kode"
             ]
@@ -468,7 +468,7 @@
             "columns": [
                 "omraade_nr"
             ],
-            "referenced_table": "fkg.d_basis_omraade",
+            "referenced_table": "d_basis_omraade",
             "referenced_columns": [
                 "omraade_nr"
             ]
@@ -479,7 +479,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

@@ -2,26 +2,28 @@
     "name": "t_6009_indv_ovflv_t",
     "columns": [
         {
-            "name": "indv_kapacitet",
-            "type": "double precision",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 3,
-            "_typname": "float8",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 53,
+            "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "indv_kapacitet >= 0.01::double precision AND indv_kapacitet <= 99999.99::double precision"
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
             ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
             "_short_name": null
         },
         {
@@ -43,6 +45,29 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "indv_kapacitet",
+            "type": "double precision",
+            "comment": null,
+            "_num": 3,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "indv_kapacitet >= 0.01::double precision AND indv_kapacitet <= 99999.99::double precision"
+            ],
             "_short_name": null
         },
         {
@@ -109,31 +134,6 @@
             "_short_name": null
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "geometri",
             "type": "geometry(MultiPoint,25832)",
             "comment": null,
@@ -185,7 +185,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

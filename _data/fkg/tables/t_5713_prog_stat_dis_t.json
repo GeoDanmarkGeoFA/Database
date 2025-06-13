@@ -2,27 +2,29 @@
     "name": "t_5713_prog_stat_dis_t",
     "columns": [
         {
-            "name": "prog_distrikt_type_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 4,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_5713_prog_distrikt_type.prog_distrikt_type_kode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
+            "_is_unique": true,
+            "_is_primary": true,
             "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
-            "_short_name": "pro_di_ty_k"
+            "_short_name": null
         },
         {
             "name": "prog_distrikt_nr",
@@ -69,6 +71,29 @@
             "_short_name": "pro_dis_na"
         },
         {
+            "name": "prog_distrikt_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 4,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5713_prog_distrikt_type.prog_distrikt_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "pro_di_ty_k"
+        },
+        {
             "name": "sagsnr",
             "type": "character varying(128)",
             "comment": null,
@@ -109,31 +134,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
         },
         {
             "name": "geometri",
@@ -187,7 +187,7 @@
             "columns": [
                 "prog_distrikt_type_kode"
             ],
-            "referenced_table": "fkg.d_5713_prog_distrikt_type",
+            "referenced_table": "d_5713_prog_distrikt_type",
             "referenced_columns": [
                 "prog_distrikt_type_kode"
             ]
@@ -198,7 +198,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

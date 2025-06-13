@@ -2,6 +2,31 @@
     "name": "t_6100_brandhane_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "brandhane_id",
             "type": "integer",
             "comment": null,
@@ -25,6 +50,50 @@
             "_short_name": null
         },
         {
+            "name": "brandhane_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6100_brandhane.brandhane_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "modeltype",
+            "type": "character varying(256)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 256,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1024,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "ydelse",
             "type": "integer",
             "comment": null,
@@ -45,6 +114,138 @@
             "_checks": [
                 "ydelse >= 1 AND ydelse <= 9999"
             ],
+            "_short_name": null
+        },
+        {
+            "name": "senest_maalte_ydelse",
+            "type": "integer",
+            "comment": null,
+            "_num": 6,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "senest_maalte_ydelse >= 1 AND senest_maalte_ydelse <= 9999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "placering_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6100_placering.placering_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "lokalitet",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 8,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "vejkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "cvf_vejkode",
+            "type": "character varying(7)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 7,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 28,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "husnr",
+            "type": "character varying(4)",
+            "comment": null,
+            "_num": 11,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
             "_short_name": null
         },
         {
@@ -117,224 +318,6 @@
             "_short_name": null
         },
         {
-            "name": "senest_maalte_ydelse",
-            "type": "integer",
-            "comment": null,
-            "_num": 6,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "senest_maalte_ydelse >= 1 AND senest_maalte_ydelse <= 9999"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "placering_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 7,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_6100_placering.placering_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "brandhane_type_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 3,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_6100_brandhane.brandhane_type_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "vejkode",
-            "type": "integer",
-            "comment": null,
-            "_num": 9,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_vejnavn.vejkode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "adr_id",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 18,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "modeltype",
-            "type": "character varying(256)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 256,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1024,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "lokalitet",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 8,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "cvf_vejkode",
-            "type": "character varying(7)",
-            "comment": null,
-            "_num": 10,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 7,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 28,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "husnr",
-            "type": "character varying(4)",
-            "comment": null,
-            "_num": 11,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 4,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 16,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "senest_tilsyn",
             "type": "date",
             "comment": null,
@@ -358,27 +341,23 @@
             "_short_name": null
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
+            "name": "link",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
+            "_num": 16,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
+            "_max_bytes": 4096,
+            "_reference": null,
             "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
+            "_index_method": null,
             "_checks": null,
             "_short_name": null
         },
@@ -405,6 +384,27 @@
             "_checks": null,
             "_geom_type": "MultiPoint",
             "_srid": "25832",
+            "_short_name": null
+        },
+        {
+            "name": "adr_id",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 18,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
             "_short_name": null
         }
     ],
@@ -454,7 +454,7 @@
             "columns": [
                 "brandhane_type_kode"
             ],
-            "referenced_table": "fkg.d_6100_brandhane",
+            "referenced_table": "d_6100_brandhane",
             "referenced_columns": [
                 "brandhane_type_kode"
             ]
@@ -465,7 +465,7 @@
             "columns": [
                 "placering_kode"
             ],
-            "referenced_table": "fkg.d_6100_placering",
+            "referenced_table": "d_6100_placering",
             "referenced_columns": [
                 "placering_kode"
             ]
@@ -476,7 +476,7 @@
             "columns": [
                 "funktionsstatus_kode"
             ],
-            "referenced_table": "fkg.d_basis_funktionsstatus",
+            "referenced_table": "d_basis_funktionsstatus",
             "referenced_columns": [
                 "funktionsstatus_kode"
             ]
@@ -487,7 +487,7 @@
             "columns": [
                 "aktiv_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -498,7 +498,7 @@
             "columns": [
                 "postnr"
             ],
-            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
                 "postnr"
             ]
@@ -509,7 +509,7 @@
             "columns": [
                 "vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -520,7 +520,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

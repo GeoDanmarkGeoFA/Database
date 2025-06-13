@@ -2,27 +2,6 @@
     "name": "t_6113_besk_nat_b_t",
     "columns": [
         {
-            "name": "link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "versions_id",
             "type": "uuid",
             "comment": null,
@@ -44,6 +23,27 @@
             "_index_method": [
                 "btree"
             ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
             "_checks": null,
             "_short_name": null
         },
@@ -99,7 +99,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

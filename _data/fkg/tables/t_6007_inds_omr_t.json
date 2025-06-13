@@ -2,23 +2,27 @@
     "name": "t_6007_inds_omr_t",
     "columns": [
         {
-            "name": "ansvar_myndighed",
-            "type": "character varying(128)",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
-            "_character_maximum_length": 128,
+            "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
+            "_is_unique": true,
+            "_is_primary": true,
             "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": null
         },
@@ -65,21 +69,21 @@
             "_short_name": null
         },
         {
-            "name": "link",
-            "type": "character varying(1024)",
+            "name": "ansvar_myndighed",
+            "type": "character varying(128)",
             "comment": null,
-            "_num": 6,
+            "_num": 4,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 1024,
+            "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 4096,
+            "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
+            "is_nullable": false,
             "default_value": null,
             "_index_method": null,
             "_checks": null,
@@ -107,27 +111,23 @@
             "_short_name": null
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
+            "name": "link",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
+            "_num": 6,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
+            "_max_bytes": 4096,
+            "_reference": null,
             "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
+            "_index_method": null,
             "_checks": null,
             "_short_name": null
         },
@@ -183,7 +183,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

@@ -2,37 +2,41 @@
     "name": "t_5011_draenbroend_t",
     "columns": [
         {
-            "name": "broend_synlig",
-            "type": "boolean",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 11,
-            "_typname": "bool",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 1,
-            "_reference": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
-            "_short_name": "broend_syn"
+            "_short_name": null
         },
         {
-            "name": "praecision_god",
-            "type": "boolean",
+            "name": "broend_nr",
+            "type": "character varying(20)",
             "comment": null,
-            "_num": 13,
-            "_typname": "bool",
+            "_num": 2,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 20,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 1,
+            "_max_bytes": 80,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -41,7 +45,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "praecis"
+            "_short_name": "broend_nr"
         },
         {
             "name": "broendtype_kode",
@@ -90,6 +94,75 @@
             "_short_name": "diam_mm"
         },
         {
+            "name": "diameter_tommer",
+            "type": "double precision",
+            "comment": null,
+            "_num": 5,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "diameter_tommer >= 0.01::double precision AND diameter_tommer <= 3943.66::double precision"
+            ],
+            "_short_name": "diam_tomme"
+        },
+        {
+            "name": "dybde_udloeb",
+            "type": "integer",
+            "comment": null,
+            "_num": 6,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "dybde_udloeb::double precision >= 0::double precision AND dybde_udloeb::double precision <= 200::double precision"
+            ],
+            "_short_name": "dybde_ud"
+        },
+        {
+            "name": "kote_udloeb",
+            "type": "double precision",
+            "comment": null,
+            "_num": 7,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "kote_udloeb >= '-10.0'::numeric::double precision AND kote_udloeb <= 200.0::double precision"
+            ],
+            "_short_name": "kote_ud"
+        },
+        {
             "name": "kotesystem_kode",
             "type": "integer",
             "comment": null,
@@ -136,117 +209,6 @@
             "_short_name": "datakild_k"
         },
         {
-            "name": "dybde_udloeb",
-            "type": "integer",
-            "comment": null,
-            "_num": 6,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "dybde_udloeb::double precision >= 0::double precision AND dybde_udloeb::double precision <= 200::double precision"
-            ],
-            "_short_name": "dybde_ud"
-        },
-        {
-            "name": "diameter_tommer",
-            "type": "double precision",
-            "comment": null,
-            "_num": 5,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "diameter_tommer >= 0.01::double precision AND diameter_tommer <= 3943.66::double precision"
-            ],
-            "_short_name": "diam_tomme"
-        },
-        {
-            "name": "kote_udloeb",
-            "type": "double precision",
-            "comment": null,
-            "_num": 7,
-            "_typname": "float8",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 53,
-            "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "kote_udloeb >= '-10.0'::numeric::double precision AND kote_udloeb <= 200.0::double precision"
-            ],
-            "_short_name": "kote_ud"
-        },
-        {
-            "name": "sagsnr",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 14,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "sagsnr"
-        },
-        {
-            "name": "broend_nr",
-            "type": "character varying(20)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 20,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 80,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "broend_nr"
-        },
-        {
             "name": "bemaerkning",
             "type": "character varying(150)",
             "comment": null,
@@ -266,6 +228,27 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "bemaerk"
+        },
+        {
+            "name": "broend_synlig",
+            "type": "boolean",
+            "comment": null,
+            "_num": 11,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "broend_syn"
         },
         {
             "name": "etableringstidspunkt",
@@ -289,6 +272,48 @@
             "_short_name": "etabl_tid"
         },
         {
+            "name": "praecision_god",
+            "type": "boolean",
+            "comment": null,
+            "_num": 13,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "praecis"
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 14,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "sagsnr"
+        },
+        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -308,31 +333,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
         },
         {
             "name": "geometri",
@@ -396,7 +396,7 @@
             "columns": [
                 "broendtype_kode"
             ],
-            "referenced_table": "fkg.d_5011_broendtype",
+            "referenced_table": "d_5011_broendtype",
             "referenced_columns": [
                 "broendtype_kode"
             ]
@@ -407,7 +407,7 @@
             "columns": [
                 "datakilde_kode"
             ],
-            "referenced_table": "fkg.d_basis_datakilde",
+            "referenced_table": "d_basis_datakilde",
             "referenced_columns": [
                 "datakilde_kode"
             ]
@@ -418,7 +418,7 @@
             "columns": [
                 "kotesystem_kode"
             ],
-            "referenced_table": "fkg.d_basis_kotesystem",
+            "referenced_table": "d_basis_kotesystem",
             "referenced_columns": [
                 "kotesystem_kode"
             ]
@@ -429,7 +429,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

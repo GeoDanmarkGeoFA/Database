@@ -2,6 +2,31 @@
     "name": "t_5706_havn_are_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "havn_nr",
             "type": "integer",
             "comment": null,
@@ -23,6 +48,27 @@
                 "havn_nr >= 1 AND havn_nr <= 99999"
             ],
             "_short_name": "havn_nr"
+        },
+        {
+            "name": "havn_navn",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "havn_navn"
         },
         {
             "name": "havne_type_kode",
@@ -51,7 +97,7 @@
             "name": "ejer_admin",
             "type": "character varying(128)",
             "comment": null,
-            "_num": 5,
+            "_num": 6,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 128,
@@ -72,7 +118,7 @@
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 6,
+            "_num": 7,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -90,77 +136,10 @@
             "_short_name": "link"
         },
         {
-            "name": "cvr_opslag",
-            "type": "character varying(8)",
-            "comment": null,
-            "_num": 8,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 8,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 32,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "cvr_opslag"
-        },
-        {
-            "name": "havn_navn",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "havn_navn"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "geometri",
             "type": "geometry(MultiPolygon,25832)",
             "comment": null,
-            "_num": 7,
+            "_num": 8,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -180,6 +159,27 @@
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
             "_short_name": "the_geom"
+        },
+        {
+            "name": "cvr_opslag",
+            "type": "character varying(8)",
+            "comment": null,
+            "_num": 9,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 8,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 32,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "cvr_opslag"
         }
     ],
     "comment": null,
@@ -208,7 +208,7 @@
             "columns": [
                 "havne_type_kode"
             ],
-            "referenced_table": "fkg.d_5706_havn_type",
+            "referenced_table": "d_5706_havn_type",
             "referenced_columns": [
                 "havn_type_kode"
             ]
@@ -219,7 +219,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

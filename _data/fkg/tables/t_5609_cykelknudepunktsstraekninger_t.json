@@ -2,16 +2,41 @@
     "name": "t_5609_cykelknudepunktsstraekninger_t",
     "columns": [
         {
-            "name": "privatenot",
-            "type": "boolean",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 6,
-            "_typname": "bool",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 1,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "id_cykelknudepunktsstraekning",
+            "type": "character varying(25)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 25,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 100,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -20,49 +45,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "privatenot"
-        },
-        {
-            "name": "onewaynot",
-            "type": "boolean",
-            "comment": null,
-            "_num": 8,
-            "_typname": "bool",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": "false",
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "onewaynot"
-        },
-        {
-            "name": "surfacenot",
-            "type": "boolean",
-            "comment": null,
-            "_num": 7,
-            "_typname": "bool",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "surfacenot"
+            "_short_name": "id_cykelks"
         },
         {
             "name": "beliggenhedskommune",
@@ -130,6 +113,69 @@
             "_short_name": "length"
         },
         {
+            "name": "privatenot",
+            "type": "boolean",
+            "comment": null,
+            "_num": 6,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "privatenot"
+        },
+        {
+            "name": "surfacenot",
+            "type": "boolean",
+            "comment": null,
+            "_num": 7,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "surfacenot"
+        },
+        {
+            "name": "onewaynot",
+            "type": "boolean",
+            "comment": null,
+            "_num": 8,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": "false",
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "onewaynot"
+        },
+        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -149,52 +195,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
-        },
-        {
-            "name": "id_cykelknudepunktsstraekning",
-            "type": "character varying(25)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 25,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 100,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "id_cykelks"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
         },
         {
             "name": "geometri",
@@ -248,7 +248,7 @@
             "columns": [
                 "planstatus_kode"
             ],
-            "referenced_table": "fkg.d_basis_planstatus",
+            "referenced_table": "d_basis_planstatus",
             "referenced_columns": [
                 "planstatus_kode"
             ]
@@ -259,7 +259,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

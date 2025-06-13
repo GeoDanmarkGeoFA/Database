@@ -2,50 +2,29 @@
     "name": "t_6803_parl_omr_t",
     "columns": [
         {
-            "name": "pg_fagentreprise_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 3,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_6803_pg_fagentreprise.pg_fagentreprise_kode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "pg_fagen_k"
-        },
-        {
-            "name": "postnr",
-            "type": "integer",
-            "comment": null,
-            "_num": 17,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_postnr.postnr"
+            "_index_method": [
+                "btree"
             ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
             "_checks": null,
-            "_short_name": "postnr"
+            "_short_name": null
         },
         {
             "name": "pg_distrikt_kode",
@@ -71,10 +50,10 @@
             "_short_name": "pg_distr_k"
         },
         {
-            "name": "vejkode",
+            "name": "pg_fagentreprise_kode",
             "type": "integer",
             "comment": null,
-            "_num": 14,
+            "_num": 3,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -82,7 +61,7 @@
             "_numeric_scale": 0,
             "_max_bytes": 4,
             "_reference": [
-                "fkg.d_vejnavn.vejkode"
+                "fkg.d_6803_pg_fagentreprise.pg_fagentreprise_kode"
             ],
             "_restriction": null,
             "_is_unique": false,
@@ -91,19 +70,19 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "vejkode"
+            "_short_name": "pg_fagen_k"
         },
         {
-            "name": "cvf_vejkode",
-            "type": "character(7)",
+            "name": "pg_distrikt_nr",
+            "type": "character varying(150)",
             "comment": null,
-            "_num": 15,
-            "_typname": "bpchar",
+            "_num": 4,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 150,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": null,
+            "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -112,7 +91,49 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "cvf_vejkode"
+            "_short_name": "pg_dist_nr"
+        },
+        {
+            "name": "pg_distrikt_navn",
+            "type": "character varying(150)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 150,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 600,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "pg_dist_nv"
+        },
+        {
+            "name": "ansvarlig",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "ansvarlig"
         },
         {
             "name": "konto_nr",
@@ -262,6 +283,50 @@
             "_short_name": "udbyd_kont"
         },
         {
+            "name": "vejkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 14,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vejkode"
+        },
+        {
+            "name": "cvf_vejkode",
+            "type": "character(7)",
+            "comment": null,
+            "_num": 15,
+            "_typname": "bpchar",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "cvf_vejkode"
+        },
+        {
             "name": "husnr",
             "type": "character varying(4)",
             "comment": null,
@@ -281,6 +346,50 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "husnr"
+        },
+        {
+            "name": "postnr",
+            "type": "integer",
+            "comment": null,
+            "_num": 17,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "postnr"
+        },
+        {
+            "name": "adr_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 18,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adr_id"
         },
         {
             "name": "link",
@@ -409,27 +518,6 @@
             "_short_name": "geofafoto"
         },
         {
-            "name": "geofafoto2",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 26,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "geofafoto2"
-        },
-        {
             "name": "geofafoto1",
             "type": "character varying(1024)",
             "comment": null,
@@ -451,6 +539,27 @@
             "_short_name": "geofafoto1"
         },
         {
+            "name": "geofafoto2",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 26,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "geofafoto2"
+        },
+        {
             "name": "geofafoto3",
             "type": "character varying(1024)",
             "comment": null,
@@ -470,115 +579,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "geofafoto3"
-        },
-        {
-            "name": "pg_distrikt_nr",
-            "type": "character varying(150)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 150,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 600,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "pg_dist_nr"
-        },
-        {
-            "name": "pg_distrikt_navn",
-            "type": "character varying(150)",
-            "comment": null,
-            "_num": 5,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 150,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 600,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "pg_dist_nv"
-        },
-        {
-            "name": "ansvarlig",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 6,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "ansvarlig"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "adr_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 18,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "adr_id"
         },
         {
             "name": "geometri",
@@ -632,7 +632,7 @@
             "columns": [
                 "pg_distrikt_kode"
             ],
-            "referenced_table": "fkg.d_6803_pg_distrikt",
+            "referenced_table": "d_6803_pg_distrikt",
             "referenced_columns": [
                 "pg_distrikt_kode"
             ]
@@ -643,7 +643,7 @@
             "columns": [
                 "pg_fagentreprise_kode"
             ],
-            "referenced_table": "fkg.d_6803_pg_fagentreprise",
+            "referenced_table": "d_6803_pg_fagentreprise",
             "referenced_columns": [
                 "pg_fagentreprise_kode"
             ]
@@ -654,7 +654,7 @@
             "columns": [
                 "postnr"
             ],
-            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
                 "postnr"
             ]
@@ -665,7 +665,7 @@
             "columns": [
                 "vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -676,7 +676,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

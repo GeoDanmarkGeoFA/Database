@@ -2,19 +2,42 @@
     "name": "t_5606_vejinv_t",
     "columns": [
         {
-            "name": "tilstand_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 5,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_basis_tilstand.tilstand_kode"
+                "fkg.generel.versions_id"
             ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "inventar_nr",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -22,7 +45,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "tilstand_k"
+            "_short_name": "inventar_nr"
         },
         {
             "name": "inventar_type_kode",
@@ -67,6 +90,29 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "model"
+        },
+        {
+            "name": "tilstand_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 5,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_tilstand.tilstand_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "tilstand_k"
         },
         {
             "name": "foto_link",
@@ -195,27 +241,6 @@
             "_short_name": "geofafoto1"
         },
         {
-            "name": "geofafoto3",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 13,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "geofafoto3"
-        },
-        {
             "name": "geofafoto2",
             "type": "character varying(1024)",
             "comment": null,
@@ -237,16 +262,16 @@
             "_short_name": "geofafoto2"
         },
         {
-            "name": "inventar_nr",
-            "type": "character varying(50)",
+            "name": "geofafoto3",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 2,
+            "_num": 13,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 50,
+            "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 200,
+            "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -255,32 +280,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "inventar_nr"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
+            "_short_name": "geofafoto3"
         },
         {
             "name": "geometri",
@@ -334,7 +334,7 @@
             "columns": [
                 "inventar_type_kode"
             ],
-            "referenced_table": "fkg.d_5606_inventar_type",
+            "referenced_table": "d_5606_inventar_type",
             "referenced_columns": [
                 "inventar_type_kode"
             ]
@@ -345,7 +345,7 @@
             "columns": [
                 "tilstand_kode"
             ],
-            "referenced_table": "fkg.d_basis_tilstand",
+            "referenced_table": "d_basis_tilstand",
             "referenced_columns": [
                 "tilstand_kode"
             ]
@@ -356,7 +356,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

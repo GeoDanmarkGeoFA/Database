@@ -2,42 +2,42 @@
     "name": "t_5902_jordv_anl_t",
     "columns": [
         {
-            "name": "sag_status_kode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 11,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_basis_sag_status.sag_status_kode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": null
         },
         {
-            "name": "vaesketype_kode",
-            "type": "integer",
+            "name": "brine",
+            "type": "character varying(50)",
             "comment": null,
-            "_num": 7,
-            "_typname": "int4",
+            "_num": 2,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_5902_vaeske_type.vaesketype_kode"
-            ],
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -94,16 +94,16 @@
             "_short_name": null
         },
         {
-            "name": "link",
-            "type": "character varying(1024)",
+            "name": "tilladelses_dato",
+            "type": "date",
             "comment": null,
-            "_num": 12,
-            "_typname": "varchar",
+            "_num": 5,
+            "_typname": "date",
             "_is_array": false,
-            "_character_maximum_length": 1024,
+            "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 4096,
+            "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -111,20 +111,22 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
+            "_checks": [
+                "tilladelses_dato >= '2006-12-31'::date AND tilladelses_dato <= '2999-12-31'::date"
+            ],
             "_short_name": null
         },
         {
-            "name": "brine",
-            "type": "character varying(50)",
+            "name": "faerdigmeldingsdato",
+            "type": "date",
             "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
+            "_num": 6,
+            "_typname": "date",
             "_is_array": false,
-            "_character_maximum_length": 50,
+            "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 200,
+            "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -132,21 +134,25 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
+            "_checks": [
+                "faerdigmeldingsdato >= '2006-12-31'::date AND faerdigmeldingsdato <= '2999-12-31'::date"
+            ],
             "_short_name": null
         },
         {
-            "name": "sagsnr",
-            "type": "character varying(128)",
+            "name": "vaesketype_kode",
+            "type": "integer",
             "comment": null,
-            "_num": 10,
-            "_typname": "varchar",
+            "_num": 7,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5902_vaeske_type.vaesketype_kode"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -199,16 +205,16 @@
             "_short_name": null
         },
         {
-            "name": "tilladelses_dato",
-            "type": "date",
+            "name": "sagsnr",
+            "type": "character varying(128)",
             "comment": null,
-            "_num": 5,
-            "_typname": "date",
+            "_num": 10,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 4,
+            "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -216,56 +222,50 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "tilladelses_dato >= '2006-12-31'::date AND tilladelses_dato <= '2999-12-31'::date"
-            ],
+            "_checks": null,
             "_short_name": null
         },
         {
-            "name": "faerdigmeldingsdato",
-            "type": "date",
+            "name": "sag_status_kode",
+            "type": "integer",
             "comment": null,
-            "_num": 6,
-            "_typname": "date",
+            "_num": 11,
+            "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
             "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "faerdigmeldingsdato >= '2006-12-31'::date AND faerdigmeldingsdato <= '2999-12-31'::date"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
             "_reference": [
-                "fkg.generel.versions_id"
+                "fkg.d_basis_sag_status.sag_status_kode"
             ],
             "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 12,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
             "_checks": null,
             "_short_name": null
         },
@@ -321,7 +321,7 @@
             "columns": [
                 "vaesketype_kode"
             ],
-            "referenced_table": "fkg.d_5902_vaeske_type",
+            "referenced_table": "d_5902_vaeske_type",
             "referenced_columns": [
                 "vaesketype_kode"
             ]
@@ -332,7 +332,7 @@
             "columns": [
                 "sag_status_kode"
             ],
-            "referenced_table": "fkg.d_basis_sag_status",
+            "referenced_table": "d_basis_sag_status",
             "referenced_columns": [
                 "sag_status_kode"
             ]
@@ -348,7 +348,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

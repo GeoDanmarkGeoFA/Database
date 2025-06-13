@@ -2,6 +2,31 @@
     "name": "t_5712_plej_aeldr_dis_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "plej_distrikt_nr",
             "type": "integer",
             "comment": null,
@@ -23,6 +48,27 @@
                 "plej_distrikt_nr >= 1 AND plej_distrikt_nr <= 99999"
             ],
             "_short_name": "pl_dis_nr"
+        },
+        {
+            "name": "plej_distrikt_navn",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "pl_dis_na"
         },
         {
             "name": "plej_distrikt_type_kode",
@@ -90,46 +136,29 @@
             "_short_name": "link"
         },
         {
-            "name": "plej_distrikt_nat",
-            "type": "character varying(128)",
+            "name": "geometri",
+            "type": "geometry(MultiPolygon,25832)",
             "comment": null,
-            "_num": 10,
-            "_typname": "varchar",
+            "_num": 7,
+            "_typname": "geometry",
             "_is_array": false,
-            "_character_maximum_length": 128,
+            "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 512,
+            "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "gist"
+            ],
             "_checks": null,
-            "_short_name": "plej_d_nat"
-        },
-        {
-            "name": "plej_distrikt_navn",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "pl_dis_na"
+            "_geom_type": "MultiPolygon",
+            "_srid": "25832",
+            "_short_name": "the_geom"
         },
         {
             "name": "plej_distrikt_dag",
@@ -174,54 +203,25 @@
             "_short_name": "plej_d_aft"
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
+            "name": "plej_distrikt_nat",
+            "type": "character varying(128)",
             "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
+            "_num": 10,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "geometri",
-            "type": "geometry(MultiPolygon,25832)",
-            "comment": null,
-            "_num": 7,
-            "_typname": "geometry",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": null,
+            "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
+            "is_nullable": true,
             "default_value": null,
-            "_index_method": [
-                "gist"
-            ],
+            "_index_method": null,
             "_checks": null,
-            "_geom_type": "MultiPolygon",
-            "_srid": "25832",
-            "_short_name": "the_geom"
+            "_short_name": "plej_d_nat"
         }
     ],
     "comment": null,
@@ -250,7 +250,7 @@
             "columns": [
                 "plej_distrikt_type_kode"
             ],
-            "referenced_table": "fkg.d_5712_plej_distrikt_type",
+            "referenced_table": "d_5712_plej_distrikt_type",
             "referenced_columns": [
                 "plej_distrikt_type_kode"
             ]
@@ -261,7 +261,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

@@ -2,97 +2,6 @@
     "name": "t_7900_fotoforbindelse_t",
     "columns": [
         {
-            "name": "tilgaeng_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 8,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_ja_nej.ja_nej_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": "0",
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "primaer_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 6,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_ja_nej.ja_nej_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "primaer_kode = ANY (ARRAY[0, 1]",
-                "primaer_kode = ANY (ARRAY[0, 1]"
-            ],
-            "_short_name": null
-        },
-        {
-            "name": "foto_navn",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 5,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "fkg_tema",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "versions_id",
             "type": "uuid",
             "comment": null,
@@ -118,16 +27,16 @@
             "_short_name": null
         },
         {
-            "name": "foto_lokat",
-            "type": "uuid",
+            "name": "fkg_tema",
+            "type": "character varying(50)",
             "comment": null,
-            "_num": 4,
-            "_typname": "uuid",
+            "_num": 2,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
+            "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -162,6 +71,74 @@
             "_short_name": null
         },
         {
+            "name": "foto_lokat",
+            "type": "uuid",
+            "comment": null,
+            "_num": 4,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_navn",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "primaer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 6,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ja_nej.ja_nej_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "primaer_kode = ANY (ARRAY[0, 1]",
+                "primaer_kode = ANY (ARRAY[0, 1]"
+            ],
+            "_short_name": null
+        },
+        {
             "name": "geometri",
             "type": "geometry(MultiPoint,25832)",
             "comment": null,
@@ -182,6 +159,29 @@
             "_checks": null,
             "_geom_type": "MultiPoint",
             "_srid": "25832",
+            "_short_name": null
+        },
+        {
+            "name": "tilgaeng_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 8,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ja_nej.ja_nej_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": "0",
+            "_index_method": null,
+            "_checks": null,
             "_short_name": null
         }
     ],
@@ -216,7 +216,7 @@
             "columns": [
                 "primaer_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -227,7 +227,7 @@
             "columns": [
                 "tilgaeng_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -238,7 +238,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

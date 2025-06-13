@@ -2,16 +2,41 @@
     "name": "t_5707_grunds_t",
     "columns": [
         {
-            "name": "bygningareal",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 10,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "udstyk_navn",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -19,10 +44,31 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "bygningareal >= 1 AND bygningareal <= 99999"
+            "_checks": null,
+            "_short_name": "udstyk_na"
+        },
+        {
+            "name": "grund_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5707_grund_type.grund_type_kode"
             ],
-            "_short_name": "bygn_areal"
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "grund_ty_k"
         },
         {
             "name": "salg_status_kode",
@@ -46,75 +92,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "salg_sta_k"
-        },
-        {
-            "name": "vejkode",
-            "type": "integer",
-            "comment": null,
-            "_num": 13,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_vejnavn.vejkode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "vejkode"
-        },
-        {
-            "name": "grundareal",
-            "type": "integer",
-            "comment": null,
-            "_num": 9,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "grundareal >= 1 AND grundareal <= 999999"
-            ],
-            "_short_name": "grundareal"
-        },
-        {
-            "name": "postnr",
-            "type": "integer",
-            "comment": null,
-            "_num": 16,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_postnr.postnr"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "postnr"
         },
         {
             "name": "pris",
@@ -163,29 +140,6 @@
             "_short_name": "mind_pris"
         },
         {
-            "name": "grund_type_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 3,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_5707_grund_type.grund_type_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "grund_ty_k"
-        },
-        {
             "name": "kvm_pris",
             "type": "double precision",
             "comment": null,
@@ -205,69 +159,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "kvm_pris"
-        },
-        {
-            "name": "cvf_vejkode",
-            "type": "character(7)",
-            "comment": null,
-            "_num": 14,
-            "_typname": "bpchar",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": null,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "cvf_vejkode"
-        },
-        {
-            "name": "foto_link3",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 23,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "foto_link3"
-        },
-        {
-            "name": "udstyk_navn",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "udstyk_na"
         },
         {
             "name": "kontakt_oplys",
@@ -291,6 +182,75 @@
             "_short_name": "kontak_opl"
         },
         {
+            "name": "grundareal",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "grundareal >= 1 AND grundareal <= 999999"
+            ],
+            "_short_name": "grundareal"
+        },
+        {
+            "name": "bygningareal",
+            "type": "integer",
+            "comment": null,
+            "_num": 10,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "bygningareal >= 1 AND bygningareal <= 99999"
+            ],
+            "_short_name": "bygn_areal"
+        },
+        {
+            "name": "budfrist_slut",
+            "type": "timestamp with time zone",
+            "comment": null,
+            "_num": 11,
+            "_typname": "timestamptz",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "budfrist_slut >= '2006-12-31 22:59:00+00'::timestamp with time zone AND budfrist_slut <= '2999-12-31 22:59:00+00'::timestamp with time zone"
+            ],
+            "_short_name": "budfr_slut"
+        },
+        {
             "name": "sagsnr",
             "type": "character varying(128)",
             "comment": null,
@@ -310,6 +270,50 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
+        },
+        {
+            "name": "vejkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 13,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vejkode"
+        },
+        {
+            "name": "cvf_vejkode",
+            "type": "character(7)",
+            "comment": null,
+            "_num": 14,
+            "_typname": "bpchar",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "cvf_vejkode"
         },
         {
             "name": "husnr",
@@ -333,6 +337,29 @@
             "_short_name": "husnr"
         },
         {
+            "name": "postnr",
+            "type": "integer",
+            "comment": null,
+            "_num": 16,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "postnr"
+        },
+        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -352,6 +379,52 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPolygon,25832)",
+            "comment": null,
+            "_num": 18,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPolygon",
+            "_srid": "25832",
+            "_short_name": "the_geom"
+        },
+        {
+            "name": "adr_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 19,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adr_id"
         },
         {
             "name": "foto_link",
@@ -417,64 +490,16 @@
             "_short_name": "foto_link2"
         },
         {
-            "name": "budfrist_slut",
-            "type": "timestamp with time zone",
+            "name": "foto_link3",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 11,
-            "_typname": "timestamptz",
+            "_num": 23,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
+            "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 8,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "budfrist_slut >= '2006-12-31 22:59:00+00'::timestamp with time zone AND budfrist_slut <= '2999-12-31 22:59:00+00'::timestamp with time zone"
-            ],
-            "_short_name": "budfr_slut"
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "adr_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 19,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
+            "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -483,32 +508,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "adr_id"
-        },
-        {
-            "name": "geometri",
-            "type": "geometry(MultiPolygon,25832)",
-            "comment": null,
-            "_num": 18,
-            "_typname": "geometry",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": null,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "gist"
-            ],
-            "_checks": null,
-            "_geom_type": "MultiPolygon",
-            "_srid": "25832",
-            "_short_name": "the_geom"
+            "_short_name": "foto_link3"
         }
     ],
     "comment": null,
@@ -547,7 +547,7 @@
             "columns": [
                 "grund_type_kode"
             ],
-            "referenced_table": "fkg.d_5707_grund_type",
+            "referenced_table": "d_5707_grund_type",
             "referenced_columns": [
                 "grund_type_kode"
             ]
@@ -558,7 +558,7 @@
             "columns": [
                 "salg_status_kode"
             ],
-            "referenced_table": "fkg.d_5707_salg_status",
+            "referenced_table": "d_5707_salg_status",
             "referenced_columns": [
                 "salg_status_kode"
             ]
@@ -569,7 +569,7 @@
             "columns": [
                 "postnr"
             ],
-            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
                 "postnr"
             ]
@@ -580,7 +580,7 @@
             "columns": [
                 "vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -591,7 +591,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

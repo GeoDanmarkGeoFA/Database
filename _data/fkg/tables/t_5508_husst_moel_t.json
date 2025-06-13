@@ -2,65 +2,42 @@
     "name": "t_5508_husst_moel_t",
     "columns": [
         {
-            "name": "vejkode",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 8,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_vejnavn.vejkode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": null
         },
         {
-            "name": "postnr",
-            "type": "integer",
+            "name": "moelletype",
+            "type": "character varying(50)",
             "comment": null,
-            "_num": 10,
-            "_typname": "int4",
+            "_num": 2,
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_basis_postnr.postnr"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "stoej_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 5,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_5508_stoej.stoej_kode"
-            ],
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -117,6 +94,29 @@
             "_short_name": null
         },
         {
+            "name": "stoej_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 5,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5508_stoej.stoej_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "konsekvenszone",
             "type": "double precision",
             "comment": null,
@@ -140,10 +140,10 @@
             "_short_name": null
         },
         {
-            "name": "adr_id",
+            "name": "sagsnr",
             "type": "character varying(128)",
             "comment": null,
-            "_num": 13,
+            "_num": 7,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 128,
@@ -161,38 +161,19 @@
             "_short_name": null
         },
         {
-            "name": "moelletype",
-            "type": "character varying(50)",
+            "name": "vejkode",
+            "type": "integer",
             "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
+            "_num": 8,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "sagsnr",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 7,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
@@ -224,48 +205,25 @@
             "_short_name": null
         },
         {
-            "name": "cvf_vejkode",
-            "type": "character varying(7)",
+            "name": "postnr",
+            "type": "integer",
             "comment": null,
-            "_num": 12,
-            "_typname": "varchar",
+            "_num": 10,
+            "_typname": "int4",
             "_is_array": false,
-            "_character_maximum_length": 7,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 28,
-            "_reference": null,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -292,6 +250,48 @@
             "_checks": null,
             "_geom_type": "MultiPoint",
             "_srid": "25832",
+            "_short_name": null
+        },
+        {
+            "name": "cvf_vejkode",
+            "type": "character varying(7)",
+            "comment": null,
+            "_num": 12,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 7,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 28,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "adr_id",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 13,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
             "_short_name": null
         }
     ],
@@ -321,7 +321,7 @@
             "columns": [
                 "stoej_kode"
             ],
-            "referenced_table": "fkg.d_5508_stoej",
+            "referenced_table": "d_5508_stoej",
             "referenced_columns": [
                 "stoej_kode"
             ]
@@ -332,7 +332,7 @@
             "columns": [
                 "postnr"
             ],
-            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
                 "postnr"
             ]
@@ -343,7 +343,7 @@
             "columns": [
                 "vejkode"
             ],
-            "referenced_table": "fkg.d_vejnavn",
+            "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
             ]
@@ -354,7 +354,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

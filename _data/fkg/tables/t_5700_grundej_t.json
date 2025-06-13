@@ -2,50 +2,29 @@
     "name": "t_5700_grundej_t",
     "columns": [
         {
-            "name": "gf_tlf",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 6,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": [
-                "gf_tlf >= 11111111 AND gf_tlf <= 99999999"
-            ],
-            "_short_name": "gf_tlf"
-        },
-        {
-            "name": "vedtaegt_kode",
-            "type": "integer",
-            "comment": null,
-            "_num": 10,
-            "_typname": "int4",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
             "_reference": [
-                "fkg.d_basis_ja_nej.ja_nej_kode"
+                "fkg.generel.versions_id"
             ],
             "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
-            "_short_name": "vedtaegt_k"
+            "_short_name": null
         },
         {
             "name": "forening_type_kode",
@@ -69,113 +48,6 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "foren_ty_k"
-        },
-        {
-            "name": "gf_adr_beskyt_kode",
-            "type": "character(1)",
-            "comment": null,
-            "_num": 9,
-            "_typname": "bpchar",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": null,
-            "_reference": [
-                "fkg.d_5700_adr_beskyt.gf_adr_beskyt_kode"
-            ],
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "gf_besky_k"
-        },
-        {
-            "name": "gf_adresse",
-            "type": "character varying(254)",
-            "comment": null,
-            "_num": 7,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 254,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1016,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "gf_mail",
-            "type": "character varying(254)",
-            "comment": null,
-            "_num": 8,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 254,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1016,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "gf_mail"
-        },
-        {
-            "name": "link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 11,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "link"
-        },
-        {
-            "name": "sagsnr",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 14,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": "sagsnr"
         },
         {
             "name": "forening_navn",
@@ -202,7 +74,7 @@
             "name": "lokalpl_nr",
             "type": "character varying(50)",
             "comment": null,
-            "_num": 4,
+            "_num": 5,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 50,
@@ -223,7 +95,7 @@
             "name": "formand",
             "type": "character varying(128)",
             "comment": null,
-            "_num": 5,
+            "_num": 6,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 128,
@@ -241,16 +113,39 @@
             "_short_name": "formand"
         },
         {
-            "name": "cvr_opslag",
-            "type": "character varying(8)",
+            "name": "gf_tlf",
+            "type": "integer",
             "comment": null,
-            "_num": 13,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "gf_tlf >= 11111111 AND gf_tlf <= 99999999"
+            ],
+            "_short_name": "gf_tlf"
+        },
+        {
+            "name": "gf_adresse",
+            "type": "character varying(254)",
+            "comment": null,
+            "_num": 8,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 8,
+            "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 32,
+            "_max_bytes": 1016,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -259,38 +154,101 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "cvr_opslag"
+            "_short_name": null
         },
         {
-            "name": "versions_id",
-            "type": "uuid",
+            "name": "gf_mail",
+            "type": "character varying(254)",
             "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
+            "_num": 9,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "gf_mail"
+        },
+        {
+            "name": "gf_adr_beskyt_kode",
+            "type": "character(1)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "bpchar",
             "_is_array": false,
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 16,
+            "_max_bytes": null,
             "_reference": [
-                "fkg.generel.versions_id"
+                "fkg.d_5700_adr_beskyt.gf_adr_beskyt_kode"
             ],
             "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
             "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
+            "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gf_besky_k"
+        },
+        {
+            "name": "vedtaegt_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 11,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ja_nej.ja_nej_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vedtaegt_k"
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 12,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "link"
         },
         {
             "name": "geometri",
             "type": "geometry(MultiPolygon,25832)",
             "comment": null,
-            "_num": 12,
+            "_num": 13,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -310,6 +268,48 @@
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
             "_short_name": "the_geom"
+        },
+        {
+            "name": "cvr_opslag",
+            "type": "character varying(8)",
+            "comment": null,
+            "_num": 14,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 8,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 32,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "cvr_opslag"
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 15,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "sagsnr"
         }
     ],
     "comment": null,
@@ -338,7 +338,7 @@
             "columns": [
                 "gf_adr_beskyt_kode"
             ],
-            "referenced_table": "fkg.d_5700_adr_beskyt",
+            "referenced_table": "d_5700_adr_beskyt",
             "referenced_columns": [
                 "gf_adr_beskyt_kode"
             ]
@@ -349,7 +349,7 @@
             "columns": [
                 "forening_type_kode"
             ],
-            "referenced_table": "fkg.d_5700_forening_type",
+            "referenced_table": "d_5700_forening_type",
             "referenced_columns": [
                 "forening_type_kode"
             ]
@@ -360,7 +360,7 @@
             "columns": [
                 "vedtaegt_kode"
             ],
-            "referenced_table": "fkg.d_basis_ja_nej",
+            "referenced_table": "d_basis_ja_nej",
             "referenced_columns": [
                 "ja_nej_kode"
             ]
@@ -371,7 +371,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

@@ -2,16 +2,62 @@
     "name": "t_5005_soe_t",
     "columns": [
         {
-            "name": "fot_id",
-            "type": "integer",
+            "name": "versions_id",
+            "type": "uuid",
             "comment": null,
-            "_num": 13,
-            "_typname": "int4",
+            "_num": 1,
+            "_typname": "uuid",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "soe_navn",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "dmu_ref",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -19,9 +65,28 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "fot_id >= 0 AND fot_id <= '2147483648'::bigint"
-            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "soe_nr",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
             "_short_name": null
         },
         {
@@ -117,6 +182,48 @@
             "_short_name": null
         },
         {
+            "name": "sejlads",
+            "type": "character varying(150)",
+            "comment": null,
+            "_num": 9,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 150,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 600,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "tilstand",
+            "type": "character varying(250)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 250,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1000,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "opholdstid",
             "type": "double precision",
             "comment": null,
@@ -163,6 +270,29 @@
             "_short_name": null
         },
         {
+            "name": "fot_id",
+            "type": "integer",
+            "comment": null,
+            "_num": 13,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "fot_id >= 0 AND fot_id <= '2147483648'::bigint"
+            ],
+            "_short_name": null
+        },
+        {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
@@ -180,136 +310,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "sejlads",
-            "type": "character varying(150)",
-            "comment": null,
-            "_num": 9,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 150,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 600,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "soe_navn",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "dmu_ref",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "soe_nr",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 4,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "tilstand",
-            "type": "character varying(250)",
-            "comment": null,
-            "_num": 10,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 250,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1000,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -365,7 +365,7 @@
             "columns": [
                 "habitat_type_kode"
             ],
-            "referenced_table": "fkg.d_5005_habitat_type",
+            "referenced_table": "d_5005_habitat_type",
             "referenced_columns": [
                 "habitat_type_kode"
             ]
@@ -376,7 +376,7 @@
             "columns": [
                 "maalsaetning_kode"
             ],
-            "referenced_table": "fkg.d_5005_maalsaetning",
+            "referenced_table": "d_5005_maalsaetning",
             "referenced_columns": [
                 "maalsaetning_kode"
             ]
@@ -387,7 +387,7 @@
             "columns": [
                 "soe_type_kode"
             ],
-            "referenced_table": "fkg.d_5005_soe_type",
+            "referenced_table": "d_5005_soe_type",
             "referenced_columns": [
                 "soe_type_kode"
             ]
@@ -398,7 +398,7 @@
             "columns": [
                 "trussel_vand_kode"
             ],
-            "referenced_table": "fkg.d_basis_trussel_vand",
+            "referenced_table": "d_basis_trussel_vand",
             "referenced_columns": [
                 "trussel_vand_kode"
             ]
@@ -414,7 +414,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

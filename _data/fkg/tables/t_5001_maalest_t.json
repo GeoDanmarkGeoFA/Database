@@ -2,6 +2,73 @@
     "name": "t_5001_maalest_t",
     "columns": [
         {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "stationsnr",
+            "type": "character varying(20)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 20,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 80,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "lokalitet",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "maalest_type_kode",
             "type": "integer",
             "comment": null,
@@ -71,27 +138,6 @@
             "_short_name": null
         },
         {
-            "name": "link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 8,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
             "name": "dmu_nr",
             "type": "character varying(20)",
             "comment": null,
@@ -113,37 +159,16 @@
             "_short_name": null
         },
         {
-            "name": "stationsnr",
-            "type": "character varying(20)",
+            "name": "link",
+            "type": "character varying(1024)",
             "comment": null,
-            "_num": 2,
+            "_num": 8,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 20,
+            "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 80,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "lokalitet",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 3,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
+            "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -151,31 +176,6 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "versions_id",
-            "type": "uuid",
-            "comment": null,
-            "_num": 1,
-            "_typname": "uuid",
-            "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 16,
-            "_reference": [
-                "fkg.generel.versions_id"
-            ],
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
@@ -231,7 +231,7 @@
             "columns": [
                 "maalest_type_kode"
             ],
-            "referenced_table": "fkg.d_5001_maalest_type",
+            "referenced_table": "d_5001_maalest_type",
             "referenced_columns": [
                 "maalest_type_kode"
             ]
@@ -242,7 +242,7 @@
             "columns": [
                 "ejerstatus_kode"
             ],
-            "referenced_table": "fkg.d_basis_ejerstatus",
+            "referenced_table": "d_basis_ejerstatus",
             "referenced_columns": [
                 "ejerstatus_kode"
             ]
@@ -253,7 +253,7 @@
             "columns": [
                 "dvfi_bedoemmelse_kode"
             ],
-            "referenced_table": "fkg.d_basis_dvfi_bedoemmelse",
+            "referenced_table": "d_basis_dvfi_bedoemmelse",
             "referenced_columns": [
                 "dvfi_bedoemmelse_kode"
             ]
@@ -264,7 +264,7 @@
             "columns": [
                 "versions_id"
             ],
-            "referenced_table": "fkg.generel",
+            "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
             ]

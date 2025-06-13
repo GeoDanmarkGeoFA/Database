@@ -2,6 +2,29 @@
     "name": "d_temagruppe",
     "columns": [
         {
+            "name": "temagruppe_id",
+            "type": "character varying",
+            "comment": null,
+            "_num": 1,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
             "name": "vaerdiomraade_min",
             "type": "integer",
             "comment": null,
@@ -42,29 +65,6 @@
             "is_nullable": false,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "temagruppe_id",
-            "type": "character varying",
-            "comment": null,
-            "_num": 1,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": -5,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 1073741824,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": true,
-            "_is_primary": true,
-            "is_nullable": false,
-            "default_value": null,
-            "_index_method": [
-                "btree"
-            ],
             "_checks": null,
             "_short_name": null
         },
