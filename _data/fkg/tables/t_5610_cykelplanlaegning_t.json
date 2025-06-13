@@ -1,0 +1,540 @@
+{
+    "name": "t_5610_cykelplanlaegning_t",
+    "columns": [
+        {
+            "name": "faelleskommunalt_projekt_kode",
+            "type": "boolean",
+            "comment": null,
+            "_num": 18,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "falles_p_k"
+        },
+        {
+            "name": "faelleskommunalt_projekt",
+            "type": "boolean",
+            "comment": null,
+            "_num": 17,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "rute_undertype_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5610_rute_uty.rute_undertype_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "rute_u_t_k"
+        },
+        {
+            "name": "planlaegningskort_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 4,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5610_planlaegningskort_type.planlaegningskort_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "kort_type_k"
+        },
+        {
+            "name": "planstatus_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 5,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_planstatus.planstatus_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "planstat_k"
+        },
+        {
+            "name": "finansiering_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 10,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5610_finansiering.finansiering_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "finans_k"
+        },
+        {
+            "name": "rute_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5610_rute_type.rute_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "rutetype_k"
+        },
+        {
+            "name": "plan_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5610_plan_type.plan_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "plantype_k"
+        },
+        {
+            "name": "aarstal",
+            "type": "integer",
+            "comment": null,
+            "_num": 11,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "aarstal"
+        },
+        {
+            "name": "beloeb",
+            "type": "integer",
+            "comment": null,
+            "_num": 12,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "beloeb"
+        },
+        {
+            "name": "prioritering_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 13,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5610_prioritering.prioritering_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "prior_k"
+        },
+        {
+            "name": "eksisterende_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 15,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5610_eksisterende.eksisterende_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "eksis_k"
+        },
+        {
+            "name": "rute_nr",
+            "type": "character varying(255)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 255,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1020,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "rute_nr"
+        },
+        {
+            "name": "rute_beskrivelse",
+            "type": "character varying(3000)",
+            "comment": null,
+            "_num": 8,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 3000,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 12000,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "rute_beskrivelse"
+        },
+        {
+            "name": "potentiale",
+            "type": "character varying(3000)",
+            "comment": null,
+            "_num": 14,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 3000,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 12000,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "potentiale"
+        },
+        {
+            "name": "rute_navn",
+            "type": "character varying(255)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 255,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1020,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "rute_navn"
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiLineString,25832)",
+            "comment": null,
+            "_num": 16,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiLineString",
+            "_srid": "25832",
+            "_short_name": "the_geom"
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "_5610_cykelplanlaegning_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "_5610_cykelplanlaegning_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_eksisterende_fk",
+            "constraint": "foreign",
+            "columns": [
+                "eksisterende_kode"
+            ],
+            "referenced_table": "fkg.d_5610_eksisterende",
+            "referenced_columns": [
+                "eksisterende_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_finansiering_fk",
+            "constraint": "foreign",
+            "columns": [
+                "finansiering_kode"
+            ],
+            "referenced_table": "fkg.d_5610_finansiering",
+            "referenced_columns": [
+                "finansiering_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_plan_type_fk",
+            "constraint": "foreign",
+            "columns": [
+                "plan_type_kode"
+            ],
+            "referenced_table": "fkg.d_5610_plan_type",
+            "referenced_columns": [
+                "plan_type_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_planlaegningskort_fk",
+            "constraint": "foreign",
+            "columns": [
+                "planlaegningskort_type_kode"
+            ],
+            "referenced_table": "fkg.d_5610_planlaegningskort_type",
+            "referenced_columns": [
+                "planlaegningskort_type_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_prioritering_fk",
+            "constraint": "foreign",
+            "columns": [
+                "prioritering_kode"
+            ],
+            "referenced_table": "fkg.d_5610_prioritering",
+            "referenced_columns": [
+                "prioritering_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_rute_type_fk",
+            "constraint": "foreign",
+            "columns": [
+                "rute_type_kode"
+            ],
+            "referenced_table": "fkg.d_5610_rute_type",
+            "referenced_columns": [
+                "rute_type_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_rute_uty_fk",
+            "constraint": "foreign",
+            "columns": [
+                "rute_undertype_kode"
+            ],
+            "referenced_table": "fkg.d_5610_rute_uty",
+            "referenced_columns": [
+                "rute_undertype_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_planstatus_fk",
+            "constraint": "foreign",
+            "columns": [
+                "planstatus_kode"
+            ],
+            "referenced_table": "fkg.d_basis_planstatus",
+            "referenced_columns": [
+                "planstatus_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "fkg.generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5610_cykelplanlaegning_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5610_cykelplanlaegning_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5610_cykelplanlaegning_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_5610_cykelplanlaegning_t\/privileges"
+    }
+}

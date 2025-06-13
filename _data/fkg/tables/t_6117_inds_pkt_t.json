@@ -1,0 +1,288 @@
+{
+    "name": "t_6117_inds_pkt_t",
+    "columns": [
+        {
+            "name": "indsatstype_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6117_indsatstype.indsatstype_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "vej_afstand",
+            "type": "integer",
+            "comment": null,
+            "_num": 5,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "vej_afstand >= 1 AND vej_afstand <= 9999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "beskrivelse",
+            "type": "character varying(254)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "adgang",
+            "type": "character varying(254)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "ansvar",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 9,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 8,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "nr_navn",
+            "type": "character varying(20)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 20,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 80,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPoint,25832)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPoint",
+            "_srid": "25832",
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_6117_inds_pkt_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6117_inds_pkt_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_6117_inds_pkt_d_6117_indsatstype_fk",
+            "constraint": "foreign",
+            "columns": [
+                "indsatstype_kode"
+            ],
+            "referenced_table": "fkg.d_6117_indsatstype",
+            "referenced_columns": [
+                "indsatstype_kode"
+            ]
+        },
+        {
+            "name": "t_6117_inds_pkt_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "fkg.generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6117_inds_pkt_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6117_inds_pkt_vej_afstand_ck",
+            "constraint": "check",
+            "check": "vej_afstand >= 1 AND vej_afstand <= 9999"
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6117_inds_pkt_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6117_inds_pkt_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6117_inds_pkt_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_6117_inds_pkt_t\/privileges"
+    }
+}

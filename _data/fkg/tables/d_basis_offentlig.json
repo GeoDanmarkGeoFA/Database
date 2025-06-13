@@ -1,0 +1,96 @@
+{
+    "name": "d_basis_offentlig",
+    "columns": [
+        {
+            "name": "off_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 1,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "aktiv",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "offentlig",
+            "type": "character varying(60)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 60,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 240,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "d_basis_offentlig_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "off_kode"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "d_basis_offentlig_pk",
+            "constraint": "primary",
+            "columns": [
+                "off_kode"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_offentlig\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_offentlig\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_offentlig\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_offentlig\/privileges"
+    }
+}

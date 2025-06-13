@@ -1,0 +1,316 @@
+{
+    "name": "t_5400_affalds_dis_t",
+    "columns": [
+        {
+            "name": "affalddistrikt_nr",
+            "type": "integer",
+            "comment": null,
+            "_num": 4,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "affalddistrikt_nr >= 1 AND affalddistrikt_nr <= 99999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "renovatoer_cvr",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "renovatoer_cvr >= 10000000 AND renovatoer_cvr <= 99999999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "affaldstype_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 6,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5400_affalds_type.affaldstype_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "affalddistrikt_navn",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "afh_frekvens",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "afh_dag",
+            "type": "character varying(8)",
+            "comment": null,
+            "_num": 8,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 8,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 32,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "gyldig_til",
+            "type": "date",
+            "comment": null,
+            "_num": 3,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "gyldig_fra",
+            "type": "date",
+            "comment": null,
+            "_num": 2,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPolygon,25832)",
+            "comment": null,
+            "_num": 11,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPolygon",
+            "_srid": "25832",
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_5400_affalds_dis_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5400_affalds_dis_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_5400_affalds_dis_affalddistrikt_nr_ck",
+            "constraint": "check",
+            "check": "affalddistrikt_nr >= 1 AND affalddistrikt_nr <= 99999"
+        },
+        {
+            "name": "t_5400_affalds_dis_d_5400_affalds_type_fk",
+            "constraint": "foreign",
+            "columns": [
+                "affaldstype_kode"
+            ],
+            "referenced_table": "fkg.d_5400_affalds_type",
+            "referenced_columns": [
+                "affaldstype_kode"
+            ]
+        },
+        {
+            "name": "t_5400_affalds_dis_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "fkg.generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5400_affalds_dis_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5400_affalds_dis_renovatoer_cvr_ck",
+            "constraint": "check",
+            "check": "renovatoer_cvr >= 10000000 AND renovatoer_cvr <= 99999999"
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5400_affalds_dis_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5400_affalds_dis_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5400_affalds_dis_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_5400_affalds_dis_t\/privileges"
+    }
+}

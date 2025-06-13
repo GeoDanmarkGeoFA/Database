@@ -1,0 +1,601 @@
+{
+    "name": "t_5200_aff_prod_udbr_t",
+    "columns": [
+        {
+            "name": "ejd_nr",
+            "type": "integer",
+            "comment": null,
+            "_num": 4,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "ejd_nr >= 1000000000 AND ejd_nr <= '9999999999'::bigint"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "affald_prod_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5200_affald.affald_prod_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "postnr",
+            "type": "integer",
+            "comment": null,
+            "_num": 8,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "udbringning_aar",
+            "type": "integer",
+            "comment": null,
+            "_num": 17,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "udbringning_aar >= 1900 AND udbringning_aar <= 2999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "vejkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 5,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "fosfor_udnyttelse",
+            "type": "double precision",
+            "comment": null,
+            "_num": 13,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "fosfor_udnyttelse >= 0.01::double precision AND fosfor_udnyttelse <= 100.0::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "kvaelstof_udnyttelse",
+            "type": "double precision",
+            "comment": null,
+            "_num": 15,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "kvaelstof_udnyttelse >= 0.01::double precision AND kvaelstof_udnyttelse <= 9999.99::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "kalium_total",
+            "type": "double precision",
+            "comment": null,
+            "_num": 16,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "kalium_total >= 0.01::double precision AND kalium_total <= 9999.99::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "kvaelstof_total",
+            "type": "double precision",
+            "comment": null,
+            "_num": 14,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "kvaelstof_total >= 0.01::double precision AND kvaelstof_total <= 9999.99::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "dosering_toerstof",
+            "type": "double precision",
+            "comment": null,
+            "_num": 10,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "dosering_toerstof >= 0.01::double precision AND dosering_toerstof <= 9999.99::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "dosering_vaadvaegt",
+            "type": "double precision",
+            "comment": null,
+            "_num": 11,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "dosering_vaadvaegt >= 0.01::double precision AND dosering_vaadvaegt <= 9999.99::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "fosfor_total",
+            "type": "double precision",
+            "comment": null,
+            "_num": 12,
+            "_typname": "float8",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "fosfor_total >= 0.01::double precision AND fosfor_total <= 9999.99::double precision"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "cvf_vejkode",
+            "type": "character(7)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "bpchar",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "adr_id",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 21,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "navn",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "husnr",
+            "type": "character varying(4)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "markblok",
+            "type": "character varying(25)",
+            "comment": null,
+            "_num": 9,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 25,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 100,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 18,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 19,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPolygon,25832)",
+            "comment": null,
+            "_num": 20,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPolygon",
+            "_srid": "25832",
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_5200_aff_prod_udbr_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_5200_aff_prod_udbr_d_5200_affald_fk",
+            "constraint": "foreign",
+            "columns": [
+                "affald_prod_kode"
+            ],
+            "referenced_table": "fkg.d_5200_affald",
+            "referenced_columns": [
+                "affald_prod_kode"
+            ]
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_d_basis_postnr_fk",
+            "constraint": "foreign",
+            "columns": [
+                "postnr"
+            ],
+            "referenced_table": "fkg.d_basis_postnr",
+            "referenced_columns": [
+                "postnr"
+            ]
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_d_vejnavn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vejkode"
+            ],
+            "referenced_table": "fkg.d_vejnavn",
+            "referenced_columns": [
+                "vejkode"
+            ]
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_dosering_toerstof_ck",
+            "constraint": "check",
+            "check": "dosering_toerstof >= 0.01::double precision AND dosering_toerstof <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_dosering_vaadvaegt_ck",
+            "constraint": "check",
+            "check": "dosering_vaadvaegt >= 0.01::double precision AND dosering_vaadvaegt <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_ejd_nr_ck",
+            "constraint": "check",
+            "check": "ejd_nr >= 1000000000 AND ejd_nr <= '9999999999'::bigint"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_fosfor_udnyttelse_ck",
+            "constraint": "check",
+            "check": "fosfor_udnyttelse >= 0.01::double precision AND fosfor_udnyttelse <= 100.0::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "fkg.generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_kalium_total_ck",
+            "constraint": "check",
+            "check": "kalium_total >= 0.01::double precision AND kalium_total <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_kvaelstof_total_ck",
+            "constraint": "check",
+            "check": "kvaelstof_total >= 0.01::double precision AND kvaelstof_total <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_kvaelstof_udnyttelse_ck",
+            "constraint": "check",
+            "check": "kvaelstof_udnyttelse >= 0.01::double precision AND kvaelstof_udnyttelse <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_phosphor_indhold_ck",
+            "constraint": "check",
+            "check": "fosfor_total >= 0.01::double precision AND fosfor_total <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_udbringning_aar_ck",
+            "constraint": "check",
+            "check": "udbringning_aar >= 1900 AND udbringning_aar <= 2999"
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/privileges"
+    }
+}

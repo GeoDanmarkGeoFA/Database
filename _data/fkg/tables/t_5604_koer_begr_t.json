@@ -1,0 +1,392 @@
+{
+    "name": "t_5604_koer_begr_t",
+    "columns": [
+        {
+            "name": "sted_metode_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 11,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_sted_metode.sted_metode_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "sted_met_k"
+        },
+        {
+            "name": "regulerings_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5604_regulerings_type.regulerings_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "regul_ty_k"
+        },
+        {
+            "name": "frakm",
+            "type": "integer",
+            "comment": null,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "frakm >= 0 AND frakm <= 999"
+            ],
+            "_short_name": "frakm"
+        },
+        {
+            "name": "fram",
+            "type": "integer",
+            "comment": null,
+            "_num": 8,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "fram >= 0 AND fram <= 999"
+            ],
+            "_short_name": "fram"
+        },
+        {
+            "name": "tilkm",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "tilkm >= 0 AND tilkm <= 999"
+            ],
+            "_short_name": "tilkm"
+        },
+        {
+            "name": "tilm",
+            "type": "integer",
+            "comment": null,
+            "_num": 10,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "tilm >= 0 AND tilm <= 999"
+            ],
+            "_short_name": "tilm"
+        },
+        {
+            "name": "cvf_adm_vejnr",
+            "type": "integer",
+            "comment": null,
+            "_num": 6,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "cvf_adm_vejnr >= 0 AND cvf_adm_vejnr <= 9999999"
+            ],
+            "_short_name": "adm_vejnr"
+        },
+        {
+            "name": "tilladt_periode_bil",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "tillad_bil"
+        },
+        {
+            "name": "tilladt_periode_cykel",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "tillad_cyk"
+        },
+        {
+            "name": "tilladt_periode_varekoersel",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "tillad_var"
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 12,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "link"
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiLineString,25832)",
+            "comment": null,
+            "_num": 13,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiLineString",
+            "_srid": "25832",
+            "_short_name": "the_geom"
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_5604_koer_begr_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5604_koer_begr_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_5604_koer_begr_cvf_adm_vejnr_ck",
+            "constraint": "check",
+            "check": "cvf_adm_vejnr >= 0 AND cvf_adm_vejnr <= 9999999"
+        },
+        {
+            "name": "t_5604_koer_begr_d_5604_regulerings_type_fk",
+            "constraint": "foreign",
+            "columns": [
+                "regulerings_type_kode"
+            ],
+            "referenced_table": "fkg.d_5604_regulerings_type",
+            "referenced_columns": [
+                "regulerings_type_kode"
+            ]
+        },
+        {
+            "name": "t_5604_koer_begr_d_basis_sted_metode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "sted_metode_kode"
+            ],
+            "referenced_table": "fkg.d_basis_sted_metode",
+            "referenced_columns": [
+                "sted_metode_kode"
+            ]
+        },
+        {
+            "name": "t_5604_koer_begr_frakm_ck",
+            "constraint": "check",
+            "check": "frakm >= 0 AND frakm <= 999"
+        },
+        {
+            "name": "t_5604_koer_begr_fram_ck",
+            "constraint": "check",
+            "check": "fram >= 0 AND fram <= 999"
+        },
+        {
+            "name": "t_5604_koer_begr_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "fkg.generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5604_koer_begr_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5604_koer_begr_tilkm_ck",
+            "constraint": "check",
+            "check": "tilkm >= 0 AND tilkm <= 999"
+        },
+        {
+            "name": "t_5604_koer_begr_tilm_ck",
+            "constraint": "check",
+            "check": "tilm >= 0 AND tilm <= 999"
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5604_koer_begr_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5604_koer_begr_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5604_koer_begr_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_5604_koer_begr_t\/privileges"
+    }
+}

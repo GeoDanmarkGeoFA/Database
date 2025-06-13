@@ -1,0 +1,117 @@
+{
+    "name": "d_5601_omfang",
+    "columns": [
+        {
+            "name": "omfang_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 1,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": "omfang_k"
+        },
+        {
+            "name": "aktiv",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "omfang",
+            "type": "character varying(55)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 55,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 220,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "begrebsdefinition",
+            "type": "character varying",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "d_5601_omfang_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "omfang_kode"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "d_5601_omfang_pk",
+            "constraint": "primary",
+            "columns": [
+                "omfang_kode"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5601_omfang\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5601_omfang\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_5601_omfang\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_5601_omfang\/privileges"
+    }
+}

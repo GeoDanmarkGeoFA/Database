@@ -1,0 +1,367 @@
+{
+    "name": "generel",
+    "columns": [
+        {
+            "name": "cvr_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 6,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ansvarlig_myndighed.cvr_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "off_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 10,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_offentlig.off_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "statuskode",
+            "type": "integer",
+            "comment": null,
+            "_num": 9,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_status.statuskode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "oprindkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 8,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_oprindelse.oprindkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "note",
+            "type": "character varying(254)",
+            "comment": null,
+            "_num": 12,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "bruger_id",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "noegle",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 11,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "systid_til",
+            "type": "timestamp with time zone",
+            "comment": "Slut systemtid",
+            "_num": 4,
+            "_typname": "timestamptz",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "systid_fra",
+            "type": "timestamp with time zone",
+            "comment": "Start systemtid",
+            "_num": 3,
+            "_typname": "timestamptz",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "oprettet",
+            "type": "timestamp with time zone",
+            "comment": null,
+            "_num": 5,
+            "_typname": "timestamptz",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "objekt_id",
+            "type": "uuid",
+            "comment": "Entydig databasen\u00f8gle over tid",
+            "_num": 2,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": "Unik versions-id databasen\u00f8gle",
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "generel_cvr_kode_index",
+            "method": "btree",
+            "unique": false,
+            "columns": [
+                "cvr_kode"
+            ]
+        },
+        {
+            "name": "generel_objekt_id_index",
+            "method": "btree",
+            "unique": false,
+            "columns": [
+                "objekt_id"
+            ]
+        },
+        {
+            "name": "generel_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "generel_systid_til_index",
+            "method": "btree",
+            "unique": false,
+            "columns": [
+                "systid_til"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "generel_d_basis_ansvarlig_myndighed_fk",
+            "constraint": "foreign",
+            "columns": [
+                "cvr_kode"
+            ],
+            "referenced_table": "fkg.d_basis_ansvarlig_myndighed",
+            "referenced_columns": [
+                "cvr_kode"
+            ]
+        },
+        {
+            "name": "generel_d_basis_offentlig_fk",
+            "constraint": "foreign",
+            "columns": [
+                "off_kode"
+            ],
+            "referenced_table": "fkg.d_basis_offentlig",
+            "referenced_columns": [
+                "off_kode"
+            ]
+        },
+        {
+            "name": "generel_d_basis_oprindelse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "oprindkode"
+            ],
+            "referenced_table": "fkg.d_basis_oprindelse",
+            "referenced_columns": [
+                "oprindkode"
+            ]
+        },
+        {
+            "name": "generel_d_basis_status_fk",
+            "constraint": "foreign",
+            "columns": [
+                "statuskode"
+            ],
+            "referenced_table": "fkg.d_basis_status",
+            "referenced_columns": [
+                "statuskode"
+            ]
+        },
+        {
+            "name": "generel_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/generel\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/generel\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/generel\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/generel\/privileges"
+    }
+}

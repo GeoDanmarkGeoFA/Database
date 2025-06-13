@@ -1,0 +1,159 @@
+{
+    "name": "d_6802_traebetegn",
+    "columns": [
+        {
+            "name": "traebetegn_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 1,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": "traebetegn_kode"
+        },
+        {
+            "name": "aktiv",
+            "type": "integer",
+            "comment": null,
+            "_num": 5,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "trae_slaegt_latin",
+            "type": "character varying(124)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 124,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 496,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "trae_art_latin",
+            "type": "character varying(124)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 124,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 496,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "traebetegn_dansk",
+            "type": "character varying(124)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 124,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 496,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "begrebsdefinition",
+            "type": "character varying",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "d_6802_traebetegn_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "traebetegn_kode"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "d_6802_traebetegn_pk",
+            "constraint": "primary",
+            "columns": [
+                "traebetegn_kode"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_traebetegn\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_traebetegn\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_traebetegn\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_traebetegn\/privileges"
+    }
+}

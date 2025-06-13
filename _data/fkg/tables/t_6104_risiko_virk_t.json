@@ -1,0 +1,245 @@
+{
+    "name": "t_6104_risiko_virk_t",
+    "columns": [
+        {
+            "name": "kontakt_tlf",
+            "type": "integer",
+            "comment": null,
+            "_num": 4,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "kontakt_tlf >= 11111111 AND kontakt_tlf <= 99999999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "risikotype_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6104_risikotype.risikotype_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "cvr_risi_virk",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "cvr_risi_virk >= 10000000 AND cvr_risi_virk <= 99999999"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "brandhaem_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 5,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6104_brandhaem.brandhaem_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 6,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPolygon,25832)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPolygon",
+            "_srid": "25832",
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_6104_risiko_virk_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6104_risiko_virk_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_6104_risiko_virk_cvr_risi_virk_ck",
+            "constraint": "check",
+            "check": "cvr_risi_virk >= 10000000 AND cvr_risi_virk <= 99999999"
+        },
+        {
+            "name": "t_6104_risiko_virk_d_6104_brandhaem_fk",
+            "constraint": "foreign",
+            "columns": [
+                "brandhaem_kode"
+            ],
+            "referenced_table": "fkg.d_6104_brandhaem",
+            "referenced_columns": [
+                "brandhaem_kode"
+            ]
+        },
+        {
+            "name": "t_6104_risiko_virk_d_6104_risikotype_fk",
+            "constraint": "foreign",
+            "columns": [
+                "risikotype_kode"
+            ],
+            "referenced_table": "fkg.d_6104_risikotype",
+            "referenced_columns": [
+                "risikotype_kode"
+            ]
+        },
+        {
+            "name": "t_6104_risiko_virk_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "fkg.generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6104_risiko_virk_kontakt_tlf_ck",
+            "constraint": "check",
+            "check": "kontakt_tlf >= 11111111 AND kontakt_tlf <= 99999999"
+        },
+        {
+            "name": "t_6104_risiko_virk_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/privileges"
+    }
+}

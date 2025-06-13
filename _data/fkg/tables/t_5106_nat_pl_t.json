@@ -1,0 +1,622 @@
+{
+    "name": "t_5106_nat_pl_t",
+    "columns": [
+        {
+            "name": "telefon",
+            "type": "integer",
+            "comment": null,
+            "_num": 18,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "telefon >= 10000000 AND telefon <= 99999999"
+            ],
+            "_short_name": "telefon"
+        },
+        {
+            "name": "ejerstatus_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 11,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ejerstatus.ejerstatus_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "ejerstat_k"
+        },
+        {
+            "name": "faciliteter_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 6,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5106_faciliteter.faciliteter_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "pleje_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5106_pleje_type.pleje_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "pleje_ty_k"
+        },
+        {
+            "name": "omr_nr",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "omr_nr >= 1 AND omr_nr <= 99999"
+            ],
+            "_short_name": "omr_nr"
+        },
+        {
+            "name": "antal_moder",
+            "type": "integer",
+            "comment": null,
+            "_num": 15,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "antal_moder >= 0 AND antal_moder <= 999"
+            ],
+            "_short_name": "antal_mode"
+        },
+        {
+            "name": "chr",
+            "type": "integer",
+            "comment": null,
+            "_num": 16,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "chr >= 0 AND chr <= 9999999"
+            ],
+            "_short_name": "chr"
+        },
+        {
+            "name": "mobil",
+            "type": "integer",
+            "comment": null,
+            "_num": 19,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "mobil >= 10000000 AND mobil <= 99999999"
+            ],
+            "_short_name": "mobil"
+        },
+        {
+            "name": "navn",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 17,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "navn"
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 22,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "link"
+        },
+        {
+            "name": "omr_navn",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "omr_nr"
+        },
+        {
+            "name": "fortidsmindenr",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "fortidsmnr"
+        },
+        {
+            "name": "aftale_type",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "aftale_ty"
+        },
+        {
+            "name": "aftale_nr",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 8,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 12,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "sagsnr"
+        },
+        {
+            "name": "projekt_type",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 13,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "projekt_ty"
+        },
+        {
+            "name": "dyrehold",
+            "type": "character varying(250)",
+            "comment": null,
+            "_num": 14,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 250,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1000,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "dyrehold"
+        },
+        {
+            "name": "mail",
+            "type": "character varying(250)",
+            "comment": null,
+            "_num": 20,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 250,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1000,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "mail"
+        },
+        {
+            "name": "gyldig_fra",
+            "type": "date",
+            "comment": null,
+            "_num": 9,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "gyldig_fra"
+        },
+        {
+            "name": "ajour",
+            "type": "date",
+            "comment": null,
+            "_num": 21,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "ajour >= '2006-12-31'::date AND ajour <= '2999-12-31'::date"
+            ],
+            "_short_name": "ajour"
+        },
+        {
+            "name": "gyldig_til",
+            "type": "date",
+            "comment": null,
+            "_num": 10,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "gyldig_til"
+        },
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPolygon,25832)",
+            "comment": null,
+            "_num": 23,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPolygon",
+            "_srid": "25832",
+            "_short_name": "the_geom"
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_5106_nat_pl_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5106_nat_pl_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_5106_nat_pl_ajour_ck",
+            "constraint": "check",
+            "check": "ajour >= '2006-12-31'::date AND ajour <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_5106_nat_pl_antal_moder_ck",
+            "constraint": "check",
+            "check": "antal_moder >= 0 AND antal_moder <= 999"
+        },
+        {
+            "name": "t_5106_nat_pl_chr_ck",
+            "constraint": "check",
+            "check": "chr >= 0 AND chr <= 9999999"
+        },
+        {
+            "name": "t_5106_nat_pl_d_5106_faciliteter_fk",
+            "constraint": "foreign",
+            "columns": [
+                "faciliteter_kode"
+            ],
+            "referenced_table": "fkg.d_5106_faciliteter",
+            "referenced_columns": [
+                "faciliteter_kode"
+            ]
+        },
+        {
+            "name": "t_5106_nat_pl_d_5106_pleje_type_fk",
+            "constraint": "foreign",
+            "columns": [
+                "pleje_type_kode"
+            ],
+            "referenced_table": "fkg.d_5106_pleje_type",
+            "referenced_columns": [
+                "pleje_type_kode"
+            ]
+        },
+        {
+            "name": "t_5106_nat_pl_d_basis_ejerstatus_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ejerstatus_kode"
+            ],
+            "referenced_table": "fkg.d_basis_ejerstatus",
+            "referenced_columns": [
+                "ejerstatus_kode"
+            ]
+        },
+        {
+            "name": "t_5106_nat_pl_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "fkg.generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5106_nat_pl_mobil_ck",
+            "constraint": "check",
+            "check": "mobil >= 10000000 AND mobil <= 99999999"
+        },
+        {
+            "name": "t_5106_nat_pl_omr_nr_ck",
+            "constraint": "check",
+            "check": "omr_nr >= 1 AND omr_nr <= 99999"
+        },
+        {
+            "name": "t_5106_nat_pl_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5106_nat_pl_telefon_ck",
+            "constraint": "check",
+            "check": "telefon >= 10000000 AND telefon <= 99999999"
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5106_nat_pl_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5106_nat_pl_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5106_nat_pl_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_5106_nat_pl_t\/privileges"
+    }
+}

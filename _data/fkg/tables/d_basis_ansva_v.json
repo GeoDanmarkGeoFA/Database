@@ -1,0 +1,117 @@
+{
+    "name": "d_basis_ansva_v",
+    "columns": [
+        {
+            "name": "ansva_v_k",
+            "type": "integer",
+            "comment": null,
+            "_num": 1,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "aktiv",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": "1",
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "ansva_v",
+            "type": "character varying(30)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 30,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 120,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "begrebsdefinition",
+            "type": "character varying",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "d_basis_ansv_v_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "ansva_v_k"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "d_basis_ansv_v_pk",
+            "constraint": "primary",
+            "columns": [
+                "ansva_v_k"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_ansva_v\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_ansva_v\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_ansva_v\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_ansva_v\/privileges"
+    }
+}

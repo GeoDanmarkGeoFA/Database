@@ -1,0 +1,134 @@
+{
+    "name": "d_temagruppe",
+    "columns": [
+        {
+            "name": "vaerdiomraade_min",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "vaerdiomraade_max",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "temagruppe_id",
+            "type": "character varying",
+            "comment": null,
+            "_num": 1,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "tema_gruppe",
+            "type": "character varying",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "temagruppe_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "temagruppe_id"
+            ]
+        },
+        {
+            "name": "temagruppe_vaerdiomraade_min_uc",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "vaerdiomraade_min"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "temagruppe_pk",
+            "constraint": "primary",
+            "columns": [
+                "temagruppe_id"
+            ]
+        },
+        {
+            "name": "temagruppe_vaerdiomraade_min_uc",
+            "constraint": "unique",
+            "columns": [
+                "vaerdiomraade_min"
+            ]
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/privileges"
+    }
+}
