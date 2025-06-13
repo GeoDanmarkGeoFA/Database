@@ -1205,6 +1205,14 @@
                 {
                     "value": 17,
                     "alias": "Natureventyr"
+                },
+                {
+                    "value": 18,
+                    "alias": "M\u00f8rkevandrerute"
+                },
+                {
+                    "value": 19,
+                    "alias": "Konge\u00e5sti \u2013 dagsetape"
                 }
             ],
             "alias": "",
