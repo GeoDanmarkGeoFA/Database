@@ -1538,6 +1538,10 @@
                     "alias": "B\u00e6nk"
                 },
                 {
+                    "value": 22429,
+                    "alias": "SPOR Fort\u00e6llinger fra Sporet"
+                },
+                {
                     "value": 1382,
                     "alias": "Cykelknudepunkt"
                 },
@@ -1578,14 +1582,6 @@
                     "alias": "Fiskeri tilladt"
                 },
                 {
-                    "value": 2232,
-                    "alias": "SPOR Fort\u00e6llinger fra Sporet"
-                },
-                {
-                    "value": 2242,
-                    "alias": "SPOR Startsted"
-                },
-                {
                     "value": 6091,
                     "alias": "Udstyr til affaldsindsamling"
                 },
@@ -1606,8 +1602,16 @@
                     "alias": "Badepunkt"
                 },
                 {
-                    "value": 2233,
+                    "value": 2252,
+                    "alias": "SPOR Startsted"
+                },
+                {
+                    "value": 2263,
                     "alias": "Sev\u00e6rdighed \u2013 Astro"
+                },
+                {
+                    "value": 2242,
+                    "alias": "SPOR Fort\u00e6llinger fra Sporet"
                 }
             ],
             "alias": "",
@@ -2252,6 +2256,23 @@
             "queryable": false,
             "sort_id": 480
         },
+        "bookinglink": {
+            "type": "character varying",
+            "comment": null,
+            "num": 84,
+            "full_type": "character varying(500)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 500,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 2000,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 485
+        },
         "antal_pl": {
             "type": "integer",
             "comment": "",
@@ -2495,7 +2516,7 @@
         "geofafoto": {
             "type": "text",
             "comment": "",
-            "num": 84,
+            "num": 85,
             "full_type": "text",
             "typname": "text",
             "is_array": false,
@@ -2512,7 +2533,7 @@
         "geofafoto1": {
             "type": "text",
             "comment": "",
-            "num": 85,
+            "num": 86,
             "full_type": "text",
             "typname": "text",
             "is_array": false,
@@ -2529,7 +2550,7 @@
         "geofafoto2": {
             "type": "text",
             "comment": "",
-            "num": 86,
+            "num": 87,
             "full_type": "text",
             "typname": "text",
             "is_array": false,
@@ -2546,7 +2567,7 @@
         "geofafoto3": {
             "type": "text",
             "comment": "",
-            "num": 87,
+            "num": 88,
             "full_type": "text",
             "typname": "text",
             "is_array": false,

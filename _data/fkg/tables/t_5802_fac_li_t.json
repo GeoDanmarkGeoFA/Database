@@ -1447,6 +1447,50 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": null
+        },
+        {
+            "name": "danmarksnaturstier",
+            "type": "boolean",
+            "comment": null,
+            "_num": 68,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "dknatursti"
+        },
+        {
+            "name": "rutefarve_k",
+            "type": "integer",
+            "comment": null,
+            "_num": 70,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5802_rutefarve.rutefarve_k"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "rut_farv_k"
         }
     ],
     "comment": null,
@@ -1522,6 +1566,17 @@
             "referenced_table": "d_5802_rute_uty",
             "referenced_columns": [
                 "rute_uty_k"
+            ]
+        },
+        {
+            "name": "t_5802_fac_li_d_5802_rutefarve_fk",
+            "constraint": "foreign",
+            "columns": [
+                "rutefarve_k"
+            ],
+            "referenced_table": "d_5802_rutefarve",
+            "referenced_columns": [
+                "rutefarve_k"
             ]
         },
         {

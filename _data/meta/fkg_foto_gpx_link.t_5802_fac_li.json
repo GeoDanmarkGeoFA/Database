@@ -1236,6 +1236,80 @@
             "queryable": false,
             "sort_id": 230
         },
+        "danmarksnaturstier": {
+            "type": "boolean",
+            "comment": null,
+            "num": 97,
+            "full_type": "boolean",
+            "typname": "bool",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 235
+        },
+        "rutefarve_k": {
+            "type": "integer",
+            "comment": null,
+            "num": 98,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_5802_rutefarve.rutefarve_k"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Gul"
+                },
+                {
+                    "value": 2,
+                    "alias": "R\u00f8d"
+                },
+                {
+                    "value": 3,
+                    "alias": "Gr\u00f8n"
+                },
+                {
+                    "value": 4,
+                    "alias": "Bl\u00e5"
+                },
+                {
+                    "value": 5,
+                    "alias": "Orange"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 237
+        },
+        "rutefarve": {
+            "type": "character varying",
+            "comment": null,
+            "num": 99,
+            "full_type": "character varying(25)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 25,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 100,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 238
+        },
         "navn": {
             "type": "character varying",
             "comment": "",
@@ -2458,7 +2532,7 @@
         "geofafoto": {
             "type": "text",
             "comment": "",
-            "num": 97,
+            "num": 100,
             "full_type": "text",
             "typname": "text",
             "is_array": false,
@@ -2475,7 +2549,7 @@
         "geofafoto1": {
             "type": "text",
             "comment": "",
-            "num": 98,
+            "num": 101,
             "full_type": "text",
             "typname": "text",
             "is_array": false,
@@ -2492,7 +2566,7 @@
         "geofafoto2": {
             "type": "text",
             "comment": "",
-            "num": 99,
+            "num": 102,
             "full_type": "text",
             "typname": "text",
             "is_array": false,
@@ -2509,7 +2583,7 @@
         "geofafoto3": {
             "type": "text",
             "comment": "",
-            "num": 100,
+            "num": 103,
             "full_type": "text",
             "typname": "text",
             "is_array": false,
@@ -2594,7 +2668,7 @@
         "gpx_link": {
             "type": "text",
             "comment": "",
-            "num": 101,
+            "num": 104,
             "full_type": "text",
             "typname": "text",
             "is_array": false,

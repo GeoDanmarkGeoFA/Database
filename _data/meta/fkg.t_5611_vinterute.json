@@ -1034,9 +1034,9 @@
             "max_bytes": 200,
             "reference": null,
             "restriction": null,
-            "alias": null,
+            "alias": "",
             "queryable": false,
-            "sort_id": null
+            "sort_id": 215
         },
         "rutetype_kode": {
             "type": "integer",
@@ -1090,6 +1090,71 @@
             "alias": "",
             "queryable": true,
             "sort_id": 230
+        },
+        "rute_opgave_kode": {
+            "type": "integer",
+            "comment": null,
+            "num": 31,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_5611_rute_opgave.rute_opgave_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 9,
+                    "alias": "Ved ikke"
+                },
+                {
+                    "value": 4,
+                    "alias": "Sne og alm. glatf\u00f8re"
+                },
+                {
+                    "value": 5,
+                    "alias": "Sne og klimavej glatf\u00f8re"
+                },
+                {
+                    "value": 8,
+                    "alias": "Andet"
+                },
+                {
+                    "value": 2,
+                    "alias": "Alm. glatf\u00f8rebek\u00e6mpelse"
+                },
+                {
+                    "value": 3,
+                    "alias": "Klimavej glatf\u00f8rebek\u00e6mpelse"
+                },
+                {
+                    "value": 1,
+                    "alias": "Snerydning"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 232
+        },
+        "rute_opgave": {
+            "type": "character varying",
+            "comment": null,
+            "num": 32,
+            "full_type": "character varying(30)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 30,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 120,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 234
         },
         "cvr_opslag": {
             "type": "character varying",

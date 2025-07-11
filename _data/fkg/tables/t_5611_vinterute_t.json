@@ -241,6 +241,29 @@
             "_geom_type": "MultiLineString",
             "_srid": "25832",
             "_short_name": "the_geom"
+        },
+        {
+            "name": "rute_opgave_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 14,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5611_rute_opgave.rute_opgave_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
         }
     ],
     "comment": null,
@@ -279,6 +302,17 @@
             "constraint": "primary",
             "columns": [
                 "versions_id"
+            ]
+        },
+        {
+            "name": "t_5611_vinterute_rute_opgave_kode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "rute_opgave_kode"
+            ],
+            "referenced_table": "d_5611_rute_opgave",
+            "referenced_columns": [
+                "rute_opgave_kode"
             ]
         },
         {
