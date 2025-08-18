@@ -121,7 +121,7 @@
     <ul>
         <li>Rød farve angiver, at der er tale om generelle felter, som går igen i alle temalag.</li>
         <li>Blå farve indikerer, at der er tale om et systemudfyldt felt, hvor du ikke skal indtaste værdier. Dette er også angivet i feltet.</li>
-        <li>Grøn farve indikerer, at der er tale om et kodefelt, hvor værdiområdet er begrænset.</li>
+        <li>Grøn farve indikerer, at der er tale om et kodefelt, hvor værdiområdet er begrænset af en opslagsliste. Tryk på 'Vis Liste' for at se opslagslisten.</li>
     </ul>
 </div>
 <table>
@@ -209,3 +209,4 @@
         </tr>
     {% endfor %}
 </table>
+
