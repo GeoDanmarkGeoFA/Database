@@ -1006,7 +1006,7 @@
         },
         "broend_nr": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Identifikationsnr til den enkelte br\u00f8nd eller knudepunkt. Eksempel: Stor\u00e5en-340",
             "num": 20,
             "full_type": "character varying(20)",
             "typname": "varchar",
@@ -1023,7 +1023,7 @@
         },
         "broendtype_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Angivelse af dr\u00e6nbr\u00f8ndens tekniske konstruktuion. V\u00e6lg fra kodeliste Registreringsvejledning: Omhandler samtlige knudepunkter i dr\u00e6nsystemet, vil ofte v\u00e6re br\u00f8nde, men kan ogs\u00e5 v\u00e6re andet. Eksempel: 3",
             "num": 21,
             "full_type": "integer",
             "typname": "int4",
@@ -1079,7 +1079,7 @@
         },
         "broendtype": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Angivelse af dr\u00e6nbr\u00f8ndens tekniske konstruktion. Eksempel: Sandfang",
             "num": 22,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -1096,7 +1096,7 @@
         },
         "diameter_mm": {
             "type": "integer",
-            "comment": "",
+            "comment": "Br\u00f8ndens indvendige diameter i mm Oplysningen kan bruges til vurdering af br\u00f8ndens volumen. Br\u00f8ndens ydre m\u00e5l (til LER) kan estimeres udfra indre diameter og kendskab til br\u00f8ndens konstruktion\/materiale. Eksempel: 1050",
             "num": 23,
             "full_type": "integer",
             "typname": "int4",
@@ -1113,7 +1113,7 @@
         },
         "diameter_tommer": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Br\u00f8ndens indvendige diameter angivet i tommer. Oplysningen kan bruges til vurdering af br\u00f8ndens volumen. Registreringsvejledning: Hvis data senere skal overf\u00f8res til LER kan ydre m\u00e5l estimeres udfra indre diameter og kendskab til br\u00f8ndens konstruktion \/ materiale. Ved overf\u00f8rsel til LER skal der regnes om til mm. Eksempel: 1,5",
             "num": 24,
             "full_type": "double precision",
             "typname": "float8",
@@ -1130,7 +1130,7 @@
         },
         "dybde_udloeb": {
             "type": "integer",
-            "comment": "",
+            "comment": "Hvor dybt er br\u00f8ndens udl\u00f8b placeret. M\u00e5lt i cm fra br\u00f8ndens d\u00e6ksel. Eksempel: 150",
             "num": 25,
             "full_type": "integer",
             "typname": "int4",
@@ -1147,7 +1147,7 @@
         },
         "kote_udloeb": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Hvor dybt er br\u00f8ndens udl\u00f8b placeret. Angivet som kote. Eksempel: 10,78",
             "num": 26,
             "full_type": "double precision",
             "typname": "float8",
@@ -1164,7 +1164,7 @@
         },
         "kotesystem_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Hvis du anvender muligheden for at angive koter og kotesystemet er kendt, kan du her oplyse om anvendt kotesystem. Registreringsvejledning: V\u00e6lg v\u00e6rdi fra kodelisten kotesystem (d_basis_kotesystem)",
             "num": 27,
             "full_type": "integer",
             "typname": "int4",
@@ -1200,7 +1200,7 @@
         },
         "kotesystem": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Anvendt kotesystem V\u00e6rdier fra kodelisten d_basis_kotesystem",
             "num": 28,
             "full_type": "character varying(250)",
             "typname": "varchar",
@@ -1217,7 +1217,7 @@
         },
         "datakilde_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Oplysning om, hvordan data om dr\u00e6nbr\u00f8nden er tilvejebragt. Hvem\/hvad er datakilden. Oplysninger om datakilden kan give et hurtigt billede af, hvor pr\u00e6cise eller p\u00e5lidelige data er. Registreringsvejledning: V\u00e6lg v\u00e6rdi fra kodeliste d_basis_datakilde",
             "num": 29,
             "full_type": "integer",
             "typname": "int4",
@@ -1269,7 +1269,7 @@
         },
         "datakilde": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Oplysning om, hvordan data om dr\u00e6nbr\u00f8nden er tilvejebragt. Registreringsvejledning: Udfyldes automatisk ved valg fra kodeliste",
             "num": 30,
             "full_type": "character varying",
             "typname": "varchar",
@@ -1286,7 +1286,7 @@
         },
         "bemaerkning": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Hvis det originale materiale (fx papirkort) indeholder oplysninger du vil bevare, men som ikke passer i \u00f8vrige felter",
             "num": 31,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -1303,7 +1303,7 @@
         },
         "broend_synlig": {
             "type": "boolean",
-            "comment": "",
+            "comment": "Angiv om br\u00f8ndd\u00e6kslet er synligt eller ej. Et synligt br\u00f8ndd\u00e6ksel er ud\u00e6kket. Registreringsvejledning: Angiv 1 (sand), hvis br\u00f8ndd\u00e6kslet er synligt, Angiv 2 (falsk), hvis br\u00f8ndd\u00e6kslet ikke er synligt. Eksempel: S",
             "num": 32,
             "full_type": "boolean",
             "typname": "bool",
@@ -1320,7 +1320,7 @@
         },
         "etableringstidspunkt": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Angivelse af tidspunkt for etableringen er gennemf\u00f8rt. Registreringsvejledning: Angiv etableringstidspunktet s\u00e5 n\u00f8jagtigt som muligt. For \u00e6ldre br\u00f8nde vil det ofte kun v\u00e6re muligt at angive, at etableringen er sket f\u00f8r et eller andet tidspunkt. Benyt korte formuleringer som: maj 2023, 2005, f\u00f8r 1970, efter 1985 Datatype og registreringsvejledning passer til LER\u2019s krav ( maj 2024). Eksempel: efter 1970",
             "num": 33,
             "full_type": "character varying(20)",
             "typname": "varchar",
@@ -1337,7 +1337,7 @@
         },
         "praecision_god": {
             "type": "boolean",
-            "comment": "",
+            "comment": "Angiv om der er en god pr\u00e6cision p\u00e5 br\u00f8ndens placering \u2013 eller en ringe pr\u00e6cision. En pr\u00e6cision p\u00e5 2 meter eller mindre regnes som god. En pr\u00e6cision p\u00e5 mere end 2 meter regnes som en d\u00e5rlig pr\u00e6cision. Registreringsvejledning: Angiv v\u00e6rdien 0 (falsk), hvis pr\u00e6cisionen er d\u00e5rlig eller ukendt Angiv v\u00e6rdien 1 (sand), hvis pr\u00e6cisionen er god. Eksempel: 1",
             "num": 34,
             "full_type": "boolean",
             "typname": "bool",
@@ -1409,10 +1409,20 @@
     "children": null,
     "meta": {
         "tiled": false,
+        "formaal": "Datas\u00e6ttet er til brug i sagsbehandlingen vedr. vandl\u00f8bslov m.m",
+        "temakode": "5011",
+        "temanavn": "Dr\u00e6nbr\u00f8nd",
+        "kle_koder": "06.02.15",
         "meta_desc": "",
+        "definition": "Lokalisering af dr\u00e6nbr\u00f8nde. Dr\u00e6nbr\u00f8nde er typisk placeret ved et dr\u00e6nr\u00f8rs udl\u00f8b i en \u00e5",
+        "noegle_ord": "Dr\u00e6n, afvanding",
+        "beskrivelse": "Viser beliggenhed af dr\u00e6nbr\u00f8nden",
+        "lovgrundlag": "Vandl\u00f8bsloven m.m.",
         "single_tile": false,
+        "geometritype": "Punkt",
         "hover_active": false,
         "max_features": "500",
+        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
@@ -1436,22 +1446,29 @@
         "tooltip_template": "",
         "accordion_summery": "",
         "disable_check_box": false,
+        "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
         "default_open_tools": "",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
+        "minimum_stoerrelser": "",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
+        "geometrisk_konsistens": "",
         "info_element_selector": "",
+        "noegleord_hovedgruppe": "Hydrografi",
+        "registreringsinstruks": "Temaet kan etableres ved digitalisering af Hedeselskabets kortmateriale, indsamling af data om nyere dr\u00e6nledninger,\nanalyse af flyfotos (ogs\u00e5 gamle), besigtigelse af \u00e5-bredder m.m.\nTemaet omfatter ikke br\u00f8nde til vejdr\u00e6n (der b\u00f8r v\u00e6re i samme lag som \u00f8vrige data til kommunens besvarelse af LERhenvendelser)\nog LAR-anl\u00e6g (Lokale afledning af regnvand)",
+        "klassificering_opdeling": "Opdeles i br\u00f8ndtyper \/ -konstruktioner. Se 5.1.4.3 kodelister.",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false
+        "disable_vector_feature_info": false,
+        "geometrisk_konsistens_andre": ""
     }
 }

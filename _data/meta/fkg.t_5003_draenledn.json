@@ -1006,7 +1006,7 @@
         },
         "ledn_nr": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Ledningsnummer. Eksempel: K10613",
             "num": 20,
             "full_type": "character varying(20)",
             "typname": "varchar",
@@ -1023,7 +1023,7 @@
         },
         "ledn_type_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for type\/ materialet af. Eksempel: 1",
             "num": 21,
             "full_type": "integer",
             "typname": "int4",
@@ -1063,7 +1063,7 @@
         },
         "ledn_type": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Type\/materiale af dr\u00e6nledning. Eksempel: Plast",
             "num": 22,
             "full_type": "character varying(10)",
             "typname": "varchar",
@@ -1080,7 +1080,7 @@
         },
         "klasse_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for klasse. Eksempel:1",
             "num": 23,
             "full_type": "integer",
             "typname": "int4",
@@ -1120,7 +1120,7 @@
         },
         "klasse": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Klasse. Eksempel: Interne markdr\u00e6n",
             "num": 24,
             "full_type": "character varying(20)",
             "typname": "varchar",
@@ -1137,7 +1137,7 @@
         },
         "etableringstidspunkt": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Angivelse af tidspunkt for etableringen er gennemf\u00f8rt. Registreringsvejledning: Angiv etableringstidspunktet s\u00e5 n\u00f8jagtigt som muligt. For \u00e6ldre dr\u00e6nledninger vil det ofte kun v\u00e6re muligt at angive, at etableringen er sket f\u00f8r et eller andet tidspunkt. Benyt korte formuleringer som: maj 2023, 2005, f\u00f8r 1970, efter 1985 Datatype og registreringsvejledning passer til LER\u2019s krav ( maj 2024). Eksempel: f\u00f8r 1960",
             "num": 25,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1154,7 +1154,7 @@
         },
         "start_dybde": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Dybden dr\u00e6nledningen er lagt fra. Eksempel: 1,6",
             "num": 26,
             "full_type": "double precision",
             "typname": "float8",
@@ -1171,7 +1171,7 @@
         },
         "slut_dybde": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Dybden dr\u00e6nledningen er lagt fra. Eksempel: 1,6",
             "num": 27,
             "full_type": "double precision",
             "typname": "float8",
@@ -1188,7 +1188,7 @@
         },
         "start_kote": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Registrering af dr\u00e6nledningens bundkote ved start. Kan give et mere korrekt billede af f.eks. fald p\u00e5 ledningen. Eksempel: 10,78",
             "num": 28,
             "full_type": "double precision",
             "typname": "float8",
@@ -1205,7 +1205,7 @@
         },
         "slut_kote": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Registrering af dr\u00e6nledningens bundkote ved slutning (udl\u00f8b). Kan give et mere korrekt billede af f.eks. fald p\u00e5 ledningen. Eksempel: 8,45",
             "num": 29,
             "full_type": "double precision",
             "typname": "float8",
@@ -1222,7 +1222,7 @@
         },
         "kotesystem_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Hvis du anvender muligheden for at angive koter og kotesystemet er kendt, kan du her oplyse om anvendt kotesystem. Registreringsvejledning: V\u00e6lg v\u00e6rdi fra kodelisten kotesystem (d_basis_kotesystem)",
             "num": 30,
             "full_type": "integer",
             "typname": "int4",
@@ -1258,7 +1258,7 @@
         },
         "kotesystem": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Anvendt kotesystem",
             "num": 31,
             "full_type": "character varying(250)",
             "typname": "varchar",
@@ -1275,7 +1275,7 @@
         },
         "fald_promille": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Angiv fald p\u00e5 dr\u00e6nledningen i promille. Eksempel: 2",
             "num": 32,
             "full_type": "double precision",
             "typname": "float8",
@@ -1292,7 +1292,7 @@
         },
         "diameter_mm": {
             "type": "integer",
-            "comment": "",
+            "comment": "Ledningens indvendige diameter angivet i mm. Eksempel: 38",
             "num": 33,
             "full_type": "integer",
             "typname": "int4",
@@ -1309,7 +1309,7 @@
         },
         "diameter_tommer": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Ledningens indvendige diameter angivet i tommer. Eksempel: 1,5",
             "num": 34,
             "full_type": "double precision",
             "typname": "float8",
@@ -1395,7 +1395,7 @@
         },
         "praecision_god": {
             "type": "boolean",
-            "comment": "",
+            "comment": "Angiv om der er en god pr\u00e6cision p\u00e5 ledningens placering \u2013 eller en ringe pr\u00e6cision. En pr\u00e6cision p\u00e5 2 meter eller mindre regnes som god. En pr\u00e6cision p\u00e5 mere end 2 meter regnes som en d\u00e5rlig pr\u00e6cision. Registreringsvejledning: Angiv v\u00e6rdien 0 (falsk), hvis pr\u00e6cisionen er d\u00e5rlig eller ukendt Angiv v\u00e6rdien 1 (sand), hvis pr\u00e6cisionen er god. ",
             "num": 37,
             "full_type": "boolean",
             "typname": "bool",
@@ -1412,7 +1412,7 @@
         },
         "projektnr": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Henvisning til oprindelig dokumentation fx projektnr p\u00e5 materiale fra Orbicon\/Hedeselskabet",
             "num": 38,
             "full_type": "character varying(25)",
             "typname": "varchar",
@@ -1429,7 +1429,7 @@
         },
         "kommentar": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Hvis der p\u00e5 oprindelig fra dokumentation er p\u00e5f\u00f8rt andre bem\u00e6rkninger, man \u00f8nsker at bevare",
             "num": 39,
             "full_type": "character varying(25)",
             "typname": "varchar",
@@ -1501,10 +1501,20 @@
     "children": null,
     "meta": {
         "tiled": false,
+        "formaal": "Datas\u00e6ttet er til brug i sagsbehandlingen vedr. vandl\u00f8bslov m.m",
+        "temakode": "5003",
+        "temanavn": "Dr\u00e6nledning",
+        "kle_koder": "06.02.15",
         "meta_desc": "",
+        "definition": "Lokalisering af dr\u00e6nledninger i jorden",
+        "noegle_ord": "Dr\u00e6n, afvanding",
+        "beskrivelse": "Viser beliggenhed af de dr\u00e6nledninger, der gennem tiden er blevet nedgravet",
+        "lovgrundlag": "Vandl\u00f8bsloven",
         "single_tile": false,
+        "geometritype": "Linje",
         "hover_active": false,
         "max_features": "500",
+        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
@@ -1528,22 +1538,29 @@
         "tooltip_template": "",
         "accordion_summery": "",
         "disable_check_box": false,
+        "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
         "default_open_tools": "",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
+        "minimum_stoerrelser": "5 meter",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
+        "geometrisk_konsistens": "Snap mellem objekter, men de kan godt krydse hinanden",
         "info_element_selector": "",
+        "noegleord_hovedgruppe": "Hydrografi",
+        "registreringsinstruks": "Temaet kan etableres ved digitalisering af Hedeselskabets kortmateriale, indsamling af data om nyere dr\u00e6nledninger,\nanalyse af flyfotos (ogs\u00e5 gamle) m.m. Temaet omfatter ikke vejdr\u00e6n (der b\u00f8r v\u00e6re i samme lag som \u00f8vrige data til\nkommunens besvarelse af LER-henvendelser) og LAR-anl\u00e6g (Lokale afledning af regnvand).\nV\u00e6r opm\u00e6rksom p\u00e5 at data om dr\u00e6n kan v\u00e6re mangelfulde. Dels er det ikke alle dr\u00e6n vi kender til og dels er det lidt\nvarierende, hvilke data om dr\u00e6net, der findes. Med specifikationen giver vi mulighed for at registrere de data man har\n\u2013 og springe resten over. Derfor kan der forekomme en hel del uudfyldte felter i datas\u00e6ttet.",
+        "klassificering_opdeling": "Opdeles i materiale og klasse. Se 5.1.4.3 kodelister.",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false
+        "disable_vector_feature_info": false,
+        "geometrisk_konsistens_andre": "B\u00f8r normalt ikke krydse vandl\u00f8b, men ende i det. Snap til GeoDanmark-vandl\u00f8bsmidte."
     }
 }

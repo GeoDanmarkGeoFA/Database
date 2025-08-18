@@ -5993,6 +5993,7 @@
         "single_tile": false,
         "hover_active": false,
         "max_features": "200",
+        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",

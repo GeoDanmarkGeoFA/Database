@@ -14,6 +14,12 @@
 {% assign tableKey = "t_" | append: theme | append: "_t" %}
 {% assign table = site.data.fkg.tables[tableKey] %}
 
+<style>
+    @media print {
+        -webkit-print-color-adjust: exact;
+    }
+</style>
+
 <h1>{{ theme }}</h1>
 
 <h2>Metadata</h2>
@@ -24,6 +30,7 @@
         <th>Beskrivelse</th>
     </tr>
     </thead>
+
     <tbody>
     <tr>
         <td>Temanavn</td>
@@ -34,6 +41,10 @@
         <td>{{ meta.meta.temakode }}</td>
     </tr>
     <tr>
+        <td>Formål</td>
+        <td>{{ meta.meta.formaal }}</td>
+    </tr>
+    <tr>
         <td>Definition</td>
         <td>{{ meta.meta.definition }}</td>
     </tr>
@@ -41,10 +52,7 @@
         <td>Beskrivelse</td>
         <td>{{ meta.meta.beskrivelse }}</td>
     </tr>
-    <tr>
-        <td>Formål</td>
-        <td>{{ meta.meta.formaal }}</td>
-    </tr>
+
     <tr>
         <td>Nøgleord hovedgruppe</td>
         <td>{{ meta.meta.noegleord_hovedgruppe }}</td>
@@ -104,106 +112,15 @@
     </tbody>
 </table>
 
-<h2>Generelle felter</h2>
-
-<table>
-    <thead>
-    <tr>
-        <th>Feltnavn</th>
-        <th>Feltnavn10</th>
-        <th>Formål</th>
-        <th>Datatype</th>
-        <th>Værdiområde</th>
-        <th>Obligatorisk</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for column in generel.columns %}
-        <tr {% if column.name == "versions_id" or column.name == "objekt_id" or column.name == "systid_fra" or column.name == "systid_til" or column.name == "oprettet" %} style="background-color: pink" {% endif %}>
-            {% assign checks = column._checks[0] %}
-            {%- assign allow_null = column.is_nullable %}
-            {% if column.is_nullable %}
-                {% assign must = false %}
-            {% else %}
-                {% assign must = true %}
-            {% endif %}
-
-            {% if meta.fields[column.name].restriction != null %}
-                {% assign rs = meta.fields[column.name].restriction %}
-                {% capture restrictions %}
-                    {% if meta.fields[column.name].restriction != null %}{% for r in rs %} {{ r.value }} = {{ r.alias }}
-                        <br>  {% endfor %}{% endif %}
-                {% endcapture %}
-            {% else %}
-                {% assign restrictions = null %}
-            {% endif %}
-
-            <td>{{ column.name }}</td>
-            <td>{{ column.name }}</td>
-            <td>{{ column.comment }}</td>
-            <td>{{ column.type }}</td>
-            <td>{{ restrictions | truncate: 1000 }}{{ checks }}</td>
-            <td>{{ must }}</td>
-        </tr>
-
-    {% endfor %}
-    </tbody>
-</table>
-
-<h2>Tema specifikke felter</h2>
-
-<table>
-    <thead>
-    <tr>
-        <th>Feltnavn</th>
-        <th>Feltnavn10</th>
-        <th style="width: 300px">Formål</th>
-        <th>Datatype</th>
-        <th>Værdiområde</th>
-        <th>Obligatorisk</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for column in table.columns %}
-        <tr {% if column.name == "versions_id" %} style="background-color: pink" {% endif %}>
-            {% assign checks = column._checks[0] %}
-            {% assign comment = meta.fields[column.name].comment %}
-
-            {% if column.is_nullable %}
-                {% assign must = false %}
-            {% else %}
-                {% assign must = true %}
-            {% endif %}
-
-            {% if column._short_name %}
-                {% assign short = column._short_name %}
-            {% else %}
-                {% assign short = column.name %}
-            {% endif %}
-
-            {% if meta.fields[column.name].restriction != null %}
-                {% assign rs = meta.fields[column.name].restriction %}
-                {% capture restrictions %}
-                    {% if meta.fields[column.name].restriction != null %}{% for r in rs %} {{ r.value }} = {{ r.alias }}
-                        <br>  {% endfor %}{% endif %}
-                {% endcapture %}
-            {% else %}
-                {% assign restrictions = null %}
-            {% endif %}
-
-            <td>{{ column.name }}</td>
-            <td>{{ short }}</td>
-            <td>{{ comment }}</td>
-            <td>{{ column.type }}</td>
-            <td>{{ restrictions }}{{ checks }}</td>
-            <td>{{ must }}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
-
 <h2>Felter i udstillings-view</h2>
-
+<div>
+    Læsevejledning til specifikationen:
+    <ul>
+        <li>Rød farve angiver, at der er tale om generelle felter, som går igen i alle temalag.</li>
+        <li>Blå farve indikerer, at der er tale om et systemudfyldt felt, hvor du ikke skal indtaste værdier. Dette er også angivet i feltet.</li>
+        <li>Grøn farve indikerer, at der er tale om et kodefelt, hvor værdiområdet er begrænset.</li>
+    </ul>
+</div>
 <table>
     <tr>
         <th>Feltnavn</th>
@@ -211,7 +128,7 @@
         <th style="width: 300px">Formål</th>
         <th>Datatype</th>
         <th>Værdiområde</th>
-        <th>Obligatorisk/frit</th>
+        <th>Obligatorisk / Frit / System</th>
     </tr>
 
     {% for field in meta.fields %}
@@ -234,9 +151,9 @@
         {% endif %}
 
         {% if column[0].is_nullable or field[0] == "noegle" or field[0] == "note" or field[0] == "systid_til" %}
-            {% assign must = false %}
+            {% assign must = "F" %}
         {% else %}
-            {% assign must = true %}
+            {% assign must = "O" %}
         {% endif %}
 
         {% if column[0]._short_name %}
@@ -249,6 +166,9 @@
             <tr  style="background-color: pink">
         {% elsif system and field[0] != "cvr_kode" and field[0] != "bruger_id" and field[0] != "oprindkode" and field[0] != "statuskode" and field[0] != "off_kode" and field[0] != "noegle" and field[0] != "note" %}
             <tr  style="background-color: lightblue">
+            {% assign must = "S" %}
+        {% elsif field[1].restriction != null %}
+            <tr  style="background-color: lightgreen">
         {% else %}
             <tr>
         {% endif %}
@@ -273,9 +193,16 @@
         <td>{{ short }}</td>
         <td>{{ comment }}</td>
         <td>{{ field[1].full_type }}</td>
-        <td>{{ restrictions | truncate: 1000 }}{{ checks }}</td>
+        <td>
+            {% if restrictions %}
+                <details>
+                    <summary>Vis liste</summary>
+                    {{ restrictions }}
+                </details>
+            {% endif %}
+            {{ checks }}
+        </td>
         <td>{{ must }}</td>
         </tr>
     {% endfor %}
 </table>
-

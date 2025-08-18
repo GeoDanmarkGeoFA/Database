@@ -3,7 +3,7 @@
     "f_table_schema": "fkg",
     "f_table_name": "t_5612_vinterserviceomraade",
     "f_geometry_column": "geometri",
-    "f_table_abstract": null,
+    "f_table_abstract": "",
     "f_table_title": "Vinterserviceomr\u00e5de (5612)",
     "pkey": "objekt_id",
     "rel_type": "VIEW",
@@ -906,7 +906,7 @@
         },
         "status": {
             "type": "character varying",
-            "comment": "",
+            "comment": null,
             "num": 15,
             "full_type": "character varying(30)",
             "typname": "varchar",

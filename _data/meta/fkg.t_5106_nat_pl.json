@@ -1006,7 +1006,7 @@
         },
         "pleje_type_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kodetal for plejetype. Eksempel: 8",
             "num": 20,
             "full_type": "integer",
             "typname": "int4",
@@ -1102,7 +1102,7 @@
         },
         "pleje_type": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Typen af naturpleje. Eksempel: Nedsk\u00e6ring af vedplanter",
             "num": 21,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1119,7 +1119,7 @@
         },
         "pleje_type_label": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Forkortet navn af naturpleje. Eksempel: NP04",
             "num": 22,
             "full_type": "character varying(10)",
             "typname": "varchar",
@@ -1136,7 +1136,7 @@
         },
         "omr_nr": {
             "type": "integer",
-            "comment": "",
+            "comment": "Nummer p\u00e5 naturplejeomr\u00e5de. ",
             "num": 23,
             "full_type": "integer",
             "typname": "int4",
@@ -1153,7 +1153,7 @@
         },
         "omr_navn": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Navn p\u00e5 naturplejeomr\u00e5de",
             "num": 24,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1170,7 +1170,7 @@
         },
         "fortidsmindenr": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Kulturarvsstyrelsen entydige nr. p\u00e5 evt. fortidsminde",
             "num": 25,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1187,7 +1187,7 @@
         },
         "facilitet_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kodetal for opstillende publikumsfaciliteter. Eksempel: 3",
             "num": 26,
             "full_type": "integer",
             "typname": "int4",
@@ -1267,7 +1267,7 @@
         },
         "facilitet": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Opstillende publikumsfaciliteter i omr\u00e5det. Eksempel: Legeplads",
             "num": 27,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1284,7 +1284,7 @@
         },
         "aftale_type": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Kort gengivelse af aftale med lodsejere",
             "num": 28,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1416,7 +1416,7 @@
         },
         "projekt_type": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Typen af et projekt (F.eks. LIFE projekt, Natura2000 mm.) Eksempel: LIFE-projekt",
             "num": 34,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1433,7 +1433,7 @@
         },
         "dyrehold": {
             "type": "character varying",
-            "comment": "",
+            "comment": "art\/arter af dyr til afgr\u00e6sning m.v. Eksempel: 28 stk. kv\u00e6g og 112 stk. geder",
             "num": 35,
             "full_type": "character varying(250)",
             "typname": "varchar",
@@ -1450,7 +1450,7 @@
         },
         "antal_moder": {
             "type": "integer",
-            "comment": "",
+            "comment": "Antal moder dyr i flokken. Eksempel: 23",
             "num": 36,
             "full_type": "integer",
             "typname": "int4",
@@ -1467,7 +1467,7 @@
         },
         "chr": {
             "type": "integer",
-            "comment": "",
+            "comment": "Dyreholderens CHR nummer (Det Centrale HusdyrbrugsRegister)",
             "num": 37,
             "full_type": "integer",
             "typname": "int4",
@@ -1501,7 +1501,7 @@
         },
         "navn": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Navn p\u00e5 dyreholder. Eksempel: NaturaGr\u00e6sKlipning A\/S",
             "num": 39,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1518,7 +1518,7 @@
         },
         "telefon": {
             "type": "integer",
-            "comment": "",
+            "comment": "Telefon nr. p\u00e5 dyreholder",
             "num": 40,
             "full_type": "integer",
             "typname": "int4",
@@ -1535,7 +1535,7 @@
         },
         "mobil": {
             "type": "integer",
-            "comment": "",
+            "comment": "Mobil telefon nr p\u00e5 dyreholder",
             "num": 41,
             "full_type": "integer",
             "typname": "int4",
@@ -1552,7 +1552,7 @@
         },
         "mail": {
             "type": "character varying",
-            "comment": "",
+            "comment": "E-mail p\u00e5 dyreholder. Eksempel: dyrene@Naturagraesklipning.dk",
             "num": 42,
             "full_type": "character varying(250)",
             "typname": "varchar",
@@ -1569,7 +1569,7 @@
         },
         "ajour": {
             "type": "date",
-            "comment": "",
+            "comment": "Dato for hvorn\u00e5r kontaktinfo p\u00e5 dyreholder senest er ajourf\u00f8rt. Eksempel: 2011-06-28",
             "num": 43,
             "full_type": "date",
             "typname": "date",
@@ -1641,10 +1641,20 @@
     "children": null,
     "meta": {
         "tiled": false,
+        "formaal": "Driftdatabase m.h.t. NBL \u00a7-3 beskyttede arealer eller lokaliteter, som kommunnogle under vedligeholdende pleje.",
+        "temakode": "5106",
+        "temanavn": "Naturpleje",
+        "kle_koder": "01.05.11, 04.08.11, 04.01.11",
         "meta_desc": "",
+        "definition": "NBL \u00a7-3 beskyttede arealer eller andre lokaliteter, som kommunen har under vedligeholdende pleje. F.eks. fredede omr\u00e5der som ikke\nh\u00f8rer under \u00a7-3.",
+        "noegle_ord": "Naturdrift, \u00a73 omr\u00e5der",
+        "beskrivelse": "Oplysning om plejetype og evt. dyreholder p\u00e5 de NBL \u00a7-3 beskyttede arealer eller lokaliteter, som kommunen har under vedligeholdende pleje.",
+        "lovgrundlag": "Naturbeskyttelseslovens \u00a7 52 og bekendtg\u00f8relse nr. 551 af 22. juni 1992.",
         "single_tile": false,
+        "geometritype": "Flade",
         "hover_active": false,
         "max_features": "500",
+        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
@@ -1668,22 +1678,29 @@
         "tooltip_template": "",
         "accordion_summery": "",
         "disable_check_box": false,
+        "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
         "default_open_tools": "",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
+        "minimum_stoerrelser": "0,1 ha",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
+        "geometrisk_konsistens": "",
         "info_element_selector": "",
+        "noegleord_hovedgruppe": "Beskyttende lokaliteter",
+        "registreringsinstruks": "Hvis der er forskellige plejetyper af et \u00a73 omr\u00e5de, s\u00e5 oprettes et objekt til hver type. Der kan derfor godt\nv\u00e6re overlap mellem fladerne. I s\u00e5danne tilf\u00e6lde er det meget vigtigt at holde grundigt styr p\u00e5 hvilke\nobjekt der har de andre oplysninger. Det skal v\u00e6re det mest blivende objekt.",
+        "klassificering_opdeling": "Opdelt i plejetype, men ogs\u00e5 ejerforhold. Se 5.2.7.3 Kodelister.",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false
+        "disable_vector_feature_info": false,
+        "geometrisk_konsistens_andre": "Ofte vil det v\u00e6re fornuftigt at tage en kopi af\/genbruge geometrien af det enkelte DAI's \u00a73 omr\u00e5der. "
     }
 }
