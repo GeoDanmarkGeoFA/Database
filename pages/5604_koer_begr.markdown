@@ -18,6 +18,9 @@
     @media print {
         -webkit-print-color-adjust: exact;
     }
+    .container-lg {
+        max-width: none !important;
+    }
 </style>
 
 <h1>{{ theme }}</h1>
