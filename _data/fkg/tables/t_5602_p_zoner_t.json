@@ -773,7 +773,116 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "adr_id"
+        },
+        {
+            "name": "koordinat_east",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 38,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "koord_e"
+        },
+        {
+            "name": "koordinat_north",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 39,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "koord_n"
+        },
+        {
+            "name": "vejkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 40,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vejkode"
+        },
+        {
+            "name": "husnr",
+            "type": "character varying(4)",
+            "comment": null,
+            "_num": 41,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "husnr"
+        },
+        {
+            "name": "postnr",
+            "type": "integer",
+            "comment": null,
+            "_num": 42,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "postnr"
         }
     ],
     "comment": null,
@@ -816,6 +925,17 @@
             "referenced_table": "d_5602_p_type",
             "referenced_columns": [
                 "p_type_kode"
+            ]
+        },
+        {
+            "name": "t_5602_p_zoner_d_vejnavn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vejkode"
+            ],
+            "referenced_table": "d_vejnavn",
+            "referenced_columns": [
+                "vejkode"
             ]
         },
         {
@@ -899,6 +1019,17 @@
             "constraint": "primary",
             "columns": [
                 "versions_id"
+            ]
+        },
+        {
+            "name": "t_5602_p_zoner_t_d_basis_postnr_fk",
+            "constraint": "foreign",
+            "columns": [
+                "postnr"
+            ],
+            "referenced_table": "d_basis_postnr",
+            "referenced_columns": [
+                "postnr"
             ]
         },
         {

@@ -1,25 +1,25 @@
 {
-    "uuid": "b4d8e032-dfb1-4f9f-adb3-3d8dfd1a8152",
+    "uuid": "9576e5c5-bd48-492c-bb44-b87c21fd3133",
     "f_table_schema": "fkg",
     "f_table_name": "t_6202_landk_omr",
     "f_geometry_column": "geometri",
     "f_table_abstract": null,
-    "f_table_title": null,
-    "pkey": "gid",
+    "f_table_title": "Landskabkarakteromr\u00e5der (6202)",
+    "pkey": "objekt_id",
     "rel_type": "VIEW",
     "coord_dimension": 2,
     "type": "MULTIPOLYGON",
     "srid": 25832,
     "authentication": "Write",
-    "layergroup": "test",
-    "sort_id": 0,
+    "layergroup": "Planl\u00e6gning",
+    "sort_id": 310,
     "tags": [
         "udgivet"
     ],
     "fields": {
         "temakode": {
             "type": "integer",
-            "comment": null,
+            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen.",
             "num": 1,
             "full_type": "integer",
             "typname": "int4",
@@ -30,234 +30,13 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": null,
+            "alias": "",
             "queryable": false,
-            "sort_id": null
-        },
-        "kompleksitet_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 41,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "rumlig_afgraensning_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 38,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "cvr_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 8,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "omraade_nr": {
-            "type": "integer",
-            "comment": null,
-            "num": 20,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "off_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 16,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "skala_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 35,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "kommunekode": {
-            "type": "integer",
-            "comment": null,
-            "num": 10,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "intakthed_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 29,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "visuel_uro_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 47,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "tidsdybde_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 26,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "oprindkode": {
-            "type": "integer",
-            "comment": null,
-            "num": 12,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "struktur_kode": {
-            "type": "integer",
-            "comment": null,
-            "num": 44,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "statuskode": {
-            "type": "integer",
-            "comment": null,
-            "num": 14,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
+            "sort_id": 10
         },
         "temanavn": {
             "type": "text",
-            "comment": null,
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
             "num": 2,
             "full_type": "text",
             "typname": "text",
@@ -268,676 +47,13 @@
             "max_bytes": 1073741824,
             "reference": null,
             "restriction": null,
-            "alias": null,
+            "alias": "",
             "queryable": false,
-            "sort_id": null
-        },
-        "kompleksitet": {
-            "type": "character varying",
-            "comment": null,
-            "num": 42,
-            "full_type": "character varying(20)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 20,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 80,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "cvr_navn": {
-            "type": "character varying",
-            "comment": null,
-            "num": 9,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "bruger_id": {
-            "type": "character varying",
-            "comment": null,
-            "num": 11,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "oprindelse": {
-            "type": "character varying",
-            "comment": null,
-            "num": 13,
-            "full_type": "character varying(35)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 35,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 140,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "status": {
-            "type": "character varying",
-            "comment": null,
-            "num": 15,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "offentlig": {
-            "type": "character varying",
-            "comment": null,
-            "num": 17,
-            "full_type": "character varying(60)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 60,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 240,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "noegle": {
-            "type": "character varying",
-            "comment": null,
-            "num": 18,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "note": {
-            "type": "character varying",
-            "comment": null,
-            "num": 19,
-            "full_type": "character varying(254)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 254,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1016,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "omraade": {
-            "type": "character varying",
-            "comment": null,
-            "num": 21,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "navn_besigtig": {
-            "type": "character varying",
-            "comment": null,
-            "num": 23,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "landskabskarakter": {
-            "type": "character varying",
-            "comment": null,
-            "num": 25,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "tidsdybde": {
-            "type": "character varying",
-            "comment": null,
-            "num": 27,
-            "full_type": "character varying(20)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 20,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 80,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "tidsdybde_beskr": {
-            "type": "character varying",
-            "comment": null,
-            "num": 28,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "visuel_uro": {
-            "type": "character varying",
-            "comment": null,
-            "num": 48,
-            "full_type": "character varying(10)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 10,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 40,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "visuel_uro_beskrivelse": {
-            "type": "character varying",
-            "comment": null,
-            "num": 49,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "kystforhold": {
-            "type": "character varying",
-            "comment": null,
-            "num": 50,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "oplevelse": {
-            "type": "character varying",
-            "comment": null,
-            "num": 51,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "analysekort": {
-            "type": "character varying",
-            "comment": null,
-            "num": 52,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "link_reg_skema": {
-            "type": "character varying",
-            "comment": null,
-            "num": 53,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "link_vejledning": {
-            "type": "character varying",
-            "comment": null,
-            "num": 54,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "link": {
-            "type": "character varying",
-            "comment": null,
-            "num": 55,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "intakthed": {
-            "type": "character varying",
-            "comment": null,
-            "num": 30,
-            "full_type": "character varying(25)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 25,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 100,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "intakthed_beskr": {
-            "type": "character varying",
-            "comment": null,
-            "num": 31,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "noeglefunktion": {
-            "type": "character varying",
-            "comment": null,
-            "num": 32,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "afgr_naboomr": {
-            "type": "character varying",
-            "comment": null,
-            "num": 33,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "vejledn_afgr_naboomr": {
-            "type": "character varying",
-            "comment": null,
-            "num": 34,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "skala": {
-            "type": "character varying",
-            "comment": null,
-            "num": 36,
-            "full_type": "character varying(10)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 10,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 40,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "skala_beskrivelse": {
-            "type": "character varying",
-            "comment": null,
-            "num": 37,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "rumlig_afgraensning": {
-            "type": "character varying",
-            "comment": null,
-            "num": 39,
-            "full_type": "character varying(20)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 20,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 80,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "rumlig_beskrivelse": {
-            "type": "character varying",
-            "comment": null,
-            "num": 40,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "kompleksitet_beskrivelse": {
-            "type": "character varying",
-            "comment": null,
-            "num": 43,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "struktur": {
-            "type": "character varying",
-            "comment": null,
-            "num": 45,
-            "full_type": "character varying(20)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 20,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 80,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "struktur_beskrivelse": {
-            "type": "character varying",
-            "comment": null,
-            "num": 46,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "rev_dato": {
-            "type": "date",
-            "comment": null,
-            "num": 24,
-            "full_type": "date",
-            "typname": "date",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "dato_besigtig": {
-            "type": "date",
-            "comment": null,
-            "num": 22,
-            "full_type": "date",
-            "typname": "date",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "systid_fra": {
-            "type": "timestamp with time zone",
-            "comment": null,
-            "num": 5,
-            "full_type": "timestamp with time zone",
-            "typname": "timestamptz",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "oprettet": {
-            "type": "timestamp with time zone",
-            "comment": null,
-            "num": 7,
-            "full_type": "timestamp with time zone",
-            "typname": "timestamptz",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "systid_til": {
-            "type": "timestamp with time zone",
-            "comment": null,
-            "num": 6,
-            "full_type": "timestamp with time zone",
-            "typname": "timestamptz",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
-        },
-        "versions_id": {
-            "type": "uuid",
-            "comment": null,
-            "num": 4,
-            "full_type": "uuid",
-            "typname": "uuid",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 16,
-            "reference": null,
-            "restriction": null,
-            "alias": null,
-            "queryable": false,
-            "sort_id": null
+            "sort_id": 20
         },
         "objekt_id": {
             "type": "uuid",
-            "comment": null,
+            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.",
             "num": 3,
             "full_type": "uuid",
             "typname": "uuid",
@@ -948,14 +64,1720 @@
             "max_bytes": 16,
             "reference": null,
             "restriction": null,
-            "alias": null,
+            "alias": "",
             "queryable": false,
-            "sort_id": null
+            "sort_id": 30
+        },
+        "versions_id": {
+            "type": "uuid",
+            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet.",
+            "num": 4,
+            "full_type": "uuid",
+            "typname": "uuid",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 16,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 40
+        },
+        "systid_fra": {
+            "type": "timestamp with time zone",
+            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
+            "num": 5,
+            "full_type": "timestamp with time zone",
+            "typname": "timestamptz",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 8,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 50
+        },
+        "systid_til": {
+            "type": "timestamp with time zone",
+            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
+            "num": 6,
+            "full_type": "timestamp with time zone",
+            "typname": "timestamptz",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 8,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 60
+        },
+        "oprettet": {
+            "type": "timestamp with time zone",
+            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen.",
+            "num": 7,
+            "full_type": "timestamp with time zone",
+            "typname": "timestamptz",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 8,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 70
+        },
+        "cvr_kode": {
+            "type": "integer",
+            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet.",
+            "num": 8,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_ansvarlig_myndighed.cvr_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 10000001,
+                    "alias": "supercykelstisekretariatet"
+                },
+                {
+                    "value": 10000002,
+                    "alias": "Tommeruppernes Lokalr\u00e5d"
+                },
+                {
+                    "value": 10000003,
+                    "alias": "geoinfovejle"
+                },
+                {
+                    "value": 10000004,
+                    "alias": "sporapp"
+                },
+                {
+                    "value": 10000005,
+                    "alias": "undervisning"
+                },
+                {
+                    "value": 10000006,
+                    "alias": "GeoInfoSonderborg"
+                },
+                {
+                    "value": 10000007,
+                    "alias": "Kyst Til Kyst"
+                },
+                {
+                    "value": 10000008,
+                    "alias": "Naturpark Lilleb\u00e6lt"
+                },
+                {
+                    "value": 10000009,
+                    "alias": "itu_anastassia"
+                },
+                {
+                    "value": 10000010,
+                    "alias": "CT_marcoberends"
+                },
+                {
+                    "value": 10000011,
+                    "alias": "Havmilj\u00f8vogterne"
+                },
+                {
+                    "value": 10000012,
+                    "alias": "Konge\u00e5sti"
+                },
+                {
+                    "value": 10294819,
+                    "alias": "Konkurrence- og Forbrugerstyrelsen"
+                },
+                {
+                    "value": 11259979,
+                    "alias": "Frederiksberg Kommune"
+                },
+                {
+                    "value": 11715311,
+                    "alias": "Lyngby-Taarb\u00e6k Kommune"
+                },
+                {
+                    "value": 11931316,
+                    "alias": "Ish\u00f8j Kommune"
+                },
+                {
+                    "value": 12881517,
+                    "alias": "Drag\u00f8r Kommune"
+                },
+                {
+                    "value": 15524286,
+                    "alias": "geoinfo"
+                },
+                {
+                    "value": 16287180,
+                    "alias": "Forsvarsministeriets Ejendomsstyrelse"
+                },
+                {
+                    "value": 17156616,
+                    "alias": "Dansk e-Mobilitet"
+                },
+                {
+                    "value": 18282690,
+                    "alias": "Destination Fyn"
+                },
+                {
+                    "value": 18957981,
+                    "alias": "Ringsted Kommune"
+                },
+                {
+                    "value": 19438414,
+                    "alias": "Gentofte Kommune"
+                },
+                {
+                    "value": 19501817,
+                    "alias": "H\u00f8je-Taastrup Kommune"
+                },
+                {
+                    "value": 19583910,
+                    "alias": "Vallensb\u00e6k Kommune"
+                },
+                {
+                    "value": 20014784,
+                    "alias": "Geopartner Landinspekt\u00f8rer A\/S"
+                },
+                {
+                    "value": 20310413,
+                    "alias": "T\u00e5rnby Kommune"
+                },
+                {
+                    "value": 23717382,
+                    "alias": "H\u00e6rvejen"
+                },
+                {
+                    "value": 23795515,
+                    "alias": "Sams\u00f8 Kommune"
+                },
+                {
+                    "value": 25118359,
+                    "alias": "Norlys"
+                },
+                {
+                    "value": 25775635,
+                    "alias": "Christians\u00f8"
+                },
+                {
+                    "value": 25798376,
+                    "alias": "Milj\u00f8styrelsen"
+                },
+                {
+                    "value": 26696348,
+                    "alias": "Bornholms Regionskommune"
+                },
+                {
+                    "value": 27782515,
+                    "alias": "Idr\u00e6ttens Analyseinstitut"
+                },
+                {
+                    "value": 28297947,
+                    "alias": "EWII"
+                },
+                {
+                    "value": 28326858,
+                    "alias": "Nordsj\u00e6llands Brandv\u00e6sen"
+                },
+                {
+                    "value": 28856075,
+                    "alias": "\u00c6r\u00f8 Kommune"
+                },
+                {
+                    "value": 29188327,
+                    "alias": "Fures\u00f8 Kommune"
+                },
+                {
+                    "value": 29188335,
+                    "alias": "Fredensborg Kommune"
+                },
+                {
+                    "value": 29188378,
+                    "alias": "Rudersdal Kommune"
+                },
+                {
+                    "value": 29188386,
+                    "alias": "Egedal Kommune"
+                },
+                {
+                    "value": 29188416,
+                    "alias": "Halsn\u00e6s Kommune"
+                },
+                {
+                    "value": 29188440,
+                    "alias": "Gribskov Kommune"
+                },
+                {
+                    "value": 29188459,
+                    "alias": "Odsherred Kommune"
+                },
+                {
+                    "value": 29188475,
+                    "alias": "Faxe Kommune"
+                },
+                {
+                    "value": 29188505,
+                    "alias": "Slagelse Kommune"
+                },
+                {
+                    "value": 29188548,
+                    "alias": "Lejre Kommune"
+                },
+                {
+                    "value": 29188572,
+                    "alias": "Lolland Kommune"
+                },
+                {
+                    "value": 29188599,
+                    "alias": "Guldborgsund Kommune"
+                },
+                {
+                    "value": 29188645,
+                    "alias": "Faaborg-Midtfyn Kommune"
+                },
+                {
+                    "value": 29188947,
+                    "alias": "Nordfyns Kommune"
+                },
+                {
+                    "value": 29188955,
+                    "alias": "Langeland Kommune"
+                },
+                {
+                    "value": 29189129,
+                    "alias": "Frederikssund Kommune"
+                },
+                {
+                    "value": 29189366,
+                    "alias": "Hiller\u00f8d Kommune"
+                },
+                {
+                    "value": 29189374,
+                    "alias": "K\u00f8ge Kommune"
+                },
+                {
+                    "value": 29189382,
+                    "alias": "Hj\u00f8rring Kommune"
+                },
+                {
+                    "value": 29189404,
+                    "alias": "Roskilde Kommune"
+                },
+                {
+                    "value": 29189420,
+                    "alias": "Aalborg Kommune"
+                },
+                {
+                    "value": 29189439,
+                    "alias": "Jammerbugt Kommune"
+                },
+                {
+                    "value": 29189447,
+                    "alias": "Holb\u00e6k Kommune"
+                },
+                {
+                    "value": 29189455,
+                    "alias": "Mariagerfjord Kommune"
+                },
+                {
+                    "value": 29189463,
+                    "alias": "Rebild Kommune"
+                },
+                {
+                    "value": 29189471,
+                    "alias": "Vesthimmerlands Kommune"
+                },
+                {
+                    "value": 29189498,
+                    "alias": "Frederikshavn Kommune"
+                },
+                {
+                    "value": 29189501,
+                    "alias": "Br\u00f8nderslev Kommune"
+                },
+                {
+                    "value": 29189560,
+                    "alias": "Thisted Kommune"
+                },
+                {
+                    "value": 29189579,
+                    "alias": "Skive Kommune"
+                },
+                {
+                    "value": 29189587,
+                    "alias": "Hedensted Kommune"
+                },
+                {
+                    "value": 29189595,
+                    "alias": "Kalundborg Kommune"
+                },
+                {
+                    "value": 29189609,
+                    "alias": "Ringk\u00f8bing-Skjern Kommune"
+                },
+                {
+                    "value": 29189617,
+                    "alias": "Ikast-Brande Kommune"
+                },
+                {
+                    "value": 29189625,
+                    "alias": "N\u00e6stved Kommune"
+                },
+                {
+                    "value": 29189633,
+                    "alias": "Skanderborg Kommune"
+                },
+                {
+                    "value": 29189641,
+                    "alias": "Silkeborg Kommune"
+                },
+                {
+                    "value": 29189668,
+                    "alias": "Randers Kommune"
+                },
+                {
+                    "value": 29189676,
+                    "alias": "Vordingborg Kommune"
+                },
+                {
+                    "value": 29189684,
+                    "alias": "Middelfart Kommune"
+                },
+                {
+                    "value": 29189692,
+                    "alias": "Assens Kommune"
+                },
+                {
+                    "value": 29189706,
+                    "alias": "Kerteminde Kommune"
+                },
+                {
+                    "value": 29189714,
+                    "alias": "Favrskov Kommune"
+                },
+                {
+                    "value": 29189722,
+                    "alias": "Nyborg Kommune"
+                },
+                {
+                    "value": 29189730,
+                    "alias": "Svendborg Kommune"
+                },
+                {
+                    "value": 29189757,
+                    "alias": "Haderslev Kommune"
+                },
+                {
+                    "value": 29189765,
+                    "alias": "Billund Kommune"
+                },
+                {
+                    "value": 29189773,
+                    "alias": "S\u00f8nderborg Kommune"
+                },
+                {
+                    "value": 29189781,
+                    "alias": "T\u00f8nder Kommune"
+                },
+                {
+                    "value": 29189803,
+                    "alias": "Esbjerg Kommune"
+                },
+                {
+                    "value": 29189811,
+                    "alias": "Varde Kommune"
+                },
+                {
+                    "value": 29189838,
+                    "alias": "Vejen Kommune"
+                },
+                {
+                    "value": 29189846,
+                    "alias": "Viborg Kommune"
+                },
+                {
+                    "value": 29189854,
+                    "alias": "Aabenraa Kommune"
+                },
+                {
+                    "value": 29189889,
+                    "alias": "Horsens Kommune"
+                },
+                {
+                    "value": 29189897,
+                    "alias": "Kolding Kommune"
+                },
+                {
+                    "value": 29189900,
+                    "alias": "Vejle Kommune"
+                },
+                {
+                    "value": 29189919,
+                    "alias": "Herning Kommune"
+                },
+                {
+                    "value": 29189927,
+                    "alias": "Holstebro Kommune"
+                },
+                {
+                    "value": 29189935,
+                    "alias": "Lemvig Kommune"
+                },
+                {
+                    "value": 29189951,
+                    "alias": "Struer Kommune"
+                },
+                {
+                    "value": 29189978,
+                    "alias": "Syddjurs Kommune"
+                },
+                {
+                    "value": 29189986,
+                    "alias": "Norddjurs Kommune"
+                },
+                {
+                    "value": 29189994,
+                    "alias": "Sor\u00f8 Kommune"
+                },
+                {
+                    "value": 29208654,
+                    "alias": "Stevns Kommune"
+                },
+                {
+                    "value": 31210917,
+                    "alias": "Fan\u00f8 Kommune"
+                },
+                {
+                    "value": 31351901,
+                    "alias": "Spor"
+                },
+                {
+                    "value": 32264328,
+                    "alias": "Odder Kommune"
+                },
+                {
+                    "value": 32468349,
+                    "alias": "CLEVER A\/S"
+                },
+                {
+                    "value": 33157274,
+                    "alias": "Naturstyrelsen"
+                },
+                {
+                    "value": 33284114,
+                    "alias": "Styrelsen for Dataforsyning og Effektivisering"
+                },
+                {
+                    "value": 34009570,
+                    "alias": "Beredskab & Sikkerhed"
+                },
+                {
+                    "value": 34206228,
+                    "alias": "Erhvervshus Fyn P\/S"
+                },
+                {
+                    "value": 34897034,
+                    "alias": "Destination Sj\u00e6lland A\/S"
+                },
+                {
+                    "value": 35147268,
+                    "alias": "Nationalpark Mols Bjerge"
+                },
+                {
+                    "value": 35209115,
+                    "alias": "Odense Kommune"
+                },
+                {
+                    "value": 35379193,
+                    "alias": "MapCentia"
+                },
+                {
+                    "value": 35432795,
+                    "alias": "Sydvestjysk Brandv\u00e6sen"
+                },
+                {
+                    "value": 35434399,
+                    "alias": "Midt- og Sydsj\u00e6llands Brand & Redning"
+                },
+                {
+                    "value": 35438718,
+                    "alias": "Brand & Redning S\u00f8nderjylland"
+                },
+                {
+                    "value": 35439862,
+                    "alias": "Syd\u00f8stjyllands Brandv\u00e6sen"
+                },
+                {
+                    "value": 35440178,
+                    "alias": "Hovedstadens Beredskab"
+                },
+                {
+                    "value": 36146702,
+                    "alias": "Dansk Cykelturisme"
+                },
+                {
+                    "value": 36471271,
+                    "alias": "DKNT"
+                },
+                {
+                    "value": 36920483,
+                    "alias": "ParksnTrails"
+                },
+                {
+                    "value": 36986719,
+                    "alias": "Geopark Odsherred"
+                },
+                {
+                    "value": 37137502,
+                    "alias": "Midtjysk Brand & Redning"
+                },
+                {
+                    "value": 37164712,
+                    "alias": "\u00d8stjyllands Brandv\u00e6sen"
+                },
+                {
+                    "value": 37176478,
+                    "alias": "SkjoldungernesLand"
+                },
+                {
+                    "value": 37197580,
+                    "alias": "Vestsj\u00e6llands Brandv\u00e6sen"
+                },
+                {
+                    "value": 37207969,
+                    "alias": "Brand & Redning Midtvest"
+                },
+                {
+                    "value": 37242985,
+                    "alias": "TrekantBrand"
+                },
+                {
+                    "value": 37265209,
+                    "alias": "Beredskab Fyn"
+                },
+                {
+                    "value": 39170418,
+                    "alias": "OK A.M.B.A."
+                },
+                {
+                    "value": 40220321,
+                    "alias": "Herslev Bylaug"
+                },
+                {
+                    "value": 40632301,
+                    "alias": "Beredskab 4K"
+                },
+                {
+                    "value": 40657339,
+                    "alias": "Spirii"
+                },
+                {
+                    "value": 41333014,
+                    "alias": "Mors\u00f8 Kommune"
+                },
+                {
+                    "value": 41575727,
+                    "alias": "SAMSIK"
+                },
+                {
+                    "value": 41668385,
+                    "alias": "Monta ApS"
+                },
+                {
+                    "value": 42309443,
+                    "alias": "qLER ApS"
+                },
+                {
+                    "value": 42885746,
+                    "alias": "E.ON"
+                },
+                {
+                    "value": 44023911,
+                    "alias": "Greve Kommune"
+                },
+                {
+                    "value": 45973328,
+                    "alias": "L\u00e6s\u00f8 Kommune"
+                },
+                {
+                    "value": 55133018,
+                    "alias": "Aarhus Kommune"
+                },
+                {
+                    "value": 55606617,
+                    "alias": "Hvidovre Kommune"
+                },
+                {
+                    "value": 56230718,
+                    "alias": "Friluftsr\u00e5det"
+                },
+                {
+                    "value": 58271713,
+                    "alias": "Ballerup Kommune"
+                },
+                {
+                    "value": 60183112,
+                    "alias": "Aller\u00f8d Kommune"
+                },
+                {
+                    "value": 62547413,
+                    "alias": "kl"
+                },
+                {
+                    "value": 62761113,
+                    "alias": "Gladsaxe Kommune"
+                },
+                {
+                    "value": 63640719,
+                    "alias": "Herlev Kommune"
+                },
+                {
+                    "value": 64502018,
+                    "alias": "Helsing\u00f8r Kommune"
+                },
+                {
+                    "value": 64942212,
+                    "alias": "K\u00f8benhavns Kommune"
+                },
+                {
+                    "value": 65113015,
+                    "alias": "Br\u00f8ndby Kommune"
+                },
+                {
+                    "value": 65120119,
+                    "alias": "Glostrup Kommune"
+                },
+                {
+                    "value": 65307316,
+                    "alias": "R\u00f8dovre Kommune"
+                },
+                {
+                    "value": 66137112,
+                    "alias": "Albertslund Kommune"
+                },
+                {
+                    "value": 68534917,
+                    "alias": "Solr\u00f8d Kommune"
+                },
+                {
+                    "value": 69116418,
+                    "alias": "Fredericia Kommune"
+                },
+                {
+                    "value": 70960516,
+                    "alias": "H\u00f8rsholm Kommune"
+                },
+                {
+                    "value": 99999999,
+                    "alias": "Nan"
+                },
+                {
+                    "value": 100000113,
+                    "alias": "Helsing\u00f8r Kommunes Beredskab"
+                }
+            ],
+            "alias": "",
+            "queryable": true,
+            "sort_id": 80
+        },
+        "cvr_navn": {
+            "type": "character varying",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "num": 9,
+            "full_type": "character varying(128)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 128,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 512,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 90
+        },
+        "kommunekode": {
+            "type": "integer",
+            "comment": "3-cifret kommunekode udfyldes via cvr_kode.",
+            "num": 10,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 100
+        },
+        "bruger_id": {
+            "type": "character varying",
+            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data.",
+            "num": 11,
+            "full_type": "character varying(128)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 128,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 512,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 110
+        },
+        "oprindkode": {
+            "type": "integer",
+            "comment": "Feltet benyttes til at angive en oprindelse via en kode.",
+            "num": 12,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_oprindelse.oprindkode"
+            ],
+            "restriction": [
+                {
+                    "value": 0,
+                    "alias": "Ikke udfyldt"
+                },
+                {
+                    "value": 1,
+                    "alias": "Ortofoto"
+                },
+                {
+                    "value": 2,
+                    "alias": "Matrikelkort"
+                },
+                {
+                    "value": 3,
+                    "alias": "Opm\u00e5ling"
+                },
+                {
+                    "value": 4,
+                    "alias": "FOT \/ Tekniske kort"
+                },
+                {
+                    "value": 5,
+                    "alias": "Modelberegning"
+                },
+                {
+                    "value": 6,
+                    "alias": "Tegning"
+                },
+                {
+                    "value": 7,
+                    "alias": "Felt-\/markbes\u00f8g"
+                },
+                {
+                    "value": 8,
+                    "alias": "Borgeranmeldelse"
+                },
+                {
+                    "value": 9,
+                    "alias": "Luftfoto (historiske 1944-1993)"
+                },
+                {
+                    "value": 10,
+                    "alias": "Skr\u00e5foto"
+                },
+                {
+                    "value": 11,
+                    "alias": "Andre foto"
+                },
+                {
+                    "value": 12,
+                    "alias": "3D"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 120
+        },
+        "oprindelse": {
+            "type": "character varying",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "num": 13,
+            "full_type": "character varying(35)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 35,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 140,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 130
+        },
+        "statuskode": {
+            "type": "integer",
+            "comment": "Feltet benyttes til at angive en status via en kode.",
+            "num": 14,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_status.statuskode"
+            ],
+            "restriction": [
+                {
+                    "value": 0,
+                    "alias": "Ukendt"
+                },
+                {
+                    "value": 1,
+                    "alias": "Kladde"
+                },
+                {
+                    "value": 2,
+                    "alias": "Forslag"
+                },
+                {
+                    "value": 3,
+                    "alias": "G\u00e6ldende \/ Vedtaget"
+                },
+                {
+                    "value": 4,
+                    "alias": "Ikke g\u00e6ldende \/ Aflyst"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 140
+        },
+        "status": {
+            "type": "character varying",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "num": 15,
+            "full_type": "character varying(30)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 30,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 120,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 150
+        },
+        "off_kode": {
+            "type": "integer",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode.",
+            "num": 16,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_offentlig.off_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Synlig for alle"
+                },
+                {
+                    "value": 2,
+                    "alias": "Synlig for den ansvarlige myndighed"
+                },
+                {
+                    "value": 3,
+                    "alias": "Synlig for alle myndigheder, men ikke offentligheden"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 160
+        },
+        "offentlig": {
+            "type": "character varying",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet.",
+            "num": 17,
+            "full_type": "character varying(60)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 60,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 240,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 170
+        },
+        "noegle": {
+            "type": "character varying",
+            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
+            "num": 18,
+            "full_type": "character varying(128)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 128,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 512,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 180
+        },
+        "note": {
+            "type": "character varying",
+            "comment": "Frit bem\u00e6rkningsfelt.",
+            "num": 19,
+            "full_type": "character varying(254)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 254,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1016,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 185
+        },
+        "omraade_nr": {
+            "type": "integer",
+            "comment": "Unikt omr\u00e5denr",
+            "num": 20,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_omraade.omraade_nr"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Test"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 189
+        },
+        "omraade": {
+            "type": "character varying",
+            "comment": "Unikt omr\u00e5denavn",
+            "num": 21,
+            "full_type": "character varying(128)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 128,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 512,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 190
+        },
+        "dato_besigtig": {
+            "type": "date",
+            "comment": "Data for besigtigelse",
+            "num": 22,
+            "full_type": "date",
+            "typname": "date",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 191
+        },
+        "navn_besigtig": {
+            "type": "character varying",
+            "comment": "Initialer\/navne p\u00e5 sagsbehandlere der har besigtiget  omr\u00e5det ",
+            "num": 23,
+            "full_type": "character varying(128)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 128,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 512,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 192
+        },
+        "rev_dato": {
+            "type": "date",
+            "comment": "Senest revideret den",
+            "num": 24,
+            "full_type": "date",
+            "typname": "date",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 193
+        },
+        "landskabskarakter": {
+            "type": "character varying",
+            "comment": "Beskrivelse af landskabskarakteren ",
+            "num": 25,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 194
+        },
+        "tidsdybde_kode": {
+            "type": "integer",
+            "comment": "Kode for landskanskarakterens tidsdybde (kulturhistorisk) ",
+            "num": 26,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6202_tidsdybde.tidsdybde_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ca. 0-50 \u00e5r"
+                },
+                {
+                    "value": 2,
+                    "alias": "Ca. 0-200 \u00e5r"
+                },
+                {
+                    "value": 3,
+                    "alias": "> 200 \u00e5r"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 195
+        },
+        "tidsdybde": {
+            "type": "character varying",
+            "comment": "Landskanskarakterens tidsdybde (kulturhistorisk) ",
+            "num": 27,
+            "full_type": "character varying(20)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 20,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 80,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 196
+        },
+        "tidsdybde_beskr": {
+            "type": "character varying",
+            "comment": "Beskrivelse af landskanskarakterens tidsdybde  (kulturhistorisk) ",
+            "num": 28,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 197
+        },
+        "intakthed_kode": {
+            "type": "integer",
+            "comment": "Kode for landskabskarakterens intakthed i f.t. den  kulturhistoriske oprindelse ",
+            "num": 29,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_tilstand.tilstand_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "D\u00e5rlig"
+                },
+                {
+                    "value": 2,
+                    "alias": "Middel"
+                },
+                {
+                    "value": 3,
+                    "alias": "God"
+                },
+                {
+                    "value": 8,
+                    "alias": "Andet"
+                },
+                {
+                    "value": 9,
+                    "alias": "Ukendt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 198
+        },
+        "intakthed": {
+            "type": "character varying",
+            "comment": "Landskabskarakterens intakthed i f.t. den kulturhistoriske  oprindelse ",
+            "num": 30,
+            "full_type": "character varying(25)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 25,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 100,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 199
+        },
+        "intakthed_beskr": {
+            "type": "character varying",
+            "comment": "Beskrivelse af landskabskarakterens intakthed i f.t. den  kulturhistoriske oprindelse ",
+            "num": 31,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 200
+        },
+        "noeglefunktion": {
+            "type": "character varying",
+            "comment": "N\u00f8gle karakteristika \/ funktioner til opretholdelse af  karakteren",
+            "num": 32,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 201
+        },
+        "afgr_naboomr": {
+            "type": "character varying",
+            "comment": "Beskriv afgr\u00e6nsning til naboomr\u00e5der med henvisning. Evt.  med henvisning til omr\u00e5denr. ",
+            "num": 33,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 202
+        },
+        "skala_kode": {
+            "type": "integer",
+            "comment": "Kode til skalaens samlede st\u00f8rrelsesforholdene i omr\u00e5det ",
+            "num": 34,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6202_skala.skala_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Stor"
+                },
+                {
+                    "value": 2,
+                    "alias": "Middel"
+                },
+                {
+                    "value": 3,
+                    "alias": "Lille"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 203
+        },
+        "skala": {
+            "type": "character varying",
+            "comment": "Skalaen angiver det samlede indtryk af  st\u00f8rrelsesforholdene i omr\u00e5det ",
+            "num": 35,
+            "full_type": "character varying(10)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 10,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 40,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 204
+        },
+        "skala_beskrivelse": {
+            "type": "character varying",
+            "comment": "Beskrivelse af skalaen. Angiver det samlede indtryk af  st\u00f8rrelsesforholdene i omr\u00e5det. Beskriv dimensionerne af  de karaktergivende landskabselementer og de rummelige  forhold",
+            "num": 36,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 205
+        },
+        "rumlig_afgraensning_kode": {
+            "type": "integer",
+            "comment": "Kode for landskabets \u00e5benhed ",
+            "num": 37,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6202_rumlig_afgraensning.rumlig_afgraensning_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "\u00c5bent"
+                },
+                {
+                    "value": 2,
+                    "alias": "Transparent"
+                },
+                {
+                    "value": 3,
+                    "alias": "Lukket"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 206
+        },
+        "rumlig_afgraensning": {
+            "type": "character varying",
+            "comment": "Landskabets \u00e5benhed ",
+            "num": 38,
+            "full_type": "character varying(20)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 20,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 80,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 207
+        },
+        "rumlig_beskrivelse": {
+            "type": "character varying",
+            "comment": "Beskriv landskabets \u00e5benhed.",
+            "num": 39,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 208
+        },
+        "kompleksitet_kode": {
+            "type": "integer",
+            "comment": "Kode for landskabets sammensathed",
+            "num": 40,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6202_kompleksitet.kompleksitet_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Meget sammensat"
+                },
+                {
+                    "value": 2,
+                    "alias": "Sammensat"
+                },
+                {
+                    "value": 3,
+                    "alias": "Enkelt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 209
+        },
+        "kompleksitet": {
+            "type": "character varying",
+            "comment": "Landskabets sammensathed",
+            "num": 41,
+            "full_type": "character varying(20)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 20,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 80,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 210
+        },
+        "kompleksitet_beskrivelse": {
+            "type": "character varying",
+            "comment": "Beskriv landskabets sammensathed ",
+            "num": 42,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 211
+        },
+        "struktur_kode": {
+            "type": "integer",
+            "comment": "Kode for landskabets struktur",
+            "num": 43,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6202_struktur.struktur_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Dominerende"
+                },
+                {
+                    "value": 2,
+                    "alias": "Middel"
+                },
+                {
+                    "value": 3,
+                    "alias": "Svagt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 212
+        },
+        "struktur": {
+            "type": "character varying",
+            "comment": "Landskabets struktur",
+            "num": 44,
+            "full_type": "character varying(20)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 20,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 80,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 213
+        },
+        "struktur_beskrivelse": {
+            "type": "character varying",
+            "comment": "Beskriv de strukturgivende landskabselementer",
+            "num": 45,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 214
+        },
+        "visuel_uro_kode": {
+            "type": "integer",
+            "comment": "Kode for visuel uro i landskabet ",
+            "num": 46,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6202_visuel_uro.visuel_uro_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Uroligt"
+                },
+                {
+                    "value": 2,
+                    "alias": "Middel"
+                },
+                {
+                    "value": 3,
+                    "alias": "Roligt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 215
+        },
+        "visuel_uro": {
+            "type": "character varying",
+            "comment": "Visuel uro i landskabet",
+            "num": 47,
+            "full_type": "character varying(10)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 10,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 40,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 216
+        },
+        "visuel_uro_beskrivelse": {
+            "type": "character varying",
+            "comment": "Beskriv genstande i landskabet der er i bev\u00e6gelse (biler,  vindm\u00f8ller m.v.) ",
+            "num": 48,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 217
+        },
+        "kystforhold": {
+            "type": "character varying",
+            "comment": "Anvendes kun hvor det er n\u00f8dvendigt. Beskrivelse af  kystforland\/Karakteristika for modst\u00e5ende kyster\/Visuel  sammenh\u00e6ng p\u00e5 langs af kystlinjen ",
+            "num": 49,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 218
+        },
+        "oplevelse": {
+            "type": "character varying",
+            "comment": "Beskrivelse af oplevelsesrige delomr\u00e5der og  enkeltelementer  Fx Kulturhistoriske helheder, s\u00e6rligt samspil  Natur\/Kultur, markante udsigter, naturarealer osv. (se  analysekort) ",
+            "num": 50,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 219
+        },
+        "link1": {
+            "type": "character varying",
+            "comment": "URL-link",
+            "num": 51,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 250
+        },
+        "link2": {
+            "type": "character varying",
+            "comment": "URL-link",
+            "num": 52,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 260
+        },
+        "link": {
+            "type": "character varying",
+            "comment": "URL-link",
+            "num": 53,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 290
         },
         "geometri": {
             "type": "geometry",
-            "comment": null,
-            "num": 56,
+            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier.",
+            "num": 54,
             "full_type": "geometry(MultiPolygon,25832)",
             "typname": "geometry",
             "is_array": false,
@@ -967,11 +1789,75 @@
             "restriction": null,
             "geom_type": "MultiPolygon",
             "srid": "25832",
-            "alias": null,
+            "alias": "",
             "queryable": false,
-            "sort_id": null
+            "sort_id": 300
         }
     },
     "children": null,
-    "meta": null
+    "meta": {
+        "tiled": false,
+        "formaal": "Landskabskarakteranalysen benyttes til planl\u00e6gning og administration i det \u00e5bne land. (danner grundlag for s\u00e6rlige landskabsomr\u00e5der, \nudpeget i kommuneplanen). \n",
+        "temakode": "6202",
+        "temanavn": "Landskabkarakteromraader",
+        "kle_koder": "01.02.03, 01.02.15",
+        "meta_desc": "<p>Omr\u00e5der der i landskabsanalyse er blevet bestemt\/vurderet til en bestemt type landskabkarakter. (Karakteromr\u00e5der). Landskabskarakteranalysen benyttes til planl\u00e6gning og administration i det \u00e5bne land. (danner grundlag for s\u00e6rlige landskabsomr\u00e5der, \nudpeget i kommuneplanen). <\/p>\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence<\/a>\nfinder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
+        "definition": "Omr\u00e5der der i landskabsanalyse er blevet bestemt\/vurderet til en bestemt type landskabkarakter. (Karakteromr\u00e5der)",
+        "noegle_ord": "Landskabskarakter, karakteromr\u00e5der, Skala, Rumlig afgr\u00e6nsning, kompleksitet, struktur, visuelle forhold, oplevelser, tidsdybde,  n\u00f8glefunktion ",
+        "beskrivelse": "Landskabsanalyse efter den danske udgave af landskabskaraktermetoden.",
+        "lovgrundlag": "Landskabskaraktermetoden er anbefalet af Milj\u00f8ministeriet",
+        "single_tile": false,
+        "geometritype": "Flade",
+        "hover_active": false,
+        "max_features": "500",
+        "sql_conflict": "",
+        "vector_style": "",
+        "default_match": "any",
+        "filter_config": "",
+        "info_function": "",
+        "info_template": "",
+        "load_strategy": "s",
+        "referenced_by": "",
+        "cache_utf_grid": false,
+        "point_to_layer": "",
+        "use_clustering": false,
+        "vidi_sub_group": "",
+        "buffer_conflict": "",
+        "filter_required": false,
+        "reload_callback": "",
+        "reload_interval": "",
+        "select_function": "",
+        "vector_max_zoom": "",
+        "vector_min_zoom": "",
+        "vidi_layer_type": "t,v",
+        "filter_immutable": false,
+        "tooltip_template": "",
+        "accordion_summery": "",
+        "disable_check_box": false,
+        "entydige_objekter": "",
+        "tiles_service_uri": "",
+        "default_layer_type": "t",
+        "default_open_tools": "[\"filters\"]",
+        "predefined_filters": "",
+        "show_table_on_side": false,
+        "info_template_hover": "",
+        "minimum_stoerrelser": "0,1 ha",
+        "sql_conflict_header": "",
+        "vidi_layer_editable": true,
+        "zoom_on_table_click": false,
+        "filter_html_template": "",
+        "line_highlight_style": "",
+        "tiles_selected_style": "",
+        "geometrisk_konsistens": "Snap mellem fladerne, s\u00e5 der ikke forekommer huller eller overlap. ",
+        "info_element_selector": "",
+        "noegleord_hovedgruppe": "",
+        "registreringsinstruks": "Der henvises til:\nhttps:\/\/sgavmst.dk\/natur-og-jagt\/naturen-i-danmark\/landskab\/landskabskaraktermetoden",
+        "klassificering_opdeling": "Inddeling af karakteromr\u00e5der efter metoden der er benyttet i landskabsanalysen.\n",
+        "long_conflict_meta_desc": "",
+        "accordion_summery_prefix": "",
+        "short_conflict_meta_desc": "",
+        "max_zoom_level_table_click": "17",
+        "disable_vector_feature_info": false,
+        "geometrisk_konsistens_andre": "Landskabskaraktervurderinger (6203) "
+    }
 }

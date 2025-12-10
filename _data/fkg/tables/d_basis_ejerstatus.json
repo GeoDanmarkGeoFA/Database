@@ -4,7 +4,7 @@
         {
             "name": "ejerstatus_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for ejeransvar. Eksempel: 50",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "ejerstatus",
             "type": "character varying(50)",
-            "comment": null,
+            "comment": "Ejeransvar. Eksempel: Beliggenhedskommune",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

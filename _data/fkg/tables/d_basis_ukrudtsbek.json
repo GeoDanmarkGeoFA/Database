@@ -4,7 +4,7 @@
         {
             "name": "ukrudtsbek_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for ukrudtsbek\u00e6mpelsesmetode tilladt. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "ukrudtsbek",
             "type": "character varying(20)",
-            "comment": null,
+            "comment": "Ukrudtsbek\u00e6mpelsesmetode, tilladt. Eksempel: Mekanisk",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

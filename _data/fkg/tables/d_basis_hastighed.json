@@ -4,7 +4,7 @@
         {
             "name": "hastighed_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for max fart\/hastighed, eller kode for den hastighed, man vil have trafikanten ned p\u00e5. Eksempel: 94",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "hastighed",
             "type": "character varying(6)",
-            "comment": null,
+            "comment": "Max fart\/hastighed (forbudstavle) eller den hastighed, man gerne vil have trafikanten ned p\u00e5. Eksempel: Meget lav",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

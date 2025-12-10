@@ -45,7 +45,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gyldig_fra"
         },
         {
             "name": "gyldig_til",
@@ -66,7 +66,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gyldig_til"
         },
         {
             "name": "affalddistrikt_nr",
@@ -89,7 +89,7 @@
             "_checks": [
                 "affalddistrikt_nr >= 1 AND affalddistrikt_nr <= 99999"
             ],
-            "_short_name": null
+            "_short_name": "aff_dis_nr"
         },
         {
             "name": "affalddistrikt_navn",
@@ -110,7 +110,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "aff_dis_na"
         },
         {
             "name": "affaldstype_kode",
@@ -133,7 +133,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "aff_type_k"
         },
         {
             "name": "afh_frekvens",
@@ -154,7 +154,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "afh_frekv"
         },
         {
             "name": "afh_dag",
@@ -175,19 +175,19 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "afh_dag"
         },
         {
-            "name": "renovatoer_cvr",
-            "type": "integer",
+            "name": "cvr_opslag",
+            "type": "character varying(8)",
             "comment": null,
             "_num": 9,
-            "_typname": "int4",
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_character_maximum_length": 8,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 32,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -195,10 +195,8 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "renovatoer_cvr >= 10000000 AND renovatoer_cvr <= 99999999"
-            ],
-            "_short_name": null
+            "_checks": null,
+            "_short_name": "cvr_opslag"
         },
         {
             "name": "link",
@@ -219,7 +217,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
@@ -244,7 +242,7 @@
             "_checks": null,
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,
@@ -300,11 +298,6 @@
             "columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_5400_affalds_dis_renovatoer_cvr_ck",
-            "constraint": "check",
-            "check": "renovatoer_cvr >= 10000000 AND renovatoer_cvr <= 99999999"
         }
     ],
     "links": {

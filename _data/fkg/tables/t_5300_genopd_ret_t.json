@@ -107,7 +107,9 @@
             "is_nullable": false,
             "default_value": null,
             "_index_method": null,
-            "_checks": null,
+            "_checks": [
+                "genoptaget >= '1800-01-01'::date AND genoptaget <= '2999-12-31'::date"
+            ],
             "_short_name": "genoptaget"
         },
         {
@@ -219,6 +221,11 @@
         }
     ],
     "constraints": [
+        {
+            "name": "check_name",
+            "constraint": "check",
+            "check": "genoptaget >= '1800-01-01'::date AND genoptaget <= '2999-12-31'::date"
+        },
         {
             "name": "t_5300_genopd_ret_generel_fk",
             "constraint": "foreign",

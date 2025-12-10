@@ -4,7 +4,7 @@
         {
             "name": "vandv_nr",
             "type": "character varying(25)",
-            "comment": null,
+            "comment": "Vandv\u00e6rkets nr i fagsystem. Eksempel: 611-20-0022-00",
             "_num": 1,
             "_typname": "varchar",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "vandv",
             "type": "character varying(128)",
-            "comment": null,
+            "comment": "Vandv\u00e6rkets navn. Eksempel: Vinterslevsvandv\u00e6rk I\/S",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

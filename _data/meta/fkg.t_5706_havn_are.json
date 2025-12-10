@@ -12,7 +12,7 @@
     "srid": 25832,
     "authentication": "Write",
     "layergroup": "Administration",
-    "sort_id": -1000,
+    "sort_id": 1430,
     "tags": [
         "udgivet"
     ],
@@ -152,488 +152,16 @@
             ],
             "restriction": [
                 {
-                    "value": 66137112,
-                    "alias": "Albertslund Kommune"
-                },
-                {
-                    "value": 60183112,
-                    "alias": "Aller\u00f8d Kommune"
-                },
-                {
-                    "value": 29189692,
-                    "alias": "Assens Kommune"
-                },
-                {
-                    "value": 58271713,
-                    "alias": "Ballerup Kommune"
-                },
-                {
-                    "value": 29189765,
-                    "alias": "Billund Kommune"
-                },
-                {
-                    "value": 26696348,
-                    "alias": "Bornholms Regionskommune"
-                },
-                {
-                    "value": 65113015,
-                    "alias": "Br\u00f8ndby Kommune"
-                },
-                {
-                    "value": 29189501,
-                    "alias": "Br\u00f8nderslev Kommune"
-                },
-                {
-                    "value": 25775635,
-                    "alias": "Christians\u00f8"
-                },
-                {
-                    "value": 12881517,
-                    "alias": "Drag\u00f8r Kommune"
-                },
-                {
-                    "value": 29188386,
-                    "alias": "Egedal Kommune"
-                },
-                {
-                    "value": 29189803,
-                    "alias": "Esbjerg Kommune"
-                },
-                {
-                    "value": 31210917,
-                    "alias": "Fan\u00f8 Kommune"
-                },
-                {
-                    "value": 29189714,
-                    "alias": "Favrskov Kommune"
-                },
-                {
-                    "value": 29188475,
-                    "alias": "Faxe Kommune"
-                },
-                {
-                    "value": 29188335,
-                    "alias": "Fredensborg Kommune"
-                },
-                {
-                    "value": 69116418,
-                    "alias": "Fredericia Kommune"
-                },
-                {
-                    "value": 11259979,
-                    "alias": "Frederiksberg Kommune"
-                },
-                {
-                    "value": 29189498,
-                    "alias": "Frederikshavn Kommune"
-                },
-                {
-                    "value": 29189129,
-                    "alias": "Frederikssund Kommune"
-                },
-                {
-                    "value": 29188327,
-                    "alias": "Fures\u00f8 Kommune"
-                },
-                {
-                    "value": 29188645,
-                    "alias": "Faaborg-Midtfyn Kommune"
-                },
-                {
-                    "value": 19438414,
-                    "alias": "Gentofte Kommune"
-                },
-                {
-                    "value": 62761113,
-                    "alias": "Gladsaxe Kommune"
-                },
-                {
-                    "value": 65120119,
-                    "alias": "Glostrup Kommune"
-                },
-                {
-                    "value": 44023911,
-                    "alias": "Greve Kommune"
-                },
-                {
-                    "value": 29188440,
-                    "alias": "Gribskov Kommune"
-                },
-                {
-                    "value": 29188599,
-                    "alias": "Guldborgsund Kommune"
-                },
-                {
-                    "value": 29189757,
-                    "alias": "Haderslev Kommune"
-                },
-                {
-                    "value": 29188416,
-                    "alias": "Halsn\u00e6s Kommune"
-                },
-                {
-                    "value": 29189587,
-                    "alias": "Hedensted Kommune"
-                },
-                {
-                    "value": 64502018,
-                    "alias": "Helsing\u00f8r Kommune"
-                },
-                {
-                    "value": 63640719,
-                    "alias": "Herlev Kommune"
-                },
-                {
-                    "value": 29189919,
-                    "alias": "Herning Kommune"
-                },
-                {
-                    "value": 29189366,
-                    "alias": "Hiller\u00f8d Kommune"
-                },
-                {
-                    "value": 29189382,
-                    "alias": "Hj\u00f8rring Kommune"
-                },
-                {
-                    "value": 29189447,
-                    "alias": "Holb\u00e6k Kommune"
-                },
-                {
-                    "value": 29189927,
-                    "alias": "Holstebro Kommune"
-                },
-                {
-                    "value": 29189889,
-                    "alias": "Horsens Kommune"
-                },
-                {
-                    "value": 55606617,
-                    "alias": "Hvidovre Kommune"
-                },
-                {
-                    "value": 19501817,
-                    "alias": "H\u00f8je-Taastrup Kommune"
-                },
-                {
-                    "value": 70960516,
-                    "alias": "H\u00f8rsholm Kommune"
-                },
-                {
-                    "value": 29189617,
-                    "alias": "Ikast-Brande Kommune"
-                },
-                {
-                    "value": 11931316,
-                    "alias": "Ish\u00f8j Kommune"
-                },
-                {
-                    "value": 29189439,
-                    "alias": "Jammerbugt Kommune"
-                },
-                {
-                    "value": 29189595,
-                    "alias": "Kalundborg Kommune"
-                },
-                {
-                    "value": 29189706,
-                    "alias": "Kerteminde Kommune"
-                },
-                {
-                    "value": 29189897,
-                    "alias": "Kolding Kommune"
-                },
-                {
-                    "value": 64942212,
-                    "alias": "K\u00f8benhavns Kommune"
-                },
-                {
-                    "value": 29189374,
-                    "alias": "K\u00f8ge Kommune"
-                },
-                {
-                    "value": 29188955,
-                    "alias": "Langeland Kommune"
-                },
-                {
-                    "value": 29188548,
-                    "alias": "Lejre Kommune"
-                },
-                {
-                    "value": 29189935,
-                    "alias": "Lemvig Kommune"
-                },
-                {
-                    "value": 29188572,
-                    "alias": "Lolland Kommune"
-                },
-                {
-                    "value": 11715311,
-                    "alias": "Lyngby-Taarb\u00e6k Kommune"
-                },
-                {
-                    "value": 45973328,
-                    "alias": "L\u00e6s\u00f8 Kommune"
-                },
-                {
-                    "value": 29189455,
-                    "alias": "Mariagerfjord Kommune"
-                },
-                {
-                    "value": 29189684,
-                    "alias": "Middelfart Kommune"
-                },
-                {
-                    "value": 41333014,
-                    "alias": "Mors\u00f8 Kommune"
-                },
-                {
-                    "value": 29189986,
-                    "alias": "Norddjurs Kommune"
-                },
-                {
-                    "value": 29188947,
-                    "alias": "Nordfyns Kommune"
-                },
-                {
-                    "value": 29189722,
-                    "alias": "Nyborg Kommune"
-                },
-                {
-                    "value": 29189625,
-                    "alias": "N\u00e6stved Kommune"
-                },
-                {
-                    "value": 32264328,
-                    "alias": "Odder Kommune"
-                },
-                {
-                    "value": 35209115,
-                    "alias": "Odense Kommune"
-                },
-                {
-                    "value": 29188459,
-                    "alias": "Odsherred Kommune"
-                },
-                {
-                    "value": 29189668,
-                    "alias": "Randers Kommune"
-                },
-                {
-                    "value": 29189463,
-                    "alias": "Rebild Kommune"
-                },
-                {
-                    "value": 29189609,
-                    "alias": "Ringk\u00f8bing-Skjern Kommune"
-                },
-                {
-                    "value": 18957981,
-                    "alias": "Ringsted Kommune"
-                },
-                {
-                    "value": 29189404,
-                    "alias": "Roskilde Kommune"
-                },
-                {
-                    "value": 29188378,
-                    "alias": "Rudersdal Kommune"
-                },
-                {
-                    "value": 65307316,
-                    "alias": "R\u00f8dovre Kommune"
-                },
-                {
-                    "value": 23795515,
-                    "alias": "Sams\u00f8 Kommune"
-                },
-                {
-                    "value": 29189641,
-                    "alias": "Silkeborg Kommune"
-                },
-                {
-                    "value": 29189633,
-                    "alias": "Skanderborg Kommune"
-                },
-                {
-                    "value": 29189579,
-                    "alias": "Skive Kommune"
-                },
-                {
-                    "value": 29188505,
-                    "alias": "Slagelse Kommune"
-                },
-                {
-                    "value": 68534917,
-                    "alias": "Solr\u00f8d Kommune"
-                },
-                {
-                    "value": 29189994,
-                    "alias": "Sor\u00f8 Kommune"
-                },
-                {
-                    "value": 29208654,
-                    "alias": "Stevns Kommune"
-                },
-                {
-                    "value": 29189951,
-                    "alias": "Struer Kommune"
-                },
-                {
-                    "value": 29189730,
-                    "alias": "Svendborg Kommune"
-                },
-                {
-                    "value": 29189978,
-                    "alias": "Syddjurs Kommune"
-                },
-                {
-                    "value": 29189773,
-                    "alias": "S\u00f8nderborg Kommune"
-                },
-                {
-                    "value": 29189560,
-                    "alias": "Thisted Kommune"
-                },
-                {
-                    "value": 29189781,
-                    "alias": "T\u00f8nder Kommune"
-                },
-                {
-                    "value": 20310413,
-                    "alias": "T\u00e5rnby Kommune"
-                },
-                {
-                    "value": 19583910,
-                    "alias": "Vallensb\u00e6k Kommune"
-                },
-                {
-                    "value": 29189811,
-                    "alias": "Varde Kommune"
-                },
-                {
-                    "value": 29189838,
-                    "alias": "Vejen Kommune"
-                },
-                {
-                    "value": 29189900,
-                    "alias": "Vejle Kommune"
-                },
-                {
-                    "value": 29189471,
-                    "alias": "Vesthimmerlands Kommune"
-                },
-                {
-                    "value": 29189846,
-                    "alias": "Viborg Kommune"
-                },
-                {
-                    "value": 29189676,
-                    "alias": "Vordingborg Kommune"
-                },
-                {
-                    "value": 28856075,
-                    "alias": "\u00c6r\u00f8 Kommune"
-                },
-                {
-                    "value": 29189854,
-                    "alias": "Aabenraa Kommune"
-                },
-                {
-                    "value": 29189420,
-                    "alias": "Aalborg Kommune"
-                },
-                {
-                    "value": 55133018,
-                    "alias": "Aarhus Kommune"
-                },
-                {
-                    "value": 99999999,
-                    "alias": "Nan"
-                },
-                {
-                    "value": 33157274,
-                    "alias": "Naturstyrelsen"
-                },
-                {
-                    "value": 25798376,
-                    "alias": "Milj\u00f8styrelsen"
-                },
-                {
-                    "value": 33284114,
-                    "alias": "Styrelsen for Dataforsyning og Effektivisering"
-                },
-                {
-                    "value": 32468349,
-                    "alias": "CLEVER A\/S"
-                },
-                {
-                    "value": 34206228,
-                    "alias": "Erhvervshus Fyn P\/S"
-                },
-                {
-                    "value": 17156616,
-                    "alias": "Dansk e-Mobilitet"
-                },
-                {
-                    "value": 16287180,
-                    "alias": "Forsvarsministeriets Ejendomsstyrelse"
-                },
-                {
-                    "value": 36471271,
-                    "alias": "DKNT"
-                },
-                {
-                    "value": 31351901,
-                    "alias": "Spor"
-                },
-                {
-                    "value": 62547413,
-                    "alias": "kl"
-                },
-                {
-                    "value": 36146702,
-                    "alias": "Dansk Cykelturisme"
-                },
-                {
                     "value": 10000001,
                     "alias": "supercykelstisekretariatet"
-                },
-                {
-                    "value": 35379193,
-                    "alias": "MapCentia"
-                },
-                {
-                    "value": 42885746,
-                    "alias": "E.ON"
                 },
                 {
                     "value": 10000002,
                     "alias": "Tommeruppernes Lokalr\u00e5d"
                 },
                 {
-                    "value": 15524286,
-                    "alias": "geoinfo"
-                },
-                {
                     "value": 10000003,
                     "alias": "geoinfovejle"
-                },
-                {
-                    "value": 34897034,
-                    "alias": "Destination Sj\u00e6lland A\/S"
-                },
-                {
-                    "value": 35147268,
-                    "alias": "Nationalpark Mols Bjerge"
-                },
-                {
-                    "value": 41668385,
-                    "alias": "Monta ApS"
-                },
-                {
-                    "value": 20014784,
-                    "alias": "Geopartner Landinspekt\u00f8rer A\/S"
                 },
                 {
                     "value": 10000004,
@@ -644,36 +172,8 @@
                     "alias": "undervisning"
                 },
                 {
-                    "value": 23717382,
-                    "alias": "H\u00e6rvejen"
-                },
-                {
-                    "value": 40220321,
-                    "alias": "Herslev Bylaug"
-                },
-                {
-                    "value": 25118359,
-                    "alias": "Norlys"
-                },
-                {
-                    "value": 39170418,
-                    "alias": "OK A.M.B.A."
-                },
-                {
                     "value": 10000006,
                     "alias": "GeoInfoSonderborg"
-                },
-                {
-                    "value": 10294819,
-                    "alias": "Konkurrence- og Forbrugerstyrelsen"
-                },
-                {
-                    "value": 28297947,
-                    "alias": "EWII"
-                },
-                {
-                    "value": 42309443,
-                    "alias": "qLER ApS"
                 },
                 {
                     "value": 10000007,
@@ -688,28 +188,8 @@
                     "alias": "itu_anastassia"
                 },
                 {
-                    "value": 18282690,
-                    "alias": "Destination Fyn"
-                },
-                {
-                    "value": 40657339,
-                    "alias": "Spirii"
-                },
-                {
                     "value": 10000010,
                     "alias": "CT_marcoberends"
-                },
-                {
-                    "value": 36986719,
-                    "alias": "Geopark Odsherred"
-                },
-                {
-                    "value": 27782515,
-                    "alias": "Idr\u00e6ttens Analyseinstitut"
-                },
-                {
-                    "value": 56230718,
-                    "alias": "Friluftsr\u00e5det"
                 },
                 {
                     "value": 10000011,
@@ -718,6 +198,598 @@
                 {
                     "value": 10000012,
                     "alias": "Konge\u00e5sti"
+                },
+                {
+                    "value": 10294819,
+                    "alias": "Konkurrence- og Forbrugerstyrelsen"
+                },
+                {
+                    "value": 11259979,
+                    "alias": "Frederiksberg Kommune"
+                },
+                {
+                    "value": 11715311,
+                    "alias": "Lyngby-Taarb\u00e6k Kommune"
+                },
+                {
+                    "value": 11931316,
+                    "alias": "Ish\u00f8j Kommune"
+                },
+                {
+                    "value": 12881517,
+                    "alias": "Drag\u00f8r Kommune"
+                },
+                {
+                    "value": 15524286,
+                    "alias": "geoinfo"
+                },
+                {
+                    "value": 16287180,
+                    "alias": "Forsvarsministeriets Ejendomsstyrelse"
+                },
+                {
+                    "value": 17156616,
+                    "alias": "Dansk e-Mobilitet"
+                },
+                {
+                    "value": 18282690,
+                    "alias": "Destination Fyn"
+                },
+                {
+                    "value": 18957981,
+                    "alias": "Ringsted Kommune"
+                },
+                {
+                    "value": 19438414,
+                    "alias": "Gentofte Kommune"
+                },
+                {
+                    "value": 19501817,
+                    "alias": "H\u00f8je-Taastrup Kommune"
+                },
+                {
+                    "value": 19583910,
+                    "alias": "Vallensb\u00e6k Kommune"
+                },
+                {
+                    "value": 20014784,
+                    "alias": "Geopartner Landinspekt\u00f8rer A\/S"
+                },
+                {
+                    "value": 20310413,
+                    "alias": "T\u00e5rnby Kommune"
+                },
+                {
+                    "value": 23717382,
+                    "alias": "H\u00e6rvejen"
+                },
+                {
+                    "value": 23795515,
+                    "alias": "Sams\u00f8 Kommune"
+                },
+                {
+                    "value": 25118359,
+                    "alias": "Norlys"
+                },
+                {
+                    "value": 25775635,
+                    "alias": "Christians\u00f8"
+                },
+                {
+                    "value": 25798376,
+                    "alias": "Milj\u00f8styrelsen"
+                },
+                {
+                    "value": 26696348,
+                    "alias": "Bornholms Regionskommune"
+                },
+                {
+                    "value": 27782515,
+                    "alias": "Idr\u00e6ttens Analyseinstitut"
+                },
+                {
+                    "value": 28297947,
+                    "alias": "EWII"
+                },
+                {
+                    "value": 28326858,
+                    "alias": "Nordsj\u00e6llands Brandv\u00e6sen"
+                },
+                {
+                    "value": 28856075,
+                    "alias": "\u00c6r\u00f8 Kommune"
+                },
+                {
+                    "value": 29188327,
+                    "alias": "Fures\u00f8 Kommune"
+                },
+                {
+                    "value": 29188335,
+                    "alias": "Fredensborg Kommune"
+                },
+                {
+                    "value": 29188378,
+                    "alias": "Rudersdal Kommune"
+                },
+                {
+                    "value": 29188386,
+                    "alias": "Egedal Kommune"
+                },
+                {
+                    "value": 29188416,
+                    "alias": "Halsn\u00e6s Kommune"
+                },
+                {
+                    "value": 29188440,
+                    "alias": "Gribskov Kommune"
+                },
+                {
+                    "value": 29188459,
+                    "alias": "Odsherred Kommune"
+                },
+                {
+                    "value": 29188475,
+                    "alias": "Faxe Kommune"
+                },
+                {
+                    "value": 29188505,
+                    "alias": "Slagelse Kommune"
+                },
+                {
+                    "value": 29188548,
+                    "alias": "Lejre Kommune"
+                },
+                {
+                    "value": 29188572,
+                    "alias": "Lolland Kommune"
+                },
+                {
+                    "value": 29188599,
+                    "alias": "Guldborgsund Kommune"
+                },
+                {
+                    "value": 29188645,
+                    "alias": "Faaborg-Midtfyn Kommune"
+                },
+                {
+                    "value": 29188947,
+                    "alias": "Nordfyns Kommune"
+                },
+                {
+                    "value": 29188955,
+                    "alias": "Langeland Kommune"
+                },
+                {
+                    "value": 29189129,
+                    "alias": "Frederikssund Kommune"
+                },
+                {
+                    "value": 29189366,
+                    "alias": "Hiller\u00f8d Kommune"
+                },
+                {
+                    "value": 29189374,
+                    "alias": "K\u00f8ge Kommune"
+                },
+                {
+                    "value": 29189382,
+                    "alias": "Hj\u00f8rring Kommune"
+                },
+                {
+                    "value": 29189404,
+                    "alias": "Roskilde Kommune"
+                },
+                {
+                    "value": 29189420,
+                    "alias": "Aalborg Kommune"
+                },
+                {
+                    "value": 29189439,
+                    "alias": "Jammerbugt Kommune"
+                },
+                {
+                    "value": 29189447,
+                    "alias": "Holb\u00e6k Kommune"
+                },
+                {
+                    "value": 29189455,
+                    "alias": "Mariagerfjord Kommune"
+                },
+                {
+                    "value": 29189463,
+                    "alias": "Rebild Kommune"
+                },
+                {
+                    "value": 29189471,
+                    "alias": "Vesthimmerlands Kommune"
+                },
+                {
+                    "value": 29189498,
+                    "alias": "Frederikshavn Kommune"
+                },
+                {
+                    "value": 29189501,
+                    "alias": "Br\u00f8nderslev Kommune"
+                },
+                {
+                    "value": 29189560,
+                    "alias": "Thisted Kommune"
+                },
+                {
+                    "value": 29189579,
+                    "alias": "Skive Kommune"
+                },
+                {
+                    "value": 29189587,
+                    "alias": "Hedensted Kommune"
+                },
+                {
+                    "value": 29189595,
+                    "alias": "Kalundborg Kommune"
+                },
+                {
+                    "value": 29189609,
+                    "alias": "Ringk\u00f8bing-Skjern Kommune"
+                },
+                {
+                    "value": 29189617,
+                    "alias": "Ikast-Brande Kommune"
+                },
+                {
+                    "value": 29189625,
+                    "alias": "N\u00e6stved Kommune"
+                },
+                {
+                    "value": 29189633,
+                    "alias": "Skanderborg Kommune"
+                },
+                {
+                    "value": 29189641,
+                    "alias": "Silkeborg Kommune"
+                },
+                {
+                    "value": 29189668,
+                    "alias": "Randers Kommune"
+                },
+                {
+                    "value": 29189676,
+                    "alias": "Vordingborg Kommune"
+                },
+                {
+                    "value": 29189684,
+                    "alias": "Middelfart Kommune"
+                },
+                {
+                    "value": 29189692,
+                    "alias": "Assens Kommune"
+                },
+                {
+                    "value": 29189706,
+                    "alias": "Kerteminde Kommune"
+                },
+                {
+                    "value": 29189714,
+                    "alias": "Favrskov Kommune"
+                },
+                {
+                    "value": 29189722,
+                    "alias": "Nyborg Kommune"
+                },
+                {
+                    "value": 29189730,
+                    "alias": "Svendborg Kommune"
+                },
+                {
+                    "value": 29189757,
+                    "alias": "Haderslev Kommune"
+                },
+                {
+                    "value": 29189765,
+                    "alias": "Billund Kommune"
+                },
+                {
+                    "value": 29189773,
+                    "alias": "S\u00f8nderborg Kommune"
+                },
+                {
+                    "value": 29189781,
+                    "alias": "T\u00f8nder Kommune"
+                },
+                {
+                    "value": 29189803,
+                    "alias": "Esbjerg Kommune"
+                },
+                {
+                    "value": 29189811,
+                    "alias": "Varde Kommune"
+                },
+                {
+                    "value": 29189838,
+                    "alias": "Vejen Kommune"
+                },
+                {
+                    "value": 29189846,
+                    "alias": "Viborg Kommune"
+                },
+                {
+                    "value": 29189854,
+                    "alias": "Aabenraa Kommune"
+                },
+                {
+                    "value": 29189889,
+                    "alias": "Horsens Kommune"
+                },
+                {
+                    "value": 29189897,
+                    "alias": "Kolding Kommune"
+                },
+                {
+                    "value": 29189900,
+                    "alias": "Vejle Kommune"
+                },
+                {
+                    "value": 29189919,
+                    "alias": "Herning Kommune"
+                },
+                {
+                    "value": 29189927,
+                    "alias": "Holstebro Kommune"
+                },
+                {
+                    "value": 29189935,
+                    "alias": "Lemvig Kommune"
+                },
+                {
+                    "value": 29189951,
+                    "alias": "Struer Kommune"
+                },
+                {
+                    "value": 29189978,
+                    "alias": "Syddjurs Kommune"
+                },
+                {
+                    "value": 29189986,
+                    "alias": "Norddjurs Kommune"
+                },
+                {
+                    "value": 29189994,
+                    "alias": "Sor\u00f8 Kommune"
+                },
+                {
+                    "value": 29208654,
+                    "alias": "Stevns Kommune"
+                },
+                {
+                    "value": 31210917,
+                    "alias": "Fan\u00f8 Kommune"
+                },
+                {
+                    "value": 31351901,
+                    "alias": "Spor"
+                },
+                {
+                    "value": 32264328,
+                    "alias": "Odder Kommune"
+                },
+                {
+                    "value": 32468349,
+                    "alias": "CLEVER A\/S"
+                },
+                {
+                    "value": 33157274,
+                    "alias": "Naturstyrelsen"
+                },
+                {
+                    "value": 33284114,
+                    "alias": "Styrelsen for Dataforsyning og Effektivisering"
+                },
+                {
+                    "value": 34009570,
+                    "alias": "Beredskab & Sikkerhed"
+                },
+                {
+                    "value": 34206228,
+                    "alias": "Erhvervshus Fyn P\/S"
+                },
+                {
+                    "value": 34897034,
+                    "alias": "Destination Sj\u00e6lland A\/S"
+                },
+                {
+                    "value": 35147268,
+                    "alias": "Nationalpark Mols Bjerge"
+                },
+                {
+                    "value": 35209115,
+                    "alias": "Odense Kommune"
+                },
+                {
+                    "value": 35379193,
+                    "alias": "MapCentia"
+                },
+                {
+                    "value": 35432795,
+                    "alias": "Sydvestjysk Brandv\u00e6sen"
+                },
+                {
+                    "value": 35434399,
+                    "alias": "Midt- og Sydsj\u00e6llands Brand & Redning"
+                },
+                {
+                    "value": 35438718,
+                    "alias": "Brand & Redning S\u00f8nderjylland"
+                },
+                {
+                    "value": 35439862,
+                    "alias": "Syd\u00f8stjyllands Brandv\u00e6sen"
+                },
+                {
+                    "value": 35440178,
+                    "alias": "Hovedstadens Beredskab"
+                },
+                {
+                    "value": 36146702,
+                    "alias": "Dansk Cykelturisme"
+                },
+                {
+                    "value": 36471271,
+                    "alias": "DKNT"
+                },
+                {
+                    "value": 36920483,
+                    "alias": "ParksnTrails"
+                },
+                {
+                    "value": 36986719,
+                    "alias": "Geopark Odsherred"
+                },
+                {
+                    "value": 37137502,
+                    "alias": "Midtjysk Brand & Redning"
+                },
+                {
+                    "value": 37164712,
+                    "alias": "\u00d8stjyllands Brandv\u00e6sen"
+                },
+                {
+                    "value": 37176478,
+                    "alias": "SkjoldungernesLand"
+                },
+                {
+                    "value": 37197580,
+                    "alias": "Vestsj\u00e6llands Brandv\u00e6sen"
+                },
+                {
+                    "value": 37207969,
+                    "alias": "Brand & Redning Midtvest"
+                },
+                {
+                    "value": 37242985,
+                    "alias": "TrekantBrand"
+                },
+                {
+                    "value": 37265209,
+                    "alias": "Beredskab Fyn"
+                },
+                {
+                    "value": 39170418,
+                    "alias": "OK A.M.B.A."
+                },
+                {
+                    "value": 40220321,
+                    "alias": "Herslev Bylaug"
+                },
+                {
+                    "value": 40632301,
+                    "alias": "Beredskab 4K"
+                },
+                {
+                    "value": 40657339,
+                    "alias": "Spirii"
+                },
+                {
+                    "value": 41333014,
+                    "alias": "Mors\u00f8 Kommune"
+                },
+                {
+                    "value": 41575727,
+                    "alias": "SAMSIK"
+                },
+                {
+                    "value": 41668385,
+                    "alias": "Monta ApS"
+                },
+                {
+                    "value": 42309443,
+                    "alias": "qLER ApS"
+                },
+                {
+                    "value": 42885746,
+                    "alias": "E.ON"
+                },
+                {
+                    "value": 44023911,
+                    "alias": "Greve Kommune"
+                },
+                {
+                    "value": 45973328,
+                    "alias": "L\u00e6s\u00f8 Kommune"
+                },
+                {
+                    "value": 55133018,
+                    "alias": "Aarhus Kommune"
+                },
+                {
+                    "value": 55606617,
+                    "alias": "Hvidovre Kommune"
+                },
+                {
+                    "value": 56230718,
+                    "alias": "Friluftsr\u00e5det"
+                },
+                {
+                    "value": 58271713,
+                    "alias": "Ballerup Kommune"
+                },
+                {
+                    "value": 60183112,
+                    "alias": "Aller\u00f8d Kommune"
+                },
+                {
+                    "value": 62547413,
+                    "alias": "kl"
+                },
+                {
+                    "value": 62761113,
+                    "alias": "Gladsaxe Kommune"
+                },
+                {
+                    "value": 63640719,
+                    "alias": "Herlev Kommune"
+                },
+                {
+                    "value": 64502018,
+                    "alias": "Helsing\u00f8r Kommune"
+                },
+                {
+                    "value": 64942212,
+                    "alias": "K\u00f8benhavns Kommune"
+                },
+                {
+                    "value": 65113015,
+                    "alias": "Br\u00f8ndby Kommune"
+                },
+                {
+                    "value": 65120119,
+                    "alias": "Glostrup Kommune"
+                },
+                {
+                    "value": 65307316,
+                    "alias": "R\u00f8dovre Kommune"
+                },
+                {
+                    "value": 66137112,
+                    "alias": "Albertslund Kommune"
+                },
+                {
+                    "value": 68534917,
+                    "alias": "Solr\u00f8d Kommune"
+                },
+                {
+                    "value": 69116418,
+                    "alias": "Fredericia Kommune"
+                },
+                {
+                    "value": 70960516,
+                    "alias": "H\u00f8rsholm Kommune"
+                },
+                {
+                    "value": 99999999,
+                    "alias": "Nan"
+                },
+                {
+                    "value": 100000113,
+                    "alias": "Helsing\u00f8r Kommunes Beredskab"
                 }
             ],
             "alias": "",
@@ -1006,7 +1078,7 @@
         },
         "havn_nr": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for Havnens distriktsnr.",
             "num": 20,
             "full_type": "integer",
             "typname": "int4",
@@ -1023,7 +1095,7 @@
         },
         "havn_navn": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Havneareal navn\/nr",
             "num": 21,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1040,7 +1112,7 @@
         },
         "havne_type_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for havnetype efter anvendelse. Eksempel: 1",
             "num": 22,
             "full_type": "integer",
             "typname": "int4",
@@ -1080,7 +1152,7 @@
         },
         "havne_type": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Havnetype efter anvendelse. Eksempel: Erhvervshavn",
             "num": 23,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -1097,7 +1169,7 @@
         },
         "ejer_admin": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Havnens ejer eller administrator. Eksempel: Herning Kommune",
             "num": 24,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1169,10 +1241,20 @@
     "children": null,
     "meta": {
         "tiled": false,
-        "meta_desc": "",
+        "formaal": "Oplyse sagsbehandler og borger via selvbetjeningsl\u00f8sninger, om hvem der administrerer et givent havneareal. Til brug for h\u00f8ringer i forbindelse med planforslag mv.",
+        "temakode": "5706",
+        "temanavn": "Havneareal",
+        "kle_koder": "08.03.00, 08.03.04, 08.03.25",
+        "meta_desc": "<p>\nLaget viser havnearealerne i kommunerne. Havnearealerne er de administrative arealer, best\u00e5ende af en r\u00e6kke matrikelnumre og evt. vejlitra, som udg\u00f8r en havn. Der findes \nforskellige typer af havnearealer; erhvervshavne, lystb\u00e5dehavne og kombination heraf.  <\/p>\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence \n  <\/a> \n  finder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
+        "definition": "Havnearealer i kommunen",
+        "noegle_ord": "Administrative enheder, Havnev\u00e6sen",
+        "beskrivelse": "Havnearealerne er de administrative arealer, best\u00e5ende af en r\u00e6kke matrikelnumre og evt. vejlitra, som udg\u00f8r en havn. Der findes forskellige typer af havnearealer; erhvervshavne, lystb\u00e5dehavne og kombination heraf. ",
+        "lovgrundlag": "",
         "single_tile": false,
+        "geometritype": "Flade",
         "hover_active": false,
         "max_features": "500",
+        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
@@ -1185,6 +1267,7 @@
         "use_clustering": false,
         "vidi_sub_group": "",
         "buffer_conflict": "",
+        "filter_required": false,
         "reload_callback": "",
         "reload_interval": "",
         "select_function": "",
@@ -1195,22 +1278,29 @@
         "tooltip_template": "",
         "accordion_summery": "",
         "disable_check_box": false,
+        "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
-        "default_open_tools": "",
+        "default_open_tools": "[\"filters\"]",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
+        "minimum_stoerrelser": "0,1 ha",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
+        "geometrisk_konsistens": "Snap mellem fladerne, s\u00e5 der ikke forekommer huller eller overlap.",
         "info_element_selector": "",
+        "noegleord_hovedgruppe": "Transportnet",
+        "registreringsinstruks": "Ofte forel\u00e6gger arealerne kun p\u00e5 papirkort med h\u00e5ndtegnet streger eller\/og som registrering p\u00e5 hver enkelt adresse eller via vejlister. Afgr\u00e6nsningerne b\u00f8r snappes til matrikelgeometrien i videst muligt omfang eller evt. ved kopi af matrikelgeometrien, som s\u00e5 samles til en flade i hvert omr\u00e5de. ",
+        "klassificering_opdeling": "Opdeles i nummer\/navn for hvert omr\u00e5de.",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false
+        "disable_vector_feature_info": false,
+        "geometrisk_konsistens_andre": "Matrikellodder\/jordstykker eller vejmidter samt evt. andre distrikter fra FKG. "
     }
 }

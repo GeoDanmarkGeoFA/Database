@@ -4,7 +4,7 @@
         {
             "name": "statuskode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for g\u00e6ldende status. Eksempel: 3",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "status",
             "type": "character varying(30)",
-            "comment": null,
+            "comment": "G\u00e6ldende status. Eksempel: G\u00e6ldende \/ Vedtaget",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

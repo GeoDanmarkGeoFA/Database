@@ -45,7 +45,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gs_navn"
         },
         {
             "name": "gs_type_kode",
@@ -68,19 +68,19 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gs_type_k"
         },
         {
             "name": "p_nr",
-            "type": "integer",
+            "type": "character varying(10)",
             "comment": null,
             "_num": 4,
-            "_typname": "int4",
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
+            "_character_maximum_length": 10,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 40,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -88,10 +88,8 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "p_nr >= 1 AND p_nr <= 99999"
-            ],
-            "_short_name": null
+            "_checks": null,
+            "_short_name": "p_nr"
         },
         {
             "name": "vejkode",
@@ -114,7 +112,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "vejkode"
         },
         {
             "name": "cvf_vejkode",
@@ -135,7 +133,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "cvf_vejkode"
         },
         {
             "name": "husnr",
@@ -156,7 +154,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "husnr"
         },
         {
             "name": "postnr",
@@ -179,13 +177,55 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "postnr"
+        },
+        {
+            "name": "adr_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 9,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adr_id"
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 10,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "sagsnr"
         },
         {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 9,
+            "_num": 11,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -200,13 +240,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
             "type": "geometry(MultiPoint,25832)",
             "comment": null,
-            "_num": 10,
+            "_num": 12,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -225,28 +265,7 @@
             "_checks": null,
             "_geom_type": "MultiPoint",
             "_srid": "25832",
-            "_short_name": null
-        },
-        {
-            "name": "adr_id",
-            "type": "character varying(128)",
-            "comment": null,
-            "_num": 11,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 128,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 512,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,
@@ -269,11 +288,6 @@
         }
     ],
     "constraints": [
-        {
-            "name": "p_nr_ck",
-            "constraint": "check",
-            "check": "p_nr >= 1 AND p_nr <= 99999"
-        },
         {
             "name": "t_5401_genbr_st_d_5401_gs_type",
             "constraint": "foreign",

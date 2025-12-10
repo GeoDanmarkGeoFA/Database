@@ -4,7 +4,7 @@
         {
             "name": "postnr",
             "type": "integer",
-            "comment": null,
+            "comment": "Postnr. Eksempel: 8600",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "postnr_by",
             "type": "character varying(128)",
-            "comment": null,
+            "comment": "By der refererer til Postnr. Eksempel: Silkeborg",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

@@ -12,14 +12,14 @@
     "srid": 25832,
     "authentication": "Write",
     "layergroup": "Park og Gr\u00f8nne Omr\u00e5der",
-    "sort_id": 20,
+    "sort_id": 405,
     "tags": [
         "udgivet"
     ],
     "fields": {
         "temakode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen.",
             "num": 1,
             "full_type": "integer",
             "typname": "int4",
@@ -36,7 +36,7 @@
         },
         "temanavn": {
             "type": "text",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
             "num": 2,
             "full_type": "text",
             "typname": "text",
@@ -53,7 +53,7 @@
         },
         "objekt_id": {
             "type": "uuid",
-            "comment": "",
+            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.",
             "num": 3,
             "full_type": "uuid",
             "typname": "uuid",
@@ -70,7 +70,7 @@
         },
         "versions_id": {
             "type": "uuid",
-            "comment": "",
+            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet.",
             "num": 4,
             "full_type": "uuid",
             "typname": "uuid",
@@ -87,7 +87,7 @@
         },
         "systid_fra": {
             "type": "timestamp with time zone",
-            "comment": "",
+            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
             "num": 5,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -104,7 +104,7 @@
         },
         "systid_til": {
             "type": "timestamp with time zone",
-            "comment": "",
+            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
             "num": 6,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -121,7 +121,7 @@
         },
         "oprettet": {
             "type": "timestamp with time zone",
-            "comment": "",
+            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen.",
             "num": 7,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -138,7 +138,7 @@
         },
         "cvr_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet.",
             "num": 8,
             "full_type": "integer",
             "typname": "int4",
@@ -152,488 +152,16 @@
             ],
             "restriction": [
                 {
-                    "value": 66137112,
-                    "alias": "Albertslund Kommune"
-                },
-                {
-                    "value": 60183112,
-                    "alias": "Aller\u00f8d Kommune"
-                },
-                {
-                    "value": 29189692,
-                    "alias": "Assens Kommune"
-                },
-                {
-                    "value": 58271713,
-                    "alias": "Ballerup Kommune"
-                },
-                {
-                    "value": 29189765,
-                    "alias": "Billund Kommune"
-                },
-                {
-                    "value": 26696348,
-                    "alias": "Bornholms Regionskommune"
-                },
-                {
-                    "value": 65113015,
-                    "alias": "Br\u00f8ndby Kommune"
-                },
-                {
-                    "value": 29189501,
-                    "alias": "Br\u00f8nderslev Kommune"
-                },
-                {
-                    "value": 25775635,
-                    "alias": "Christians\u00f8"
-                },
-                {
-                    "value": 12881517,
-                    "alias": "Drag\u00f8r Kommune"
-                },
-                {
-                    "value": 29188386,
-                    "alias": "Egedal Kommune"
-                },
-                {
-                    "value": 29189803,
-                    "alias": "Esbjerg Kommune"
-                },
-                {
-                    "value": 31210917,
-                    "alias": "Fan\u00f8 Kommune"
-                },
-                {
-                    "value": 29189714,
-                    "alias": "Favrskov Kommune"
-                },
-                {
-                    "value": 29188475,
-                    "alias": "Faxe Kommune"
-                },
-                {
-                    "value": 29188335,
-                    "alias": "Fredensborg Kommune"
-                },
-                {
-                    "value": 69116418,
-                    "alias": "Fredericia Kommune"
-                },
-                {
-                    "value": 11259979,
-                    "alias": "Frederiksberg Kommune"
-                },
-                {
-                    "value": 29189498,
-                    "alias": "Frederikshavn Kommune"
-                },
-                {
-                    "value": 29189129,
-                    "alias": "Frederikssund Kommune"
-                },
-                {
-                    "value": 29188327,
-                    "alias": "Fures\u00f8 Kommune"
-                },
-                {
-                    "value": 29188645,
-                    "alias": "Faaborg-Midtfyn Kommune"
-                },
-                {
-                    "value": 19438414,
-                    "alias": "Gentofte Kommune"
-                },
-                {
-                    "value": 62761113,
-                    "alias": "Gladsaxe Kommune"
-                },
-                {
-                    "value": 65120119,
-                    "alias": "Glostrup Kommune"
-                },
-                {
-                    "value": 44023911,
-                    "alias": "Greve Kommune"
-                },
-                {
-                    "value": 29188440,
-                    "alias": "Gribskov Kommune"
-                },
-                {
-                    "value": 29188599,
-                    "alias": "Guldborgsund Kommune"
-                },
-                {
-                    "value": 29189757,
-                    "alias": "Haderslev Kommune"
-                },
-                {
-                    "value": 29188416,
-                    "alias": "Halsn\u00e6s Kommune"
-                },
-                {
-                    "value": 29189587,
-                    "alias": "Hedensted Kommune"
-                },
-                {
-                    "value": 64502018,
-                    "alias": "Helsing\u00f8r Kommune"
-                },
-                {
-                    "value": 63640719,
-                    "alias": "Herlev Kommune"
-                },
-                {
-                    "value": 29189919,
-                    "alias": "Herning Kommune"
-                },
-                {
-                    "value": 29189366,
-                    "alias": "Hiller\u00f8d Kommune"
-                },
-                {
-                    "value": 29189382,
-                    "alias": "Hj\u00f8rring Kommune"
-                },
-                {
-                    "value": 29189447,
-                    "alias": "Holb\u00e6k Kommune"
-                },
-                {
-                    "value": 29189927,
-                    "alias": "Holstebro Kommune"
-                },
-                {
-                    "value": 29189889,
-                    "alias": "Horsens Kommune"
-                },
-                {
-                    "value": 55606617,
-                    "alias": "Hvidovre Kommune"
-                },
-                {
-                    "value": 19501817,
-                    "alias": "H\u00f8je-Taastrup Kommune"
-                },
-                {
-                    "value": 70960516,
-                    "alias": "H\u00f8rsholm Kommune"
-                },
-                {
-                    "value": 29189617,
-                    "alias": "Ikast-Brande Kommune"
-                },
-                {
-                    "value": 11931316,
-                    "alias": "Ish\u00f8j Kommune"
-                },
-                {
-                    "value": 29189439,
-                    "alias": "Jammerbugt Kommune"
-                },
-                {
-                    "value": 29189595,
-                    "alias": "Kalundborg Kommune"
-                },
-                {
-                    "value": 29189706,
-                    "alias": "Kerteminde Kommune"
-                },
-                {
-                    "value": 29189897,
-                    "alias": "Kolding Kommune"
-                },
-                {
-                    "value": 64942212,
-                    "alias": "K\u00f8benhavns Kommune"
-                },
-                {
-                    "value": 29189374,
-                    "alias": "K\u00f8ge Kommune"
-                },
-                {
-                    "value": 29188955,
-                    "alias": "Langeland Kommune"
-                },
-                {
-                    "value": 29188548,
-                    "alias": "Lejre Kommune"
-                },
-                {
-                    "value": 29189935,
-                    "alias": "Lemvig Kommune"
-                },
-                {
-                    "value": 29188572,
-                    "alias": "Lolland Kommune"
-                },
-                {
-                    "value": 11715311,
-                    "alias": "Lyngby-Taarb\u00e6k Kommune"
-                },
-                {
-                    "value": 45973328,
-                    "alias": "L\u00e6s\u00f8 Kommune"
-                },
-                {
-                    "value": 29189455,
-                    "alias": "Mariagerfjord Kommune"
-                },
-                {
-                    "value": 29189684,
-                    "alias": "Middelfart Kommune"
-                },
-                {
-                    "value": 41333014,
-                    "alias": "Mors\u00f8 Kommune"
-                },
-                {
-                    "value": 29189986,
-                    "alias": "Norddjurs Kommune"
-                },
-                {
-                    "value": 29188947,
-                    "alias": "Nordfyns Kommune"
-                },
-                {
-                    "value": 29189722,
-                    "alias": "Nyborg Kommune"
-                },
-                {
-                    "value": 29189625,
-                    "alias": "N\u00e6stved Kommune"
-                },
-                {
-                    "value": 32264328,
-                    "alias": "Odder Kommune"
-                },
-                {
-                    "value": 35209115,
-                    "alias": "Odense Kommune"
-                },
-                {
-                    "value": 29188459,
-                    "alias": "Odsherred Kommune"
-                },
-                {
-                    "value": 29189668,
-                    "alias": "Randers Kommune"
-                },
-                {
-                    "value": 29189463,
-                    "alias": "Rebild Kommune"
-                },
-                {
-                    "value": 29189609,
-                    "alias": "Ringk\u00f8bing-Skjern Kommune"
-                },
-                {
-                    "value": 18957981,
-                    "alias": "Ringsted Kommune"
-                },
-                {
-                    "value": 29189404,
-                    "alias": "Roskilde Kommune"
-                },
-                {
-                    "value": 29188378,
-                    "alias": "Rudersdal Kommune"
-                },
-                {
-                    "value": 65307316,
-                    "alias": "R\u00f8dovre Kommune"
-                },
-                {
-                    "value": 23795515,
-                    "alias": "Sams\u00f8 Kommune"
-                },
-                {
-                    "value": 29189641,
-                    "alias": "Silkeborg Kommune"
-                },
-                {
-                    "value": 29189633,
-                    "alias": "Skanderborg Kommune"
-                },
-                {
-                    "value": 29189579,
-                    "alias": "Skive Kommune"
-                },
-                {
-                    "value": 29188505,
-                    "alias": "Slagelse Kommune"
-                },
-                {
-                    "value": 68534917,
-                    "alias": "Solr\u00f8d Kommune"
-                },
-                {
-                    "value": 29189994,
-                    "alias": "Sor\u00f8 Kommune"
-                },
-                {
-                    "value": 29208654,
-                    "alias": "Stevns Kommune"
-                },
-                {
-                    "value": 29189951,
-                    "alias": "Struer Kommune"
-                },
-                {
-                    "value": 29189730,
-                    "alias": "Svendborg Kommune"
-                },
-                {
-                    "value": 29189978,
-                    "alias": "Syddjurs Kommune"
-                },
-                {
-                    "value": 29189773,
-                    "alias": "S\u00f8nderborg Kommune"
-                },
-                {
-                    "value": 29189560,
-                    "alias": "Thisted Kommune"
-                },
-                {
-                    "value": 29189781,
-                    "alias": "T\u00f8nder Kommune"
-                },
-                {
-                    "value": 20310413,
-                    "alias": "T\u00e5rnby Kommune"
-                },
-                {
-                    "value": 19583910,
-                    "alias": "Vallensb\u00e6k Kommune"
-                },
-                {
-                    "value": 29189811,
-                    "alias": "Varde Kommune"
-                },
-                {
-                    "value": 29189838,
-                    "alias": "Vejen Kommune"
-                },
-                {
-                    "value": 29189900,
-                    "alias": "Vejle Kommune"
-                },
-                {
-                    "value": 29189471,
-                    "alias": "Vesthimmerlands Kommune"
-                },
-                {
-                    "value": 29189846,
-                    "alias": "Viborg Kommune"
-                },
-                {
-                    "value": 29189676,
-                    "alias": "Vordingborg Kommune"
-                },
-                {
-                    "value": 28856075,
-                    "alias": "\u00c6r\u00f8 Kommune"
-                },
-                {
-                    "value": 29189854,
-                    "alias": "Aabenraa Kommune"
-                },
-                {
-                    "value": 29189420,
-                    "alias": "Aalborg Kommune"
-                },
-                {
-                    "value": 55133018,
-                    "alias": "Aarhus Kommune"
-                },
-                {
-                    "value": 99999999,
-                    "alias": "Nan"
-                },
-                {
-                    "value": 33157274,
-                    "alias": "Naturstyrelsen"
-                },
-                {
-                    "value": 25798376,
-                    "alias": "Milj\u00f8styrelsen"
-                },
-                {
-                    "value": 33284114,
-                    "alias": "Styrelsen for Dataforsyning og Effektivisering"
-                },
-                {
-                    "value": 32468349,
-                    "alias": "CLEVER A\/S"
-                },
-                {
-                    "value": 34206228,
-                    "alias": "Erhvervshus Fyn P\/S"
-                },
-                {
-                    "value": 17156616,
-                    "alias": "Dansk e-Mobilitet"
-                },
-                {
-                    "value": 16287180,
-                    "alias": "Forsvarsministeriets Ejendomsstyrelse"
-                },
-                {
-                    "value": 36471271,
-                    "alias": "DKNT"
-                },
-                {
-                    "value": 31351901,
-                    "alias": "Spor"
-                },
-                {
-                    "value": 62547413,
-                    "alias": "kl"
-                },
-                {
-                    "value": 36146702,
-                    "alias": "Dansk Cykelturisme"
-                },
-                {
                     "value": 10000001,
                     "alias": "supercykelstisekretariatet"
-                },
-                {
-                    "value": 35379193,
-                    "alias": "MapCentia"
-                },
-                {
-                    "value": 42885746,
-                    "alias": "E.ON"
                 },
                 {
                     "value": 10000002,
                     "alias": "Tommeruppernes Lokalr\u00e5d"
                 },
                 {
-                    "value": 15524286,
-                    "alias": "geoinfo"
-                },
-                {
                     "value": 10000003,
                     "alias": "geoinfovejle"
-                },
-                {
-                    "value": 34897034,
-                    "alias": "Destination Sj\u00e6lland A\/S"
-                },
-                {
-                    "value": 35147268,
-                    "alias": "Nationalpark Mols Bjerge"
-                },
-                {
-                    "value": 41668385,
-                    "alias": "Monta ApS"
-                },
-                {
-                    "value": 20014784,
-                    "alias": "Geopartner Landinspekt\u00f8rer A\/S"
                 },
                 {
                     "value": 10000004,
@@ -644,36 +172,8 @@
                     "alias": "undervisning"
                 },
                 {
-                    "value": 23717382,
-                    "alias": "H\u00e6rvejen"
-                },
-                {
-                    "value": 40220321,
-                    "alias": "Herslev Bylaug"
-                },
-                {
-                    "value": 25118359,
-                    "alias": "Norlys"
-                },
-                {
-                    "value": 39170418,
-                    "alias": "OK A.M.B.A."
-                },
-                {
                     "value": 10000006,
                     "alias": "GeoInfoSonderborg"
-                },
-                {
-                    "value": 10294819,
-                    "alias": "Konkurrence- og Forbrugerstyrelsen"
-                },
-                {
-                    "value": 28297947,
-                    "alias": "EWII"
-                },
-                {
-                    "value": 42309443,
-                    "alias": "qLER ApS"
                 },
                 {
                     "value": 10000007,
@@ -688,28 +188,8 @@
                     "alias": "itu_anastassia"
                 },
                 {
-                    "value": 18282690,
-                    "alias": "Destination Fyn"
-                },
-                {
-                    "value": 40657339,
-                    "alias": "Spirii"
-                },
-                {
                     "value": 10000010,
                     "alias": "CT_marcoberends"
-                },
-                {
-                    "value": 36986719,
-                    "alias": "Geopark Odsherred"
-                },
-                {
-                    "value": 27782515,
-                    "alias": "Idr\u00e6ttens Analyseinstitut"
-                },
-                {
-                    "value": 56230718,
-                    "alias": "Friluftsr\u00e5det"
                 },
                 {
                     "value": 10000011,
@@ -718,6 +198,598 @@
                 {
                     "value": 10000012,
                     "alias": "Konge\u00e5sti"
+                },
+                {
+                    "value": 10294819,
+                    "alias": "Konkurrence- og Forbrugerstyrelsen"
+                },
+                {
+                    "value": 11259979,
+                    "alias": "Frederiksberg Kommune"
+                },
+                {
+                    "value": 11715311,
+                    "alias": "Lyngby-Taarb\u00e6k Kommune"
+                },
+                {
+                    "value": 11931316,
+                    "alias": "Ish\u00f8j Kommune"
+                },
+                {
+                    "value": 12881517,
+                    "alias": "Drag\u00f8r Kommune"
+                },
+                {
+                    "value": 15524286,
+                    "alias": "geoinfo"
+                },
+                {
+                    "value": 16287180,
+                    "alias": "Forsvarsministeriets Ejendomsstyrelse"
+                },
+                {
+                    "value": 17156616,
+                    "alias": "Dansk e-Mobilitet"
+                },
+                {
+                    "value": 18282690,
+                    "alias": "Destination Fyn"
+                },
+                {
+                    "value": 18957981,
+                    "alias": "Ringsted Kommune"
+                },
+                {
+                    "value": 19438414,
+                    "alias": "Gentofte Kommune"
+                },
+                {
+                    "value": 19501817,
+                    "alias": "H\u00f8je-Taastrup Kommune"
+                },
+                {
+                    "value": 19583910,
+                    "alias": "Vallensb\u00e6k Kommune"
+                },
+                {
+                    "value": 20014784,
+                    "alias": "Geopartner Landinspekt\u00f8rer A\/S"
+                },
+                {
+                    "value": 20310413,
+                    "alias": "T\u00e5rnby Kommune"
+                },
+                {
+                    "value": 23717382,
+                    "alias": "H\u00e6rvejen"
+                },
+                {
+                    "value": 23795515,
+                    "alias": "Sams\u00f8 Kommune"
+                },
+                {
+                    "value": 25118359,
+                    "alias": "Norlys"
+                },
+                {
+                    "value": 25775635,
+                    "alias": "Christians\u00f8"
+                },
+                {
+                    "value": 25798376,
+                    "alias": "Milj\u00f8styrelsen"
+                },
+                {
+                    "value": 26696348,
+                    "alias": "Bornholms Regionskommune"
+                },
+                {
+                    "value": 27782515,
+                    "alias": "Idr\u00e6ttens Analyseinstitut"
+                },
+                {
+                    "value": 28297947,
+                    "alias": "EWII"
+                },
+                {
+                    "value": 28326858,
+                    "alias": "Nordsj\u00e6llands Brandv\u00e6sen"
+                },
+                {
+                    "value": 28856075,
+                    "alias": "\u00c6r\u00f8 Kommune"
+                },
+                {
+                    "value": 29188327,
+                    "alias": "Fures\u00f8 Kommune"
+                },
+                {
+                    "value": 29188335,
+                    "alias": "Fredensborg Kommune"
+                },
+                {
+                    "value": 29188378,
+                    "alias": "Rudersdal Kommune"
+                },
+                {
+                    "value": 29188386,
+                    "alias": "Egedal Kommune"
+                },
+                {
+                    "value": 29188416,
+                    "alias": "Halsn\u00e6s Kommune"
+                },
+                {
+                    "value": 29188440,
+                    "alias": "Gribskov Kommune"
+                },
+                {
+                    "value": 29188459,
+                    "alias": "Odsherred Kommune"
+                },
+                {
+                    "value": 29188475,
+                    "alias": "Faxe Kommune"
+                },
+                {
+                    "value": 29188505,
+                    "alias": "Slagelse Kommune"
+                },
+                {
+                    "value": 29188548,
+                    "alias": "Lejre Kommune"
+                },
+                {
+                    "value": 29188572,
+                    "alias": "Lolland Kommune"
+                },
+                {
+                    "value": 29188599,
+                    "alias": "Guldborgsund Kommune"
+                },
+                {
+                    "value": 29188645,
+                    "alias": "Faaborg-Midtfyn Kommune"
+                },
+                {
+                    "value": 29188947,
+                    "alias": "Nordfyns Kommune"
+                },
+                {
+                    "value": 29188955,
+                    "alias": "Langeland Kommune"
+                },
+                {
+                    "value": 29189129,
+                    "alias": "Frederikssund Kommune"
+                },
+                {
+                    "value": 29189366,
+                    "alias": "Hiller\u00f8d Kommune"
+                },
+                {
+                    "value": 29189374,
+                    "alias": "K\u00f8ge Kommune"
+                },
+                {
+                    "value": 29189382,
+                    "alias": "Hj\u00f8rring Kommune"
+                },
+                {
+                    "value": 29189404,
+                    "alias": "Roskilde Kommune"
+                },
+                {
+                    "value": 29189420,
+                    "alias": "Aalborg Kommune"
+                },
+                {
+                    "value": 29189439,
+                    "alias": "Jammerbugt Kommune"
+                },
+                {
+                    "value": 29189447,
+                    "alias": "Holb\u00e6k Kommune"
+                },
+                {
+                    "value": 29189455,
+                    "alias": "Mariagerfjord Kommune"
+                },
+                {
+                    "value": 29189463,
+                    "alias": "Rebild Kommune"
+                },
+                {
+                    "value": 29189471,
+                    "alias": "Vesthimmerlands Kommune"
+                },
+                {
+                    "value": 29189498,
+                    "alias": "Frederikshavn Kommune"
+                },
+                {
+                    "value": 29189501,
+                    "alias": "Br\u00f8nderslev Kommune"
+                },
+                {
+                    "value": 29189560,
+                    "alias": "Thisted Kommune"
+                },
+                {
+                    "value": 29189579,
+                    "alias": "Skive Kommune"
+                },
+                {
+                    "value": 29189587,
+                    "alias": "Hedensted Kommune"
+                },
+                {
+                    "value": 29189595,
+                    "alias": "Kalundborg Kommune"
+                },
+                {
+                    "value": 29189609,
+                    "alias": "Ringk\u00f8bing-Skjern Kommune"
+                },
+                {
+                    "value": 29189617,
+                    "alias": "Ikast-Brande Kommune"
+                },
+                {
+                    "value": 29189625,
+                    "alias": "N\u00e6stved Kommune"
+                },
+                {
+                    "value": 29189633,
+                    "alias": "Skanderborg Kommune"
+                },
+                {
+                    "value": 29189641,
+                    "alias": "Silkeborg Kommune"
+                },
+                {
+                    "value": 29189668,
+                    "alias": "Randers Kommune"
+                },
+                {
+                    "value": 29189676,
+                    "alias": "Vordingborg Kommune"
+                },
+                {
+                    "value": 29189684,
+                    "alias": "Middelfart Kommune"
+                },
+                {
+                    "value": 29189692,
+                    "alias": "Assens Kommune"
+                },
+                {
+                    "value": 29189706,
+                    "alias": "Kerteminde Kommune"
+                },
+                {
+                    "value": 29189714,
+                    "alias": "Favrskov Kommune"
+                },
+                {
+                    "value": 29189722,
+                    "alias": "Nyborg Kommune"
+                },
+                {
+                    "value": 29189730,
+                    "alias": "Svendborg Kommune"
+                },
+                {
+                    "value": 29189757,
+                    "alias": "Haderslev Kommune"
+                },
+                {
+                    "value": 29189765,
+                    "alias": "Billund Kommune"
+                },
+                {
+                    "value": 29189773,
+                    "alias": "S\u00f8nderborg Kommune"
+                },
+                {
+                    "value": 29189781,
+                    "alias": "T\u00f8nder Kommune"
+                },
+                {
+                    "value": 29189803,
+                    "alias": "Esbjerg Kommune"
+                },
+                {
+                    "value": 29189811,
+                    "alias": "Varde Kommune"
+                },
+                {
+                    "value": 29189838,
+                    "alias": "Vejen Kommune"
+                },
+                {
+                    "value": 29189846,
+                    "alias": "Viborg Kommune"
+                },
+                {
+                    "value": 29189854,
+                    "alias": "Aabenraa Kommune"
+                },
+                {
+                    "value": 29189889,
+                    "alias": "Horsens Kommune"
+                },
+                {
+                    "value": 29189897,
+                    "alias": "Kolding Kommune"
+                },
+                {
+                    "value": 29189900,
+                    "alias": "Vejle Kommune"
+                },
+                {
+                    "value": 29189919,
+                    "alias": "Herning Kommune"
+                },
+                {
+                    "value": 29189927,
+                    "alias": "Holstebro Kommune"
+                },
+                {
+                    "value": 29189935,
+                    "alias": "Lemvig Kommune"
+                },
+                {
+                    "value": 29189951,
+                    "alias": "Struer Kommune"
+                },
+                {
+                    "value": 29189978,
+                    "alias": "Syddjurs Kommune"
+                },
+                {
+                    "value": 29189986,
+                    "alias": "Norddjurs Kommune"
+                },
+                {
+                    "value": 29189994,
+                    "alias": "Sor\u00f8 Kommune"
+                },
+                {
+                    "value": 29208654,
+                    "alias": "Stevns Kommune"
+                },
+                {
+                    "value": 31210917,
+                    "alias": "Fan\u00f8 Kommune"
+                },
+                {
+                    "value": 31351901,
+                    "alias": "Spor"
+                },
+                {
+                    "value": 32264328,
+                    "alias": "Odder Kommune"
+                },
+                {
+                    "value": 32468349,
+                    "alias": "CLEVER A\/S"
+                },
+                {
+                    "value": 33157274,
+                    "alias": "Naturstyrelsen"
+                },
+                {
+                    "value": 33284114,
+                    "alias": "Styrelsen for Dataforsyning og Effektivisering"
+                },
+                {
+                    "value": 34009570,
+                    "alias": "Beredskab & Sikkerhed"
+                },
+                {
+                    "value": 34206228,
+                    "alias": "Erhvervshus Fyn P\/S"
+                },
+                {
+                    "value": 34897034,
+                    "alias": "Destination Sj\u00e6lland A\/S"
+                },
+                {
+                    "value": 35147268,
+                    "alias": "Nationalpark Mols Bjerge"
+                },
+                {
+                    "value": 35209115,
+                    "alias": "Odense Kommune"
+                },
+                {
+                    "value": 35379193,
+                    "alias": "MapCentia"
+                },
+                {
+                    "value": 35432795,
+                    "alias": "Sydvestjysk Brandv\u00e6sen"
+                },
+                {
+                    "value": 35434399,
+                    "alias": "Midt- og Sydsj\u00e6llands Brand & Redning"
+                },
+                {
+                    "value": 35438718,
+                    "alias": "Brand & Redning S\u00f8nderjylland"
+                },
+                {
+                    "value": 35439862,
+                    "alias": "Syd\u00f8stjyllands Brandv\u00e6sen"
+                },
+                {
+                    "value": 35440178,
+                    "alias": "Hovedstadens Beredskab"
+                },
+                {
+                    "value": 36146702,
+                    "alias": "Dansk Cykelturisme"
+                },
+                {
+                    "value": 36471271,
+                    "alias": "DKNT"
+                },
+                {
+                    "value": 36920483,
+                    "alias": "ParksnTrails"
+                },
+                {
+                    "value": 36986719,
+                    "alias": "Geopark Odsherred"
+                },
+                {
+                    "value": 37137502,
+                    "alias": "Midtjysk Brand & Redning"
+                },
+                {
+                    "value": 37164712,
+                    "alias": "\u00d8stjyllands Brandv\u00e6sen"
+                },
+                {
+                    "value": 37176478,
+                    "alias": "SkjoldungernesLand"
+                },
+                {
+                    "value": 37197580,
+                    "alias": "Vestsj\u00e6llands Brandv\u00e6sen"
+                },
+                {
+                    "value": 37207969,
+                    "alias": "Brand & Redning Midtvest"
+                },
+                {
+                    "value": 37242985,
+                    "alias": "TrekantBrand"
+                },
+                {
+                    "value": 37265209,
+                    "alias": "Beredskab Fyn"
+                },
+                {
+                    "value": 39170418,
+                    "alias": "OK A.M.B.A."
+                },
+                {
+                    "value": 40220321,
+                    "alias": "Herslev Bylaug"
+                },
+                {
+                    "value": 40632301,
+                    "alias": "Beredskab 4K"
+                },
+                {
+                    "value": 40657339,
+                    "alias": "Spirii"
+                },
+                {
+                    "value": 41333014,
+                    "alias": "Mors\u00f8 Kommune"
+                },
+                {
+                    "value": 41575727,
+                    "alias": "SAMSIK"
+                },
+                {
+                    "value": 41668385,
+                    "alias": "Monta ApS"
+                },
+                {
+                    "value": 42309443,
+                    "alias": "qLER ApS"
+                },
+                {
+                    "value": 42885746,
+                    "alias": "E.ON"
+                },
+                {
+                    "value": 44023911,
+                    "alias": "Greve Kommune"
+                },
+                {
+                    "value": 45973328,
+                    "alias": "L\u00e6s\u00f8 Kommune"
+                },
+                {
+                    "value": 55133018,
+                    "alias": "Aarhus Kommune"
+                },
+                {
+                    "value": 55606617,
+                    "alias": "Hvidovre Kommune"
+                },
+                {
+                    "value": 56230718,
+                    "alias": "Friluftsr\u00e5det"
+                },
+                {
+                    "value": 58271713,
+                    "alias": "Ballerup Kommune"
+                },
+                {
+                    "value": 60183112,
+                    "alias": "Aller\u00f8d Kommune"
+                },
+                {
+                    "value": 62547413,
+                    "alias": "kl"
+                },
+                {
+                    "value": 62761113,
+                    "alias": "Gladsaxe Kommune"
+                },
+                {
+                    "value": 63640719,
+                    "alias": "Herlev Kommune"
+                },
+                {
+                    "value": 64502018,
+                    "alias": "Helsing\u00f8r Kommune"
+                },
+                {
+                    "value": 64942212,
+                    "alias": "K\u00f8benhavns Kommune"
+                },
+                {
+                    "value": 65113015,
+                    "alias": "Br\u00f8ndby Kommune"
+                },
+                {
+                    "value": 65120119,
+                    "alias": "Glostrup Kommune"
+                },
+                {
+                    "value": 65307316,
+                    "alias": "R\u00f8dovre Kommune"
+                },
+                {
+                    "value": 66137112,
+                    "alias": "Albertslund Kommune"
+                },
+                {
+                    "value": 68534917,
+                    "alias": "Solr\u00f8d Kommune"
+                },
+                {
+                    "value": 69116418,
+                    "alias": "Fredericia Kommune"
+                },
+                {
+                    "value": 70960516,
+                    "alias": "H\u00f8rsholm Kommune"
+                },
+                {
+                    "value": 99999999,
+                    "alias": "Nan"
+                },
+                {
+                    "value": 100000113,
+                    "alias": "Helsing\u00f8r Kommunes Beredskab"
                 }
             ],
             "alias": "",
@@ -726,7 +798,7 @@
         },
         "cvr_navn": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
             "num": 9,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -743,7 +815,7 @@
         },
         "kommunekode": {
             "type": "integer",
-            "comment": "",
+            "comment": "3-cifret kommunekode udfyldes via cvr_kode.",
             "num": 10,
             "full_type": "integer",
             "typname": "int4",
@@ -760,7 +832,7 @@
         },
         "bruger_id": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data.",
             "num": 11,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -777,7 +849,7 @@
         },
         "oprindkode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive en oprindelse via en kode.",
             "num": 12,
             "full_type": "integer",
             "typname": "int4",
@@ -849,7 +921,7 @@
         },
         "oprindelse": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
             "num": 13,
             "full_type": "character varying(35)",
             "typname": "varchar",
@@ -866,7 +938,7 @@
         },
         "statuskode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive en status via en kode.",
             "num": 14,
             "full_type": "integer",
             "typname": "int4",
@@ -906,7 +978,7 @@
         },
         "status": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
             "num": 15,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -923,7 +995,7 @@
         },
         "off_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode.",
             "num": 16,
             "full_type": "integer",
             "typname": "int4",
@@ -955,7 +1027,7 @@
         },
         "offentlig": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet.",
             "num": 17,
             "full_type": "character varying(60)",
             "typname": "varchar",
@@ -972,7 +1044,7 @@
         },
         "noegle": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
             "num": 18,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -989,7 +1061,7 @@
         },
         "note": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Frit bem\u00e6rkningsfelt.",
             "num": 19,
             "full_type": "character varying(254)",
             "typname": "varchar",
@@ -1006,7 +1078,7 @@
         },
         "vedlhold_p_type_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for typen af gr\u00f8nvedligeholdelses objekt. Registreringsvejledning: V\u00e6lg plejetype\/vedligeholdelstype fra kodeliste: d_6802_vedlhold_p_type . Eksempel: 14200",
             "num": 20,
             "full_type": "integer",
             "typname": "int4",
@@ -1266,7 +1338,7 @@
         },
         "vedlhold_p_type": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Typen af gr\u00f8nvedligeholdelses objekt. Eksempel: Solit\u00e6re slyng- og klatreplanter",
             "num": 21,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -1283,7 +1355,7 @@
         },
         "vedlhold_p_type_label": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Forkortet navn af gr\u00f8nvedligeholdelse. Eksempel: TR",
             "num": 22,
             "full_type": "character varying(6)",
             "typname": "varchar",
@@ -1300,7 +1372,7 @@
         },
         "biodiversitet": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Angiv hvordan dette element s\u00e6rligt underst\u00f8tter biodiversitet Registreringsvejledning: Udfyld kun, hvis der er s\u00e6rlige forhold ved dette element, der fremmer biodiversitet. Eksempel: Biodiversitet: Der ops\u00e6ttes ",
             "num": 23,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -1317,7 +1389,7 @@
         },
         "arbejdssted": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Nummer\/navn p\u00e5 arbejdsted\/-omr\u00e5de. Eksempel: Slotskirkeparken",
             "num": 24,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -1334,7 +1406,7 @@
         },
         "konto_nr": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Kontonr\/bogf\u00f8rer\/betaler.  Eksempel: 19.560.746.200012",
             "num": 25,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -1351,7 +1423,7 @@
         },
         "cvr_opslag": {
             "type": "character varying",
-            "comment": "",
+            "comment": "CVR-nr for udf\u00f8rer\/entrepren\u00f8r Registreringsvejledning: Angiv entrepren\u00f8rens cvr nr, som anf\u00f8rt i kontrakt eller lignende. Hvis opgaven udf\u00f8res af kommunal enhed, kan du v\u00e6lge at anf\u00f8re denne i feltet Udfoerer_entrep (uden cvr)",
             "num": 26,
             "full_type": "character varying(8)",
             "typname": "varchar",
@@ -1368,7 +1440,7 @@
         },
         "udfoerer_entrep": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Enhed der udf\u00f8rer plejen eller den entreprise objektet tilh\u00f8rer. (udfyldes som udgangspunkt ikke, hvis man har angivet et cvr-nummer). Eksempel: Gr\u00f8nth\u00f8ster Gr\u00f8n A\/S",
             "num": 27,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1385,7 +1457,7 @@
         },
         "udbyder_kontakt": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Udbyder kontakt p\u00e5 objektet. Eksempel: Natur&Milj\u00f8, Team Park",
             "num": 28,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -1419,7 +1491,7 @@
         },
         "froeaar": {
             "type": "date",
-            "comment": "",
+            "comment": "Fr\u00f8\u00e5r \u2013 v\u00e6kstens alder Registreringsvejledning: Hvis der bare skal registreres, hvilket \u00e5r fr\u00f8et er fra skrives den sidste dag i \u00e5ret ind. Eks. skrives fr\u00f8\u00e5r 2003 som 2003-12-31. Eksempel: 1969-12-31",
             "num": 30,
             "full_type": "date",
             "typname": "date",
@@ -1436,7 +1508,7 @@
         },
         "anlaegsdato": {
             "type": "date",
-            "comment": "",
+            "comment": "Anl\u00e6gsdato\/plantedato. Registreringsvejledning: Hvis den eksakte dato ikke kendes, fx for gamle tr\u00e6er, angives den sidste dag i det \u00e5r man formoder at elementet er anlagt. Ex. angiver 1969-12-31, at pr\u00e6cis dato ikke er kendt\/ ikke relevant \u2013 men anl\u00e6gs\u00e5ret er 1969. Eksempel: 1969-12-31",
             "num": 31,
             "full_type": "date",
             "typname": "date",
@@ -1453,7 +1525,7 @@
         },
         "etabl_pleje_udloeb": {
             "type": "date",
-            "comment": "",
+            "comment": "Dato for forventet udl\u00f8b af etableringspleje. Registreringsvejledning: Hvis den eksakte dato ikke kendes angives den sidste dag i det \u00e5r etableringspleje-aftalen udl\u00f8ber. Eksempel: 2019-12-31",
             "num": 32,
             "full_type": "date",
             "typname": "date",
@@ -1470,7 +1542,7 @@
         },
         "udskiftningsdato": {
             "type": "date",
-            "comment": "",
+            "comment": "N\u00e6ste\/forventet udskiftnings\u00e5r\/-dato. Registreringsvejledning: Hvis den eksakte dato ikke kendes, angives den sidste dag i det \u00e5r man mener udskiftning skal finde sted. Eksempel: 2069-12-31",
             "num": 33,
             "full_type": "date",
             "typname": "date",
@@ -1487,7 +1559,7 @@
         },
         "hoejde": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Elementets h\u00f8jde i meter. Eksempel: 0,25",
             "num": 34,
             "full_type": "double precision",
             "typname": "float8",
@@ -1504,7 +1576,7 @@
         },
         "bredde": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Elementets bredde i meter. Eksempel: 0,30",
             "num": 35,
             "full_type": "double precision",
             "typname": "float8",
@@ -1521,7 +1593,7 @@
         },
         "diameter": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Elementets diameter i meter. Eksempel: 30",
             "num": 37,
             "full_type": "double precision",
             "typname": "float8",
@@ -1538,7 +1610,7 @@
         },
         "areal": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Elementets areal i kvm. Eksempel: 896",
             "num": 38,
             "full_type": "double precision",
             "typname": "float8",
@@ -1555,7 +1627,7 @@
         },
         "omkreds": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Elementets omkreds i m. Eksempel: 2,4",
             "num": 39,
             "full_type": "double precision",
             "typname": "float8",
@@ -1572,7 +1644,7 @@
         },
         "klip_sider": {
             "type": "integer",
-            "comment": "",
+            "comment": "Antal sider p\u00e5 h\u00e6k m.v., der skal klippes. 0 er kun top, 1 er en side og 2 begge\/alle sider. Eksempel: 1",
             "num": 40,
             "full_type": "integer",
             "typname": "int4",
@@ -1589,7 +1661,7 @@
         },
         "klip_flade": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Fladen der skal passes i kvm. F.eks. p\u00e5 klatreplanter. Eksempel: 8",
             "num": 41,
             "full_type": "double precision",
             "typname": "float8",
@@ -1606,7 +1678,7 @@
         },
         "iot_enhed": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Entydig identifikation af en IOT\/m\u00e5lestation, der samler data om netop dette objekt",
             "num": 42,
             "full_type": "character varying(255)",
             "typname": "varchar",
@@ -1623,7 +1695,7 @@
         },
         "iot_maaling": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Registrer, hvad IOT enheden samler data om",
             "num": 43,
             "full_type": "character varying(125)",
             "typname": "varchar",
@@ -1640,7 +1712,7 @@
         },
         "driftniv_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for drifts niveau med hensyn til renhold\/\/pleje. Driftsniveau kaldes i nogle sammenh\u00e6nge \u201dpr\u00e6g\u201d, som en meget enkel angivelse af plejeniveau Registreringsvejledning: V\u00e6lg driftsniveau fra kodeliste: d_basis_driftniv defineret i afsnit 4.3. Eksempel: 1",
             "num": 44,
             "full_type": "integer",
             "typname": "int4",
@@ -1680,7 +1752,7 @@
         },
         "driftniv": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Drifts niveau i tre klasser med hensyn til renhold\/pleje. Registreringsvejledning: V\u00e6lg driftsniveau fra kodeliste: d_basis_driftniv defineret i afsnit 4.3. Eksempel: Park",
             "num": 45,
             "full_type": "character varying(10)",
             "typname": "varchar",
@@ -1697,7 +1769,7 @@
         },
         "ukrudtsbek_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for ukrudtsbek\u00e6mpelsesmetode tilladt\/afvigelse fra norm. Registreringsvejledning: Tilladt ukrudtsbek\u00e6mpelsesmetode v\u00e6lges fra kodeliste: d_basis_ukrudsbek defineret i afsnit 4.3. Eksempel: 1",
             "num": 46,
             "full_type": "integer",
             "typname": "int4",
@@ -1749,7 +1821,7 @@
         },
         "ukrudtsbek": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Ukrudtsbek\u00e6mpelsesmetode, tilladt\/afvigelse fra norm.",
             "num": 47,
             "full_type": "character varying(20)",
             "typname": "varchar",
@@ -1766,7 +1838,7 @@
         },
         "tilstand_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode for tilstandsvurdering af elementet Registreringsvejledning: v\u00e6rdi for tilstanden v\u00e6lges fra kodeliste: d_basis_tilstand defineret i afsnit 4.3 Felt defineret under: 4.1 Standardiserede felter til de temaspecifikke datamodeller",
             "num": 48,
             "full_type": "integer",
             "typname": "int4",
@@ -1806,7 +1878,7 @@
         },
         "tilstand": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Tilstandsvurdering af elementet Registreringsvejledning: v\u00e6rdi for tilstanden v\u00e6lges fra kodeliste: d_basis_tilstand defineret i afsnit 4.3 Felt defineret under: 4.1 Standardiserede felter til de temaspecifikke datamodeller",
             "num": 49,
             "full_type": "character varying(25)",
             "typname": "varchar",
@@ -1823,7 +1895,7 @@
         },
         "tilstand_dato": {
             "type": "date",
-            "comment": "",
+            "comment": "Dato for seneste vurdering af tilstand",
             "num": 50,
             "full_type": "date",
             "typname": "date",
@@ -1840,7 +1912,7 @@
         },
         "laengde": {
             "type": "double precision",
-            "comment": "",
+            "comment": "Elementets l\u00e6ngde i meter. Eksempel: 350",
             "num": 36,
             "full_type": "double precision",
             "typname": "float8",
@@ -1857,7 +1929,7 @@
         },
         "foto_link": {
             "type": "character varying",
-            "comment": "",
+            "comment": "URL-link til foto",
             "num": 65,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1874,7 +1946,7 @@
         },
         "foto_link1": {
             "type": "character varying",
-            "comment": "",
+            "comment": "URL-link til foto",
             "num": 66,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1891,7 +1963,7 @@
         },
         "foto_link2": {
             "type": "character varying",
-            "comment": "",
+            "comment": "URL-link til foto",
             "num": 67,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1908,7 +1980,7 @@
         },
         "foto_link3": {
             "type": "character varying",
-            "comment": "",
+            "comment": "URL-link til foto",
             "num": 68,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1925,7 +1997,7 @@
         },
         "geofafoto": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
             "num": 69,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1942,7 +2014,7 @@
         },
         "geofafoto1": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
             "num": 70,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1959,7 +2031,7 @@
         },
         "geofafoto2": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
             "num": 71,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1976,7 +2048,7 @@
         },
         "geofafoto3": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
             "num": 72,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1993,7 +2065,7 @@
         },
         "vejkode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Vejkode (DAR)",
             "num": 51,
             "full_type": "integer",
             "typname": "int4",
@@ -2010,7 +2082,7 @@
         },
         "vejnavn": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Vejnavn der refererer til vejkode",
             "num": 52,
             "full_type": "character varying(40)",
             "typname": "varchar",
@@ -2027,7 +2099,7 @@
         },
         "traebetegn_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Tr\u00e6betegnelse -sl\u00e6gt og art. Kode til opslag i kodetabel Registreringsvejledning: Tr\u00e6ets sl\u00e6gt\/art v\u00e6lges fra kodelisten d_6802_trae\u00ac_bet  Bem\u00e6rk, at kender man ikke arten kan man v\u00e6lge en kode, der slutter med 0000. Hvis man kender arten, men den ikke findes som i kodelisten kan man v\u00e6lge en kode, der slutter med 9999. Eksempel: 1010003",
             "num": 53,
             "full_type": "integer",
             "typname": "int4",
@@ -2571,7 +2643,7 @@
         },
         "traebetegn_dansk": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Tr\u00e6betegnelse, dansk betegnelse Registreringsvejledning: Tr\u00e6ets sl\u00e6gt\/art v\u00e6lges fra kodelisten d_6802_trae\u00ac_bet . Eksempel: Spidsl\u00f8n",
             "num": 54,
             "full_type": "character varying(124)",
             "typname": "varchar",
@@ -2588,7 +2660,7 @@
         },
         "trae_slaegt_latin": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Tr\u00e6ets sl\u00e6gtsbetegnelse, latin Registreringsvejledning: Tr\u00e6ets sl\u00e6gt\/art v\u00e6lges fra kodelisten d_6802_trae\u00ac_bet . Eksempel: Acer",
             "num": 56,
             "full_type": "character varying(124)",
             "typname": "varchar",
@@ -2605,7 +2677,7 @@
         },
         "trae_art_latin": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Tr\u00e6ets artsbetegnelse, latin Registreringsvejledning: Tr\u00e6ets sl\u00e6gt\/art v\u00e6lges fra kodelisten d_6802_trae\u00ac_bet . Eksempel: Platanoides",
             "num": 55,
             "full_type": "character varying(124)",
             "typname": "varchar",
@@ -2622,7 +2694,7 @@
         },
         "traeart_sort_suppl": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Fritekst, for mere pr\u00e6cis angivelse af sl\u00e6gt, sort, art eller lignende. Eksempel: Acer platanoides Olmsted",
             "num": 57,
             "full_type": "character varying(124)",
             "typname": "varchar",
@@ -2639,7 +2711,7 @@
         },
         "bevaringsvaerdig_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Angiv tr\u00e6ets status ift  \u201dbevaringsv\u00e6rdighed\u201d Registreringsvejledning: Tr\u00e6ets status i forhold til bevaringskrav v\u00e6lges fra kodelisten d_6802_bevaringsvaerdig. Eksempel: 1",
             "num": 58,
             "full_type": "integer",
             "typname": "int4",
@@ -2691,7 +2763,7 @@
         },
         "bevaringsvaerdig": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Angiver tr\u00e6et status ift  \u201dbevaringsv\u00e6rdighed\u201d Registreringsvejledning: Tr\u00e6ets status i forhold til bevaringskrav v\u00e6lges fra kodelisten d_6802_bevaringsvaerdig. Eksempel: ikke bevaringsv\u00e6rdig",
             "num": 59,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -2708,7 +2780,7 @@
         },
         "tilsynstrae_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Angiv i hvilket omfang der f\u00f8res et s\u00e6rligt tilsyn med dette tr\u00e6 Registreringsvejledning: V\u00e6lg fra kodelisten d_6802_tilsynstrae. Eksempel: 1",
             "num": 60,
             "full_type": "integer",
             "typname": "int4",
@@ -2752,7 +2824,7 @@
         },
         "tilsynstrae": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Angiver om tr\u00e6et er under tilsyn \/ observation Registreringsvejledning: V\u00e6lg fra kodelisten d_6802_tilsynstrae . Eksempel: Sikkert - ikke tilsyn",
             "num": 61,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -2769,7 +2841,7 @@
         },
         "livsfase_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kode til elementets livsfase Registreringsvejledning: Feltet er s\u00e6rligt tilt\u00e6nkt angivelse af livsfase for tr\u00e6er. Betegnelse for elementets livsfase v\u00e6lges i kodelisten: d_6802_livsfase . Eksempel: 2",
             "num": 62,
             "full_type": "integer",
             "typname": "int4",
@@ -2817,7 +2889,7 @@
         },
         "livsfase": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Angiver elementets livsfase Registreringsvejledning: Feltet er s\u00e6rligt tilt\u00e6nkt angivelse af livsfase for tr\u00e6er. Betegnelse for elementets livsfase v\u00e6lges i kodelisten: d_6802_livsfase . Eksempel: Ung",
             "num": 63,
             "full_type": "character varying(150)",
             "typname": "varchar",
@@ -2851,7 +2923,7 @@
         },
         "geometri": {
             "type": "geometry",
-            "comment": "",
+            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier.",
             "num": 73,
             "full_type": "geometry(MultiPoint,25832)",
             "typname": "geometry",
@@ -2872,13 +2944,23 @@
     "children": null,
     "meta": {
         "tiled": false,
-        "meta_desc": "",
+        "formaal": "Oplyse sagsbehandler og private\/offentlige entrepren\u00f8rer via selvbetjeningsl\u00f8sninger, hvordan objekter\/punkter plejes",
+        "temakode": "6802",
+        "temanavn": "Park og gr\u00f8nne omr\u00e5der punkt",
+        "kle_koder": "04.00.00, 04.01.00, 04.01.09, 04.01.10, 04.01.11",
+        "meta_desc": "<p>\nDiverse tr\u00e6er, buske, klatreplanter og udstyr der benyttes hovedsageligt til udsmykning, sport og fritidsform\u00e5l. Laget har til form\u00e5l oplyse sagsbehandler og private\/offentlige entrepren\u00f8rer via selvbetjeningsl\u00f8sninger, hvordan objekter\/punkter plejes.<\/p>\n\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence \n  <\/a> \n  finder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
+        "definition": "Diverse tr\u00e6er, buske, klatreplanter og udstyr der benyttes hovedsageligt til udsmykning, sport og fritidsform\u00e5l.",
         "license_id": "opendatadk",
+        "noegle_ord": "Tr\u00e6, Busk, legeudstyr, tr\u00e6er, bygninger, udstyr",
+        "beskrivelse": "Diverse tr\u00e6er, buske, klatreplanter og udstyr der benyttes hovedsageligt til udsmykning, sport og fritidsform\u00e5l.  Branchestandard for elementtyper f\u00f8lges, med tilf\u00f8jelser. Kilde til branchestandard: Kj\u00f8ller, C.P., Kristoffersen P., N\u00f8rgaard, J., Tang, K., H\u00f8jholt, M., Himmer, S., Nielsen, J.N., Bavngaard, J. (2015). Kvalitetsbeskrivelser for drift af gr\u00f8nne omr\u00e5der 2015. Institut for Geovidenskab og Naturforvaltning, K\u00f8benhavns Universitet, Frederiksberg.  Kilde til tr\u00e6sl\u00e6gter, arter m.m. p\u00e5 dansk og latin: arter.dk og K\u00f8benhavns Universitet, Institut for Geovidenskab og Naturforvaltning, Skovskolen",
         "ckan_org_id": "hjorring-kommune",
         "ckan_update": true,
+        "lovgrundlag": "",
         "single_tile": false,
+        "geometritype": "punkt",
         "hover_active": false,
         "max_features": "200",
+        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
@@ -2902,22 +2984,30 @@
         "tooltip_template": "",
         "accordion_summery": "",
         "disable_check_box": false,
+        "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
-        "default_open_tools": "",
+        "default_open_tools": "[\"filters\"]",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
+        "minimum_stoerrelser": "-",
+        "sql_conflict_header": "",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
+        "geometrisk_konsistens": "",
         "info_element_selector": "",
+        "noegleord_hovedgruppe": "Arealanvendelse",
+        "registreringsinstruks": "Punktet registreres med snap til GeoDanmark-objekter og skel m.v. B\u00f8r anvende ortofoto i denne proces.\nVed angivelse af vedligeholdsestype (plejetype): Anvend f\u00f8rst og fremmest de koder, der er m\u00e6rket med \u201dBranche element\u201d eller \u201dBranche underelement\u201d. Hvis disse ikke opfylder dit behov, da anvend koderne m\u00e6rket med \u201dlokal\u201d (ikke del af branchestandarden). N\u00e5r du anvender koderne m\u00e6rket \u201dlokal\u201d, skal du selv s\u00f8rge for at definere pleje og plejeniveau i forbindelse med udbud. Oprettelse af ekstra lokale plejetyper udenfor GeoFA b\u00f8r undg\u00e5s, kontakt i stedet GeoFA-support for at f\u00e5 tilf\u00f8jet en ny plejetype til kodelisten.\n",
+        "klassificering_opdeling": "Opdeles i facilitetstype.  Se 5.19.3.3 Kodelister.\nTr\u00e6er kan  klassificeres i forhold til sl\u00e6gt\/art (dansk og latinsk navn)\n",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false
+        "disable_vector_feature_info": false,
+        "geometrisk_konsistens_andre": "Placeres gerne med snap til nabo- og GeoDanmark-objekter."
     }
 }

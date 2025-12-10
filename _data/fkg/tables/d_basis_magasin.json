@@ -4,7 +4,7 @@
         {
             "name": "magasin_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kodetal for grundvandsmagasin. Eksempel: 2",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "magasin",
             "type": "character varying(50)",
-            "comment": null,
+            "comment": "Angiver om det er prim\u00e6rt eller sekund\u00e6rt grundvandsmagasin. Eksempel: Sekund\u00e6r",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

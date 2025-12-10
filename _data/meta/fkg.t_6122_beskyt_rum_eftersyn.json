@@ -1,25 +1,26 @@
 {
-    "uuid": "899ac224-9cfa-42df-82f5-397de29750dd",
+    "uuid": "785a585c-290f-4b3a-a1a2-1cd56ddbef16",
     "f_table_schema": "fkg",
-    "f_table_name": "t_6803_parl_omr",
+    "f_table_name": "t_6122_beskyt_rum_eftersyn",
     "f_geometry_column": "geometri",
-    "f_table_abstract": "",
-    "f_table_title": "Park og gr\u00f8nne omr\u00e5ders distrikt (6803)",
+    "f_table_abstract": null,
+    "f_table_title": "Beskyttelsesrum (eftersyn) (6122)",
     "pkey": "objekt_id",
     "rel_type": "VIEW",
     "coord_dimension": 2,
-    "type": "MULTIPOLYGON",
+    "type": "MULTIPOINT",
     "srid": 25832,
     "authentication": "Write",
-    "layergroup": "Park og Gr\u00f8nne Omr\u00e5der",
-    "sort_id": 400,
+    "layergroup": "Beredskab",
+    "sort_id": 1200,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "beskyttelsesrum"
     ],
     "fields": {
         "temakode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen.",
+            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen. Eksempel: 6400",
             "num": 1,
             "full_type": "integer",
             "typname": "int4",
@@ -36,7 +37,7 @@
         },
         "temanavn": {
             "type": "text",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Brandhane",
             "num": 2,
             "full_type": "text",
             "typname": "text",
@@ -138,7 +139,7 @@
         },
         "cvr_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet.",
+            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet. Eksempel: 29189641",
             "num": 8,
             "full_type": "integer",
             "typname": "int4",
@@ -792,13 +793,13 @@
                     "alias": "Helsing\u00f8r Kommunes Beredskab"
                 }
             ],
-            "alias": "",
+            "alias": "V\u00e6lg organisation som indberetter. Eksempel: Odense Kommune",
             "queryable": false,
             "sort_id": 80
         },
         "cvr_navn": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Silkeborg Kommune ",
             "num": 9,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -811,11 +812,11 @@
             "restriction": null,
             "alias": "",
             "queryable": true,
-            "sort_id": 90
+            "sort_id": 82
         },
         "kommunekode": {
             "type": "integer",
-            "comment": "3-cifret kommunekode udfyldes via cvr_kode.",
+            "comment": "3-cifret kommunekode udfyldes via cvr_kode. Eksempel: 740",
             "num": 10,
             "full_type": "integer",
             "typname": "int4",
@@ -832,7 +833,7 @@
         },
         "bruger_id": {
             "type": "character varying",
-            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data.",
+            "comment": "Eksempel: bsik_123",
             "num": 11,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -843,13 +844,13 @@
             "max_bytes": 512,
             "reference": null,
             "restriction": null,
-            "alias": "",
+            "alias": "Brugeridentifikation af den der redigerer i data",
             "queryable": false,
             "sort_id": 110
         },
         "oprindkode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en oprindelse via en kode.",
+            "comment": "Feltet benyttes til at angive en oprindelse via en kode. Eksempel: 1",
             "num": 12,
             "full_type": "integer",
             "typname": "int4",
@@ -915,13 +916,13 @@
                     "alias": "3D"
                 }
             ],
-            "alias": "",
+            "alias": "V\u00e6lg det grundlag som er brugt til at fastsl\u00e5 placering.",
             "queryable": false,
             "sort_id": 120
         },
         "oprindelse": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Ortofoto",
             "num": 13,
             "full_type": "character varying(35)",
             "typname": "varchar",
@@ -934,11 +935,11 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 130
+            "sort_id": 122
         },
         "statuskode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en status via en kode.",
+            "comment": "Feltet benyttes til at angive en status via en kode. Eksempel: 3",
             "num": 14,
             "full_type": "integer",
             "typname": "int4",
@@ -972,13 +973,13 @@
                     "alias": "Ikke g\u00e6ldende \/ Aflyst"
                 }
             ],
-            "alias": "",
+            "alias": "V\u00e6lg status som er relevant.",
             "queryable": false,
-            "sort_id": 140
+            "sort_id": 124
         },
         "status": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: G\u00e6ldende \/ Vedtaget",
             "num": 15,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -991,11 +992,11 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 150
+            "sort_id": 126
         },
         "off_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode.",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode. Eksempel: 1",
             "num": 16,
             "full_type": "integer",
             "typname": "int4",
@@ -1021,13 +1022,13 @@
                     "alias": "Synlig for alle myndigheder, men ikke offentligheden"
                 }
             ],
-            "alias": "",
+            "alias": "V\u00e6lg den synlighed som er relevant.",
             "queryable": false,
-            "sort_id": 160
+            "sort_id": 128
         },
         "offentlig": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet.",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet. Eksempel: Synlig for alle",
             "num": 17,
             "full_type": "character varying(60)",
             "typname": "varchar",
@@ -1040,46 +1041,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 170
+            "sort_id": 130
         },
-        "noegle": {
-            "type": "character varying",
-            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
-            "num": 18,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 180
-        },
-        "note": {
-            "type": "character varying",
-            "comment": "Frit bem\u00e6rkningsfelt.",
-            "num": 19,
-            "full_type": "character varying(254)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 254,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1016,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 190
-        },
-        "pg_distrikt_kode": {
+        "beliggenhedskommune": {
             "type": "integer",
-            "comment": "Kode for typen af distrikts-\/arbejdssted typer ved Park og Gr\u00f8nneomr\u00e5der Registreringsvejledning: V\u00e6lg fra kodelisten d_6803_pg_distrikt, hvilken karakter\/type distriktet har. Eksempel: 2",
-            "num": 20,
+            "comment": "Eksempel: 706",
+            "num": 200,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -1087,323 +1054,33 @@
             "numeric_precision": 32,
             "numeric_scale": 0,
             "max_bytes": 4,
-            "reference": [
-                "fkg.d_6803_pg_distrikt.pg_distrikt_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Udbudsomr\u00e5de"
-                },
-                {
-                    "value": 2,
-                    "alias": "Fag-entreprise"
-                },
-                {
-                    "value": 3,
-                    "alias": "Geografisk entreprise"
-                },
-                {
-                    "value": 4,
-                    "alias": "Arbejdssted"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 192
-        },
-        "pg_distrikt": {
-            "type": "character varying",
-            "comment": "Typen af distrikts-\/arbejdssted typer Registreringsvejledning: V\u00e6lg fra kodelisten d_6803_pg_distrikt, hvilken karakter\/type distriktet har. Eksempel: Fag-enterprise",
-            "num": 21,
-            "full_type": "character varying(50)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 50,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 200,
             "reference": null,
             "restriction": null,
-            "alias": "",
+            "alias": "Kommunenummer for den kommune, som facilitet er beliggende i. Opdateres automatisk",
             "queryable": false,
-            "sort_id": 193
+            "sort_id": 140
         },
-        "pg_fagentreprise_kode": {
-            "type": "integer",
-            "comment": "Kode for typen af fagentreprise Registreringsvejledning: V\u00e6lg fra kodelisten d_6803_pg_ fag, hvilken type opgave, der er f\u00e6lles for distriktet \/ hvilken fagentreprise det handler om. Eksempel: 2",
-            "num": 22,
-            "full_type": "integer",
-            "typname": "int4",
+        "adr_id": {
+            "type": "uuid",
+            "comment": "\u00d8nsker man at angive en adresse kan man enten inds\u00e6tte adressens UUID, som fx kan findes p\u00e5 https:\/\/danmarksadresser.dk\/, hvorefter vejnavn, vejkode, mv. automatisk vil blive oversat om natten. Obs v\u00e6lg adresse-niveauet i DAR (og IKKE adgangsadresse- niveauet). Du kan alternativt ogs\u00e5 indskrive vejnavn og husnummer som fritekst i tilh\u00f8rende felter.  Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
+            "num": 193,
+            "full_type": "uuid",
+            "typname": "uuid",
             "is_array": false,
             "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_6803_pg_fagentreprise.pg_fagentreprise_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Vanding"
-                },
-                {
-                    "value": 2,
-                    "alias": "Tr\u00e6besk\u00e6ring"
-                },
-                {
-                    "value": 3,
-                    "alias": "Vandl\u00f8bspleje"
-                },
-                {
-                    "value": 4,
-                    "alias": "Vinterdrift"
-                },
-                {
-                    "value": 5,
-                    "alias": "Gadefejning"
-                },
-                {
-                    "value": 6,
-                    "alias": "H\u00e6kklipning"
-                },
-                {
-                    "value": 7,
-                    "alias": "Gr\u00e6ssl\u00e5ning"
-                },
-                {
-                    "value": 8,
-                    "alias": "Belysning"
-                },
-                {
-                    "value": 9,
-                    "alias": "juleudsmykning"
-                },
-                {
-                    "value": 10,
-                    "alias": "Br\u00f8ndt\u00f8mning"
-                },
-                {
-                    "value": 11,
-                    "alias": "Ukrudtsbek\u00e6mp \/ varme"
-                },
-                {
-                    "value": 12,
-                    "alias": "Udtynding"
-                },
-                {
-                    "value": 98,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 99,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 194
-        },
-        "pg_fagentreprise": {
-            "type": "character varying",
-            "comment": "Fagentreprisens art Registreringsvejledning: V\u00e6lg fra kodelisten d_6803_pg_ fag, hvilken type opgave, der er f\u00e6lles for distriktet\/ hvilken fagentreprise det handler om. Eksempel: Tr\u00e6besk\u00e6ring",
-            "num": 23,
-            "full_type": "character varying(50)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 50,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 200,
+            "max_bytes": 16,
             "reference": null,
             "restriction": null,
-            "alias": "",
+            "alias": "Adresse id",
             "queryable": false,
-            "sort_id": 195
-        },
-        "pg_distrikt_nr": {
-            "type": "character varying",
-            "comment": "Det enkelte distrikts eller omr\u00e5des nummer fra lokal kodeliste. Eksempel: 012015",
-            "num": 24,
-            "full_type": "character varying(150)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 150,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 600,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 196
-        },
-        "pg_distrikt_navn": {
-            "type": "character varying",
-            "comment": "Det enkelte distrikts eller omr\u00e5des navn. Eksempel: 012015",
-            "num": 25,
-            "full_type": "character varying(150)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 150,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 600,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 197
-        },
-        "ansvarlig": {
-            "type": "character varying",
-            "comment": "Ansvarlig\/betalende myndighed. Eksempel: Kulturforvaltning",
-            "num": 26,
-            "full_type": "character varying(50)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 50,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 200,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 200
-        },
-        "konto_nr": {
-            "type": "character varying",
-            "comment": "Kontonr, bogf\u00f8rer, betaler. Eksempel: 19.560.756.20013",
-            "num": 27,
-            "full_type": "character varying(150)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 150,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 600,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 210
-        },
-        "cvr_opslag": {
-            "type": "character varying",
-            "comment": "Cvr data for entrepren\u00f8r \/ udf\u00f8rer",
-            "num": 28,
-            "full_type": "character varying(8)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 8,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 32,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 212
-        },
-        "udfoerer": {
-            "type": "character varying",
-            "comment": "Enhed der udf\u00f8rer plejen. Hvis ekstern udf\u00f8rer \u2013 brug cvr_opslag . Eksempel: Materielg\u00e5rden",
-            "num": 29,
-            "full_type": "character varying(50)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 50,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 200,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 213
-        },
-        "sagsnr": {
-            "type": "character varying",
-            "comment": "Henvisning til kontrakt m.m. i ESDH-system",
-            "num": 30,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 215
-        },
-        "udfoerer_kontakt1": {
-            "type": "character varying",
-            "comment": "Telefon nr. eller Email p\u00e5 1. kontaktemulighed til udf\u00f8rer. Eksempel: gr\u00f8n@gr\u00f8n.dk",
-            "num": 31,
-            "full_type": "character varying(50)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 50,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 200,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 220
-        },
-        "udfoerer_kontakt2": {
-            "type": "character varying",
-            "comment": "Telefon nr. eller Email p\u00e5 2. kontaktemulighed til udf\u00f8rer. Eksempel: Gr\u00f8n2@gr\u00f8n.dk",
-            "num": 32,
-            "full_type": "character varying(50)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 50,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 200,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 221
-        },
-        "udbyder_kontakt": {
-            "type": "character varying",
-            "comment": "Udbyder  kontakt p\u00e5 omr\u00e5det. Eksempel: Natur&Milj\u00f8, Team Park \u00d8st",
-            "num": 33,
-            "full_type": "character varying(150)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 150,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 600,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 222
+            "sort_id": 144
         },
         "vejkode": {
             "type": "integer",
-            "comment": "Vejkode (DAR)",
-            "num": 34,
+            "comment": "Vejkode (DAR). Eksempel: 46100128",
+            "num": 194,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -1413,14 +1090,14 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "",
+            "alias": "Vejkode",
             "queryable": false,
-            "sort_id": 850
+            "sort_id": 146
         },
         "vejnavn": {
             "type": "character varying",
-            "comment": "Vejnavn der refererer til vejkode",
-            "num": 35,
+            "comment": "Vejnavn. Eksempel: Borgergade",
+            "num": 195,
             "full_type": "character varying(40)",
             "typname": "varchar",
             "is_array": false,
@@ -1431,13 +1108,13 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": false,
-            "sort_id": 855
+            "queryable": true,
+            "sort_id": 148
         },
         "cvf_vejkode": {
             "type": "character",
             "comment": "Vejkode (CVF)",
-            "num": 36,
+            "num": 196,
             "full_type": "character(7)",
             "typname": "bpchar",
             "is_array": false,
@@ -1449,12 +1126,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 860
+            "sort_id": 150
         },
         "husnr": {
             "type": "character varying",
-            "comment": "Husnummer",
-            "num": 37,
+            "comment": "Husnummer. Eksempel: 122c",
+            "num": 197,
             "full_type": "character varying(4)",
             "typname": "varchar",
             "is_array": false,
@@ -1464,14 +1141,14 @@
             "max_bytes": 16,
             "reference": null,
             "restriction": null,
-            "alias": "",
+            "alias": "Husnummer",
             "queryable": false,
-            "sort_id": 870
+            "sort_id": 152
         },
         "postnr": {
             "type": "integer",
-            "comment": "Postnr",
-            "num": 38,
+            "comment": "Postnr. Eksempel: 8600",
+            "num": 198,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -5844,14 +5521,14 @@
                     "alias": "9999"
                 }
             ],
-            "alias": "",
+            "alias": "Postnummer",
             "queryable": false,
-            "sort_id": 880
+            "sort_id": 154
         },
         "postnr_by": {
             "type": "character varying",
-            "comment": "By der refererer til Postnr",
-            "num": 39,
+            "comment": "By der refererer til Postnr. Eksempel: Silkeborg",
+            "num": 199,
             "full_type": "character varying(128)",
             "typname": "varchar",
             "is_array": false,
@@ -5863,46 +5540,4123 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 890
+            "sort_id": 156
         },
-        "adr_id": {
-            "type": "uuid",
-            "comment": "Entydig databasen\u00f8gle fra det officielle adresseregister (UUID).",
-            "num": 40,
-            "full_type": "uuid",
-            "typname": "uuid",
+        "noegle": {
+            "type": "character varying",
+            "comment": "Eksempel: 12853468A",
+            "num": 18,
+            "full_type": "character varying(128)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 128,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 512,
+            "reference": null,
+            "restriction": null,
+            "alias": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
+            "queryable": false,
+            "sort_id": 158
+        },
+        "sagsnr": {
+            "type": "character varying",
+            "comment": "Eksempel: 8-70-21-3-743-6-96",
+            "num": 192,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "Sagsnummer. Identifikation af sag i ESDH.",
+            "queryable": false,
+            "sort_id": 160
+        },
+        "note": {
+            "type": "character varying",
+            "comment": "Eksempel: Omr\u00e5det er meget ufremkommeligt.",
+            "num": 19,
+            "full_type": "character varying(254)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 254,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1016,
+            "reference": null,
+            "restriction": null,
+            "alias": "Note, frit bem\u00e6rkningsfelt.",
+            "queryable": false,
+            "sort_id": 162
+        },
+        "beskyt_rum_type_kode": {
+            "type": "integer",
+            "comment": "Kode for type af beskyttelsesrum. Eksempel: 1",
+            "num": 20,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_beskyt_rum.beskyt_rum_type_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Betond\u00e6kningsgrav"
+                }
+            ],
+            "alias": "Beskyttelsesrumtype, V\u00e6lg Betond\u00e6kningsgrav.",
+            "queryable": false,
+            "sort_id": 200
+        },
+        "beskyt_rum_type": {
+            "type": "character varying",
+            "comment": "Type af beskyttelsesrum. Eksempel: Betond\u00e6kningsgrav",
+            "num": 21,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 202
+        },
+        "beskyt_rum_nr": {
+            "type": "character varying",
+            "comment": "Eksempel: 472a",
+            "num": 22,
+            "full_type": "character varying(20)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 20,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 80,
+            "reference": null,
+            "restriction": null,
+            "alias": "Identifikation\/nummer for beskyttelsesrummet.",
+            "queryable": false,
+            "sort_id": 204
+        },
+        "matrikelejer": {
+            "type": "character varying",
+            "comment": "Eksempel: Rudersdal kommune",
+            "num": 23,
+            "full_type": "character varying(100)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 100,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 400,
+            "reference": null,
+            "restriction": null,
+            "alias": "Angiv matrikelejer for grunden, hvor betond\u00e6kningsgraven er placeret.",
+            "queryable": false,
+            "sort_id": 206
+        },
+        "udfoert_af": {
+            "type": "character varying",
+            "comment": "Eksempel: Peter Jensen",
+            "num": 24,
+            "full_type": "character varying(50)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 50,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 200,
+            "reference": null,
+            "restriction": null,
+            "alias": "Angiv navnet p\u00e5 den, der udf\u00f8rer eftersynet. ",
+            "queryable": false,
+            "sort_id": 208
+        },
+        "udfoert_dato": {
+            "type": "date",
+            "comment": "Angiv dato for eftersyn. Eksempel: 2026.01.21",
+            "num": 25,
+            "full_type": "date",
+            "typname": "date",
             "is_array": false,
             "character_maximum_length": null,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 16,
+            "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "",
+            "alias": "Angiv udf\u00f8rt dato",
             "queryable": false,
-            "sort_id": 900
+            "sort_id": 210
         },
-        "link": {
+        "godkendt_af": {
             "type": "character varying",
-            "comment": "URL-link",
-            "num": 41,
-            "full_type": "character varying(1024)",
+            "comment": "Eksempel: Dorte S\u00f8rensen",
+            "num": 26,
+            "full_type": "character varying(50)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 1024,
+            "character_maximum_length": 50,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 4096,
+            "max_bytes": 200,
+            "reference": null,
+            "restriction": null,
+            "alias": "Godkendt af, Angiv navnet p\u00e5 den, der har godkendt eftersynet. ",
+            "queryable": false,
+            "sort_id": 212
+        },
+        "godkendt_dato": {
+            "type": "date",
+            "comment": "Angiv dato for godkendelse af eftersyn. Eksempel: 2026.02.01",
+            "num": 27,
+            "full_type": "date",
+            "typname": "date",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "Angiv godkendt dato",
+            "queryable": false,
+            "sort_id": 214
+        },
+        "dokumentation": {
+            "type": "boolean",
+            "comment": "Eksisterer der dokumentation om beskyttelsesrummet? Fx byggesag. Eksempe: Ja",
+            "num": 28,
+            "full_type": "boolean",
+            "typname": "bool",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1,
+            "reference": null,
+            "restriction": null,
+            "alias": "Er der dokumentation?",
+            "queryable": false,
+            "sort_id": 216
+        },
+        "inspektioner": {
+            "type": "boolean",
+            "comment": "Eksisterer der materiale fra tidligere inspektioner (indvendig og udvendig)? Eksempel: Ja",
+            "num": 29,
+            "full_type": "boolean",
+            "typname": "bool",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1,
+            "reference": null,
+            "restriction": null,
+            "alias": "Er der materiale fra tidligere inspektioner?",
+            "queryable": false,
+            "sort_id": 218
+        },
+        "bbr": {
+            "type": "boolean",
+            "comment": "Er beskyttelsesrummet registreret i BBR? Eksempel: Nej",
+            "num": 30,
+            "full_type": "boolean",
+            "typname": "bool",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1,
+            "reference": null,
+            "restriction": null,
+            "alias": "Er det registreret i BBR?",
+            "queryable": false,
+            "sort_id": 220
+        },
+        "lokaliseret": {
+            "type": "boolean",
+            "comment": "Er det muligt at lokalisere beskyttelsesrummet? Eksempel: Ja",
+            "num": 31,
+            "full_type": "boolean",
+            "typname": "bool",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1,
+            "reference": null,
+            "restriction": null,
+            "alias": "Er beskyttelsesrummet lokaliseret?",
+            "queryable": false,
+            "sort_id": 222
+        },
+        "lokaliseret_aarsag": {
+            "type": "character varying",
+            "comment": "Eksempel: \u201dEr nedlagt\u201d eller \u201dKan ikke ses p\u00e5 den angivne lokation\u201d.",
+            "num": 32,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "Angiv \u00e5rsag, hvis beskyttelsesrummet ikke kan lokaliseres.",
+            "queryable": false,
+            "sort_id": 224
+        },
+        "adgang_kode": {
+            "type": "integer",
+            "comment": "Er der adgang til beskyttelsesrummet? Eksempel: Ja",
+            "num": 33,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Er der adgang til beskyttelsesrummet?",
+            "queryable": false,
+            "sort_id": 256
+        },
+        "adgang": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019'",
+            "num": 34,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
             "reference": null,
             "restriction": null,
             "alias": "",
+            "queryable": true,
+            "sort_id": 258
+        },
+        "adgang_jordarbejde_kode": {
+            "type": "integer",
+            "comment": "Skal der udf\u00f8res jordarbejde for at f\u00e5 adgang til beskyttelsesrummet? Fx fjerne jord eller andet materiale. Eksempel: Ja",
+            "num": 35,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Skal der udf\u00f8res jordarbejde for at f\u00e5 adgang?",
             "queryable": false,
+            "sort_id": 260
+        },
+        "adgang_jordarbejde": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019 ",
+            "num": 36,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 262
+        },
+        "adgang_gartnerarbejde_kode": {
+            "type": "integer",
+            "comment": "Skal der udf\u00f8res gartnerarbejde for at f\u00e5 adgang til beskyttelsesrummet? Eksempel: Ja",
+            "num": 37,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Skal  der udf\u00f8res gartnerarbejde for at f\u00e5 adgang?",
+            "queryable": false,
+            "sort_id": 270
+        },
+        "adgang_gartnerarbejde": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019 ",
+            "num": 38,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 272
+        },
+        "adgang_bygningsarbejde_kode": {
+            "type": "integer",
+            "comment": "Skal der udf\u00f8res bygningsarbejde for at f\u00e5 adgang til beskyttelsesrummet? Eksempel: Ja",
+            "num": 39,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Skal der udf\u00f8res bygningsarbejde for at f\u00e5 adgang?",
+            "queryable": false,
+            "sort_id": 280
+        },
+        "adgang_bygningsarbejde": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 40,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 282
+        },
+        "taarn_kode": {
+            "type": "integer",
+            "comment": "Er der et t\u00e5rn p\u00e5 betond\u00e6kningsgraven? Eksempel: Ja",
+            "num": 54,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Er der et t\u00e5rn p\u00e5 betond\u00e6kningsgraven?",
+            "queryable": false,
+            "sort_id": 284
+        },
+        "taarn": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 55,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 286
+        },
+        "betondaeksel_kode": {
+            "type": "integer",
+            "comment": "Er betond\u00e6kslet over n\u00f8dudgang intakt og p\u00e5 plads? Eksempel: Ja",
+            "num": 56,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Er betond\u00e6kslet over n\u00f8dudgang intakt og p\u00e5 plads?",
+            "queryable": false,
+            "sort_id": 288
+        },
+        "betondaeksel": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 57,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 290
+        },
+        "svanehals_kode": {
+            "type": "integer",
+            "comment": "Findes der en svanehals?  Eksempel: Ja",
+            "num": 58,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Findes der en svanehals?",
+            "queryable": false,
+            "sort_id": 292
+        },
+        "svanehals": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 59,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 294
+        },
+        "antal_pladser": {
+            "type": "integer",
+            "comment": "Eksempel: 150",
+            "num": 43,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "Adgang og anvendelse: Antal pladser i betond\u00e6kningsgraven.",
+            "queryable": false,
+            "sort_id": 300
+        },
+        "antal_opholdsrum": {
+            "type": "integer",
+            "comment": "Eksempel: 2",
+            "num": 44,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "Adgang og anvendelse: Antallet af indre opholdsrum i beskyttelsesrummet.",
+            "queryable": false,
+            "sort_id": 310
+        },
+        "beskyt_rum_anvendelse_kode": {
+            "type": "integer",
+            "comment": "Angiv kode for nuv\u00e6rende anvendelse af beskyttelsesrum. Eksempel: 1",
+            "num": 41,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_beskyt_rum_anvendelse.beskyt_rum_anvendelse_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Anvendes ikke"
+                },
+                {
+                    "value": 2,
+                    "alias": "Depot\/opbevaring"
+                },
+                {
+                    "value": 3,
+                    "alias": "Aktiviteter, fx \u00f8velokale"
+                },
+                {
+                    "value": 4,
+                    "alias": "Opfyldt, fx med jord. "
+                }
+            ],
+            "alias": "Adgang og anvendelse: Angiv nuv\u00e6rende anvendelse af beskyttelsesrum",
+            "queryable": false,
+            "sort_id": 312
+        },
+        "beskyt_rum_anvendelse": {
+            "type": "character varying",
+            "comment": "Nuv\u00e6rende anvendelse af beskyttelsesrum Eksempel: Anvendes ikke",
+            "num": 42,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 314
+        },
+        "trapper_antal": {
+            "type": "integer",
+            "comment": "Eksempel: 4",
+            "num": 45,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "Adgang og anvendelse: Angiv antal trapper.",
+            "queryable": false,
+            "sort_id": 320
+        },
+        "adgangsdoerhuller_antal": {
+            "type": "integer",
+            "comment": "Eksempel: 3",
+            "num": 46,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "Adgang og anvendelse: Angiv antal adgangsd\u00f8rhuller.",
+            "queryable": false,
+            "sort_id": 322
+        },
+        "adgangsdoerhuller_staal_kode": {
+            "type": "integer",
+            "comment": "Eksempel: Ja",
+            "num": 47,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Er der st\u00e5ld\u00f8re i alle adgangsd\u00f8rhuller? ",
+            "queryable": false,
+            "sort_id": 325
+        },
+        "adgangsdoerhuller_staal": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 48,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 327
+        },
+        "adgangsdoerhuller_staal_funktion_kode": {
+            "type": "integer",
+            "comment": "Er alle st\u00e5ld\u00f8re funktionsduelige? Eksempel: Ja",
+            "num": 49,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Er alle st\u00e5ld\u00f8re funktionsduelige? ",
+            "queryable": false,
+            "sort_id": 350
+        },
+        "adgangsdoerhuller_staal_funktion": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 50,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 352
+        },
+        "noedudgange_antal": {
+            "type": "integer",
+            "comment": "Eksempel: 3",
+            "num": 51,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "Adgang og anvendelse: Angiv antallet af n\u00f8dudgange.",
+            "queryable": false,
+            "sort_id": 360
+        },
+        "noedudgange_staallem_kode": {
+            "type": "integer",
+            "comment": "Er der st\u00e5llemme for n\u00f8dudgangs\u00e5bninger? Eksempel: Ja",
+            "num": 52,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Adgang og anvendelse: Er der st\u00e5llemme for n\u00f8dudgangs\u00e5bninger?",
+            "queryable": false,
+            "sort_id": 370
+        },
+        "noedudgange_staallem": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 53,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 372
+        },
+        "note_konstruktion": {
+            "type": "character varying",
+            "comment": "Eksempel: \u201dKonstruktionen er i nedstyrtningsfare\u201d.",
+            "num": 69,
+            "full_type": "character varying(512)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 512,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 2048,
+            "reference": null,
+            "restriction": null,
+            "alias": "Konstruktion: \u00d8vrige bem\u00e6rkninger til konstruktion. Bem\u00e6rk specifikke sp\u00f8rgsm\u00e5l til konstruktion besvares p\u00e5 rumniveau.",
+            "queryable": false,
+            "sort_id": 380
+        },
+        "vvs_sump_kode": {
+            "type": "integer",
+            "comment": "Findes der en sump? Sumpen er placeret udenfor opholdsrum.",
+            "num": 60,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Installation: Findes der en sump? Sumpen er placeret udenfor opholdsrum.",
+            "queryable": false,
+            "sort_id": 410
+        },
+        "vvs_sump": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 61,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 412
+        },
+        "vvs_gulvafloeb_kode": {
+            "type": "integer",
+            "comment": "Er der gulvafl\u00f8b? Gulvafl\u00f8bet er placeret udenfor opholdsrum. Eksempel: Ja",
+            "num": 62,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Installation: Er der gulvafl\u00f8b? Gulvafl\u00f8bet er placeret udenfor opholdsrum.",
+            "queryable": false,
+            "sort_id": 420
+        },
+        "vvs_gulvafloeb": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 63,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 422
+        },
+        "vvs_sump_fungerer_kode": {
+            "type": "integer",
+            "comment": "Fungerer sumpen? Sumpen testes ved, at der h\u00e6ldes 20 l. vand i afl\u00f8b. Eksempel: Ja",
+            "num": 64,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Installation: Fungerer sumpen? Sumpen testes ved, at der h\u00e6ldes 20 l. vand i afl\u00f8b.",
+            "queryable": false,
+            "sort_id": 430
+        },
+        "vvs_sump_fungerer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 65,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 432
+        },
+        "fredstidsinstallationer_kode": {
+            "type": "integer",
+            "comment": "Er der udf\u00f8rt fredstidsinstallationer? Fredsinstallationer kan fx v\u00e6re, at der er indlagt el, elektrisk udluftning mv. Eksempel: Ja",
+            "num": 66,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Installation: Er der udf\u00f8rt fredstidsinstallationer? ",
+            "queryable": false,
+            "sort_id": 440
+        },
+        "fredstidsinstallationer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 67,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 442
+        },
+        "note_fredstidsinstallationer": {
+            "type": "character varying",
+            "comment": "Eksempel: \u201dDer er indlagt el i rummet\u201d.",
+            "num": 68,
+            "full_type": "character varying(256)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 256,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1024,
+            "reference": null,
+            "restriction": null,
+            "alias": "Installation: Hvis der er udf\u00f8rt fredstidsinstallationer, s\u00e5 angiv hvilke i bem\u00e6rkningsfelt.",
+            "queryable": false,
+            "sort_id": 444
+        },
+        "oevrig_teknisk_installationer_bemaerkninger": {
+            "type": "character varying",
+            "comment": "Eksempel: \u201dDer mangler ventilation\u201d.",
+            "num": 70,
+            "full_type": "character varying(512)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 512,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 2048,
+            "reference": null,
+            "restriction": null,
+            "alias": "Installation: \u00d8vrig teknisk installationer bem\u00e6rkninger. Bem\u00e6rk specifikke sp\u00f8rgsm\u00e5l til installationer besvares p\u00e5 rumniveau. ",
+            "queryable": false,
+            "sort_id": 448
+        },
+        "oevrig_bemaerkninger": {
+            "type": "character varying",
+            "comment": "Eksempel: \u201ddet var ikke muligt at f\u00e5 adgang til samtlige opholdsrum\u201d, bem\u00e6rkninger til stand eller konstruktion eller \u201dder er mere end fire opholdsrum\u201d. ",
+            "num": 71,
+            "full_type": "character varying(512)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 512,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 2048,
+            "reference": null,
+            "restriction": null,
+            "alias": "\u00d8vrige bem\u00e6rkninger til eftersyn.",
+            "queryable": false,
+            "sort_id": 450
+        },
+        "_1_konstruktion_intakt_kode": {
+            "type": "integer",
+            "comment": "Er hovedkonstruktionen intakt? Eksempel: Ja",
+            "num": 72,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er konstruktionen intakt?",
+            "queryable": false,
+            "sort_id": 500
+        },
+        "_1_konstruktion_intakt": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 73,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 502
+        },
+        "_1_konstruktion_blotlagt_armering_kode": {
+            "type": "integer",
+            "comment": "Er der blotlagt armering? Eksempel: Ja",
+            "num": 74,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "queryable": false,
+            "sort_id": 505
+        },
+        "_1_konstruktion_blotlagt_armering": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 75,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 507
+        },
+        "_1_konstruktion_aendret_kode": {
+            "type": "integer",
+            "comment": "Er konstruktionen \u00e6ndret? Eksempel: Ja",
+            "num": 76,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er konstruktionen \u00e6ndret?",
+            "queryable": false,
+            "sort_id": 510
+        },
+        "_1_konstruktion_aendret": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 77,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 512
+        },
+        "_1_konstruktion_revner_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der revner i gulve? Eksempel: Ja",
+            "num": 78,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er der revner i konstruktionens gulv?",
+            "queryable": false,
+            "sort_id": 515
+        },
+        "_1_konstruktion_revner_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 79,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 517
+        },
+        "_1_konstruktion_revner_vaegge_kode": {
+            "type": "integer",
+            "comment": "Er der revner i v\u00e6gge? Eksempel: Ja",
+            "num": 80,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er der revner i konstruktionens v\u00e6gge?",
+            "queryable": false,
+            "sort_id": 520
+        },
+        "_1_konstruktion_revner_vaegge": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 81,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 522
+        },
+        "_1_konstruktion_revner_loft_kode": {
+            "type": "integer",
+            "comment": "Er der revner i loft? Eksempel: Ja",
+            "num": 82,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er der revner i konstruktionens loft?",
+            "queryable": false,
+            "sort_id": 525
+        },
+        "_1_konstruktion_revner_loft": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 83,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 527
+        },
+        "_1_indtraengende_fugt_vand_kode": {
+            "type": "integer",
+            "comment": "Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne? Eksempel: Ja",
+            "num": 84,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "queryable": false,
+            "sort_id": 530
+        },
+        "_1_indtraengende_fugt_vand": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 85,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 532
+        },
+        "_1_vandpyt_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der vand eller vandpytter p\u00e5 gulv?",
+            "num": 86,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "queryable": false,
+            "sort_id": 535
+        },
+        "_1_vandpyt_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 87,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 537
+        },
+        "_1_vand_daekker_gulv_kode": {
+            "type": "integer",
+            "comment": "Er gulvet d\u00e6kket af vand? Eksempel: Ja",
+            "num": 88,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "queryable": false,
+            "sort_id": 540
+        },
+        "_1_vand_daekker_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 89,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 542
+        },
+        "_1_skadedyr_spor_kode": {
+            "type": "integer",
+            "comment": "Er der spor efter skadedyr (fx rotter)? Eksempel: Ja",
+            "num": 90,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er der spor fra skadedyr?",
+            "queryable": false,
+            "sort_id": 545
+        },
+        "_1_skadedyr_spor": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 91,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 547
+        },
+        "_1_skadedyr_ekskrementer_kode": {
+            "type": "integer",
+            "comment": "Er der ekskrementer, der skal fjernes? Eksempel: Ja",
+            "num": 92,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Konstruktion: Er der skadedyr ekskrementer?",
+            "queryable": false,
+            "sort_id": 550
+        },
+        "_1_skadedyr_ekskrementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 93,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 552
+        },
+        "_1_ventilation_haanddreven_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes en h\u00e5nddreven ventilator. Eksempel: Ja",
+            "num": 94,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Installation: Er ventilation h\u00e5nddreven?",
+            "queryable": false,
+            "sort_id": 555
+        },
+        "_1_ventilation_haanddreven": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 95,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 557
+        },
+        "_1_forbindelsesslanger_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes forbindelsesslanger. Eksempel: Ja",
+            "num": 96,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Installation: Er der forbindelsesslanger?",
+            "queryable": false,
+            "sort_id": 560
+        },
+        "_1_forbindelsesslanger": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 97,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 562
+        },
+        "_1_indsugningsarrangementer_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes indsugningsarrangementer. Eksempel: Ja",
+            "num": 98,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Installation: Er der indsugningsarrangementer?",
+            "queryable": false,
+            "sort_id": 565
+        },
+        "_1_indsugningsarrangementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 99,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 567
+        },
+        "_1_overtryksventiler_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes en eller flere overtryksventiler. Eksempel: Ja",
+            "num": 100,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 1 - Installation: Er der overtryksventiler?",
+            "queryable": false,
+            "sort_id": 570
+        },
+        "_1_overtryksventiler": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 101,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 572
+        },
+        "_2_konstruktion_intakt_kode": {
+            "type": "integer",
+            "comment": "Er hovedkonstruktionen intakt? Eksempel: Ja",
+            "num": 102,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er konstruktionen intakt?",
+            "queryable": false,
+            "sort_id": 615
+        },
+        "_2_konstruktion_intakt": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 103,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 617
+        },
+        "_2_konstruktion_blotlagt_armering_kode": {
+            "type": "integer",
+            "comment": "Er der blotlagt armering? Eksempel: Ja",
+            "num": 104,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "queryable": false,
+            "sort_id": 620
+        },
+        "_2_konstruktion_blotlagt_armering": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 105,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 622
+        },
+        "_2_konstruktion_aendret_kode": {
+            "type": "integer",
+            "comment": "Er konstruktionen \u00e6ndret? Eksempel: Ja",
+            "num": 106,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er konstruktionen \u00e6ndret?",
+            "queryable": false,
+            "sort_id": 625
+        },
+        "_2_konstruktion_aendret": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 107,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 627
+        },
+        "_2_konstruktion_revner_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der revner i gulve?  Eksempel: Ja",
+            "num": 108,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er der revner i konstruktionens gulv?",
+            "queryable": false,
+            "sort_id": 630
+        },
+        "_2_konstruktion_revner_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 109,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 632
+        },
+        "_2_konstruktion_revner_vaegge_kode": {
+            "type": "integer",
+            "comment": "Er der revner i v\u00e6gge? ",
+            "num": 110,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er der revner i konstruktionens v\u00e6gge?",
+            "queryable": false,
+            "sort_id": 635
+        },
+        "_2_konstruktion_revner_vaegge": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 111,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 637
+        },
+        "_2_konstruktion_revner_loft_kode": {
+            "type": "integer",
+            "comment": "Er der revner i loft? Eksempel: Ja",
+            "num": 112,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er der revner i konstruktionens loft?",
+            "queryable": false,
+            "sort_id": 640
+        },
+        "_2_konstruktion_revner_loft": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 113,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 642
+        },
+        "_2_indtraengende_fugt_vand_kode": {
+            "type": "integer",
+            "comment": "Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne? Eksempel: Ja",
+            "num": 114,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "queryable": false,
+            "sort_id": 645
+        },
+        "_2_indtraengende_fugt_vand": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 115,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 647
+        },
+        "_2_vandpyt_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der vand eller vandpytter p\u00e5 gulv? Eksempel: Ja",
+            "num": 116,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "queryable": false,
+            "sort_id": 650
+        },
+        "_2_vandpyt_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 117,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 652
+        },
+        "_2_vand_daekker_gulv_kode": {
+            "type": "integer",
+            "comment": "Er gulvet d\u00e6kket af vand? Eksempel: Ja",
+            "num": 118,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "queryable": false,
+            "sort_id": 655
+        },
+        "_2_vand_daekker_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 119,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 657
+        },
+        "_2_skadedyr_spor_kode": {
+            "type": "integer",
+            "comment": "Er der spor efter skadedyr (fx rotter)? Eksempel: Ja",
+            "num": 120,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er der spor fra skadedyr?",
+            "queryable": false,
+            "sort_id": 660
+        },
+        "_2_skadedyr_spor": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 121,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 662
+        },
+        "_2_skadedyr_ekskrementer_kode": {
+            "type": "integer",
+            "comment": "Er der ekskrementer, der skal fjernes?",
+            "num": 122,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Konstruktion: Er der skadedyr ekskrementer?",
+            "queryable": false,
+            "sort_id": 665
+        },
+        "_2_skadedyr_ekskrementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 123,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 667
+        },
+        "_2_ventilation_haanddreven_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes en h\u00e5nddreven ventilator. Eksempel: Ja",
+            "num": 124,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Installation: Er ventilation h\u00e5nddreven?",
+            "queryable": false,
+            "sort_id": 670
+        },
+        "_2_ventilation_haanddreven": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 125,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 672
+        },
+        "_2_forbindelsesslanger_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes forbindelsesslanger. Eksempel: Ja",
+            "num": 126,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Installation: Er der forbindelsesslanger?",
+            "queryable": false,
+            "sort_id": 674
+        },
+        "_2_forbindelsesslanger": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 127,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 676
+        },
+        "_2_indsugningsarrangementer_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes indsugningsarrangementer. Eksempel: Ja",
+            "num": 128,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Installation: Er der indsugningsarrangementer?",
+            "queryable": false,
+            "sort_id": 678
+        },
+        "_2_indsugningsarrangementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 129,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 680
+        },
+        "_2_overtryksventiler_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes en eller flere overtryksventiler. Eksempel: Ja",
+            "num": 130,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 2 - Installation: Er der overtryksventiler?",
+            "queryable": false,
+            "sort_id": 684
+        },
+        "_2_overtryksventiler": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 131,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 686
+        },
+        "_3_konstruktion_intakt_kode": {
+            "type": "integer",
+            "comment": "Er hovedkonstruktionen intakt? Eksempel: Ja",
+            "num": 132,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er konstruktionen intakt?",
+            "queryable": false,
+            "sort_id": 700
+        },
+        "_3_konstruktion_intakt": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 133,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 702
+        },
+        "_3_konstruktion_blotlagt_armering_kode": {
+            "type": "integer",
+            "comment": "Er der blotlagt armering? Eksempel: Ja",
+            "num": 134,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "queryable": false,
+            "sort_id": 705
+        },
+        "_3_konstruktion_blotlagt_armering": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 135,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 707
+        },
+        "_3_konstruktion_aendret_kode": {
+            "type": "integer",
+            "comment": "Er konstruktionen \u00e6ndret? Eksempel: Ja",
+            "num": 136,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er konstruktionen \u00e6ndret?",
+            "queryable": false,
+            "sort_id": 710
+        },
+        "_3_konstruktion_aendret": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 137,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 712
+        },
+        "_3_konstruktion_revner_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der revner i gulve? Eksempel: Ja",
+            "num": 138,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er der revner i konstruktionens gulv?",
+            "queryable": false,
+            "sort_id": 715
+        },
+        "_3_konstruktion_revner_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 139,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 717
+        },
+        "_3_konstruktion_revner_vaegge_kode": {
+            "type": "integer",
+            "comment": "Er der revner i v\u00e6gge? Eksempel: Ja",
+            "num": 140,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er der revner i konstruktionens v\u00e6gge?",
+            "queryable": false,
+            "sort_id": 720
+        },
+        "_3_konstruktion_revner_vaegge": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 141,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 722
+        },
+        "_3_konstruktion_revner_loft_kode": {
+            "type": "integer",
+            "comment": "Er der revner i loft? Eksempel: Ja",
+            "num": 142,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er der revner i konstruktionens loft?",
+            "queryable": false,
+            "sort_id": 725
+        },
+        "_3_konstruktion_revner_loft": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 143,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 727
+        },
+        "_3_indtraengende_fugt_vand_kode": {
+            "type": "integer",
+            "comment": "Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne? Eksempel: Ja",
+            "num": 144,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "queryable": false,
+            "sort_id": 730
+        },
+        "_3_indtraengende_fugt_vand": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 145,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 735
+        },
+        "_3_vandpyt_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der vand eller vandpytter p\u00e5 gulv? Eksempel: Ja",
+            "num": 146,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "queryable": false,
+            "sort_id": 735
+        },
+        "_3_vandpyt_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 147,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 737
+        },
+        "_3_vand_daekker_gulv_kode": {
+            "type": "integer",
+            "comment": "Er gulvet d\u00e6kket af vand? Eksempel: Ja",
+            "num": 148,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "queryable": false,
+            "sort_id": 740
+        },
+        "_3_vand_daekker_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 149,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 742
+        },
+        "_3_skadedyr_spor_kode": {
+            "type": "integer",
+            "comment": "Er der spor efter skadedyr (fx rotter)? Eksempel: Ja",
+            "num": 150,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er der spor fra skadedyr?",
+            "queryable": false,
+            "sort_id": 745
+        },
+        "_3_skadedyr_spor": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 151,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 747
+        },
+        "_3_skadedyr_ekskrementer_kode": {
+            "type": "integer",
+            "comment": "Er der ekskrementer, der skal fjernes? Eksempel: Ja",
+            "num": 152,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Konstruktion: Er der skadedyr ekskrementer?",
+            "queryable": false,
+            "sort_id": 750
+        },
+        "_3_skadedyr_ekskrementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 153,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 752
+        },
+        "_3_ventilation_haanddreven_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes en h\u00e5nddreven ventilator. Eksempel: Ja",
+            "num": 154,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Installation: Er ventilation h\u00e5nddreven?",
+            "queryable": false,
+            "sort_id": 755
+        },
+        "_3_ventilation_haanddreven": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 155,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 757
+        },
+        "_3_forbindelsesslanger_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes forbindelsesslanger. Eksempel: Ja",
+            "num": 156,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Installation: Er der forbindelsesslanger?",
+            "queryable": false,
+            "sort_id": 760
+        },
+        "_3_forbindelsesslanger": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 157,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 762
+        },
+        "_3_indsugningsarrangementer_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes indsugningsarrangementer. Eksempel: Ja",
+            "num": 158,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Installation: Er der indsugningsarrangementer?",
+            "queryable": false,
+            "sort_id": 765
+        },
+        "_3_indsugningsarrangementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 159,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 767
+        },
+        "_3_overtryksventiler_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes en eller flere overtryksventiler. Eksempel: Ja",
+            "num": 160,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 3 - Installation: Er der overtryksventiler?",
+            "queryable": false,
+            "sort_id": 770
+        },
+        "_3_overtryksventiler": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 161,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 772
+        },
+        "_4_konstruktion_intakt_kode": {
+            "type": "integer",
+            "comment": "Er hovedkonstruktionen intakt? Eksempel: Ja",
+            "num": 162,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er konstruktionen intakt?",
+            "queryable": false,
+            "sort_id": 800
+        },
+        "_4_konstruktion_intakt": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 163,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 805
+        },
+        "_4_konstruktion_blotlagt_armering_kode": {
+            "type": "integer",
+            "comment": "Er der blotlagt armering? Eksempel: Ja",
+            "num": 164,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "queryable": false,
+            "sort_id": 810
+        },
+        "_4_konstruktion_blotlagt_armering": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 165,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 815
+        },
+        "_4_konstruktion_aendret_kode": {
+            "type": "integer",
+            "comment": "Er konstruktionen \u00e6ndret? Eksempel: Ja",
+            "num": 166,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er konstruktionen \u00e6ndret?",
+            "queryable": false,
+            "sort_id": 820
+        },
+        "_4_konstruktion_aendret": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 167,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 825
+        },
+        "_4_konstruktion_revner_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der revner i gulve?  Eksempel: Ja",
+            "num": 168,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er der revner i konstruktionens gulv?",
+            "queryable": false,
+            "sort_id": 830
+        },
+        "_4_konstruktion_revner_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 169,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 835
+        },
+        "_4_konstruktion_revner_vaegge_kode": {
+            "type": "integer",
+            "comment": "Er der revner i v\u00e6gge?  Eksempel: Ja",
+            "num": 170,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er der revner i konstruktionens v\u00e6gge?",
+            "queryable": false,
+            "sort_id": 840
+        },
+        "_4_konstruktion_revner_vaegge": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 171,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 845
+        },
+        "_4_konstruktion_revner_loft_kode": {
+            "type": "integer",
+            "comment": "Er der revner i loft? Eksempel: Ja",
+            "num": 172,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er der revner i konstruktionens loft?",
+            "queryable": false,
+            "sort_id": 850
+        },
+        "_4_konstruktion_revner_loft": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 173,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 855
+        },
+        "_4_indtraengende_fugt_vand_kode": {
+            "type": "integer",
+            "comment": "Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne? Eksempel: Ja",
+            "num": 174,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "queryable": false,
+            "sort_id": 860
+        },
+        "_4_indtraengende_fugt_vand": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 175,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 865
+        },
+        "_4_vandpyt_gulv_kode": {
+            "type": "integer",
+            "comment": "Er der vand eller vandpytter p\u00e5 gulv? Eksempel: Ja",
+            "num": 176,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "queryable": false,
+            "sort_id": 870
+        },
+        "_4_vandpyt_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 177,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 875
+        },
+        "_4_vand_daekker_gulv_kode": {
+            "type": "integer",
+            "comment": "Er gulvet d\u00e6kket af vand? Eksempel: Ja",
+            "num": 178,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "queryable": false,
+            "sort_id": 880
+        },
+        "_4_vand_daekker_gulv": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 179,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 885
+        },
+        "_4_skadedyr_spor_kode": {
+            "type": "integer",
+            "comment": "Er der spor efter skadedyr (fx rotter)? Eksempel: Ja",
+            "num": 180,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er der spor fra skadedyr?",
+            "queryable": false,
+            "sort_id": 890
+        },
+        "_4_skadedyr_spor": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 181,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 900
+        },
+        "_4_skadedyr_ekskrementer_kode": {
+            "type": "integer",
+            "comment": "Er der ekskrementer, der skal fjernes? Eksempel: Ja",
+            "num": 182,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Konstruktion: Er der skadedyr ekskrementer?",
+            "queryable": false,
+            "sort_id": 905
+        },
+        "_4_skadedyr_ekskrementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 183,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
             "sort_id": 910
+        },
+        "_4_ventilation_haanddreven_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes en h\u00e5nddreven ventilator. Eksempel: Ja",
+            "num": 184,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Installation: Er ventilation h\u00e5nddreven?",
+            "queryable": false,
+            "sort_id": 915
+        },
+        "_4_ventilation_haanddreven": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 185,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 920
+        },
+        "_4_forbindelsesslanger_kode": {
+            "type": "integer",
+            "comment": "Angiv om der forefindes forbindelsesslanger. Eksempel: Ja",
+            "num": 186,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Installation: Er der forbindelsesslanger?",
+            "queryable": false,
+            "sort_id": 925
+        },
+        "_4_forbindelsesslanger": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 187,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 930
+        },
+        "_4_indsugningsarrangementer_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes indsugningsarrangementer. Eksempel: Ja",
+            "num": 188,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Installation: Er der indsugningsarrangementer?",
+            "queryable": false,
+            "sort_id": 935
+        },
+        "_4_indsugningsarrangementer": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 189,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 940
+        },
+        "_4_overtryksventiler_kode": {
+            "type": "integer",
+            "comment": "Angiv om der findes en eller flere overtryksventiler. Eksempel: Ja",
+            "num": 190,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ved ikke"
+                }
+            ],
+            "alias": "Rum 4 - Installation: Er der overtryksventiler?",
+            "queryable": false,
+            "sort_id": 945
+        },
+        "_4_overtryksventiler": {
+            "type": "character varying",
+            "comment": "Systemovers\u00e6ttelse af overst\u00e5ende vha. opslagstabellen \u2019d_basis_ja_nej_ved_ikke\u2019",
+            "num": 191,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 950
         },
         "foto_link": {
             "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 42,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 201,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -5914,12 +9668,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 1001
+            "sort_id": 1030
         },
         "foto_link1": {
             "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 43,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 202,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -5931,12 +9685,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 1002
+            "sort_id": 1040
         },
         "foto_link2": {
             "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 44,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 203,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -5948,12 +9702,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 1003
+            "sort_id": 1050
         },
         "foto_link3": {
             "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 45,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 204,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -5965,12 +9719,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 1004
+            "sort_id": 1060
         },
-        "geofafoto": {
+        "foto_link4": {
             "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 46,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 205,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -5981,13 +9735,13 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": true,
-            "sort_id": 1004
+            "queryable": false,
+            "sort_id": 1070
         },
-        "geofafoto1": {
+        "foto_link5": {
             "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 47,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 206,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -5998,13 +9752,13 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": true,
-            "sort_id": 1005
+            "queryable": false,
+            "sort_id": 1080
         },
-        "geofafoto2": {
+        "foto_link6": {
             "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 48,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 207,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -6015,13 +9769,13 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": true,
-            "sort_id": 1006
+            "queryable": false,
+            "sort_id": 1090
         },
-        "geofafoto3": {
+        "foto_link7": {
             "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 49,
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 208,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -6032,14 +9786,65 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": true,
-            "sort_id": 1007
+            "queryable": false,
+            "sort_id": 1100
+        },
+        "foto_link8": {
+            "type": "character varying",
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 209,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 1110
+        },
+        "foto_link9": {
+            "type": "character varying",
+            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "num": 210,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 1120
+        },
+        "link": {
+            "type": "character varying",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
+            "num": 211,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 2000
         },
         "geometri": {
             "type": "geometry",
-            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier.",
-            "num": 50,
-            "full_type": "geometry(MultiPolygon,25832)",
+            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier. Eksempel: For et punkt:  543.210,999  6.123.456,111",
+            "num": 212,
+            "full_type": "geometry(MultiPoint,25832)",
             "typname": "geometry",
             "is_array": false,
             "character_maximum_length": null,
@@ -6048,39 +9853,36 @@
             "max_bytes": null,
             "reference": null,
             "restriction": null,
-            "geom_type": "MultiPolygon",
+            "geom_type": "MultiPoint",
             "srid": "25832",
             "alias": "",
             "queryable": false,
-            "sort_id": 9000
+            "sort_id": 3000
         }
     },
     "children": null,
     "meta": {
         "tiled": false,
-        "formaal": "At kunne registrer hvem der st\u00e5r for og\/eller betaler for den gr\u00f8nne pleje indenfor et omr\u00e5de, s\u00e5 det ikke er n\u00f8dvendigt at registrere dette p\u00e5 hvert element\/objekt.",
-        "temakode": "6803",
-        "temanavn": "Park og gr\u00f8nne omr\u00e5ders distrikt",
-        "kle_koder": "04.00.00, 04.01.00, 04.01.09, 04.01.10, 04.01.11",
-        "meta_desc": "<p>\nOmr\u00e5deinddelingen af Park og gr\u00f8nne omr\u00e5ders distrikter og arbejdssted. F.eks. opdelt efter hvem der skal betale for plejen, hvem \nder udf\u00f8rer plejen eller hvad plejen g\u00e5r ud p\u00e5 (typisk en specialopgave). Form\u00e5let er at kunne registrer hvem der st\u00e5r for og\/eller betaler for den gr\u00f8nne pleje indenfor et omr\u00e5de, s\u00e5 det ikke er n\u00f8dvendigt at registrere dette p\u00e5 hvert element\/objekt.\n <\/p>\n\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence \n  <\/a> \n  finder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
-        "definition": "Omr\u00e5deinddelingen af Park og gr\u00f8nne omr\u00e5ders distrikter og arbejdssted. F.eks. opdelt efter hvem der skal betale for plejen, hvem der udf\u00f8rer plejen eller hvad plejen g\u00e5r ud p\u00e5 (typisk en specialopgave)",
-        "license_id": "opendatadk",
-        "noegle_ord": "Arbejdssted, Udbudsomr\u00e5de, entreprise",
-        "beskrivelse": "Omr\u00e5deinddelingen af Park og gr\u00f8nne omr\u00e5ders distrikter. F.eks. opdelt efter hvem der skal betale for plejen eller hvem der udf\u00f8rer plejen.",
-        "ckan_org_id": "hjorring-kommune",
-        "ckan_update": true,
-        "lovgrundlag": "",
+        "formaal": "Form\u00e5let med temaet er at foretage eftersyn og registrere de tilh\u00f8rende observationer for at kortl\u00e6gge b\u00e5de kapaciteten og den aktuelle stand af betond\u00e6kningsgrave.",
+        "temakode": "6122",
+        "temanavn": "Beskyttelsesrum (eftersyn)",
+        "kle_koder": "14.06.02 Offentlige beskyttelsesrum",
+        "meta_desc": "<p>\nTemaet kan bruges til eftersyn af beskyttelsesrum. Et beskyttelsesrum er et forst\u00e6rket rumanl\u00e6g, der er indrettet til at beskytte civilbefolkningen mod blandt andet f\u00f8lgerne af luftangreb (tryk, splinter m.v.). Form\u00e5let med temaet er at foretage eftersyn og registrere de tilh\u00f8rende observationer for at kortl\u00e6gge b\u00e5de kapaciteten og den aktuelle stand af betond\u00e6kningsgrave.\n <\/p>\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence<\/a> \n  finder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
+        "definition": "Omfatter aktuelt eftersyn af typen betond\u00e6kningsgrave.",
+        "noegle_ord": "Beskyttelsesrum, betond\u00e6kningsgrav",
+        "beskrivelse": "Temaet kan bruges til eftersyn af beskyttelsesrum. Et beskyttelsesrum er et forst\u00e6rket rumanl\u00e6g, der er indrettet til at beskytte civilbefolkningen mod blandt andet f\u00f8lgerne af luftangreb (tryk, splinter m.v.). ",
+        "lovgrundlag": "L 76-Forslag til lov om \u00e6ndring af lov om beskyttelsesrum og CER-loven (Styrkede bef\u00f8jelser og tilsynsforanstaltninger p\u00e5 beskyttelsesrumsomr\u00e5det m.v.). ",
         "single_tile": false,
-        "geometritype": "Flade",
+        "geometritype": "Punkt",
         "hover_active": false,
-        "max_features": "200",
+        "max_features": "500",
         "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
         "info_function": "",
         "info_template": "",
-        "load_strategy": "d",
+        "load_strategy": "s",
         "referenced_by": "",
         "cache_utf_grid": false,
         "point_to_layer": "",
@@ -6105,23 +9907,23 @@
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
-        "minimum_stoerrelser": "10 kvm",
+        "minimum_stoerrelser": "",
         "sql_conflict_header": "",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
-        "geometrisk_konsistens": "Distrikter med samme type b\u00f8r ikke overlappe hinanden, men snappes\/sk\u00e6res ud.",
+        "geometrisk_konsistens": "Ingen",
         "info_element_selector": "",
-        "noegleord_hovedgruppe": "",
-        "registreringsinstruks": "Fladen registreres med snap til skel og\/eller vandl\u00f8bs-\/vejmidter. B\u00f8r normalt ikke sk\u00e6re over nogle flade eller linje objekter fra Park og gr\u00f8nne omr\u00e5der, men indenfor dette tema, vil der ofte v\u00e6re overlap. Parker og andre mindre omr\u00e5der (arbejdssted) i et stort distrikt kan sk\u00e6res ud af det st\u00f8rre omr\u00e5de, s\u00e5 der er huller i det store distrikt, hvor andre betaler\/udf\u00f8rer. Dette skal ikke g\u00f8res ved fag-entrepriser, der typiske d\u00e6kker meget st\u00f8rre geografiske omr\u00e5der, men kun omhandler enkelte eller f\u00e5 objekttyper. ",
-        "klassificering_opdeling": "Opdeles i distriktstyper.",
+        "noegleord_hovedgruppe": "Sikkerhed og sundhed",
+        "registreringsinstruks": "Registrer lokation, adgang, antal pladser og tilstand af betond\u00e6kningsgrave. Bem\u00e6rk, at alle felter skal udfyldes i det omfang, det er muligt. Der er en kort vejledningstekst p\u00e5 feltniveau. Derudover findes en samlet vejledning for eftersynet, som Styrelsen for Samfundssikkerhed (SAMSIK) har udarbejdet. Find vejledningen her.: https:\/\/samsik.dk\/beskyttelsesrum\/vejledning-eftersyn-betondaekningsgrave\/",
+        "klassificering_opdeling": "",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
         "disable_vector_feature_info": false,
-        "geometrisk_konsistens_andre": "B\u00f8r normalt ikke sk\u00e6re over nogle flade eller linje objekter fra Park og gr\u00f8nne omr\u00e5der."
+        "geometrisk_konsistens_andre": "Enkelte betond\u00e6kningsgrave fremg\u00e5r af BBR."
     }
 }

@@ -4,7 +4,7 @@
         {
             "name": "oprindkode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for oprindelse for objekt. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "oprindelse",
             "type": "character varying(35)",
-            "comment": null,
+            "comment": "Oprindelse for objekt. Eksempel: Ortofoto",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

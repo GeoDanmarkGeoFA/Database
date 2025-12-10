@@ -47,7 +47,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gc_type_k"
         },
         {
             "name": "model",
@@ -68,13 +68,34 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "model"
+        },
+        {
+            "name": "nedgravet",
+            "type": "boolean",
+            "comment": null,
+            "_num": 4,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "nedgravet"
         },
         {
             "name": "t_frekvens",
             "type": "character varying(50)",
             "comment": null,
-            "_num": 4,
+            "_num": 5,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 50,
@@ -89,13 +110,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "t_frekvens"
         },
         {
             "name": "t_dato",
             "type": "date",
             "comment": null,
-            "_num": 5,
+            "_num": 6,
             "_typname": "date",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -112,13 +133,34 @@
             "_checks": [
                 "t_dato >= '1900-01-01'::date AND t_dato <= '2999-12-31'::date"
             ],
-            "_short_name": null
+            "_short_name": "t_dato"
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(128)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "sagsnr"
         },
         {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 6,
+            "_num": 8,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -133,13 +175,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
             "type": "geometry(MultiPoint,25832)",
             "comment": null,
-            "_num": 7,
+            "_num": 9,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -158,7 +200,7 @@
             "_checks": null,
             "_geom_type": "MultiPoint",
             "_srid": "25832",
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,

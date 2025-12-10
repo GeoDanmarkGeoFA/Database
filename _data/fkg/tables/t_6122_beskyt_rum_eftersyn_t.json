@@ -1,0 +1,3543 @@
+{
+    "name": "t_6122_beskyt_rum_eftersyn_t",
+    "columns": [
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "_is_unique": true,
+            "_is_primary": true,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "beskyt_rum_type_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 2,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_beskyt_rum.beskyt_rum_type_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "bes_r_k"
+        },
+        {
+            "name": "beskyt_rum_nr",
+            "type": "character varying(20)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 20,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 80,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "bes_r_nr"
+        },
+        {
+            "name": "matrikelejer",
+            "type": "character varying(100)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 100,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 400,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "mat_ejer"
+        },
+        {
+            "name": "udfoert_af",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 5,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "udfoert_af"
+        },
+        {
+            "name": "udfoert_dato",
+            "type": "date",
+            "comment": null,
+            "_num": 6,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "udfoert_da"
+        },
+        {
+            "name": "godkendt_af",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 7,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "godkend_af"
+        },
+        {
+            "name": "godkendt_dato",
+            "type": "date",
+            "comment": null,
+            "_num": 8,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "godkend_d"
+        },
+        {
+            "name": "dokumentation",
+            "type": "boolean",
+            "comment": null,
+            "_num": 9,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "dokument"
+        },
+        {
+            "name": "inspektioner",
+            "type": "boolean",
+            "comment": null,
+            "_num": 10,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "inspektion"
+        },
+        {
+            "name": "bbr",
+            "type": "boolean",
+            "comment": null,
+            "_num": 11,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "bbr"
+        },
+        {
+            "name": "lokaliseret",
+            "type": "boolean",
+            "comment": null,
+            "_num": 12,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "lokalise"
+        },
+        {
+            "name": "lokaliseret_aarsag",
+            "type": "character varying(255)",
+            "comment": null,
+            "_num": 13,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 255,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1020,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "lokalise_a"
+        },
+        {
+            "name": "adgang_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 14,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adgang"
+        },
+        {
+            "name": "adgang_jordarbejde_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 15,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adg_j"
+        },
+        {
+            "name": "adgang_gartnerarbejde_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 16,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adg_g"
+        },
+        {
+            "name": "adgang_bygningsarbejde_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 17,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adg_b"
+        },
+        {
+            "name": "beskyt_rum_anvendelse_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 18,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_beskyt_rum_anvendelse.beskyt_rum_anvendelse_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "bes_an_k"
+        },
+        {
+            "name": "antal_pladser",
+            "type": "integer",
+            "comment": null,
+            "_num": 19,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "antal_pladser >= 0 AND antal_pladser <= 5000"
+            ],
+            "_short_name": "antal_pl"
+        },
+        {
+            "name": "antal_opholdsrum",
+            "type": "integer",
+            "comment": null,
+            "_num": 20,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "antal_opholdsrum >= 0 AND antal_opholdsrum <= 10"
+            ],
+            "_short_name": "ant_rum"
+        },
+        {
+            "name": "trapper_antal",
+            "type": "integer",
+            "comment": null,
+            "_num": 21,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "trapper_antal >= 0 AND trapper_antal <= 99"
+            ],
+            "_short_name": "trap_ant"
+        },
+        {
+            "name": "adgangsdoerhuller_antal",
+            "type": "integer",
+            "comment": null,
+            "_num": 22,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "adgangsdoerhuller_antal >= 0 AND adgangsdoerhuller_antal <= 99"
+            ],
+            "_short_name": "adg_ant"
+        },
+        {
+            "name": "adgangsdoerhuller_staal_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 23,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adg_s"
+        },
+        {
+            "name": "adgangsdoerhuller_staal_funktion_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 24,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "adg_s_f"
+        },
+        {
+            "name": "noedudgange_antal",
+            "type": "integer",
+            "comment": null,
+            "_num": 25,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "noedudgange_antal >= 0 AND noedudgange_antal <= 99"
+            ],
+            "_short_name": "noed_antal"
+        },
+        {
+            "name": "noedudgange_staallem_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 26,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "noed_lem"
+        },
+        {
+            "name": "taarn_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 27,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "taarn"
+        },
+        {
+            "name": "betondaeksel_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 28,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "b_daksel"
+        },
+        {
+            "name": "svanehals_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 29,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "svane"
+        },
+        {
+            "name": "vvs_sump_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 30,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vvs_sump"
+        },
+        {
+            "name": "vvs_gulvafloeb_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 31,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vvs_gulv"
+        },
+        {
+            "name": "vvs_sump_fungerer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 32,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "vvs_s_fu"
+        },
+        {
+            "name": "fredstidsinstallationer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 33,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "fred_ins"
+        },
+        {
+            "name": "note_fredstidsinstallationer",
+            "type": "character varying(256)",
+            "comment": null,
+            "_num": 34,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 256,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1024,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "note_fred"
+        },
+        {
+            "name": "note_konstruktion",
+            "type": "character varying(512)",
+            "comment": null,
+            "_num": 35,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 512,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 2048,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "note_konst"
+        },
+        {
+            "name": "oevrig_teknisk_installationer_bemaerkninger",
+            "type": "character varying(512)",
+            "comment": null,
+            "_num": 36,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 512,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 2048,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "oev_inst_b"
+        },
+        {
+            "name": "oevrig_bemaerkninger",
+            "type": "character varying(512)",
+            "comment": null,
+            "_num": 37,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 512,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 2048,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "oev_bem"
+        },
+        {
+            "name": "_1_konstruktion_intakt_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 38,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1kon_in"
+        },
+        {
+            "name": "_1_konstruktion_blotlagt_armering_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 39,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1kon_ar"
+        },
+        {
+            "name": "_1_konstruktion_aendret_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 40,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1kon_ae"
+        },
+        {
+            "name": "_1_konstruktion_revner_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 41,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1kon_g"
+        },
+        {
+            "name": "_1_konstruktion_revner_vaegge_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 42,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1kon_v"
+        },
+        {
+            "name": "_1_konstruktion_revner_loft_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 43,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1kon_l"
+        },
+        {
+            "name": "_1_indtraengende_fugt_vand_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 44,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1i_fugt"
+        },
+        {
+            "name": "_1_vandpyt_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 45,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1vandpy"
+        },
+        {
+            "name": "_1_vand_daekker_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 46,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1vand_g"
+        },
+        {
+            "name": "_1_skadedyr_spor_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 47,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1dyr_sp"
+        },
+        {
+            "name": "_1_skadedyr_ekskrementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 48,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1dyr_ek"
+        },
+        {
+            "name": "_1_ventilation_haanddreven_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 49,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1v_haan"
+        },
+        {
+            "name": "_1_forbindelsesslanger_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 50,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1f_slan"
+        },
+        {
+            "name": "_1_indsugningsarrangementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 51,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1indsug"
+        },
+        {
+            "name": "_1_overtryksventiler_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 52,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_1over_v"
+        },
+        {
+            "name": "_2_konstruktion_intakt_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 53,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2kon_in"
+        },
+        {
+            "name": "_2_konstruktion_blotlagt_armering_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 54,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2kon_ar"
+        },
+        {
+            "name": "_2_konstruktion_aendret_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 55,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2kon_ae"
+        },
+        {
+            "name": "_2_konstruktion_revner_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 56,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2kon_g"
+        },
+        {
+            "name": "_2_konstruktion_revner_vaegge_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 57,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2kon_v"
+        },
+        {
+            "name": "_2_konstruktion_revner_loft_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 58,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2kon_l"
+        },
+        {
+            "name": "_2_indtraengende_fugt_vand_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 59,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2i_fugt"
+        },
+        {
+            "name": "_2_vandpyt_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 60,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2vandpy"
+        },
+        {
+            "name": "_2_vand_daekker_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 61,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2vand_g"
+        },
+        {
+            "name": "_2_skadedyr_spor_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 62,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2dyr_sp"
+        },
+        {
+            "name": "_2_skadedyr_ekskrementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 63,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2dyr_ek"
+        },
+        {
+            "name": "_2_ventilation_haanddreven_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 64,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2v_haan"
+        },
+        {
+            "name": "_2_forbindelsesslanger_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 65,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2f_slan"
+        },
+        {
+            "name": "_2_indsugningsarrangementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 66,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2indsug"
+        },
+        {
+            "name": "_2_overtryksventiler_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 67,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_2over_v"
+        },
+        {
+            "name": "_3_konstruktion_intakt_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 68,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3kon_in"
+        },
+        {
+            "name": "_3_konstruktion_blotlagt_armering_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 69,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3kon_ar"
+        },
+        {
+            "name": "_3_konstruktion_aendret_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 70,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3kon_ae"
+        },
+        {
+            "name": "_3_konstruktion_revner_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 71,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3kon_g"
+        },
+        {
+            "name": "_3_konstruktion_revner_vaegge_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 72,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3kon_v"
+        },
+        {
+            "name": "_3_konstruktion_revner_loft_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 73,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3kon_l"
+        },
+        {
+            "name": "_3_indtraengende_fugt_vand_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 74,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3i_fugt"
+        },
+        {
+            "name": "_3_vandpyt_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 75,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3vandpy"
+        },
+        {
+            "name": "_3_vand_daekker_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 76,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3vand_g"
+        },
+        {
+            "name": "_3_skadedyr_spor_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 77,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3dyr_sp"
+        },
+        {
+            "name": "_3_skadedyr_ekskrementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 78,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3dyr_ek"
+        },
+        {
+            "name": "_3_ventilation_haanddreven_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 79,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3v_haan"
+        },
+        {
+            "name": "_3_forbindelsesslanger_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 80,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3f_slan"
+        },
+        {
+            "name": "_3_indsugningsarrangementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 81,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3indsug"
+        },
+        {
+            "name": "_3_overtryksventiler_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 82,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_3over_v"
+        },
+        {
+            "name": "_4_konstruktion_intakt_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 83,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4kon_in"
+        },
+        {
+            "name": "_4_konstruktion_blotlagt_armering_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 84,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4kon_ar"
+        },
+        {
+            "name": "_4_konstruktion_aendret_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 85,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4kon_ae"
+        },
+        {
+            "name": "_4_konstruktion_revner_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 86,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4kon_g"
+        },
+        {
+            "name": "_4_konstruktion_revner_vaegge_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 87,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4kon_v"
+        },
+        {
+            "name": "_4_konstruktion_revner_loft_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 88,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4kon_l"
+        },
+        {
+            "name": "_4_indtraengende_fugt_vand_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 89,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4i_fugt"
+        },
+        {
+            "name": "_4_vandpyt_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 90,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4vandpy"
+        },
+        {
+            "name": "_4_vand_daekker_gulv_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 91,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4vand_g"
+        },
+        {
+            "name": "_4_skadedyr_spor_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 92,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4dyr_sp"
+        },
+        {
+            "name": "_4_skadedyr_ekskrementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 93,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4dyr_ek"
+        },
+        {
+            "name": "_4_ventilation_haanddreven_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 94,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4v_haan"
+        },
+        {
+            "name": "_4_forbindelsesslanger_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 95,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4f_slan"
+        },
+        {
+            "name": "_4_indsugningsarrangementer_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 96,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4indsug"
+        },
+        {
+            "name": "_4_overtryksventiler_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 97,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "_4over_v"
+        },
+        {
+            "name": "sagsnr",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 98,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "adr_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 99,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "vejkode",
+            "type": "integer",
+            "comment": null,
+            "_num": 100,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_vejnavn.vejkode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "cvf_vejkode",
+            "type": "character(7)",
+            "comment": null,
+            "_num": 101,
+            "_typname": "bpchar",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "husnr",
+            "type": "character varying(4)",
+            "comment": null,
+            "_num": 102,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 4,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "postnr",
+            "type": "integer",
+            "comment": null,
+            "_num": 103,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_postnr.postnr"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "beliggenhedskommune",
+            "type": "integer",
+            "comment": null,
+            "_num": 104,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 105,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link1",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 106,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link2",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 107,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link3",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 108,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link4",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 109,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link5",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 110,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link6",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 111,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link7",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 112,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link8",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 113,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "foto_link9",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 114,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 115,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "link"
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPoint,25832)",
+            "comment": null,
+            "_num": 116,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPoint",
+            "_srid": "25832",
+            "_short_name": "the_geom"
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_6122_beskyt_rum_eftersyn_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_6122_beskyttelsesrum_adgangsdoerhuller_antal_ck",
+            "constraint": "check",
+            "check": "adgangsdoerhuller_antal >= 0 AND adgangsdoerhuller_antal <= 99"
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_antal_opholdsrum_ck",
+            "constraint": "check",
+            "check": "antal_opholdsrum >= 0 AND antal_opholdsrum <= 10"
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_antal_pladser_ck",
+            "constraint": "check",
+            "check": "antal_pladser >= 0 AND antal_pladser <= 5000"
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_forbindelsesslanger_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_forbindelsesslanger_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_indsugningsarrangementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_indsugningsarrangementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_overtryksventiler_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_overtryksventiler_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_ventilation_haanddreven_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_forbindelsesslanger_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_forbindelsesslanger_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_indsugningsarrangementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_indsugningsarrangementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_overtryksventiler_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_overtryksventiler_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_ventilation_haanddreven_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_forbindelsesslanger_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_forbindelsesslanger_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_indsugningsarrangementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_indsugningsarrangementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_overtryksventiler_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_overtryksventiler_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_ventilation_haanddreven_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_forbindelsesslanger_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_forbindelsesslanger_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_indsugningsarrangementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_indsugningsarrangementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_overtryksventiler_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_overtryksventiler_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_ventilation_haanddreven_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_bygningsarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_bygningsarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_gartnerarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_gartnerarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_jordarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_jordarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_f_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgangsdoerhuller_staal_funktion_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgangsdoerhuller_staal_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_anvendelse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "beskyt_rum_anvendelse_kode"
+            ],
+            "referenced_table": "d_6122_beskyt_rum_anvendelse",
+            "referenced_columns": [
+                "beskyt_rum_anvendelse_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_fk",
+            "constraint": "foreign",
+            "columns": [
+                "beskyt_rum_type_kode"
+            ],
+            "referenced_table": "d_6122_beskyt_rum",
+            "referenced_columns": [
+                "beskyt_rum_type_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_betondaeksel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "betondaeksel_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_fredstidsinstallationer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "fredstidsinstallationer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_noedudgange_staallem_fk",
+            "constraint": "foreign",
+            "columns": [
+                "noedudgange_staallem_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_svanehals_fk",
+            "constraint": "foreign",
+            "columns": [
+                "svanehals_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_taarn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "taarn_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_gulvafloeb_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_gulvafloeb_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_sump_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fungerer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_sump_fungerer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_basis_postnr_fk",
+            "constraint": "foreign",
+            "columns": [
+                "postnr"
+            ],
+            "referenced_table": "d_basis_postnr",
+            "referenced_columns": [
+                "postnr"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_vejnavn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vejkode"
+            ],
+            "referenced_table": "d_vejnavn",
+            "referenced_columns": [
+                "vejkode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_noedudgange_antal_ck",
+            "constraint": "check",
+            "check": "noedudgange_antal >= 0 AND noedudgange_antal <= 99"
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_trapper_antal_ck",
+            "constraint": "check",
+            "check": "trapper_antal >= 0 AND trapper_antal <= 99"
+        }
+    ],
+    "links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6122_beskyt_rum_eftersyn_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6122_beskyt_rum_eftersyn_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6122_beskyt_rum_eftersyn_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_6122_beskyt_rum_eftersyn_t\/privileges"
+    }
+}

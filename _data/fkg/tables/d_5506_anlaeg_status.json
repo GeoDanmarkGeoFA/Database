@@ -1,8 +1,8 @@
 {
-    "name": "d_5400_affalds_type",
+    "name": "d_5506_anlaeg_status",
     "columns": [
         {
-            "name": "affaldstype_kode",
+            "name": "anlaegsstatus_kode",
             "type": "integer",
             "comment": null,
             "_num": 1,
@@ -22,19 +22,19 @@
                 "btree"
             ],
             "_checks": null,
-            "_short_name": "aff_type_k"
+            "_short_name": "anl_stat_k"
         },
         {
-            "name": "affaldstype",
-            "type": "character varying(50)",
+            "name": "anlaegsstatus",
+            "type": "character varying(25)",
             "comment": null,
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 50,
+            "_character_maximum_length": 25,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 200,
+            "_max_bytes": 100,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -91,27 +91,27 @@
     "comment": null,
     "indices": [
         {
-            "name": "d_5400_affalds_type_pk",
+            "name": "d_5506_anlaegsstatus_pk",
             "method": "btree",
             "unique": true,
             "columns": [
-                "affaldstype_kode"
+                "anlaegsstatus_kode"
             ]
         }
     ],
     "constraints": [
         {
-            "name": "d_5400_affalds_type_pk",
+            "name": "d_5506_anlaegsstatus_pk",
             "constraint": "primary",
             "columns": [
-                "affaldstype_kode"
+                "anlaegsstatus_kode"
             ]
         }
     ],
     "links": {
-        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5400_affalds_type\/columns",
-        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5400_affalds_type\/indices",
-        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_5400_affalds_type\/constraints",
-        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_5400_affalds_type\/privileges"
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5506_anlaeg_status\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5506_anlaeg_status\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_5506_anlaeg_status\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_5506_anlaeg_status\/privileges"
     }
 }

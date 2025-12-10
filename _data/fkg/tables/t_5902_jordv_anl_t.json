@@ -27,31 +27,10 @@
             "_short_name": null
         },
         {
-            "name": "brine",
-            "type": "character varying(50)",
-            "comment": null,
-            "_num": 2,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 50,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 200,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "strenge_antal",
+            "name": "brine_maengde",
             "type": "integer",
             "comment": null,
-            "_num": 3,
+            "_num": 2,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -66,12 +45,33 @@
             "default_value": null,
             "_index_method": null,
             "_checks": [
-                "strenge_antal >= 1 AND strenge_antal <= 999"
+                "brine_maengde >= 1 AND brine_maengde <= 99999"
             ],
-            "_short_name": null
+            "_short_name": "brine_mgd"
         },
         {
-            "name": "strenge_laengde_samlede",
+            "name": "brine_blandingsforhold",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "brine_bl"
+        },
+        {
+            "name": "strenge_antal",
             "type": "integer",
             "comment": null,
             "_num": 4,
@@ -89,20 +89,20 @@
             "default_value": null,
             "_index_method": null,
             "_checks": [
-                "strenge_laengde_samlede >= 1 AND strenge_laengde_samlede <= 9999"
+                "strenge_antal >= 1 AND strenge_antal <= 999"
             ],
-            "_short_name": null
+            "_short_name": "stre_antal"
         },
         {
-            "name": "tilladelses_dato",
-            "type": "date",
+            "name": "strenge_laengde_samlede",
+            "type": "integer",
             "comment": null,
             "_num": 5,
-            "_typname": "date",
+            "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
@@ -112,12 +112,12 @@
             "default_value": null,
             "_index_method": null,
             "_checks": [
-                "tilladelses_dato >= '2006-12-31'::date AND tilladelses_dato <= '2999-12-31'::date"
+                "strenge_laengde_samlede >= 1 AND strenge_laengde_samlede <= 9999"
             ],
-            "_short_name": null
+            "_short_name": "stre_laeng"
         },
         {
-            "name": "faerdigmeldingsdato",
+            "name": "tilladelses_dato",
             "type": "date",
             "comment": null,
             "_num": 6,
@@ -135,15 +135,38 @@
             "default_value": null,
             "_index_method": null,
             "_checks": [
+                "tilladelses_dato >= '2006-12-31'::date AND tilladelses_dato <= '2999-12-31'::date"
+            ],
+            "_short_name": "tilla_dato"
+        },
+        {
+            "name": "faerdigmeldingsdato",
+            "type": "date",
+            "comment": null,
+            "_num": 7,
+            "_typname": "date",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
                 "faerdigmeldingsdato >= '2006-12-31'::date AND faerdigmeldingsdato <= '2999-12-31'::date"
             ],
-            "_short_name": null
+            "_short_name": "faerd_dato"
         },
         {
             "name": "vaesketype_kode",
             "type": "integer",
             "comment": null,
-            "_num": 7,
+            "_num": 8,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -160,13 +183,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "vaeskety_k"
         },
         {
             "name": "gyldig_fra",
             "type": "date",
             "comment": null,
-            "_num": 8,
+            "_num": 9,
             "_typname": "date",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -181,13 +204,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gyldig_fra"
         },
         {
             "name": "gyldig_til",
             "type": "date",
             "comment": null,
-            "_num": 9,
+            "_num": 10,
             "_typname": "date",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -202,13 +225,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gyldig_til"
         },
         {
             "name": "sagsnr",
             "type": "character varying(128)",
             "comment": null,
-            "_num": 10,
+            "_num": 11,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 128,
@@ -223,13 +246,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "sagsnr"
         },
         {
             "name": "sag_status_kode",
             "type": "integer",
             "comment": null,
-            "_num": 11,
+            "_num": 12,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -246,13 +269,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "sag_stat_k"
         },
         {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 12,
+            "_num": 13,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -267,13 +290,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
             "type": "geometry(MultiPolygon,25832)",
             "comment": null,
-            "_num": 13,
+            "_num": 14,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -292,7 +315,7 @@
             "_checks": null,
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,
@@ -315,6 +338,11 @@
         }
     ],
     "constraints": [
+        {
+            "name": "t_5902_jordv_anl_brine_maengde_ck",
+            "constraint": "check",
+            "check": "brine_maengde >= 1 AND brine_maengde <= 99999"
+        },
         {
             "name": "t_5902_jordv_anl_d_5902_vaeske_type_fk",
             "constraint": "foreign",

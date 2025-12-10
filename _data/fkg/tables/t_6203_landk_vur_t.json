@@ -47,7 +47,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "omr_nr"
         },
         {
             "name": "delomraade_nr",
@@ -68,7 +68,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "delomr_nr"
         },
         {
             "name": "karakterstyrke_kode",
@@ -91,7 +91,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "kar_styr_k"
         },
         {
             "name": "karakterstyrke_notat",
@@ -112,7 +112,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "kar_styr_n"
         },
         {
             "name": "visuel_notat",
@@ -133,7 +133,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "visuel_n"
         },
         {
             "name": "tilstand_kode",
@@ -156,7 +156,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "tilst_k"
         },
         {
             "name": "tilstand_notat",
@@ -177,7 +177,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "tilst_n"
         },
         {
             "name": "udvikling",
@@ -198,7 +198,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "udvikling"
         },
         {
             "name": "saarbarhed_kode",
@@ -221,7 +221,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "saarbar_k"
         },
         {
             "name": "saarbarhed_notat",
@@ -242,7 +242,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "saarbar_n"
         },
         {
             "name": "tiltag",
@@ -263,7 +263,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "tiltag"
         },
         {
             "name": "link",
@@ -284,7 +284,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
@@ -309,7 +309,7 @@
             "_checks": null,
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,

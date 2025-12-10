@@ -4,7 +4,7 @@
         {
             "name": "fors_omr_type_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for drikkevandsforsyningsomr\u00e5detype. Eksempel: 3",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "fors_omr_type",
             "type": "character varying(50)",
-            "comment": null,
+            "comment": "Drikkevandsforsyningsomr\u00e5detype. Eksempel: Fremtidige forsyningsomr\u00e5der",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,
