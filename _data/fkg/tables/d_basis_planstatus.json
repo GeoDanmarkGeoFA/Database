@@ -4,7 +4,7 @@
         {
             "name": "planstatus_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kodetal for planstatus. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "planstatus",
             "type": "character varying(25)",
-            "comment": null,
+            "comment": "Om det er anlagt eller \u201dbare\u201d planlagt. Eksempel: Eksisterende",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

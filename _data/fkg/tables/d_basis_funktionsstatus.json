@@ -4,7 +4,7 @@
         {
             "name": "funktionsstatus_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for funktionsstatus p\u00e5 enkelt objekt. Eksempel: 3",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "funktionsstatus",
             "type": "character varying(128)",
-            "comment": null,
+            "comment": "Funktionsstatus p\u00e5 enkelt objekt. Eksempel: Aktiv",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

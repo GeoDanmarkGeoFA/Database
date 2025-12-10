@@ -4,7 +4,7 @@
         {
             "name": "ansva_v_k",
             "type": "integer",
-            "comment": null,
+            "comment": "Kodetal for overordnet ansvar for vedligehold. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "ansva_v",
             "type": "character varying(30)",
-            "comment": null,
+            "comment": "Hvem st\u00e5r for ansvaret for vedligehold. Eksempel: Privat\/forening",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

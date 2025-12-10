@@ -1,10 +1,10 @@
 {
-    "name": "d_basis_belaegning",
+    "name": "d_6122_ja_nej_ved_ikke",
     "columns": [
         {
-            "name": "belaegning_kode",
+            "name": "ja_nej_ved_ikke_kode",
             "type": "integer",
-            "comment": "Kode for bel\u00e6gning. Eksempel: 3",
+            "comment": null,
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -25,16 +25,16 @@
             "_short_name": null
         },
         {
-            "name": "belaegning",
-            "type": "character varying(30)",
-            "comment": "Bel\u00e6gning af\/p\u00e5 stier m.v. Eksempel: Uden bel\u00e6gning",
+            "name": "ja_nej_ved_ikke",
+            "type": "character varying(255)",
+            "comment": null,
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 30,
+            "_character_maximum_length": 255,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 120,
+            "_max_bytes": 1020,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,
@@ -61,7 +61,7 @@
             "_is_unique": false,
             "_is_primary": false,
             "is_nullable": false,
-            "default_value": null,
+            "default_value": "1",
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -91,27 +91,27 @@
     "comment": null,
     "indices": [
         {
-            "name": "d_basis_belaegning_pk",
+            "name": "d_6122_ja_nej_ved_ikke_pk",
             "method": "btree",
             "unique": true,
             "columns": [
-                "belaegning_kode"
+                "ja_nej_ved_ikke_kode"
             ]
         }
     ],
     "constraints": [
         {
-            "name": "d_basis_belaegning_pk",
+            "name": "d_6122_ja_nej_ved_ikke_pk",
             "constraint": "primary",
             "columns": [
-                "belaegning_kode"
+                "ja_nej_ved_ikke_kode"
             ]
         }
     ],
     "links": {
-        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_belaegning\/columns",
-        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_belaegning\/indices",
-        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_belaegning\/constraints",
-        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_belaegning\/privileges"
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6122_ja_nej_ved_ikke\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6122_ja_nej_ved_ikke\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_6122_ja_nej_ved_ikke\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_6122_ja_nej_ved_ikke\/privileges"
     }
 }

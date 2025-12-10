@@ -4,7 +4,7 @@
         {
             "name": "antal_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for ca. antal observerede individer. Eksempel: 4",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "antal",
             "type": "character varying(25)",
-            "comment": null,
+            "comment": "Ca. antal observerede individer. Eksempel:100+",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

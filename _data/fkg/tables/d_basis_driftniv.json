@@ -4,7 +4,7 @@
         {
             "name": "driftniv_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for drifts niveau. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "driftniv",
             "type": "character varying(10)",
-            "comment": null,
+            "comment": "Drifts niveau i tre klasser. Eksempel: Park",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

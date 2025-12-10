@@ -4,7 +4,7 @@
         {
             "name": "dvfi_bedoemmelse_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for biologisk vandl\u00f8bskvalitet (Dansk Vandl\u00f8bs Fauna Indeks). Eksempel: 7",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "dvfi_bedoemmelse",
             "type": "character varying(25)",
-            "comment": null,
+            "comment": "Biologisk vandl\u00f8bskvalitet (Dansk Vandl\u00f8bs Fauna Indeks) Eksempel: S\u00e6rdeles god",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

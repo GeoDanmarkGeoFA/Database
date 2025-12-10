@@ -4,7 +4,7 @@
         {
             "name": "adr_beskyt_kode",
             "type": "character varying(1)",
-            "comment": null,
+            "comment": "Kode for tilladelse til videregivelse af persons adresse. Feltet giver mulighed for at angive om og i hvilken grad personen har adressebeskyttelse. Adressebeskyttelse betyder, at den p\u00e5g\u00e6ldendes adresse ikke m\u00e5 g\u00f8res offentlig tilg\u00e6ngelig. Eksempel: B",
             "_num": 1,
             "_typname": "varchar",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "adr_beskyt",
             "type": "character varying(30)",
-            "comment": null,
+            "comment": "Systemovers\u00e6ttelse af kode i feltet \u2019adr_beskyt_kode\u2019 til tilh\u00f8rende tekst vha. kodeliste \u2019d_basis_adr_beskyt\u2019. Eksempel: Adressen er beskyttet i CPR ",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

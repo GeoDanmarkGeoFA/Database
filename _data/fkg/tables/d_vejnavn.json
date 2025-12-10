@@ -4,7 +4,7 @@
         {
             "name": "vejkode",
             "type": "integer",
-            "comment": null,
+            "comment": "Vejkode (DAR). Eksempel: 46100128",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "vejnavn",
             "type": "character varying(40)",
-            "comment": null,
+            "comment": "Vejnavn der refererer til vejkode. Eksempel: Borgergade",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,
@@ -92,7 +92,7 @@
         {
             "name": "postnr",
             "type": "integer",
-            "comment": null,
+            "comment": "Postnr. Eksempel: 8600",
             "_num": 5,
             "_typname": "int4",
             "_is_array": false,
@@ -113,7 +113,7 @@
         {
             "name": "kommunekode",
             "type": "integer",
-            "comment": null,
+            "comment": "3-cifret kommunenr. Eksempel: 740",
             "_num": 6,
             "_typname": "int4",
             "_is_array": false,

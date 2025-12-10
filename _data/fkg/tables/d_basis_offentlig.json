@@ -4,7 +4,7 @@
         {
             "name": "off_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for Tilg\u00e6ngelighed. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "offentlig",
             "type": "character varying(60)",
-            "comment": null,
+            "comment": "Tilg\u00e6ngelighed. Eksempel: Synlig for alle",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

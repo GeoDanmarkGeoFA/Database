@@ -22,7 +22,7 @@
                 "btree"
             ],
             "_checks": null,
-            "_short_name": "ledn_type_k"
+            "_short_name": "ledn_t_k"
         },
         {
             "name": "ledn_type",

@@ -4,7 +4,7 @@
         {
             "name": "omraade_nr",
             "type": "integer",
-            "comment": null,
+            "comment": "Unikt omr\u00e5denr. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "omraade",
             "type": "character varying(128)",
-            "comment": null,
+            "comment": "Unikt omr\u00e5denavn. Eksempel: Dal ved Bryrup",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,
@@ -48,7 +48,7 @@
         {
             "name": "cvr_kode",
             "type": "character varying",
-            "comment": null,
+            "comment": "CVR-kode p\u00e5 ansvarlig myndighed. Eksempel: 29189641 ",
             "_num": 3,
             "_typname": "varchar",
             "_is_array": false,

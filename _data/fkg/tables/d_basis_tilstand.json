@@ -4,7 +4,7 @@
         {
             "name": "tilstand_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for tilstand. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,

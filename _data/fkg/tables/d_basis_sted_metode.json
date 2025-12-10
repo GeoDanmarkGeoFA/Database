@@ -4,7 +4,7 @@
         {
             "name": "sted_metode_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Angiv kode for den stedf\u00e6stelsesmetode, der er anvendt (kilometrering eller stationering). Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "sted_metode",
             "type": "character varying(50)",
-            "comment": null,
+            "comment": "Anvendt stedf\u00e6stelsesmetode. Eksempel: Stationering",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

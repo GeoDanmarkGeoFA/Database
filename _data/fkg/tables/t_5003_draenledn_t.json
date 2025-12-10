@@ -68,7 +68,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "ledn_type_k"
+            "_short_name": "ledn_t_k"
         },
         {
             "name": "klasse_kode",
@@ -91,7 +91,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "klasse_k"
         },
         {
             "name": "etableringstidspunkt",
@@ -365,15 +365,15 @@
         },
         {
             "name": "kommentar",
-            "type": "character varying(25)",
+            "type": "character varying(250)",
             "comment": null,
             "_num": 17,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 25,
+            "_character_maximum_length": 250,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 100,
+            "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
             "_is_unique": false,

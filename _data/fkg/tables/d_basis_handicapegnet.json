@@ -4,7 +4,7 @@
         {
             "name": "handicapegnet_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for handicapegnethed. Eksempel: 1",
             "_num": 1,
             "_typname": "int4",
             "_is_array": false,
@@ -27,7 +27,7 @@
         {
             "name": "handicapegnet",
             "type": "character varying(40)",
-            "comment": null,
+            "comment": "Handicapegnetheden af faciliteten. Eksempel: Handicapegnet",
             "_num": 2,
             "_typname": "varchar",
             "_is_array": false,

@@ -91,7 +91,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "omr_nr"
+            "_short_name": "omr_navn"
         },
         {
             "name": "fortidsmindenr",

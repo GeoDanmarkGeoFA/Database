@@ -22,7 +22,7 @@
                 "btree"
             ],
             "_checks": null,
-            "_short_name": null
+            "_short_name": "affald_pr_k"
         },
         {
             "name": "affald_prod",

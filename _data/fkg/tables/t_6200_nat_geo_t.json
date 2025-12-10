@@ -45,7 +45,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "data_oprindelse"
         },
         {
             "name": "omraade_nr",
@@ -68,7 +68,7 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "omr_nr"
         },
         {
             "name": "geologi_kode",
@@ -91,34 +91,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "geo_ref",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 5,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
+            "_short_name": "geologi_k"
         },
         {
             "name": "jordtype_kode",
             "type": "integer",
             "comment": null,
-            "_num": 6,
+            "_num": 5,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -135,13 +114,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "jord_ty_k"
         },
         {
             "name": "terraen_kode",
             "type": "integer",
             "comment": null,
-            "_num": 7,
+            "_num": 6,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -158,10 +137,33 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "terraen_k"
         },
         {
-            "name": "terraen_ref",
+            "name": "kompleksitet_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 7,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_6200_kompleksitet.kompleksitet_kode"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": false,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "kompleks_k"
+        },
+        {
+            "name": "vandelement",
             "type": "character varying(1024)",
             "comment": null,
             "_num": 8,
@@ -179,33 +181,31 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "vand_elem"
         },
         {
-            "name": "kompleksitet_kode",
-            "type": "integer",
+            "name": "farvandsomraade",
+            "type": "character varying(1024)",
             "comment": null,
             "_num": 9,
-            "_typname": "int4",
+            "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": null,
-            "_numeric_precision": 32,
-            "_numeric_scale": 0,
-            "_max_bytes": 4,
-            "_reference": [
-                "fkg.d_6200_kompleksitet.kompleksitet_kode"
-            ],
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
             "_restriction": null,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
+            "is_nullable": true,
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "farvand_om"
         },
         {
-            "name": "vandelement",
+            "name": "strandbred",
             "type": "character varying(1024)",
             "comment": null,
             "_num": 10,
@@ -223,10 +223,10 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "strandbred"
         },
         {
-            "name": "farvandsomraade",
+            "name": "begrund_afgraensning",
             "type": "character varying(1024)",
             "comment": null,
             "_num": 11,
@@ -244,10 +244,10 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "afgraens"
         },
         {
-            "name": "strandbred",
+            "name": "omr_sammenhaeng",
             "type": "character varying(1024)",
             "comment": null,
             "_num": 12,
@@ -265,10 +265,10 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "omr_sam"
         },
         {
-            "name": "begrund_afgraensning",
+            "name": "link1",
             "type": "character varying(1024)",
             "comment": null,
             "_num": 13,
@@ -286,10 +286,10 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link1"
         },
         {
-            "name": "omr_sammenhaeng",
+            "name": "link",
             "type": "character varying(1024)",
             "comment": null,
             "_num": 14,
@@ -307,76 +307,13 @@
             "default_value": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "farvand_strand_ref",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 15,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "naturgeo_beskrivelse",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 16,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
-        },
-        {
-            "name": "link",
-            "type": "character varying(1024)",
-            "comment": null,
-            "_num": 17,
-            "_typname": "varchar",
-            "_is_array": false,
-            "_character_maximum_length": 1024,
-            "_numeric_precision": null,
-            "_numeric_scale": null,
-            "_max_bytes": 4096,
-            "_reference": null,
-            "_restriction": null,
-            "_is_unique": false,
-            "_is_primary": false,
-            "is_nullable": true,
-            "default_value": null,
-            "_index_method": null,
-            "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
             "type": "geometry(MultiPolygon,25832)",
             "comment": null,
-            "_num": 18,
+            "_num": 15,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -395,7 +332,7 @@
             "_checks": null,
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,

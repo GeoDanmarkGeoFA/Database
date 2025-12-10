@@ -94,7 +94,7 @@
         {
             "name": "oprettet",
             "type": "timestamp with time zone",
-            "comment": null,
+            "comment": "Systemtid for objektets oprettelse",
             "_num": 5,
             "_typname": "timestamptz",
             "_is_array": false,
@@ -115,7 +115,7 @@
         {
             "name": "cvr_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "CVR-kode p\u00e5 ansvarlig myndighed",
             "_num": 6,
             "_typname": "int4",
             "_is_array": false,
@@ -140,7 +140,7 @@
         {
             "name": "bruger_id",
             "type": "character varying(128)",
-            "comment": null,
+            "comment": "Brugernavn ved opdatering",
             "_num": 7,
             "_typname": "varchar",
             "_is_array": false,
@@ -161,7 +161,7 @@
         {
             "name": "oprindkode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for oprindelse for objekt",
             "_num": 8,
             "_typname": "int4",
             "_is_array": false,
@@ -184,7 +184,7 @@
         {
             "name": "statuskode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for g\u00e6ldende status",
             "_num": 9,
             "_typname": "int4",
             "_is_array": false,
@@ -207,7 +207,7 @@
         {
             "name": "off_kode",
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for Tilg\u00e6ngelighed",
             "_num": 10,
             "_typname": "int4",
             "_is_array": false,
@@ -230,7 +230,7 @@
         {
             "name": "noegle",
             "type": "character varying(128)",
-            "comment": null,
+            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
             "_num": 11,
             "_typname": "varchar",
             "_is_array": false,
@@ -251,7 +251,7 @@
         {
             "name": "note",
             "type": "character varying(254)",
-            "comment": null,
+            "comment": "Bem\u00e6rkning",
             "_num": 12,
             "_typname": "varchar",
             "_is_array": false,
