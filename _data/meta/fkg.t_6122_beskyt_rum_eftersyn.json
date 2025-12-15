@@ -137,666 +137,6 @@
             "queryable": false,
             "sort_id": 70
         },
-        "cvr_kode": {
-            "type": "integer",
-            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet. Eksempel: 29189641",
-            "num": 8,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_ansvarlig_myndighed.cvr_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 10000001,
-                    "alias": "supercykelstisekretariatet"
-                },
-                {
-                    "value": 10000002,
-                    "alias": "Tommeruppernes Lokalr\u00e5d"
-                },
-                {
-                    "value": 10000003,
-                    "alias": "geoinfovejle"
-                },
-                {
-                    "value": 10000004,
-                    "alias": "sporapp"
-                },
-                {
-                    "value": 10000005,
-                    "alias": "undervisning"
-                },
-                {
-                    "value": 10000006,
-                    "alias": "GeoInfoSonderborg"
-                },
-                {
-                    "value": 10000007,
-                    "alias": "Kyst Til Kyst"
-                },
-                {
-                    "value": 10000008,
-                    "alias": "Naturpark Lilleb\u00e6lt"
-                },
-                {
-                    "value": 10000009,
-                    "alias": "itu_anastassia"
-                },
-                {
-                    "value": 10000010,
-                    "alias": "CT_marcoberends"
-                },
-                {
-                    "value": 10000011,
-                    "alias": "Havmilj\u00f8vogterne"
-                },
-                {
-                    "value": 10000012,
-                    "alias": "Konge\u00e5sti"
-                },
-                {
-                    "value": 10294819,
-                    "alias": "Konkurrence- og Forbrugerstyrelsen"
-                },
-                {
-                    "value": 11259979,
-                    "alias": "Frederiksberg Kommune"
-                },
-                {
-                    "value": 11715311,
-                    "alias": "Lyngby-Taarb\u00e6k Kommune"
-                },
-                {
-                    "value": 11931316,
-                    "alias": "Ish\u00f8j Kommune"
-                },
-                {
-                    "value": 12881517,
-                    "alias": "Drag\u00f8r Kommune"
-                },
-                {
-                    "value": 15524286,
-                    "alias": "geoinfo"
-                },
-                {
-                    "value": 16287180,
-                    "alias": "Forsvarsministeriets Ejendomsstyrelse"
-                },
-                {
-                    "value": 17156616,
-                    "alias": "Dansk e-Mobilitet"
-                },
-                {
-                    "value": 18282690,
-                    "alias": "Destination Fyn"
-                },
-                {
-                    "value": 18957981,
-                    "alias": "Ringsted Kommune"
-                },
-                {
-                    "value": 19438414,
-                    "alias": "Gentofte Kommune"
-                },
-                {
-                    "value": 19501817,
-                    "alias": "H\u00f8je-Taastrup Kommune"
-                },
-                {
-                    "value": 19583910,
-                    "alias": "Vallensb\u00e6k Kommune"
-                },
-                {
-                    "value": 20014784,
-                    "alias": "Geopartner Landinspekt\u00f8rer A\/S"
-                },
-                {
-                    "value": 20310413,
-                    "alias": "T\u00e5rnby Kommune"
-                },
-                {
-                    "value": 23717382,
-                    "alias": "H\u00e6rvejen"
-                },
-                {
-                    "value": 23795515,
-                    "alias": "Sams\u00f8 Kommune"
-                },
-                {
-                    "value": 25118359,
-                    "alias": "Norlys"
-                },
-                {
-                    "value": 25775635,
-                    "alias": "Christians\u00f8"
-                },
-                {
-                    "value": 25798376,
-                    "alias": "Milj\u00f8styrelsen"
-                },
-                {
-                    "value": 26696348,
-                    "alias": "Bornholms Regionskommune"
-                },
-                {
-                    "value": 27782515,
-                    "alias": "Idr\u00e6ttens Analyseinstitut"
-                },
-                {
-                    "value": 28297947,
-                    "alias": "EWII"
-                },
-                {
-                    "value": 28326858,
-                    "alias": "Nordsj\u00e6llands Brandv\u00e6sen"
-                },
-                {
-                    "value": 28856075,
-                    "alias": "\u00c6r\u00f8 Kommune"
-                },
-                {
-                    "value": 29188327,
-                    "alias": "Fures\u00f8 Kommune"
-                },
-                {
-                    "value": 29188335,
-                    "alias": "Fredensborg Kommune"
-                },
-                {
-                    "value": 29188378,
-                    "alias": "Rudersdal Kommune"
-                },
-                {
-                    "value": 29188386,
-                    "alias": "Egedal Kommune"
-                },
-                {
-                    "value": 29188416,
-                    "alias": "Halsn\u00e6s Kommune"
-                },
-                {
-                    "value": 29188440,
-                    "alias": "Gribskov Kommune"
-                },
-                {
-                    "value": 29188459,
-                    "alias": "Odsherred Kommune"
-                },
-                {
-                    "value": 29188475,
-                    "alias": "Faxe Kommune"
-                },
-                {
-                    "value": 29188505,
-                    "alias": "Slagelse Kommune"
-                },
-                {
-                    "value": 29188548,
-                    "alias": "Lejre Kommune"
-                },
-                {
-                    "value": 29188572,
-                    "alias": "Lolland Kommune"
-                },
-                {
-                    "value": 29188599,
-                    "alias": "Guldborgsund Kommune"
-                },
-                {
-                    "value": 29188645,
-                    "alias": "Faaborg-Midtfyn Kommune"
-                },
-                {
-                    "value": 29188947,
-                    "alias": "Nordfyns Kommune"
-                },
-                {
-                    "value": 29188955,
-                    "alias": "Langeland Kommune"
-                },
-                {
-                    "value": 29189129,
-                    "alias": "Frederikssund Kommune"
-                },
-                {
-                    "value": 29189366,
-                    "alias": "Hiller\u00f8d Kommune"
-                },
-                {
-                    "value": 29189374,
-                    "alias": "K\u00f8ge Kommune"
-                },
-                {
-                    "value": 29189382,
-                    "alias": "Hj\u00f8rring Kommune"
-                },
-                {
-                    "value": 29189404,
-                    "alias": "Roskilde Kommune"
-                },
-                {
-                    "value": 29189420,
-                    "alias": "Aalborg Kommune"
-                },
-                {
-                    "value": 29189439,
-                    "alias": "Jammerbugt Kommune"
-                },
-                {
-                    "value": 29189447,
-                    "alias": "Holb\u00e6k Kommune"
-                },
-                {
-                    "value": 29189455,
-                    "alias": "Mariagerfjord Kommune"
-                },
-                {
-                    "value": 29189463,
-                    "alias": "Rebild Kommune"
-                },
-                {
-                    "value": 29189471,
-                    "alias": "Vesthimmerlands Kommune"
-                },
-                {
-                    "value": 29189498,
-                    "alias": "Frederikshavn Kommune"
-                },
-                {
-                    "value": 29189501,
-                    "alias": "Br\u00f8nderslev Kommune"
-                },
-                {
-                    "value": 29189560,
-                    "alias": "Thisted Kommune"
-                },
-                {
-                    "value": 29189579,
-                    "alias": "Skive Kommune"
-                },
-                {
-                    "value": 29189587,
-                    "alias": "Hedensted Kommune"
-                },
-                {
-                    "value": 29189595,
-                    "alias": "Kalundborg Kommune"
-                },
-                {
-                    "value": 29189609,
-                    "alias": "Ringk\u00f8bing-Skjern Kommune"
-                },
-                {
-                    "value": 29189617,
-                    "alias": "Ikast-Brande Kommune"
-                },
-                {
-                    "value": 29189625,
-                    "alias": "N\u00e6stved Kommune"
-                },
-                {
-                    "value": 29189633,
-                    "alias": "Skanderborg Kommune"
-                },
-                {
-                    "value": 29189641,
-                    "alias": "Silkeborg Kommune"
-                },
-                {
-                    "value": 29189668,
-                    "alias": "Randers Kommune"
-                },
-                {
-                    "value": 29189676,
-                    "alias": "Vordingborg Kommune"
-                },
-                {
-                    "value": 29189684,
-                    "alias": "Middelfart Kommune"
-                },
-                {
-                    "value": 29189692,
-                    "alias": "Assens Kommune"
-                },
-                {
-                    "value": 29189706,
-                    "alias": "Kerteminde Kommune"
-                },
-                {
-                    "value": 29189714,
-                    "alias": "Favrskov Kommune"
-                },
-                {
-                    "value": 29189722,
-                    "alias": "Nyborg Kommune"
-                },
-                {
-                    "value": 29189730,
-                    "alias": "Svendborg Kommune"
-                },
-                {
-                    "value": 29189757,
-                    "alias": "Haderslev Kommune"
-                },
-                {
-                    "value": 29189765,
-                    "alias": "Billund Kommune"
-                },
-                {
-                    "value": 29189773,
-                    "alias": "S\u00f8nderborg Kommune"
-                },
-                {
-                    "value": 29189781,
-                    "alias": "T\u00f8nder Kommune"
-                },
-                {
-                    "value": 29189803,
-                    "alias": "Esbjerg Kommune"
-                },
-                {
-                    "value": 29189811,
-                    "alias": "Varde Kommune"
-                },
-                {
-                    "value": 29189838,
-                    "alias": "Vejen Kommune"
-                },
-                {
-                    "value": 29189846,
-                    "alias": "Viborg Kommune"
-                },
-                {
-                    "value": 29189854,
-                    "alias": "Aabenraa Kommune"
-                },
-                {
-                    "value": 29189889,
-                    "alias": "Horsens Kommune"
-                },
-                {
-                    "value": 29189897,
-                    "alias": "Kolding Kommune"
-                },
-                {
-                    "value": 29189900,
-                    "alias": "Vejle Kommune"
-                },
-                {
-                    "value": 29189919,
-                    "alias": "Herning Kommune"
-                },
-                {
-                    "value": 29189927,
-                    "alias": "Holstebro Kommune"
-                },
-                {
-                    "value": 29189935,
-                    "alias": "Lemvig Kommune"
-                },
-                {
-                    "value": 29189951,
-                    "alias": "Struer Kommune"
-                },
-                {
-                    "value": 29189978,
-                    "alias": "Syddjurs Kommune"
-                },
-                {
-                    "value": 29189986,
-                    "alias": "Norddjurs Kommune"
-                },
-                {
-                    "value": 29189994,
-                    "alias": "Sor\u00f8 Kommune"
-                },
-                {
-                    "value": 29208654,
-                    "alias": "Stevns Kommune"
-                },
-                {
-                    "value": 31210917,
-                    "alias": "Fan\u00f8 Kommune"
-                },
-                {
-                    "value": 31351901,
-                    "alias": "Spor"
-                },
-                {
-                    "value": 32264328,
-                    "alias": "Odder Kommune"
-                },
-                {
-                    "value": 32468349,
-                    "alias": "CLEVER A\/S"
-                },
-                {
-                    "value": 33157274,
-                    "alias": "Naturstyrelsen"
-                },
-                {
-                    "value": 33284114,
-                    "alias": "Styrelsen for Dataforsyning og Effektivisering"
-                },
-                {
-                    "value": 34009570,
-                    "alias": "Beredskab & Sikkerhed"
-                },
-                {
-                    "value": 34206228,
-                    "alias": "Erhvervshus Fyn P\/S"
-                },
-                {
-                    "value": 34897034,
-                    "alias": "Destination Sj\u00e6lland A\/S"
-                },
-                {
-                    "value": 35147268,
-                    "alias": "Nationalpark Mols Bjerge"
-                },
-                {
-                    "value": 35209115,
-                    "alias": "Odense Kommune"
-                },
-                {
-                    "value": 35379193,
-                    "alias": "MapCentia"
-                },
-                {
-                    "value": 35432795,
-                    "alias": "Sydvestjysk Brandv\u00e6sen"
-                },
-                {
-                    "value": 35434399,
-                    "alias": "Midt- og Sydsj\u00e6llands Brand & Redning"
-                },
-                {
-                    "value": 35438718,
-                    "alias": "Brand & Redning S\u00f8nderjylland"
-                },
-                {
-                    "value": 35439862,
-                    "alias": "Syd\u00f8stjyllands Brandv\u00e6sen"
-                },
-                {
-                    "value": 35440178,
-                    "alias": "Hovedstadens Beredskab"
-                },
-                {
-                    "value": 36146702,
-                    "alias": "Dansk Cykelturisme"
-                },
-                {
-                    "value": 36471271,
-                    "alias": "DKNT"
-                },
-                {
-                    "value": 36920483,
-                    "alias": "ParksnTrails"
-                },
-                {
-                    "value": 36986719,
-                    "alias": "Geopark Odsherred"
-                },
-                {
-                    "value": 37137502,
-                    "alias": "Midtjysk Brand & Redning"
-                },
-                {
-                    "value": 37164712,
-                    "alias": "\u00d8stjyllands Brandv\u00e6sen"
-                },
-                {
-                    "value": 37176478,
-                    "alias": "SkjoldungernesLand"
-                },
-                {
-                    "value": 37197580,
-                    "alias": "Vestsj\u00e6llands Brandv\u00e6sen"
-                },
-                {
-                    "value": 37207969,
-                    "alias": "Brand & Redning Midtvest"
-                },
-                {
-                    "value": 37242985,
-                    "alias": "TrekantBrand"
-                },
-                {
-                    "value": 37265209,
-                    "alias": "Beredskab Fyn"
-                },
-                {
-                    "value": 39170418,
-                    "alias": "OK A.M.B.A."
-                },
-                {
-                    "value": 40220321,
-                    "alias": "Herslev Bylaug"
-                },
-                {
-                    "value": 40632301,
-                    "alias": "Beredskab 4K"
-                },
-                {
-                    "value": 40657339,
-                    "alias": "Spirii"
-                },
-                {
-                    "value": 41333014,
-                    "alias": "Mors\u00f8 Kommune"
-                },
-                {
-                    "value": 41575727,
-                    "alias": "SAMSIK"
-                },
-                {
-                    "value": 41668385,
-                    "alias": "Monta ApS"
-                },
-                {
-                    "value": 42309443,
-                    "alias": "qLER ApS"
-                },
-                {
-                    "value": 42885746,
-                    "alias": "E.ON"
-                },
-                {
-                    "value": 44023911,
-                    "alias": "Greve Kommune"
-                },
-                {
-                    "value": 45973328,
-                    "alias": "L\u00e6s\u00f8 Kommune"
-                },
-                {
-                    "value": 55133018,
-                    "alias": "Aarhus Kommune"
-                },
-                {
-                    "value": 55606617,
-                    "alias": "Hvidovre Kommune"
-                },
-                {
-                    "value": 56230718,
-                    "alias": "Friluftsr\u00e5det"
-                },
-                {
-                    "value": 58271713,
-                    "alias": "Ballerup Kommune"
-                },
-                {
-                    "value": 60183112,
-                    "alias": "Aller\u00f8d Kommune"
-                },
-                {
-                    "value": 62547413,
-                    "alias": "kl"
-                },
-                {
-                    "value": 62761113,
-                    "alias": "Gladsaxe Kommune"
-                },
-                {
-                    "value": 63640719,
-                    "alias": "Herlev Kommune"
-                },
-                {
-                    "value": 64502018,
-                    "alias": "Helsing\u00f8r Kommune"
-                },
-                {
-                    "value": 64942212,
-                    "alias": "K\u00f8benhavns Kommune"
-                },
-                {
-                    "value": 65113015,
-                    "alias": "Br\u00f8ndby Kommune"
-                },
-                {
-                    "value": 65120119,
-                    "alias": "Glostrup Kommune"
-                },
-                {
-                    "value": 65307316,
-                    "alias": "R\u00f8dovre Kommune"
-                },
-                {
-                    "value": 66137112,
-                    "alias": "Albertslund Kommune"
-                },
-                {
-                    "value": 68534917,
-                    "alias": "Solr\u00f8d Kommune"
-                },
-                {
-                    "value": 69116418,
-                    "alias": "Fredericia Kommune"
-                },
-                {
-                    "value": 70960516,
-                    "alias": "H\u00f8rsholm Kommune"
-                },
-                {
-                    "value": 99999999,
-                    "alias": "Nan"
-                },
-                {
-                    "value": 100000113,
-                    "alias": "Helsing\u00f8r Kommunes Beredskab"
-                }
-            ],
-            "alias": "V\u00e6lg organisation som indberetter. Eksempel: Odense Kommune",
-            "queryable": false,
-            "sort_id": 80
-        },
         "cvr_navn": {
             "type": "character varying",
             "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Silkeborg Kommune ",
@@ -844,7 +184,7 @@
             "max_bytes": 512,
             "reference": null,
             "restriction": null,
-            "alias": "Brugeridentifikation af den der redigerer i data",
+            "alias": "Angiv navn eller initialer p\u00e5 person, der indberetter data",
             "queryable": false,
             "sort_id": 110
         },
@@ -916,7 +256,7 @@
                     "alias": "3D"
                 }
             ],
-            "alias": "V\u00e6lg det grundlag som er brugt til at fastsl\u00e5 placering.",
+            "alias": "V\u00e6lg det baggrundskort som er brugt til at fastsl\u00e5 placering, v\u00e6lg som udgangspunkt FOT (baggrundskortet) eller ortofoto",
             "queryable": false,
             "sort_id": 120
         },
@@ -973,7 +313,7 @@
                     "alias": "Ikke g\u00e6ldende \/ Aflyst"
                 }
             ],
-            "alias": "V\u00e6lg status som er relevant.",
+            "alias": "Registreringens status",
             "queryable": false,
             "sort_id": 124
         },
@@ -1022,7 +362,7 @@
                     "alias": "Synlig for alle myndigheder, men ikke offentligheden"
                 }
             ],
-            "alias": "V\u00e6lg den synlighed som er relevant.",
+            "alias": "V\u00e6lg hvem der m\u00e5 se data. V\u00e6lg som udgangspunkt, synlig for alle myndigheder",
             "queryable": false,
             "sort_id": 128
         },
@@ -1057,12 +397,12 @@
             "reference": null,
             "restriction": null,
             "alias": "Kommunenummer for den kommune, som facilitet er beliggende i. Opdateres automatisk",
-            "queryable": false,
+            "queryable": true,
             "sort_id": 140
         },
         "adr_id": {
             "type": "uuid",
-            "comment": "\u00d8nsker man at angive en adresse kan man enten inds\u00e6tte adressens UUID, som fx kan findes p\u00e5 https:\/\/danmarksadresser.dk\/, hvorefter vejnavn, vejkode, mv. automatisk vil blive oversat om natten. Obs v\u00e6lg adresse-niveauet i DAR (og IKKE adgangsadresse- niveauet). Du kan alternativt ogs\u00e5 indskrive vejnavn og husnummer som fritekst i tilh\u00f8rende felter.  Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
+            "comment": "Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
             "num": 193,
             "full_type": "uuid",
             "typname": "uuid",
@@ -1073,7 +413,7 @@
             "max_bytes": 16,
             "reference": null,
             "restriction": null,
-            "alias": "Adresse id",
+            "alias": "Inds\u00e6t adresse UUID fra danmarksadresser.dk",
             "queryable": false,
             "sort_id": 144
         },
@@ -1090,7 +430,7 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "Vejkode",
+            "alias": "Vejkode (udfyldes automatisk ved angivelse af adresse UUID)",
             "queryable": false,
             "sort_id": 146
         },
@@ -1107,7 +447,7 @@
             "max_bytes": 160,
             "reference": null,
             "restriction": null,
-            "alias": "",
+            "alias": "Vejnavn (udfyldes automatisk ved angivelse af adresse UUID)",
             "queryable": true,
             "sort_id": 148
         },
@@ -1141,8 +481,8 @@
             "max_bytes": 16,
             "reference": null,
             "restriction": null,
-            "alias": "Husnummer",
-            "queryable": false,
+            "alias": "Husnummer (udfyldes automatisk ved angivelse af adresse UUID)",
+            "queryable": true,
             "sort_id": 152
         },
         "postnr": {
@@ -5521,7 +4861,7 @@
                     "alias": "9999"
                 }
             ],
-            "alias": "Postnummer",
+            "alias": "Postnummer (udfyldes automatisk ved angivelse af adresse UUID)",
             "queryable": false,
             "sort_id": 154
         },
@@ -5539,7 +4879,7 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": false,
+            "queryable": true,
             "sort_id": 156
         },
         "noegle": {
@@ -5555,8 +4895,8 @@
             "max_bytes": 512,
             "reference": null,
             "restriction": null,
-            "alias": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
-            "queryable": false,
+            "alias": "Fremmed n\u00f8gle til objektet i en anden databasetabel",
+            "queryable": true,
             "sort_id": 158
         },
         "sagsnr": {
@@ -5572,8 +4912,8 @@
             "max_bytes": 4096,
             "reference": null,
             "restriction": null,
-            "alias": "Sagsnummer. Identifikation af sag i ESDH.",
-            "queryable": false,
+            "alias": "Sagsnummer. Identifikation af sag i ESDH",
+            "queryable": true,
             "sort_id": 160
         },
         "note": {
@@ -5589,8 +4929,8 @@
             "max_bytes": 1016,
             "reference": null,
             "restriction": null,
-            "alias": "Note, frit bem\u00e6rkningsfelt.",
-            "queryable": false,
+            "alias": "Note. Frit bem\u00e6rkningsfelt",
+            "queryable": true,
             "sort_id": 162
         },
         "beskyt_rum_type_kode": {
@@ -5613,7 +4953,7 @@
                     "alias": "Betond\u00e6kningsgrav"
                 }
             ],
-            "alias": "Beskyttelsesrumtype, V\u00e6lg Betond\u00e6kningsgrav.",
+            "alias": "Beskyttelsesrumtype, V\u00e6lg Betond\u00e6kningsgrav",
             "queryable": false,
             "sort_id": 200
         },
@@ -5647,8 +4987,8 @@
             "max_bytes": 80,
             "reference": null,
             "restriction": null,
-            "alias": "Identifikation\/nummer for beskyttelsesrummet.",
-            "queryable": false,
+            "alias": "Identifikation\/nummer for beskyttelsesrummet",
+            "queryable": true,
             "sort_id": 204
         },
         "matrikelejer": {
@@ -5664,8 +5004,8 @@
             "max_bytes": 400,
             "reference": null,
             "restriction": null,
-            "alias": "Angiv matrikelejer for grunden, hvor betond\u00e6kningsgraven er placeret.",
-            "queryable": false,
+            "alias": "Angiv matrikelejer for grunden, hvor betond\u00e6kningsgraven er placeret",
+            "queryable": true,
             "sort_id": 206
         },
         "udfoert_af": {
@@ -5681,8 +5021,8 @@
             "max_bytes": 200,
             "reference": null,
             "restriction": null,
-            "alias": "Angiv navnet p\u00e5 den, der udf\u00f8rer eftersynet. ",
-            "queryable": false,
+            "alias": "Angiv navnet p\u00e5 den, der udf\u00f8rer eftersynet",
+            "queryable": true,
             "sort_id": 208
         },
         "udfoert_dato": {
@@ -5698,8 +5038,8 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "Angiv udf\u00f8rt dato",
-            "queryable": false,
+            "alias": "Angiv dato for eftersyn",
+            "queryable": true,
             "sort_id": 210
         },
         "godkendt_af": {
@@ -5715,8 +5055,8 @@
             "max_bytes": 200,
             "reference": null,
             "restriction": null,
-            "alias": "Godkendt af, Angiv navnet p\u00e5 den, der har godkendt eftersynet. ",
-            "queryable": false,
+            "alias": "Angiv navnet p\u00e5 den, der har godkendt eftersynet",
+            "queryable": true,
             "sort_id": 212
         },
         "godkendt_dato": {
@@ -5732,8 +5072,8 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "Angiv godkendt dato",
-            "queryable": false,
+            "alias": "Angiv dato for godkendelse af eftersyn",
+            "queryable": true,
             "sort_id": 214
         },
         "dokumentation": {
@@ -5749,8 +5089,8 @@
             "max_bytes": 1,
             "reference": null,
             "restriction": null,
-            "alias": "Er der dokumentation?",
-            "queryable": false,
+            "alias": "Eksisterer der dokumentation om beskyttelsesrummet? Fx byggesag. (S\u00e6t flueben)",
+            "queryable": true,
             "sort_id": 216
         },
         "inspektioner": {
@@ -5766,8 +5106,8 @@
             "max_bytes": 1,
             "reference": null,
             "restriction": null,
-            "alias": "Er der materiale fra tidligere inspektioner?",
-            "queryable": false,
+            "alias": "Eksisterer der materiale fra tidligere inspektioner (indvendig og udvendig)? (S\u00e6t flueben)",
+            "queryable": true,
             "sort_id": 218
         },
         "bbr": {
@@ -5783,8 +5123,8 @@
             "max_bytes": 1,
             "reference": null,
             "restriction": null,
-            "alias": "Er det registreret i BBR?",
-            "queryable": false,
+            "alias": "Er beskyttelsesrummet registreret i BBR? (S\u00e6t flueben)",
+            "queryable": true,
             "sort_id": 220
         },
         "lokaliseret": {
@@ -5800,8 +5140,8 @@
             "max_bytes": 1,
             "reference": null,
             "restriction": null,
-            "alias": "Er beskyttelsesrummet lokaliseret?",
-            "queryable": false,
+            "alias": "Er det muligt at lokalisere beskyttelsesrummet? (S\u00e6t flueben, default = ja)",
+            "queryable": true,
             "sort_id": 222
         },
         "lokaliseret_aarsag": {
@@ -5817,8 +5157,8 @@
             "max_bytes": 1020,
             "reference": null,
             "restriction": null,
-            "alias": "Angiv \u00e5rsag, hvis beskyttelsesrummet ikke kan lokaliseres.",
-            "queryable": false,
+            "alias": "Angiv \u00e5rsag, hvis beskyttelsesrummet ikke kan lokaliseres",
+            "queryable": true,
             "sort_id": 224
         },
         "adgang_kode": {
@@ -6177,8 +5517,8 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "Adgang og anvendelse: Antal pladser i betond\u00e6kningsgraven.",
-            "queryable": false,
+            "alias": "Adgang og anvendelse: Antal pladser i betond\u00e6kningsgraven. Hvis betond\u00e6kningsgraven ikke er lokaliseret, angiv da \u201d0\u201d ",
+            "queryable": true,
             "sort_id": 300
         },
         "antal_opholdsrum": {
@@ -6194,8 +5534,8 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "Adgang og anvendelse: Antallet af indre opholdsrum i beskyttelsesrummet.",
-            "queryable": false,
+            "alias": "Adgang og anvendelse: Antallet af indre opholdsrum i beskyttelsesrummet",
+            "queryable": true,
             "sort_id": 310
         },
         "beskyt_rum_anvendelse_kode": {
@@ -6230,7 +5570,7 @@
                     "alias": "Opfyldt, fx med jord. "
                 }
             ],
-            "alias": "Adgang og anvendelse: Angiv nuv\u00e6rende anvendelse af beskyttelsesrum",
+            "alias": "Adgang og anvendelse: Nuv\u00e6rende anvendelse af beskyttelsesrum",
             "queryable": false,
             "sort_id": 312
         },
@@ -6264,8 +5604,8 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "Adgang og anvendelse: Angiv antal trapper.",
-            "queryable": false,
+            "alias": "Adgang og anvendelse: Angiv antal trapper",
+            "queryable": true,
             "sort_id": 320
         },
         "adgangsdoerhuller_antal": {
@@ -6282,7 +5622,7 @@
             "reference": null,
             "restriction": null,
             "alias": "Adgang og anvendelse: Angiv antal adgangsd\u00f8rhuller.",
-            "queryable": false,
+            "queryable": true,
             "sort_id": 322
         },
         "adgangsdoerhuller_staal_kode": {
@@ -6396,8 +5736,8 @@
             "max_bytes": 4,
             "reference": null,
             "restriction": null,
-            "alias": "Adgang og anvendelse: Angiv antallet af n\u00f8dudgange.",
-            "queryable": false,
+            "alias": "Adgang og anvendelse: Angiv antallet af n\u00f8dudgange",
+            "queryable": true,
             "sort_id": 360
         },
         "noedudgange_staallem_kode": {
@@ -6462,7 +5802,7 @@
             "max_bytes": 2048,
             "reference": null,
             "restriction": null,
-            "alias": "Konstruktion: \u00d8vrige bem\u00e6rkninger til konstruktion. Bem\u00e6rk specifikke sp\u00f8rgsm\u00e5l til konstruktion besvares p\u00e5 rumniveau.",
+            "alias": "Konstruktion: \u00d8vrige bem\u00e6rkninger til konstruktion. Bem\u00e6rk specifikke sp\u00f8rgsm\u00e5l til konstruktion besvares p\u00e5 rumniveau",
             "queryable": false,
             "sort_id": 380
         },
@@ -6494,7 +5834,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Installation: Findes der en sump? Sumpen er placeret udenfor opholdsrum.",
+            "alias": "Installation: Findes der en sump? Sumpen er placeret udenfor opholdsrum",
             "queryable": false,
             "sort_id": 410
         },
@@ -6543,7 +5883,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Installation: Er der gulvafl\u00f8b? Gulvafl\u00f8bet er placeret udenfor opholdsrum.",
+            "alias": "Installation: Er der gulvafl\u00f8b? Gulvafl\u00f8bet er placeret udenfor opholdsrum",
             "queryable": false,
             "sort_id": 420
         },
@@ -6592,7 +5932,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Installation: Fungerer sumpen? Sumpen testes ved, at der h\u00e6ldes 20 l. vand i afl\u00f8b.",
+            "alias": "Installation: Fungerer sumpen? Sumpen testes ved, at der h\u00e6ldes 20 l. vand i afl\u00f8b",
             "queryable": false,
             "sort_id": 430
         },
@@ -6641,7 +5981,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Installation: Er der udf\u00f8rt fredstidsinstallationer? ",
+            "alias": "Installation: Er der udf\u00f8rt fredstidsinstallationer? Fredsinstallationer kan fx v\u00e6re, at der er indlagt el, elektrisk udluftning mv.",
             "queryable": false,
             "sort_id": 440
         },
@@ -6675,8 +6015,8 @@
             "max_bytes": 1024,
             "reference": null,
             "restriction": null,
-            "alias": "Installation: Hvis der er udf\u00f8rt fredstidsinstallationer, s\u00e5 angiv hvilke i bem\u00e6rkningsfelt.",
-            "queryable": false,
+            "alias": "Installation: Hvis der er udf\u00f8rt fredstidsinstallationer, s\u00e5 angiv her hvilke",
+            "queryable": true,
             "sort_id": 444
         },
         "oevrig_teknisk_installationer_bemaerkninger": {
@@ -6692,8 +6032,8 @@
             "max_bytes": 2048,
             "reference": null,
             "restriction": null,
-            "alias": "Installation: \u00d8vrig teknisk installationer bem\u00e6rkninger. Bem\u00e6rk specifikke sp\u00f8rgsm\u00e5l til installationer besvares p\u00e5 rumniveau. ",
-            "queryable": false,
+            "alias": "Installation: \u00d8vrige bem\u00e6rkninger til tekniske installationer. Bem\u00e6rk specifikke sp\u00f8rgsm\u00e5l til installationer besvares p\u00e5 rumniveau",
+            "queryable": true,
             "sort_id": 448
         },
         "oevrig_bemaerkninger": {
@@ -6709,8 +6049,8 @@
             "max_bytes": 2048,
             "reference": null,
             "restriction": null,
-            "alias": "\u00d8vrige bem\u00e6rkninger til eftersyn.",
-            "queryable": false,
+            "alias": "\u00d8vrige bem\u00e6rkninger til eftersynet",
+            "queryable": true,
             "sort_id": 450
         },
         "_1_konstruktion_intakt_kode": {
@@ -6741,7 +6081,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Konstruktion: Er konstruktionen intakt?",
+            "alias": "Rum 1 - Konstruktion: Er hovedkonstruktionen intakt?",
             "queryable": false,
             "sort_id": 500
         },
@@ -6790,7 +6130,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "alias": "Rum 1 - Konstruktion: Er der blotlagt armering?",
             "queryable": false,
             "sort_id": 505
         },
@@ -7035,7 +6375,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "alias": "Rum 1 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne?",
             "queryable": false,
             "sort_id": 530
         },
@@ -7084,7 +6424,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "alias": "Rum 1 - Konstruktion: Er der vand eller vandpytter p\u00e5 gulv?",
             "queryable": false,
             "sort_id": 535
         },
@@ -7133,7 +6473,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "alias": "Rum 1 - Konstruktion: Er gulvet d\u00e6kket af vand?",
             "queryable": false,
             "sort_id": 540
         },
@@ -7182,7 +6522,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Konstruktion: Er der spor fra skadedyr?",
+            "alias": "Rum 1 - Konstruktion: Er der spor efter skadedyr (fx rotter)?",
             "queryable": false,
             "sort_id": 545
         },
@@ -7231,7 +6571,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Konstruktion: Er der skadedyr ekskrementer?",
+            "alias": "Rum 1 - Konstruktion: Er der ekskrementer, der skal fjernes?",
             "queryable": false,
             "sort_id": 550
         },
@@ -7280,7 +6620,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 1 - Installation: Er ventilation h\u00e5nddreven?",
+            "alias": "Rum 1 - Installation: Forefindes der en h\u00e5nddreven ventilator?",
             "queryable": false,
             "sort_id": 555
         },
@@ -7476,7 +6816,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Konstruktion: Er konstruktionen intakt?",
+            "alias": "Rum 2 - Konstruktion: Er hovedkonstruktionen intakt?",
             "queryable": false,
             "sort_id": 615
         },
@@ -7525,7 +6865,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "alias": "Rum 2 - Konstruktion: Er der blotlagt armering?",
             "queryable": false,
             "sort_id": 620
         },
@@ -7770,7 +7110,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "alias": "Rum 2 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne?",
             "queryable": false,
             "sort_id": 645
         },
@@ -7819,7 +7159,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "alias": "Rum 2 - Konstruktion: Er der vand eller vandpytter p\u00e5 gulv?",
             "queryable": false,
             "sort_id": 650
         },
@@ -7868,7 +7208,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "alias": "Rum 2 - Konstruktion: Er gulvet d\u00e6kket af vand?",
             "queryable": false,
             "sort_id": 655
         },
@@ -7917,7 +7257,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Konstruktion: Er der spor fra skadedyr?",
+            "alias": "Rum 2 - Konstruktion: Er der spor efter skadedyr (fx rotter)?",
             "queryable": false,
             "sort_id": 660
         },
@@ -7966,7 +7306,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Konstruktion: Er der skadedyr ekskrementer?",
+            "alias": "Rum 2 - Konstruktion: Er der ekskrementer, der skal fjernes?",
             "queryable": false,
             "sort_id": 665
         },
@@ -8015,7 +7355,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 2 - Installation: Er ventilation h\u00e5nddreven?",
+            "alias": "Rum 2 - Installation: Forefindes der en h\u00e5nddreven ventilator?",
             "queryable": false,
             "sort_id": 670
         },
@@ -8260,7 +7600,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 3 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "alias": "Rum 3 - Konstruktion: Er der blotlagt armering?",
             "queryable": false,
             "sort_id": 705
         },
@@ -8505,7 +7845,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 3 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "alias": "Rum 3 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne?",
             "queryable": false,
             "sort_id": 730
         },
@@ -8554,7 +7894,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 3 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "alias": "Rum 3 - Konstruktion: Er der vand eller vandpytter p\u00e5 gulv?",
             "queryable": false,
             "sort_id": 735
         },
@@ -8603,7 +7943,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 3 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "alias": "Rum 3 - Konstruktion: Er gulvet d\u00e6kket af vand?",
             "queryable": false,
             "sort_id": 740
         },
@@ -8652,7 +7992,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 3 - Konstruktion: Er der spor fra skadedyr?",
+            "alias": "Rum 3 - Konstruktion: Er der spor efter skadedyr (fx rotter)?",
             "queryable": false,
             "sort_id": 745
         },
@@ -8701,7 +8041,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 3 - Konstruktion: Er der skadedyr ekskrementer?",
+            "alias": "Rum 3 - Konstruktion: Er der ekskrementer, der skal fjernes?",
             "queryable": false,
             "sort_id": 750
         },
@@ -8750,7 +8090,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 3 - Installation: Er ventilation h\u00e5nddreven?",
+            "alias": "Rum 3 - Installation: Forefindes der en h\u00e5nddreven ventilator?",
             "queryable": false,
             "sort_id": 755
         },
@@ -8946,7 +8286,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Konstruktion: Er konstruktionen intakt?",
+            "alias": "Rum 4 - Konstruktion: Er hovedkonstruktionen intakt?",
             "queryable": false,
             "sort_id": 800
         },
@@ -8995,7 +8335,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Konstruktion: Er konstruktionen blotlagt armering?",
+            "alias": "Rum 4 - Konstruktion: Er der blotlagt armering?",
             "queryable": false,
             "sort_id": 810
         },
@@ -9240,7 +8580,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand?",
+            "alias": "Rum 4 - Konstruktion: Er der indtr\u00e6ngende fugt\/vand gennem konstruktionerne?",
             "queryable": false,
             "sort_id": 860
         },
@@ -9289,7 +8629,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Konstruktion: Er der en vandpyt p\u00e5 gulvet?",
+            "alias": "Rum 4 - Konstruktion: Er der vand eller vandpytter p\u00e5 gulv?",
             "queryable": false,
             "sort_id": 870
         },
@@ -9338,7 +8678,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Konstruktion: D\u00e6kker vandet gulvet?",
+            "alias": "Rum 4 - Konstruktion: Er gulvet d\u00e6kket af vand?",
             "queryable": false,
             "sort_id": 880
         },
@@ -9387,7 +8727,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Konstruktion: Er der spor fra skadedyr?",
+            "alias": "Rum 4 - Konstruktion: Er der spor efter skadedyr (fx rotter)?",
             "queryable": false,
             "sort_id": 890
         },
@@ -9436,7 +8776,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Konstruktion: Er der skadedyr ekskrementer?",
+            "alias": "Rum 4 - Konstruktion: Er der ekskrementer, der skal fjernes?",
             "queryable": false,
             "sort_id": 905
         },
@@ -9485,7 +8825,7 @@
                     "alias": "Ved ikke"
                 }
             ],
-            "alias": "Rum 4 - Installation: Er ventilation h\u00e5nddreven?",
+            "alias": "Rum 4 - Installation: Forefindes der en h\u00e5nddreven ventilator?",
             "queryable": false,
             "sort_id": 915
         },
@@ -9653,9 +8993,9 @@
             "queryable": true,
             "sort_id": 950
         },
-        "foto_link": {
+        "link": {
             "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "num": 201,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -9667,183 +9007,13 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": false,
-            "sort_id": 1030
-        },
-        "foto_link1": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 202,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1040
-        },
-        "foto_link2": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 203,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1050
-        },
-        "foto_link3": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 204,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1060
-        },
-        "foto_link4": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 205,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1070
-        },
-        "foto_link5": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 206,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1080
-        },
-        "foto_link6": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 207,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1090
-        },
-        "foto_link7": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 208,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1100
-        },
-        "foto_link8": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 209,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1110
-        },
-        "foto_link9": {
-            "type": "character varying",
-            "comment": "URL-link til foto. Eksempel: http:\/\/www.link.dk\/foto.png",
-            "num": 210,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 1120
-        },
-        "link": {
-            "type": "character varying",
-            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
-            "num": 211,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
+            "queryable": true,
             "sort_id": 2000
         },
         "geometri": {
             "type": "geometry",
             "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier. Eksempel: For et punkt:  543.210,999  6.123.456,111",
-            "num": 212,
+            "num": 202,
             "full_type": "geometry(MultiPoint,25832)",
             "typname": "geometry",
             "is_array": false,
@@ -9867,7 +9037,7 @@
         "temakode": "6122",
         "temanavn": "Beskyttelsesrum (eftersyn)",
         "kle_koder": "14.06.02 Offentlige beskyttelsesrum",
-        "meta_desc": "<p>\nTemaet kan bruges til eftersyn af beskyttelsesrum. Et beskyttelsesrum er et forst\u00e6rket rumanl\u00e6g, der er indrettet til at beskytte civilbefolkningen mod blandt andet f\u00f8lgerne af luftangreb (tryk, splinter m.v.). Form\u00e5let med temaet er at foretage eftersyn og registrere de tilh\u00f8rende observationer for at kortl\u00e6gge b\u00e5de kapaciteten og den aktuelle stand af betond\u00e6kningsgrave.\n <\/p>\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence<\/a> \n  finder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
+        "meta_desc": "<p>Temaet kan bruges til eftersyn af beskyttelsesrum. Et beskyttelsesrum er et forst\u00e6rket rumanl\u00e6g, der er indrettet til at beskytte civilbefolkningen mod blandt andet f\u00f8lgerne af luftangreb (tryk, splinter m.v.). Form\u00e5let med temaet er at foretage eftersyn og registrere de tilh\u00f8rende observationer for at kortl\u00e6gge b\u00e5de kapaciteten og den aktuelle stand af betond\u00e6kningsgrave.<\/p><p>Til eftersynet er der udarbejdet en vejledning af Samsik, der beskriver fremgangsm\u00e5den ved eftersynet. Vejledningen kan hentes her: <a href=\"https:\/\/samsik.dk\/beskyttelsesrum\/vejledning-eftersyn-betondaekningsgrave\/\" target=\"_blank\">Vejledning til eftersyn af betond\u00e6kningsgrave<\/a><\/p>\n<p>\n  Vil du vide mere om GeoFA? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">confluence<\/a> \n  finder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
         "definition": "Omfatter aktuelt eftersyn af typen betond\u00e6kningsgrave.",
         "noegle_ord": "Beskyttelsesrum, betond\u00e6kningsgrav",
         "beskrivelse": "Temaet kan bruges til eftersyn af beskyttelsesrum. Et beskyttelsesrum er et forst\u00e6rket rumanl\u00e6g, der er indrettet til at beskytte civilbefolkningen mod blandt andet f\u00f8lgerne af luftangreb (tryk, splinter m.v.). ",
@@ -9903,7 +9073,7 @@
         "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
-        "default_open_tools": "[\"filters\"]",
+        "default_open_tools": "",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",

@@ -1091,7 +1091,7 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": true,
+            "queryable": false,
             "sort_id": 195
         },
         "id_cykelknudepkt": {
@@ -1124,8 +1124,8 @@
             "max_bytes": 100,
             "reference": null,
             "restriction": null,
-            "alias": "",
-            "queryable": false,
+            "alias": "Knudepunktsnummer",
+            "queryable": true,
             "sort_id": 210
         },
         "planstatus_kode": {
