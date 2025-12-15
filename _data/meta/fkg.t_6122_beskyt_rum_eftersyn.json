@@ -9087,7 +9087,7 @@
         "geometrisk_konsistens": "Ingen",
         "info_element_selector": "",
         "noegleord_hovedgruppe": "Sikkerhed og sundhed",
-        "registreringsinstruks": "Registrer lokation, adgang, antal pladser og tilstand af betond\u00e6kningsgrave. Bem\u00e6rk, at alle felter skal udfyldes i det omfang, det er muligt. Der er en kort vejledningstekst p\u00e5 feltniveau. Derudover findes en samlet vejledning for eftersynet, som Styrelsen for Samfundssikkerhed (SAMSIK) har udarbejdet. Find vejledningen her.: https:\/\/samsik.dk\/beskyttelsesrum\/vejledning-eftersyn-betondaekningsgrave\/",
+        "registreringsinstruks": "Der en r\u00e6kke felter, der skal udfyldes for hele betond\u00e6kningsgraven og en r\u00e6kke felter, der skal udfyldes for enkelte rum i betond\u00e6kningsgraven. Der er oprettet felter for 4 rum. De er angivet med tallene 1-4 efterfulgt af \u2019feltnavn\u2019. Hvis man har flere rum, udfyldes alene information for op til 4 rum. Hvis man har f\u00e6rre end 4 rum, udfyldes felterne for de enkelte rum ikke.",
         "klassificering_opdeling": "",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
