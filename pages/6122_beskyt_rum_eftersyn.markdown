@@ -209,4 +209,3 @@
         </tr>
     {% endfor %}
 </table>
-
