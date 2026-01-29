@@ -14,7 +14,8 @@
     "layergroup": "Natur",
     "sort_id": 600,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

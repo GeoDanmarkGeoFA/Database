@@ -14,7 +14,8 @@
     "layergroup": "Administration",
     "sort_id": 1460,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

@@ -14,7 +14,8 @@
     "layergroup": "Affald og genbrug",
     "sort_id": 1305,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

@@ -14,7 +14,8 @@
     "layergroup": "Vej og Trafik",
     "sort_id": 125,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

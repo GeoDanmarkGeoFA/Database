@@ -1,26 +1,26 @@
 {
-    "uuid": "899ac224-9cfa-42df-82f5-397de29750dd",
+    "uuid": "d8123012-d422-484c-841c-4a908f834689",
     "f_table_schema": "fkg",
-    "f_table_name": "t_5802_fac_li",
+    "f_table_name": "hist_t_5801_fac_fl",
     "f_geometry_column": "geometri",
     "f_table_abstract": "",
-    "f_table_title": "Friluftsliv faciliteter,  linjer (5802)",
+    "f_table_title": "HISTORISK Friluftsliv faciliteter, flader (5801)",
     "pkey": "objekt_id",
     "rel_type": "VIEW",
     "coord_dimension": 2,
-    "type": "MULTILINESTRING",
+    "type": "MULTIPOLYGON",
     "srid": 25832,
     "authentication": "Write",
-    "layergroup": "Sport, fritid og friluftsliv",
-    "sort_id": 205,
+    "layergroup": "Historisk",
+    "sort_id": 0,
     "tags": [
-        "friluftsliv",
+        "HISTORISK",
         "Github"
     ],
     "fields": {
         "temakode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen.",
+            "comment": "",
             "num": 1,
             "full_type": "integer",
             "typname": "int4",
@@ -37,7 +37,7 @@
         },
         "temanavn": {
             "type": "text",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "",
             "num": 2,
             "full_type": "text",
             "typname": "text",
@@ -54,7 +54,7 @@
         },
         "objekt_id": {
             "type": "uuid",
-            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.",
+            "comment": "",
             "num": 3,
             "full_type": "uuid",
             "typname": "uuid",
@@ -71,7 +71,7 @@
         },
         "versions_id": {
             "type": "uuid",
-            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet.",
+            "comment": "",
             "num": 4,
             "full_type": "uuid",
             "typname": "uuid",
@@ -88,7 +88,7 @@
         },
         "systid_fra": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
+            "comment": "",
             "num": 5,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -105,7 +105,7 @@
         },
         "systid_til": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
+            "comment": "",
             "num": 6,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -122,7 +122,7 @@
         },
         "oprettet": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen.",
+            "comment": "",
             "num": 7,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -139,7 +139,7 @@
         },
         "cvr_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet.",
+            "comment": "",
             "num": 8,
             "full_type": "integer",
             "typname": "int4",
@@ -799,7 +799,7 @@
         },
         "cvr_navn": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "",
             "num": 9,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -816,7 +816,7 @@
         },
         "kommunekode": {
             "type": "integer",
-            "comment": "3-cifret kommunekode udfyldes via cvr_kode.",
+            "comment": "",
             "num": 10,
             "full_type": "integer",
             "typname": "int4",
@@ -833,7 +833,7 @@
         },
         "bruger_id": {
             "type": "character varying",
-            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data.",
+            "comment": "",
             "num": 11,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -850,7 +850,7 @@
         },
         "oprindkode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en oprindelse via en kode.",
+            "comment": "",
             "num": 12,
             "full_type": "integer",
             "typname": "int4",
@@ -922,7 +922,7 @@
         },
         "oprindelse": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "",
             "num": 13,
             "full_type": "character varying(35)",
             "typname": "varchar",
@@ -939,7 +939,7 @@
         },
         "statuskode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en status via en kode.",
+            "comment": "",
             "num": 14,
             "full_type": "integer",
             "typname": "int4",
@@ -979,7 +979,7 @@
         },
         "status": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "",
             "num": 15,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -996,7 +996,7 @@
         },
         "off_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode.",
+            "comment": "",
             "num": 16,
             "full_type": "integer",
             "typname": "int4",
@@ -1028,7 +1028,7 @@
         },
         "offentlig": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet.",
+            "comment": "",
             "num": 17,
             "full_type": "character varying(60)",
             "typname": "varchar",
@@ -1045,7 +1045,7 @@
         },
         "noegle": {
             "type": "character varying",
-            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
+            "comment": "",
             "num": 18,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1062,7 +1062,7 @@
         },
         "note": {
             "type": "character varying",
-            "comment": "Frit bem\u00e6rkningsfelt.",
+            "comment": "",
             "num": 19,
             "full_type": "character varying(254)",
             "typname": "varchar",
@@ -1077,26 +1077,9 @@
             "queryable": false,
             "sort_id": 190
         },
-        "beliggenhedskommune": {
+        "facil_ty_k": {
             "type": "integer",
-            "comment": "Kommunenummer for den kommune, som facilitet er beliggende i. Kan hj\u00e6lpe med at filtre data ift. hvilke faciliteter der er i hvilke kommuner. Udfyldes automatisk hver nat ud fra en analyse mellem facilitetspunktet og DAGI-kommunegr\u00e6nse.",
-            "num": 101,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 195
-        },
-        "rute_ty_k": {
-            "type": "integer",
-            "comment": "Kode for rutetypen. Eksempel: 1",
+            "comment": "",
             "num": 20,
             "full_type": "integer",
             "typname": "int4",
@@ -1105,220 +1088,671 @@
             "numeric_precision": 32,
             "numeric_scale": 0,
             "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
+            "reference": [
+                "fkg.d_5800_facilitet.facil_ty_k"
+            ],
+            "restriction": [
+                {
+                    "value": 1012,
+                    "alias": "Toilet"
+                },
+                {
+                    "value": 1022,
+                    "alias": "B\u00e5lplads"
+                },
+                {
+                    "value": 1031,
+                    "alias": "Legeplads"
+                },
+                {
+                    "value": 1041,
+                    "alias": "Naturlegeplads"
+                },
+                {
+                    "value": 1051,
+                    "alias": "Badestrand\/-sted"
+                },
+                {
+                    "value": 1061,
+                    "alias": "Bl\u00e5 flag badested"
+                },
+                {
+                    "value": 1062,
+                    "alias": "Badepunkt"
+                },
+                {
+                    "value": 1072,
+                    "alias": "Bl\u00e5 flag badested faciliteter"
+                },
+                {
+                    "value": 1082,
+                    "alias": "Spejderhytte"
+                },
+                {
+                    "value": 1091,
+                    "alias": "Friluftsbad\/Sv\u00f8mmebad"
+                },
+                {
+                    "value": 1102,
+                    "alias": "Sl\u00e6bested"
+                },
+                {
+                    "value": 1112,
+                    "alias": "Motionsm\u00f8dested"
+                },
+                {
+                    "value": 1122,
+                    "alias": "Cykelpumpestation\/-servicepost"
+                },
+                {
+                    "value": 1132,
+                    "alias": "T\u00f8rvejrsrum\/Madpakkehus"
+                },
+                {
+                    "value": 1142,
+                    "alias": "Virtuelt oplevelsespunkt"
+                },
+                {
+                    "value": 1152,
+                    "alias": "Info-tavle"
+                },
+                {
+                    "value": 1162,
+                    "alias": "Cykelparkering"
+                },
+                {
+                    "value": 1182,
+                    "alias": "Turistinformation"
+                },
+                {
+                    "value": 1191,
+                    "alias": "Hundeskov\/Hundepark\/fritl\u00f8bsareal"
+                },
+                {
+                    "value": 1201,
+                    "alias": "Borde-b\u00e6nke\/Picnic"
+                },
+                {
+                    "value": 1202,
+                    "alias": "Udend\u00f8rs brusebad"
+                },
+                {
+                    "value": 1211,
+                    "alias": "Vandlegeplads"
+                },
+                {
+                    "value": 1222,
+                    "alias": "Vandpost"
+                },
+                {
+                    "value": 1232,
+                    "alias": "Tr\u00e6kf\u00e6rge"
+                },
+                {
+                    "value": 1242,
+                    "alias": "Livreddert\u00e5rn"
+                },
+                {
+                    "value": 1252,
+                    "alias": "Livredderpost"
+                },
+                {
+                    "value": 1261,
+                    "alias": "Badevandsflag"
+                },
+                {
+                    "value": 1272,
+                    "alias": "Badevandsflag facilitet"
+                },
+                {
+                    "value": 1281,
+                    "alias": "Hesteophold"
+                },
+                {
+                    "value": 1291,
+                    "alias": "Holdeplads"
+                },
+                {
+                    "value": 1302,
+                    "alias": "Formidlingscenter"
+                },
+                {
+                    "value": 1311,
+                    "alias": "Spang"
+                },
+                {
+                    "value": 1321,
+                    "alias": "Stente"
+                },
+                {
+                    "value": 1331,
+                    "alias": "Badebro"
+                },
+                {
+                    "value": 1341,
+                    "alias": "Bro"
+                },
+                {
+                    "value": 1351,
+                    "alias": "Parkeringsplads"
+                },
+                {
+                    "value": 1361,
+                    "alias": "Fodhviler"
+                },
+                {
+                    "value": 1371,
+                    "alias": "B\u00e6nk"
+                },
+                {
+                    "value": 1382,
+                    "alias": "Cykelknudepunkt"
+                },
+                {
+                    "value": 1392,
+                    "alias": "F\u00e6rgeleje"
+                },
+                {
+                    "value": 1402,
+                    "alias": "Blaffersted"
+                },
+                {
+                    "value": 2012,
+                    "alias": "Fuglet\u00e5rn\/Udsigtst\u00e5rn"
+                },
+                {
+                    "value": 2022,
+                    "alias": "Udsigtspunkt"
+                },
+                {
+                    "value": 2031,
+                    "alias": "Fiskes\u00f8"
+                },
+                {
+                    "value": 2041,
+                    "alias": "Rekreativt naturomr\u00e5de"
+                },
+                {
+                    "value": 2051,
+                    "alias": "Park"
+                },
+                {
+                    "value": 2062,
+                    "alias": "Naturcenter"
+                },
+                {
+                    "value": 2072,
+                    "alias": "Naturbase"
+                },
+                {
+                    "value": 2082,
+                    "alias": "Naturskole"
+                },
+                {
+                    "value": 2092,
+                    "alias": "Udstilling"
+                },
+                {
+                    "value": 2102,
+                    "alias": "Naturrum"
+                },
+                {
+                    "value": 2111,
+                    "alias": "Naturpark"
+                },
+                {
+                    "value": 2121,
+                    "alias": "Nationalpark"
+                },
+                {
+                    "value": 2132,
+                    "alias": "K\u00e6lkebakke"
+                },
+                {
+                    "value": 2141,
+                    "alias": "Terapihave"
+                },
+                {
+                    "value": 2151,
+                    "alias": "Spiselig vegetation"
+                },
+                {
+                    "value": 2161,
+                    "alias": "Oplevelsespunkt"
+                },
+                {
+                    "value": 2171,
+                    "alias": "Fiskeri tilladt"
+                },
+                {
+                    "value": 2183,
+                    "alias": "Geopark"
+                },
+                {
+                    "value": 2191,
+                    "alias": "Sev\u00e6rdighed - Fauna"
+                },
+                {
+                    "value": 2201,
+                    "alias": "Sev\u00e6rdighed \u2013 Flora"
+                },
+                {
+                    "value": 2211,
+                    "alias": "Sev\u00e6rdighed \u2013 Geologi"
+                },
+                {
+                    "value": 2223,
+                    "alias": "Naturkanon"
+                },
+                {
+                    "value": 2231,
+                    "alias": "Naturnationalpark"
+                },
+                {
+                    "value": 2242,
+                    "alias": "SPOR Fort\u00e6llinger fra Sporet"
+                },
+                {
+                    "value": 2252,
+                    "alias": "SPOR Startsted"
+                },
+                {
+                    "value": 2263,
+                    "alias": "Sev\u00e6rdighed \u2013 Astro"
+                },
+                {
+                    "value": 3012,
+                    "alias": "Shelter"
+                },
+                {
+                    "value": 3022,
+                    "alias": "Kano\/kajak overnatningsplads"
+                },
+                {
+                    "value": 3031,
+                    "alias": "Teltplads"
+                },
+                {
+                    "value": 3041,
+                    "alias": "Campingplads"
+                },
+                {
+                    "value": 3051,
+                    "alias": "Hytter og Lejrskoler"
+                },
+                {
+                    "value": 3061,
+                    "alias": "Feriecenter"
+                },
+                {
+                    "value": 3071,
+                    "alias": "Fri teltning"
+                },
+                {
+                    "value": 3081,
+                    "alias": "H\u00e6ngek\u00f8jelund"
+                },
+                {
+                    "value": 3091,
+                    "alias": "B\u00e5lhytte"
+                },
+                {
+                    "value": 4011,
+                    "alias": "Idr\u00e6tshal"
+                },
+                {
+                    "value": 4021,
+                    "alias": "Sv\u00f8mmehal"
+                },
+                {
+                    "value": 4031,
+                    "alias": "Idr\u00e6tsanl\u00e6g"
+                },
+                {
+                    "value": 4041,
+                    "alias": "Cykelbane"
+                },
+                {
+                    "value": 4051,
+                    "alias": "Agilitybane"
+                },
+                {
+                    "value": 4061,
+                    "alias": "Modelflyveplads"
+                },
+                {
+                    "value": 4071,
+                    "alias": "Sk\u00f8jtebane"
+                },
+                {
+                    "value": 4081,
+                    "alias": "Minigolfbane"
+                },
+                {
+                    "value": 4091,
+                    "alias": "Golfbane"
+                },
+                {
+                    "value": 4101,
+                    "alias": "Discgolfanl\u00e6g"
+                },
+                {
+                    "value": 4111,
+                    "alias": "Boldbane"
+                },
+                {
+                    "value": 4121,
+                    "alias": "Skydebaneanl\u00e6g"
+                },
+                {
+                    "value": 4132,
+                    "alias": "Pentanquebane"
+                },
+                {
+                    "value": 4142,
+                    "alias": "Skateranl\u00e6g"
+                },
+                {
+                    "value": 4152,
+                    "alias": "Parkouranl\u00e6g"
+                },
+                {
+                    "value": 4161,
+                    "alias": "Rideanl\u00e6g"
+                },
+                {
+                    "value": 4172,
+                    "alias": "Beachvolleybane"
+                },
+                {
+                    "value": 4182,
+                    "alias": "Dykkerspot"
+                },
+                {
+                    "value": 4191,
+                    "alias": "Kitesurf omr\u00e5de"
+                },
+                {
+                    "value": 4201,
+                    "alias": "Windsurf omr\u00e5de"
+                },
+                {
+                    "value": 4211,
+                    "alias": "Kitebuggyomr\u00e5de"
+                },
+                {
+                    "value": 4222,
+                    "alias": "Udend\u00f8rs Fitness\/Motionsplads"
+                },
+                {
+                    "value": 4231,
+                    "alias": "Flugtskydningsbane"
+                },
+                {
+                    "value": 4241,
+                    "alias": "Motorsportsbane"
+                },
+                {
+                    "value": 4251,
+                    "alias": "Ketchersportsanl\u00e6g"
+                },
+                {
+                    "value": 4262,
+                    "alias": "Rullesk\u00f8jtebane"
+                },
+                {
+                    "value": 4272,
+                    "alias": "Klatreanl\u00e6g"
+                },
+                {
+                    "value": 4281,
+                    "alias": "Cricketbane"
+                },
+                {
+                    "value": 4291,
+                    "alias": "Krolfbane"
+                },
+                {
+                    "value": 4301,
+                    "alias": "UV-jagtspot"
+                },
+                {
+                    "value": 4311,
+                    "alias": "Snorkelsti\/-omr\u00e5de"
+                },
+                {
+                    "value": 4322,
+                    "alias": "Orienteringsrute startpunkt"
+                },
+                {
+                    "value": 4332,
+                    "alias": "Orienteringsrute slutpunkt"
+                },
+                {
+                    "value": 4342,
+                    "alias": "Bindebom"
+                },
+                {
+                    "value": 4351,
+                    "alias": "Skibakke"
+                },
+                {
+                    "value": 4361,
+                    "alias": "Fodboldgolf"
+                },
+                {
+                    "value": 4371,
+                    "alias": "Bueskydning"
+                },
+                {
+                    "value": 4381,
+                    "alias": "Strandh\u00e5ndboldbane"
+                },
+                {
+                    "value": 4391,
+                    "alias": "Hundetr\u00e6ningsareal"
+                },
+                {
+                    "value": 4401,
+                    "alias": "Overb\u00e6ringssted"
+                },
+                {
+                    "value": 4411,
+                    "alias": "Fiskeplatform"
+                },
+                {
+                    "value": 4422,
+                    "alias": "Lystfiskespot"
+                },
+                {
+                    "value": 4431,
+                    "alias": "Open water bane"
+                },
+                {
+                    "value": 4442,
+                    "alias": "Kajakpolo"
+                },
+                {
+                    "value": 4451,
+                    "alias": "Vinterbadepunkt"
+                },
+                {
+                    "value": 4461,
+                    "alias": "SUP omr\u00e5de"
+                },
+                {
+                    "value": 5011,
+                    "alias": "Forsamlingshus"
+                },
+                {
+                    "value": 5021,
+                    "alias": "Museum"
+                },
+                {
+                    "value": 5031,
+                    "alias": "Teater"
+                },
+                {
+                    "value": 5041,
+                    "alias": "Forlystelsesanl\u00e6g"
+                },
+                {
+                    "value": 5051,
+                    "alias": "Biograf"
+                },
+                {
+                    "value": 5061,
+                    "alias": "Foreningshus"
+                },
+                {
+                    "value": 5072,
+                    "alias": "Formidling af fortidsminder"
+                },
+                {
+                    "value": 5082,
+                    "alias": "Historiske steder"
+                },
+                {
+                    "value": 5092,
+                    "alias": "Lokal- eller sogne-arkiv"
+                },
+                {
+                    "value": 5102,
+                    "alias": "Kunst"
+                },
+                {
+                    "value": 5112,
+                    "alias": "Nedlagt fyrt\u00e5rn"
+                },
+                {
+                    "value": 5122,
+                    "alias": "Kulturhistorisk sev\u00e6rdighed"
+                },
+                {
+                    "value": 6011,
+                    "alias": "B\u00e5dplads"
+                },
+                {
+                    "value": 6021,
+                    "alias": "Rostadion"
+                },
+                {
+                    "value": 6031,
+                    "alias": "Umotoriseret sejlads tilladt"
+                },
+                {
+                    "value": 6042,
+                    "alias": "Sejlsports- og roklub"
+                },
+                {
+                    "value": 6052,
+                    "alias": "Kano-\/kajakrasteplads"
+                },
+                {
+                    "value": 6062,
+                    "alias": "Ophaler-\/is\u00e6tningsplads"
+                },
+                {
+                    "value": 6071,
+                    "alias": "Svajeplads"
+                },
+                {
+                    "value": 6081,
+                    "alias": "Vandscooter tilladt"
+                },
+                {
+                    "value": 6091,
+                    "alias": "Udstyr til affaldsindsamling"
+                },
+                {
+                    "value": 9981,
+                    "alias": "Andet"
+                },
+                {
+                    "value": 9991,
+                    "alias": "Ukendt"
+                },
+                {
+                    "value": 22429,
+                    "alias": "SPOR Fort\u00e6llinger fra Sporet"
+                }
+            ],
             "alias": "",
             "queryable": false,
             "sort_id": 200
         },
-        "rute_ty": {
+        "facil_ty": {
             "type": "character varying",
-            "comment": "Typen af rute. Eksempel: Skirute",
+            "comment": "",
             "num": 21,
-            "full_type": "character varying(30)",
+            "full_type": "character varying(35)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 30,
+            "character_maximum_length": 35,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 120,
+            "max_bytes": 140,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": true,
             "sort_id": 210
         },
-        "rute_uty_k": {
-            "type": "integer",
-            "comment": "Kode for undertypen af rute. Eksempel: 2",
-            "num": 33,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_5802_rute_uty.rute_uty_k"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Sundhedsspor"
-                },
-                {
-                    "value": 2,
-                    "alias": "Kl\u00f8versti"
-                },
-                {
-                    "value": 3,
-                    "alias": "Hjertesti"
-                },
-                {
-                    "value": 4,
-                    "alias": "Spor i landskabet"
-                },
-                {
-                    "value": 5,
-                    "alias": "Panoramarute"
-                },
-                {
-                    "value": 6,
-                    "alias": "Cykelknudepunktsstr\u00e6kning"
-                },
-                {
-                    "value": 7,
-                    "alias": "De nationale cykelruter"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                },
-                {
-                    "value": 10,
-                    "alias": "Supercykelsti"
-                },
-                {
-                    "value": 11,
-                    "alias": "National cykelrute, dagsetape"
-                },
-                {
-                    "value": 12,
-                    "alias": "H\u00e6rvejen"
-                },
-                {
-                    "value": 13,
-                    "alias": "Kyst til Kyst Stien"
-                },
-                {
-                    "value": 14,
-                    "alias": "Konge\u00e5stien"
-                },
-                {
-                    "value": 15,
-                    "alias": "Nords\u00f8stien"
-                },
-                {
-                    "value": 16,
-                    "alias": "Kyst til kyst Stien, dagsetape"
-                },
-                {
-                    "value": 17,
-                    "alias": "Natureventyr"
-                },
-                {
-                    "value": 18,
-                    "alias": "M\u00f8rkevandrerute"
-                },
-                {
-                    "value": 19,
-                    "alias": "Konge\u00e5sti \u2013 dagsetape"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 220
-        },
-        "rute_uty": {
+        "navn": {
             "type": "character varying",
-            "comment": "Undertypen af rute. Opdelt i forskellige nationale temaruter. Eksempel: Kl\u00f8versti",
-            "num": 34,
-            "full_type": "character varying(30)",
+            "comment": "",
+            "num": 24,
+            "full_type": "character varying(254)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 30,
+            "character_maximum_length": 254,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 120,
+            "max_bytes": 1016,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 220
+        },
+        "navn_uk": {
+            "type": "character varying",
+            "comment": "",
+            "num": 83,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 230
         },
-        "danmarksnaturstier": {
-            "type": "boolean",
-            "comment": "Form\u00e5let er let at skabe et overblik over alle de vandreruter, som indg\u00e5r i netv\u00e6rket Danmarks Naturstier. Skriv 1 i feltet, hvis ruten er en del af Danmarks Naturstier. OBS Ruter kan kun markeres som Danmarks Natursti efter godkendelse ved sekretariatet, at ruten lever op til kravene for Danmarks Naturstier. . Feltet kan bruges alene i kombination med angivelse af Rutetype (hvor der kan angives, at det er en vandrerute) samt i kombination med Rute og en Undertype (hvor det f.eks. kan angives en lokal type af vandrekoncept (f.eks. Kyst-til\u0002kyst Stien). Eksempel = 1 (Danmarks Natursti)",
-            "num": 102,
-            "full_type": "boolean",
-            "typname": "bool",
+        "navn_d": {
+            "type": "character varying",
+            "comment": "",
+            "num": 84,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": null,
+            "character_maximum_length": 255,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 1,
+            "max_bytes": 1020,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 235
         },
-        "rutefarve_k": {
-            "type": "integer",
-            "comment": "Form\u00e5let er at skabe information og sammenh\u00e6ng mellem de farver, der er brugt til at markere en vandrerutes forl\u00f8b i naturen med en tilh\u00f8rende farveangivelse i rutebeskrivelser f.eks. ifm. folder, skiltning mm. Brug feltet, hvis en farve er entydig og identificerende for en vandrerute. Indtast kode for den valgte farve, se opslagsliste d_5802_rutefarve. Eksempel: 1 (R\u00f8d)",
-            "num": 103,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_5802_rutefarve.rutefarve_k"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Gul"
-                },
-                {
-                    "value": 2,
-                    "alias": "R\u00f8d"
-                },
-                {
-                    "value": 3,
-                    "alias": "Gr\u00f8n"
-                },
-                {
-                    "value": 4,
-                    "alias": "Bl\u00e5"
-                },
-                {
-                    "value": 5,
-                    "alias": "Orange"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 237
-        },
-        "rutefarve": {
+        "beskrivels": {
             "type": "character varying",
-            "comment": "Systemovers\u00e6ttes ud fra valgt kode vha. opslagsliste d_5802_rutefarve. Eksempel: R\u00f8d",
-            "num": 104,
-            "full_type": "character varying(25)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 25,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 100,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 238
-        },
-        "navn": {
-            "type": "character varying",
-            "comment": "Navn p\u00e5 ruten. Eksempel: Krabbes skirute",
-            "num": 22,
+            "comment": "",
+            "num": 25,
             "full_type": "character varying(254)",
             "typname": "varchar",
             "is_array": false,
@@ -1329,397 +1763,132 @@
             "reference": null,
             "restriction": null,
             "alias": "",
-            "queryable": true,
+            "queryable": false,
             "sort_id": 240
         },
-        "navn_uk": {
+        "lang_beskr": {
             "type": "character varying",
-            "comment": "Navn p\u00e5 faciliteten (engelsk). Eksempel: Krabbes ski trail",
-            "num": 97,
-            "full_type": "character varying(255)",
+            "comment": "",
+            "num": 36,
+            "full_type": "character varying(3000)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 255,
+            "character_maximum_length": 3000,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 1020,
+            "max_bytes": 12000,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 250
         },
-        "navn_d": {
+        "uk_k_beskr": {
             "type": "character varying",
-            "comment": "Navn p\u00e5 faciliteten (tysk). Eksempel: Krabbes Schiweg",
-            "num": 98,
-            "full_type": "character varying(255)",
+            "comment": "",
+            "num": 37,
+            "full_type": "character varying(254)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 255,
+            "character_maximum_length": 254,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 1020,
+            "max_bytes": 1016,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 260
         },
-        "navndels": {
+        "uk_l_beskr": {
             "type": "character varying",
-            "comment": "Navn p\u00e5 delstr\u00e6kningen af ruten. Eksempel: Skovstr\u00e6kningen.",
-            "num": 41,
-            "full_type": "character varying(128)",
+            "comment": "",
+            "num": 38,
+            "full_type": "character varying(3000)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 128,
+            "character_maximum_length": 3000,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 512,
+            "max_bytes": 12000,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 270
         },
-        "straekn_nr": {
+        "d_k_beskr": {
             "type": "character varying",
-            "comment": "Rutens officielle nummer. Eksempel: N16.",
-            "num": 68,
-            "full_type": "character varying(128)",
+            "comment": "",
+            "num": 39,
+            "full_type": "character varying(254)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 128,
+            "character_maximum_length": 254,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 512,
+            "max_bytes": 1016,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 280
         },
-        "afm_rute_k": {
-            "type": "integer",
-            "comment": "Kode for afm\u00e6rkning af rute. Eksempel: D_basis_ja_nej",
-            "num": 29,
-            "full_type": "integer",
-            "typname": "int4",
+        "d_l_beskr": {
+            "type": "character varying",
+            "comment": "",
+            "num": 40,
+            "full_type": "character varying(3000)",
+            "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_ja_nej.ja_nej_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 0,
-                    "alias": "Nej"
-                },
-                {
-                    "value": 1,
-                    "alias": "Ja"
-                },
-                {
-                    "value": 2,
-                    "alias": "Blandet"
-                },
-                {
-                    "value": 3,
-                    "alias": "Ukendt"
-                }
-            ],
+            "character_maximum_length": 3000,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 12000,
+            "reference": null,
+            "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 290
         },
-        "afm_rute": {
+        "ansvar_org": {
             "type": "character varying",
-            "comment": "Afm\u00e6rket rute. Eksempel: Ja",
+            "comment": "",
             "num": 30,
-            "full_type": "character varying(7)",
+            "full_type": "character varying(254)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 7,
+            "character_maximum_length": 254,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 28,
+            "max_bytes": 1016,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 300
         },
-        "laengde": {
-            "type": "double precision",
-            "comment": "L\u00e6ngde af str\u00e6kningen i km (MapInfo Tab-formatet underst\u00f8tter ikke NULL, som vil det blive oversat til 0 ved indl\u00e6sning, hvilket vil resultere i fejl. Det anbefales derfor at udfylde feltet eller undlade det ved upload). Eksempel: 5,55",
-            "num": 44,
-            "full_type": "double precision",
-            "typname": "float8",
+        "kontak_ved": {
+            "type": "character varying",
+            "comment": "",
+            "num": 31,
+            "full_type": "character varying(254)",
+            "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 53,
+            "character_maximum_length": 254,
+            "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 8,
+            "max_bytes": 1016,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
             "sort_id": 310
         },
-        "beskrivels": {
-            "type": "character varying",
-            "comment": "Kort tekst som beskriver faciliteten. Eksempel: Der er mange orkideer p\u00e5 engen",
-            "num": 52,
-            "full_type": "character varying(254)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 254,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1016,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 320
-        },
-        "lang_beskr": {
-            "type": "character varying",
-            "comment": "Lang tekst som beskriver faciliteten. Eksempel: Der er mange orkideer p\u00e5 engen. De er fredet og m\u00e5 ikke graves op eller plukkes.",
-            "num": 55,
-            "full_type": "character varying(3000)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 3000,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 12000,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 325
-        },
-        "uk_k_beskr": {
-            "type": "character varying",
-            "comment": "Engelsk, kort tekst som beskriver faciliteten. Eksempel: There are many orchids on the meadow. They are protected and must not be dug up or picked. In the summer, the path can be very wet.",
-            "num": 56,
-            "full_type": "character varying(254)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 254,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1016,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 330
-        },
-        "uk_l_beskr": {
-            "type": "character varying",
-            "comment": "Engelsk, lang tekst som beskriver faciliteten. Eksempel: There are many orchids on the meadow\u2026",
-            "num": 57,
-            "full_type": "character varying(3000)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 3000,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 12000,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 335
-        },
-        "d_k_beskr": {
-            "type": "character varying",
-            "comment": "Tysk, kort tekst som beskriver faciliteten. Eksempel: Es gibt viele Orchideen auf der Wiese. Sie sind gesch\u00fctzt und d\u00fcrfen nicht ausgegraben oder abgeholt werden. Im Sommer kann der Weg sehr nass sein.",
-            "num": 58,
-            "full_type": "character varying(254)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 254,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1016,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 340
-        },
-        "d_l_beskr": {
-            "type": "character varying",
-            "comment": "Tysk, lang tekst som beskriver faciliteten. Eksempel: Es gibt viele Orchideen auf der Wiese... ",
-            "num": 59,
-            "full_type": "character varying(3000)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 3000,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 12000,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 350
-        },
-        "ansvar_org": {
-            "type": "character varying",
-            "comment": "Navn p\u00e5 vedligeholdsansvarlig organisationen. Eksempel: \u00c5dalens venner.",
-            "num": 42,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 360
-        },
-        "kontak_ved": {
-            "type": "character varying",
-            "comment": "Telefon og\/eller mailadresse, evt. kontakt-forening. Ikke personf\u00f8lsomme oplysninger! Eksempel: drift@hjoerring.dk, 98989898",
-            "num": 43,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 370
-        },
-        "betaling_k": {
-            "type": "integer",
-            "comment": "Kode for om faciliteten opkr\u00e6ver betaling ved brug. Eksempel: d_basis_ja_nej",
-            "num": 60,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_ja_nej.ja_nej_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 0,
-                    "alias": "Nej"
-                },
-                {
-                    "value": 1,
-                    "alias": "Ja"
-                },
-                {
-                    "value": 2,
-                    "alias": "Blandet"
-                },
-                {
-                    "value": 3,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 380
-        },
-        "betaling": {
-            "type": "character varying",
-            "comment": "Viser om faciliteten opkr\u00e6ver betaling ved brug. Eksempel: Nej",
-            "num": 61,
-            "full_type": "character varying(7)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 7,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 28,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 390
-        },
-        "belaegn_k": {
-            "type": "integer",
-            "comment": "Kode for bel\u00e6gning",
-            "num": 23,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_belaegning.belaegning_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Fast bel\u00e6gning"
-                },
-                {
-                    "value": 2,
-                    "alias": "L\u00f8s bel\u00e6gning"
-                },
-                {
-                    "value": 3,
-                    "alias": "Uden bel\u00e6gning"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 400
-        },
-        "belaegn": {
-            "type": "character varying",
-            "comment": "Bel\u00e6gning af\/p\u00e5 stier m.v.",
-            "num": 24,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 410
-        },
         "handicap_k": {
             "type": "integer",
-            "comment": "Kode for handicapegnethed OBS! Brug hellere tilgaeng_beskriv og tilgaeng_opl",
-            "num": 25,
+            "comment": "",
+            "num": 22,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -1758,12 +1927,12 @@
             ],
             "alias": "",
             "queryable": false,
-            "sort_id": 420
+            "sort_id": 320
         },
-        "handikap": {
+        "handicap": {
             "type": "character varying",
-            "comment": "Handicapegnetheden af faciliteten. OBS! Brug hellere tilgaeng_beskriv og tilgaeng_opl",
-            "num": 26,
+            "comment": "",
+            "num": 23,
             "full_type": "character varying(40)",
             "typname": "varchar",
             "is_array": false,
@@ -1775,12 +1944,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 430
+            "sort_id": 330
         },
         "saeson_k": {
             "type": "integer",
-            "comment": "Kode for facilitetens \u00e5bningsperiode. Eksempel: 1",
-            "num": 70,
+            "comment": "",
+            "num": 28,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -1815,12 +1984,12 @@
             ],
             "alias": "",
             "queryable": false,
-            "sort_id": 440
+            "sort_id": 340
         },
         "saeson": {
             "type": "character varying",
-            "comment": "Defineres hvorn\u00e5r faciliteten er \u00e5ben. Eksempel: Hel\u00e5rs\u00e5bent",
-            "num": 71,
+            "comment": "",
+            "num": 29,
             "full_type": "character varying(50)",
             "typname": "varchar",
             "is_array": false,
@@ -1832,253 +2001,46 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 450
-        },
-        "saeson_sl": {
-            "type": "character varying",
-            "comment": "S\u00e6sonstartdato (MM-DD). Eksempel: 04-01",
-            "num": 73,
-            "full_type": "character varying(25)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 25,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 100,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 460
+            "sort_id": 350
         },
         "saeson_st": {
-            "type": "character varying",
-            "comment": "S\u00e6sonslutdato (MM-DD). Eksempel: 10-31",
-            "num": 72,
-            "full_type": "character varying(25)",
-            "typname": "varchar",
+            "type": "date",
+            "comment": "",
+            "num": 79,
+            "full_type": "date",
+            "typname": "date",
             "is_array": false,
-            "character_maximum_length": 25,
+            "character_maximum_length": null,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 100,
+            "max_bytes": 4,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 470
+            "sort_id": 360
+        },
+        "saeson_sl": {
+            "type": "date",
+            "comment": "",
+            "num": 80,
+            "full_type": "date",
+            "typname": "date",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 370
         },
         "saeson_bem": {
             "type": "character varying",
-            "comment": "Mulighed for supplerende bem\u00e6rkninger ift. \u00e5bningsperiode. Eksempel: Hel\u00e5rs\u00e5bent, dog ikke helligdage.",
-            "num": 69,
-            "full_type": "character varying(254)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 254,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1016,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 480
-        },
-        "ansva_v_k": {
-            "type": "integer",
-            "comment": "Kodetal for overordnet ansvar for vedligehold.",
-            "num": 53,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_ansva_v.ansva_v_k"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Privat\/forening"
-                },
-                {
-                    "value": 2,
-                    "alias": "Kommune"
-                },
-                {
-                    "value": 3,
-                    "alias": "Staten"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 490
-        },
-        "ansva_v": {
-            "type": "character varying",
-            "comment": "Hvem st\u00e5r for ansvaret for vedligehold",
+            "comment": "",
             "num": 54,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 500
-        },
-        "startpkt_x": {
-            "type": "integer",
-            "comment": "X-koordinat for rutens startpunkt, EPSG 25832. Eksempel: 659.000. ",
-            "num": 27,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 510
-        },
-        "startpkt_y": {
-            "type": "integer",
-            "comment": "Y-koordinat for rutens startpunkt, EPSG 25832. Eksempel: 6.092.000.",
-            "num": 28,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 520
-        },
-        "slutpkt_x": {
-            "type": "integer",
-            "comment": "X-koordinat for rutens slutpunkt, EPSG 25832. Eksempel: 712.332. ",
-            "num": 62,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 530
-        },
-        "slutpkt_y": {
-            "type": "integer",
-            "comment": "Y-koordinat for rutens slutpunkt, EPSG 25832. Eksempel: 6.196.505.",
-            "num": 63,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 540
-        },
-        "svaerhed_k": {
-            "type": "integer",
-            "comment": "Kode for sv\u00e6rhedsgrad. Eksempel: 1.",
-            "num": 39,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_5802_svaerhed.svaerhed_k"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Meget let"
-                },
-                {
-                    "value": 2,
-                    "alias": "Let"
-                },
-                {
-                    "value": 3,
-                    "alias": "Middel\/Moderat"
-                },
-                {
-                    "value": 4,
-                    "alias": "Sv\u00e6r\/udfordrende"
-                },
-                {
-                    "value": 5,
-                    "alias": "Ekstrem"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 550
-        },
-        "svaerhed": {
-            "type": "character varying",
-            "comment": "Sv\u00e6rhedsgrad p\u00e5 ruten. Eksempel: Let.",
-            "num": 40,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 560
-        },
-        "obs": {
-            "type": "character varying",
-            "comment": "S\u00e6rlige opm\u00e6rksomhedspunkter f.eks.: gr\u00e6ssende dyr, v\u00e5dt terr\u00e6n osv. Eksempel: Der kan v\u00e6re meget v\u00e5dt  om sommeren.",
-            "num": 51,
             "full_type": "character varying(254)",
             "typname": "varchar",
             "is_array": false,
@@ -2090,12 +2052,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 570
+            "sort_id": 380
         },
-        "kategori_k": {
+        "doegnaab_k": {
             "type": "integer",
-            "comment": "Kode for kategori. Eksempel: 3",
-            "num": 35,
+            "comment": "",
+            "num": 41,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -2104,156 +2066,51 @@
             "numeric_scale": 0,
             "max_bytes": 4,
             "reference": [
-                "fkg.d_5802_kategori.kategori_k"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Lokal"
-                },
-                {
-                    "value": 2,
-                    "alias": "Regional"
-                },
-                {
-                    "value": 3,
-                    "alias": "National"
-                },
-                {
-                    "value": 7,
-                    "alias": "Ej relevant"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 580
-        },
-        "kategori": {
-            "type": "character varying",
-            "comment": "Kategori af rute. Eksempel: National",
-            "num": 36,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 590
-        },
-        "certifi_k": {
-            "type": "integer",
-            "comment": "Kode for om certificering som ruten har. Eksempel: 4",
-            "num": 64,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_5802_certifi.certifi_k"
+                "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "restriction": [
                 {
                     "value": 0,
-                    "alias": "Ikke certificeret"
+                    "alias": "Nej"
                 },
                 {
                     "value": 1,
-                    "alias": "Premiumrute - rundvandrerute "
+                    "alias": "Ja"
                 },
                 {
                     "value": 2,
-                    "alias": "Premiumrute \u2013 let-vandrerute"
+                    "alias": "Blandet"
                 },
                 {
                     "value": 3,
-                    "alias": "Premiumrute - langdistancerute"
-                },
-                {
-                    "value": 4,
-                    "alias": "Premiumrute \u2013 byvandrerute"
-                },
-                {
-                    "value": 5,
-                    "alias": "Leading Quality Trail"
-                },
-                {
-                    "value": 6,
-                    "alias": "Kvalitetssti \u2013 Vandresti"
-                },
-                {
-                    "value": 7,
-                    "alias": "Kvalitetssti \u2013 Natursti"
-                },
-                {
-                    "value": 8,
-                    "alias": "Kvalitetssti \u2013 Kultursti"
-                },
-                {
-                    "value": 9,
-                    "alias": "Kvalitetssti \u2013 Gastronomisk sti"
-                },
-                {
-                    "value": 10,
-                    "alias": "Kvalitetssti \u2013 Familiesti"
-                },
-                {
-                    "value": 11,
-                    "alias": "Kvalitetssti \u2013 Komfortsti"
-                },
-                {
-                    "value": 12,
-                    "alias": "Kvalitetssti \u2013 Bysti"
-                },
-                {
-                    "value": 98,
-                    "alias": "Anden"
-                },
-                {
-                    "value": 99,
                     "alias": "Ukendt"
                 }
             ],
             "alias": "",
             "queryable": false,
-            "sort_id": 600
+            "sort_id": 390
         },
-        "certifi": {
+        "doegnaab": {
             "type": "character varying",
-            "comment": "Certificeret rute f.eks. fra https:\/\/www.wanderinstitut.de\/premium-stadtwanderwege\/. Felt til angivelse af, hvilken certificeringen den enkelte rute har. Eksempel: Premium - byvandrerute.",
-            "num": 65,
-            "full_type": "character varying(40)",
+            "comment": "",
+            "num": 42,
+            "full_type": "character varying(7)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 40,
+            "character_maximum_length": 7,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 160,
+            "max_bytes": 28,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 610
+            "sort_id": 400
         },
-        "hierarki_k": {
+        "vandhane_k": {
             "type": "integer",
-            "comment": "Kode for rutes hierarki. Eksempel: 2.",
-            "num": 37,
+            "comment": "",
+            "num": 43,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -2262,92 +2119,50 @@
             "numeric_scale": 0,
             "max_bytes": 4,
             "reference": [
-                "fkg.d_5802_hierarki.hierarki_k"
+                "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "restriction": [
                 {
+                    "value": 0,
+                    "alias": "Nej"
+                },
+                {
                     "value": 1,
-                    "alias": "Hovedrute"
+                    "alias": "Ja"
                 },
                 {
                     "value": 2,
-                    "alias": "Sl\u00f8jfe"
+                    "alias": "Blandet"
                 },
                 {
                     "value": 3,
-                    "alias": "Genvej"
-                },
-                {
-                    "value": 4,
-                    "alias": "Adgangssti"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
                     "alias": "Ukendt"
                 }
             ],
             "alias": "",
             "queryable": false,
-            "sort_id": 620
+            "sort_id": 410
         },
-        "hierarki": {
-            "type": "character varying",
-            "comment": "Hierarki af rute. Eksempel: Sl\u00f8jfe.",
-            "num": 38,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 630
-        },
-        "kvalitet_k": {
-            "type": "integer",
-            "comment": "",
-            "num": 95,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 640
-        },
-        "kvalitet": {
+        "vandhane": {
             "type": "character varying",
             "comment": "",
-            "num": 96,
-            "full_type": "character varying(35)",
+            "num": 44,
+            "full_type": "character varying(7)",
             "typname": "varchar",
             "is_array": false,
-            "character_maximum_length": 35,
+            "character_maximum_length": 7,
             "numeric_precision": null,
             "numeric_scale": null,
-            "max_bytes": 140,
+            "max_bytes": 28,
             "reference": null,
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 650
+            "sort_id": 420
         },
-        "folder_k": {
+        "bemand_k": {
             "type": "integer",
-            "comment": "Kode for om der findes en folder. Eksempel: d_basis_ja_nej",
+            "comment": "",
             "num": 45,
             "full_type": "integer",
             "typname": "int4",
@@ -2379,11 +2194,11 @@
             ],
             "alias": "",
             "queryable": false,
-            "sort_id": 660
+            "sort_id": 430
         },
-        "folder": {
+        "bemand": {
             "type": "character varying",
-            "comment": "Findes der en folder til ruten. Eksempel: Ja",
+            "comment": "",
             "num": 46,
             "full_type": "character varying(7)",
             "typname": "varchar",
@@ -2396,12 +2211,460 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 670
+            "sort_id": 440
+        },
+        "betaling_k": {
+            "type": "integer",
+            "comment": "",
+            "num": 47,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_ja_nej.ja_nej_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 0,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Blandet"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ukendt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 450
+        },
+        "betaling": {
+            "type": "character varying",
+            "comment": "",
+            "num": 48,
+            "full_type": "character varying(7)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 7,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 28,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 460
+        },
+        "book_k": {
+            "type": "integer",
+            "comment": "",
+            "num": 49,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_ja_nej.ja_nej_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 0,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Blandet"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ukendt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 470
+        },
+        "book": {
+            "type": "character varying",
+            "comment": "",
+            "num": 50,
+            "full_type": "character varying(7)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 7,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 28,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 480
+        },
+        "antal_pl": {
+            "type": "integer",
+            "comment": "",
+            "num": 51,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 490
+        },
+        "kvalitet_k": {
+            "type": "integer",
+            "comment": "",
+            "num": 81,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 500
+        },
+        "kvalitet": {
+            "type": "character varying",
+            "comment": "",
+            "num": 82,
+            "full_type": "character varying(35)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 35,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 140,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 510
+        },
+        "folder_k": {
+            "type": "integer",
+            "comment": "",
+            "num": 55,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_ja_nej.ja_nej_kode"
+            ],
+            "restriction": [
+                {
+                    "value": 0,
+                    "alias": "Nej"
+                },
+                {
+                    "value": 1,
+                    "alias": "Ja"
+                },
+                {
+                    "value": 2,
+                    "alias": "Blandet"
+                },
+                {
+                    "value": 3,
+                    "alias": "Ukendt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 520
+        },
+        "folder": {
+            "type": "character varying",
+            "comment": "",
+            "num": 56,
+            "full_type": "character varying(7)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 7,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 28,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 530
         },
         "folde_link": {
             "type": "character varying",
-            "comment": "Link (URL) til folder. Eksempel: https:\/\/www.link.dk\/folder.pdf",
-            "num": 47,
+            "comment": "",
+            "num": 57,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 540
+        },
+        "foldelink1": {
+            "type": "character varying",
+            "comment": "",
+            "num": 76,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 550
+        },
+        "foldelink2": {
+            "type": "character varying",
+            "comment": "",
+            "num": 77,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 560
+        },
+        "foldelink3": {
+            "type": "character varying",
+            "comment": "",
+            "num": 78,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 570
+        },
+        "foto_link": {
+            "type": "character varying",
+            "comment": "",
+            "num": 58,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 580
+        },
+        "foto_link1": {
+            "type": "character varying",
+            "comment": "",
+            "num": 32,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 590
+        },
+        "foto_link2": {
+            "type": "character varying",
+            "comment": "",
+            "num": 33,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 600
+        },
+        "foto_link3": {
+            "type": "character varying",
+            "comment": "",
+            "num": 59,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 610
+        },
+        "geofafoto": {
+            "type": "character varying",
+            "comment": "",
+            "num": 60,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 620
+        },
+        "geofafoto1": {
+            "type": "character varying",
+            "comment": "",
+            "num": 61,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 630
+        },
+        "geofafoto2": {
+            "type": "character varying",
+            "comment": "",
+            "num": 62,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 640
+        },
+        "geofafoto3": {
+            "type": "character varying",
+            "comment": "",
+            "num": 63,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 650
+        },
+        "filmlink": {
+            "type": "character varying",
+            "comment": "",
+            "num": 52,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 660
+        },
+        "filmlink1": {
+            "type": "character varying",
+            "comment": "",
+            "num": 64,
+            "full_type": "character varying(1024)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 1024,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 4096,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 670
+        },
+        "filmlink2": {
+            "type": "character varying",
+            "comment": "",
+            "num": 65,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -2415,10 +2678,10 @@
             "queryable": false,
             "sort_id": 680
         },
-        "foldelink1": {
+        "filmlink3": {
             "type": "character varying",
-            "comment": "Link (URL) til folder. Eksempel: https:\/\/www.link.dk\/folder.pdf",
-            "num": 92,
+            "comment": "",
+            "num": 66,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -2432,265 +2695,10 @@
             "queryable": false,
             "sort_id": 690
         },
-        "foldelink2": {
-            "type": "character varying",
-            "comment": "Link (URL) til folder. Eksempel: https:\/\/www.link.dk\/folder.pdf",
-            "num": 93,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 700
-        },
-        "foldelink3": {
-            "type": "character varying",
-            "comment": "Link (URL) til folder. Eksempel: https:\/\/www.link.dk\/folder.pdf",
-            "num": 94,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 710
-        },
-        "foto_link": {
-            "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 74,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 720
-        },
-        "foto_link1": {
-            "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 49,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 730
-        },
-        "foto_link2": {
-            "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 50,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 740
-        },
-        "foto_link3": {
-            "type": "character varying",
-            "comment": "URL-link til foto",
-            "num": 75,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 750
-        },
-        "geofafoto": {
-            "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 76,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 760
-        },
-        "geofafoto1": {
-            "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 77,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 770
-        },
-        "geofafoto2": {
-            "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 78,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 780
-        },
-        "geofafoto3": {
-            "type": "character varying",
-            "comment": "Automatisk dannet URL-link til foto lagt ind i GeoFA billedunderst\u00f8ttelsesmodulet. Feltet vil blive brugt til det prim\u00e6re foto for objektet sat i GeoFA billedunderst\u00f8ttelsesmodulet.",
-            "num": 79,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 790
-        },
-        "filmlink": {
-            "type": "character varying",
-            "comment": "URL-link til film",
-            "num": 66,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 800
-        },
-        "filmlink1": {
-            "type": "character varying",
-            "comment": "URL-link til film",
-            "num": 80,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 810
-        },
-        "filmlink2": {
-            "type": "character varying",
-            "comment": "URL-link til film",
-            "num": 81,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 820
-        },
-        "filmlink3": {
-            "type": "character varying",
-            "comment": "URL-link til film",
-            "num": 82,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 830
-        },
-        "gpx_link": {
-            "type": "character varying",
-            "comment": "Link til hjemmeside, hvor GPX-filen kan hentes.",
-            "num": 48,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 840
-        },
         "vejkode": {
             "type": "integer",
-            "comment": "Vejkode (DAR)",
-            "num": 83,
+            "comment": "",
+            "num": 67,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -2702,12 +2710,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 850
+            "sort_id": 700
         },
         "vejnavn": {
             "type": "character varying",
-            "comment": "Vejnavn der refererer til vejkode",
-            "num": 84,
+            "comment": "",
+            "num": 68,
             "full_type": "character varying(40)",
             "typname": "varchar",
             "is_array": false,
@@ -2719,12 +2727,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 855
+            "sort_id": 710
         },
         "cvf_vejkode": {
             "type": "character",
-            "comment": "Vejkode (CVF)",
-            "num": 85,
+            "comment": "",
+            "num": 69,
             "full_type": "character(7)",
             "typname": "bpchar",
             "is_array": false,
@@ -2736,12 +2744,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 860
+            "sort_id": 720
         },
         "husnr": {
             "type": "character varying",
-            "comment": "Husnummer",
-            "num": 86,
+            "comment": "",
+            "num": 70,
             "full_type": "character varying(4)",
             "typname": "varchar",
             "is_array": false,
@@ -2753,12 +2761,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 870
+            "sort_id": 730
         },
         "postnr": {
             "type": "integer",
-            "comment": "Postnr",
-            "num": 87,
+            "comment": "",
+            "num": 71,
             "full_type": "integer",
             "typname": "int4",
             "is_array": false,
@@ -7133,12 +7141,12 @@
             ],
             "alias": "",
             "queryable": false,
-            "sort_id": 880
+            "sort_id": 740
         },
         "postnr_by": {
             "type": "character varying",
-            "comment": "By der refererer til Postnr",
-            "num": 88,
+            "comment": "",
+            "num": 72,
             "full_type": "character varying(128)",
             "typname": "varchar",
             "is_array": false,
@@ -7150,12 +7158,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 890
+            "sort_id": 750
         },
         "adr_id": {
             "type": "uuid",
-            "comment": "Entydig databasen\u00f8gle fra det officielle adresseregister (UUID).",
-            "num": 67,
+            "comment": "",
+            "num": 53,
             "full_type": "uuid",
             "typname": "uuid",
             "is_array": false,
@@ -7167,12 +7175,69 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 900
+            "sort_id": 760
+        },
+        "ansva_v_k": {
+            "type": "integer",
+            "comment": "",
+            "num": 34,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": [
+                "fkg.d_basis_ansva_v.ansva_v_k"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Privat\/forening"
+                },
+                {
+                    "value": 2,
+                    "alias": "Kommune"
+                },
+                {
+                    "value": 3,
+                    "alias": "Staten"
+                },
+                {
+                    "value": 8,
+                    "alias": "Andet"
+                },
+                {
+                    "value": 9,
+                    "alias": "Ukendt"
+                }
+            ],
+            "alias": "",
+            "queryable": false,
+            "sort_id": 770
+        },
+        "ansva_v": {
+            "type": "character varying",
+            "comment": "",
+            "num": 35,
+            "full_type": "character varying(30)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 30,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 120,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 780
         },
         "link": {
             "type": "character varying",
-            "comment": "URL-link",
-            "num": 31,
+            "comment": "",
+            "num": 26,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -7184,12 +7249,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 910
+            "sort_id": 790
         },
         "link1": {
             "type": "character varying",
-            "comment": "URL-link",
-            "num": 89,
+            "comment": "",
+            "num": 73,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -7201,12 +7266,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 920
+            "sort_id": 800
         },
         "link2": {
             "type": "character varying",
-            "comment": "URL-link",
-            "num": 90,
+            "comment": "",
+            "num": 74,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -7218,12 +7283,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 930
+            "sort_id": 810
         },
         "link3": {
             "type": "character varying",
-            "comment": "URL-link",
-            "num": 91,
+            "comment": "",
+            "num": 75,
             "full_type": "character varying(1024)",
             "typname": "varchar",
             "is_array": false,
@@ -7235,12 +7300,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 940
+            "sort_id": 820
         },
         "tilgaeng_beskriv": {
             "type": "character varying",
-            "comment": "Tekst, der beskriver faciliteten i relation til personer med s\u00e6rlige behov. Eksempel: V\u00e6r opm\u00e6rksom p\u00e5 at det kan v\u00e6re vanskeligt at finde rundt hvis man har d\u00e5rlig stedsans",
-            "num": 99,
+            "comment": "",
+            "num": 85,
             "full_type": "character varying(3000)",
             "typname": "varchar",
             "is_array": false,
@@ -7252,12 +7317,12 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 950
+            "sort_id": 830
         },
         "tilgaeng_opl": {
             "type": "jsonb",
-            "comment": "Semistrukturerede data, som beskriver faciliteten ud fra emner der har relevans for personer med s\u00e6rlige behov Se mere herom p\u00e5: https:\/\/github.com\/mapcentia\/geofa-json-schema. Eksempel: {\"er_niveaufri\":false}",
-            "num": 100,
+            "comment": "",
+            "num": 86,
             "full_type": "jsonb",
             "typname": "jsonb",
             "is_array": false,
@@ -7269,13 +7334,13 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 960
+            "sort_id": 840
         },
         "geometri": {
             "type": "geometry",
-            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier.",
-            "num": 32,
-            "full_type": "geometry(MultiLineString,25832)",
+            "comment": "",
+            "num": 27,
+            "full_type": "geometry(MultiPolygon,25832)",
             "typname": "geometry",
             "is_array": false,
             "character_maximum_length": null,
@@ -7284,33 +7349,56 @@
             "max_bytes": null,
             "reference": null,
             "restriction": null,
-            "geom_type": "MultiLineString",
+            "geom_type": "MultiPolygon",
             "srid": "25832",
             "alias": "",
             "queryable": false,
-            "sort_id": 9000
+            "sort_id": 1000
+        },
+        "beliggenhedskommune": {
+            "type": "integer",
+            "comment": null,
+            "num": 87,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": null,
+            "queryable": false,
+            "sort_id": null
+        },
+        "bookinglink": {
+            "type": "character varying",
+            "comment": null,
+            "num": 88,
+            "full_type": "character varying(500)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 500,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 2000,
+            "reference": null,
+            "restriction": null,
+            "alias": null,
+            "queryable": false,
+            "sort_id": null
         }
     },
     "children": null,
     "meta": {
-        "tiled": false,
-        "formaal": "Oplyse sagsbehandler og borger via selvbetjeningsl\u00f8sninger, hvilken sports- og fritidsfaciliteter, der ligger i lokalomr\u00e5det. Evt. ogs\u00e5 \nn\u00e6rmeste riderute m.v.\n",
-        "temakode": "5802",
-        "temanavn": "Facilitet_linje",
-        "kle_koder": "04.00.00, 04.04.00, 18.15.12",
-        "meta_desc": "Indeholder rekreative ruter i Nordjyske kommuner. Man kan finde rutens navn, beskrivelse, oplysninger om sv\u00e6rhedsgrad, hvem er ansvarlig for rutens vedligeholdelse, links til foldere og osv. \n\n \n\nDatas\u00e6t er ufuldst\u00e6ndig b\u00e5de geografisk og indholdsm\u00e6ssigt, da det op til de enkelte kommuner, hvor meget har de udfyldt. Der forventes at der vil l\u00f8bende komme flere nordjyske kommuner, som l\u00e6gger data ind.\n \n\nDatas\u00e6t er ufuldst\u00e6ndig b\u00e5de geografisk og indholdsm\u00e6ssigt, da det op til de enkelte kommuner, hvor meget har de udfyldt. Der forventes at der vil l\u00f8bende komme flere nordjyske kommuner, som l\u00e6gger data ind.",
-        "definition": "Diverse ruter m.v. der benyttes hovedsageligt til sport og fritidsform\u00e5l.",
+        "meta_desc": "Indeholder forskellige faciliteter, som er aktuelle n\u00e5r man er ud i naturen. Der er shelters, b\u00e5lpladser, badestrande, legepladser, hundeskov og andre faciliteter. Man kan finde facilitetens navn, beskrivelse, oplysninger om hvem der er ansvarlig for facilitetens vedligeholdelse, om den er \u00e5bent hele \u00e5ret rund eller er kun s\u00e6son\u00e5bent.\n\n \n\nDatas\u00e6t er ufuldst\u00e6ndig b\u00e5de geografisk og indholdsm\u00e6ssigt, da det op til de enkelte kommuner, hvor meget har de udfyldt. Der forventes at der vil l\u00f8bende komme flere nordjyske kommuner, som l\u00e6gger data ind.",
         "license_id": "opendatadk",
-        "noegle_ord": "Sportsanl\u00e6g, fritid",
-        "beskrivelse": "Diverse ruter m.v. til sport og fritidsform\u00e5l.",
         "ckan_org_id": "hjorring-kommune",
         "ckan_update": true,
-        "lovgrundlag": "",
         "single_tile": false,
-        "geometritype": "Linje",
         "hover_active": false,
         "max_features": "200",
-        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
@@ -7322,41 +7410,27 @@
         "point_to_layer": "",
         "use_clustering": false,
         "vidi_sub_group": "",
-        "buffer_conflict": "",
-        "filter_required": false,
         "reload_callback": "",
         "reload_interval": "",
         "select_function": "",
-        "vector_max_zoom": "",
-        "vector_min_zoom": "",
         "vidi_layer_type": "t,v",
         "filter_immutable": false,
-        "tooltip_template": "",
         "accordion_summery": "navn",
         "disable_check_box": false,
-        "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
         "default_open_tools": "[\"filters\"]",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
-        "minimum_stoerrelser": "1 m.",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
-        "filter_html_template": "",
-        "line_highlight_style": "",
         "tiles_selected_style": "",
-        "geometrisk_konsistens": "",
         "info_element_selector": "",
-        "noegleord_hovedgruppe": "Offentlig forsyningsvirksomhed og offentlige tjenesteydelser.",
-        "registreringsinstruks": "Linjen registreres hvis muligt med snap til GeoDanmark-objekter. Der b\u00f8r anvendes GeoDanmark-objekter\/ortofotos i denne proces. \nS\u00e6rligt objekttypen vejmidter kan bruges til at kopiere fra\/snappe til. P\u00e5 sigt skulle det blive muligt med direkte kobling til vejmidter.\nF\u00f8lger en cykel- og en vandrerute samme forl\u00f8b, s\u00e5 registreres de som to selvst\u00e6ndige ruter. \nBenyt kun sv\u00e6rhedsgrad der passer med typen, s\u00e5 kode 1 og 5 kun er til MTB-ruter.\n",
-        "klassificering_opdeling": "Opdeles i rutetyper og ruter med sv\u00e6rhedsgrad. ",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false,
-        "geometrisk_konsistens_andre": "Placeres gerne med snap til nabo- og GeoDanmark-objekter."
+        "disable_vector_feature_info": false
     }
 }

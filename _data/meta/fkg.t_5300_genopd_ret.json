@@ -14,7 +14,8 @@
     "layergroup": "Landbrug",
     "sort_id": 800,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

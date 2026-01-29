@@ -14,7 +14,8 @@
     "layergroup": "Forsyning",
     "sort_id": 1100,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

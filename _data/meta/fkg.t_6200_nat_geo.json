@@ -14,7 +14,8 @@
     "layergroup": "Planl\u00e6gning",
     "sort_id": 300,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

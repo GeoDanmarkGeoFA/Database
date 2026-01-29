@@ -14,7 +14,8 @@
     "layergroup": "Jord og r\u00e5stof",
     "sort_id": 900,
     "tags": [
-        "udgivet"
+        "udgivet",
+        "Github"
     ],
     "fields": {
         "temakode": {

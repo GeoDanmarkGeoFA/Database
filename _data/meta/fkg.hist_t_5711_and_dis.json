@@ -1,26 +1,26 @@
 {
-    "uuid": "ac55d341-18d4-4476-bbca-abd145c99900",
+    "uuid": "47112061-d413-4f76-a353-4e2ab2bd8fdf",
     "f_table_schema": "fkg",
-    "f_table_name": "t_5713_prog_stat_dis",
+    "f_table_name": "hist_t_5711_and_dis",
     "f_geometry_column": "geometri",
     "f_table_abstract": null,
-    "f_table_title": "Prognose- og statistik distrikter (5713)",
+    "f_table_title": "HISTORISK Andre distrikter (5711)",
     "pkey": "objekt_id",
     "rel_type": "VIEW",
     "coord_dimension": 2,
     "type": "MULTIPOLYGON",
     "srid": 25832,
     "authentication": "Write",
-    "layergroup": "Administration",
-    "sort_id": 1410,
+    "layergroup": "Historisk",
+    "sort_id": 0,
     "tags": [
-        "udgivet",
+        "HISTORISK",
         "Github"
     ],
     "fields": {
         "temakode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen.\tEksempel: 6400",
+            "comment": "",
             "num": 1,
             "full_type": "integer",
             "typname": "int4",
@@ -37,7 +37,7 @@
         },
         "temanavn": {
             "type": "text",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.\tEksempel: Brandhane",
+            "comment": "",
             "num": 2,
             "full_type": "text",
             "typname": "text",
@@ -54,7 +54,7 @@
         },
         "objekt_id": {
             "type": "uuid",
-            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.\tEksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
+            "comment": "",
             "num": 3,
             "full_type": "uuid",
             "typname": "uuid",
@@ -71,7 +71,7 @@
         },
         "versions_id": {
             "type": "uuid",
-            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet.\tEksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
+            "comment": "",
             "num": 4,
             "full_type": "uuid",
             "typname": "uuid",
@@ -88,7 +88,7 @@
         },
         "systid_fra": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.\tEksempel: 2006-12-31T23:59:00.000+01:00",
+            "comment": "",
             "num": 5,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -105,7 +105,7 @@
         },
         "systid_til": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.\tEksempel: 2006-12-31T23:59:00.000+01:00",
+            "comment": "",
             "num": 6,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -122,7 +122,7 @@
         },
         "oprettet": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen.\tEksempel: 2006-12-31T23:59:00.000+01:00",
+            "comment": "",
             "num": 7,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -139,7 +139,7 @@
         },
         "cvr_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet.\tEksempel: 29189641",
+            "comment": "",
             "num": 8,
             "full_type": "integer",
             "typname": "int4",
@@ -799,7 +799,7 @@
         },
         "cvr_navn": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.\tEksempel: Silkeborg Kommune",
+            "comment": "",
             "num": 9,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -816,7 +816,7 @@
         },
         "kommunekode": {
             "type": "integer",
-            "comment": "3-cifret kommunekode udfyldes via cvr_kode.\tEksempel: 740",
+            "comment": "",
             "num": 10,
             "full_type": "integer",
             "typname": "int4",
@@ -833,7 +833,7 @@
         },
         "bruger_id": {
             "type": "character varying",
-            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data.\tEksempel: Silkeborg1234",
+            "comment": "",
             "num": 11,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -850,7 +850,7 @@
         },
         "oprindkode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en oprindelse via en kode.\tEksempel: 1",
+            "comment": "",
             "num": 12,
             "full_type": "integer",
             "typname": "int4",
@@ -922,7 +922,7 @@
         },
         "oprindelse": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.\tEksempel: Ortofoto",
+            "comment": "",
             "num": 13,
             "full_type": "character varying(35)",
             "typname": "varchar",
@@ -939,7 +939,7 @@
         },
         "statuskode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en status via en kode.\tEksempel: 3",
+            "comment": "",
             "num": 14,
             "full_type": "integer",
             "typname": "int4",
@@ -979,7 +979,7 @@
         },
         "status": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.\tEksempel: G\u00e6ldende \/ Vedtaget",
+            "comment": "",
             "num": 15,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -996,7 +996,7 @@
         },
         "off_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode.\tEksempel: 1",
+            "comment": "",
             "num": 16,
             "full_type": "integer",
             "typname": "int4",
@@ -1028,7 +1028,7 @@
         },
         "offentlig": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet.\tEksempel: Synlig for alle",
+            "comment": "",
             "num": 17,
             "full_type": "character varying(60)",
             "typname": "varchar",
@@ -1045,7 +1045,7 @@
         },
         "noegle": {
             "type": "character varying",
-            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel.\tEksempel: 12853468A",
+            "comment": "",
             "num": 18,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1062,7 +1062,7 @@
         },
         "note": {
             "type": "character varying",
-            "comment": "Frit bem\u00e6rkningsfelt.\tEksempel: Smukfest plads nr. 2",
+            "comment": "",
             "num": 19,
             "full_type": "character varying(254)",
             "typname": "varchar",
@@ -1075,11 +1075,11 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 200
+            "sort_id": 190
         },
-        "prog_distrikt_nr": {
+        "an_distrikt_nr": {
             "type": "integer",
-            "comment": "Prognose- og statistik distrikts nr. Eksempel: 2",
+            "comment": "",
             "num": 20,
             "full_type": "integer",
             "typname": "int4",
@@ -1092,11 +1092,11 @@
             "restriction": null,
             "alias": "",
             "queryable": true,
-            "sort_id": 210
+            "sort_id": 200
         },
-        "prog_distrikt_navn": {
+        "an_distrikt_navn": {
             "type": "character varying",
-            "comment": "Prognose- og statistik distrikts navn . Eksempel: Selsmoseskolen",
+            "comment": "",
             "num": 21,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1109,11 +1109,11 @@
             "restriction": null,
             "alias": "",
             "queryable": true,
-            "sort_id": 220
+            "sort_id": 210
         },
-        "prog_distrikt_type_kode": {
+        "an_distrikt_type_kode": {
             "type": "integer",
-            "comment": "Kode for prognose- og statistik distriktstype. Eksempel: 11",
+            "comment": "",
             "num": 22,
             "full_type": "integer",
             "typname": "int4",
@@ -1123,16 +1123,56 @@
             "numeric_scale": 0,
             "max_bytes": 4,
             "reference": [
-                "fkg.d_5713_prog_distrikt_type.prog_distrikt_type_kode"
+                "fkg.d_5711_an_distrikt_type.an_distrikt_type_kode"
             ],
             "restriction": [
                 {
-                    "value": 11,
-                    "alias": "Basisdistrikt"
+                    "value": 1,
+                    "alias": "-"
                 },
                 {
-                    "value": 12,
-                    "alias": "Konstantomr\u00e5der"
+                    "value": 2,
+                    "alias": "-"
+                },
+                {
+                    "value": 3,
+                    "alias": "-"
+                },
+                {
+                    "value": 4,
+                    "alias": "-"
+                },
+                {
+                    "value": 5,
+                    "alias": "-"
+                },
+                {
+                    "value": 6,
+                    "alias": "Social"
+                },
+                {
+                    "value": 7,
+                    "alias": "-"
+                },
+                {
+                    "value": 8,
+                    "alias": "-"
+                },
+                {
+                    "value": 9,
+                    "alias": "-"
+                },
+                {
+                    "value": 10,
+                    "alias": "Ejendomsdrift"
+                },
+                {
+                    "value": 11,
+                    "alias": "-"
+                },
+                {
+                    "value": 13,
+                    "alias": "Handelsopland"
                 },
                 {
                     "value": 98,
@@ -1145,11 +1185,11 @@
             ],
             "alias": "",
             "queryable": false,
-            "sort_id": 230
+            "sort_id": 220
         },
-        "prog_distrikt_type": {
+        "an_distrikt_type": {
             "type": "character varying",
-            "comment": "Prognose- og statistik distriktstype. Eksempel: Basisdistrikt",
+            "comment": "",
             "num": 23,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1162,11 +1202,11 @@
             "restriction": null,
             "alias": "",
             "queryable": true,
-            "sort_id": 240
+            "sort_id": 230
         },
         "sagsnr": {
             "type": "character varying",
-            "comment": "Identifikation af sag i ESDH. Eksempel: 8-70-21-3-743-6-96",
+            "comment": "",
             "num": 24,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1179,11 +1219,11 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 250
+            "sort_id": 240
         },
         "link": {
             "type": "character varying",
-            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
+            "comment": "",
             "num": 25,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1196,11 +1236,11 @@
             "restriction": null,
             "alias": "",
             "queryable": false,
-            "sort_id": 260
+            "sort_id": 250
         },
         "geometri": {
             "type": "geometry",
-            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier.\tEksempel: For et punkt: 543.210,999 6.123.456,111",
+            "comment": "",
             "num": 26,
             "full_type": "geometry(MultiPolygon,25832)",
             "typname": "geometry",
@@ -1215,26 +1255,16 @@
             "srid": "25832",
             "alias": "",
             "queryable": false,
-            "sort_id": 270
+            "sort_id": 260
         }
     },
     "children": null,
     "meta": {
         "tiled": false,
-        "formaal": "Vise hvor gr\u00e6nserne g\u00e5r i prognosedistrikterne og kunne benytte dem til analysegrundlag.",
-        "temakode": "5713",
-        "temanavn": "Prognose- og statistik distrikter",
-        "kle_koder": "01.02.05",
-        "meta_desc": "<p>\nLaget viser kommunens egne distrikter. Visualisering af distrikter i forhold til skel, adresser mm. og grundlag for stedbestemt dataanalyser. Temaet er t\u00e6nkt anvendt p\u00e5 tv\u00e6rs i forvaltningen.  <\/p>\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence \n  <\/a> \n  finder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
-        "definition": "Kommunens egne distrikter.",
-        "noegle_ord": "Statistik, befolkningsprognose",
-        "beskrivelse": "Visualisering af distrikter i forhold til skel, adresser mm. og grundlag for stedbestemt dataanalyser. Temaet er t\u00e6nkt anvendt p\u00e5 tv\u00e6rs i forvaltningen. ",
-        "lovgrundlag": "",
+        "meta_desc": "",
         "single_tile": false,
-        "geometritype": "Flade",
         "hover_active": false,
         "max_features": "500",
-        "sql_conflict": "",
         "vector_style": "",
         "default_match": "any",
         "filter_config": "",
@@ -1246,8 +1276,6 @@
         "point_to_layer": "",
         "use_clustering": false,
         "vidi_sub_group": "",
-        "buffer_conflict": "",
-        "filter_required": false,
         "reload_callback": "",
         "reload_interval": "",
         "select_function": "",
@@ -1258,29 +1286,22 @@
         "tooltip_template": "",
         "accordion_summery": "",
         "disable_check_box": false,
-        "entydige_objekter": "",
         "tiles_service_uri": "",
         "default_layer_type": "t",
         "default_open_tools": "[\"filters\"]",
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
-        "minimum_stoerrelser": "0,1 ha",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
-        "geometrisk_konsistens": "Snap mellem fladerne, s\u00e5 der ikke forekommer huller eller overlap.",
         "info_element_selector": "",
-        "noegleord_hovedgruppe": "Administrative enheder",
-        "registreringsinstruks": "Ofte forel\u00e6gger distrikterne kun p\u00e5 papirkort med h\u00e5ndtegnet streger eller\/og som registrering p\u00e5 hver enkelt adresse eller via vejlister. Ved adresse- eller vejlister registreres de p\u00e5 adressetema eller lignende og via farvekoder p\u00e5 punkterne, s\u00e5 indtegnes fladerne f.eks. med kopi af matrikelgeometrien, som s\u00e5 samles til en flade i hvert distrikt. Hvis distriktsgr\u00e6nsen normalt f\u00f8lger vejmidten, snappes i stedet til GeoDanmark-vejmidten. Samlet skal dette tema d\u00e6kke hele kommunen. \nVed Basisomr\u00e5der anvendes n\u00f8glefeltet som n\u00f8gle til prognosedata.\n",
-        "klassificering_opdeling": "Opdeles i nummer\/navn for hvert distrikt.",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false,
-        "geometrisk_konsistens_andre": "Matrikellodder\/jordstykker eller vejmidter samt evt. andre distrikter fra GeoFA."
+        "disable_vector_feature_info": false
     }
 }
