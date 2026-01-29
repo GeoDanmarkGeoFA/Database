@@ -36,7 +36,7 @@
         },
         "temakode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen.",
+            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen. Eksempel: 6400",
             "num": 1,
             "full_type": "integer",
             "typname": "int4",
@@ -53,7 +53,7 @@
         },
         "temanavn": {
             "type": "text",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Brandhane",
             "num": 2,
             "full_type": "text",
             "typname": "text",
@@ -70,7 +70,7 @@
         },
         "objekt_id": {
             "type": "uuid",
-            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.",
+            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.  Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
             "num": 3,
             "full_type": "uuid",
             "typname": "uuid",
@@ -87,7 +87,7 @@
         },
         "versions_id": {
             "type": "uuid",
-            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet.",
+            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet. Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
             "num": 4,
             "full_type": "uuid",
             "typname": "uuid",
@@ -104,7 +104,7 @@
         },
         "systid_fra": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
+            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
             "num": 5,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -121,7 +121,7 @@
         },
         "systid_til": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
+            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
             "num": 6,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -138,7 +138,7 @@
         },
         "oprettet": {
             "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen.",
+            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Eksempel: 2006-12-31T23:59:00.000+01:00",
             "num": 7,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -155,7 +155,7 @@
         },
         "cvr_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet.",
+            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet. Eksempel: 29189641",
             "num": 8,
             "full_type": "integer",
             "typname": "int4",
@@ -654,7 +654,7 @@
                 },
                 {
                     "value": 36920483,
-                    "alias": "ParksnTrails"
+                    "alias": "Friluftsguiden"
                 },
                 {
                     "value": 36986719,
@@ -815,7 +815,7 @@
         },
         "cvr_navn": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Silkeborg Kommune",
             "num": 9,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -832,7 +832,7 @@
         },
         "kommunekode": {
             "type": "integer",
-            "comment": "3-cifret kommunekode udfyldes via cvr_kode.",
+            "comment": "3-cifret kommunekode udfyldes via cvr_kode. Eksempel: 740",
             "num": 10,
             "full_type": "integer",
             "typname": "int4",
@@ -849,7 +849,7 @@
         },
         "bruger_id": {
             "type": "character varying",
-            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data.",
+            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data. Eksempel: Silkeborg1234",
             "num": 11,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -866,7 +866,7 @@
         },
         "oprindkode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en oprindelse via en kode.",
+            "comment": "Feltet benyttes til at angive en oprindelse via en kode. Eksempel: 1",
             "num": 12,
             "full_type": "integer",
             "typname": "int4",
@@ -938,7 +938,7 @@
         },
         "oprindelse": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Ortofoto",
             "num": 13,
             "full_type": "character varying(35)",
             "typname": "varchar",
@@ -955,7 +955,7 @@
         },
         "statuskode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive en status via en kode.",
+            "comment": "Feltet benyttes til at angive en status via en kode. Eksempel: 3",
             "num": 14,
             "full_type": "integer",
             "typname": "int4",
@@ -995,7 +995,7 @@
         },
         "status": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst.",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: G\u00e6ldende \/ Vedtaget",
             "num": 15,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -1012,7 +1012,7 @@
         },
         "off_kode": {
             "type": "integer",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode.",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode. Eksempel: 1",
             "num": 16,
             "full_type": "integer",
             "typname": "int4",
@@ -1044,7 +1044,7 @@
         },
         "offentlig": {
             "type": "character varying",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet.",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet. Eksempel: Synlig for alle",
             "num": 17,
             "full_type": "character varying(60)",
             "typname": "varchar",
@@ -1061,7 +1061,7 @@
         },
         "noegle": {
             "type": "character varying",
-            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel.",
+            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel. Eksempel: 12853468A",
             "num": 18,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1078,7 +1078,7 @@
         },
         "note": {
             "type": "character varying",
-            "comment": "Frit bem\u00e6rkningsfelt.",
+            "comment": "Frit bem\u00e6rkningsfelt. Eksempel: Smukfest plads nr. 2",
             "num": 19,
             "full_type": "character varying(254)",
             "typname": "varchar",
@@ -1095,7 +1095,7 @@
         },
         "beliggenhedskommune": {
             "type": "integer",
-            "comment": "",
+            "comment": "Kommunenummer for den kommune, som  facilitet er beliggende i. Kan hj\u00e6lpe med at  filtre data ift. hvilke faciliteter der er i hvilke  kommuner. Udfyldes automatisk hver nat ud  fra en analyse mellem facilitetspunktet og  DAGI-kommunegr\u00e6nse. Eksempel: 860",
             "num": 63,
             "full_type": "integer",
             "typname": "int4",
@@ -1488,7 +1488,7 @@
         },
         "planstatus_kode": {
             "type": "integer",
-            "comment": "Kodetal for planstatus ",
+            "comment": "Kodetal for planstatus . Eksempel: 1.",
             "num": 35,
             "full_type": "integer",
             "typname": "int4",
@@ -1516,7 +1516,7 @@
         },
         "planstatus": {
             "type": "character varying",
-            "comment": "Om det er anlagt eller \u201dbare\u201d planlagt.",
+            "comment": "Om det er anlagt eller \u201dbare\u201d planlagt. Eksempel: Eksisterende.",
             "num": 36,
             "full_type": "character varying(25)",
             "typname": "varchar",
@@ -1533,7 +1533,7 @@
         },
         "foto_link": {
             "type": "character varying",
-            "comment": "URL-link til foto",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/foto.png",
             "num": 37,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1550,7 +1550,7 @@
         },
         "foto_link1": {
             "type": "character varying",
-            "comment": "URL-link til foto",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/foto.png",
             "num": 38,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1567,7 +1567,7 @@
         },
         "foto_link2": {
             "type": "character varying",
-            "comment": "URL-link til foto",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/foto.png",
             "num": 39,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1584,7 +1584,7 @@
         },
         "foto_link3": {
             "type": "character varying",
-            "comment": "URL-link til foto",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/foto.png",
             "num": 40,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1601,7 +1601,7 @@
         },
         "link": {
             "type": "character varying",
-            "comment": "URL-link",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "num": 41,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1618,7 +1618,7 @@
         },
         "link1": {
             "type": "character varying",
-            "comment": "URL-link",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "num": 42,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1635,7 +1635,7 @@
         },
         "link2": {
             "type": "character varying",
-            "comment": "URL-link",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "num": 43,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1652,7 +1652,7 @@
         },
         "link3": {
             "type": "character varying",
-            "comment": "URL-link",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "num": 44,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1669,7 +1669,7 @@
         },
         "link4": {
             "type": "character varying",
-            "comment": "URL-link",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "num": 51,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1686,7 +1686,7 @@
         },
         "adr_id": {
             "type": "uuid",
-            "comment": "Entydig databasen\u00f8gle fra det officielle  adresseregister (UUID). Autoudfyldes hvis vejnavn_input,  postnr og husnr er udfyldt.",
+            "comment": "Entydig databasen\u00f8gle fra det officielle  adresseregister (UUID). Autoudfyldes hvis vejnavn_input,  postnr og husnr er udfyldt. Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
             "num": 45,
             "full_type": "uuid",
             "typname": "uuid",
@@ -1703,7 +1703,7 @@
         },
         "vejkode": {
             "type": "integer",
-            "comment": " Vejkode (DAR) ",
+            "comment": " Vejkode (DAR). Eksempel: 46100128",
             "num": 58,
             "full_type": "integer",
             "typname": "int4",
@@ -1720,7 +1720,7 @@
         },
         "husnr": {
             "type": "character varying",
-            "comment": "Husnummer",
+            "comment": "Husnummer. Eksempel: 122C.",
             "num": 60,
             "full_type": "character varying(4)",
             "typname": "varchar",
@@ -1737,7 +1737,7 @@
         },
         "vejnavn": {
             "type": "character varying",
-            "comment": "Vejnavn der refererer til vejkode ",
+            "comment": "Vejnavn der refererer til vejkode. Eksempel: Borgergade",
             "num": 59,
             "full_type": "character varying(40)",
             "typname": "varchar",
@@ -1754,7 +1754,7 @@
         },
         "postnr": {
             "type": "integer",
-            "comment": "Postnr",
+            "comment": "Postnr. Eksempel: 8600",
             "num": 61,
             "full_type": "integer",
             "typname": "int4",
@@ -1771,7 +1771,7 @@
         },
         "postnr_by": {
             "type": "character varying",
-            "comment": "By der refererer til Postnr",
+            "comment": "By der refererer til Postnr. Eksempel: Silkeborg.",
             "num": 62,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1788,7 +1788,7 @@
         },
         "ansvar_org": {
             "type": "character varying",
-            "comment": "Navn p\u00e5 vedligeholdsansvarlig organisationen. ",
+            "comment": "Navn p\u00e5 vedligeholdsansvarlig organisationen.  Eksempel: \u00c5dalens venner",
             "num": 46,
             "full_type": "character varying(254)",
             "typname": "varchar",
@@ -1820,9 +1820,9 @@
             "queryable": false,
             "sort_id": 520
         },
-        "omraade_navn": {
+        "omraade": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Unikt omr\u00e5denavn. Eksempel: Dal ved Bryrup",
             "num": 48,
             "full_type": "character varying(254)",
             "typname": "varchar",
@@ -1839,7 +1839,7 @@
         },
         "gyldig_fra": {
             "type": "date",
-            "comment": "",
+            "comment": "Start gyldighedsperiode. Eksempel: 2006-12-31.",
             "num": 49,
             "full_type": "date",
             "typname": "date",
@@ -1856,7 +1856,7 @@
         },
         "gyldig_til": {
             "type": "date",
-            "comment": "",
+            "comment": "Slut gyldighedsperiode. Eksempel: 2006-12-31.",
             "num": 50,
             "full_type": "date",
             "typname": "date",
@@ -1873,7 +1873,7 @@
         },
         "sagsnr": {
             "type": "character varying",
-            "comment": "Identifikation af sag i ESDH",
+            "comment": "Identifikation af sag i ESDH. Eksempel: 8-70-21-3-743-6-96",
             "num": 52,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1890,7 +1890,7 @@
         },
         "geometri": {
             "type": "geometry",
-            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier.",
+            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier. Eksempel: For et punkt: 543.210,999 6.123.456,111",
             "num": 34,
             "full_type": "geometry(MultiPoint,25832)",
             "typname": "geometry",

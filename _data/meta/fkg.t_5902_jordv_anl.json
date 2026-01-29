@@ -19,7 +19,7 @@
     "fields": {
         "temakode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen. Eksempel: 6400",
             "num": 1,
             "full_type": "integer",
             "typname": "int4",
@@ -36,7 +36,7 @@
         },
         "temanavn": {
             "type": "text",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Brandhane",
             "num": 2,
             "full_type": "text",
             "typname": "text",
@@ -53,7 +53,7 @@
         },
         "objekt_id": {
             "type": "uuid",
-            "comment": "",
+            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.  Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
             "num": 3,
             "full_type": "uuid",
             "typname": "uuid",
@@ -70,7 +70,7 @@
         },
         "versions_id": {
             "type": "uuid",
-            "comment": "",
+            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet. Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
             "num": 4,
             "full_type": "uuid",
             "typname": "uuid",
@@ -87,7 +87,7 @@
         },
         "systid_fra": {
             "type": "timestamp with time zone",
-            "comment": "",
+            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
             "num": 5,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -104,7 +104,7 @@
         },
         "systid_til": {
             "type": "timestamp with time zone",
-            "comment": "",
+            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
             "num": 6,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -121,7 +121,7 @@
         },
         "oprettet": {
             "type": "timestamp with time zone",
-            "comment": "",
+            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Eksempel: 2006-12-31T23:59:00.000+01:00",
             "num": 7,
             "full_type": "timestamp with time zone",
             "typname": "timestamptz",
@@ -138,7 +138,7 @@
         },
         "cvr_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet. Eksempel: 29189641",
             "num": 8,
             "full_type": "integer",
             "typname": "int4",
@@ -637,7 +637,7 @@
                 },
                 {
                     "value": 36920483,
-                    "alias": "ParksnTrails"
+                    "alias": "Friluftsguiden"
                 },
                 {
                     "value": 36986719,
@@ -798,7 +798,7 @@
         },
         "cvr_navn": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Silkeborg Kommune",
             "num": 9,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -815,7 +815,7 @@
         },
         "kommunekode": {
             "type": "integer",
-            "comment": "",
+            "comment": "3-cifret kommunekode udfyldes via cvr_kode. Eksempel: 740",
             "num": 10,
             "full_type": "integer",
             "typname": "int4",
@@ -832,7 +832,7 @@
         },
         "bruger_id": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data. Eksempel: Silkeborg1234",
             "num": 11,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -849,7 +849,7 @@
         },
         "oprindkode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive en oprindelse via en kode. Eksempel: 1",
             "num": 12,
             "full_type": "integer",
             "typname": "int4",
@@ -921,7 +921,7 @@
         },
         "oprindelse": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Ortofoto",
             "num": 13,
             "full_type": "character varying(35)",
             "typname": "varchar",
@@ -938,7 +938,7 @@
         },
         "statuskode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive en status via en kode. Eksempel: 3",
             "num": 14,
             "full_type": "integer",
             "typname": "int4",
@@ -978,7 +978,7 @@
         },
         "status": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: G\u00e6ldende \/ Vedtaget",
             "num": 15,
             "full_type": "character varying(30)",
             "typname": "varchar",
@@ -995,7 +995,7 @@
         },
         "off_kode": {
             "type": "integer",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode. Eksempel: 1",
             "num": 16,
             "full_type": "integer",
             "typname": "int4",
@@ -1027,7 +1027,7 @@
         },
         "offentlig": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet. Eksempel: Synlig for alle",
             "num": 17,
             "full_type": "character varying(60)",
             "typname": "varchar",
@@ -1044,7 +1044,7 @@
         },
         "noegle": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel. Eksempel: 12853468A",
             "num": 18,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1061,7 +1061,7 @@
         },
         "note": {
             "type": "character varying",
-            "comment": "",
+            "comment": "Frit bem\u00e6rkningsfelt. Eksempel: Smukfest plads nr. 2",
             "num": 19,
             "full_type": "character varying(254)",
             "typname": "varchar",
@@ -1078,7 +1078,7 @@
         },
         "brine_maengde": {
             "type": "integer",
-            "comment": null,
+            "comment": "M\u00e6ngden af v\u00e6ske i anl\u00e6gget i alt. Angives i liter. Eksempel: 756",
             "num": 20,
             "full_type": "integer",
             "typname": "int4",
@@ -1095,7 +1095,7 @@
         },
         "brine_blandingsforhold": {
             "type": "character varying",
-            "comment": null,
+            "comment": "Angiv blandingsforholdet mellem vand og frostv\u00e6ste  i jordvarmeanl\u00e6ggets varmetransmissionsv\u00e6ske. Eksempel: 60% frostv\u00e6ske.",
             "num": 21,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1112,7 +1112,7 @@
         },
         "strenge_antal": {
             "type": "integer",
-            "comment": null,
+            "comment": "Antal strenge lagt i jorden ",
             "num": 22,
             "full_type": "integer",
             "typname": "int4",
@@ -1129,7 +1129,7 @@
         },
         "strenge_laengde_samlede": {
             "type": "integer",
-            "comment": null,
+            "comment": "Samlet l\u00e6ngde p\u00e5 strenge lagt i jorden ",
             "num": 23,
             "full_type": "integer",
             "typname": "int4",
@@ -1146,7 +1146,7 @@
         },
         "tilladelses_dato": {
             "type": "date",
-            "comment": null,
+            "comment": "Dato for hvorn\u00e5r tilladelse er givet. Registreringsvejledning: Hvis den eksakte dato ikke  kendes, angives den sidste dag i det \u00e5r tilladelsen er  givet. Datoen 2008-12-31, angiver s\u00e5ledes at  tilladelsen er givet 2008.",
             "num": 24,
             "full_type": "date",
             "typname": "date",
@@ -1163,7 +1163,7 @@
         },
         "faerdigmeldingsdato": {
             "type": "date",
-            "comment": null,
+            "comment": "Dato for f\u00e6rdigmelding. Eksempel: 2008-06-18",
             "num": 25,
             "full_type": "date",
             "typname": "date",
@@ -1180,7 +1180,7 @@
         },
         "vaesketype_kode": {
             "type": "integer",
-            "comment": null,
+            "comment": "Kodetal for typen af frostv\u00e6ske. Eksempel: 2",
             "num": 26,
             "full_type": "integer",
             "typname": "int4",
@@ -1224,7 +1224,7 @@
         },
         "vaesketype": {
             "type": "character varying",
-            "comment": null,
+            "comment": "Typen af frostv\u00e6ske der benyttes i slangerne. Eksempel: IPA-sprit",
             "num": 27,
             "full_type": "character varying(50)",
             "typname": "varchar",
@@ -1241,7 +1241,7 @@
         },
         "sag_status_kode": {
             "type": "integer",
-            "comment": null,
+            "comment": "Kode for status p\u00e5 sag. Eksempel: 7.",
             "num": 31,
             "full_type": "integer",
             "typname": "int4",
@@ -1293,7 +1293,7 @@
         },
         "sag_status": {
             "type": "character varying",
-            "comment": null,
+            "comment": "Sagsstatus. Eksempel: Annulleret. ",
             "num": 32,
             "full_type": "character varying(18)",
             "typname": "varchar",
@@ -1310,7 +1310,7 @@
         },
         "gyldig_fra": {
             "type": "date",
-            "comment": "",
+            "comment": "Start gyldighedsperiode. Eksempel: 2006-12-31.",
             "num": 28,
             "full_type": "date",
             "typname": "date",
@@ -1327,7 +1327,7 @@
         },
         "gyldig_til": {
             "type": "date",
-            "comment": "",
+            "comment": "Slut gyldighedsperiode. Eksempel: 2006-12-31.",
             "num": 29,
             "full_type": "date",
             "typname": "date",
@@ -1344,7 +1344,7 @@
         },
         "sagsnr": {
             "type": "character varying",
-            "comment": null,
+            "comment": "Identifikation af sag i ESDH. Eksempel: 8-70-21-3-743-6-96",
             "num": 30,
             "full_type": "character varying(128)",
             "typname": "varchar",
@@ -1361,7 +1361,7 @@
         },
         "link": {
             "type": "character varying",
-            "comment": "",
+            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "num": 33,
             "full_type": "character varying(1024)",
             "typname": "varchar",
@@ -1378,7 +1378,7 @@
         },
         "geometri": {
             "type": "geometry",
-            "comment": "",
+            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier. Eksempel: For et punkt: 543.210,999 6.123.456,111",
             "num": 34,
             "full_type": "geometry(MultiPolygon,25832)",
             "typname": "geometry",
@@ -1399,17 +1399,17 @@
     "children": null,
     "meta": {
         "tiled": false,
-        "formaal": "",
-        "temakode": "",
-        "temanavn": "",
-        "kle_koder": "",
-        "meta_desc": "",
-        "definition": "",
-        "noegle_ord": "",
-        "beskrivelse": "",
-        "lovgrundlag": "",
+        "formaal": "Oplyse sagsbehandler og borger via selvbetjeningsl\u00f8sninger, hvor der er et nedgravet jordvarmeanl\u00e6g n\u00e5r der skal s\u00f8ges om f.eks. \nvandindvindingstilladelse. Forvaltningsopgaver i forhold til opretholdelse afstandskrav \u2013 ogs\u00e5 p\u00e5 tv\u00e6rs af kommuner.",
+        "temakode": "5902",
+        "temanavn": "Jordvarmeanl\u00e6g",
+        "kle_koder": "09.08.26",
+        "meta_desc": "<p>Anl\u00e6g der forsyner byggeri med varme via slanger nedgravet i jorden i ca. 1 meters dybde. Form\u00e5let er at oplyse sagsbehandler og borger via selvbetjeningsl\u00f8sninger, hvor der er et nedgravet jordvarmeanl\u00e6g n\u00e5r der skal s\u00f8ges om f.eks. \nvandindvindingstilladelse. Forvaltningsopgaver i forhold til opretholdelse afstandskrav \u2013 ogs\u00e5 p\u00e5 tv\u00e6rs af kommuner.\n<\/p>\n<p>\n  Vil du vide mere? P\u00e5 \n  <a href=\"https:\/\/confluence.sdfi.dk\/pages\/viewpage.action?pageId=191398876\" target=\"_blank\">\n    confluence<\/a>\nfinder du GeoFA\u2019s vejledningsunivers \u2013 tag et kig.\n<\/p>",
+        "definition": "Anl\u00e6g der forsyner byggeri med varme via slanger nedgravet i jorden i ca. 1 meters dybde.\n",
+        "noegle_ord": "Jordvarme, frostv\u00e6ske",
+        "beskrivelse": "Anl\u00e6g der forsyner byggeri med varme via slanger nedgravet i jorden i ca. 1 meters dybde.",
+        "lovgrundlag": "Jordvarmebekendtg\u00f8relsen (retsinformation.dk) \u00a79.,",
         "single_tile": false,
-        "geometritype": "",
+        "geometritype": "Flade",
         "hover_active": false,
         "max_features": "500",
         "sql_conflict": "",
@@ -1443,22 +1443,23 @@
         "predefined_filters": "",
         "show_table_on_side": false,
         "info_template_hover": "",
-        "minimum_stoerrelser": "",
+        "minimum_stoerrelser": "1 kvm.",
+        "sql_conflict_header": "",
         "vidi_layer_editable": true,
         "zoom_on_table_click": false,
         "filter_html_template": "",
         "line_highlight_style": "",
         "tiles_selected_style": "",
-        "geometrisk_konsistens": "",
+        "geometrisk_konsistens": "Ingen overlap.",
         "info_element_selector": "",
-        "noegleord_hovedgruppe": "",
-        "registreringsinstruks": "",
-        "klassificering_opdeling": "",
+        "noegleord_hovedgruppe": "Arealanvendelse",
+        "registreringsinstruks": "Indtegn en flade, der d\u00e6kker hele det omr\u00e5de hvor i der er udlagt varmeslanger i jorden. Indtegn arealet \nefter ans\u00f8gningen og ret geometrien til efter anl\u00e6ggelsen. Gyldighedsperiode: Fra etableringstidspunkt til \nNedbrydningstidspunkt for anl\u00e6gget.\n",
+        "klassificering_opdeling": "Opdeles i frostv\u00e6sketype Se 5.12.3.3 Kodeliste.",
         "long_conflict_meta_desc": "",
         "accordion_summery_prefix": "",
         "short_conflict_meta_desc": "",
         "max_zoom_level_table_click": "17",
         "disable_vector_feature_info": false,
-        "geometrisk_konsistens_andre": ""
+        "geometrisk_konsistens_andre": "Ingen"
     }
 }
