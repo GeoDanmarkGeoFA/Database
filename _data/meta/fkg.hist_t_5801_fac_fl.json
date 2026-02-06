@@ -201,6 +201,10 @@
                     "alias": "Konge\u00e5sti"
                 },
                 {
+                    "value": 10000014,
+                    "alias": "Slagelse Brand og Redning"
+                },
+                {
                     "value": 10294819,
                     "alias": "Konkurrence- og Forbrugerstyrelsen"
                 },
@@ -7383,6 +7387,40 @@
             "numeric_precision": null,
             "numeric_scale": null,
             "max_bytes": 2000,
+            "reference": null,
+            "restriction": null,
+            "alias": null,
+            "queryable": false,
+            "sort_id": null
+        },
+        "kvalitetstjekket_k": {
+            "type": "integer",
+            "comment": null,
+            "num": 89,
+            "full_type": "integer",
+            "typname": "int4",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": 32,
+            "numeric_scale": 0,
+            "max_bytes": 4,
+            "reference": null,
+            "restriction": null,
+            "alias": null,
+            "queryable": false,
+            "sort_id": null
+        },
+        "kvalitetstjekket": {
+            "type": "character varying",
+            "comment": null,
+            "num": 90,
+            "full_type": "character varying(255)",
+            "typname": "varchar",
+            "is_array": false,
+            "character_maximum_length": 255,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1020,
             "reference": null,
             "restriction": null,
             "alias": null,

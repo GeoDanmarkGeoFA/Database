@@ -1491,6 +1491,31 @@
             "_index_method": null,
             "_checks": null,
             "_short_name": "rut_farv_k"
+        },
+        {
+            "name": "kvalitetstjekket_k",
+            "type": "integer",
+            "comment": null,
+            "_num": 73,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_5800_kvalitetstjekket.kvalitetstjekket_k"
+            ],
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": [
+                "kvalitetstjekket_k >= 0 AND kvalitetstjekket_k <= 20"
+            ],
+            "_short_name": null
         }
     ],
     "comment": null,
@@ -1513,6 +1538,17 @@
         }
     ],
     "constraints": [
+        {
+            "name": "t_5802_fac_li_d_5800_kvalitetstjekket_fk",
+            "constraint": "foreign",
+            "columns": [
+                "kvalitetstjekket_k"
+            ],
+            "referenced_table": "d_5800_kvalitetstjekket",
+            "referenced_columns": [
+                "kvalitetstjekket_k"
+            ]
+        },
         {
             "name": "t_5802_fac_li_d_5800_saeson_fk",
             "constraint": "foreign",
@@ -1717,6 +1753,11 @@
             "referenced_columns": [
                 "kvalitet_k"
             ]
+        },
+        {
+            "name": "t_5802_fac_li_t_kvalitetstjekket_k_check",
+            "constraint": "check",
+            "check": "kvalitetstjekket_k >= 0 AND kvalitetstjekket_k <= 20"
         }
     ],
     "links": {
