@@ -65,6 +65,7 @@
             "is_nullable": false,
             "default_value": null,
             "_index_method": [
+                "btree",
                 "btree"
             ],
             "_checks": null,
@@ -131,7 +132,9 @@
             "_is_primary": false,
             "is_nullable": false,
             "default_value": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": [
                 "primaer_kode = ANY (ARRAY[0, 1]",
                 "primaer_kode = ANY (ARRAY[0, 1]"
@@ -201,6 +204,15 @@
             "unique": false,
             "columns": [
                 "foto_objek"
+            ]
+        },
+        {
+            "name": "t_7900_fotoforbindelse_t_foto_objek_primaer_kode_idx",
+            "method": "btree",
+            "unique": false,
+            "columns": [
+                "foto_objek",
+                "primaer_kode"
             ]
         }
     ],

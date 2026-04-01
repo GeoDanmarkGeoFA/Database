@@ -1512,10 +1512,29 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "kvalitetstjekket_k >= 0 AND kvalitetstjekket_k <= 20"
-            ],
-            "_short_name": null
+            "_checks": null,
+            "_short_name": "kva_tjek_k"
+        },
+        {
+            "name": "rundtur",
+            "type": "boolean",
+            "comment": null,
+            "_num": 74,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "_is_unique": false,
+            "_is_primary": false,
+            "is_nullable": true,
+            "default_value": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "rundtur"
         }
     ],
     "comment": null,
@@ -1753,11 +1772,6 @@
             "referenced_columns": [
                 "kvalitet_k"
             ]
-        },
-        {
-            "name": "t_5802_fac_li_t_kvalitetstjekket_k_check",
-            "constraint": "check",
-            "check": "kvalitetstjekket_k >= 0 AND kvalitetstjekket_k <= 20"
         }
     ],
     "links": {

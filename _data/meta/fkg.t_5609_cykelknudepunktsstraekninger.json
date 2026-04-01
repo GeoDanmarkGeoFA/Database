@@ -659,7 +659,7 @@
                 },
                 {
                     "value": 37176478,
-                    "alias": "SkjoldungernesLand"
+                    "alias": "Nationalparkfond Skjoldungernes Land"
                 },
                 {
                     "value": 37197580,
@@ -714,12 +714,20 @@
                     "alias": "E.ON"
                 },
                 {
+                    "value": 43324942,
+                    "alias": "Frie Fodspor ApS"
+                },
+                {
                     "value": 44023911,
                     "alias": "Greve Kommune"
                 },
                 {
                     "value": 45973328,
                     "alias": "L\u00e6s\u00f8 Kommune"
+                },
+                {
+                    "value": 48233511,
+                    "alias": "Sweco Danmark A\/S"
                 },
                 {
                     "value": 55133018,

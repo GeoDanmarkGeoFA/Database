@@ -658,7 +658,7 @@
                 },
                 {
                     "value": 37176478,
-                    "alias": "SkjoldungernesLand"
+                    "alias": "Nationalparkfond Skjoldungernes Land"
                 },
                 {
                     "value": 37197580,
@@ -713,12 +713,20 @@
                     "alias": "E.ON"
                 },
                 {
+                    "value": 43324942,
+                    "alias": "Frie Fodspor ApS"
+                },
+                {
                     "value": 44023911,
                     "alias": "Greve Kommune"
                 },
                 {
                     "value": 45973328,
                     "alias": "L\u00e6s\u00f8 Kommune"
+                },
+                {
+                    "value": 48233511,
+                    "alias": "Sweco Danmark A\/S"
                 },
                 {
                     "value": 55133018,
@@ -1109,8 +1117,75 @@
             "numeric_precision": 32,
             "numeric_scale": 0,
             "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
+            "reference": [
+                "fkg.d_5802_rutetype.rute_ty_k"
+            ],
+            "restriction": [
+                {
+                    "value": 1,
+                    "alias": "Skirute"
+                },
+                {
+                    "value": 2,
+                    "alias": "L\u00f8berute"
+                },
+                {
+                    "value": 3,
+                    "alias": "Cykelrute"
+                },
+                {
+                    "value": 4,
+                    "alias": "Mountainbikerute"
+                },
+                {
+                    "value": 5,
+                    "alias": "Vandrerute"
+                },
+                {
+                    "value": 6,
+                    "alias": "Motionsrute"
+                },
+                {
+                    "value": 7,
+                    "alias": "Undervandsrute"
+                },
+                {
+                    "value": 8,
+                    "alias": "Riderute"
+                },
+                {
+                    "value": 9,
+                    "alias": "Sejlrute"
+                },
+                {
+                    "value": 13,
+                    "alias": "Bilrute"
+                },
+                {
+                    "value": 14,
+                    "alias": "Trec-bane"
+                },
+                {
+                    "value": 15,
+                    "alias": "Sv\u00f8mmerute"
+                },
+                {
+                    "value": 16,
+                    "alias": "Sejlrute for f\u00e6rge"
+                },
+                {
+                    "value": 17,
+                    "alias": "Sejlrute for lyst- og motor"
+                },
+                {
+                    "value": 98,
+                    "alias": "Andet"
+                },
+                {
+                    "value": 99,
+                    "alias": "Ukendt"
+                }
+            ],
             "alias": "",
             "queryable": false,
             "sort_id": 200
@@ -2286,6 +2361,10 @@
                     "alias": "Adgangssti"
                 },
                 {
+                    "value": 5,
+                    "alias": "Alternativ rute"
+                },
+                {
                     "value": 8,
                     "alias": "Andet"
                 },
@@ -2405,6 +2484,23 @@
             "alias": "",
             "queryable": false,
             "sort_id": 654
+        },
+        "rundtur": {
+            "type": "boolean",
+            "comment": null,
+            "num": 107,
+            "full_type": "boolean",
+            "typname": "bool",
+            "is_array": false,
+            "character_maximum_length": null,
+            "numeric_precision": null,
+            "numeric_scale": null,
+            "max_bytes": 1,
+            "reference": null,
+            "restriction": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 656
         },
         "folder_k": {
             "type": "integer",

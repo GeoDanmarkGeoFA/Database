@@ -1258,10 +1258,8 @@
             "is_nullable": true,
             "default_value": null,
             "_index_method": null,
-            "_checks": [
-                "kvalitetstjekket_k >= 0 AND kvalitetstjekket_k <= 20"
-            ],
-            "_short_name": null
+            "_checks": null,
+            "_short_name": "kva_tjek_k"
         }
     ],
     "comment": null,
@@ -1460,11 +1458,6 @@
             "columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_5801_fac_fl_t_kvalitetstjekket_k_check",
-            "constraint": "check",
-            "check": "kvalitetstjekket_k >= 0 AND kvalitetstjekket_k <= 20"
         },
         {
             "name": "t_5801_fac_fl_t_saeson_sl_aar_skal_vaere_1_ck",
