@@ -37,44 +37,44 @@
     <tbody>
     <tr>
         <td>Temanavn</td>
-        <td>{{ meta.meta.temanavn }}</td>
+        <td>{{ meta.properties.temanavn }}</td>
     </tr>
     <tr>
         <td>Temakode</td>
-        <td>{{ meta.meta.temakode }}</td>
+        <td>{{ meta.properties.temakode }}</td>
     </tr>
     <tr>
         <td>Formål</td>
-        <td>{{ meta.meta.formaal }}</td>
+        <td>{{ meta.properties.formaal }}</td>
     </tr>
     <tr>
         <td>Definition</td>
-        <td>{{ meta.meta.definition }}</td>
+        <td>{{ meta.properties.definition }}</td>
     </tr>
     <tr>
         <td>Beskrivelse</td>
-        <td>{{ meta.meta.beskrivelse }}</td>
+        <td>{{ meta.properties.beskrivelse }}</td>
     </tr>
 
     <tr>
         <td>Nøgleord hovedgruppe</td>
-        <td>{{ meta.meta.noegleord_hovedgruppe }}</td>
+        <td>{{ meta.properties.noegleord_hovedgruppe }}</td>
     </tr>
     <tr>
         <td>Nøegleord</td>
-        <td>{{ meta.meta.noegle_ord }}</td>
+        <td>{{ meta.properties.noegle_ord }}</td>
     </tr>
     <tr>
         <td>Geometri type</td>
-        <td>{{ meta.meta.geometritype }}</td>
+        <td>{{ meta.properties.geometritype }}</td>
     </tr>
     <tr>
         <td>Lovgrundlag</td>
-        <td>{{ meta.meta.lovgrundlag }}</td>
+        <td>{{ meta.properties.lovgrundlag }}</td>
     </tr>
     <tr>
         <td>KLE koder</td>
-        <td>{{ meta.meta.kle_koder }}</td>
+        <td>{{ meta.properties.kle_koder }}</td>
     </tr>
     </tbody>
 </table>
@@ -90,27 +90,27 @@
     <tbody>
     <tr>
         <td>Registreringsinstruks</td>
-        <td>{{ meta.meta.registreringsinstruks }}</td>
+        <td>{{ meta.properties.registreringsinstruks }}</td>
     </tr>
     <tr>
         <td>Klassificering/opdeling</td>
-        <td>{{ meta.meta.klassificering_opdeling }}</td>
+        <td>{{ meta.properties.klassificering_opdeling }}</td>
     </tr>
     <tr>
         <td>Minimum størrelser for objekt</td>
-        <td>{{ meta.meta.minimum_stoerrelser }}</td>
+        <td>{{ meta.properties.minimum_stoerrelser }}</td>
     </tr>
     <tr>
         <td>Entydige objekter</td>
-        <td>{{ meta.meta.entydige_objekter }}</td>
+        <td>{{ meta.properties.entydige_objekter }}</td>
     </tr>
     <tr>
         <td>Geometrisk konsistens mellem objekter</td>
-        <td>{{ meta.meta.geometrisk_konsistens }}</td>
+        <td>{{ meta.properties.geometrisk_konsistens }}</td>
     </tr>
     <tr>
         <td>Geometrisk konsistens med objekter i andre</td>
-        <td>{{ meta.meta.geometrisk_konsistens_andre }}</td>
+        <td>{{ meta.properties.geometrisk_konsistens_andre }}</td>
     </tr>
     </tbody>
 </table>
@@ -209,4 +209,5 @@
         </tr>
     {% endfor %}
 </table>
+
 
