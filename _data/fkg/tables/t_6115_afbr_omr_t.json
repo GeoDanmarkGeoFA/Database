@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "afbr_nr >= 1 AND afbr_nr <= 99999"
@@ -62,10 +64,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -85,10 +88,11 @@
                 "fkg.d_6115_afbr_type.afbr_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -106,10 +110,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -127,10 +132,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -166,6 +172,13 @@
             "check": "afbr_nr >= 1 AND afbr_nr <= 99999"
         },
         {
+            "name": "t_6115_afbr_omr_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_6115_afbr_omr_d_6115_afbr_type_fk",
             "constraint": "foreign",
             "columns": [
@@ -186,16 +199,11 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_6115_afbr_omr_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6115_afbr_omr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6115_afbr_omr_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6115_afbr_omr_t\/constraints",

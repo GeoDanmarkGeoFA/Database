@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "data_oprindelse"
@@ -62,10 +64,11 @@
                 "fkg.d_basis_omraade.omraade_nr"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omr_nr"
@@ -85,10 +88,11 @@
                 "fkg.d_6200_geologi.geologi_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "geologi_k"
@@ -108,10 +112,11 @@
                 "fkg.d_6200_jordtype.jordtype_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "jord_ty_k"
@@ -131,10 +136,11 @@
                 "fkg.d_6200_terraen.terraen_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "terraen_k"
@@ -154,10 +160,11 @@
                 "fkg.d_6200_kompleksitet.kompleksitet_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kompleks_k"
@@ -175,10 +182,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vand_elem"
@@ -196,10 +204,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "farvand_om"
@@ -217,10 +226,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "strandbred"
@@ -238,10 +248,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "afgraens"
@@ -259,10 +270,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omr_sam"
@@ -280,10 +292,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link1"
@@ -301,10 +314,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -322,10 +336,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -356,14 +371,32 @@
     ],
     "constraints": [
         {
-            "name": "t_6200_nat_geo_6200_kompleksitet_fk",
+            "name": "t_6200_nat_geo_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6200_nat_geo_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "kompleksitet_kode"
+                "versions_id"
             ],
-            "referenced_table": "d_6200_kompleksitet",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "kompleksitet_kode"
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6200_nat_geo_d_basis_omraade_fk",
+            "constraint": "foreign",
+            "columns": [
+                "omraade_nr"
+            ],
+            "referenced_table": "d_basis_omraade",
+            "referenced_columns": [
+                "omraade_nr"
             ]
         },
         {
@@ -400,36 +433,20 @@
             ]
         },
         {
-            "name": "t_6200_nat_geo_d_basis_omraade_fk",
+            "name": "t_6200_nat_geo_6200_kompleksitet_fk",
             "constraint": "foreign",
             "columns": [
-                "omraade_nr"
+                "kompleksitet_kode"
             ],
-            "referenced_table": "d_basis_omraade",
+            "referenced_table": "d_6200_kompleksitet",
             "referenced_columns": [
-                "omraade_nr"
-            ]
-        },
-        {
-            "name": "t_6200_nat_geo_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6200_nat_geo_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
+                "kompleksitet_kode"
             ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6200_nat_geo_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6200_nat_geo_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6200_nat_geo_t\/constraints",

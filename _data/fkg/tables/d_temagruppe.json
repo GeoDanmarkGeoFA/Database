@@ -14,10 +14,11 @@
             "_max_bytes": 1073741824,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -37,10 +38,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -60,10 +62,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -81,10 +84,11 @@
             "_max_bytes": 1073741824,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -125,7 +129,9 @@
             ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/constraints",

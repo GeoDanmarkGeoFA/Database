@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 80,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "ledn_nr"
@@ -62,10 +64,11 @@
                 "fkg.d_5003_ledn_type.ledn_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "ledn_t_k"
@@ -85,10 +88,11 @@
                 "fkg.d_5003_klasse.klasse_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "klasse_k"
@@ -106,10 +110,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "etabl_tid"
@@ -127,10 +132,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "start_dybde >= 0.1::double precision AND start_dybde <= 99.9::double precision"
@@ -150,10 +156,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "slut_dybde >= 0.1::double precision AND slut_dybde <= 99.9::double precision"
@@ -173,10 +180,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "start_kote >= '-10.0'::numeric::double precision AND start_kote <= 200.0::double precision"
@@ -196,10 +204,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "slut_kote >= '-10.0'::numeric::double precision AND slut_kote <= 200.0::double precision"
@@ -221,10 +230,11 @@
                 "fkg.d_basis_kotesystem.kotesystem_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kotesyst_k"
@@ -242,10 +252,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "fald_promille >= 0.0::double precision AND fald_promille <= 1000.0::double precision"
@@ -265,10 +276,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "diameter_mm::double precision >= 1::double precision AND diameter_mm::double precision <= 999::double precision"
@@ -288,10 +300,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "diameter_tommer >= 0.01::double precision AND diameter_tommer <= 39.99::double precision"
@@ -313,10 +326,11 @@
                 "fkg.d_basis_datakilde.datakilde_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "datakild_k"
@@ -334,10 +348,11 @@
             "_max_bytes": 1,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "praecis"
@@ -355,10 +370,11 @@
             "_max_bytes": 100,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "projektnr"
@@ -376,10 +392,11 @@
             "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kommentar"
@@ -397,10 +414,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -418,10 +436,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -439,10 +458,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -473,15 +493,29 @@
     ],
     "constraints": [
         {
-            "name": "t_5003_d_basis_datakilde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "datakilde_kode"
-            ],
-            "referenced_table": "d_basis_datakilde",
-            "referenced_columns": [
-                "datakilde_kode"
-            ]
+            "name": "t_5003_start_dybde_ck",
+            "constraint": "check",
+            "check": "start_dybde >= 0.1::double precision AND start_dybde <= 99.9::double precision"
+        },
+        {
+            "name": "t_5003_slut_dybde_ck",
+            "constraint": "check",
+            "check": "slut_dybde >= 0.1::double precision AND slut_dybde <= 99.9::double precision"
+        },
+        {
+            "name": "t_5003_start_kote_ck",
+            "constraint": "check",
+            "check": "start_kote >= '-10.0'::numeric::double precision AND start_kote <= 200.0::double precision"
+        },
+        {
+            "name": "t_5003_slut_kote_ck",
+            "constraint": "check",
+            "check": "slut_kote >= '-10.0'::numeric::double precision AND slut_kote <= 200.0::double precision"
+        },
+        {
+            "name": "t_5003_fald_promille_ck",
+            "constraint": "check",
+            "check": "fald_promille >= 0.0::double precision AND fald_promille <= 1000.0::double precision"
         },
         {
             "name": "t_5003_diameter_mm_ck",
@@ -494,36 +528,10 @@
             "check": "diameter_tommer >= 0.01::double precision AND diameter_tommer <= 39.99::double precision"
         },
         {
-            "name": "t_5003_draenledn_d_5003_klasse_fk",
-            "constraint": "foreign",
+            "name": "t_5003_draenledn_pk",
+            "constraint": "primary",
             "columns": [
-                "klasse_kode"
-            ],
-            "referenced_table": "d_5003_klasse",
-            "referenced_columns": [
-                "klasse_kode"
-            ]
-        },
-        {
-            "name": "t_5003_draenledn_d_5003_ledn_type_fk",
-            "constraint": "foreign",
-            "columns": [
-                "ledn_type_kode"
-            ],
-            "referenced_table": "d_5003_ledn_type",
-            "referenced_columns": [
-                "ledn_type_kode"
-            ]
-        },
-        {
-            "name": "t_5003_draenledn_d_basis_kotesystem_fk",
-            "constraint": "foreign",
-            "columns": [
-                "kotesystem_kode"
-            ],
-            "referenced_table": "d_basis_kotesystem",
-            "referenced_columns": [
-                "kotesystem_kode"
+                "versions_id"
             ]
         },
         {
@@ -538,39 +546,53 @@
             ]
         },
         {
-            "name": "t_5003_draenledn_pk",
-            "constraint": "primary",
+            "name": "t_5003_draenledn_d_5003_ledn_type_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "ledn_type_kode"
+            ],
+            "referenced_table": "d_5003_ledn_type",
+            "referenced_columns": [
+                "ledn_type_kode"
             ]
         },
         {
-            "name": "t_5003_fald_promille_ck",
-            "constraint": "check",
-            "check": "fald_promille >= 0.0::double precision AND fald_promille <= 1000.0::double precision"
+            "name": "t_5003_draenledn_d_5003_klasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "klasse_kode"
+            ],
+            "referenced_table": "d_5003_klasse",
+            "referenced_columns": [
+                "klasse_kode"
+            ]
         },
         {
-            "name": "t_5003_slut_dybde_ck",
-            "constraint": "check",
-            "check": "slut_dybde >= 0.1::double precision AND slut_dybde <= 99.9::double precision"
+            "name": "t_5003_draenledn_d_basis_kotesystem_fk",
+            "constraint": "foreign",
+            "columns": [
+                "kotesystem_kode"
+            ],
+            "referenced_table": "d_basis_kotesystem",
+            "referenced_columns": [
+                "kotesystem_kode"
+            ]
         },
         {
-            "name": "t_5003_slut_kote_ck",
-            "constraint": "check",
-            "check": "slut_kote >= '-10.0'::numeric::double precision AND slut_kote <= 200.0::double precision"
-        },
-        {
-            "name": "t_5003_start_dybde_ck",
-            "constraint": "check",
-            "check": "start_dybde >= 0.1::double precision AND start_dybde <= 99.9::double precision"
-        },
-        {
-            "name": "t_5003_start_kote_ck",
-            "constraint": "check",
-            "check": "start_kote >= '-10.0'::numeric::double precision AND start_kote <= 200.0::double precision"
+            "name": "t_5003_d_basis_datakilde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "datakilde_kode"
+            ],
+            "referenced_table": "d_basis_datakilde",
+            "referenced_columns": [
+                "datakilde_kode"
+            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5003_draenledn_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5003_draenledn_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5003_draenledn_t\/constraints",

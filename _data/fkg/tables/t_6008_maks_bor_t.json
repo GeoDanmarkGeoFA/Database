@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "boredybde >= 1 AND boredybde <= 99"
@@ -62,10 +64,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -83,10 +86,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -122,6 +126,13 @@
             "check": "boredybde >= 1 AND boredybde <= 99"
         },
         {
+            "name": "t_6008_maks_bor_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_6008_maks_bor_generel_fk",
             "constraint": "foreign",
             "columns": [
@@ -131,16 +142,11 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_6008_maks_bor_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6008_maks_bor_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6008_maks_bor_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6008_maks_bor_t\/constraints",

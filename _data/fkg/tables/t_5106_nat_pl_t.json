@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_5106_pleje_type.pleje_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "pleje_ty_k"
@@ -62,10 +64,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "omr_nr >= 1 AND omr_nr <= 99999"
@@ -85,10 +88,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omr_navn"
@@ -106,10 +110,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "fortidsmnr"
@@ -129,10 +134,11 @@
                 "fkg.d_5106_faciliteter.facilitet_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "facilite_k"
@@ -150,10 +156,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "aftale_ty"
@@ -171,10 +178,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "gyldig_fra"
@@ -192,10 +200,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "gyldig_til"
@@ -215,10 +224,11 @@
                 "fkg.d_basis_ejerstatus.ejerstatus_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "ejerstat_k"
@@ -236,10 +246,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -257,10 +268,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "projekt_ty"
@@ -278,10 +290,11 @@
             "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "dyrehold"
@@ -299,10 +312,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "antal_moder >= 0 AND antal_moder <= 999"
@@ -322,10 +336,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "chr >= 0 AND chr <= 9999999"
@@ -345,10 +360,11 @@
             "_max_bytes": 32,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "cvr_opslag"
@@ -366,10 +382,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "navn"
@@ -387,10 +404,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "telefon >= 10000000 AND telefon <= 99999999"
@@ -410,10 +428,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "mobil >= 10000000 AND mobil <= 99999999"
@@ -433,10 +452,11 @@
             "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "mail"
@@ -454,10 +474,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "ajour >= '2006-12-31'::date AND ajour <= '2999-12-31'::date"
@@ -477,10 +498,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -498,10 +520,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -532,9 +555,9 @@
     ],
     "constraints": [
         {
-            "name": "t_5106_nat_pl_ajour_ck",
+            "name": "t_5106_nat_pl_omr_nr_ck",
             "constraint": "check",
-            "check": "ajour >= '2006-12-31'::date AND ajour <= '2999-12-31'::date"
+            "check": "omr_nr >= 1 AND omr_nr <= 99999"
         },
         {
             "name": "t_5106_nat_pl_antal_moder_ck",
@@ -547,36 +570,25 @@
             "check": "chr >= 0 AND chr <= 9999999"
         },
         {
-            "name": "t_5106_nat_pl_d_5106_faciliteter_fk",
-            "constraint": "foreign",
-            "columns": [
-                "facilitet_kode"
-            ],
-            "referenced_table": "d_5106_faciliteter",
-            "referenced_columns": [
-                "facilitet_kode"
-            ]
+            "name": "t_5106_nat_pl_telefon_ck",
+            "constraint": "check",
+            "check": "telefon >= 10000000 AND telefon <= 99999999"
         },
         {
-            "name": "t_5106_nat_pl_d_5106_pleje_type_fk",
-            "constraint": "foreign",
-            "columns": [
-                "pleje_type_kode"
-            ],
-            "referenced_table": "d_5106_pleje_type",
-            "referenced_columns": [
-                "pleje_type_kode"
-            ]
+            "name": "t_5106_nat_pl_mobil_ck",
+            "constraint": "check",
+            "check": "mobil >= 10000000 AND mobil <= 99999999"
         },
         {
-            "name": "t_5106_nat_pl_d_basis_ejerstatus_fk",
-            "constraint": "foreign",
+            "name": "t_5106_nat_pl_ajour_ck",
+            "constraint": "check",
+            "check": "ajour >= '2006-12-31'::date AND ajour <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_5106_nat_pl_pk",
+            "constraint": "primary",
             "columns": [
-                "ejerstatus_kode"
-            ],
-            "referenced_table": "d_basis_ejerstatus",
-            "referenced_columns": [
-                "ejerstatus_kode"
+                "versions_id"
             ]
         },
         {
@@ -591,29 +603,42 @@
             ]
         },
         {
-            "name": "t_5106_nat_pl_mobil_ck",
-            "constraint": "check",
-            "check": "mobil >= 10000000 AND mobil <= 99999999"
-        },
-        {
-            "name": "t_5106_nat_pl_omr_nr_ck",
-            "constraint": "check",
-            "check": "omr_nr >= 1 AND omr_nr <= 99999"
-        },
-        {
-            "name": "t_5106_nat_pl_pk",
-            "constraint": "primary",
+            "name": "t_5106_nat_pl_d_5106_pleje_type_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "pleje_type_kode"
+            ],
+            "referenced_table": "d_5106_pleje_type",
+            "referenced_columns": [
+                "pleje_type_kode"
             ]
         },
         {
-            "name": "t_5106_nat_pl_telefon_ck",
-            "constraint": "check",
-            "check": "telefon >= 10000000 AND telefon <= 99999999"
+            "name": "t_5106_nat_pl_d_5106_faciliteter_fk",
+            "constraint": "foreign",
+            "columns": [
+                "facilitet_kode"
+            ],
+            "referenced_table": "d_5106_faciliteter",
+            "referenced_columns": [
+                "facilitet_kode"
+            ]
+        },
+        {
+            "name": "t_5106_nat_pl_d_basis_ejerstatus_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ejerstatus_kode"
+            ],
+            "referenced_table": "d_basis_ejerstatus",
+            "referenced_columns": [
+                "ejerstatus_kode"
+            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5106_nat_pl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5106_nat_pl_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5106_nat_pl_t\/constraints",

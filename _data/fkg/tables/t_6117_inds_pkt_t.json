@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 80,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -60,10 +62,11 @@
             "_max_bytes": 1016,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -81,10 +84,11 @@
             "_max_bytes": 1016,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -102,10 +106,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "vej_afstand >= 1 AND vej_afstand <= 9999"
@@ -125,10 +130,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -148,10 +154,11 @@
                 "fkg.d_6117_indsatstype.indsatstype_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -169,10 +176,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -190,10 +198,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -211,10 +220,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -245,6 +255,18 @@
     ],
     "constraints": [
         {
+            "name": "t_6117_inds_pkt_vej_afstand_ck",
+            "constraint": "check",
+            "check": "vej_afstand >= 1 AND vej_afstand <= 9999"
+        },
+        {
+            "name": "t_6117_inds_pkt_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_6117_inds_pkt_d_6117_indsatstype_fk",
             "constraint": "foreign",
             "columns": [
@@ -265,21 +287,11 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_6117_inds_pkt_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6117_inds_pkt_vej_afstand_ck",
-            "constraint": "check",
-            "check": "vej_afstand >= 1 AND vej_afstand <= 9999"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6117_inds_pkt_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6117_inds_pkt_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6117_inds_pkt_t\/constraints",

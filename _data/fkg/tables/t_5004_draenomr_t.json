@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omr_navn"
@@ -62,10 +64,11 @@
                 "fkg.d_5004_omr_type.omr_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omr_type_k"
@@ -83,10 +86,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "etabl_tid"
@@ -104,10 +108,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "projektnr"
@@ -125,10 +130,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "bemaerk"
@@ -146,10 +152,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -167,10 +174,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -188,10 +196,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -222,14 +231,10 @@
     ],
     "constraints": [
         {
-            "name": "t_5004_draenomr_d_5004_omr_type_fk",
-            "constraint": "foreign",
+            "name": "t_5004_draenomr_pk",
+            "constraint": "primary",
             "columns": [
-                "omr_type_kode"
-            ],
-            "referenced_table": "d_5004_omr_type",
-            "referenced_columns": [
-                "omr_type_kode"
+                "versions_id"
             ]
         },
         {
@@ -244,14 +249,20 @@
             ]
         },
         {
-            "name": "t_5004_draenomr_pk",
-            "constraint": "primary",
+            "name": "t_5004_draenomr_d_5004_omr_type_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "omr_type_kode"
+            ],
+            "referenced_table": "d_5004_omr_type",
+            "referenced_columns": [
+                "omr_type_kode"
             ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5004_draenomr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5004_draenomr_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5004_draenomr_t\/constraints",

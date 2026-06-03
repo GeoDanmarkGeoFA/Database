@@ -14,10 +14,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -37,10 +38,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -60,10 +62,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -81,10 +84,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -104,10 +108,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -127,10 +132,11 @@
                 "fkg.d_basis_ansvarlig_myndighed.cvr_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -150,10 +156,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -173,10 +180,11 @@
                 "fkg.d_basis_oprindelse.oprindkode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -196,10 +204,11 @@
                 "fkg.d_basis_status.statuskode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -219,10 +228,11 @@
                 "fkg.d_basis_offentlig.off_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -240,10 +250,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -261,10 +272,11 @@
             "_max_bytes": 1016,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -306,6 +318,13 @@
         }
     ],
     "constraints": [
+        {
+            "name": "generel_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
         {
             "name": "generel_d_basis_ansvarlig_myndighed_fk",
             "constraint": "foreign",
@@ -349,16 +368,11 @@
             "referenced_columns": [
                 "statuskode"
             ]
-        },
-        {
-            "name": "generel_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/generel\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/generel\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/generel\/constraints",

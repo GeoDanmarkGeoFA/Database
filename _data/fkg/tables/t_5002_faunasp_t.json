@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 80,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -62,10 +64,11 @@
                 "fkg.d_5002_spaerring.spaerring_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -85,10 +88,11 @@
                 "fkg.d_5002_passage.passage_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -106,10 +110,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -127,10 +132,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -148,10 +154,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "saneret_aar >= 1800 AND saneret_aar <= 2999"
@@ -171,10 +178,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "prioritet >= 1 AND prioritet <= 9"
@@ -194,10 +202,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -215,10 +224,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -236,10 +246,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -269,6 +280,23 @@
         }
     ],
     "constraints": [
+        {
+            "name": "t_5002_faunasp_prioritet_ck",
+            "constraint": "check",
+            "check": "prioritet >= 1 AND prioritet <= 9"
+        },
+        {
+            "name": "t_5002_faunasp_saneret_aar_ck",
+            "constraint": "check",
+            "check": "saneret_aar >= 1800 AND saneret_aar <= 2999"
+        },
+        {
+            "name": "t_5002_faunasp_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
         {
             "name": "t_5002_faunasp_d_5002_passage_fk",
             "constraint": "foreign",
@@ -301,26 +329,11 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_5002_faunasp_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5002_faunasp_prioritet_ck",
-            "constraint": "check",
-            "check": "prioritet >= 1 AND prioritet <= 9"
-        },
-        {
-            "name": "t_5002_faunasp_saneret_aar_ck",
-            "constraint": "check",
-            "check": "saneret_aar >= 1800 AND saneret_aar <= 2999"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5002_faunasp_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5002_faunasp_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5002_faunasp_t\/constraints",

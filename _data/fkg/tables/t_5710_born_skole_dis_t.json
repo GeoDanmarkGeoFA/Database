@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udd_dis_nr"
@@ -60,10 +62,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udd_dis_na"
@@ -83,10 +86,11 @@
                 "fkg.d_5710_udd_distrikt_type.udd_distrikt_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udd_d_ty_k"
@@ -106,10 +110,11 @@
                 "fkg.d_basis_trin.trin_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "strtr_kode"
@@ -129,10 +134,11 @@
                 "fkg.d_basis_trin.trin_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "slutr_kode"
@@ -150,10 +156,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -171,10 +178,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -192,10 +200,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -217,10 +226,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "udd_hovedomr_nr >= 100000 AND udd_hovedomr_nr <= 999999"
@@ -240,10 +250,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udd_omr_na"
@@ -261,10 +272,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "udd_delomr_nr >= 1 AND udd_delomr_nr <= 999999"
@@ -284,10 +296,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udd_del_na"
@@ -313,6 +326,13 @@
         }
     ],
     "constraints": [
+        {
+            "name": "t_5710_born_skole_dis_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
         {
             "name": "t_5710_born_skole_dis_d_5710_udd_distrikt_type_fk",
             "constraint": "foreign",
@@ -358,24 +378,19 @@
             ]
         },
         {
-            "name": "t_5710_born_skole_dis_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
+            "name": "t_5710_born_skole_dis_udd_hovedomr_nr_ck",
+            "constraint": "check",
+            "check": "udd_hovedomr_nr >= 100000 AND udd_hovedomr_nr <= 999999"
         },
         {
             "name": "t_5710_born_skole_dis_udd_delomr_nr_ck",
             "constraint": "check",
             "check": "udd_delomr_nr >= 1 AND udd_delomr_nr <= 999999"
-        },
-        {
-            "name": "t_5710_born_skole_dis_udd_hovedomr_nr_ck",
-            "constraint": "check",
-            "check": "udd_hovedomr_nr >= 100000 AND udd_hovedomr_nr <= 999999"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5710_born_skole_dis_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5710_born_skole_dis_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5710_born_skole_dis_t\/constraints",

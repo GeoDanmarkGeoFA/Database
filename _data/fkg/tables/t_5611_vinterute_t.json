@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 80,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_nr"
@@ -60,10 +62,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_navn"
@@ -83,10 +86,11 @@
                 "fkg.d_5611_rutetype.rutetype_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_typ_k"
@@ -104,10 +108,11 @@
             "_max_bytes": 32,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "cvr_opslag"
@@ -125,10 +130,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vi_ent"
@@ -146,10 +152,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_nrsne"
@@ -167,10 +174,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_e_sal"
@@ -188,10 +196,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_nrsal"
@@ -209,10 +218,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -230,10 +240,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -257,10 +268,11 @@
                 "fkg.d_5611_rute_opgave.rute_opgave_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -287,6 +299,13 @@
     ],
     "constraints": [
         {
+            "name": "t_5611_vinterute_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_5611_vinterute_generel_fk",
             "constraint": "foreign",
             "columns": [
@@ -295,24 +314,6 @@
             "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
-            ]
-        },
-        {
-            "name": "t_5611_vinterute_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5611_vinterute_rute_opgave_kode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "rute_opgave_kode"
-            ],
-            "referenced_table": "d_5611_rute_opgave",
-            "referenced_columns": [
-                "rute_opgave_kode"
             ]
         },
         {
@@ -325,9 +326,22 @@
             "referenced_columns": [
                 "rutetype_kode"
             ]
+        },
+        {
+            "name": "t_5611_vinterute_rute_opgave_kode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "rute_opgave_kode"
+            ],
+            "referenced_table": "d_5611_rute_opgave",
+            "referenced_columns": [
+                "rute_opgave_kode"
+            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5611_vinterute_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5611_vinterute_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5611_vinterute_t\/constraints",

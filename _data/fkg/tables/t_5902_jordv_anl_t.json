@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "brine_maengde >= 1 AND brine_maengde <= 99999"
@@ -62,10 +64,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "brine_bl"
@@ -83,10 +86,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "strenge_antal >= 1 AND strenge_antal <= 999"
@@ -106,10 +110,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "strenge_laengde_samlede >= 1 AND strenge_laengde_samlede <= 9999"
@@ -129,10 +134,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "tilladelses_dato >= '2006-12-31'::date AND tilladelses_dato <= '2999-12-31'::date"
@@ -152,10 +158,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "faerdigmeldingsdato >= '2006-12-31'::date AND faerdigmeldingsdato <= '2999-12-31'::date"
@@ -177,10 +184,11 @@
                 "fkg.d_5902_vaeske_type.vaesketype_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vaeskety_k"
@@ -198,10 +206,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "gyldig_fra"
@@ -219,10 +228,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "gyldig_til"
@@ -240,10 +250,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -263,10 +274,11 @@
                 "fkg.d_basis_sag_status.sag_status_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sag_stat_k"
@@ -284,10 +296,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -305,10 +318,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -344,6 +358,44 @@
             "check": "brine_maengde >= 1 AND brine_maengde <= 99999"
         },
         {
+            "name": "t_5902_jordv_anl_strenge_antal_ck",
+            "constraint": "check",
+            "check": "strenge_antal >= 1 AND strenge_antal <= 999"
+        },
+        {
+            "name": "t_5902_jordv_anl_strenge_laengde_samlede_ck",
+            "constraint": "check",
+            "check": "strenge_laengde_samlede >= 1 AND strenge_laengde_samlede <= 9999"
+        },
+        {
+            "name": "t_5902_jordv_anl_tilladelses_dato_ck",
+            "constraint": "check",
+            "check": "tilladelses_dato >= '2006-12-31'::date AND tilladelses_dato <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_5902_jordv_anl_faerdigmeldingsdato_ck",
+            "constraint": "check",
+            "check": "faerdigmeldingsdato >= '2006-12-31'::date AND faerdigmeldingsdato <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_5902_jordv_anl_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5902_jordv_anl_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_5902_jordv_anl_d_5902_vaeske_type_fk",
             "constraint": "foreign",
             "columns": [
@@ -364,47 +416,11 @@
             "referenced_columns": [
                 "sag_status_kode"
             ]
-        },
-        {
-            "name": "t_5902_jordv_anl_faerdigmeldingsdato_ck",
-            "constraint": "check",
-            "check": "faerdigmeldingsdato >= '2006-12-31'::date AND faerdigmeldingsdato <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_5902_jordv_anl_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5902_jordv_anl_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5902_jordv_anl_strenge_antal_ck",
-            "constraint": "check",
-            "check": "strenge_antal >= 1 AND strenge_antal <= 999"
-        },
-        {
-            "name": "t_5902_jordv_anl_strenge_laengde_samlede_ck",
-            "constraint": "check",
-            "check": "strenge_laengde_samlede >= 1 AND strenge_laengde_samlede <= 9999"
-        },
-        {
-            "name": "t_5902_jordv_anl_tilladelses_dato_ck",
-            "constraint": "check",
-            "check": "tilladelses_dato >= '2006-12-31'::date AND tilladelses_dato <= '2999-12-31'::date"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5902_jordv_anl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5902_jordv_anl_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5902_jordv_anl_t\/constraints",

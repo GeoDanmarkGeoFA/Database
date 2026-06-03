@@ -14,10 +14,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -37,10 +38,11 @@
             "_max_bytes": 1073741824,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -60,10 +62,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "geo = ANY (ARRAY['P'::bpchar, 'L'::bpchar, 'F'::bpchar]"
@@ -83,10 +86,11 @@
             "_max_bytes": 1073741824,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -108,10 +112,11 @@
                 "fkg.d_temagruppe.temagruppe_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -146,15 +151,9 @@
     ],
     "constraints": [
         {
-            "name": "d_tabel_d_temagruppe_fk",
-            "constraint": "foreign",
-            "columns": [
-                "temagruppe_id"
-            ],
-            "referenced_table": "d_temagruppe",
-            "referenced_columns": [
-                "temagruppe_id"
-            ]
+            "name": "geo_ck",
+            "constraint": "check",
+            "check": "geo = ANY (ARRAY['P'::bpchar, 'L'::bpchar, 'F'::bpchar]"
         },
         {
             "name": "d_tabel_pk",
@@ -178,12 +177,20 @@
             ]
         },
         {
-            "name": "geo_ck",
-            "constraint": "check",
-            "check": "geo = ANY (ARRAY['P'::bpchar, 'L'::bpchar, 'F'::bpchar]"
+            "name": "d_tabel_d_temagruppe_fk",
+            "constraint": "foreign",
+            "columns": [
+                "temagruppe_id"
+            ],
+            "referenced_table": "d_temagruppe",
+            "referenced_columns": [
+                "temagruppe_id"
+            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_tabel\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_tabel\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_tabel\/constraints",

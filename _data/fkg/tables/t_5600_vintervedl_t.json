@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_5600_vinterklasse.vinterklasse_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vi_klas_k"
@@ -62,10 +64,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "adm_vejnr >= 1 AND adm_vejnr <= 9999999"
@@ -85,10 +88,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "frakm >= 1 AND frakm <= 999"
@@ -108,10 +112,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "fram >= 1 AND fram <= 999"
@@ -131,10 +136,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "tilkm >= 1 AND tilkm <= 999"
@@ -154,10 +160,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "tilm >= 1 AND tilm <= 999"
@@ -179,10 +186,11 @@
                 "fkg.d_basis_sted_metode.sted_metode_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sted_met_k"
@@ -200,10 +208,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -221,10 +230,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -242,10 +252,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -276,22 +287,6 @@
     ],
     "constraints": [
         {
-            "name": "t_5600_vintervedl_adm_vejnr_ck",
-            "constraint": "check",
-            "check": "adm_vejnr >= 1 AND adm_vejnr <= 9999999"
-        },
-        {
-            "name": "t_5600_vintervedl_d_5600_vinterklasse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vinterklasse_kode"
-            ],
-            "referenced_table": "d_5600_vinterklasse",
-            "referenced_columns": [
-                "vinterklasse_kode"
-            ]
-        },
-        {
             "name": "t_5600_vintervedl_d_basis_sted_metode_fk",
             "constraint": "foreign",
             "columns": [
@@ -303,6 +298,11 @@
             ]
         },
         {
+            "name": "t_5600_vintervedl_adm_vejnr_ck",
+            "constraint": "check",
+            "check": "adm_vejnr >= 1 AND adm_vejnr <= 9999999"
+        },
+        {
             "name": "t_5600_vintervedl_frakm_ck",
             "constraint": "check",
             "check": "frakm >= 1 AND frakm <= 999"
@@ -311,6 +311,23 @@
             "name": "t_5600_vintervedl_fram_ck",
             "constraint": "check",
             "check": "fram >= 1 AND fram <= 999"
+        },
+        {
+            "name": "t_5600_vintervedl_tilkm_ck",
+            "constraint": "check",
+            "check": "tilkm >= 1 AND tilkm <= 999"
+        },
+        {
+            "name": "t_5600_vintervedl_tilm_ck",
+            "constraint": "check",
+            "check": "tilm >= 1 AND tilm <= 999"
+        },
+        {
+            "name": "t_5600_vintervedl_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
         },
         {
             "name": "t_5600_vintervedl_generel_fk",
@@ -324,24 +341,20 @@
             ]
         },
         {
-            "name": "t_5600_vintervedl_pk",
-            "constraint": "primary",
+            "name": "t_5600_vintervedl_d_5600_vinterklasse_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "vinterklasse_kode"
+            ],
+            "referenced_table": "d_5600_vinterklasse",
+            "referenced_columns": [
+                "vinterklasse_kode"
             ]
-        },
-        {
-            "name": "t_5600_vintervedl_tilkm_ck",
-            "constraint": "check",
-            "check": "tilkm >= 1 AND tilkm <= 999"
-        },
-        {
-            "name": "t_5600_vintervedl_tilm_ck",
-            "constraint": "check",
-            "check": "tilm >= 1 AND tilm <= 999"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5600_vintervedl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5600_vintervedl_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5600_vintervedl_t\/constraints",

@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_5602_p_type.p_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_ty_k"
@@ -62,10 +64,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_zone_nr"
@@ -83,10 +86,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omraade"
@@ -106,10 +110,11 @@
                 "fkg.d_5602_p_tid.p_tid_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_tid_k"
@@ -127,10 +132,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_hv_st"
@@ -148,10 +154,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_hv_sl"
@@ -169,10 +176,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_loer_st"
@@ -190,10 +198,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_loer_sl"
@@ -211,10 +220,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_soen_st"
@@ -232,10 +242,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_soen_sl"
@@ -253,14 +264,15 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "p_pris_time >= 1::double precision AND p_pris_time <= 180::double precision",
-                "p_pris_time >= 0.01::double precision AND p_pris_time <= 999.99::double precision"
+                "p_pris_time >= 0.01::double precision AND p_pris_time <= 999.99::double precision",
+                "p_pris_time >= 1::double precision AND p_pris_time <= 180::double precision"
             ],
             "_short_name": "p_pris_tim"
         },
@@ -277,10 +289,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_pris_fri"
@@ -298,10 +311,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_stbet_hv"
@@ -319,10 +333,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_slbet_hv"
@@ -340,10 +355,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_stbet_lo"
@@ -361,10 +377,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_slbet_lo"
@@ -382,10 +399,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_stbet_so"
@@ -403,10 +421,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "p_slbet_so"
@@ -424,10 +443,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_personbil >= 0 AND p_pladser_personbil <= 9999"
@@ -447,10 +467,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_handicap >= 0 AND p_pladser_handicap <= 9999"
@@ -470,10 +491,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_elbil >= 0 AND p_pladser_elbil <= 9999"
@@ -493,10 +515,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_delebil >= 0 AND p_pladser_delebil <= 999"
@@ -516,10 +539,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_lastbil >= 0 AND p_pladser_lastbil <= 9999"
@@ -539,10 +563,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_mc >= 0 AND p_pladser_mc <= 9999"
@@ -562,10 +587,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_erhverv >= 0 AND p_pladser_erhverv <= 999"
@@ -585,10 +611,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_plads_taxaholdeplads >= 0 AND p_plads_taxaholdeplads <= 99"
@@ -608,10 +635,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_cykel >= 0 AND p_pladser_cykel <= 9999"
@@ -631,10 +659,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_ladcykel >= 0 AND p_pladser_ladcykel <= 9999"
@@ -654,10 +683,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_cykel_aflaast >= 0 AND p_pladser_cykel_aflaast <= 9999"
@@ -677,10 +707,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "p_pladser_cykel_overdaekket >= 0 AND p_pladser_cykel_overdaekket <= 9999"
@@ -700,10 +731,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -721,10 +753,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link1"
@@ -742,10 +775,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -767,10 +801,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adr_id"
@@ -788,10 +823,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "koord_e"
@@ -809,10 +845,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "koord_n"
@@ -832,10 +869,11 @@
                 "fkg.d_vejnavn.vejkode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vejkode"
@@ -853,10 +891,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "husnr"
@@ -876,10 +915,11 @@
                 "fkg.d_basis_postnr.postnr"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "postnr"
@@ -906,36 +946,80 @@
     ],
     "constraints": [
         {
-            "name": "t_5602_p_zoner_d_5602_p_tid_fk",
-            "constraint": "foreign",
-            "columns": [
-                "p_tid_kode"
-            ],
-            "referenced_table": "d_5602_p_tid",
-            "referenced_columns": [
-                "p_tid_kode"
-            ]
+            "name": "t_5602_p_zoner_p_pladser_mc_ck",
+            "constraint": "check",
+            "check": "p_pladser_mc >= 0 AND p_pladser_mc <= 9999"
         },
         {
-            "name": "t_5602_p_zoner_d_5602_p_type_fk",
-            "constraint": "foreign",
-            "columns": [
-                "p_type_kode"
-            ],
-            "referenced_table": "d_5602_p_type",
-            "referenced_columns": [
-                "p_type_kode"
-            ]
+            "name": "t_5602_p_zoner_p_pris_time_ck",
+            "constraint": "check",
+            "check": "p_pris_time >= 0.01::double precision AND p_pris_time <= 999.99::double precision"
         },
         {
-            "name": "t_5602_p_zoner_d_vejnavn_fk",
-            "constraint": "foreign",
+            "name": "t_5602_p_zoner_p_pris_fri_startperiode_ck",
+            "constraint": "check",
+            "check": "p_pris_time >= 1::double precision AND p_pris_time <= 180::double precision"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_personbil_ck",
+            "constraint": "check",
+            "check": "p_pladser_personbil >= 0 AND p_pladser_personbil <= 9999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_handicap_ck",
+            "constraint": "check",
+            "check": "p_pladser_handicap >= 0 AND p_pladser_handicap <= 9999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_elbil_ck",
+            "constraint": "check",
+            "check": "p_pladser_elbil >= 0 AND p_pladser_elbil <= 9999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_delebil_ck",
+            "constraint": "check",
+            "check": "p_pladser_delebil >= 0 AND p_pladser_delebil <= 999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_lastbil_ck",
+            "constraint": "check",
+            "check": "p_pladser_lastbil >= 0 AND p_pladser_lastbil <= 9999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_erhverv_ck",
+            "constraint": "check",
+            "check": "p_pladser_erhverv >= 0 AND p_pladser_erhverv <= 999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_plads_taxaholdeplads_ck",
+            "constraint": "check",
+            "check": "p_plads_taxaholdeplads >= 0 AND p_plads_taxaholdeplads <= 99"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_cykel_ck",
+            "constraint": "check",
+            "check": "p_pladser_cykel >= 0 AND p_pladser_cykel <= 9999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_ladcykel_ck",
+            "constraint": "check",
+            "check": "p_pladser_ladcykel >= 0 AND p_pladser_ladcykel <= 9999"
+        },
+        {
+            "name": "t_5602_p_zoner_p_pladser_cykel_aflaast_ck",
+            "constraint": "check",
+            "check": "p_pladser_cykel_aflaast >= 0 AND p_pladser_cykel_aflaast <= 9999"
+        },
+        {
+            "name": "t_5602_p_zonerp_pladser_cykel_overdaekket_ck",
+            "constraint": "check",
+            "check": "p_pladser_cykel_overdaekket >= 0 AND p_pladser_cykel_overdaekket <= 9999"
+        },
+        {
+            "name": "t_5602_p_zoner_pk",
+            "constraint": "primary",
             "columns": [
-                "vejkode"
-            ],
-            "referenced_table": "d_vejnavn",
-            "referenced_columns": [
-                "vejkode"
+                "versions_id"
             ]
         },
         {
@@ -950,75 +1034,36 @@
             ]
         },
         {
-            "name": "t_5602_p_zoner_p_plads_taxaholdeplads_ck",
-            "constraint": "check",
-            "check": "p_plads_taxaholdeplads >= 0 AND p_plads_taxaholdeplads <= 99"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_cykel_aflaast_ck",
-            "constraint": "check",
-            "check": "p_pladser_cykel_aflaast >= 0 AND p_pladser_cykel_aflaast <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_cykel_ck",
-            "constraint": "check",
-            "check": "p_pladser_cykel >= 0 AND p_pladser_cykel <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_delebil_ck",
-            "constraint": "check",
-            "check": "p_pladser_delebil >= 0 AND p_pladser_delebil <= 999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_elbil_ck",
-            "constraint": "check",
-            "check": "p_pladser_elbil >= 0 AND p_pladser_elbil <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_erhverv_ck",
-            "constraint": "check",
-            "check": "p_pladser_erhverv >= 0 AND p_pladser_erhverv <= 999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_handicap_ck",
-            "constraint": "check",
-            "check": "p_pladser_handicap >= 0 AND p_pladser_handicap <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_ladcykel_ck",
-            "constraint": "check",
-            "check": "p_pladser_ladcykel >= 0 AND p_pladser_ladcykel <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_lastbil_ck",
-            "constraint": "check",
-            "check": "p_pladser_lastbil >= 0 AND p_pladser_lastbil <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_mc_ck",
-            "constraint": "check",
-            "check": "p_pladser_mc >= 0 AND p_pladser_mc <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pladser_personbil_ck",
-            "constraint": "check",
-            "check": "p_pladser_personbil >= 0 AND p_pladser_personbil <= 9999"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pris_fri_startperiode_ck",
-            "constraint": "check",
-            "check": "p_pris_time >= 1::double precision AND p_pris_time <= 180::double precision"
-        },
-        {
-            "name": "t_5602_p_zoner_p_pris_time_ck",
-            "constraint": "check",
-            "check": "p_pris_time >= 0.01::double precision AND p_pris_time <= 999.99::double precision"
-        },
-        {
-            "name": "t_5602_p_zoner_pk",
-            "constraint": "primary",
+            "name": "t_5602_p_zoner_d_5602_p_type_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "p_type_kode"
+            ],
+            "referenced_table": "d_5602_p_type",
+            "referenced_columns": [
+                "p_type_kode"
+            ]
+        },
+        {
+            "name": "t_5602_p_zoner_d_5602_p_tid_fk",
+            "constraint": "foreign",
+            "columns": [
+                "p_tid_kode"
+            ],
+            "referenced_table": "d_5602_p_tid",
+            "referenced_columns": [
+                "p_tid_kode"
+            ]
+        },
+        {
+            "name": "t_5602_p_zoner_d_vejnavn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vejkode"
+            ],
+            "referenced_table": "d_vejnavn",
+            "referenced_columns": [
+                "vejkode"
             ]
         },
         {
@@ -1031,14 +1076,11 @@
             "referenced_columns": [
                 "postnr"
             ]
-        },
-        {
-            "name": "t_5602_p_zonerp_pladser_cykel_overdaekket_ck",
-            "constraint": "check",
-            "check": "p_pladser_cykel_overdaekket >= 0 AND p_pladser_cykel_overdaekket <= 9999"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5602_p_zoner_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5602_p_zoner_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5602_p_zoner_t\/constraints",

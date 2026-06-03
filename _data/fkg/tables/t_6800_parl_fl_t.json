@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_6800_vedlhold_f_type.vedlhold_f_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "f_typ_kode"
@@ -62,10 +64,11 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "biodivers"
@@ -83,10 +86,11 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "arb_sted"
@@ -104,10 +108,11 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "konto_nr"
@@ -125,10 +130,11 @@
             "_max_bytes": 32,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "cvr_opslag"
@@ -146,10 +152,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udf_entrep"
@@ -167,10 +174,11 @@
             "_max_bytes": 600,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udbyder"
@@ -188,10 +196,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -209,10 +218,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "anlaegsaar >= '1600-01-01'::date AND anlaegsaar <= '2999-12-31'::date"
@@ -232,10 +242,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
@@ -255,10 +266,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "udskiftningaar >= '2007-01-01'::date AND udskiftningaar <= '2999-12-31'::date"
@@ -278,10 +290,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "udtyndaar >= '2007-01-01'::date AND udtyndaar <= '2999-12-31'::date"
@@ -301,10 +314,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
@@ -324,10 +338,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "bredde >= 0.01::double precision AND bredde <= 9.99::double precision"
@@ -347,10 +362,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
@@ -370,10 +386,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "diameter >= 0.01::double precision AND diameter <= 99.99::double precision"
@@ -393,10 +410,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
@@ -416,10 +434,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "klip_sider >= 0 AND klip_sider <= 2"
@@ -439,10 +458,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "klip_flade >= 0.01::double precision AND klip_flade <= 99999.99::double precision"
@@ -462,10 +482,11 @@
             "_max_bytes": 1020,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "io_enhed"
@@ -483,10 +504,11 @@
             "_max_bytes": 500,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "iot_maal"
@@ -506,10 +528,11 @@
                 "fkg.d_basis_driftniv.driftniv_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "driftniv_k"
@@ -529,10 +552,11 @@
                 "fkg.d_basis_ukrudtsbek.ukrudtsbek_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "ukrudt_k"
@@ -552,10 +576,11 @@
                 "fkg.d_basis_tilstand.tilstand_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "tilstand_k"
@@ -573,10 +598,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "tilstand_dato >= '1600-01-01'::date AND tilstand_dato <= '2999-12-31'::date"
@@ -598,10 +624,11 @@
                 "fkg.d_vejnavn.vejkode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vejkode"
@@ -619,10 +646,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -640,10 +668,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link"
@@ -661,10 +690,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link1"
@@ -682,10 +712,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link2"
@@ -703,10 +734,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link3"
@@ -724,10 +756,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "geofafoto"
@@ -745,10 +778,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "geofafoto1"
@@ -766,10 +800,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "geofafoto2"
@@ -787,10 +822,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "geofafoto3"
@@ -808,10 +844,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -847,14 +884,77 @@
             "check": "anlaegsaar >= '1600-01-01'::date AND anlaegsaar <= '2999-12-31'::date"
         },
         {
-            "name": "t_6800_parl_fl_areal_ck",
+            "name": "t_6800_parl_fl_etabl_pleje_udloeb_ck",
             "constraint": "check",
-            "check": "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
+            "check": "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6800_parl_fl_udskiftningaar_ck",
+            "constraint": "check",
+            "check": "udskiftningaar >= '2007-01-01'::date AND udskiftningaar <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6800_parl_fl_udtyndaar_ck",
+            "constraint": "check",
+            "check": "udtyndaar >= '2007-01-01'::date AND udtyndaar <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6800_parl_fl_hoejde_ck",
+            "constraint": "check",
+            "check": "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
         },
         {
             "name": "t_6800_parl_fl_bredde_ck",
             "constraint": "check",
             "check": "bredde >= 0.01::double precision AND bredde <= 9.99::double precision"
+        },
+        {
+            "name": "t_6800_parl_fl_laengde_ck",
+            "constraint": "check",
+            "check": "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
+        },
+        {
+            "name": "t_6800_parl_fl_diameter_ck",
+            "constraint": "check",
+            "check": "diameter >= 0.01::double precision AND diameter <= 99.99::double precision"
+        },
+        {
+            "name": "t_6800_parl_fl_areal_ck",
+            "constraint": "check",
+            "check": "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
+        },
+        {
+            "name": "t_6800_parl_fl_klip_sider_ck",
+            "constraint": "check",
+            "check": "klip_sider >= 0 AND klip_sider <= 2"
+        },
+        {
+            "name": "t_6800_parl_fl_klip_flade_ck",
+            "constraint": "check",
+            "check": "klip_flade >= 0.01::double precision AND klip_flade <= 99999.99::double precision"
+        },
+        {
+            "name": "t_6800_parl_fl_tilstand_dato_ck",
+            "constraint": "check",
+            "check": "tilstand_dato >= '1600-01-01'::date AND tilstand_dato <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6800_parl_fl_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6800_parl_fl_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
         },
         {
             "name": "t_6800_parl_fl_d_6800_vedlhold_f_type_fk",
@@ -879,17 +979,6 @@
             ]
         },
         {
-            "name": "t_6800_parl_fl_d_basis_tilstand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "tilstand_kode"
-            ],
-            "referenced_table": "d_basis_tilstand",
-            "referenced_columns": [
-                "tilstand_kode"
-            ]
-        },
-        {
             "name": "t_6800_parl_fl_d_basis_ukrudtsbek_fk",
             "constraint": "foreign",
             "columns": [
@@ -898,6 +987,17 @@
             "referenced_table": "d_basis_ukrudtsbek",
             "referenced_columns": [
                 "ukrudtsbek_kode"
+            ]
+        },
+        {
+            "name": "t_6800_parl_fl_d_basis_tilstand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "tilstand_kode"
+            ],
+            "referenced_table": "d_basis_tilstand",
+            "referenced_columns": [
+                "tilstand_kode"
             ]
         },
         {
@@ -910,72 +1010,11 @@
             "referenced_columns": [
                 "vejkode"
             ]
-        },
-        {
-            "name": "t_6800_parl_fl_diameter_ck",
-            "constraint": "check",
-            "check": "diameter >= 0.01::double precision AND diameter <= 99.99::double precision"
-        },
-        {
-            "name": "t_6800_parl_fl_etabl_pleje_udloeb_ck",
-            "constraint": "check",
-            "check": "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6800_parl_fl_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6800_parl_fl_hoejde_ck",
-            "constraint": "check",
-            "check": "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
-        },
-        {
-            "name": "t_6800_parl_fl_klip_flade_ck",
-            "constraint": "check",
-            "check": "klip_flade >= 0.01::double precision AND klip_flade <= 99999.99::double precision"
-        },
-        {
-            "name": "t_6800_parl_fl_klip_sider_ck",
-            "constraint": "check",
-            "check": "klip_sider >= 0 AND klip_sider <= 2"
-        },
-        {
-            "name": "t_6800_parl_fl_laengde_ck",
-            "constraint": "check",
-            "check": "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
-        },
-        {
-            "name": "t_6800_parl_fl_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6800_parl_fl_tilstand_dato_ck",
-            "constraint": "check",
-            "check": "tilstand_dato >= '1600-01-01'::date AND tilstand_dato <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6800_parl_fl_udskiftningaar_ck",
-            "constraint": "check",
-            "check": "udskiftningaar >= '2007-01-01'::date AND udskiftningaar <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6800_parl_fl_udtyndaar_ck",
-            "constraint": "check",
-            "check": "udtyndaar >= '2007-01-01'::date AND udtyndaar <= '2999-12-31'::date"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6800_parl_fl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6800_parl_fl_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6800_parl_fl_t\/constraints",

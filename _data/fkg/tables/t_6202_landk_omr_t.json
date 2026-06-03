@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_basis_omraade.omraade_nr"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omr_nr"
@@ -62,10 +64,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "dato_besigtig >= '2006-12-31'::date AND dato_besigtig <= '2999-12-31'::date"
@@ -85,10 +88,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "besigt_nv"
@@ -106,10 +110,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "rev_dato >= '2006-12-31'::date AND rev_dato <= '2999-12-31'::date"
@@ -129,10 +134,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "landskab_b"
@@ -152,10 +158,11 @@
                 "fkg.d_6202_tidsdybde.tidsdybde_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "tidsdyb_k"
@@ -173,10 +180,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "tidsdyb_b"
@@ -196,10 +204,11 @@
                 "fkg.d_basis_tilstand.tilstand_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "intakt_k"
@@ -217,10 +226,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "intakt_b"
@@ -238,10 +248,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "noeglefunk"
@@ -259,10 +270,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "afg_nabo"
@@ -282,10 +294,11 @@
                 "fkg.d_6202_skala.skala_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "skala_k"
@@ -303,10 +316,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "skala_b"
@@ -326,10 +340,11 @@
                 "fkg.d_6202_rumlig_afgraensning.rumlig_afgraensning_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rum_afg_k"
@@ -347,10 +362,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rum_besk"
@@ -370,10 +386,11 @@
                 "fkg.d_6202_kompleksitet.kompleksitet_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kompleks_k"
@@ -391,10 +408,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kompleks_b"
@@ -414,10 +432,11 @@
                 "fkg.d_6202_struktur.struktur_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "struktur_k"
@@ -435,10 +454,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "struktur_b"
@@ -458,10 +478,11 @@
                 "fkg.d_6202_visuel_uro.visuel_uro_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vis_uro_k"
@@ -479,10 +500,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vis_uro_b"
@@ -500,10 +522,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kyst_forh"
@@ -521,10 +544,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "oplevelse"
@@ -542,10 +566,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link1"
@@ -563,10 +588,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link2"
@@ -584,10 +610,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -605,10 +632,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -639,69 +667,31 @@
     ],
     "constraints": [
         {
-            "name": "t_6202_landk_omr_d_6202_kompleksitet_fk",
-            "constraint": "foreign",
+            "name": "t_6202_landk_omr_dato_besigtig_ck",
+            "constraint": "check",
+            "check": "dato_besigtig >= '2006-12-31'::date AND dato_besigtig <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6202_landk_omr_rev_dato_ck",
+            "constraint": "check",
+            "check": "rev_dato >= '2006-12-31'::date AND rev_dato <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6202_landk_omr_pk",
+            "constraint": "primary",
             "columns": [
-                "kompleksitet_kode"
-            ],
-            "referenced_table": "d_6202_kompleksitet",
-            "referenced_columns": [
-                "kompleksitet_kode"
+                "versions_id"
             ]
         },
         {
-            "name": "t_6202_landk_omr_d_6202_rumlig_afgraensning_fk",
+            "name": "t_6202_landk_omr_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "rumlig_afgraensning_kode"
+                "versions_id"
             ],
-            "referenced_table": "d_6202_rumlig_afgraensning",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "rumlig_afgraensning_kode"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_6202_skala_fk",
-            "constraint": "foreign",
-            "columns": [
-                "skala_kode"
-            ],
-            "referenced_table": "d_6202_skala",
-            "referenced_columns": [
-                "skala_kode"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_6202_struktur_fk",
-            "constraint": "foreign",
-            "columns": [
-                "struktur_kode"
-            ],
-            "referenced_table": "d_6202_struktur",
-            "referenced_columns": [
-                "struktur_kode"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_6202_tidsdybde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "tidsdybde_kode"
-            ],
-            "referenced_table": "d_6202_tidsdybde",
-            "referenced_columns": [
-                "tidsdybde_kode"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_6202_visuel_uro_kode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "visuel_uro_kode"
-            ],
-            "referenced_table": "d_6202_visuel_uro",
-            "referenced_columns": [
-                "visuel_uro_kode"
+                "versions_id"
             ]
         },
         {
@@ -716,6 +706,17 @@
             ]
         },
         {
+            "name": "t_6202_landk_omr_d_6202_tidsdybde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "tidsdybde_kode"
+            ],
+            "referenced_table": "d_6202_tidsdybde",
+            "referenced_columns": [
+                "tidsdybde_kode"
+            ]
+        },
+        {
             "name": "t_6202_landk_omr_d_basis_tilstand_fk",
             "constraint": "foreign",
             "columns": [
@@ -727,35 +728,64 @@
             ]
         },
         {
-            "name": "t_6202_landk_omr_dato_besigtig_ck",
-            "constraint": "check",
-            "check": "dato_besigtig >= '2006-12-31'::date AND dato_besigtig <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6202_landk_omr_generel_fk",
+            "name": "t_6202_landk_omr_d_6202_skala_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "skala_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_6202_skala",
             "referenced_columns": [
-                "versions_id"
+                "skala_kode"
             ]
         },
         {
-            "name": "t_6202_landk_omr_pk",
-            "constraint": "primary",
+            "name": "t_6202_landk_omr_d_6202_rumlig_afgraensning_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "rumlig_afgraensning_kode"
+            ],
+            "referenced_table": "d_6202_rumlig_afgraensning",
+            "referenced_columns": [
+                "rumlig_afgraensning_kode"
             ]
         },
         {
-            "name": "t_6202_landk_omr_rev_dato_ck",
-            "constraint": "check",
-            "check": "rev_dato >= '2006-12-31'::date AND rev_dato <= '2999-12-31'::date"
+            "name": "t_6202_landk_omr_d_6202_kompleksitet_fk",
+            "constraint": "foreign",
+            "columns": [
+                "kompleksitet_kode"
+            ],
+            "referenced_table": "d_6202_kompleksitet",
+            "referenced_columns": [
+                "kompleksitet_kode"
+            ]
+        },
+        {
+            "name": "t_6202_landk_omr_d_6202_struktur_fk",
+            "constraint": "foreign",
+            "columns": [
+                "struktur_kode"
+            ],
+            "referenced_table": "d_6202_struktur",
+            "referenced_columns": [
+                "struktur_kode"
+            ]
+        },
+        {
+            "name": "t_6202_landk_omr_d_6202_visuel_uro_kode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "visuel_uro_kode"
+            ],
+            "referenced_table": "d_6202_visuel_uro",
+            "referenced_columns": [
+                "visuel_uro_kode"
+            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6202_landk_omr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6202_landk_omr_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6202_landk_omr_t\/constraints",

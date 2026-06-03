@@ -1,0 +1,786 @@
+{
+    "name": "t_5023_nedsivningsanlaeg_t",
+    "columns": [
+        {
+            "name": "versions_id",
+            "type": "uuid",
+            "comment": null,
+            "_num": 1,
+            "_typname": "uuid",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_reference": [
+                "fkg.generel.versions_id"
+            ],
+            "_restriction": null,
+            "is_nullable": false,
+            "_is_unique": true,
+            "_is_primary": true,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "ejer",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "er_del_af",
+            "type": "character varying(150)",
+            "comment": null,
+            "_num": 3,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 150,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 600,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "etableringstidspunkt",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "klimatilpasningsfunktion_afledning",
+            "type": "boolean",
+            "comment": null,
+            "_num": 5,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "klimatilpasningsfunktion_fordampning",
+            "type": "boolean",
+            "comment": null,
+            "_num": 6,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "klimatilpasningsfunktion_nedsivning",
+            "type": "boolean",
+            "comment": null,
+            "_num": 7,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "klimatilpasningsfunktion_regulering",
+            "type": "boolean",
+            "comment": null,
+            "_num": 8,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "klimatilpasningsfunktion_rensning",
+            "type": "boolean",
+            "comment": null,
+            "_num": 9,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "klimatilpasningsfunktion_reservoir",
+            "type": "boolean",
+            "comment": null,
+            "_num": 10,
+            "_typname": "bool",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "indtegningsmetode_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 11,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_indtegningsmetode.indtegningsmetode_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "noejagtighedsklasse_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 12,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_noejagtighedsklasse.noejagtighedsklasse_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "medietype_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 13,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_medietype.medietype_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "forsyningsart_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 14,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_forsyningsart.forsyningsart_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "fareklasse_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 15,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_fareklasse.fareklasse_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "sikkerhedshensyn",
+            "type": "character varying(500)",
+            "comment": null,
+            "_num": 16,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 500,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 2000,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "driftsstatus_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 17,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_driftsstatus.driftsstatus_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "ejerskabsforhold_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 18,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_ejerskabsforhold.ejerskabsforhold_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "niveautype_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 19,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": [
+                "fkg.d_basis_niveautype.niveautype_kode"
+            ],
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "bundkote",
+            "type": "numeric",
+            "comment": null,
+            "_num": 20,
+            "_typname": "numeric",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": [
+                "bundkote >= 0.1 AND bundkote <= 999.99"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "topkote",
+            "type": "numeric",
+            "comment": null,
+            "_num": 21,
+            "_typname": "numeric",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": [
+                "topkote >= 0.1 AND topkote <= 999.99"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "forsinkelsesvolumen",
+            "type": "numeric",
+            "comment": null,
+            "_num": 22,
+            "_typname": "numeric",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": [
+                "forsinkelsesvolumen >= 0.1 AND forsinkelsesvolumen <= 999.99"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "gentagelsesperiode",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 23,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "afloebskapacitet",
+            "type": "numeric",
+            "comment": null,
+            "_num": 24,
+            "_typname": "numeric",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": [
+                "afloebskapacitet >= 0.1 AND afloebskapacitet <= 999.99"
+            ],
+            "_short_name": null
+        },
+        {
+            "name": "beliggenhedskommune",
+            "type": "integer",
+            "comment": null,
+            "_num": 25,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "link",
+            "type": "character varying(1024)",
+            "comment": null,
+            "_num": 26,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "geometri",
+            "type": "geometry(MultiPolygon,25832)",
+            "comment": null,
+            "_num": 27,
+            "_typname": "geometry",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": [
+                "gist"
+            ],
+            "_checks": null,
+            "_geom_type": "MultiPolygon",
+            "_srid": "25832",
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "t_5023_nedsivningsanlaeg_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "t_5023_nedsivningsanlaeg_bundkote_ck",
+            "constraint": "check",
+            "check": "bundkote >= 0.1 AND bundkote <= 999.99"
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_topkote_ck",
+            "constraint": "check",
+            "check": "topkote >= 0.1 AND topkote <= 999.99"
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_forsinkelsesvolumen_ck",
+            "constraint": "check",
+            "check": "forsinkelsesvolumen >= 0.1 AND forsinkelsesvolumen <= 999.99"
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_afloebskapacitet_ck",
+            "constraint": "check",
+            "check": "afloebskapacitet >= 0.1 AND afloebskapacitet <= 999.99"
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_indtegningsmetode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "indtegningsmetode_kode"
+            ],
+            "referenced_table": "d_basis_indtegningsmetode",
+            "referenced_columns": [
+                "indtegningsmetode_kode"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_noejagtighedsklasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "noejagtighedsklasse_kode"
+            ],
+            "referenced_table": "d_basis_noejagtighedsklasse",
+            "referenced_columns": [
+                "noejagtighedsklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_medietype_fk",
+            "constraint": "foreign",
+            "columns": [
+                "medietype_kode"
+            ],
+            "referenced_table": "d_basis_medietype",
+            "referenced_columns": [
+                "medietype_kode"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_forsyningsart_fk",
+            "constraint": "foreign",
+            "columns": [
+                "forsyningsart_kode"
+            ],
+            "referenced_table": "d_basis_forsyningsart",
+            "referenced_columns": [
+                "forsyningsart_kode"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_fareklasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "fareklasse_kode"
+            ],
+            "referenced_table": "d_basis_fareklasse",
+            "referenced_columns": [
+                "fareklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_driftsstatus_fk",
+            "constraint": "foreign",
+            "columns": [
+                "driftsstatus_kode"
+            ],
+            "referenced_table": "d_basis_driftsstatus",
+            "referenced_columns": [
+                "driftsstatus_kode"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_ejerskabsforhold_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ejerskabsforhold_kode"
+            ],
+            "referenced_table": "d_basis_ejerskabsforhold",
+            "referenced_columns": [
+                "ejerskabsforhold_kode"
+            ]
+        },
+        {
+            "name": "t_5023_nedsivningsanlaeg_d_basis_niveautype_fk",
+            "constraint": "foreign",
+            "columns": [
+                "niveautype_kode"
+            ],
+            "referenced_table": "d_basis_niveautype",
+            "referenced_columns": [
+                "niveautype_kode"
+            ]
+        }
+    ],
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5023_nedsivningsanlaeg_t\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5023_nedsivningsanlaeg_t\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5023_nedsivningsanlaeg_t\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/t_5023_nedsivningsanlaeg_t\/privileges"
+    }
+}

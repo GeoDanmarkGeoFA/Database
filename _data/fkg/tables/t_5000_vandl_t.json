@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -39,10 +40,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -60,10 +62,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -81,10 +84,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -104,10 +108,11 @@
                 "fkg.d_5000_maalsaetning.maalsaetning_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -127,10 +132,11 @@
                 "fkg.d_5000_vandl_type.vandl_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -150,10 +156,11 @@
                 "fkg.d_basis_ejerstatus.ejerstatus_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -173,10 +180,11 @@
                 "fkg.d_5000_klasse.klasse_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -196,10 +204,11 @@
                 "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -217,10 +226,11 @@
             "_max_bytes": 400,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -238,10 +248,11 @@
             "_max_bytes": 1016,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -261,10 +272,11 @@
                 "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -282,10 +294,11 @@
             "_max_bytes": 400,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -305,10 +318,11 @@
                 "fkg.d_basis_dvfi_bedoemmelse.dvfi_bedoemmelse_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -326,10 +340,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "station_fra >= 0.0::double precision AND station_fra <= 200000.0::double precision"
@@ -349,10 +364,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "station_til >= 0.0::double precision AND station_til <= 200000.0::double precision"
@@ -372,10 +388,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "vandloebs_bredde >= 0.1::double precision AND vandloebs_bredde <= 99.9::double precision"
@@ -395,10 +412,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "vandfoeringsforhold >= 9 AND vandfoeringsforhold <= 45"
@@ -420,10 +438,11 @@
                 "fkg.d_basis_ja_nej.ja_nej_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -441,10 +460,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "fot_id >= 0 AND fot_id <= '2147483648'::bigint"
@@ -466,10 +486,11 @@
                 "fkg.d_basis_trussel_vand.trussel_vand_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -487,10 +508,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -508,10 +530,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -541,6 +564,38 @@
         }
     ],
     "constraints": [
+        {
+            "name": "t_5000_vandl_fot_id_ck",
+            "constraint": "check",
+            "check": "fot_id >= 0 AND fot_id <= '2147483648'::bigint"
+        },
+        {
+            "name": "t_5000_vandl_station_fra_ck",
+            "constraint": "check",
+            "check": "station_fra >= 0.0::double precision AND station_fra <= 200000.0::double precision"
+        },
+        {
+            "name": "t_5000_vandl_station_til_ck",
+            "constraint": "check",
+            "check": "station_til >= 0.0::double precision AND station_til <= 200000.0::double precision"
+        },
+        {
+            "name": "t_5000_vandl_vandfoeringsforhold_ck",
+            "constraint": "check",
+            "check": "vandfoeringsforhold >= 9 AND vandfoeringsforhold <= 45"
+        },
+        {
+            "name": "t_5000_vandl_vandloebs_bredde_ck",
+            "constraint": "check",
+            "check": "vandloebs_bredde >= 0.1::double precision AND vandloebs_bredde <= 99.9::double precision"
+        },
+        {
+            "name": "t_5000_vandl_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
         {
             "name": "t_5000_vandl_d_5000_klasse_fk",
             "constraint": "foreign",
@@ -641,11 +696,6 @@
             ]
         },
         {
-            "name": "t_5000_vandl_fot_id_ck",
-            "constraint": "check",
-            "check": "fot_id >= 0 AND fot_id <= '2147483648'::bigint"
-        },
-        {
             "name": "t_5000_vandl_generel_fk",
             "constraint": "foreign",
             "columns": [
@@ -655,36 +705,11 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_5000_vandl_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5000_vandl_station_fra_ck",
-            "constraint": "check",
-            "check": "station_fra >= 0.0::double precision AND station_fra <= 200000.0::double precision"
-        },
-        {
-            "name": "t_5000_vandl_station_til_ck",
-            "constraint": "check",
-            "check": "station_til >= 0.0::double precision AND station_til <= 200000.0::double precision"
-        },
-        {
-            "name": "t_5000_vandl_vandfoeringsforhold_ck",
-            "constraint": "check",
-            "check": "vandfoeringsforhold >= 9 AND vandfoeringsforhold <= 45"
-        },
-        {
-            "name": "t_5000_vandl_vandloebs_bredde_ck",
-            "constraint": "check",
-            "check": "vandloebs_bredde >= 0.1::double precision AND vandloebs_bredde <= 99.9::double precision"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5000_vandl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5000_vandl_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5000_vandl_t\/constraints",

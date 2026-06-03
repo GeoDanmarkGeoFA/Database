@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_6122_beskyt_rum.beskyt_rum_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "bes_r_k"
@@ -62,10 +64,11 @@
             "_max_bytes": 80,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "bes_r_nr"
@@ -83,10 +86,11 @@
             "_max_bytes": 400,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "mat_ejer"
@@ -104,10 +108,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udfoert_af"
@@ -125,10 +130,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udfoert_da"
@@ -146,10 +152,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "godkend_af"
@@ -167,10 +174,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "godkend_d"
@@ -188,10 +196,11 @@
             "_max_bytes": 1,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "dokument"
@@ -209,10 +218,11 @@
             "_max_bytes": 1,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "inspektion"
@@ -230,10 +240,11 @@
             "_max_bytes": 1,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "bbr"
@@ -251,10 +262,11 @@
             "_max_bytes": 1,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "lokalise"
@@ -272,10 +284,11 @@
             "_max_bytes": 1020,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "lokalise_a"
@@ -295,10 +308,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adgang_k"
@@ -318,10 +332,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adg_j_k"
@@ -341,10 +356,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adg_g_k"
@@ -364,10 +380,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adg_b_k"
@@ -387,10 +404,11 @@
                 "fkg.d_6122_beskyt_rum_anvendelse.beskyt_rum_anvendelse_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "bes_an_k"
@@ -408,10 +426,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "antal_pladser >= 0 AND antal_pladser <= 5000"
@@ -431,10 +450,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "antal_opholdsrum >= 0 AND antal_opholdsrum <= 10"
@@ -454,10 +474,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "trapper_antal >= 0 AND trapper_antal <= 99"
@@ -477,10 +498,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "adgangsdoerhuller_antal >= 0 AND adgangsdoerhuller_antal <= 99"
@@ -502,10 +524,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adg_s_k"
@@ -525,10 +548,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adg_s_f_k"
@@ -546,10 +570,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "noedudgange_antal >= 0 AND noedudgange_antal <= 99"
@@ -571,10 +596,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "noed_lem_k"
@@ -594,10 +620,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "taarn_k"
@@ -617,10 +644,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "b_daksel_k"
@@ -640,10 +668,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "svane_k"
@@ -663,10 +692,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vvs_sump_k"
@@ -686,10 +716,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vvs_gulv_k"
@@ -709,10 +740,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vvs_s_fu_k"
@@ -732,10 +764,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "fred_ins_k"
@@ -753,10 +786,11 @@
             "_max_bytes": 1024,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "note_fred"
@@ -774,10 +808,11 @@
             "_max_bytes": 2048,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "note_konst"
@@ -795,10 +830,11 @@
             "_max_bytes": 2048,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "oev_inst_b"
@@ -816,10 +852,11 @@
             "_max_bytes": 2048,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "oev_bem"
@@ -839,10 +876,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1kon_in_k"
@@ -862,10 +900,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1kon_ar_k"
@@ -885,10 +924,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1kon_ae_k"
@@ -908,10 +948,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1kon_g_k"
@@ -931,10 +972,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1kon_v_k"
@@ -954,10 +996,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1kon_l_k"
@@ -977,10 +1020,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1i_fugt_k"
@@ -1000,10 +1044,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1vandpy_k"
@@ -1023,10 +1068,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1vand_g_k"
@@ -1046,10 +1092,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1dyr_sp_k"
@@ -1069,10 +1116,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1dyr_ek_k"
@@ -1092,10 +1140,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1v_haan_k"
@@ -1115,10 +1164,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1f_slan_k"
@@ -1138,10 +1188,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1indsug_k"
@@ -1161,10 +1212,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_1over_v_k"
@@ -1184,10 +1236,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2kon_in_k"
@@ -1207,10 +1260,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2kon_ar_k"
@@ -1230,10 +1284,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2kon_ae_k"
@@ -1253,10 +1308,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2kon_g_k"
@@ -1276,10 +1332,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2kon_v_k"
@@ -1299,10 +1356,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2kon_l_k"
@@ -1322,10 +1380,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2i_fugt_k"
@@ -1345,10 +1404,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2vandpy_k"
@@ -1368,10 +1428,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2vand_g_k"
@@ -1391,10 +1452,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2dyr_sp_k"
@@ -1414,10 +1476,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2dyr_ek_k"
@@ -1437,10 +1500,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2v_haan_k"
@@ -1460,10 +1524,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2f_slan_k"
@@ -1483,10 +1548,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2indsug_k"
@@ -1506,10 +1572,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_2over_v_k"
@@ -1529,10 +1596,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3kon_in_k"
@@ -1552,10 +1620,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3kon_ar_k"
@@ -1575,10 +1644,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3kon_ae_k"
@@ -1598,10 +1668,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3kon_g_k"
@@ -1621,10 +1692,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3kon_v_k"
@@ -1644,10 +1716,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3kon_l_k"
@@ -1667,10 +1740,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3i_fugt_k"
@@ -1690,10 +1764,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3vandpy_k"
@@ -1713,10 +1788,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3vand_g_k"
@@ -1736,10 +1812,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3dyr_sp_k"
@@ -1759,10 +1836,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3dyr_ek_k"
@@ -1782,10 +1860,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3v_haan_k"
@@ -1805,10 +1884,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3f_slan_k"
@@ -1828,10 +1908,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3indsug_k"
@@ -1851,10 +1932,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_3over_v_k"
@@ -1874,10 +1956,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4kon_in_k"
@@ -1897,10 +1980,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4kon_ar_k"
@@ -1920,10 +2004,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4kon_ae_k"
@@ -1943,10 +2028,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4kon_g_k"
@@ -1966,10 +2052,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4kon_v_k"
@@ -1989,10 +2076,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4kon_l_k"
@@ -2012,10 +2100,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4i_fugt_k"
@@ -2035,10 +2124,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4vandpy_k"
@@ -2058,10 +2148,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4vand_g_k"
@@ -2081,10 +2172,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4dyr_sp_k"
@@ -2104,10 +2196,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4dyr_ek_k"
@@ -2127,10 +2220,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4v_haan_k"
@@ -2150,10 +2244,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4f_slan_k"
@@ -2173,10 +2268,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4indsug_k"
@@ -2196,10 +2292,11 @@
                 "fkg.d_6122_ja_nej_ved_ikke.ja_nej_ved_ikke_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "_4over_v_k"
@@ -2217,10 +2314,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -2238,10 +2336,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adr_id"
@@ -2261,10 +2360,11 @@
                 "fkg.d_vejnavn.vejkode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -2282,10 +2382,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -2303,10 +2404,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -2326,10 +2428,11 @@
                 "fkg.d_basis_postnr.postnr"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -2347,10 +2450,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -2368,10 +2472,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -2389,10 +2494,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -2423,9 +2529,9 @@
     ],
     "constraints": [
         {
-            "name": "t_6122_beskyttelsesrum_adgangsdoerhuller_antal_ck",
+            "name": "t_6122_beskyttelsesrum_antal_pladser_ck",
             "constraint": "check",
-            "check": "adgangsdoerhuller_antal >= 0 AND adgangsdoerhuller_antal <= 99"
+            "check": "antal_pladser >= 0 AND antal_pladser <= 5000"
         },
         {
             "name": "t_6122_beskyttelsesrum_antal_opholdsrum_ck",
@@ -2433,9 +2539,345 @@
             "check": "antal_opholdsrum >= 0 AND antal_opholdsrum <= 10"
         },
         {
-            "name": "t_6122_beskyttelsesrum_antal_pladser_ck",
+            "name": "t_6122_beskyttelsesrum_trapper_antal_ck",
             "constraint": "check",
-            "check": "antal_pladser >= 0 AND antal_pladser <= 5000"
+            "check": "trapper_antal >= 0 AND trapper_antal <= 99"
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_adgangsdoerhuller_antal_ck",
+            "constraint": "check",
+            "check": "adgangsdoerhuller_antal >= 0 AND adgangsdoerhuller_antal <= 99"
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_noedudgange_antal_ck",
+            "constraint": "check",
+            "check": "noedudgange_antal >= 0 AND noedudgange_antal <= 99"
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_fk",
+            "constraint": "foreign",
+            "columns": [
+                "beskyt_rum_type_kode"
+            ],
+            "referenced_table": "d_6122_beskyt_rum",
+            "referenced_columns": [
+                "beskyt_rum_type_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_jordarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_jordarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_gartnerarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_gartnerarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_bygningsarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_bygningsarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_anvendelse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "beskyt_rum_anvendelse_kode"
+            ],
+            "referenced_table": "d_6122_beskyt_rum_anvendelse",
+            "referenced_columns": [
+                "beskyt_rum_anvendelse_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgangsdoerhuller_staal_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_f_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgangsdoerhuller_staal_funktion_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_noedudgange_staallem_fk",
+            "constraint": "foreign",
+            "columns": [
+                "noedudgange_staallem_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_taarn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "taarn_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_betondaeksel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "betondaeksel_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_svanehals_fk",
+            "constraint": "foreign",
+            "columns": [
+                "svanehals_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_sump_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_gulvafloeb_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_gulvafloeb_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fungerer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_sump_fungerer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_fredstidsinstallationer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "fredstidsinstallationer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_ventilation_haanddreven_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
         },
         {
             "name": "t_6122_beskyttelsesrum_d_6122_1_forbindelsesslanger_fk",
@@ -2460,83 +2902,6 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_aendret_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_aendret_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_blotlagt_arm_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_blotlagt_armering_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_intakt_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_intakt_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_revner_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_vaegge_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
             "name": "t_6122_beskyttelsesrum_d_6122_1_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -2548,10 +2913,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_ekskrementer_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_intakt_fk",
             "constraint": "foreign",
             "columns": [
-                "_1_skadedyr_ekskrementer_kode"
+                "_2_konstruktion_intakt_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2559,10 +2924,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_spor_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_blotlagt_arm_fk",
             "constraint": "foreign",
             "columns": [
-                "_1_skadedyr_spor_kode"
+                "_2_konstruktion_blotlagt_armering_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2570,10 +2935,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_vand_daekker_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_aendret_fk",
             "constraint": "foreign",
             "columns": [
-                "_1_vand_daekker_gulv_kode"
+                "_2_konstruktion_aendret_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2581,10 +2946,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_vandpyt_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_1_vandpyt_gulv_kode"
+                "_2_konstruktion_revner_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2592,10 +2957,87 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_ventilation_haanddreven_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_vaegge_fk",
             "constraint": "foreign",
             "columns": [
-                "_1_ventilation_haanddreven_kode"
+                "_2_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_ventilation_haanddreven_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2625,83 +3067,6 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_aendret_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_konstruktion_aendret_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_blotlagt_arm_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_konstruktion_blotlagt_armering_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_intakt_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_konstruktion_intakt_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_konstruktion_revner_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_vaegge_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
             "name": "t_6122_beskyttelsesrum_d_6122_2_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -2713,10 +3078,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_ekskrementer_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_intakt_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_skadedyr_ekskrementer_kode"
+                "_3_konstruktion_intakt_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2724,10 +3089,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_spor_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_blotlagt_arm_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_skadedyr_spor_kode"
+                "_3_konstruktion_blotlagt_armering_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2735,10 +3100,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_vand_daekker_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_aendret_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_vand_daekker_gulv_kode"
+                "_3_konstruktion_aendret_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2746,10 +3111,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_vandpyt_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_vandpyt_gulv_kode"
+                "_3_konstruktion_revner_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2757,10 +3122,87 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_ventilation_haanddreven_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_vaegge_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_ventilation_haanddreven_kode"
+                "_3_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_ventilation_haanddreven_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2790,83 +3232,6 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_aendret_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_konstruktion_aendret_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_blotlagt_arm_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_konstruktion_blotlagt_armering_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_intakt_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_konstruktion_intakt_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_konstruktion_revner_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_vaegge_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
             "name": "t_6122_beskyttelsesrum_d_6122_3_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -2878,10 +3243,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_ekskrementer_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_intakt_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_skadedyr_ekskrementer_kode"
+                "_4_konstruktion_intakt_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2889,10 +3254,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_spor_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_blotlagt_arm_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_skadedyr_spor_kode"
+                "_4_konstruktion_blotlagt_armering_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2900,10 +3265,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_vand_daekker_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_aendret_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_vand_daekker_gulv_kode"
+                "_4_konstruktion_aendret_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2911,10 +3276,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_vandpyt_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_vandpyt_gulv_kode"
+                "_4_konstruktion_revner_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2922,10 +3287,87 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_ventilation_haanddreven_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_vaegge_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_ventilation_haanddreven_kode"
+                "_4_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_ventilation_haanddreven_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2955,83 +3397,6 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_aendret_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_konstruktion_aendret_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_blotlagt_arm_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_konstruktion_blotlagt_armering_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_intakt_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_konstruktion_intakt_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_konstruktion_revner_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_vaegge_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
             "name": "t_6122_beskyttelsesrum_d_6122_4_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -3040,248 +3405,6 @@
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
                 "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_ekskrementer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_skadedyr_ekskrementer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_spor_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_skadedyr_spor_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_vand_daekker_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_vand_daekker_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_vandpyt_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_vandpyt_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_ventilation_haanddreven_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_ventilation_haanddreven_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_bygningsarbejde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_bygningsarbejde_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_gartnerarbejde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_gartnerarbejde_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_jordarbejde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_jordarbejde_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_f_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgangsdoerhuller_staal_funktion_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgangsdoerhuller_staal_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_anvendelse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "beskyt_rum_anvendelse_kode"
-            ],
-            "referenced_table": "d_6122_beskyt_rum_anvendelse",
-            "referenced_columns": [
-                "beskyt_rum_anvendelse_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_fk",
-            "constraint": "foreign",
-            "columns": [
-                "beskyt_rum_type_kode"
-            ],
-            "referenced_table": "d_6122_beskyt_rum",
-            "referenced_columns": [
-                "beskyt_rum_type_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_betondaeksel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "betondaeksel_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_fredstidsinstallationer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "fredstidsinstallationer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_noedudgange_staallem_fk",
-            "constraint": "foreign",
-            "columns": [
-                "noedudgange_staallem_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_svanehals_fk",
-            "constraint": "foreign",
-            "columns": [
-                "svanehals_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_taarn_fk",
-            "constraint": "foreign",
-            "columns": [
-                "taarn_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_vvs_gulvafloeb_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vvs_gulvafloeb_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vvs_sump_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fungerer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vvs_sump_fungerer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_basis_postnr_fk",
-            "constraint": "foreign",
-            "columns": [
-                "postnr"
-            ],
-            "referenced_table": "d_basis_postnr",
-            "referenced_columns": [
-                "postnr"
             ]
         },
         {
@@ -3296,35 +3419,20 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_generel_fk",
+            "name": "t_6122_beskyttelsesrum_d_basis_postnr_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "postnr"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
-                "versions_id"
+                "postnr"
             ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_noedudgange_antal_ck",
-            "constraint": "check",
-            "check": "noedudgange_antal >= 0 AND noedudgange_antal <= 99"
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_trapper_antal_ck",
-            "constraint": "check",
-            "check": "trapper_antal >= 0 AND trapper_antal <= 99"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6122_beskyt_rum_eftersyn_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6122_beskyt_rum_eftersyn_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6122_beskyt_rum_eftersyn_t\/constraints",

@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_basis_invasivart.invasivart_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "invasiv_k"
@@ -62,10 +64,11 @@
             "_max_bytes": 120,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "inventoer"
@@ -83,10 +86,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "indb_sagsnr"
@@ -104,10 +108,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "obs_dato"
@@ -127,10 +132,11 @@
                 "fkg.d_basis_antal.antal_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "st_ant_k"
@@ -148,10 +154,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "start_udbredelse >= 0 AND start_udbredelse <= 9999",
@@ -172,10 +179,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sen_dato"
@@ -195,10 +203,11 @@
                 "fkg.d_basis_antal.antal_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sen_ant_k"
@@ -216,10 +225,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sen_udbred"
@@ -237,10 +247,11 @@
             "_max_bytes": 1000,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "lokalitet"
@@ -260,10 +271,11 @@
                 "fkg.d_basis_ia_status.ia_status_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "status_k"
@@ -281,10 +293,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "forekomst"
@@ -302,10 +315,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "bekaemp"
@@ -323,10 +337,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -344,10 +359,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link"
@@ -365,10 +381,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link1"
@@ -386,10 +403,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link2"
@@ -407,10 +425,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "foto_link3"
@@ -428,10 +447,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -449,10 +469,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -483,36 +504,20 @@
     ],
     "constraints": [
         {
-            "name": "t_5104_art_invas_d_basis_ia_status_kode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "ia_status_kode"
-            ],
-            "referenced_table": "d_basis_ia_status",
-            "referenced_columns": [
-                "ia_status_kode"
-            ]
+            "name": "t_5104_art_invas_start_udbredelse_ck",
+            "constraint": "check",
+            "check": "start_udbredelse >= 0 AND start_udbredelse <= 9999"
         },
         {
-            "name": "t_5104_art_invas_d_basis_seneste_tilsyn_antal_fk",
-            "constraint": "foreign",
-            "columns": [
-                "seneste_tilsyn_antal_kode"
-            ],
-            "referenced_table": "d_basis_antal",
-            "referenced_columns": [
-                "antal_kode"
-            ]
+            "name": "t_5104_art_invas_seneste_tilsyn_udbredelse_ck",
+            "constraint": "check",
+            "check": "start_udbredelse >= 0 AND start_udbredelse <= 9999"
         },
         {
-            "name": "t_5104_art_invas_d_basis_start_antal_fk",
-            "constraint": "foreign",
+            "name": "t_5104_art_invas_pk",
+            "constraint": "primary",
             "columns": [
-                "start_antal_kode"
-            ],
-            "referenced_table": "d_basis_antal",
-            "referenced_columns": [
-                "antal_kode"
+                "versions_id"
             ]
         },
         {
@@ -527,23 +532,6 @@
             ]
         },
         {
-            "name": "t_5104_art_invas_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5104_art_invas_seneste_tilsyn_udbredelse_ck",
-            "constraint": "check",
-            "check": "start_udbredelse >= 0 AND start_udbredelse <= 9999"
-        },
-        {
-            "name": "t_5104_art_invas_start_udbredelse_ck",
-            "constraint": "check",
-            "check": "start_udbredelse >= 0 AND start_udbredelse <= 9999"
-        },
-        {
             "name": "t_5104_art_invas_t_d_basis_invasivart",
             "constraint": "foreign",
             "columns": [
@@ -553,9 +541,44 @@
             "referenced_columns": [
                 "invasivart_kode"
             ]
+        },
+        {
+            "name": "t_5104_art_invas_d_basis_start_antal_fk",
+            "constraint": "foreign",
+            "columns": [
+                "start_antal_kode"
+            ],
+            "referenced_table": "d_basis_antal",
+            "referenced_columns": [
+                "antal_kode"
+            ]
+        },
+        {
+            "name": "t_5104_art_invas_d_basis_seneste_tilsyn_antal_fk",
+            "constraint": "foreign",
+            "columns": [
+                "seneste_tilsyn_antal_kode"
+            ],
+            "referenced_table": "d_basis_antal",
+            "referenced_columns": [
+                "antal_kode"
+            ]
+        },
+        {
+            "name": "t_5104_art_invas_d_basis_ia_status_kode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ia_status_kode"
+            ],
+            "referenced_table": "d_basis_ia_status",
+            "referenced_columns": [
+                "ia_status_kode"
+            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5104_art_invas_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5104_art_invas_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5104_art_invas_t\/constraints",

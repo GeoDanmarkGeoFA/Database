@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_6104_risikotype.risikotype_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -62,10 +64,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "cvr_risi_virk >= 10000000 AND cvr_risi_virk <= 99999999"
@@ -85,10 +88,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "kontakt_tlf >= 11111111 AND kontakt_tlf <= 99999999"
@@ -110,10 +114,11 @@
                 "fkg.d_6104_brandhaem.brandhaem_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -131,10 +136,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -152,10 +158,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -191,6 +198,18 @@
             "check": "cvr_risi_virk >= 10000000 AND cvr_risi_virk <= 99999999"
         },
         {
+            "name": "t_6104_risiko_virk_kontakt_tlf_ck",
+            "constraint": "check",
+            "check": "kontakt_tlf >= 11111111 AND kontakt_tlf <= 99999999"
+        },
+        {
+            "name": "t_6104_risiko_virk_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_6104_risiko_virk_d_6104_brandhaem_fk",
             "constraint": "foreign",
             "columns": [
@@ -222,21 +241,11 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_6104_risiko_virk_kontakt_tlf_ck",
-            "constraint": "check",
-            "check": "kontakt_tlf >= 11111111 AND kontakt_tlf <= 99999999"
-        },
-        {
-            "name": "t_6104_risiko_virk_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/constraints",

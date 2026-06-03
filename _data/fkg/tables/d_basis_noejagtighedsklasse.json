@@ -1,0 +1,123 @@
+{
+    "name": "d_basis_noejagtighedsklasse",
+    "columns": [
+        {
+            "name": "noejagtighedsklasse_kode",
+            "type": "integer",
+            "comment": null,
+            "_num": 1,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": false,
+            "_is_unique": true,
+            "_is_primary": true,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": [
+                "btree"
+            ],
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "noejagtighedsklasse",
+            "type": "character varying(20)",
+            "comment": null,
+            "_num": 2,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 20,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 80,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "aktiv",
+            "type": "integer",
+            "comment": null,
+            "_num": 3,
+            "_typname": "int4",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": false,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        },
+        {
+            "name": "begrebsdefinition",
+            "type": "character varying",
+            "comment": null,
+            "_num": 4,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": null
+        }
+    ],
+    "comment": null,
+    "indices": [
+        {
+            "name": "d_basis_noejagtighedsklasse_pk",
+            "method": "btree",
+            "unique": true,
+            "columns": [
+                "noejagtighedsklasse_kode"
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "name": "d_basis_noejagtighedsklasse_pk",
+            "constraint": "primary",
+            "columns": [
+                "noejagtighedsklasse_kode"
+            ]
+        }
+    ],
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
+        "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_noejagtighedsklasse\/columns",
+        "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_noejagtighedsklasse\/indices",
+        "constraints": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_noejagtighedsklasse\/constraints",
+        "privileges": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_noejagtighedsklasse\/privileges"
+    }
+}

@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_5612_vinterserviceomraade.vinterserviceomraade_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "v_servi_k"
@@ -62,10 +64,11 @@
             "_max_bytes": 80,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "v_servi"
@@ -83,10 +86,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "v_servi_na"
@@ -104,10 +108,11 @@
             "_max_bytes": 20,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_nr"
@@ -125,10 +130,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_na"
@@ -146,10 +152,11 @@
             "_max_bytes": 400,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vinter_besk"
@@ -167,10 +174,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "areal >= 1 AND areal <= 5000"
@@ -190,10 +198,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "norm_tid >= 1 AND norm_tid <= 5000"
@@ -213,10 +222,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -234,10 +244,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -259,10 +270,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -280,10 +292,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -301,10 +314,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -322,10 +336,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -352,6 +367,23 @@
     ],
     "constraints": [
         {
+            "name": "t_5612_vinterserviceomraade_t_areal_check",
+            "constraint": "check",
+            "check": "areal >= 1 AND areal <= 5000"
+        },
+        {
+            "name": "t_5612_vinterserviceomraade_t_norm_tid_check",
+            "constraint": "check",
+            "check": "norm_tid >= 1 AND norm_tid <= 5000"
+        },
+        {
+            "name": "t_5612_vinterserviceomr_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_5612_vinterserviceomr_generel_fk",
             "constraint": "foreign",
             "columns": [
@@ -359,13 +391,6 @@
             ],
             "referenced_table": "generel",
             "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5612_vinterserviceomr_pk",
-            "constraint": "primary",
-            "columns": [
                 "versions_id"
             ]
         },
@@ -379,19 +404,11 @@
             "referenced_columns": [
                 "vinterserviceomraade_kode"
             ]
-        },
-        {
-            "name": "t_5612_vinterserviceomraade_t_areal_check",
-            "constraint": "check",
-            "check": "areal >= 1 AND areal <= 5000"
-        },
-        {
-            "name": "t_5612_vinterserviceomraade_t_norm_tid_check",
-            "constraint": "check",
-            "check": "norm_tid >= 1 AND norm_tid <= 5000"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5612_vinterserviceomraade_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5612_vinterserviceomraade_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5612_vinterserviceomraade_t\/constraints",

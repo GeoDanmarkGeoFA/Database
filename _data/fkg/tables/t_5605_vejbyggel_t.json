@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_5605_dekl_type.dekl_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "dekl_ty_k"
@@ -64,10 +66,11 @@
                 "fkg.d_vejnavn.vejkode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vejkode"
@@ -85,10 +88,11 @@
             "_max_bytes": 28,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "cvf_vejkode"
@@ -106,10 +110,11 @@
             "_max_bytes": 1016,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "dekl_link"
@@ -127,10 +132,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "bredde >= 0.01::double precision AND bredde <= 999.99::double precision"
@@ -150,10 +156,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "forskydning >= '-999.99'::numeric::double precision AND forskydning <= 999.99::double precision"
@@ -173,10 +180,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -194,10 +202,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -215,10 +224,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -254,6 +264,18 @@
             "check": "bredde >= 0.01::double precision AND bredde <= 999.99::double precision"
         },
         {
+            "name": "t_5605_vejbyggel_forskydning_ck",
+            "constraint": "check",
+            "check": "forskydning >= '-999.99'::numeric::double precision AND forskydning <= 999.99::double precision"
+        },
+        {
+            "name": "t_5605_vejbyggel_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_5605_vejbyggel_d_5605_dekl_type_fk",
             "constraint": "foreign",
             "columns": [
@@ -276,11 +298,6 @@
             ]
         },
         {
-            "name": "t_5605_vejbyggel_forskydning_ck",
-            "constraint": "check",
-            "check": "forskydning >= '-999.99'::numeric::double precision AND forskydning <= 999.99::double precision"
-        },
-        {
             "name": "t_5605_vejbyggel_generel_fk",
             "constraint": "foreign",
             "columns": [
@@ -290,16 +307,11 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "t_5605_vejbyggel_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5605_vejbyggel_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5605_vejbyggel_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5605_vejbyggel_t\/constraints",

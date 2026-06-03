@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_5610_rute_type.rute_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rutetype_k"
@@ -64,10 +66,11 @@
                 "fkg.d_5610_rute_uty.rute_undertype_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_u_t_k"
@@ -87,10 +90,11 @@
                 "fkg.d_5610_planlaegningskort_type.planlaegningskort_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kort_type_k"
@@ -110,10 +114,11 @@
                 "fkg.d_basis_planstatus.planstatus_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "planstat_k"
@@ -131,10 +136,11 @@
             "_max_bytes": 1020,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_navn"
@@ -152,10 +158,11 @@
             "_max_bytes": 1020,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_nr"
@@ -173,10 +180,11 @@
             "_max_bytes": 12000,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "rute_beskrivelse"
@@ -196,10 +204,11 @@
                 "fkg.d_5610_plan_type.plan_type_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "plantype_k"
@@ -219,10 +228,11 @@
                 "fkg.d_5610_finansiering.finansiering_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "finans_k"
@@ -240,10 +250,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "aarstal"
@@ -261,10 +272,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "beloeb"
@@ -284,10 +296,11 @@
                 "fkg.d_5610_prioritering.prioritering_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "prior_k"
@@ -305,10 +318,11 @@
             "_max_bytes": 12000,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "potentiale"
@@ -328,10 +342,11 @@
                 "fkg.d_5610_eksisterende.eksisterende_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "eksis_k"
@@ -349,10 +364,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -374,10 +390,11 @@
             "_max_bytes": 1,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": null
@@ -395,10 +412,11 @@
             "_max_bytes": 1,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "falles_p_k"
@@ -432,58 +450,14 @@
             ]
         },
         {
-            "name": "t_5610_cykelplanlaegning_d_5610_eksisterende_fk",
+            "name": "t_5610_cykelplanlaegning_fk",
             "constraint": "foreign",
             "columns": [
-                "eksisterende_kode"
+                "versions_id"
             ],
-            "referenced_table": "d_5610_eksisterende",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "eksisterende_kode"
-            ]
-        },
-        {
-            "name": "t_5610_cykelplanlaegning_d_5610_finansiering_fk",
-            "constraint": "foreign",
-            "columns": [
-                "finansiering_kode"
-            ],
-            "referenced_table": "d_5610_finansiering",
-            "referenced_columns": [
-                "finansiering_kode"
-            ]
-        },
-        {
-            "name": "t_5610_cykelplanlaegning_d_5610_plan_type_fk",
-            "constraint": "foreign",
-            "columns": [
-                "plan_type_kode"
-            ],
-            "referenced_table": "d_5610_plan_type",
-            "referenced_columns": [
-                "plan_type_kode"
-            ]
-        },
-        {
-            "name": "t_5610_cykelplanlaegning_d_5610_planlaegningskort_fk",
-            "constraint": "foreign",
-            "columns": [
-                "planlaegningskort_type_kode"
-            ],
-            "referenced_table": "d_5610_planlaegningskort_type",
-            "referenced_columns": [
-                "planlaegningskort_type_kode"
-            ]
-        },
-        {
-            "name": "t_5610_cykelplanlaegning_d_5610_prioritering_fk",
-            "constraint": "foreign",
-            "columns": [
-                "prioritering_kode"
-            ],
-            "referenced_table": "d_5610_prioritering",
-            "referenced_columns": [
-                "prioritering_kode"
+                "versions_id"
             ]
         },
         {
@@ -509,6 +483,17 @@
             ]
         },
         {
+            "name": "t_5610_cykelplanlaegning_d_5610_planlaegningskort_fk",
+            "constraint": "foreign",
+            "columns": [
+                "planlaegningskort_type_kode"
+            ],
+            "referenced_table": "d_5610_planlaegningskort_type",
+            "referenced_columns": [
+                "planlaegningskort_type_kode"
+            ]
+        },
+        {
             "name": "t_5610_cykelplanlaegning_d_planstatus_fk",
             "constraint": "foreign",
             "columns": [
@@ -520,18 +505,53 @@
             ]
         },
         {
-            "name": "t_5610_cykelplanlaegning_fk",
+            "name": "t_5610_cykelplanlaegning_d_5610_plan_type_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "plan_type_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_5610_plan_type",
             "referenced_columns": [
-                "versions_id"
+                "plan_type_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_finansiering_fk",
+            "constraint": "foreign",
+            "columns": [
+                "finansiering_kode"
+            ],
+            "referenced_table": "d_5610_finansiering",
+            "referenced_columns": [
+                "finansiering_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_prioritering_fk",
+            "constraint": "foreign",
+            "columns": [
+                "prioritering_kode"
+            ],
+            "referenced_table": "d_5610_prioritering",
+            "referenced_columns": [
+                "prioritering_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_eksisterende_fk",
+            "constraint": "foreign",
+            "columns": [
+                "eksisterende_kode"
+            ],
+            "referenced_table": "d_5610_eksisterende",
+            "referenced_columns": [
+                "eksisterende_kode"
             ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5610_cykelplanlaegning_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5610_cykelplanlaegning_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5610_cykelplanlaegning_t\/constraints",

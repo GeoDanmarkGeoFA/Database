@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_basis_omraade.omraade_nr"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "omr_nr"
@@ -62,10 +64,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "delomr_nr"
@@ -85,10 +88,11 @@
                 "fkg.d_6203_karakterstyrke.karakterstyrke_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kar_styr_k"
@@ -106,10 +110,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "kar_styr_n"
@@ -127,10 +132,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "visuel_n"
@@ -150,10 +156,11 @@
                 "fkg.d_basis_tilstand.tilstand_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "tilst_k"
@@ -171,10 +178,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "tilst_n"
@@ -192,10 +200,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "udvikling"
@@ -215,10 +224,11 @@
                 "fkg.d_6203_saarbarhed.saarbarhed_kode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "saarbar_k"
@@ -236,10 +246,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "saarbar_n"
@@ -257,10 +268,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "tiltag"
@@ -278,10 +290,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -299,10 +312,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -333,47 +347,10 @@
     ],
     "constraints": [
         {
-            "name": "t_6203_landk_vur_d_6203_karakterstyrke_fk",
-            "constraint": "foreign",
+            "name": "t_6203_landk_vur_pk",
+            "constraint": "primary",
             "columns": [
-                "karakterstyrke_kode"
-            ],
-            "referenced_table": "d_6203_karakterstyrke",
-            "referenced_columns": [
-                "karakterstyrke_kode"
-            ]
-        },
-        {
-            "name": "t_6203_landk_vur_d_6203_saarbarhed_fk",
-            "constraint": "foreign",
-            "columns": [
-                "saarbarhed_kode"
-            ],
-            "referenced_table": "d_6203_saarbarhed",
-            "referenced_columns": [
-                "saarbarhed_kode"
-            ]
-        },
-        {
-            "name": "t_6203_landk_vur_d_basis_omraade_fk",
-            "constraint": "foreign",
-            "columns": [
-                "omraade_nr"
-            ],
-            "referenced_table": "d_basis_omraade",
-            "referenced_columns": [
-                "omraade_nr"
-            ]
-        },
-        {
-            "name": "t_6203_landk_vur_d_basis_tilstand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "tilstand_kode"
-            ],
-            "referenced_table": "d_basis_tilstand",
-            "referenced_columns": [
-                "tilstand_kode"
+                "versions_id"
             ]
         },
         {
@@ -388,14 +365,53 @@
             ]
         },
         {
-            "name": "t_6203_landk_vur_pk",
-            "constraint": "primary",
+            "name": "t_6203_landk_vur_d_basis_omraade_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "omraade_nr"
+            ],
+            "referenced_table": "d_basis_omraade",
+            "referenced_columns": [
+                "omraade_nr"
+            ]
+        },
+        {
+            "name": "t_6203_landk_vur_d_6203_karakterstyrke_fk",
+            "constraint": "foreign",
+            "columns": [
+                "karakterstyrke_kode"
+            ],
+            "referenced_table": "d_6203_karakterstyrke",
+            "referenced_columns": [
+                "karakterstyrke_kode"
+            ]
+        },
+        {
+            "name": "t_6203_landk_vur_d_basis_tilstand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "tilstand_kode"
+            ],
+            "referenced_table": "d_basis_tilstand",
+            "referenced_columns": [
+                "tilstand_kode"
+            ]
+        },
+        {
+            "name": "t_6203_landk_vur_d_6203_saarbarhed_fk",
+            "constraint": "foreign",
+            "columns": [
+                "saarbarhed_kode"
+            ],
+            "referenced_table": "d_6203_saarbarhed",
+            "referenced_columns": [
+                "saarbarhed_kode"
             ]
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6203_landk_vur_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6203_landk_vur_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_6203_landk_vur_t\/constraints",

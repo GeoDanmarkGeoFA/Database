@@ -16,10 +16,11 @@
                 "fkg.generel.versions_id"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": true,
             "_is_primary": true,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "btree"
             ],
@@ -41,10 +42,11 @@
                 "fkg.d_5200_affald.affald_prod_kode"
             ],
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "affald_pr_k"
@@ -62,10 +64,11 @@
             "_max_bytes": 32,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "cvr_opslag"
@@ -83,10 +86,11 @@
             "_max_bytes": 200,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "navn"
@@ -104,10 +108,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "ejendoms_nr >= 1000000000 AND ejendoms_nr <= '9999999999'::bigint"
@@ -129,10 +134,11 @@
                 "fkg.d_vejnavn.vejkode"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "vejkode"
@@ -150,10 +156,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "cvf_vejkode"
@@ -171,10 +178,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "husnr"
@@ -194,10 +202,11 @@
                 "fkg.d_basis_postnr.postnr"
             ],
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "postnr"
@@ -215,10 +224,11 @@
             "_max_bytes": 16,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "adr_id"
@@ -236,10 +246,11 @@
             "_max_bytes": 100,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "markblok"
@@ -257,10 +268,11 @@
             "_max_bytes": 120,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "mark_nr"
@@ -278,10 +290,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "dosering_toerstof >= 0.01::double precision AND dosering_toerstof <= 9999.99::double precision"
@@ -301,10 +314,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "dosering_vaadvaegt >= 0.01::double precision AND dosering_vaadvaegt <= 9999.99::double precision"
@@ -324,10 +338,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "fosfor_total >= 0.01::double precision AND fosfor_total <= 9999.99::double precision"
@@ -347,10 +362,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "fosfor_udnyttelse >= 0.01::double precision AND fosfor_udnyttelse <= 100.0::double precision"
@@ -370,10 +386,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "kvaelstof_total >= 0.01::double precision AND kvaelstof_total <= 9999.99::double precision"
@@ -393,10 +410,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "kvaelstof_udnyttelse >= 0.01::double precision AND kvaelstof_udnyttelse <= 9999.99::double precision"
@@ -416,10 +434,11 @@
             "_max_bytes": 8,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "kalium_total >= 0.01::double precision AND kalium_total <= 9999.99::double precision"
@@ -439,10 +458,11 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": [
                 "udbringning_aar >= 1900 AND udbringning_aar <= 2999"
@@ -462,10 +482,11 @@
             "_max_bytes": 512,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "sagsnr"
@@ -483,10 +504,11 @@
             "_max_bytes": 4096,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": true,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": null,
             "_checks": null,
             "_short_name": "link"
@@ -504,10 +526,11 @@
             "_max_bytes": null,
             "_reference": null,
             "_restriction": null,
+            "is_nullable": false,
             "_is_unique": false,
             "_is_primary": false,
-            "is_nullable": false,
             "default_value": null,
+            "identity_generation": null,
             "_index_method": [
                 "gist"
             ],
@@ -538,6 +561,69 @@
     ],
     "constraints": [
         {
+            "name": "t_5200_aff_prod_udbr_ejd_nr_ck",
+            "constraint": "check",
+            "check": "ejendoms_nr >= 1000000000 AND ejendoms_nr <= '9999999999'::bigint"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_dosering_toerstof_ck",
+            "constraint": "check",
+            "check": "dosering_toerstof >= 0.01::double precision AND dosering_toerstof <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_dosering_vaadvaegt_ck",
+            "constraint": "check",
+            "check": "dosering_vaadvaegt >= 0.01::double precision AND dosering_vaadvaegt <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_phosphor_indhold_ck",
+            "constraint": "check",
+            "check": "fosfor_total >= 0.01::double precision AND fosfor_total <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_fosfor_udnyttelse_ck",
+            "constraint": "check",
+            "check": "fosfor_udnyttelse >= 0.01::double precision AND fosfor_udnyttelse <= 100.0::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_kvaelstof_total_ck",
+            "constraint": "check",
+            "check": "kvaelstof_total >= 0.01::double precision AND kvaelstof_total <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_kvaelstof_udnyttelse_ck",
+            "constraint": "check",
+            "check": "kvaelstof_udnyttelse >= 0.01::double precision AND kvaelstof_udnyttelse <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_kalium_total_ck",
+            "constraint": "check",
+            "check": "kalium_total >= 0.01::double precision AND kalium_total <= 9999.99::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_udbringning_aar_ck",
+            "constraint": "check",
+            "check": "udbringning_aar >= 1900 AND udbringning_aar <= 2999"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_5200_aff_prod_udbr_d_5200_affald_fk",
             "constraint": "foreign",
             "columns": [
@@ -546,17 +632,6 @@
             "referenced_table": "d_5200_affald",
             "referenced_columns": [
                 "affald_prod_kode"
-            ]
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_d_basis_postnr_fk",
-            "constraint": "foreign",
-            "columns": [
-                "postnr"
-            ],
-            "referenced_table": "d_basis_postnr",
-            "referenced_columns": [
-                "postnr"
             ]
         },
         {
@@ -571,70 +646,20 @@
             ]
         },
         {
-            "name": "t_5200_aff_prod_udbr_dosering_toerstof_ck",
-            "constraint": "check",
-            "check": "dosering_toerstof >= 0.01::double precision AND dosering_toerstof <= 9999.99::double precision"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_dosering_vaadvaegt_ck",
-            "constraint": "check",
-            "check": "dosering_vaadvaegt >= 0.01::double precision AND dosering_vaadvaegt <= 9999.99::double precision"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_ejd_nr_ck",
-            "constraint": "check",
-            "check": "ejendoms_nr >= 1000000000 AND ejendoms_nr <= '9999999999'::bigint"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_fosfor_udnyttelse_ck",
-            "constraint": "check",
-            "check": "fosfor_udnyttelse >= 0.01::double precision AND fosfor_udnyttelse <= 100.0::double precision"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_generel_fk",
+            "name": "t_5200_aff_prod_udbr_d_basis_postnr_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "postnr"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
-                "versions_id"
+                "postnr"
             ]
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_kalium_total_ck",
-            "constraint": "check",
-            "check": "kalium_total >= 0.01::double precision AND kalium_total <= 9999.99::double precision"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_kvaelstof_total_ck",
-            "constraint": "check",
-            "check": "kvaelstof_total >= 0.01::double precision AND kvaelstof_total <= 9999.99::double precision"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_kvaelstof_udnyttelse_ck",
-            "constraint": "check",
-            "check": "kvaelstof_udnyttelse >= 0.01::double precision AND kvaelstof_udnyttelse <= 9999.99::double precision"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_phosphor_indhold_ck",
-            "constraint": "check",
-            "check": "fosfor_total >= 0.01::double precision AND fosfor_total <= 9999.99::double precision"
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_udbringning_aar_ck",
-            "constraint": "check",
-            "check": "udbringning_aar >= 1900 AND udbringning_aar <= 2999"
         }
     ],
-    "links": {
+    "_type": "TABLE",
+    "_events": false,
+    "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/indices",
         "constraints": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/constraints",
