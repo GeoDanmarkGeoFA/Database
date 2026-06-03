@@ -170,7 +170,7 @@
         {% elsif system and field[0] != "cvr_kode" and field[0] != "bruger_id" and field[0] != "oprindkode" and field[0] != "statuskode" and field[0] != "off_kode" and field[0] != "noegle" and field[0] != "note" %}
             <tr  style="background-color: lightblue">
             {% assign must = "S" %}
-        {% elsif field[1].restriction != null %}
+        {% elsif field[1]._restriction != null %}
             <tr  style="background-color: lightgreen">
         {% else %}
             <tr>
@@ -178,14 +178,14 @@
 
         {% assign checks = column[0]._checks[0] %}
 
-        {% if field[1].restriction != null %}
-            {% assign restrictions = field[1].restriction %}
+        {% if field[1]._restriction != null %}
+            {% assign restrictions = field[1]._restriction %}
         {% endif %}
 
-        {% if field[1].restriction != null %}
-            {% assign rs = field[1].restriction %}
+        {% if field[1]._restriction != null %}
+            {% assign rs = field[1]._restriction %}
             {% capture restrictions %}
-                {% if field[1].restriction != null %}{% for r in rs %} {{ r.value }} = {{ r.alias }}
+                {% if field[1]._restriction != null %}{% for r in rs %} {{ r.value }} = {{ r.alias }}
                     <br>  {% endfor %}{% endif %}
             {% endcapture %}
         {% else %}
