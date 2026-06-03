@@ -1,1503 +1,12 @@
 {
-    "uuid": "8442358c-38d9-44ae-adca-179477844d53",
-    "f_table_schema": "fkg",
-    "f_table_name": "t_5011_draenbroend",
-    "f_geometry_column": "geometri",
-    "f_table_abstract": null,
-    "f_table_title": "Dr\u00e6nbr\u00f8nd (5011)",
-    "pkey": "objekt_id",
-    "rel_type": "VIEW",
-    "coord_dimension": 2,
-    "type": "MULTIPOINT",
-    "srid": 25832,
-    "authentication": "Write",
-    "layergroup": "Overfladevand",
+    "title": "Dr\u00e6nbr\u00f8nd (5011)",
+    "group": "Overfladevand",
     "sort_id": 510,
     "tags": [
         "udgivet",
         "Github"
     ],
-    "fields": {
-        "temakode": {
-            "type": "integer",
-            "comment": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen. Eksempel: 6400",
-            "num": 1,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 10
-        },
-        "temanavn": {
-            "type": "text",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Brandhane",
-            "num": 2,
-            "full_type": "text",
-            "typname": "text",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1073741824,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 20
-        },
-        "objekt_id": {
-            "type": "uuid",
-            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.  Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
-            "num": 3,
-            "full_type": "uuid",
-            "typname": "uuid",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 16,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 30
-        },
-        "versions_id": {
-            "type": "uuid",
-            "comment": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet. Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
-            "num": 4,
-            "full_type": "uuid",
-            "typname": "uuid",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 16,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 40
-        },
-        "systid_fra": {
-            "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
-            "num": 5,
-            "full_type": "timestamp with time zone",
-            "typname": "timestamptz",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 50
-        },
-        "systid_til": {
-            "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
-            "num": 6,
-            "full_type": "timestamp with time zone",
-            "typname": "timestamptz",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 60
-        },
-        "oprettet": {
-            "type": "timestamp with time zone",
-            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Eksempel: 2006-12-31T23:59:00.000+01:00",
-            "num": 7,
-            "full_type": "timestamp with time zone",
-            "typname": "timestamptz",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 70
-        },
-        "cvr_kode": {
-            "type": "integer",
-            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet. Eksempel: 29189641",
-            "num": 8,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_ansvarlig_myndighed.cvr_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 10000001,
-                    "alias": "supercykelstisekretariatet"
-                },
-                {
-                    "value": 10000002,
-                    "alias": "Tommeruppernes Lokalr\u00e5d"
-                },
-                {
-                    "value": 10000003,
-                    "alias": "geoinfovejle"
-                },
-                {
-                    "value": 10000004,
-                    "alias": "sporapp"
-                },
-                {
-                    "value": 10000005,
-                    "alias": "undervisning"
-                },
-                {
-                    "value": 10000006,
-                    "alias": "GeoInfoSonderborg"
-                },
-                {
-                    "value": 10000007,
-                    "alias": "Kyst Til Kyst"
-                },
-                {
-                    "value": 10000008,
-                    "alias": "Naturpark Lilleb\u00e6lt"
-                },
-                {
-                    "value": 10000009,
-                    "alias": "itu_anastassia"
-                },
-                {
-                    "value": 10000010,
-                    "alias": "CT_marcoberends"
-                },
-                {
-                    "value": 10000011,
-                    "alias": "Havmilj\u00f8vogterne"
-                },
-                {
-                    "value": 10000012,
-                    "alias": "Konge\u00e5sti"
-                },
-                {
-                    "value": 10000014,
-                    "alias": "Slagelse Brand og Redning"
-                },
-                {
-                    "value": 10294819,
-                    "alias": "Konkurrence- og Forbrugerstyrelsen"
-                },
-                {
-                    "value": 11259979,
-                    "alias": "Frederiksberg Kommune"
-                },
-                {
-                    "value": 11715311,
-                    "alias": "Lyngby-Taarb\u00e6k Kommune"
-                },
-                {
-                    "value": 11931316,
-                    "alias": "Ish\u00f8j Kommune"
-                },
-                {
-                    "value": 12881517,
-                    "alias": "Drag\u00f8r Kommune"
-                },
-                {
-                    "value": 15524286,
-                    "alias": "geoinfo"
-                },
-                {
-                    "value": 16287180,
-                    "alias": "Forsvarsministeriets Ejendomsstyrelse"
-                },
-                {
-                    "value": 17156616,
-                    "alias": "Dansk e-Mobilitet"
-                },
-                {
-                    "value": 18282690,
-                    "alias": "Destination Fyn"
-                },
-                {
-                    "value": 18957981,
-                    "alias": "Ringsted Kommune"
-                },
-                {
-                    "value": 19438414,
-                    "alias": "Gentofte Kommune"
-                },
-                {
-                    "value": 19501817,
-                    "alias": "H\u00f8je-Taastrup Kommune"
-                },
-                {
-                    "value": 19583910,
-                    "alias": "Vallensb\u00e6k Kommune"
-                },
-                {
-                    "value": 20014784,
-                    "alias": "Geopartner Landinspekt\u00f8rer A\/S"
-                },
-                {
-                    "value": 20310413,
-                    "alias": "T\u00e5rnby Kommune"
-                },
-                {
-                    "value": 23717382,
-                    "alias": "H\u00e6rvejen"
-                },
-                {
-                    "value": 23795515,
-                    "alias": "Sams\u00f8 Kommune"
-                },
-                {
-                    "value": 25118359,
-                    "alias": "Norlys"
-                },
-                {
-                    "value": 25775635,
-                    "alias": "Christians\u00f8"
-                },
-                {
-                    "value": 25798376,
-                    "alias": "Milj\u00f8styrelsen"
-                },
-                {
-                    "value": 26696348,
-                    "alias": "Bornholms Regionskommune"
-                },
-                {
-                    "value": 27782515,
-                    "alias": "Idr\u00e6ttens Analyseinstitut"
-                },
-                {
-                    "value": 28297947,
-                    "alias": "EWII"
-                },
-                {
-                    "value": 28326858,
-                    "alias": "Nordsj\u00e6llands Brandv\u00e6sen"
-                },
-                {
-                    "value": 28856075,
-                    "alias": "\u00c6r\u00f8 Kommune"
-                },
-                {
-                    "value": 29188327,
-                    "alias": "Fures\u00f8 Kommune"
-                },
-                {
-                    "value": 29188335,
-                    "alias": "Fredensborg Kommune"
-                },
-                {
-                    "value": 29188378,
-                    "alias": "Rudersdal Kommune"
-                },
-                {
-                    "value": 29188386,
-                    "alias": "Egedal Kommune"
-                },
-                {
-                    "value": 29188416,
-                    "alias": "Halsn\u00e6s Kommune"
-                },
-                {
-                    "value": 29188440,
-                    "alias": "Gribskov Kommune"
-                },
-                {
-                    "value": 29188459,
-                    "alias": "Odsherred Kommune"
-                },
-                {
-                    "value": 29188475,
-                    "alias": "Faxe Kommune"
-                },
-                {
-                    "value": 29188505,
-                    "alias": "Slagelse Kommune"
-                },
-                {
-                    "value": 29188548,
-                    "alias": "Lejre Kommune"
-                },
-                {
-                    "value": 29188572,
-                    "alias": "Lolland Kommune"
-                },
-                {
-                    "value": 29188599,
-                    "alias": "Guldborgsund Kommune"
-                },
-                {
-                    "value": 29188645,
-                    "alias": "Faaborg-Midtfyn Kommune"
-                },
-                {
-                    "value": 29188947,
-                    "alias": "Nordfyns Kommune"
-                },
-                {
-                    "value": 29188955,
-                    "alias": "Langeland Kommune"
-                },
-                {
-                    "value": 29189129,
-                    "alias": "Frederikssund Kommune"
-                },
-                {
-                    "value": 29189366,
-                    "alias": "Hiller\u00f8d Kommune"
-                },
-                {
-                    "value": 29189374,
-                    "alias": "K\u00f8ge Kommune"
-                },
-                {
-                    "value": 29189382,
-                    "alias": "Hj\u00f8rring Kommune"
-                },
-                {
-                    "value": 29189404,
-                    "alias": "Roskilde Kommune"
-                },
-                {
-                    "value": 29189420,
-                    "alias": "Aalborg Kommune"
-                },
-                {
-                    "value": 29189439,
-                    "alias": "Jammerbugt Kommune"
-                },
-                {
-                    "value": 29189447,
-                    "alias": "Holb\u00e6k Kommune"
-                },
-                {
-                    "value": 29189455,
-                    "alias": "Mariagerfjord Kommune"
-                },
-                {
-                    "value": 29189463,
-                    "alias": "Rebild Kommune"
-                },
-                {
-                    "value": 29189471,
-                    "alias": "Vesthimmerlands Kommune"
-                },
-                {
-                    "value": 29189498,
-                    "alias": "Frederikshavn Kommune"
-                },
-                {
-                    "value": 29189501,
-                    "alias": "Br\u00f8nderslev Kommune"
-                },
-                {
-                    "value": 29189560,
-                    "alias": "Thisted Kommune"
-                },
-                {
-                    "value": 29189579,
-                    "alias": "Skive Kommune"
-                },
-                {
-                    "value": 29189587,
-                    "alias": "Hedensted Kommune"
-                },
-                {
-                    "value": 29189595,
-                    "alias": "Kalundborg Kommune"
-                },
-                {
-                    "value": 29189609,
-                    "alias": "Ringk\u00f8bing-Skjern Kommune"
-                },
-                {
-                    "value": 29189617,
-                    "alias": "Ikast-Brande Kommune"
-                },
-                {
-                    "value": 29189625,
-                    "alias": "N\u00e6stved Kommune"
-                },
-                {
-                    "value": 29189633,
-                    "alias": "Skanderborg Kommune"
-                },
-                {
-                    "value": 29189641,
-                    "alias": "Silkeborg Kommune"
-                },
-                {
-                    "value": 29189668,
-                    "alias": "Randers Kommune"
-                },
-                {
-                    "value": 29189676,
-                    "alias": "Vordingborg Kommune"
-                },
-                {
-                    "value": 29189684,
-                    "alias": "Middelfart Kommune"
-                },
-                {
-                    "value": 29189692,
-                    "alias": "Assens Kommune"
-                },
-                {
-                    "value": 29189706,
-                    "alias": "Kerteminde Kommune"
-                },
-                {
-                    "value": 29189714,
-                    "alias": "Favrskov Kommune"
-                },
-                {
-                    "value": 29189722,
-                    "alias": "Nyborg Kommune"
-                },
-                {
-                    "value": 29189730,
-                    "alias": "Svendborg Kommune"
-                },
-                {
-                    "value": 29189757,
-                    "alias": "Haderslev Kommune"
-                },
-                {
-                    "value": 29189765,
-                    "alias": "Billund Kommune"
-                },
-                {
-                    "value": 29189773,
-                    "alias": "S\u00f8nderborg Kommune"
-                },
-                {
-                    "value": 29189781,
-                    "alias": "T\u00f8nder Kommune"
-                },
-                {
-                    "value": 29189803,
-                    "alias": "Esbjerg Kommune"
-                },
-                {
-                    "value": 29189811,
-                    "alias": "Varde Kommune"
-                },
-                {
-                    "value": 29189838,
-                    "alias": "Vejen Kommune"
-                },
-                {
-                    "value": 29189846,
-                    "alias": "Viborg Kommune"
-                },
-                {
-                    "value": 29189854,
-                    "alias": "Aabenraa Kommune"
-                },
-                {
-                    "value": 29189889,
-                    "alias": "Horsens Kommune"
-                },
-                {
-                    "value": 29189897,
-                    "alias": "Kolding Kommune"
-                },
-                {
-                    "value": 29189900,
-                    "alias": "Vejle Kommune"
-                },
-                {
-                    "value": 29189919,
-                    "alias": "Herning Kommune"
-                },
-                {
-                    "value": 29189927,
-                    "alias": "Holstebro Kommune"
-                },
-                {
-                    "value": 29189935,
-                    "alias": "Lemvig Kommune"
-                },
-                {
-                    "value": 29189951,
-                    "alias": "Struer Kommune"
-                },
-                {
-                    "value": 29189978,
-                    "alias": "Syddjurs Kommune"
-                },
-                {
-                    "value": 29189986,
-                    "alias": "Norddjurs Kommune"
-                },
-                {
-                    "value": 29189994,
-                    "alias": "Sor\u00f8 Kommune"
-                },
-                {
-                    "value": 29208654,
-                    "alias": "Stevns Kommune"
-                },
-                {
-                    "value": 31210917,
-                    "alias": "Fan\u00f8 Kommune"
-                },
-                {
-                    "value": 31351901,
-                    "alias": "Spor"
-                },
-                {
-                    "value": 32264328,
-                    "alias": "Odder Kommune"
-                },
-                {
-                    "value": 32468349,
-                    "alias": "CLEVER A\/S"
-                },
-                {
-                    "value": 33157274,
-                    "alias": "Naturstyrelsen"
-                },
-                {
-                    "value": 33284114,
-                    "alias": "Styrelsen for Dataforsyning og Effektivisering"
-                },
-                {
-                    "value": 34009570,
-                    "alias": "Beredskab & Sikkerhed"
-                },
-                {
-                    "value": 34206228,
-                    "alias": "Erhvervshus Fyn P\/S"
-                },
-                {
-                    "value": 34897034,
-                    "alias": "Destination Sj\u00e6lland A\/S"
-                },
-                {
-                    "value": 35147268,
-                    "alias": "Nationalpark Mols Bjerge"
-                },
-                {
-                    "value": 35209115,
-                    "alias": "Odense Kommune"
-                },
-                {
-                    "value": 35379193,
-                    "alias": "MapCentia"
-                },
-                {
-                    "value": 35432795,
-                    "alias": "Sydvestjysk Brandv\u00e6sen"
-                },
-                {
-                    "value": 35434399,
-                    "alias": "Midt- og Sydsj\u00e6llands Brand & Redning"
-                },
-                {
-                    "value": 35438718,
-                    "alias": "Brand & Redning S\u00f8nderjylland"
-                },
-                {
-                    "value": 35439862,
-                    "alias": "Syd\u00f8stjyllands Brandv\u00e6sen"
-                },
-                {
-                    "value": 35440178,
-                    "alias": "Hovedstadens Beredskab"
-                },
-                {
-                    "value": 36146702,
-                    "alias": "Dansk Cykelturisme"
-                },
-                {
-                    "value": 36471271,
-                    "alias": "DKNT"
-                },
-                {
-                    "value": 36920483,
-                    "alias": "Friluftsguiden"
-                },
-                {
-                    "value": 36986719,
-                    "alias": "Geopark Odsherred"
-                },
-                {
-                    "value": 37137502,
-                    "alias": "Midtjysk Brand & Redning"
-                },
-                {
-                    "value": 37164712,
-                    "alias": "\u00d8stjyllands Brandv\u00e6sen"
-                },
-                {
-                    "value": 37176478,
-                    "alias": "Nationalparkfond Skjoldungernes Land"
-                },
-                {
-                    "value": 37197580,
-                    "alias": "Vestsj\u00e6llands Brandv\u00e6sen"
-                },
-                {
-                    "value": 37207969,
-                    "alias": "Brand & Redning Midtvest"
-                },
-                {
-                    "value": 37242985,
-                    "alias": "TrekantBrand"
-                },
-                {
-                    "value": 37265209,
-                    "alias": "Beredskab Fyn"
-                },
-                {
-                    "value": 39170418,
-                    "alias": "OK A.M.B.A."
-                },
-                {
-                    "value": 40220321,
-                    "alias": "Herslev Bylaug"
-                },
-                {
-                    "value": 40632301,
-                    "alias": "Beredskab 4K"
-                },
-                {
-                    "value": 40657339,
-                    "alias": "Spirii"
-                },
-                {
-                    "value": 41333014,
-                    "alias": "Mors\u00f8 Kommune"
-                },
-                {
-                    "value": 41575727,
-                    "alias": "SAMSIK"
-                },
-                {
-                    "value": 41668385,
-                    "alias": "Monta ApS"
-                },
-                {
-                    "value": 42309443,
-                    "alias": "qLER ApS"
-                },
-                {
-                    "value": 42885746,
-                    "alias": "E.ON"
-                },
-                {
-                    "value": 43324942,
-                    "alias": "Frie Fodspor ApS"
-                },
-                {
-                    "value": 44023911,
-                    "alias": "Greve Kommune"
-                },
-                {
-                    "value": 45973328,
-                    "alias": "L\u00e6s\u00f8 Kommune"
-                },
-                {
-                    "value": 48233511,
-                    "alias": "Sweco Danmark A\/S"
-                },
-                {
-                    "value": 55133018,
-                    "alias": "Aarhus Kommune"
-                },
-                {
-                    "value": 55606617,
-                    "alias": "Hvidovre Kommune"
-                },
-                {
-                    "value": 56230718,
-                    "alias": "Friluftsr\u00e5det"
-                },
-                {
-                    "value": 58271713,
-                    "alias": "Ballerup Kommune"
-                },
-                {
-                    "value": 60183112,
-                    "alias": "Aller\u00f8d Kommune"
-                },
-                {
-                    "value": 62547413,
-                    "alias": "kl"
-                },
-                {
-                    "value": 62761113,
-                    "alias": "Gladsaxe Kommune"
-                },
-                {
-                    "value": 63640719,
-                    "alias": "Herlev Kommune"
-                },
-                {
-                    "value": 64502018,
-                    "alias": "Helsing\u00f8r Kommune"
-                },
-                {
-                    "value": 64942212,
-                    "alias": "K\u00f8benhavns Kommune"
-                },
-                {
-                    "value": 65113015,
-                    "alias": "Br\u00f8ndby Kommune"
-                },
-                {
-                    "value": 65120119,
-                    "alias": "Glostrup Kommune"
-                },
-                {
-                    "value": 65307316,
-                    "alias": "R\u00f8dovre Kommune"
-                },
-                {
-                    "value": 66137112,
-                    "alias": "Albertslund Kommune"
-                },
-                {
-                    "value": 68534917,
-                    "alias": "Solr\u00f8d Kommune"
-                },
-                {
-                    "value": 69116418,
-                    "alias": "Fredericia Kommune"
-                },
-                {
-                    "value": 70960516,
-                    "alias": "H\u00f8rsholm Kommune"
-                },
-                {
-                    "value": 99999999,
-                    "alias": "Nan"
-                },
-                {
-                    "value": 100000113,
-                    "alias": "Helsing\u00f8r Kommunes Beredskab"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 80
-        },
-        "cvr_navn": {
-            "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Silkeborg Kommune",
-            "num": 9,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 90
-        },
-        "kommunekode": {
-            "type": "integer",
-            "comment": "3-cifret kommunekode udfyldes via cvr_kode. Eksempel: 740",
-            "num": 10,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 100
-        },
-        "bruger_id": {
-            "type": "character varying",
-            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data. Eksempel: Silkeborg1234",
-            "num": 11,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 110
-        },
-        "oprindkode": {
-            "type": "integer",
-            "comment": "Feltet benyttes til at angive en oprindelse via en kode. Eksempel: 1",
-            "num": 12,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_oprindelse.oprindkode"
-            ],
-            "restriction": [
-                {
-                    "value": 0,
-                    "alias": "Ikke udfyldt"
-                },
-                {
-                    "value": 1,
-                    "alias": "Ortofoto"
-                },
-                {
-                    "value": 2,
-                    "alias": "Matrikelkort"
-                },
-                {
-                    "value": 3,
-                    "alias": "Opm\u00e5ling"
-                },
-                {
-                    "value": 4,
-                    "alias": "FOT \/ Tekniske kort"
-                },
-                {
-                    "value": 5,
-                    "alias": "Modelberegning"
-                },
-                {
-                    "value": 6,
-                    "alias": "Tegning"
-                },
-                {
-                    "value": 7,
-                    "alias": "Felt-\/markbes\u00f8g"
-                },
-                {
-                    "value": 8,
-                    "alias": "Borgeranmeldelse"
-                },
-                {
-                    "value": 9,
-                    "alias": "Luftfoto (historiske 1944-1993)"
-                },
-                {
-                    "value": 10,
-                    "alias": "Skr\u00e5foto"
-                },
-                {
-                    "value": 11,
-                    "alias": "Andre foto"
-                },
-                {
-                    "value": 12,
-                    "alias": "3D"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 120
-        },
-        "oprindelse": {
-            "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Ortofoto",
-            "num": 13,
-            "full_type": "character varying(35)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 35,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 140,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 130
-        },
-        "statuskode": {
-            "type": "integer",
-            "comment": "Feltet benyttes til at angive en status via en kode. Eksempel: 3",
-            "num": 14,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_status.statuskode"
-            ],
-            "restriction": [
-                {
-                    "value": 0,
-                    "alias": "Ukendt"
-                },
-                {
-                    "value": 1,
-                    "alias": "Kladde"
-                },
-                {
-                    "value": 2,
-                    "alias": "Forslag"
-                },
-                {
-                    "value": 3,
-                    "alias": "G\u00e6ldende \/ Vedtaget"
-                },
-                {
-                    "value": 4,
-                    "alias": "Ikke g\u00e6ldende \/ Aflyst"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 140
-        },
-        "status": {
-            "type": "character varying",
-            "comment": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: G\u00e6ldende \/ Vedtaget",
-            "num": 15,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 150
-        },
-        "off_kode": {
-            "type": "integer",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode. Eksempel: 1",
-            "num": 16,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_offentlig.off_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Synlig for alle"
-                },
-                {
-                    "value": 2,
-                    "alias": "Synlig for den ansvarlige myndighed"
-                },
-                {
-                    "value": 3,
-                    "alias": "Synlig for alle myndigheder, men ikke offentligheden"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 160
-        },
-        "offentlig": {
-            "type": "character varying",
-            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet. Eksempel: Synlig for alle",
-            "num": 17,
-            "full_type": "character varying(60)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 60,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 240,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 170
-        },
-        "noegle": {
-            "type": "character varying",
-            "comment": "Fremmed n\u00f8gle til objektet i en anden databasetabel. Eksempel: 12853468A",
-            "num": 18,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 180
-        },
-        "note": {
-            "type": "character varying",
-            "comment": "Frit bem\u00e6rkningsfelt. Eksempel: Smukfest plads nr. 2",
-            "num": 19,
-            "full_type": "character varying(254)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 254,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1016,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 190
-        },
-        "broend_nr": {
-            "type": "character varying",
-            "comment": "Identifikationsnr til den enkelte br\u00f8nd eller knudepunkt. Eksempel: Stor\u00e5en-340",
-            "num": 20,
-            "full_type": "character varying(20)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 20,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 80,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 200
-        },
-        "broendtype_kode": {
-            "type": "integer",
-            "comment": "Angivelse af dr\u00e6nbr\u00f8ndens tekniske konstruktuion. V\u00e6lg fra kodeliste Registreringsvejledning: Omhandler samtlige knudepunkter i dr\u00e6nsystemet, vil ofte v\u00e6re br\u00f8nde, men kan ogs\u00e5 v\u00e6re andet. Eksempel: 3",
-            "num": 21,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_5011_broendtype.broendtype_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Dr\u00e6nbr\u00f8nd"
-                },
-                {
-                    "value": 2,
-                    "alias": "Nedsivning\/faskine"
-                },
-                {
-                    "value": 3,
-                    "alias": "Sandfangsbr\u00f8nd"
-                },
-                {
-                    "value": 4,
-                    "alias": "Pumpebr\u00f8nd"
-                },
-                {
-                    "value": 5,
-                    "alias": "Vandhul"
-                },
-                {
-                    "value": 6,
-                    "alias": "Udl\u00f8b"
-                },
-                {
-                    "value": 7,
-                    "alias": "Samling"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 210
-        },
-        "broendtype": {
-            "type": "character varying",
-            "comment": "Angivelse af dr\u00e6nbr\u00f8ndens tekniske konstruktion. Eksempel: Sandfang",
-            "num": 22,
-            "full_type": "character varying(30)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 30,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 120,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": true,
-            "sort_id": 220
-        },
-        "diameter_mm": {
-            "type": "integer",
-            "comment": "Br\u00f8ndens indvendige diameter i mm Oplysningen kan bruges til vurdering af br\u00f8ndens volumen. Br\u00f8ndens ydre m\u00e5l (til LER) kan estimeres udfra indre diameter og kendskab til br\u00f8ndens konstruktion\/materiale. Eksempel: 1050",
-            "num": 23,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 222
-        },
-        "diameter_tommer": {
-            "type": "double precision",
-            "comment": "Br\u00f8ndens indvendige diameter angivet i tommer. Oplysningen kan bruges til vurdering af br\u00f8ndens volumen. Registreringsvejledning: Hvis data senere skal overf\u00f8res til LER kan ydre m\u00e5l estimeres udfra indre diameter og kendskab til br\u00f8ndens konstruktion \/ materiale. Ved overf\u00f8rsel til LER skal der regnes om til mm. Eksempel: 1,5",
-            "num": 24,
-            "full_type": "double precision",
-            "typname": "float8",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 53,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 224
-        },
-        "dybde_udloeb": {
-            "type": "integer",
-            "comment": "Hvor dybt er br\u00f8ndens udl\u00f8b placeret. M\u00e5lt i cm fra br\u00f8ndens d\u00e6ksel. Eksempel: 150",
-            "num": 25,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 230
-        },
-        "kote_udloeb": {
-            "type": "double precision",
-            "comment": "Hvor dybt er br\u00f8ndens udl\u00f8b placeret. Angivet som kote. Eksempel: 10,78",
-            "num": 26,
-            "full_type": "double precision",
-            "typname": "float8",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 53,
-            "numeric_scale": null,
-            "max_bytes": 8,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 240
-        },
-        "kotesystem_kode": {
-            "type": "integer",
-            "comment": "Hvis du anvender muligheden for at angive koter og kotesystemet er kendt, kan du her oplyse om anvendt kotesystem. Registreringsvejledning: V\u00e6lg v\u00e6rdi fra kodelisten kotesystem (d_basis_kotesystem)",
-            "num": 27,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_kotesystem.kotesystem_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "DNN"
-                },
-                {
-                    "value": 2,
-                    "alias": "DVR90"
-                },
-                {
-                    "value": 3,
-                    "alias": "Lokalt"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 300
-        },
-        "kotesystem": {
-            "type": "character varying",
-            "comment": "Anvendt kotesystem V\u00e6rdier fra kodelisten d_basis_kotesystem",
-            "num": 28,
-            "full_type": "character varying(250)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 250,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1000,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 310
-        },
-        "datakilde_kode": {
-            "type": "integer",
-            "comment": "Oplysning om, hvordan data om dr\u00e6nbr\u00f8nden er tilvejebragt. Hvem\/hvad er datakilden. Oplysninger om datakilden kan give et hurtigt billede af, hvor pr\u00e6cise eller p\u00e5lidelige data er. Registreringsvejledning: V\u00e6lg v\u00e6rdi fra kodeliste d_basis_datakilde",
-            "num": 29,
-            "full_type": "integer",
-            "typname": "int4",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": 32,
-            "numeric_scale": 0,
-            "max_bytes": 4,
-            "reference": [
-                "fkg.d_basis_datakilde.datakilde_kode"
-            ],
-            "restriction": [
-                {
-                    "value": 1,
-                    "alias": "Hedeselskabet \u2013 georefereret"
-                },
-                {
-                    "value": 2,
-                    "alias": "Hedeselskabet \u2013 digitaliseret"
-                },
-                {
-                    "value": 3,
-                    "alias": "Lodsejer"
-                },
-                {
-                    "value": 4,
-                    "alias": "Identificeret ved overflyning"
-                },
-                {
-                    "value": 5,
-                    "alias": "Landm\u00e5lerfirma"
-                },
-                {
-                    "value": 6,
-                    "alias": "Entrepren\u00f8r"
-                },
-                {
-                    "value": 8,
-                    "alias": "Andet"
-                },
-                {
-                    "value": 9,
-                    "alias": "Ukendt"
-                }
-            ],
-            "alias": "",
-            "queryable": false,
-            "sort_id": 350
-        },
-        "datakilde": {
-            "type": "character varying",
-            "comment": "Oplysning om, hvordan data om dr\u00e6nbr\u00f8nden er tilvejebragt. Registreringsvejledning: Udfyldes automatisk ved valg fra kodeliste",
-            "num": 30,
-            "full_type": "character varying",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": -5,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1073741824,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 360
-        },
-        "bemaerkning": {
-            "type": "character varying",
-            "comment": "Hvis det originale materiale (fx papirkort) indeholder oplysninger du vil bevare, men som ikke passer i \u00f8vrige felter",
-            "num": 31,
-            "full_type": "character varying(150)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 150,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 600,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 362
-        },
-        "broend_synlig": {
-            "type": "boolean",
-            "comment": "Angiv om br\u00f8ndd\u00e6kslet er synligt eller ej. Et synligt br\u00f8ndd\u00e6ksel er ud\u00e6kket. Registreringsvejledning: Angiv 1 (sand), hvis br\u00f8ndd\u00e6kslet er synligt, Angiv 2 (falsk), hvis br\u00f8ndd\u00e6kslet ikke er synligt. Eksempel: S",
-            "num": 32,
-            "full_type": "boolean",
-            "typname": "bool",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 364
-        },
-        "etableringstidspunkt": {
-            "type": "character varying",
-            "comment": "Angivelse af tidspunkt for etableringen er gennemf\u00f8rt. Registreringsvejledning: Angiv etableringstidspunktet s\u00e5 n\u00f8jagtigt som muligt. For \u00e6ldre br\u00f8nde vil det ofte kun v\u00e6re muligt at angive, at etableringen er sket f\u00f8r et eller andet tidspunkt. Benyt korte formuleringer som: maj 2023, 2005, f\u00f8r 1970, efter 1985 Datatype og registreringsvejledning passer til LER\u2019s krav ( maj 2024). Eksempel: efter 1970",
-            "num": 33,
-            "full_type": "character varying(20)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 20,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 80,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 366
-        },
-        "praecision_god": {
-            "type": "boolean",
-            "comment": "Angiv om der er en god pr\u00e6cision p\u00e5 br\u00f8ndens placering \u2013 eller en ringe pr\u00e6cision. En pr\u00e6cision p\u00e5 2 meter eller mindre regnes som god. En pr\u00e6cision p\u00e5 mere end 2 meter regnes som en d\u00e5rlig pr\u00e6cision. Registreringsvejledning: Angiv v\u00e6rdien 0 (falsk), hvis pr\u00e6cisionen er d\u00e5rlig eller ukendt Angiv v\u00e6rdien 1 (sand), hvis pr\u00e6cisionen er god. Eksempel: 1",
-            "num": 34,
-            "full_type": "boolean",
-            "typname": "bool",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 1,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 370
-        },
-        "sagsnr": {
-            "type": "character varying",
-            "comment": "Identifikation af sag i ESDH. Eksempel: 8-70-21-3-743-6-96",
-            "num": 35,
-            "full_type": "character varying(128)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 128,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 512,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 400
-        },
-        "link": {
-            "type": "character varying",
-            "comment": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
-            "num": 36,
-            "full_type": "character varying(1024)",
-            "typname": "varchar",
-            "is_array": false,
-            "character_maximum_length": 1024,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": 4096,
-            "reference": null,
-            "restriction": null,
-            "alias": "",
-            "queryable": false,
-            "sort_id": 410
-        },
-        "geometri": {
-            "type": "geometry",
-            "comment": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier. Eksempel: For et punkt: 543.210,999 6.123.456,111",
-            "num": 37,
-            "full_type": "geometry(MultiPoint,25832)",
-            "typname": "geometry",
-            "is_array": false,
-            "character_maximum_length": null,
-            "numeric_precision": null,
-            "numeric_scale": null,
-            "max_bytes": null,
-            "reference": null,
-            "restriction": null,
-            "geom_type": "MultiPoint",
-            "srid": "25832",
-            "alias": "",
-            "queryable": false,
-            "sort_id": 420
-        }
-    },
-    "children": null,
-    "meta": {
-        "tiled": false,
+    "properties": {
         "formaal": "Datas\u00e6ttet er til brug i sagsbehandlingen vedr. vandl\u00f8bslov m.m",
         "temakode": "5011",
         "temanavn": "Dr\u00e6nbr\u00f8nd",
@@ -1507,57 +16,545 @@
         "noegle_ord": "Dr\u00e6n, afvanding",
         "beskrivelse": "Viser beliggenhed af dr\u00e6nbr\u00f8nden",
         "lovgrundlag": "Vandl\u00f8bsloven m.m.",
-        "single_tile": false,
         "geometritype": "Punkt",
-        "hover_active": false,
         "max_features": "500",
-        "sql_conflict": "",
-        "vector_style": "",
         "default_match": "any",
-        "filter_config": "",
-        "info_function": "",
-        "info_template": "",
         "load_strategy": "s",
-        "referenced_by": "",
-        "cache_utf_grid": false,
-        "point_to_layer": "",
-        "use_clustering": false,
-        "vidi_sub_group": "",
-        "buffer_conflict": "",
-        "filter_required": false,
-        "reload_callback": "",
-        "reload_interval": "",
-        "select_function": "",
-        "vector_max_zoom": "",
-        "vector_min_zoom": "",
         "vidi_layer_type": "t,v",
-        "filter_immutable": false,
-        "tooltip_template": "",
-        "accordion_summery": "",
-        "disable_check_box": false,
-        "entydige_objekter": "",
-        "tiles_service_uri": "",
         "default_layer_type": "t",
         "default_open_tools": "[\"filters\"]",
-        "predefined_filters": "",
-        "show_table_on_side": false,
-        "info_template_hover": "",
-        "minimum_stoerrelser": "",
         "vidi_layer_editable": true,
-        "zoom_on_table_click": false,
-        "filter_html_template": "",
-        "line_highlight_style": "",
-        "tiles_selected_style": "",
-        "geometrisk_konsistens": "",
-        "info_element_selector": "",
         "noegleord_hovedgruppe": "Hydrografi",
         "registreringsinstruks": "Temaet kan etableres ved digitalisering af Hedeselskabets kortmateriale, indsamling af data om nyere dr\u00e6nledninger,\nanalyse af flyfotos (ogs\u00e5 gamle), besigtigelse af \u00e5-bredder m.m.\nTemaet omfatter ikke br\u00f8nde til vejdr\u00e6n (der b\u00f8r v\u00e6re i samme lag som \u00f8vrige data til kommunens besvarelse af LERhenvendelser)\nog LAR-anl\u00e6g (Lokale afledning af regnvand)",
         "klassificering_opdeling": "Opdeles i br\u00f8ndtyper \/ -konstruktioner. Se 5.1.4.3 kodelister.",
-        "long_conflict_meta_desc": "",
-        "accordion_summery_prefix": "",
-        "short_conflict_meta_desc": "",
-        "max_zoom_level_table_click": "17",
-        "disable_vector_feature_info": false,
-        "geometrisk_konsistens_andre": ""
+        "max_zoom_level_table_click": "17"
+    },
+    "_uuid": "8442358c-38d9-44ae-adca-179477844d53",
+    "_schema": "fkg",
+    "_rel": "t_5011_draenbroend",
+    "_geometry_column": "geometri",
+    "_pkey": "objekt_id",
+    "_rel_type": "VIEW",
+    "_coord_dimension": 2,
+    "_geom_type": "MULTIPOINT",
+    "_srid": 25832,
+    "_authentication": "Write",
+    "fields": {
+        "temakode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 10,
+            "desc": "Feltet benyttes til at identificere datas\u00e6ttet via en kode. Temakoden er unik, og kan bruges bl.a. som identifikator i metadatabasen. Eksempel: 6400",
+            "properties": null
+        },
+        "temanavn": {
+            "_type": "text",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 20,
+            "desc": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Brandhane",
+            "properties": null
+        },
+        "objekt_id": {
+            "_type": "uuid",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 30,
+            "desc": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema.  Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
+            "properties": null
+        },
+        "versions_id": {
+            "_type": "uuid",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 16,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 40,
+            "desc": "Instansobjekt ID. Unikt objekt ID p\u00e5 tv\u00e6rs af datas\u00e6t og over tid. Mens et objekt bevarer samme Objekt_id fra f\u00f8dsel til d\u00f8d, vil Versions_id \u00e6ndres ved enhver opdatering af objektet. Eksempel: E6AB20EA-67E4-4C11-A051- B50A084788A3",
+            "properties": null
+        },
+        "systid_fra": {
+            "_type": "timestamp with time zone",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 50,
+            "desc": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
+            "properties": null
+        },
+        "systid_til": {
+            "_type": "timestamp with time zone",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 60,
+            "desc": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed. Eksempel: 2006-12-31T23:59:00.000+01:00",
+            "properties": null
+        },
+        "oprettet": {
+            "_type": "timestamp with time zone",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 70,
+            "desc": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Eksempel: 2006-12-31T23:59:00.000+01:00",
+            "properties": null
+        },
+        "cvr_kode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 80,
+            "desc": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet. Eksempel: 29189641",
+            "properties": {
+                "_rel": "fkg.d_basis_ansvarlig_myndighed",
+                "_value": "cvr_kode",
+                "_text": "cvr_navn",
+                "_where": "aktiv=1"
+            }
+        },
+        "cvr_navn": {
+            "_type": "character varying",
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 90,
+            "desc": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Silkeborg Kommune",
+            "properties": null
+        },
+        "kommunekode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 100,
+            "desc": "3-cifret kommunekode udfyldes via cvr_kode. Eksempel: 740",
+            "properties": null
+        },
+        "bruger_id": {
+            "_type": "character varying",
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 110,
+            "desc": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data. Eksempel: Silkeborg1234",
+            "properties": null
+        },
+        "oprindkode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 120,
+            "desc": "Feltet benyttes til at angive en oprindelse via en kode. Eksempel: 1",
+            "properties": {
+                "_rel": "fkg.d_basis_oprindelse",
+                "_value": "oprindkode",
+                "_text": "oprindelse",
+                "_where": "aktiv=1"
+            }
+        },
+        "oprindelse": {
+            "_type": "character varying",
+            "_character_maximum_length": 35,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 140,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 130,
+            "desc": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: Ortofoto",
+            "properties": null
+        },
+        "statuskode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 140,
+            "desc": "Feltet benyttes til at angive en status via en kode. Eksempel: 3",
+            "properties": {
+                "_rel": "fkg.d_basis_status",
+                "_value": "statuskode",
+                "_text": "status",
+                "_where": "aktiv=1"
+            }
+        },
+        "status": {
+            "_type": "character varying",
+            "_character_maximum_length": 30,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 120,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 150,
+            "desc": "Feltet benyttes til at overs\u00e6tte\/vise koden til tekst. Eksempel: G\u00e6ldende \/ Vedtaget",
+            "properties": null
+        },
+        "off_kode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 160,
+            "desc": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode. Eksempel: 1",
+            "properties": {
+                "_rel": "fkg.d_basis_offentlig",
+                "_value": "off_kode",
+                "_text": "offentlig",
+                "_where": "aktiv=1"
+            }
+        },
+        "offentlig": {
+            "_type": "character varying",
+            "_character_maximum_length": 60,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 240,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 170,
+            "desc": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet. Eksempel: Synlig for alle",
+            "properties": null
+        },
+        "noegle": {
+            "_type": "character varying",
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 180,
+            "desc": "Fremmed n\u00f8gle til objektet i en anden databasetabel. Eksempel: 12853468A",
+            "properties": null
+        },
+        "note": {
+            "_type": "character varying",
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 190,
+            "desc": "Frit bem\u00e6rkningsfelt. Eksempel: Smukfest plads nr. 2",
+            "properties": null
+        },
+        "broend_nr": {
+            "_type": "character varying",
+            "_character_maximum_length": 20,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 80,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 200,
+            "desc": "Identifikationsnr til den enkelte br\u00f8nd eller knudepunkt. Eksempel: Stor\u00e5en-340",
+            "properties": null
+        },
+        "broendtype_kode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 210,
+            "desc": "Angivelse af dr\u00e6nbr\u00f8ndens tekniske konstruktuion. V\u00e6lg fra kodeliste Registreringsvejledning: Omhandler samtlige knudepunkter i dr\u00e6nsystemet, vil ofte v\u00e6re br\u00f8nde, men kan ogs\u00e5 v\u00e6re andet. Eksempel: 3",
+            "properties": {
+                "_rel": "fkg.d_5011_broendtype",
+                "_value": "broendtype_kode",
+                "_text": "broendtype",
+                "_where": "aktiv=1"
+            }
+        },
+        "broendtype": {
+            "_type": "character varying",
+            "_character_maximum_length": 30,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 120,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": true,
+            "sort_id": 220,
+            "desc": "Angivelse af dr\u00e6nbr\u00f8ndens tekniske konstruktion. Eksempel: Sandfang",
+            "properties": null
+        },
+        "diameter_mm": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 222,
+            "desc": "Br\u00f8ndens indvendige diameter i mm Oplysningen kan bruges til vurdering af br\u00f8ndens volumen. Br\u00f8ndens ydre m\u00e5l (til LER) kan estimeres udfra indre diameter og kendskab til br\u00f8ndens konstruktion\/materiale. Eksempel: 1050",
+            "properties": null
+        },
+        "diameter_tommer": {
+            "_type": "double precision",
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 224,
+            "desc": "Br\u00f8ndens indvendige diameter angivet i tommer. Oplysningen kan bruges til vurdering af br\u00f8ndens volumen. Registreringsvejledning: Hvis data senere skal overf\u00f8res til LER kan ydre m\u00e5l estimeres udfra indre diameter og kendskab til br\u00f8ndens konstruktion \/ materiale. Ved overf\u00f8rsel til LER skal der regnes om til mm. Eksempel: 1,5",
+            "properties": null
+        },
+        "dybde_udloeb": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 230,
+            "desc": "Hvor dybt er br\u00f8ndens udl\u00f8b placeret. M\u00e5lt i cm fra br\u00f8ndens d\u00e6ksel. Eksempel: 150",
+            "properties": null
+        },
+        "kote_udloeb": {
+            "_type": "double precision",
+            "_character_maximum_length": null,
+            "_numeric_precision": 53,
+            "_numeric_scale": null,
+            "_max_bytes": 8,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 240,
+            "desc": "Hvor dybt er br\u00f8ndens udl\u00f8b placeret. Angivet som kote. Eksempel: 10,78",
+            "properties": null
+        },
+        "kotesystem_kode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 300,
+            "desc": "Hvis du anvender muligheden for at angive koter og kotesystemet er kendt, kan du her oplyse om anvendt kotesystem. Registreringsvejledning: V\u00e6lg v\u00e6rdi fra kodelisten kotesystem (d_basis_kotesystem)",
+            "properties": {
+                "_rel": "fkg.d_basis_kotesystem",
+                "_value": "kotesystem_kode",
+                "_text": "kotesystem",
+                "_where": "aktiv=1"
+            }
+        },
+        "kotesystem": {
+            "_type": "character varying",
+            "_character_maximum_length": 250,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1000,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 310,
+            "desc": "Anvendt kotesystem V\u00e6rdier fra kodelisten d_basis_kotesystem",
+            "properties": null
+        },
+        "datakilde_kode": {
+            "_type": "integer",
+            "_character_maximum_length": null,
+            "_numeric_precision": 32,
+            "_numeric_scale": 0,
+            "_max_bytes": 4,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 350,
+            "desc": "Oplysning om, hvordan data om dr\u00e6nbr\u00f8nden er tilvejebragt. Hvem\/hvad er datakilden. Oplysninger om datakilden kan give et hurtigt billede af, hvor pr\u00e6cise eller p\u00e5lidelige data er. Registreringsvejledning: V\u00e6lg v\u00e6rdi fra kodeliste d_basis_datakilde",
+            "properties": {
+                "_rel": "fkg.d_basis_datakilde",
+                "_value": "datakilde_kode",
+                "_text": "datakilde",
+                "_where": "aktiv=1"
+            }
+        },
+        "datakilde": {
+            "_type": "character varying",
+            "_character_maximum_length": -5,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1073741824,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 360,
+            "desc": "Oplysning om, hvordan data om dr\u00e6nbr\u00f8nden er tilvejebragt. Registreringsvejledning: Udfyldes automatisk ved valg fra kodeliste",
+            "properties": null
+        },
+        "bemaerkning": {
+            "_type": "character varying",
+            "_character_maximum_length": 150,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 600,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 362,
+            "desc": "Hvis det originale materiale (fx papirkort) indeholder oplysninger du vil bevare, men som ikke passer i \u00f8vrige felter",
+            "properties": null
+        },
+        "broend_synlig": {
+            "_type": "boolean",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 364,
+            "desc": "Angiv om br\u00f8ndd\u00e6kslet er synligt eller ej. Et synligt br\u00f8ndd\u00e6ksel er ud\u00e6kket. Registreringsvejledning: Angiv 1 (sand), hvis br\u00f8ndd\u00e6kslet er synligt, Angiv 2 (falsk), hvis br\u00f8ndd\u00e6kslet ikke er synligt. Eksempel: S",
+            "properties": null
+        },
+        "etableringstidspunkt": {
+            "_type": "character varying",
+            "_character_maximum_length": 20,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 80,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 366,
+            "desc": "Angivelse af tidspunkt for etableringen er gennemf\u00f8rt. Registreringsvejledning: Angiv etableringstidspunktet s\u00e5 n\u00f8jagtigt som muligt. For \u00e6ldre br\u00f8nde vil det ofte kun v\u00e6re muligt at angive, at etableringen er sket f\u00f8r et eller andet tidspunkt. Benyt korte formuleringer som: maj 2023, 2005, f\u00f8r 1970, efter 1985 Datatype og registreringsvejledning passer til LER\u2019s krav ( maj 2024). Eksempel: efter 1970",
+            "properties": null
+        },
+        "praecision_god": {
+            "_type": "boolean",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1,
+            "_is_nullable": null,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 370,
+            "desc": "Angiv om der er en god pr\u00e6cision p\u00e5 br\u00f8ndens placering \u2013 eller en ringe pr\u00e6cision. En pr\u00e6cision p\u00e5 2 meter eller mindre regnes som god. En pr\u00e6cision p\u00e5 mere end 2 meter regnes som en d\u00e5rlig pr\u00e6cision. Registreringsvejledning: Angiv v\u00e6rdien 0 (falsk), hvis pr\u00e6cisionen er d\u00e5rlig eller ukendt Angiv v\u00e6rdien 1 (sand), hvis pr\u00e6cisionen er god. Eksempel: 1",
+            "properties": null
+        },
+        "sagsnr": {
+            "_type": "character varying",
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 400,
+            "desc": "Identifikation af sag i ESDH. Eksempel: 8-70-21-3-743-6-96",
+            "properties": null
+        },
+        "link": {
+            "_type": "character varying",
+            "_character_maximum_length": 1024,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4096,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 410,
+            "desc": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
+            "properties": null
+        },
+        "geometri": {
+            "_type": "geometry",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 420,
+            "desc": "Geometrisk registrering af objekt \u2013 styres af database. Koordinatpr\u00e6cision defineret til 0,001 (millimeter). Et tema kan kun indeholde en geometritype (flade\/linje\/punkt).  Der er mulighed for multigeometrier. Eksempel: For et punkt: 543.210,999 6.123.456,111",
+            "properties": null
+        }
     }
 }
