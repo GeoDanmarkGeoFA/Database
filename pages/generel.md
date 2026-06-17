@@ -11,7 +11,7 @@
 {% assign generel = site.data.fkg.tables.generel %}
 
 <!-- Build your "table" key dynamically, e.g. "t_5612_vinterserviceomraade_t" -->
-{% assign tableKey = "" | append: theme | append: "" %}
+{% assign tableKey = "" | append: theme | append: "_t" %}
 {% assign table = site.data.fkg.tables[tableKey] %}
 
 <style>
