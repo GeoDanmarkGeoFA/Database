@@ -339,6 +339,48 @@
             "sort_id": null,
             "desc": null,
             "properties": null
+        },
+        "navn": {
+            "_type": "character varying",
+            "_character_maximum_length": 128,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 512,
+            "_restriction": null,
+            "_is_nullable": null,
+            "alias": null,
+            "queryable": false,
+            "sort_id": null,
+            "desc": null,
+            "properties": null
+        },
+        "fotoregistrator": {
+            "_type": "character varying",
+            "_character_maximum_length": 254,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 1016,
+            "_restriction": null,
+            "_is_nullable": null,
+            "alias": null,
+            "queryable": false,
+            "sort_id": null,
+            "desc": null,
+            "properties": null
+        },
+        "fotodato": {
+            "_type": "date",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_restriction": null,
+            "_is_nullable": null,
+            "alias": null,
+            "queryable": false,
+            "sort_id": null,
+            "desc": null,
+            "properties": null
         }
     }
 }

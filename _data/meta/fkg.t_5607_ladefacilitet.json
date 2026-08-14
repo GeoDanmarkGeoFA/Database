@@ -815,6 +815,26 @@
                 {
                     "value": 37500186,
                     "alias": "Nordiq Group A\/S"
+                },
+                {
+                    "value": 37121851,
+                    "alias": "Blaffernationen"
+                },
+                {
+                    "value": 24208257,
+                    "alias": "Mejeriet"
+                },
+                {
+                    "value": 44999056,
+                    "alias": "Skoldahl Consulting I\/S"
+                },
+                {
+                    "value": 65471353,
+                    "alias": "Hejls Multihus"
+                },
+                {
+                    "value": 10000015,
+                    "alias": "Mona Jepsen"
                 }
             ],
             "_is_nullable": true,

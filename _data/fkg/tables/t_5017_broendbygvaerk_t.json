@@ -47,7 +47,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "ejer"
         },
         {
             "name": "er_del_af",
@@ -69,7 +69,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "er_del_af"
         },
         {
             "name": "etableringstidspunkt",
@@ -91,7 +91,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "etabl_tid"
         },
         {
             "name": "klimatilpasningsfunktion_afledning",
@@ -113,7 +113,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "klt_afled"
         },
         {
             "name": "klimatilpasningsfunktion_fordampning",
@@ -135,7 +135,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "klt_fordam"
         },
         {
             "name": "klimatilpasningsfunktion_nedsivning",
@@ -157,7 +157,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "klt_nedsiv"
         },
         {
             "name": "klimatilpasningsfunktion_regulering",
@@ -179,7 +179,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "klt_regule"
         },
         {
             "name": "klimatilpasningsfunktion_rensning",
@@ -201,7 +201,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "klt_rensni"
         },
         {
             "name": "klimatilpasningsfunktion_reservoir",
@@ -223,7 +223,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "klt_reserv"
         },
         {
             "name": "indtegningsmetode_kode",
@@ -247,7 +247,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "indteg_m_k"
         },
         {
             "name": "noejagtighedsklasse_kode",
@@ -271,7 +271,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "noejagtk_k"
         },
         {
             "name": "medietype_kode",
@@ -295,7 +295,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "mediety_k"
         },
         {
             "name": "forsyningsart_kode",
@@ -319,7 +319,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "forsyn_a_k"
         },
         {
             "name": "fareklasse_kode",
@@ -343,7 +343,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "fareklas_k"
         },
         {
             "name": "sikkerhedshensyn",
@@ -365,7 +365,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "sikker_hen"
         },
         {
             "name": "driftsstatus_kode",
@@ -389,7 +389,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "drift_st_k"
         },
         {
             "name": "ejerskabsforhold_kode",
@@ -413,7 +413,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "ejer_for_k"
         },
         {
             "name": "niveautype_kode",
@@ -437,7 +437,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "niveauty_k"
         },
         {
             "name": "bundkote",
@@ -461,7 +461,7 @@
             "_checks": [
                 "bundkote >= 0.1 AND bundkote <= 999.99"
             ],
-            "_short_name": null
+            "_short_name": "bundkote"
         },
         {
             "name": "topkote",
@@ -486,7 +486,7 @@
                 "topkote >= 0.1 AND topkote <= 999.99",
                 "topkote >= 0.1 AND topkote <= 999.99"
             ],
-            "_short_name": null
+            "_short_name": "topkote"
         },
         {
             "name": "permanent_vandspejlskote",
@@ -508,7 +508,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "perm_va_ko"
         },
         {
             "name": "beliggenhedskommune",
@@ -530,7 +530,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "belig_kom"
         },
         {
             "name": "link",
@@ -552,7 +552,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
@@ -572,11 +572,13 @@
             "_is_primary": false,
             "default_value": null,
             "identity_generation": null,
-            "_index_method": null,
+            "_index_method": [
+                "gist"
+            ],
             "_checks": null,
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,
@@ -587,6 +589,14 @@
             "unique": true,
             "columns": [
                 "versions_id"
+            ]
+        },
+        {
+            "name": "t_5017_broendbygvaerk_t_gist",
+            "method": "gist",
+            "unique": false,
+            "columns": [
+                "geometri"
             ]
         }
     ],

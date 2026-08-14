@@ -49,7 +49,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "projek_t_k"
         },
         {
             "name": "titel",
@@ -71,7 +71,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "titel"
         },
         {
             "name": "beskrivelse",
@@ -93,7 +93,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "beskrivel"
         },
         {
             "name": "identifikator",
@@ -115,7 +115,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "id"
         },
         {
             "name": "refererer",
@@ -137,7 +137,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "refererer"
         },
         {
             "name": "ejer",
@@ -159,7 +159,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "ejer"
         },
         {
             "name": "serviceniveau",
@@ -181,7 +181,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "serviceniv"
         },
         {
             "name": "daekker",
@@ -203,10 +203,10 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "daekker"
         },
         {
-            "name": "samlet_afloebskapacitet",
+            "name": "rensegrad",
             "type": "numeric",
             "comment": null,
             "_num": 10,
@@ -225,12 +225,12 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "samlet_afloebskapacitet >= 0.1 AND samlet_afloebskapacitet <= 999.99"
+                "rensegrad >= 0.1 AND rensegrad <= 9999.99"
             ],
-            "_short_name": null
+            "_short_name": "rensegrad"
         },
         {
-            "name": "samlet_forsinkelses_volume",
+            "name": "samlet_afloebskapacitet",
             "type": "numeric",
             "comment": null,
             "_num": 11,
@@ -249,15 +249,39 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "samlet_forsinkelses_volume >= 0.1 AND samlet_forsinkelses_volume <= 999.99"
+                "samlet_afloebskapacitet >= 0::numeric AND samlet_afloebskapacitet <= 9999.99"
             ],
-            "_short_name": null
+            "_short_name": "afloeb_kap"
+        },
+        {
+            "name": "samlet_forsinkelses_volume",
+            "type": "numeric",
+            "comment": null,
+            "_num": 12,
+            "_typname": "numeric",
+            "_is_array": false,
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": null,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": [
+                "samlet_forsinkelses_volume >= 0.1 AND samlet_forsinkelses_volume <= 9999.99"
+            ],
+            "_short_name": "sam_for_vo"
         },
         {
             "name": "gentagelsesperiode",
             "type": "character varying(50)",
             "comment": null,
-            "_num": 12,
+            "_num": 13,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 50,
@@ -273,13 +297,13 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "gentag_per"
         },
         {
             "name": "beliggenhedskommune",
             "type": "integer",
             "comment": null,
-            "_num": 13,
+            "_num": 14,
             "_typname": "int4",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -295,13 +319,13 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "belig_kom"
         },
         {
             "name": "link",
             "type": "character varying(1024)",
             "comment": null,
-            "_num": 14,
+            "_num": 15,
             "_typname": "varchar",
             "_is_array": false,
             "_character_maximum_length": 1024,
@@ -317,13 +341,13 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": null
+            "_short_name": "link"
         },
         {
             "name": "geometri",
             "type": "geometry(MultiPolygon,25832)",
             "comment": null,
-            "_num": 15,
+            "_num": 16,
             "_typname": "geometry",
             "_is_array": false,
             "_character_maximum_length": null,
@@ -343,7 +367,7 @@
             "_checks": null,
             "_geom_type": "MultiPolygon",
             "_srid": "25832",
-            "_short_name": null
+            "_short_name": "the_geom"
         }
     ],
     "comment": null,
@@ -367,14 +391,19 @@
     ],
     "constraints": [
         {
+            "name": "t_5035_projekt_rensegrad_ck",
+            "constraint": "check",
+            "check": "rensegrad >= 0.1 AND rensegrad <= 9999.99"
+        },
+        {
             "name": "t_5035_projekt_samlet_afloebskapacitet_ck",
             "constraint": "check",
-            "check": "samlet_afloebskapacitet >= 0.1 AND samlet_afloebskapacitet <= 999.99"
+            "check": "samlet_afloebskapacitet >= 0::numeric AND samlet_afloebskapacitet <= 9999.99"
         },
         {
             "name": "t_5035_projekt_samlet_forsinkelses_volume_ck",
             "constraint": "check",
-            "check": "samlet_forsinkelses_volume >= 0.1 AND samlet_forsinkelses_volume <= 999.99"
+            "check": "samlet_forsinkelses_volume >= 0.1 AND samlet_forsinkelses_volume <= 9999.99"
         },
         {
             "name": "t_5035_projekt_pk",
