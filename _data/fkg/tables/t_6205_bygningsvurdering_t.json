@@ -230,7 +230,7 @@
             "_short_name": "sagsnr"
         },
         {
-            "name": "ejendomsnummer",
+            "name": "bfe_nr",
             "type": "integer",
             "comment": null,
             "_num": 11,
@@ -249,9 +249,9 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "ejendomsnummer >= 1 AND ejendomsnummer <= 9999999"
+                "bfe_nr >= 1 AND bfe_nr <= 99999999"
             ],
-            "_short_name": "ejd_nr"
+            "_short_name": null
         },
         {
             "name": "bygningsnummer",
@@ -391,15 +391,15 @@
         },
         {
             "name": "bygningsnotat",
-            "type": "character varying(1024)",
+            "type": "character varying(2048)",
             "comment": null,
             "_num": 18,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 1024,
+            "_character_maximum_length": 2048,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 4096,
+            "_max_bytes": 8192,
             "_reference": null,
             "_restriction": null,
             "is_nullable": true,
@@ -899,15 +899,15 @@
         },
         {
             "name": "arkitektonisk_vurdering",
-            "type": "character varying(1024)",
+            "type": "character varying(2048)",
             "comment": null,
             "_num": 41,
             "_typname": "varchar",
             "_is_array": false,
-            "_character_maximum_length": 1024,
+            "_character_maximum_length": 2048,
             "_numeric_precision": null,
             "_numeric_scale": null,
-            "_max_bytes": 4096,
+            "_max_bytes": 8192,
             "_reference": null,
             "_restriction": null,
             "is_nullable": true,
@@ -1570,7 +1570,7 @@
         {
             "name": "t_6205_bygningsvurdering_ejendomsnummer_ck",
             "constraint": "check",
-            "check": "ejendomsnummer >= 1 AND ejendomsnummer <= 9999999"
+            "check": "bfe_nr >= 1 AND bfe_nr <= 99999999"
         },
         {
             "name": "t_6205_bygningsvurdering_bygningsnummer_ck",

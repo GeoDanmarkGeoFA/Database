@@ -142,7 +142,7 @@
         {% if g_column[0].comment != null %}
             {% assign comment = g_column[0].comment %}
         {% else %}
-            {% assign comment = field[1].comment %}
+            {% assign comment = field[1].desc %}
 
         {% endif %}
 
