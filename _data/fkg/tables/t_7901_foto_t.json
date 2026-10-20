@@ -227,6 +227,24 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 8,
+    "_columns": [
+        "versions_id",
+        "geometri",
+        "copyright",
+        "billedtekst",
+        "alt_tekst",
+        "navn",
+        "fotoregistrator",
+        "fotodato"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_7901_foto_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_7901_foto_t\/indices",

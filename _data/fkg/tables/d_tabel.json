@@ -190,6 +190,15 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 5,
+    "_columns": [
+        "tema_kode",
+        "tema_navn",
+        "geo",
+        "udvekslingsnavn",
+        "temagruppe_id"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_tabel\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_tabel\/indices",

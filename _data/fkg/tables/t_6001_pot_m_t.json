@@ -434,6 +434,31 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 15,
+    "_columns": [
+        "versions_id",
+        "gyldig_fra",
+        "gyldig_til",
+        "potentialekort",
+        "stoettep_kode",
+        "dgu_nr",
+        "dybde",
+        "aekvidistance",
+        "magasin_kode",
+        "pejling",
+        "oprind_kilde",
+        "kotesystem_kode",
+        "usikkerhed",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6001_pot_m_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6001_pot_m_t\/indices",

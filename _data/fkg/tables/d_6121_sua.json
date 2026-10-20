@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "sua_kode",
+        "sua_type",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6121_sua\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6121_sua\/indices",

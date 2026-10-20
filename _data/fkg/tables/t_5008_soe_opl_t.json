@@ -225,6 +225,23 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 7,
+    "_columns": [
+        "versions_id",
+        "dmu_ref",
+        "soe_opl_nr",
+        "soe_nr",
+        "hydro_ref",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5008_soe_opl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5008_soe_opl_t\/indices",

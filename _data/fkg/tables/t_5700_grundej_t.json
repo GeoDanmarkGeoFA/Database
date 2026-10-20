@@ -405,6 +405,30 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 14,
+    "_columns": [
+        "versions_id",
+        "forening_type_kode",
+        "forening_navn",
+        "lokalpl_nr",
+        "formand",
+        "gf_tlf",
+        "gf_adresse",
+        "gf_mail",
+        "gf_adr_beskyt_kode",
+        "vedtaegt_kode",
+        "link",
+        "geometri",
+        "cvr_opslag",
+        "sagsnr"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5700_grundej_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5700_grundej_t\/indices",

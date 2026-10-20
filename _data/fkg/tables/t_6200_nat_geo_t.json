@@ -446,6 +446,31 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 15,
+    "_columns": [
+        "versions_id",
+        "data_oprindelse",
+        "omraade_nr",
+        "geologi_kode",
+        "jordtype_kode",
+        "terraen_kode",
+        "kompleksitet_kode",
+        "vandelement",
+        "farvandsomraade",
+        "strandbred",
+        "begrund_afgraensning",
+        "omr_sammenhaeng",
+        "link1",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6200_nat_geo_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6200_nat_geo_t\/indices",

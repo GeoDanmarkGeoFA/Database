@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "an_distrikt_type_kode",
+        "an_distrikt_type",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5711_an_distrikt_type\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5711_an_distrikt_type\/indices",

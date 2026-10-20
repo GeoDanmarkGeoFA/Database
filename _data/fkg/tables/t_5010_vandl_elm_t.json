@@ -383,6 +383,29 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 13,
+    "_columns": [
+        "versions_id",
+        "element_nr",
+        "element_kode",
+        "lokalitet",
+        "vstation",
+        "vandloebsystem",
+        "anlagt_aar",
+        "saneret_aar",
+        "tilstand_kode",
+        "broend_data",
+        "toemningsfrekvens",
+        "adgangsforhold",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5010_vandl_elm_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5010_vandl_elm_t\/indices",

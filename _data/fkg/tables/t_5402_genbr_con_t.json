@@ -269,6 +269,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "gc_type_kode",
+        "model",
+        "nedgravet",
+        "t_frekvens",
+        "t_dato",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5402_genbr_con_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5402_genbr_con_t\/indices",

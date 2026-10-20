@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "hastighed_art_kode",
+        "hastighed_art",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5603_hastighed_art\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5603_hastighed_art\/indices",

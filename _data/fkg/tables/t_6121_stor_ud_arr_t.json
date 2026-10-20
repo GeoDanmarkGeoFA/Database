@@ -640,6 +640,38 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 22,
+    "_columns": [
+        "versions_id",
+        "sua_kode",
+        "arrangement",
+        "forsamlingstelt_kode",
+        "cirkustelt_kode",
+        "campingomraade_kode",
+        "salgsomraade_kode",
+        "arrangoer",
+        "adr_i_tekst",
+        "suppl_sted_beskrivelse",
+        "sua_person",
+        "sua_tlfnr",
+        "antal_personer",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "gyldig_fra",
+        "gyldig_til",
+        "link",
+        "geometri",
+        "adr_id"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6121_stor_ud_arr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6121_stor_ud_arr_t\/indices",

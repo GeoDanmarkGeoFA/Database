@@ -354,6 +354,28 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 12,
+    "_columns": [
+        "versions_id",
+        "gs_navn",
+        "gs_type_kode",
+        "p_nr",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "adr_id",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5401_genbr_st_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5401_genbr_st_t\/indices",

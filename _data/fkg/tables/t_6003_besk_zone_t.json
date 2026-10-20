@@ -443,6 +443,32 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 16,
+    "_columns": [
+        "versions_id",
+        "dgu_nr",
+        "kildeplads",
+        "indsatsomraade",
+        "vandv_nr",
+        "jup_nr",
+        "tilladelse",
+        "tilladelse_gyldig",
+        "beskyt_zone",
+        "beskyt_zone_gyldig",
+        "lokalitet",
+        "zone_type_kode",
+        "gyldig_fra",
+        "gyldig_til",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6003_besk_zone_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6003_besk_zone_t\/indices",

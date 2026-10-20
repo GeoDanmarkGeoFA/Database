@@ -96,7 +96,7 @@
             "_short_name": "privatvej"
         },
         {
-            "name": "asfalteret",
+            "name": "ikke_asfalteret",
             "type": "boolean",
             "comment": null,
             "_num": 7,
@@ -115,7 +115,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": null,
-            "_short_name": "asfalteret"
+            "_short_name": null
         },
         {
             "name": "ensrettet",
@@ -249,6 +249,24 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 8,
+    "_columns": [
+        "versions_id",
+        "beliggenhedskommune",
+        "planstatus_kode",
+        "privatvej",
+        "ikke_asfalteret",
+        "ensrettet",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiLineString",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5609_cykelkrydspunktsstraekninger_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5609_cykelkrydspunktsstraekninger_t\/indices",

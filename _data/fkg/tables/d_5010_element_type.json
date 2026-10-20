@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "element_kode",
+        "element",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5010_element_type\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5010_element_type\/indices",

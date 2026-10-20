@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "ja_nej_ved_ikke_kode",
+        "ja_nej_ved_ikke",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6122_ja_nej_ved_ikke\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6122_ja_nej_ved_ikke\/indices",

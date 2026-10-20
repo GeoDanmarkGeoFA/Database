@@ -136,6 +136,15 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 5,
+    "_columns": [
+        "omraade_nr",
+        "omraade",
+        "cvr_kode",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_omraade\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_omraade\/indices",

@@ -197,6 +197,22 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 6,
+    "_columns": [
+        "versions_id",
+        "net_s_nr",
+        "fs_cvr",
+        "fs_navn",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5500_elfors_omr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5500_elfors_omr_t\/indices",

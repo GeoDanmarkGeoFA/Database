@@ -354,6 +354,28 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 12,
+    "_columns": [
+        "versions_id",
+        "bra_kode",
+        "tyv_alarm_kode",
+        "noegleboksnr",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "bemaerkning",
+        "link",
+        "geometri",
+        "adr_id"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6110_noegle_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6110_noegle_t\/indices",

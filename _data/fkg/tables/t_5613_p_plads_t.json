@@ -335,6 +335,28 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 12,
+    "_columns": [
+        "versions_id",
+        "p_brug_kode",
+        "p_brug_tekst",
+        "p_antal",
+        "p_zone_nr",
+        "omraade",
+        "link",
+        "geometri",
+        "foto_link",
+        "foto_link1",
+        "foto_link2",
+        "foto_link3"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5613_p_plads_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5613_p_plads_t\/indices",

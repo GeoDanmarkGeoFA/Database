@@ -271,6 +271,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "krydspunktsnummer",
+        "beliggenhedskommune",
+        "planstatus_kode",
+        "primaerpunkt",
+        "blindt_punkt",
+        "afm_krydspunkt",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5608_cykelkrydspunkter_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5608_cykelkrydspunkter_t\/indices",

@@ -354,6 +354,27 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 11,
+    "_columns": [
+        "versions_id",
+        "vinterklasse_kode",
+        "adm_vejnr",
+        "frakm",
+        "fram",
+        "tilkm",
+        "tilm",
+        "sted_metode_kode",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiLineString",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5600_vintervedl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5600_vintervedl_t\/indices",

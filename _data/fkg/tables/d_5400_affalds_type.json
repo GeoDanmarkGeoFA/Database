@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "affaldstype_kode",
+        "affaldstype",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5400_affalds_type\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5400_affalds_type\/indices",

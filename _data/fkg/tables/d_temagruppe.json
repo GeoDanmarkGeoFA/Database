@@ -131,6 +131,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "temagruppe_id",
+        "vaerdiomraade_min",
+        "vaerdiomraade_max",
+        "tema_gruppe"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_temagruppe\/indices",

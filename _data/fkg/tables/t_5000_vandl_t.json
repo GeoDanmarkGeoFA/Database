@@ -709,6 +709,39 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 23,
+    "_columns": [
+        "versions_id",
+        "navn",
+        "dmu_ref",
+        "vandloeb_nr",
+        "maalsaetning_kode",
+        "vandl_type_kode",
+        "ejerstatus_kode",
+        "klasse_kode",
+        "tidl_amt_kode",
+        "vedligehold",
+        "ansvar_vedligehold",
+        "p3vandloeb_kode",
+        "sejlads",
+        "dvfi_bedoemmelse_kode",
+        "station_fra",
+        "station_til",
+        "vandloebs_bredde",
+        "vandfoeringsforhold",
+        "maalsaetning_opfyldt_kode",
+        "fot_id",
+        "trussel_vand_kode",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiLineString",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5000_vandl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5000_vandl_t\/indices",

@@ -180,6 +180,17 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 7,
+    "_columns": [
+        "invasivart_kode",
+        "ia_dansknavn",
+        "ia_latinsknavn",
+        "ia_rige",
+        "aktiv",
+        "begrebsdefinition",
+        "vaesentlighed"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_invasivart\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_invasivart\/indices",

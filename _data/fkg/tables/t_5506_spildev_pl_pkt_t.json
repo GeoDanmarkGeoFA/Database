@@ -288,6 +288,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "anlaeg_type_kode",
+        "punkt_nr",
+        "oplandstype",
+        "recipient",
+        "anlaegsstatus_kode",
+        "planstatus_kode",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5506_spildev_pl_pkt_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5506_spildev_pl_pkt_t\/indices",

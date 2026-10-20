@@ -295,6 +295,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "navn",
+        "strand_type_kode",
+        "prioritet",
+        "esi_klasse_kode",
+        "baad_kode",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6116_olie_ber_pl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6116_olie_ber_pl_t\/indices",

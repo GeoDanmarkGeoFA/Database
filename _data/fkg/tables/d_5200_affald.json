@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "affald_prod_kode",
+        "affald_prod",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5200_affald\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5200_affald\/indices",

@@ -269,6 +269,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "virksomhed_cvr",
+        "virksomhed_navn",
+        "virksomhed_type",
+        "depot_type_kode",
+        "gyldig_fra",
+        "gyldig_til",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6112_midl_dep_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6112_midl_dep_t\/indices",

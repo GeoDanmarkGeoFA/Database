@@ -28,7 +28,7 @@
         {
             "name": "objekt_id",
             "type": "uuid",
-            "comment": "Entydig databasen\u00f8gle over tid",
+            "comment": "Entydigt ID for et objekt i et tema. Hvis objekter er opdaterede, har de historiske objekter samme Objekt_id som det g\u00e6ldende, men forskellige Versions_id\u2019er. Objekt_id\u2019en anvendes som generel reference til et objekt i et tema",
             "_num": 2,
             "_typname": "uuid",
             "_is_array": false,
@@ -52,7 +52,7 @@
         {
             "name": "systid_fra",
             "type": "timestamp with time zone",
-            "comment": "Start systemtid",
+            "comment": "Dato og tidspunkt for start af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved oprettelse af nye objekter eller ved\u00e6ndringer, hvor der samtidig oprettes et historisk objekt. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen. Feltet beskriver systemgyldighed, og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
             "_num": 3,
             "_typname": "timestamptz",
             "_is_array": false,
@@ -74,7 +74,7 @@
         {
             "name": "systid_til",
             "type": "timestamp with time zone",
-            "comment": "Slut systemtid",
+            "comment": "Dato og tidspunkt for slut af objektets systemm\u00e6ssige gyldighed. S\u00e6ttes af systemet ved sletning af objekter, eller ved \u00e6ndringer, hvor der oprettes et historisk objekt. Dato og tidspunkt generes af systemet ved sletning eller \u00e6ndring i databasen.  Et g\u00e6ldende objekt har altid Systid_til = NULL. Feltet beskriver systemgyldighed og m\u00e5 ikke forveksles med forvaltningsm\u00e6ssig gyldighed.",
             "_num": 4,
             "_typname": "timestamptz",
             "_is_array": false,
@@ -98,7 +98,7 @@
         {
             "name": "oprettet",
             "type": "timestamp with time zone",
-            "comment": "Systemtid for objektets oprettelse",
+            "comment": "Dato og tidspunkt for objektets systemm\u00e6ssige oprettelse svarer til f\u00f8rste Systid_fra registreret p\u00e5 et Objekt_id, hvorved oprettelsestidspunktet altid fremg\u00e5r, uanset hvor mange \u00e6ndringer et objekt har gennemg\u00e5et. Dato og tidspunkt genereres af systemet ved indl\u00e6gning i databasen.",
             "_num": 5,
             "_typname": "timestamptz",
             "_is_array": false,
@@ -120,7 +120,7 @@
         {
             "name": "cvr_kode",
             "type": "integer",
-            "comment": "CVR-kode p\u00e5 ansvarlig myndighed",
+            "comment": "Feltet benyttes til at angive CVR-koden for objektets ansvarlige myndighed. Systemet b\u00f8r kunne se hvilken kommune brugeren kommer fra via login\u2019et og selv udfylde feltet.",
             "_num": 6,
             "_typname": "int4",
             "_is_array": false,
@@ -146,7 +146,7 @@
         {
             "name": "bruger_id",
             "type": "character varying(128)",
-            "comment": "Brugernavn ved opdatering",
+            "comment": "Brugeridentifikation fra det f\u00e6lles offentlige brugerstyringssystem. Registreres automatisk ved oprettelse eller opdatering af objekter. Der er tale om brugeridentifikation af den medarbejder, der via det f\u00e6lles offentlige brugerstyringssystem har f\u00e5et tildelt rettigheder til at redigere i data.",
             "_num": 7,
             "_typname": "varchar",
             "_is_array": false,
@@ -168,7 +168,7 @@
         {
             "name": "oprindkode",
             "type": "integer",
-            "comment": "Kode for oprindelse for objekt",
+            "comment": "Feltet benyttes til at angive en oprindelse via en kode.",
             "_num": 8,
             "_typname": "int4",
             "_is_array": false,
@@ -192,7 +192,7 @@
         {
             "name": "statuskode",
             "type": "integer",
-            "comment": "Kode for g\u00e6ldende status",
+            "comment": "Feltet benyttes til at angive en status via en kode.",
             "_num": 9,
             "_typname": "int4",
             "_is_array": false,
@@ -216,7 +216,7 @@
         {
             "name": "off_kode",
             "type": "integer",
-            "comment": "Kode for Tilg\u00e6ngelighed",
+            "comment": "Feltet benyttes til at angive niveauet for tilg\u00e6ngelighed til objektet via en kode.",
             "_num": 10,
             "_typname": "int4",
             "_is_array": false,
@@ -262,7 +262,7 @@
         {
             "name": "note",
             "type": "character varying(254)",
-            "comment": "Bem\u00e6rkning",
+            "comment": "Frit bem\u00e6rkningsfelt.",
             "_num": 12,
             "_typname": "varchar",
             "_is_array": false,
@@ -372,6 +372,22 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 12,
+    "_columns": [
+        "versions_id",
+        "objekt_id",
+        "systid_fra",
+        "systid_til",
+        "oprettet",
+        "cvr_kode",
+        "bruger_id",
+        "oprindkode",
+        "statuskode",
+        "off_kode",
+        "noegle",
+        "note"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/generel\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/generel\/indices",

@@ -209,6 +209,22 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 6,
+    "_columns": [
+        "versions_id",
+        "beskyt_rum_kode",
+        "klargjort_kode",
+        "pladser",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6101_beskyt_rum_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6101_beskyt_rum_t\/indices",

@@ -397,6 +397,29 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 13,
+    "_columns": [
+        "versions_id",
+        "moelletype",
+        "hoejde",
+        "kapacitet",
+        "stoej_kode",
+        "konsekvenszone",
+        "sagsnr",
+        "vejkode",
+        "husnr",
+        "postnr",
+        "geometri",
+        "cvf_vejkode",
+        "adr_id"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5508_husst_moel_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5508_husst_moel_t\/indices",

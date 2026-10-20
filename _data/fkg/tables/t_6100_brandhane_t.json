@@ -553,6 +553,34 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 18,
+    "_columns": [
+        "versions_id",
+        "brandhane_id",
+        "brandhane_type_kode",
+        "modeltype",
+        "ydelse",
+        "senest_maalte_ydelse",
+        "placering_kode",
+        "lokalitet",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "funktionsstatus_kode",
+        "aktiv_kode",
+        "senest_tilsyn",
+        "link",
+        "geometri",
+        "adr_id"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6100_brandhane_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6100_brandhane_t\/indices",

@@ -592,6 +592,36 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 20,
+    "_columns": [
+        "versions_id",
+        "ledn_nr",
+        "ledn_type_kode",
+        "klasse_kode",
+        "etableringstidspunkt",
+        "start_dybde",
+        "slut_dybde",
+        "start_kote",
+        "slut_kote",
+        "kotesystem_kode",
+        "fald_promille",
+        "diameter_mm",
+        "diameter_tommer",
+        "datakilde_kode",
+        "praecision_god",
+        "projektnr",
+        "kommentar",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiLineString",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5003_draenledn_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5003_draenledn_t\/indices",

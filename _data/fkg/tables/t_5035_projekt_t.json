@@ -437,6 +437,32 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 16,
+    "_columns": [
+        "versions_id",
+        "projekttype_kode",
+        "titel",
+        "beskrivelse",
+        "identifikator",
+        "refererer",
+        "ejer",
+        "serviceniveau",
+        "daekker",
+        "rensegrad",
+        "samlet_afloebskapacitet",
+        "samlet_forsinkelses_volume",
+        "gentagelsesperiode",
+        "beliggenhedskommune",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5035_projekt_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5035_projekt_t\/indices",

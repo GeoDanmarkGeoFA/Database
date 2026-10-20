@@ -313,6 +313,27 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 11,
+    "_columns": [
+        "versions_id",
+        "gyldig_fra",
+        "gyldig_til",
+        "affalddistrikt_nr",
+        "affalddistrikt_navn",
+        "affaldstype_kode",
+        "afh_frekvens",
+        "afh_dag",
+        "cvr_opslag",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5400_affalds_dis_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5400_affalds_dis_t\/indices",

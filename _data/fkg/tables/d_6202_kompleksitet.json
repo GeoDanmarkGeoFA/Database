@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "kompleksitet_kode",
+        "kompleksitet",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6202_kompleksitet\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6202_kompleksitet\/indices",

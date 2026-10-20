@@ -136,6 +136,15 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 5,
+    "_columns": [
+        "vedlhold_p_type_kode",
+        "vedlhold_p_type",
+        "aktiv",
+        "vedlhold_p_type_label",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_groenvedligh_punkt\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_groenvedligh_punkt\/indices",

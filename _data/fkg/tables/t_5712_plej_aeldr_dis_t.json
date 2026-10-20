@@ -291,6 +291,26 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 10,
+    "_columns": [
+        "versions_id",
+        "plej_distrikt_nr",
+        "plej_distrikt_navn",
+        "plej_distrikt_type_kode",
+        "sagsnr",
+        "link",
+        "geometri",
+        "plej_distrikt_dag",
+        "plej_distrikt_aften",
+        "plej_distrikt_nat"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5712_plej_aeldr_dis_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5712_plej_aeldr_dis_t\/indices",

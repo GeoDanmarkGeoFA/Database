@@ -92,6 +92,13 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 3,
+    "_columns": [
+        "statuskode",
+        "status",
+        "aktiv"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_status\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_status\/indices",

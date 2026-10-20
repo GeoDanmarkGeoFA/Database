@@ -421,6 +421,31 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 15,
+    "_columns": [
+        "versions_id",
+        "gyldig_fra",
+        "gyldig_til",
+        "kote",
+        "navn",
+        "aekvidistance",
+        "magasin_kode",
+        "pejling",
+        "oprind_kilde",
+        "metode",
+        "reference",
+        "kotesystem_kode",
+        "usikkerhed",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiLineString",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6000_pot_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6000_pot_t\/indices",

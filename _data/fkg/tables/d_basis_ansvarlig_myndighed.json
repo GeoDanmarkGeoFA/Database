@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "cvr_kode",
+        "cvr_navn",
+        "kommunekode",
+        "aktiv"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_ansvarlig_myndighed\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_basis_ansvarlig_myndighed\/indices",

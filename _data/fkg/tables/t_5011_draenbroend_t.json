@@ -470,6 +470,32 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 16,
+    "_columns": [
+        "versions_id",
+        "broend_nr",
+        "broendtype_kode",
+        "diameter_mm",
+        "diameter_tommer",
+        "dybde_udloeb",
+        "kote_udloeb",
+        "kotesystem_kode",
+        "datakilde_kode",
+        "bemaerkning",
+        "broend_synlig",
+        "etableringstidspunkt",
+        "praecision_god",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5011_draenbroend_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5011_draenbroend_t\/indices",

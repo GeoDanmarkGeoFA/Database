@@ -158,6 +158,16 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 6,
+    "_columns": [
+        "traebetegn_kode",
+        "trae_slaegt_latin",
+        "trae_art_latin",
+        "traebetegn_dansk",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_traebetegn\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6802_traebetegn\/indices",

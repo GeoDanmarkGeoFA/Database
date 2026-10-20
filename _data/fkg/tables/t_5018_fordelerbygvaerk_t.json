@@ -697,6 +697,40 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 24,
+    "_columns": [
+        "versions_id",
+        "ejer",
+        "er_del_af",
+        "etableringstidspunkt",
+        "klimatilpasningsfunktion_afledning",
+        "klimatilpasningsfunktion_fordampning",
+        "klimatilpasningsfunktion_nedsivning",
+        "klimatilpasningsfunktion_regulering",
+        "klimatilpasningsfunktion_rensning",
+        "klimatilpasningsfunktion_reservoir",
+        "indtegningsmetode_kode",
+        "noejagtighedsklasse_kode",
+        "medietype_kode",
+        "forsyningsart_kode",
+        "fareklasse_kode",
+        "sikkerhedshensyn",
+        "driftsstatus_kode",
+        "ejerskabsforhold_kode",
+        "niveautype_kode",
+        "bundkote",
+        "topkote",
+        "beliggenhedskommune",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5018_fordelerbygvaerk_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5018_fordelerbygvaerk_t\/indices",

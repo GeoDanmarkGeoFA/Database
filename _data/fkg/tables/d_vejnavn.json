@@ -168,6 +168,16 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 6,
+    "_columns": [
+        "vejkode",
+        "vejnavn",
+        "aktiv",
+        "cvf_vejkode",
+        "postnr",
+        "kommunekode"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_vejnavn\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_vejnavn\/indices",

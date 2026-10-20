@@ -341,6 +341,28 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 12,
+    "_columns": [
+        "versions_id",
+        "rute_nr",
+        "rute_navn",
+        "rutetype_kode",
+        "cvr_opslag",
+        "vinterentreprenoer",
+        "rute_nr_sne",
+        "rute_entreprenoer_salt",
+        "rute_nr_salt",
+        "link",
+        "geometri",
+        "rute_opgave_kode"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiLineString",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5611_vinterute_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5611_vinterute_t\/indices",

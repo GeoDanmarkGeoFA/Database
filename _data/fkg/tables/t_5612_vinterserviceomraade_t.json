@@ -408,6 +408,31 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 15,
+    "_columns": [
+        "versions_id",
+        "vinterserviceomraade_kode",
+        "vinterservice_nr",
+        "vinterservice_navn",
+        "rute_nr",
+        "rute_navn",
+        "vinterservice_beskrivelse",
+        "areal",
+        "norm_tid",
+        "link",
+        "geometri",
+        "foto_link",
+        "foto_link1",
+        "foto_link2",
+        "foto_link3"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5612_vinterserviceomraade_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5612_vinterserviceomraade_t\/indices",

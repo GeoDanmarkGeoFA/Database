@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "maalsaetning_kode",
+        "maalsaetning",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5005_maalsaetning\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5005_maalsaetning\/indices",

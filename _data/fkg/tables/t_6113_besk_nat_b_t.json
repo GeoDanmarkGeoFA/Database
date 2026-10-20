@@ -117,6 +117,19 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 3,
+    "_columns": [
+        "versions_id",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6113_besk_nat_b_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6113_besk_nat_b_t\/indices",

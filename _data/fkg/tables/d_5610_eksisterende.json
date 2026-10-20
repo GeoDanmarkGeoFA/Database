@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "eksisterende_kode",
+        "eksisterende",
+        "aktiv",
+        "begrebsdefination"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5610_eksisterende\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5610_eksisterende\/indices",

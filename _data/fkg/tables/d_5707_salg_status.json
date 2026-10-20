@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "salg_status_kode",
+        "salg_status",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5707_salg_status\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5707_salg_status\/indices",

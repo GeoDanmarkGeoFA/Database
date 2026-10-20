@@ -659,6 +659,39 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 23,
+    "_columns": [
+        "versions_id",
+        "affald_prod_kode",
+        "cvr_opslag",
+        "navn",
+        "ejendoms_nr",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "adr_id",
+        "markblok",
+        "marknummer",
+        "dosering_toerstof",
+        "dosering_vaadvaegt",
+        "fosfor_total",
+        "fosfor_udnyttelse",
+        "kvaelstof_total",
+        "kvaelstof_udnyttelse",
+        "kalium_total",
+        "udbringning_aar",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5200_aff_prod_udbr_t\/indices",

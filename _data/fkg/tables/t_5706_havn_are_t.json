@@ -247,6 +247,24 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 8,
+    "_columns": [
+        "versions_id",
+        "havn_nr",
+        "havn_navn",
+        "havne_type_kode",
+        "ejer_admin",
+        "link",
+        "geometri",
+        "cvr_opslag"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5706_havn_are_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5706_havn_are_t\/indices",

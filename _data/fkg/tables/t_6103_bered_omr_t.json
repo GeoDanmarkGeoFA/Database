@@ -234,6 +234,24 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 8,
+    "_columns": [
+        "versions_id",
+        "bereds_distrikt_nr",
+        "bereds_distrikt_navn",
+        "udrykker",
+        "gyldig_fra",
+        "gyldig_til",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6103_bered_omr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6103_bered_omr_t\/indices",

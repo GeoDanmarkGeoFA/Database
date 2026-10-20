@@ -319,6 +319,27 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 11,
+    "_columns": [
+        "versions_id",
+        "forpagter_navn",
+        "forpagter_formaal",
+        "udlejning_kode",
+        "landbrug_kode",
+        "sagsnr",
+        "gyldig_fra",
+        "gyldig_til",
+        "link",
+        "geometri",
+        "cvr_opslag"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5705_forp_are_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5705_forp_are_t\/indices",

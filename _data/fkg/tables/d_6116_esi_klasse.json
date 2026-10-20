@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "esi_klasse_kode",
+        "esi_klasse",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_6116_esi_klasse\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_6116_esi_klasse\/indices",

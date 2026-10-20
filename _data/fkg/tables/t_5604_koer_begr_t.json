@@ -398,6 +398,29 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 13,
+    "_columns": [
+        "versions_id",
+        "regulerings_type_kode",
+        "tilladt_periode_bil",
+        "tilladt_periode_cykel",
+        "tilladt_periode_varekoersel",
+        "cvf_adm_vejnr",
+        "frakm",
+        "fram",
+        "tilkm",
+        "tilm",
+        "sted_metode_kode",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiLineString",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5604_koer_begr_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5604_koer_begr_t\/indices",

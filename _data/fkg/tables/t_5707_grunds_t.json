@@ -644,6 +644,39 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 23,
+    "_columns": [
+        "versions_id",
+        "udstyk_navn",
+        "grund_type_kode",
+        "salg_status_kode",
+        "pris",
+        "mindste_pris",
+        "kvm_pris",
+        "kontakt_oplys",
+        "grundareal",
+        "bygningareal",
+        "budfrist_slut",
+        "sagsnr",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "link",
+        "geometri",
+        "adr_id",
+        "foto_link",
+        "foto_link1",
+        "foto_link2",
+        "foto_link3"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5707_grunds_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5707_grunds_t\/indices",

@@ -256,6 +256,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "gyldig_fra",
+        "funktion",
+        "planlagt_aktivitet",
+        "genoptaget",
+        "kommentar",
+        "sagsnr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5300_genopd_ret_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5300_genopd_ret_t\/indices",

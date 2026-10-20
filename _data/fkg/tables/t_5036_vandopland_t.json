@@ -249,6 +249,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "er_del_af",
+        "titel",
+        "beskrivelse",
+        "ekstremregn",
+        "hverdagsregn",
+        "beliggenhedskommune",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5036_vandopland_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5036_vandopland_t\/indices",

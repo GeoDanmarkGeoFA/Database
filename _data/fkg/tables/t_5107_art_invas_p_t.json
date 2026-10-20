@@ -578,6 +578,37 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 21,
+    "_columns": [
+        "versions_id",
+        "invasivart_kode",
+        "inventoer",
+        "indberetning_sagsnr",
+        "observationsdato",
+        "start_antal_kode",
+        "start_udbredelse",
+        "seneste_tilsyn_dato",
+        "seneste_tilsyn_antal_kode",
+        "seneste_tilsyn_udbredelse",
+        "lokalitet",
+        "ia_status_kode",
+        "forekomst",
+        "bekaemp",
+        "sagsnr",
+        "foto_link",
+        "foto_link1",
+        "foto_link2",
+        "foto_link3",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5107_art_invas_p_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5107_art_invas_p_t\/indices",

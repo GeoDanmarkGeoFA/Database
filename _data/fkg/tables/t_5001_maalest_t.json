@@ -288,6 +288,25 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 9,
+    "_columns": [
+        "versions_id",
+        "stationsnr",
+        "lokalitet",
+        "maalest_type_kode",
+        "ejerstatus_kode",
+        "dvfi_bedoemmelse_kode",
+        "dmu_nr",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPoint",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5001_maalest_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5001_maalest_t\/indices",

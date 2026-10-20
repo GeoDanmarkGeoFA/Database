@@ -245,6 +245,23 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 7,
+    "_columns": [
+        "versions_id",
+        "risikotype_kode",
+        "cvr_risi_virk",
+        "kontakt_tlf",
+        "brandhaem_kode",
+        "link",
+        "geometri"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6104_risiko_virk_t\/indices",

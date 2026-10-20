@@ -136,6 +136,15 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 5,
+    "_columns": [
+        "pleje_type_kode",
+        "pleje_type",
+        "aktiv",
+        "begrebsdefinition",
+        "pleje_type_label"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5106_pleje_type\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5106_pleje_type\/indices",

@@ -319,6 +319,27 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 11,
+    "_columns": [
+        "versions_id",
+        "navn",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "bemaerkning",
+        "link_tegn",
+        "link",
+        "geometri",
+        "adr_id"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6108_moedepl_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6108_moedepl_t\/indices",

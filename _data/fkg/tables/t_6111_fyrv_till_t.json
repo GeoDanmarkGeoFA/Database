@@ -383,6 +383,29 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 13,
+    "_columns": [
+        "versions_id",
+        "fyr_firma_navn",
+        "fyr_firma_cvr",
+        "vejkode",
+        "cvf_vejkode",
+        "husnr",
+        "postnr",
+        "tilladelse_type_kode",
+        "gyldig_fra",
+        "gyldig_til",
+        "link",
+        "geometri",
+        "adr_id"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_6111_fyrv_till_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_6111_fyrv_till_t\/indices",

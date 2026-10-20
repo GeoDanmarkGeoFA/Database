@@ -390,6 +390,29 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 13,
+    "_columns": [
+        "versions_id",
+        "udd_distrikt_nr",
+        "udd_distrikt_navn",
+        "udd_distrikt_type_kode",
+        "starttrin_kode",
+        "sluttrin_kode",
+        "sagsnr",
+        "link",
+        "geometri",
+        "udd_hovedomr_nr",
+        "udd_hovedomr_navn",
+        "udd_delomr_nr",
+        "udd_delomr_navn"
+    ],
+    "_geometry_columns": [
+        {
+            "name": "geometri",
+            "type": "MultiPolygon",
+            "srid": 25832
+        }
+    ],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/t_5710_born_skole_dis_t\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/t_5710_born_skole_dis_t\/indices",

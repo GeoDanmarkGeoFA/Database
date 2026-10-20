@@ -114,6 +114,14 @@
     ],
     "_type": "TABLE",
     "_events": false,
+    "_column_count": 4,
+    "_columns": [
+        "soe_opl_nr",
+        "soeopl_navn",
+        "aktiv",
+        "begrebsdefinition"
+    ],
+    "_geometry_columns": [],
     "_links": {
         "columns": "\/api\/v4\/schemas\/fkg\/tables\/d_5008_opl\/columns",
         "indices": "\/api\/v4\/schemas\/fkg\/tables\/d_5008_opl\/indices",
