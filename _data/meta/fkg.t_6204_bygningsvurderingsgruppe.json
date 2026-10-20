@@ -1231,7 +1231,7 @@
             "alias": "",
             "queryable": false,
             "sort_id": 235,
-            "desc": null,
+            "desc": "Tekst der beskriver gruppens beliggenhed",
             "properties": null
         },
         "gruppetype": {
@@ -1245,7 +1245,7 @@
             "alias": "",
             "queryable": false,
             "sort_id": 240,
-            "desc": null,
+            "desc": "Tekst der beskriver gruppens type",
             "properties": null
         },
         "oprettelsesdato": {
@@ -1259,7 +1259,7 @@
             "alias": "",
             "queryable": false,
             "sort_id": 245,
-            "desc": null,
+            "desc": "Dato for oprettelse af gruppen",
             "properties": null
         },
         "komplekstype": {
@@ -1273,7 +1273,7 @@
             "alias": "",
             "queryable": false,
             "sort_id": 250,
-            "desc": null,
+            "desc": "Tekst der beskriver gruppens komplekstype",
             "properties": null
         },
         "bebyggelsestype": {
@@ -1287,7 +1287,7 @@
             "alias": "",
             "queryable": false,
             "sort_id": 255,
-            "desc": null,
+            "desc": "Tekst der beskriver gruppens bebyggelsestype",
             "properties": null
         },
         "link": {
