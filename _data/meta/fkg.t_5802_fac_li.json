@@ -604,6 +604,10 @@
                     "alias": "Erhvervshus Fyn P\/S"
                 },
                 {
+                    "value": 34772355,
+                    "alias": "N\u00f8rre Snede Lokalr\u00e5d"
+                },
+                {
                     "value": 34897034,
                     "alias": "Destination Sj\u00e6lland A\/S"
                 },
@@ -1240,10 +1244,6 @@
                     "alias": "Panoramarute"
                 },
                 {
-                    "value": 6,
-                    "alias": "Cykelknudepunktsstr\u00e6kning"
-                },
-                {
                     "value": 7,
                     "alias": "De nationale cykelruter"
                 },
@@ -1362,6 +1362,26 @@
                 {
                     "value": 5,
                     "alias": "Orange"
+                },
+                {
+                    "value": 6,
+                    "alias": "Lilla"
+                },
+                {
+                    "value": 7,
+                    "alias": "Hvid"
+                },
+                {
+                    "value": 8,
+                    "alias": "Sort"
+                },
+                {
+                    "value": 98,
+                    "alias": "Andet"
+                },
+                {
+                    "value": 99,
+                    "alias": "Ukendt \/ Ikke oplyst"
                 }
             ],
             "_is_nullable": null,

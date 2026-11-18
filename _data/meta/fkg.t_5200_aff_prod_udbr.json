@@ -1,5 +1,5 @@
 {
-    "title": "Affaldsprodukter og udbringning (5200)",
+    "title": "Affaldsprodukter til jordbrugsform\u00e5l (5200)",
     "group": "Milj\u00f8",
     "sort_id": 700,
     "tags": [
@@ -598,6 +598,10 @@
                 {
                     "value": 34206228,
                     "alias": "Erhvervshus Fyn P\/S"
+                },
+                {
+                    "value": 34772355,
+                    "alias": "N\u00f8rre Snede Lokalr\u00e5d"
                 },
                 {
                     "value": 34897034,

@@ -684,58 +684,14 @@
             ]
         },
         {
-            "name": "t_6202_landk_omr_generel_fk",
+            "name": "t_6202_landk_omr_d_6202_kompleksitet_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "kompleksitet_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_6202_kompleksitet",
             "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_basis_omraade_fk",
-            "constraint": "foreign",
-            "columns": [
-                "omraade_nr"
-            ],
-            "referenced_table": "d_basis_omraade",
-            "referenced_columns": [
-                "omraade_nr"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_6202_tidsdybde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "tidsdybde_kode"
-            ],
-            "referenced_table": "d_6202_tidsdybde",
-            "referenced_columns": [
-                "tidsdybde_kode"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_basis_tilstand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "intakthed_kode"
-            ],
-            "referenced_table": "d_basis_tilstand",
-            "referenced_columns": [
-                "tilstand_kode"
-            ]
-        },
-        {
-            "name": "t_6202_landk_omr_d_6202_skala_fk",
-            "constraint": "foreign",
-            "columns": [
-                "skala_kode"
-            ],
-            "referenced_table": "d_6202_skala",
-            "referenced_columns": [
-                "skala_kode"
+                "kompleksitet_kode"
             ]
         },
         {
@@ -750,14 +706,14 @@
             ]
         },
         {
-            "name": "t_6202_landk_omr_d_6202_kompleksitet_fk",
+            "name": "t_6202_landk_omr_d_6202_skala_fk",
             "constraint": "foreign",
             "columns": [
-                "kompleksitet_kode"
+                "skala_kode"
             ],
-            "referenced_table": "d_6202_kompleksitet",
+            "referenced_table": "d_6202_skala",
             "referenced_columns": [
-                "kompleksitet_kode"
+                "skala_kode"
             ]
         },
         {
@@ -772,6 +728,17 @@
             ]
         },
         {
+            "name": "t_6202_landk_omr_d_6202_tidsdybde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "tidsdybde_kode"
+            ],
+            "referenced_table": "d_6202_tidsdybde",
+            "referenced_columns": [
+                "tidsdybde_kode"
+            ]
+        },
+        {
             "name": "t_6202_landk_omr_d_6202_visuel_uro_kode_fk",
             "constraint": "foreign",
             "columns": [
@@ -780,6 +747,39 @@
             "referenced_table": "d_6202_visuel_uro",
             "referenced_columns": [
                 "visuel_uro_kode"
+            ]
+        },
+        {
+            "name": "t_6202_landk_omr_d_basis_omraade_fk",
+            "constraint": "foreign",
+            "columns": [
+                "omraade_nr"
+            ],
+            "referenced_table": "d_basis_omraade",
+            "referenced_columns": [
+                "omraade_nr"
+            ]
+        },
+        {
+            "name": "t_6202_landk_omr_d_basis_tilstand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "intakthed_kode"
+            ],
+            "referenced_table": "d_basis_tilstand",
+            "referenced_columns": [
+                "tilstand_kode"
+            ]
+        },
+        {
+            "name": "t_6202_landk_omr_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
             ]
         }
     ],

@@ -493,31 +493,6 @@
     ],
     "constraints": [
         {
-            "name": "t_5003_start_dybde_ck",
-            "constraint": "check",
-            "check": "start_dybde >= 0.1::double precision AND start_dybde <= 99.9::double precision"
-        },
-        {
-            "name": "t_5003_slut_dybde_ck",
-            "constraint": "check",
-            "check": "slut_dybde >= 0.1::double precision AND slut_dybde <= 99.9::double precision"
-        },
-        {
-            "name": "t_5003_start_kote_ck",
-            "constraint": "check",
-            "check": "start_kote >= '-10.0'::numeric::double precision AND start_kote <= 200.0::double precision"
-        },
-        {
-            "name": "t_5003_slut_kote_ck",
-            "constraint": "check",
-            "check": "slut_kote >= '-10.0'::numeric::double precision AND slut_kote <= 200.0::double precision"
-        },
-        {
-            "name": "t_5003_fald_promille_ck",
-            "constraint": "check",
-            "check": "fald_promille >= 0.0::double precision AND fald_promille <= 1000.0::double precision"
-        },
-        {
             "name": "t_5003_diameter_mm_ck",
             "constraint": "check",
             "check": "diameter_mm::double precision >= 1::double precision AND diameter_mm::double precision <= 999::double precision"
@@ -528,6 +503,31 @@
             "check": "diameter_tommer >= 0.01::double precision AND diameter_tommer <= 39.99::double precision"
         },
         {
+            "name": "t_5003_fald_promille_ck",
+            "constraint": "check",
+            "check": "fald_promille >= 0.0::double precision AND fald_promille <= 1000.0::double precision"
+        },
+        {
+            "name": "t_5003_slut_dybde_ck",
+            "constraint": "check",
+            "check": "slut_dybde >= 0.1::double precision AND slut_dybde <= 99.9::double precision"
+        },
+        {
+            "name": "t_5003_slut_kote_ck",
+            "constraint": "check",
+            "check": "slut_kote >= '-10.0'::numeric::double precision AND slut_kote <= 200.0::double precision"
+        },
+        {
+            "name": "t_5003_start_dybde_ck",
+            "constraint": "check",
+            "check": "start_dybde >= 0.1::double precision AND start_dybde <= 99.9::double precision"
+        },
+        {
+            "name": "t_5003_start_kote_ck",
+            "constraint": "check",
+            "check": "start_kote >= '-10.0'::numeric::double precision AND start_kote <= 200.0::double precision"
+        },
+        {
             "name": "t_5003_draenledn_pk",
             "constraint": "primary",
             "columns": [
@@ -535,25 +535,14 @@
             ]
         },
         {
-            "name": "t_5003_draenledn_generel_fk",
+            "name": "t_5003_d_basis_datakilde_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "datakilde_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_basis_datakilde",
             "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5003_draenledn_d_5003_ledn_type_fk",
-            "constraint": "foreign",
-            "columns": [
-                "ledn_type_kode"
-            ],
-            "referenced_table": "d_5003_ledn_type",
-            "referenced_columns": [
-                "ledn_type_kode"
+                "datakilde_kode"
             ]
         },
         {
@@ -568,6 +557,17 @@
             ]
         },
         {
+            "name": "t_5003_draenledn_d_5003_ledn_type_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ledn_type_kode"
+            ],
+            "referenced_table": "d_5003_ledn_type",
+            "referenced_columns": [
+                "ledn_type_kode"
+            ]
+        },
+        {
             "name": "t_5003_draenledn_d_basis_kotesystem_fk",
             "constraint": "foreign",
             "columns": [
@@ -579,14 +579,14 @@
             ]
         },
         {
-            "name": "t_5003_d_basis_datakilde_fk",
+            "name": "t_5003_draenledn_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "datakilde_kode"
+                "versions_id"
             ],
-            "referenced_table": "d_basis_datakilde",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "datakilde_kode"
+                "versions_id"
             ]
         }
     ],

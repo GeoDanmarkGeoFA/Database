@@ -450,14 +450,58 @@
             ]
         },
         {
-            "name": "t_5610_cykelplanlaegning_fk",
+            "name": "t_5610_cykelplanlaegning_d_5610_eksisterende_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "eksisterende_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_5610_eksisterende",
             "referenced_columns": [
-                "versions_id"
+                "eksisterende_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_finansiering_fk",
+            "constraint": "foreign",
+            "columns": [
+                "finansiering_kode"
+            ],
+            "referenced_table": "d_5610_finansiering",
+            "referenced_columns": [
+                "finansiering_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_plan_type_fk",
+            "constraint": "foreign",
+            "columns": [
+                "plan_type_kode"
+            ],
+            "referenced_table": "d_5610_plan_type",
+            "referenced_columns": [
+                "plan_type_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_planlaegningskort_fk",
+            "constraint": "foreign",
+            "columns": [
+                "planlaegningskort_type_kode"
+            ],
+            "referenced_table": "d_5610_planlaegningskort_type",
+            "referenced_columns": [
+                "planlaegningskort_type_kode"
+            ]
+        },
+        {
+            "name": "t_5610_cykelplanlaegning_d_5610_prioritering_fk",
+            "constraint": "foreign",
+            "columns": [
+                "prioritering_kode"
+            ],
+            "referenced_table": "d_5610_prioritering",
+            "referenced_columns": [
+                "prioritering_kode"
             ]
         },
         {
@@ -483,17 +527,6 @@
             ]
         },
         {
-            "name": "t_5610_cykelplanlaegning_d_5610_planlaegningskort_fk",
-            "constraint": "foreign",
-            "columns": [
-                "planlaegningskort_type_kode"
-            ],
-            "referenced_table": "d_5610_planlaegningskort_type",
-            "referenced_columns": [
-                "planlaegningskort_type_kode"
-            ]
-        },
-        {
             "name": "t_5610_cykelplanlaegning_d_planstatus_fk",
             "constraint": "foreign",
             "columns": [
@@ -505,47 +538,14 @@
             ]
         },
         {
-            "name": "t_5610_cykelplanlaegning_d_5610_plan_type_fk",
+            "name": "t_5610_cykelplanlaegning_fk",
             "constraint": "foreign",
             "columns": [
-                "plan_type_kode"
+                "versions_id"
             ],
-            "referenced_table": "d_5610_plan_type",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "plan_type_kode"
-            ]
-        },
-        {
-            "name": "t_5610_cykelplanlaegning_d_5610_finansiering_fk",
-            "constraint": "foreign",
-            "columns": [
-                "finansiering_kode"
-            ],
-            "referenced_table": "d_5610_finansiering",
-            "referenced_columns": [
-                "finansiering_kode"
-            ]
-        },
-        {
-            "name": "t_5610_cykelplanlaegning_d_5610_prioritering_fk",
-            "constraint": "foreign",
-            "columns": [
-                "prioritering_kode"
-            ],
-            "referenced_table": "d_5610_prioritering",
-            "referenced_columns": [
-                "prioritering_kode"
-            ]
-        },
-        {
-            "name": "t_5610_cykelplanlaegning_d_5610_eksisterende_fk",
-            "constraint": "foreign",
-            "columns": [
-                "eksisterende_kode"
-            ],
-            "referenced_table": "d_5610_eksisterende",
-            "referenced_columns": [
-                "eksisterende_kode"
+                "versions_id"
             ]
         }
     ],

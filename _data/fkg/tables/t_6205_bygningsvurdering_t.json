@@ -363,7 +363,9 @@
             "_is_primary": false,
             "default_value": null,
             "identity_generation": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": "bbr_uuid"
         },
@@ -1527,6 +1529,14 @@
             ]
         },
         {
+            "name": "t_6205_bygningsvurdering_t_bbr_uuid_index",
+            "method": "btree",
+            "unique": false,
+            "columns": [
+                "bbr_uuid"
+            ]
+        },
+        {
             "name": "t_6205_bygningsvurdering_t_gist",
             "method": "gist",
             "unique": false,
@@ -1537,14 +1547,9 @@
     ],
     "constraints": [
         {
-            "name": "t_6205_bygningsvurdering_ombygningsaar_ck",
+            "name": "t_6205_bygningsvurdering_arkitektonisk_vaerdi_ck",
             "constraint": "check",
-            "check": "ombygningsaar >= 0 AND ombygningsaar <= 9999"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_totalbygningsareal_ck",
-            "constraint": "check",
-            "check": "totalbygningsareal >= 1 AND totalbygningsareal <= 99999999"
+            "check": "arkitektonisk_vaerdi >= 0 AND arkitektonisk_vaerdi <= 9"
         },
         {
             "name": "t_6205_bygningsvurdering_bebyggetareal_ck",
@@ -1552,9 +1557,66 @@
             "check": "bebyggetareal >= 1 AND bebyggetareal <= 99999999"
         },
         {
+            "name": "t_6205_bygningsvurdering_bevaringsmaessig_vaerdi_ck",
+            "constraint": "check",
+            "check": "bevaringsmaessig_vaerdi >= 0 AND bevaringsmaessig_vaerdi <= 9"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_bygningsnummer_ck",
+            "constraint": "check",
+            "check": "bygningsnummer >= 1 AND bygningsnummer <= 9999999"
+        },
+        {
             "name": "t_6205_bygningsvurdering_ejendomsnummer_ck",
             "constraint": "check",
             "check": "bfe_nr >= 1 AND bfe_nr <= 999999999"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_etager_ck",
+            "constraint": "check",
+            "check": "etager >= 1 AND etager <= 9999"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_kulturhistorisk_vaerdi_ck",
+            "constraint": "check",
+            "check": "kulturhistorisk_vaerdi >= 0 AND kulturhistorisk_vaerdi <= 9"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_miljoemaessig_vaerdi_ck",
+            "constraint": "check",
+            "check": "miljoemaessig_vaerdi >= 0 AND miljoemaessig_vaerdi <= 9"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_ombygningsaar_ck",
+            "constraint": "check",
+            "check": "ombygningsaar >= 0 AND ombygningsaar <= 9999"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_opfoerelsesaar_ck",
+            "constraint": "check",
+            "check": "opfoerelsesaar >= 1 AND opfoerelsesaar <= 9999"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_originalitetsvaerdi_ck",
+            "constraint": "check",
+            "check": "originalitetsvaerdi >= 0 AND originalitetsvaerdi <= 9"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_tilstandsvaerdi_ck",
+            "constraint": "check",
+            "check": "tilstandsvaerdi >= 0 AND tilstandsvaerdi <= 9"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_totalbygningsareal_ck",
+            "constraint": "check",
+            "check": "totalbygningsareal >= 1 AND totalbygningsareal <= 99999999"
+        },
+        {
+            "name": "t_6205_bygningsvurdering_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
         },
         {
             "name": "t_6205_bygningsvurdering_d_6205_bevaringsaarsag_fk",
@@ -1568,66 +1630,14 @@
             ]
         },
         {
-            "name": "t_6205_bygningsvurdering_etager_ck",
-            "constraint": "check",
-            "check": "etager >= 1 AND etager <= 9999"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_bygningsnummer_ck",
-            "constraint": "check",
-            "check": "bygningsnummer >= 1 AND bygningsnummer <= 9999999"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_opfoerelsesaar_ck",
-            "constraint": "check",
-            "check": "opfoerelsesaar >= 1 AND opfoerelsesaar <= 9999"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_arkitektonisk_vaerdi_ck",
-            "constraint": "check",
-            "check": "arkitektonisk_vaerdi >= 0 AND arkitektonisk_vaerdi <= 9"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_kulturhistorisk_vaerdi_ck",
-            "constraint": "check",
-            "check": "kulturhistorisk_vaerdi >= 0 AND kulturhistorisk_vaerdi <= 9"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_miljoemaessig_vaerdi_ck",
-            "constraint": "check",
-            "check": "miljoemaessig_vaerdi >= 0 AND miljoemaessig_vaerdi <= 9"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_originalitetsvaerdi_ck",
-            "constraint": "check",
-            "check": "originalitetsvaerdi >= 0 AND originalitetsvaerdi <= 9"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_tilstandsvaerdi_ck",
-            "constraint": "check",
-            "check": "tilstandsvaerdi >= 0 AND tilstandsvaerdi <= 9"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_bevaringsmaessig_vaerdi_ck",
-            "constraint": "check",
-            "check": "bevaringsmaessig_vaerdi >= 0 AND bevaringsmaessig_vaerdi <= 9"
-        },
-        {
-            "name": "t_6205_bygningsvurdering_pk",
-            "constraint": "primary",
-            "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6205_bygningsvurdering_generel_fk",
+            "name": "t_6205_bygningsvurdering_d_basis_postnr_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "postnr"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_basis_postnr",
             "referenced_columns": [
-                "versions_id"
+                "postnr"
             ]
         },
         {
@@ -1642,14 +1652,14 @@
             ]
         },
         {
-            "name": "t_6205_bygningsvurdering_d_basis_postnr_fk",
+            "name": "t_6205_bygningsvurdering_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "postnr"
+                "versions_id"
             ],
-            "referenced_table": "d_basis_postnr",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "postnr"
+                "versions_id"
             ]
         }
     ],

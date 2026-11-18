@@ -378,25 +378,14 @@
             ]
         },
         {
-            "name": "t_6200_nat_geo_generel_fk",
+            "name": "t_6200_nat_geo_6200_kompleksitet_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "kompleksitet_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_6200_kompleksitet",
             "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6200_nat_geo_d_basis_omraade_fk",
-            "constraint": "foreign",
-            "columns": [
-                "omraade_nr"
-            ],
-            "referenced_table": "d_basis_omraade",
-            "referenced_columns": [
-                "omraade_nr"
+                "kompleksitet_kode"
             ]
         },
         {
@@ -433,14 +422,25 @@
             ]
         },
         {
-            "name": "t_6200_nat_geo_6200_kompleksitet_fk",
+            "name": "t_6200_nat_geo_d_basis_omraade_fk",
             "constraint": "foreign",
             "columns": [
-                "kompleksitet_kode"
+                "omraade_nr"
             ],
-            "referenced_table": "d_6200_kompleksitet",
+            "referenced_table": "d_basis_omraade",
             "referenced_columns": [
-                "kompleksitet_kode"
+                "omraade_nr"
+            ]
+        },
+        {
+            "name": "t_6200_nat_geo_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
             ]
         }
     ],

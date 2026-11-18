@@ -860,19 +860,9 @@
             "check": "anlaegsaar >= '1600-01-01'::date AND anlaegsaar <= '2999-12-31'::date"
         },
         {
-            "name": "t_6801_parl_li_etabl_pleje_udloeb_ck",
+            "name": "t_6801_parl_li_areal_ck",
             "constraint": "check",
-            "check": "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6801_parl_li_udskiftningaar_ck",
-            "constraint": "check",
-            "check": "udskiftningaar >= '2007-01-01'::date AND udskiftningaar <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6801_parl_li_hoejde_ck",
-            "constraint": "check",
-            "check": "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
+            "check": "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
         },
         {
             "name": "t_6801_parl_li_bredde_ck",
@@ -880,19 +870,19 @@
             "check": "bredde >= 0.01::double precision AND bredde <= 9.99::double precision"
         },
         {
-            "name": "t_6801_parl_li_laengde_ck",
-            "constraint": "check",
-            "check": "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
-        },
-        {
             "name": "t_6801_parl_li_diameter_ck",
             "constraint": "check",
             "check": "diameter >= 0.01::double precision AND diameter <= 99.99::double precision"
         },
         {
-            "name": "t_6801_parl_li_areal_ck",
+            "name": "t_6801_parl_li_etabl_pleje_udloeb_ck",
             "constraint": "check",
-            "check": "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
+            "check": "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6801_parl_li_hoejde_ck",
+            "constraint": "check",
+            "check": "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
         },
         {
             "name": "t_6801_parl_li_klip_flade_ck",
@@ -905,25 +895,24 @@
             "check": "klip_sider >= 0 AND klip_sider <= 2"
         },
         {
+            "name": "t_6801_parl_li_laengde_ck",
+            "constraint": "check",
+            "check": "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
+        },
+        {
             "name": "t_6801_parl_li_tilstand_dato_ck",
             "constraint": "check",
             "check": "tilstand_dato >= '1600-01-01'::date AND tilstand_dato <= '2999-12-31'::date"
         },
         {
+            "name": "t_6801_parl_li_udskiftningaar_ck",
+            "constraint": "check",
+            "check": "udskiftningaar >= '2007-01-01'::date AND udskiftningaar <= '2999-12-31'::date"
+        },
+        {
             "name": "t_6801_parl_li_pk",
             "constraint": "primary",
             "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6801_parl_li_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
                 "versions_id"
             ]
         },
@@ -950,17 +939,6 @@
             ]
         },
         {
-            "name": "t_6801_parl_li_d_basis_ukrudtsbek_fk",
-            "constraint": "foreign",
-            "columns": [
-                "ukrudtsbek_kode"
-            ],
-            "referenced_table": "d_basis_ukrudtsbek",
-            "referenced_columns": [
-                "ukrudtsbek_kode"
-            ]
-        },
-        {
             "name": "t_6801_parl_li_d_basis_tilstand_fk",
             "constraint": "foreign",
             "columns": [
@@ -972,6 +950,17 @@
             ]
         },
         {
+            "name": "t_6801_parl_li_d_basis_ukrudtsbek_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ukrudtsbek_kode"
+            ],
+            "referenced_table": "d_basis_ukrudtsbek",
+            "referenced_columns": [
+                "ukrudtsbek_kode"
+            ]
+        },
+        {
             "name": "t_6801_parl_li_d_vejnavn_fk",
             "constraint": "foreign",
             "columns": [
@@ -980,6 +969,17 @@
             "referenced_table": "d_vejnavn",
             "referenced_columns": [
                 "vejkode"
+            ]
+        },
+        {
+            "name": "t_6801_parl_li_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
             ]
         }
     ],

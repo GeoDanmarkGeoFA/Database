@@ -238,17 +238,6 @@
             ]
         },
         {
-            "name": "t_6201_kult_geo_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
             "name": "t_6201_kult_geo_d_basis_omraade_fk",
             "constraint": "foreign",
             "columns": [
@@ -257,6 +246,17 @@
             "referenced_table": "d_basis_omraade",
             "referenced_columns": [
                 "omraade_nr"
+            ]
+        },
+        {
+            "name": "t_6201_kult_geo_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
             ]
         }
     ],

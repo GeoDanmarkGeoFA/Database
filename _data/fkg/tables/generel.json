@@ -20,6 +20,8 @@
             "default_value": null,
             "identity_generation": null,
             "_index_method": [
+                "btree",
+                "btree",
                 "btree"
             ],
             "_checks": null,
@@ -44,6 +46,8 @@
             "default_value": null,
             "identity_generation": null,
             "_index_method": [
+                "btree",
+                "btree",
                 "btree"
             ],
             "_checks": null,
@@ -138,6 +142,7 @@
             "default_value": null,
             "identity_generation": null,
             "_index_method": [
+                "btree",
                 "btree"
             ],
             "_checks": null,
@@ -185,7 +190,9 @@
             "_is_primary": false,
             "default_value": null,
             "identity_generation": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": null
         },
@@ -209,7 +216,9 @@
             "_is_primary": false,
             "default_value": null,
             "identity_generation": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": null
         },
@@ -233,7 +242,9 @@
             "_is_primary": false,
             "default_value": null,
             "identity_generation": null,
-            "_index_method": null,
+            "_index_method": [
+                "btree"
+            ],
             "_checks": null,
             "_short_name": null
         },
@@ -284,6 +295,28 @@
     ],
     "comment": null,
     "indices": [
+        {
+            "name": "generel_active_objekt_idx",
+            "method": "btree",
+            "unique": false,
+            "columns": [
+                "versions_id",
+                "cvr_kode",
+                "objekt_id",
+                "off_kode",
+                "oprindkode",
+                "statuskode"
+            ]
+        },
+        {
+            "name": "generel_active_versions_idx",
+            "method": "btree",
+            "unique": false,
+            "columns": [
+                "objekt_id",
+                "versions_id"
+            ]
+        },
         {
             "name": "generel_cvr_kode_index",
             "method": "btree",

@@ -459,7 +459,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "forsinkelsesvolumen >= 0.1 AND forsinkelsesvolumen <= 999.99"
+                "forsinkelsesvolumen >= 0::numeric AND forsinkelsesvolumen <= 999999.99"
             ],
             "_short_name": "forsin_vol"
         },
@@ -505,7 +505,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "afloebskapacitet >= 0.1 AND afloebskapacitet <= 999.99"
+                "afloebskapacitet >= 0::numeric AND afloebskapacitet <= 999.99"
             ],
             "_short_name": "afloeb_kap"
         },
@@ -601,86 +601,20 @@
     ],
     "constraints": [
         {
-            "name": "t_5026_regnbed_forsinkelsesvolumen_ck",
-            "constraint": "check",
-            "check": "forsinkelsesvolumen >= 0.1 AND forsinkelsesvolumen <= 999.99"
-        },
-        {
             "name": "t_5026_regnbed_afloebskapacitet_ck",
             "constraint": "check",
-            "check": "afloebskapacitet >= 0.1 AND afloebskapacitet <= 999.99"
+            "check": "afloebskapacitet >= 0::numeric AND afloebskapacitet <= 999.99"
+        },
+        {
+            "name": "t_5026_regnbed_forsinkelsesvolumen_ck",
+            "constraint": "check",
+            "check": "forsinkelsesvolumen >= 0::numeric AND forsinkelsesvolumen <= 999999.99"
         },
         {
             "name": "t_5026_regnbed_pk",
             "constraint": "primary",
             "columns": [
                 "versions_id"
-            ]
-        },
-        {
-            "name": "t_5026_regnbed_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5026_regnbed_d_basis_indtegningsmetode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "indtegningsmetode_kode"
-            ],
-            "referenced_table": "d_basis_indtegningsmetode",
-            "referenced_columns": [
-                "indtegningsmetode_kode"
-            ]
-        },
-        {
-            "name": "t_5026_regnbed_d_basis_noejagtighedsklasse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "noejagtighedsklasse_kode"
-            ],
-            "referenced_table": "d_basis_noejagtighedsklasse",
-            "referenced_columns": [
-                "noejagtighedsklasse_kode"
-            ]
-        },
-        {
-            "name": "t_5026_regnbed_d_basis_medietype_fk",
-            "constraint": "foreign",
-            "columns": [
-                "medietype_kode"
-            ],
-            "referenced_table": "d_basis_medietype",
-            "referenced_columns": [
-                "medietype_kode"
-            ]
-        },
-        {
-            "name": "t_5026_regnbed_d_basis_forsyningsart_fk",
-            "constraint": "foreign",
-            "columns": [
-                "forsyningsart_kode"
-            ],
-            "referenced_table": "d_basis_forsyningsart",
-            "referenced_columns": [
-                "forsyningsart_kode"
-            ]
-        },
-        {
-            "name": "t_5026_regnbed_d_basis_fareklasse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "fareklasse_kode"
-            ],
-            "referenced_table": "d_basis_fareklasse",
-            "referenced_columns": [
-                "fareklasse_kode"
             ]
         },
         {
@@ -706,6 +640,50 @@
             ]
         },
         {
+            "name": "t_5026_regnbed_d_basis_fareklasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "fareklasse_kode"
+            ],
+            "referenced_table": "d_basis_fareklasse",
+            "referenced_columns": [
+                "fareklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5026_regnbed_d_basis_forsyningsart_fk",
+            "constraint": "foreign",
+            "columns": [
+                "forsyningsart_kode"
+            ],
+            "referenced_table": "d_basis_forsyningsart",
+            "referenced_columns": [
+                "forsyningsart_kode"
+            ]
+        },
+        {
+            "name": "t_5026_regnbed_d_basis_indtegningsmetode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "indtegningsmetode_kode"
+            ],
+            "referenced_table": "d_basis_indtegningsmetode",
+            "referenced_columns": [
+                "indtegningsmetode_kode"
+            ]
+        },
+        {
+            "name": "t_5026_regnbed_d_basis_medietype_fk",
+            "constraint": "foreign",
+            "columns": [
+                "medietype_kode"
+            ],
+            "referenced_table": "d_basis_medietype",
+            "referenced_columns": [
+                "medietype_kode"
+            ]
+        },
+        {
             "name": "t_5026_regnbed_d_basis_niveautype_fk",
             "constraint": "foreign",
             "columns": [
@@ -714,6 +692,28 @@
             "referenced_table": "d_basis_niveautype",
             "referenced_columns": [
                 "niveautype_kode"
+            ]
+        },
+        {
+            "name": "t_5026_regnbed_d_basis_noejagtighedsklasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "noejagtighedsklasse_kode"
+            ],
+            "referenced_table": "d_basis_noejagtighedsklasse",
+            "referenced_columns": [
+                "noejagtighedsklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5026_regnbed_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
             ]
         }
     ],

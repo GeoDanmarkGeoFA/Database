@@ -3,7 +3,6 @@
     "group": "Vej og Trafik",
     "sort_id": 140,
     "tags": [
-        "udgivet",
         "Github"
     ],
     "properties": {
@@ -611,6 +610,10 @@
                 {
                     "value": 34206228,
                     "alias": "Erhvervshus Fyn P\/S"
+                },
+                {
+                    "value": 34772355,
+                    "alias": "N\u00f8rre Snede Lokalr\u00e5d"
                 },
                 {
                     "value": 34897034,

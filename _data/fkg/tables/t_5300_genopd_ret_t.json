@@ -106,7 +106,7 @@
             "_max_bytes": 4,
             "_reference": null,
             "_restriction": null,
-            "is_nullable": false,
+            "is_nullable": true,
             "_is_unique": false,
             "_is_primary": false,
             "default_value": null,
@@ -231,6 +231,11 @@
     ],
     "constraints": [
         {
+            "name": "check_name",
+            "constraint": "check",
+            "check": "genoptaget >= '1800-01-01'::date AND genoptaget <= '2999-12-31'::date"
+        },
+        {
             "name": "versions_id_pk",
             "constraint": "primary",
             "columns": [
@@ -247,11 +252,6 @@
             "referenced_columns": [
                 "versions_id"
             ]
-        },
-        {
-            "name": "check_name",
-            "constraint": "check",
-            "check": "genoptaget >= '1800-01-01'::date AND genoptaget <= '2999-12-31'::date"
         }
     ],
     "_type": "TABLE",

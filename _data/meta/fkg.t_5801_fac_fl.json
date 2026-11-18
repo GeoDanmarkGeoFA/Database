@@ -604,6 +604,10 @@
                     "alias": "Erhvervshus Fyn P\/S"
                 },
                 {
+                    "value": 34772355,
+                    "alias": "N\u00f8rre Snede Lokalr\u00e5d"
+                },
+                {
                     "value": 34897034,
                     "alias": "Destination Sj\u00e6lland A\/S"
                 },
@@ -1266,16 +1270,20 @@
                     "alias": "B\u00e6nk"
                 },
                 {
-                    "value": 1382,
-                    "alias": "Cykelknudepunkt"
-                },
-                {
                     "value": 1392,
                     "alias": "F\u00e6rgeleje"
                 },
                 {
                     "value": 1402,
-                    "alias": "Blaffersted"
+                    "alias": "Blafferstoppested"
+                },
+                {
+                    "value": 1412,
+                    "alias": "Udek\u00f8kken"
+                },
+                {
+                    "value": 1422,
+                    "alias": "Sauna"
                 },
                 {
                     "value": 2012,

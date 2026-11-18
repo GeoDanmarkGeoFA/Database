@@ -483,7 +483,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "udvendig_diameter >= 0.1 AND udvendig_diameter <= 50::numeric"
+                "udvendig_diameter >= 0::numeric AND udvendig_diameter <= 999999.99"
             ],
             "_short_name": "udvend_dia"
         },
@@ -507,7 +507,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "udvendig_bredde >= 0.1 AND udvendig_bredde <= 999.99"
+                "udvendig_bredde >= 0.1 AND udvendig_bredde <= 999999.99"
             ],
             "_short_name": "udvend_bre"
         },
@@ -531,7 +531,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "udvendig_hoejde >= 0.1 AND udvendig_hoejde <= 999.99"
+                "udvendig_hoejde >= 0::numeric AND udvendig_hoejde <= 999999.99"
             ],
             "_short_name": "udven_hoej"
         },
@@ -651,24 +651,24 @@
     ],
     "constraints": [
         {
-            "name": "t_5012_afloebsledning_udvendig_diameter_ck",
+            "name": "t_5012_afloebsledning_haeldning_ck",
             "constraint": "check",
-            "check": "udvendig_diameter >= 0.1 AND udvendig_diameter <= 50::numeric"
+            "check": "haeldning >= 0.1 AND haeldning <= 999.99"
         },
         {
             "name": "t_5012_afloebsledning_udvendig_bredde_ck",
             "constraint": "check",
-            "check": "udvendig_bredde >= 0.1 AND udvendig_bredde <= 999.99"
+            "check": "udvendig_bredde >= 0.1 AND udvendig_bredde <= 999999.99"
+        },
+        {
+            "name": "t_5012_afloebsledning_udvendig_diameter_ck",
+            "constraint": "check",
+            "check": "udvendig_diameter >= 0::numeric AND udvendig_diameter <= 999999.99"
         },
         {
             "name": "t_5012_afloebsledning_udvendig_hoejde_ck",
             "constraint": "check",
-            "check": "udvendig_hoejde >= 0.1 AND udvendig_hoejde <= 999.99"
-        },
-        {
-            "name": "t_5012_afloebsledning_haeldning_ck",
-            "constraint": "check",
-            "check": "haeldning >= 0.1 AND haeldning <= 999.99"
+            "check": "udvendig_hoejde >= 0::numeric AND udvendig_hoejde <= 999999.99"
         },
         {
             "name": "t_5012_afloebsledning_pk",
@@ -678,69 +678,14 @@
             ]
         },
         {
-            "name": "t_5012_afloebsledning_generel_fk",
+            "name": "t_5012_afloebsledning_d_5012_tvaersnitsform_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "tvaersnitsform_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_5012_tvaersnitsform",
             "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5012_afloebsledning_d_basis_indtegningsmetode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "indtegningsmetode_kode"
-            ],
-            "referenced_table": "d_basis_indtegningsmetode",
-            "referenced_columns": [
-                "indtegningsmetode_kode"
-            ]
-        },
-        {
-            "name": "t_5012_afloebsledning_d_basis_noejagtighedsklasse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "noejagtighedsklasse_kode"
-            ],
-            "referenced_table": "d_basis_noejagtighedsklasse",
-            "referenced_columns": [
-                "noejagtighedsklasse_kode"
-            ]
-        },
-        {
-            "name": "t_5012_afloebsledning_d_basis_medietype_fk",
-            "constraint": "foreign",
-            "columns": [
-                "medietype_kode"
-            ],
-            "referenced_table": "d_basis_medietype",
-            "referenced_columns": [
-                "medietype_kode"
-            ]
-        },
-        {
-            "name": "t_5012_afloebsledning_d_basis_forsyningsart_fk",
-            "constraint": "foreign",
-            "columns": [
-                "forsyningsart_kode"
-            ],
-            "referenced_table": "d_basis_forsyningsart",
-            "referenced_columns": [
-                "forsyningsart_kode"
-            ]
-        },
-        {
-            "name": "t_5012_afloebsledning_d_basis_fareklasse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "fareklasse_kode"
-            ],
-            "referenced_table": "d_basis_fareklasse",
-            "referenced_columns": [
-                "fareklasse_kode"
+                "tvaersnitsform_kode"
             ]
         },
         {
@@ -766,6 +711,50 @@
             ]
         },
         {
+            "name": "t_5012_afloebsledning_d_basis_fareklasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "fareklasse_kode"
+            ],
+            "referenced_table": "d_basis_fareklasse",
+            "referenced_columns": [
+                "fareklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5012_afloebsledning_d_basis_forsyningsart_fk",
+            "constraint": "foreign",
+            "columns": [
+                "forsyningsart_kode"
+            ],
+            "referenced_table": "d_basis_forsyningsart",
+            "referenced_columns": [
+                "forsyningsart_kode"
+            ]
+        },
+        {
+            "name": "t_5012_afloebsledning_d_basis_indtegningsmetode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "indtegningsmetode_kode"
+            ],
+            "referenced_table": "d_basis_indtegningsmetode",
+            "referenced_columns": [
+                "indtegningsmetode_kode"
+            ]
+        },
+        {
+            "name": "t_5012_afloebsledning_d_basis_medietype_fk",
+            "constraint": "foreign",
+            "columns": [
+                "medietype_kode"
+            ],
+            "referenced_table": "d_basis_medietype",
+            "referenced_columns": [
+                "medietype_kode"
+            ]
+        },
+        {
             "name": "t_5012_afloebsledning_d_basis_niveautype_fk",
             "constraint": "foreign",
             "columns": [
@@ -777,14 +766,25 @@
             ]
         },
         {
-            "name": "t_5012_afloebsledning_d_5012_tvaersnitsform_fk",
+            "name": "t_5012_afloebsledning_d_basis_noejagtighedsklasse_fk",
             "constraint": "foreign",
             "columns": [
-                "tvaersnitsform_kode"
+                "noejagtighedsklasse_kode"
             ],
-            "referenced_table": "d_5012_tvaersnitsform",
+            "referenced_table": "d_basis_noejagtighedsklasse",
             "referenced_columns": [
-                "tvaersnitsform_kode"
+                "noejagtighedsklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5012_afloebsledning_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
             ]
         }
     ],

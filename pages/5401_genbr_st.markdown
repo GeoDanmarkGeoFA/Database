@@ -195,7 +195,7 @@
         <td>{{ field[0] }}</td>
         <td>{{ short }}</td>
         <td>{{ comment }}</td>
-        <td>{{ field[1].full_type }}</td>
+        <td>{{ field[1].type }}</td>
         <td>
             {% if restrictions %}
                 <details>

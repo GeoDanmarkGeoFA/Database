@@ -1385,6 +1385,17 @@
             ]
         },
         {
+            "name": "t_5801_fac_fl_d_5800_kvalitetstjekket_fk",
+            "constraint": "foreign",
+            "columns": [
+                "kvalitetstjekket_k"
+            ],
+            "referenced_table": "d_5800_kvalitetstjekket",
+            "referenced_columns": [
+                "kvalitetstjekket_k"
+            ]
+        },
+        {
             "name": "t_5801_fac_fl_d_5800_saeson_fk",
             "constraint": "foreign",
             "columns": [
@@ -1514,17 +1525,6 @@
             "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
-            ]
-        },
-        {
-            "name": "t_5801_fac_fl_d_5800_kvalitetstjekket_fk",
-            "constraint": "foreign",
-            "columns": [
-                "kvalitetstjekket_k"
-            ],
-            "referenced_table": "d_5800_kvalitetstjekket",
-            "referenced_columns": [
-                "kvalitetstjekket_k"
             ]
         }
     ],

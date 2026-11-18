@@ -603,6 +603,10 @@
                     "alias": "Erhvervshus Fyn P\/S"
                 },
                 {
+                    "value": 34772355,
+                    "alias": "N\u00f8rre Snede Lokalr\u00e5d"
+                },
+                {
                     "value": 34897034,
                     "alias": "Destination Sj\u00e6lland A\/S"
                 },
@@ -1107,10 +1111,6 @@
             "_max_bytes": 4,
             "_restriction": [
                 {
-                    "value": 128000,
-                    "alias": "Baljeplante"
-                },
-                {
                     "value": 142000,
                     "alias": "Solit\u00e6re slyng- og klatreplante"
                 },
@@ -1121,6 +1121,10 @@
                 {
                     "value": 161200,
                     "alias": "Prydbusk (solit\u00e6r\/fritst\u00e5ende)"
+                },
+                {
+                    "value": 172000,
+                    "alias": "Rodvenlig bef\u00e6stelse"
                 },
                 {
                     "value": 201000,
@@ -1161,6 +1165,10 @@
                 {
                     "value": 205010,
                     "alias": "Veteraniseret tr\u00e6"
+                },
+                {
+                    "value": 206000,
+                    "alias": "Tr\u00e6r\u00e6kke"
                 },
                 {
                     "value": 432110,

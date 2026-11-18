@@ -2529,9 +2529,9 @@
     ],
     "constraints": [
         {
-            "name": "t_6122_beskyttelsesrum_antal_pladser_ck",
+            "name": "t_6122_beskyttelsesrum_adgangsdoerhuller_antal_ck",
             "constraint": "check",
-            "check": "antal_pladser >= 0 AND antal_pladser <= 5000"
+            "check": "adgangsdoerhuller_antal >= 0 AND adgangsdoerhuller_antal <= 99"
         },
         {
             "name": "t_6122_beskyttelsesrum_antal_opholdsrum_ck",
@@ -2539,14 +2539,9 @@
             "check": "antal_opholdsrum >= 0 AND antal_opholdsrum <= 10"
         },
         {
-            "name": "t_6122_beskyttelsesrum_trapper_antal_ck",
+            "name": "t_6122_beskyttelsesrum_antal_pladser_ck",
             "constraint": "check",
-            "check": "trapper_antal >= 0 AND trapper_antal <= 99"
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_adgangsdoerhuller_antal_ck",
-            "constraint": "check",
-            "check": "adgangsdoerhuller_antal >= 0 AND adgangsdoerhuller_antal <= 99"
+            "check": "antal_pladser >= 0 AND antal_pladser <= 5000"
         },
         {
             "name": "t_6122_beskyttelsesrum_noedudgange_antal_ck",
@@ -2554,329 +2549,15 @@
             "check": "noedudgange_antal >= 0 AND noedudgange_antal <= 99"
         },
         {
+            "name": "t_6122_beskyttelsesrum_trapper_antal_ck",
+            "constraint": "check",
+            "check": "trapper_antal >= 0 AND trapper_antal <= 99"
+        },
+        {
             "name": "t_6122_beskyttelsesrum_pk",
             "constraint": "primary",
             "columns": [
                 "versions_id"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_fk",
-            "constraint": "foreign",
-            "columns": [
-                "beskyt_rum_type_kode"
-            ],
-            "referenced_table": "d_6122_beskyt_rum",
-            "referenced_columns": [
-                "beskyt_rum_type_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_jordarbejde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_jordarbejde_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_gartnerarbejde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_gartnerarbejde_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgang_bygningsarbejde_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgang_bygningsarbejde_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_anvendelse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "beskyt_rum_anvendelse_kode"
-            ],
-            "referenced_table": "d_6122_beskyt_rum_anvendelse",
-            "referenced_columns": [
-                "beskyt_rum_anvendelse_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgangsdoerhuller_staal_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_f_fk",
-            "constraint": "foreign",
-            "columns": [
-                "adgangsdoerhuller_staal_funktion_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_noedudgange_staallem_fk",
-            "constraint": "foreign",
-            "columns": [
-                "noedudgange_staallem_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_taarn_fk",
-            "constraint": "foreign",
-            "columns": [
-                "taarn_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_betondaeksel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "betondaeksel_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_svanehals_fk",
-            "constraint": "foreign",
-            "columns": [
-                "svanehals_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vvs_sump_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_vvs_gulvafloeb_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vvs_gulvafloeb_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fungerer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vvs_sump_fungerer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_fredstidsinstallationer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "fredstidsinstallationer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_intakt_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_intakt_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_blotlagt_arm_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_blotlagt_armering_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_aendret_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_aendret_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_revner_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_vaegge_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_vandpyt_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_vandpyt_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_vand_daekker_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_vand_daekker_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_spor_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_skadedyr_spor_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_ekskrementer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_skadedyr_ekskrementer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_1_ventilation_haanddreven_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_1_ventilation_haanddreven_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
             ]
         },
         {
@@ -2902,6 +2583,83 @@
             ]
         },
         {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_1_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_1_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
             "name": "t_6122_beskyttelsesrum_d_6122_1_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -2913,10 +2671,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_intakt_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_ekskrementer_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_konstruktion_intakt_kode"
+                "_1_skadedyr_ekskrementer_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2924,10 +2682,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_blotlagt_arm_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_1_skadedyr_spor_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_konstruktion_blotlagt_armering_kode"
+                "_1_skadedyr_spor_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2935,10 +2693,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_aendret_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_1_vand_daekker_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_konstruktion_aendret_kode"
+                "_1_vand_daekker_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2946,10 +2704,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_1_vandpyt_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_konstruktion_revner_gulv_kode"
+                "_1_vandpyt_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -2957,87 +2715,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_vaegge_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_1_ventilation_haanddreven_fk",
             "constraint": "foreign",
             "columns": [
-                "_2_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_vandpyt_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_vandpyt_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_vand_daekker_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_vand_daekker_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_spor_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_skadedyr_spor_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_ekskrementer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_skadedyr_ekskrementer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_2_ventilation_haanddreven_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_2_ventilation_haanddreven_kode"
+                "_1_ventilation_haanddreven_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3067,6 +2748,83 @@
             ]
         },
         {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_2_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_2_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
             "name": "t_6122_beskyttelsesrum_d_6122_2_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -3078,10 +2836,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_intakt_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_ekskrementer_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_konstruktion_intakt_kode"
+                "_2_skadedyr_ekskrementer_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3089,10 +2847,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_blotlagt_arm_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_skadedyr_spor_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_konstruktion_blotlagt_armering_kode"
+                "_2_skadedyr_spor_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3100,10 +2858,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_aendret_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_vand_daekker_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_konstruktion_aendret_kode"
+                "_2_vand_daekker_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3111,10 +2869,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_vandpyt_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_konstruktion_revner_gulv_kode"
+                "_2_vandpyt_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3122,87 +2880,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_vaegge_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_2_ventilation_haanddreven_fk",
             "constraint": "foreign",
             "columns": [
-                "_3_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_vandpyt_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_vandpyt_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_vand_daekker_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_vand_daekker_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_spor_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_skadedyr_spor_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_ekskrementer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_skadedyr_ekskrementer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_3_ventilation_haanddreven_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_3_ventilation_haanddreven_kode"
+                "_2_ventilation_haanddreven_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3232,6 +2913,83 @@
             ]
         },
         {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_3_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_3_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
             "name": "t_6122_beskyttelsesrum_d_6122_3_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -3243,10 +3001,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_intakt_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_ekskrementer_fk",
             "constraint": "foreign",
             "columns": [
-                "_4_konstruktion_intakt_kode"
+                "_3_skadedyr_ekskrementer_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3254,10 +3012,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_blotlagt_arm_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_skadedyr_spor_fk",
             "constraint": "foreign",
             "columns": [
-                "_4_konstruktion_blotlagt_armering_kode"
+                "_3_skadedyr_spor_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3265,10 +3023,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_aendret_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_vand_daekker_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_4_konstruktion_aendret_kode"
+                "_3_vand_daekker_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3276,10 +3034,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_gulv_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_vandpyt_gulv_fk",
             "constraint": "foreign",
             "columns": [
-                "_4_konstruktion_revner_gulv_kode"
+                "_3_vandpyt_gulv_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3287,87 +3045,10 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_vaegge_fk",
+            "name": "t_6122_beskyttelsesrum_d_6122_3_ventilation_haanddreven_fk",
             "constraint": "foreign",
             "columns": [
-                "_4_konstruktion_revner_vaegge_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_loft_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_konstruktion_revner_loft_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_indtraengende_fugt_vand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_indtraengende_fugt_vand_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_vandpyt_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_vandpyt_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_vand_daekker_gulv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_vand_daekker_gulv_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_spor_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_skadedyr_spor_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_ekskrementer_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_skadedyr_ekskrementer_kode"
-            ],
-            "referenced_table": "d_6122_ja_nej_ved_ikke",
-            "referenced_columns": [
-                "ja_nej_ved_ikke_kode"
-            ]
-        },
-        {
-            "name": "t_6122_beskyttelsesrum_d_6122_4_ventilation_haanddreven_fk",
-            "constraint": "foreign",
-            "columns": [
-                "_4_ventilation_haanddreven_kode"
+                "_3_ventilation_haanddreven_kode"
             ],
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
@@ -3397,6 +3078,83 @@
             ]
         },
         {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_indtraengende_fugt_vand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_indtraengende_fugt_vand_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_aendret_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_aendret_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_blotlagt_arm_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_blotlagt_armering_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_intakt_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_intakt_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_revner_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_loft_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_revner_loft_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_konstruktion_revner_vaegge_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_konstruktion_revner_vaegge_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
             "name": "t_6122_beskyttelsesrum_d_6122_4_overtryksventiler_fk",
             "constraint": "foreign",
             "columns": [
@@ -3405,6 +3163,248 @@
             "referenced_table": "d_6122_ja_nej_ved_ikke",
             "referenced_columns": [
                 "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_ekskrementer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_skadedyr_ekskrementer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_skadedyr_spor_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_skadedyr_spor_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_vand_daekker_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_vand_daekker_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_vandpyt_gulv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_vandpyt_gulv_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_4_ventilation_haanddreven_fk",
+            "constraint": "foreign",
+            "columns": [
+                "_4_ventilation_haanddreven_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_bygningsarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_bygningsarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_gartnerarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_gartnerarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgang_jordarbejde_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgang_jordarbejde_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_f_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgangsdoerhuller_staal_funktion_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_adgangsdoerhuller_staal_fk",
+            "constraint": "foreign",
+            "columns": [
+                "adgangsdoerhuller_staal_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_anvendelse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "beskyt_rum_anvendelse_kode"
+            ],
+            "referenced_table": "d_6122_beskyt_rum_anvendelse",
+            "referenced_columns": [
+                "beskyt_rum_anvendelse_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_beskyt_rum_fk",
+            "constraint": "foreign",
+            "columns": [
+                "beskyt_rum_type_kode"
+            ],
+            "referenced_table": "d_6122_beskyt_rum",
+            "referenced_columns": [
+                "beskyt_rum_type_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_betondaeksel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "betondaeksel_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_fredstidsinstallationer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "fredstidsinstallationer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_noedudgange_staallem_fk",
+            "constraint": "foreign",
+            "columns": [
+                "noedudgange_staallem_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_svanehals_fk",
+            "constraint": "foreign",
+            "columns": [
+                "svanehals_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_taarn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "taarn_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_gulvafloeb_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_gulvafloeb_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_sump_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_6122_vvs_sump_fungerer_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vvs_sump_fungerer_kode"
+            ],
+            "referenced_table": "d_6122_ja_nej_ved_ikke",
+            "referenced_columns": [
+                "ja_nej_ved_ikke_kode"
+            ]
+        },
+        {
+            "name": "t_6122_beskyttelsesrum_d_basis_postnr_fk",
+            "constraint": "foreign",
+            "columns": [
+                "postnr"
+            ],
+            "referenced_table": "d_basis_postnr",
+            "referenced_columns": [
+                "postnr"
             ]
         },
         {
@@ -3419,14 +3419,14 @@
             ]
         },
         {
-            "name": "t_6122_beskyttelsesrum_d_basis_postnr_fk",
+            "name": "t_6122_beskyttelsesrum_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "postnr"
+                "versions_id"
             ],
-            "referenced_table": "d_basis_postnr",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "postnr"
+                "versions_id"
             ]
         }
     ],

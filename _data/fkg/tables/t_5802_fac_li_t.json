@@ -1636,6 +1636,28 @@
             ]
         },
         {
+            "name": "t_5802_fac_li_d_5800_kvalitetstjekket_fk",
+            "constraint": "foreign",
+            "columns": [
+                "kvalitetstjekket_k"
+            ],
+            "referenced_table": "d_5800_kvalitetstjekket",
+            "referenced_columns": [
+                "kvalitetstjekket_k"
+            ]
+        },
+        {
+            "name": "t_5802_fac_li_d_5800_saeson_fk",
+            "constraint": "foreign",
+            "columns": [
+                "saeson_k"
+            ],
+            "referenced_table": "d_5800_saeson",
+            "referenced_columns": [
+                "saeson_k"
+            ]
+        },
+        {
             "name": "t_5802_fac_li_d_5802_certifi_fk",
             "constraint": "foreign",
             "columns": [
@@ -1677,6 +1699,17 @@
             "referenced_table": "d_5802_rute_uty",
             "referenced_columns": [
                 "rute_uty_k"
+            ]
+        },
+        {
+            "name": "t_5802_fac_li_d_5802_rutefarve_fk",
+            "constraint": "foreign",
+            "columns": [
+                "rutefarve_k"
+            ],
+            "referenced_table": "d_5802_rutefarve",
+            "referenced_columns": [
+                "rutefarve_k"
             ]
         },
         {
@@ -1809,39 +1842,6 @@
             "referenced_table": "d_5800_kvalitet",
             "referenced_columns": [
                 "kvalitet_k"
-            ]
-        },
-        {
-            "name": "t_5802_fac_li_d_5800_saeson_fk",
-            "constraint": "foreign",
-            "columns": [
-                "saeson_k"
-            ],
-            "referenced_table": "d_5800_saeson",
-            "referenced_columns": [
-                "saeson_k"
-            ]
-        },
-        {
-            "name": "t_5802_fac_li_d_5802_rutefarve_fk",
-            "constraint": "foreign",
-            "columns": [
-                "rutefarve_k"
-            ],
-            "referenced_table": "d_5802_rutefarve",
-            "referenced_columns": [
-                "rutefarve_k"
-            ]
-        },
-        {
-            "name": "t_5802_fac_li_d_5800_kvalitetstjekket_fk",
-            "constraint": "foreign",
-            "columns": [
-                "kvalitetstjekket_k"
-            ],
-            "referenced_table": "d_5800_kvalitetstjekket",
-            "referenced_columns": [
-                "kvalitetstjekket_k"
             ]
         }
     ],

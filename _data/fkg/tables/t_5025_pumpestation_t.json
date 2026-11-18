@@ -459,7 +459,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "bundkote >= 0.1 AND bundkote <= 999.99"
+                "bundkote >= '-999999.99'::numeric AND bundkote <= 999999.99"
             ],
             "_short_name": "bundkote"
         },
@@ -483,7 +483,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "topkote >= 0.1 AND topkote <= 999.99"
+                "topkote >= '-999999.99'::numeric AND topkote <= 999999.99"
             ],
             "_short_name": "topkote"
         },
@@ -507,7 +507,7 @@
             "identity_generation": null,
             "_index_method": null,
             "_checks": [
-                "afloebskapacitet >= 0.1 AND afloebskapacitet <= 999.99"
+                "afloebskapacitet >= 0::numeric AND afloebskapacitet <= 999.99"
             ],
             "_short_name": "afloeb_kap"
         },
@@ -580,6 +580,28 @@
             "_geom_type": "MultiPoint",
             "_srid": "25832",
             "_short_name": "the_geom"
+        },
+        {
+            "name": "gentagelsesperiode",
+            "type": "character varying(50)",
+            "comment": null,
+            "_num": 26,
+            "_typname": "varchar",
+            "_is_array": false,
+            "_character_maximum_length": 50,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 200,
+            "_reference": null,
+            "_restriction": null,
+            "is_nullable": true,
+            "_is_unique": false,
+            "_is_primary": false,
+            "default_value": null,
+            "identity_generation": null,
+            "_index_method": null,
+            "_checks": null,
+            "_short_name": "gentag_per"
         }
     ],
     "comment": null,
@@ -603,91 +625,25 @@
     ],
     "constraints": [
         {
+            "name": "t_5025_pumpestation_afloebskapacitet_ck",
+            "constraint": "check",
+            "check": "afloebskapacitet >= 0::numeric AND afloebskapacitet <= 999.99"
+        },
+        {
             "name": "t_5025_pumpestation_bundkote_ck",
             "constraint": "check",
-            "check": "bundkote >= 0.1 AND bundkote <= 999.99"
+            "check": "bundkote >= '-999999.99'::numeric AND bundkote <= 999999.99"
         },
         {
             "name": "t_5025_pumpestation_topkote_ck",
             "constraint": "check",
-            "check": "topkote >= 0.1 AND topkote <= 999.99"
-        },
-        {
-            "name": "t_5025_pumpestation_afloebskapacitet_ck",
-            "constraint": "check",
-            "check": "afloebskapacitet >= 0.1 AND afloebskapacitet <= 999.99"
+            "check": "topkote >= '-999999.99'::numeric AND topkote <= 999999.99"
         },
         {
             "name": "t_5025_pumpestation_pk",
             "constraint": "primary",
             "columns": [
                 "versions_id"
-            ]
-        },
-        {
-            "name": "t_5025_pumpestation_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5025_pumpestation_d_basis_indtegningsmetode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "indtegningsmetode_kode"
-            ],
-            "referenced_table": "d_basis_indtegningsmetode",
-            "referenced_columns": [
-                "indtegningsmetode_kode"
-            ]
-        },
-        {
-            "name": "t_5025_pumpestation_d_basis_noejagtighedsklasse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "noejagtighedsklasse_kode"
-            ],
-            "referenced_table": "d_basis_noejagtighedsklasse",
-            "referenced_columns": [
-                "noejagtighedsklasse_kode"
-            ]
-        },
-        {
-            "name": "t_5025_pumpestation_d_basis_medietype_fk",
-            "constraint": "foreign",
-            "columns": [
-                "medietype_kode"
-            ],
-            "referenced_table": "d_basis_medietype",
-            "referenced_columns": [
-                "medietype_kode"
-            ]
-        },
-        {
-            "name": "t_5025_pumpestation_d_basis_forsyningsart_fk",
-            "constraint": "foreign",
-            "columns": [
-                "forsyningsart_kode"
-            ],
-            "referenced_table": "d_basis_forsyningsart",
-            "referenced_columns": [
-                "forsyningsart_kode"
-            ]
-        },
-        {
-            "name": "t_5025_pumpestation_d_basis_fareklasse_fk",
-            "constraint": "foreign",
-            "columns": [
-                "fareklasse_kode"
-            ],
-            "referenced_table": "d_basis_fareklasse",
-            "referenced_columns": [
-                "fareklasse_kode"
             ]
         },
         {
@@ -713,6 +669,50 @@
             ]
         },
         {
+            "name": "t_5025_pumpestation_d_basis_fareklasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "fareklasse_kode"
+            ],
+            "referenced_table": "d_basis_fareklasse",
+            "referenced_columns": [
+                "fareklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5025_pumpestation_d_basis_forsyningsart_fk",
+            "constraint": "foreign",
+            "columns": [
+                "forsyningsart_kode"
+            ],
+            "referenced_table": "d_basis_forsyningsart",
+            "referenced_columns": [
+                "forsyningsart_kode"
+            ]
+        },
+        {
+            "name": "t_5025_pumpestation_d_basis_indtegningsmetode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "indtegningsmetode_kode"
+            ],
+            "referenced_table": "d_basis_indtegningsmetode",
+            "referenced_columns": [
+                "indtegningsmetode_kode"
+            ]
+        },
+        {
+            "name": "t_5025_pumpestation_d_basis_medietype_fk",
+            "constraint": "foreign",
+            "columns": [
+                "medietype_kode"
+            ],
+            "referenced_table": "d_basis_medietype",
+            "referenced_columns": [
+                "medietype_kode"
+            ]
+        },
+        {
             "name": "t_5025_pumpestation_d_basis_niveautype_fk",
             "constraint": "foreign",
             "columns": [
@@ -722,11 +722,33 @@
             "referenced_columns": [
                 "niveautype_kode"
             ]
+        },
+        {
+            "name": "t_5025_pumpestation_d_basis_noejagtighedsklasse_fk",
+            "constraint": "foreign",
+            "columns": [
+                "noejagtighedsklasse_kode"
+            ],
+            "referenced_table": "d_basis_noejagtighedsklasse",
+            "referenced_columns": [
+                "noejagtighedsklasse_kode"
+            ]
+        },
+        {
+            "name": "t_5025_pumpestation_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
         }
     ],
     "_type": "TABLE",
     "_events": false,
-    "_column_count": 25,
+    "_column_count": 26,
     "_columns": [
         "versions_id",
         "ejer",
@@ -752,7 +774,8 @@
         "afloebskapacitet",
         "beliggenhedskommune",
         "link",
-        "geometri"
+        "geometri",
+        "gentagelsesperiode"
     ],
     "_geometry_columns": [
         {

@@ -561,11 +561,6 @@
     ],
     "constraints": [
         {
-            "name": "t_5200_aff_prod_udbr_ejd_nr_ck",
-            "constraint": "check",
-            "check": "ejendoms_nr >= 1000000000 AND ejendoms_nr <= '9999999999'::bigint"
-        },
-        {
             "name": "t_5200_aff_prod_udbr_dosering_toerstof_ck",
             "constraint": "check",
             "check": "dosering_toerstof >= 0.01::double precision AND dosering_toerstof <= 9999.99::double precision"
@@ -576,14 +571,19 @@
             "check": "dosering_vaadvaegt >= 0.01::double precision AND dosering_vaadvaegt <= 9999.99::double precision"
         },
         {
-            "name": "t_5200_aff_prod_udbr_phosphor_indhold_ck",
+            "name": "t_5200_aff_prod_udbr_ejd_nr_ck",
             "constraint": "check",
-            "check": "fosfor_total >= 0.01::double precision AND fosfor_total <= 9999.99::double precision"
+            "check": "ejendoms_nr >= 1000000000 AND ejendoms_nr <= '9999999999'::bigint"
         },
         {
             "name": "t_5200_aff_prod_udbr_fosfor_udnyttelse_ck",
             "constraint": "check",
             "check": "fosfor_udnyttelse >= 0.01::double precision AND fosfor_udnyttelse <= 100.0::double precision"
+        },
+        {
+            "name": "t_5200_aff_prod_udbr_kalium_total_ck",
+            "constraint": "check",
+            "check": "kalium_total >= 0.01::double precision AND kalium_total <= 9999.99::double precision"
         },
         {
             "name": "t_5200_aff_prod_udbr_kvaelstof_total_ck",
@@ -596,9 +596,9 @@
             "check": "kvaelstof_udnyttelse >= 0.01::double precision AND kvaelstof_udnyttelse <= 9999.99::double precision"
         },
         {
-            "name": "t_5200_aff_prod_udbr_kalium_total_ck",
+            "name": "t_5200_aff_prod_udbr_phosphor_indhold_ck",
             "constraint": "check",
-            "check": "kalium_total >= 0.01::double precision AND kalium_total <= 9999.99::double precision"
+            "check": "fosfor_total >= 0.01::double precision AND fosfor_total <= 9999.99::double precision"
         },
         {
             "name": "t_5200_aff_prod_udbr_udbringning_aar_ck",
@@ -609,17 +609,6 @@
             "name": "t_5200_aff_prod_udbr_pk",
             "constraint": "primary",
             "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5200_aff_prod_udbr_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
                 "versions_id"
             ]
         },
@@ -635,6 +624,17 @@
             ]
         },
         {
+            "name": "t_5200_aff_prod_udbr_d_basis_postnr_fk",
+            "constraint": "foreign",
+            "columns": [
+                "postnr"
+            ],
+            "referenced_table": "d_basis_postnr",
+            "referenced_columns": [
+                "postnr"
+            ]
+        },
+        {
             "name": "t_5200_aff_prod_udbr_d_vejnavn_fk",
             "constraint": "foreign",
             "columns": [
@@ -646,14 +646,14 @@
             ]
         },
         {
-            "name": "t_5200_aff_prod_udbr_d_basis_postnr_fk",
+            "name": "t_5200_aff_prod_udbr_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "postnr"
+                "versions_id"
             ],
-            "referenced_table": "d_basis_postnr",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "postnr"
+                "versions_id"
             ]
         }
     ],

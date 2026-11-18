@@ -598,6 +598,10 @@
                     "alias": "Erhvervshus Fyn P\/S"
                 },
                 {
+                    "value": 34772355,
+                    "alias": "N\u00f8rre Snede Lokalr\u00e5d"
+                },
+                {
                     "value": 34897034,
                     "alias": "Destination Sj\u00e6lland A\/S"
                 },
@@ -1322,6 +1326,34 @@
             "queryable": false,
             "sort_id": 460,
             "desc": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
+            "properties": null
+        },
+        "gyldig_fra": {
+            "_type": "date",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_restriction": null,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 540,
+            "desc": "",
+            "properties": null
+        },
+        "gyldig_til": {
+            "_type": "date",
+            "_character_maximum_length": null,
+            "_numeric_precision": null,
+            "_numeric_scale": null,
+            "_max_bytes": 4,
+            "_restriction": null,
+            "_is_nullable": true,
+            "alias": "",
+            "queryable": false,
+            "sort_id": 550,
+            "desc": "",
             "properties": null
         },
         "geometri": {

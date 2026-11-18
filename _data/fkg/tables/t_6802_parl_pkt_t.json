@@ -1021,9 +1021,9 @@
     ],
     "constraints": [
         {
-            "name": "t_6802_parl_pkt_froeaar_ck",
+            "name": "t_6801_parl_li_klip_sider_ck",
             "constraint": "check",
-            "check": "froeaar >= '1600-01-01'::date AND froeaar <= '2999-12-31'::date"
+            "check": "klip_sider >= 0 AND klip_sider <= 2"
         },
         {
             "name": "t_6802_parl_pkt_anlaegsaar_ck",
@@ -1031,19 +1031,9 @@
             "check": "anlaegsdato >= '1600-01-01'::date AND anlaegsdato <= '2999-12-31'::date"
         },
         {
-            "name": "t_6802_parl_pkt_etabl_pleje_udloeb_ck",
+            "name": "t_6802_parl_pkt_areal_ck",
             "constraint": "check",
-            "check": "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6802_parl_pkt_udskiftningsaar_ck",
-            "constraint": "check",
-            "check": "udskiftningsdato >= '2007-01-01'::date AND udskiftningsdato <= '2999-12-31'::date"
-        },
-        {
-            "name": "t_6802_parl_pkt_hoejde_ck",
-            "constraint": "check",
-            "check": "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
+            "check": "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
         },
         {
             "name": "t_6802_parl_pkt_bredde_ck",
@@ -1051,29 +1041,24 @@
             "check": "bredde >= 0.01::double precision AND bredde <= 9.99::double precision"
         },
         {
-            "name": "t_6802_parl_pkt_laengde_ck",
-            "constraint": "check",
-            "check": "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
-        },
-        {
             "name": "t_6802_parl_pkt_diameter_ck",
             "constraint": "check",
             "check": "diameter >= 0.01::double precision AND diameter <= 99.99::double precision"
         },
         {
-            "name": "t_6802_parl_pkt_areal_ck",
+            "name": "t_6802_parl_pkt_etabl_pleje_udloeb_ck",
             "constraint": "check",
-            "check": "areal >= 0.5::double precision AND areal <= 99999.99::double precision"
+            "check": "etabl_pleje_udloeb >= '2007-01-01'::date AND etabl_pleje_udloeb <= '2999-12-31'::date"
         },
         {
-            "name": "t_6802_parl_pkt_omkreds_ck",
+            "name": "t_6802_parl_pkt_froeaar_ck",
             "constraint": "check",
-            "check": "omkreds >= 0.01::double precision AND omkreds <= 99.99::double precision"
+            "check": "froeaar >= '1600-01-01'::date AND froeaar <= '2999-12-31'::date"
         },
         {
-            "name": "t_6801_parl_li_klip_sider_ck",
+            "name": "t_6802_parl_pkt_hoejde_ck",
             "constraint": "check",
-            "check": "klip_sider >= 0 AND klip_sider <= 2"
+            "check": "hoejde >= 0.01::double precision AND hoejde <= 9.99::double precision"
         },
         {
             "name": "t_6802_parl_pkt_klip_flade_ck",
@@ -1081,92 +1066,30 @@
             "check": "klip_flade >= 0.01::double precision AND klip_flade <= 99999.99::double precision"
         },
         {
+            "name": "t_6802_parl_pkt_laengde_ck",
+            "constraint": "check",
+            "check": "laengde >= 0.01::double precision AND laengde <= 99999.99::double precision"
+        },
+        {
+            "name": "t_6802_parl_pkt_omkreds_ck",
+            "constraint": "check",
+            "check": "omkreds >= 0.01::double precision AND omkreds <= 99.99::double precision"
+        },
+        {
             "name": "t_6802_parl_pkt_tilstand_dato_ck",
             "constraint": "check",
             "check": "tilstand_dato >= '1600-01-01'::date AND tilstand_dato <= '2999-12-31'::date"
+        },
+        {
+            "name": "t_6802_parl_pkt_udskiftningsaar_ck",
+            "constraint": "check",
+            "check": "udskiftningsdato >= '2007-01-01'::date AND udskiftningsdato <= '2999-12-31'::date"
         },
         {
             "name": "t_6802_parl_pkt_pk",
             "constraint": "primary",
             "columns": [
                 "versions_id"
-            ]
-        },
-        {
-            "name": "t_6802_parl_pkt_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_6802_parl_pkt_d_6802_groenvedligh_punkt_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vedlhold_p_type_kode"
-            ],
-            "referenced_table": "d_6802_groenvedligh_punkt",
-            "referenced_columns": [
-                "vedlhold_p_type_kode"
-            ]
-        },
-        {
-            "name": "t_6802_parl_pkt_d_basis_driftniv_fk",
-            "constraint": "foreign",
-            "columns": [
-                "driftniv_kode"
-            ],
-            "referenced_table": "d_basis_driftniv",
-            "referenced_columns": [
-                "driftniv_kode"
-            ]
-        },
-        {
-            "name": "t_6802_parl_pkt_d_basis_ukrudtsbek_fk",
-            "constraint": "foreign",
-            "columns": [
-                "ukrudtsbek_kode"
-            ],
-            "referenced_table": "d_basis_ukrudtsbek",
-            "referenced_columns": [
-                "ukrudtsbek_kode"
-            ]
-        },
-        {
-            "name": "t_6802_parl_pkt_d_basis_tilstand_fk",
-            "constraint": "foreign",
-            "columns": [
-                "tilstand_kode"
-            ],
-            "referenced_table": "d_basis_tilstand",
-            "referenced_columns": [
-                "tilstand_kode"
-            ]
-        },
-        {
-            "name": "t_6802_parl_pkt_d_vejnavn_fk",
-            "constraint": "foreign",
-            "columns": [
-                "vejkode"
-            ],
-            "referenced_table": "d_vejnavn",
-            "referenced_columns": [
-                "vejkode"
-            ]
-        },
-        {
-            "name": "t_6802_parl_pkt_d_6802_traebetegn_fk",
-            "constraint": "foreign",
-            "columns": [
-                "traebetegn_kode"
-            ],
-            "referenced_table": "d_6802_traebetegn",
-            "referenced_columns": [
-                "traebetegn_kode"
             ]
         },
         {
@@ -1181,14 +1104,14 @@
             ]
         },
         {
-            "name": "t_6802_parl_pkt_d_6802_tilsynstrae_fk",
+            "name": "t_6802_parl_pkt_d_6802_groenvedligh_punkt_fk",
             "constraint": "foreign",
             "columns": [
-                "tilsynstrae_kode"
+                "vedlhold_p_type_kode"
             ],
-            "referenced_table": "d_6802_tilsynstrae",
+            "referenced_table": "d_6802_groenvedligh_punkt",
             "referenced_columns": [
-                "tilsynstrae_kode"
+                "vedlhold_p_type_kode"
             ]
         },
         {
@@ -1200,6 +1123,83 @@
             "referenced_table": "d_6802_livsfase",
             "referenced_columns": [
                 "livsfase_kode"
+            ]
+        },
+        {
+            "name": "t_6802_parl_pkt_d_6802_tilsynstrae_fk",
+            "constraint": "foreign",
+            "columns": [
+                "tilsynstrae_kode"
+            ],
+            "referenced_table": "d_6802_tilsynstrae",
+            "referenced_columns": [
+                "tilsynstrae_kode"
+            ]
+        },
+        {
+            "name": "t_6802_parl_pkt_d_6802_traebetegn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "traebetegn_kode"
+            ],
+            "referenced_table": "d_6802_traebetegn",
+            "referenced_columns": [
+                "traebetegn_kode"
+            ]
+        },
+        {
+            "name": "t_6802_parl_pkt_d_basis_driftniv_fk",
+            "constraint": "foreign",
+            "columns": [
+                "driftniv_kode"
+            ],
+            "referenced_table": "d_basis_driftniv",
+            "referenced_columns": [
+                "driftniv_kode"
+            ]
+        },
+        {
+            "name": "t_6802_parl_pkt_d_basis_tilstand_fk",
+            "constraint": "foreign",
+            "columns": [
+                "tilstand_kode"
+            ],
+            "referenced_table": "d_basis_tilstand",
+            "referenced_columns": [
+                "tilstand_kode"
+            ]
+        },
+        {
+            "name": "t_6802_parl_pkt_d_basis_ukrudtsbek_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ukrudtsbek_kode"
+            ],
+            "referenced_table": "d_basis_ukrudtsbek",
+            "referenced_columns": [
+                "ukrudtsbek_kode"
+            ]
+        },
+        {
+            "name": "t_6802_parl_pkt_d_vejnavn_fk",
+            "constraint": "foreign",
+            "columns": [
+                "vejkode"
+            ],
+            "referenced_table": "d_vejnavn",
+            "referenced_columns": [
+                "vejkode"
+            ]
+        },
+        {
+            "name": "t_6802_parl_pkt_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
             ]
         }
     ],

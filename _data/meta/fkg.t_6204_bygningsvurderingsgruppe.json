@@ -598,6 +598,10 @@
                     "alias": "Erhvervshus Fyn P\/S"
                 },
                 {
+                    "value": 34772355,
+                    "alias": "N\u00f8rre Snede Lokalr\u00e5d"
+                },
+                {
                     "value": 34897034,
                     "alias": "Destination Sj\u00e6lland A\/S"
                 },
@@ -1199,7 +1203,7 @@
             "_numeric_scale": null,
             "_max_bytes": 1016,
             "_restriction": null,
-            "_is_nullable": false,
+            "_is_nullable": true,
             "alias": "Registrator",
             "queryable": true,
             "sort_id": 225,
@@ -1215,7 +1219,7 @@
             "_restriction": null,
             "_is_nullable": true,
             "alias": "",
-            "queryable": false,
+            "queryable": true,
             "sort_id": 230,
             "desc": "Kommunenummer for den kommune, som gruppen er beliggende i.",
             "properties": null
@@ -1228,8 +1232,8 @@
             "_max_bytes": 1024,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Beliggenhed",
+            "queryable": true,
             "sort_id": 235,
             "desc": "Tekst der beskriver gruppens beliggenhed",
             "properties": null
@@ -1242,8 +1246,8 @@
             "_max_bytes": 1024,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Gruppetype",
+            "queryable": true,
             "sort_id": 240,
             "desc": "Tekst der beskriver gruppens type",
             "properties": null
@@ -1256,8 +1260,8 @@
             "_max_bytes": 4,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Oprettelsesdato",
+            "queryable": true,
             "sort_id": 245,
             "desc": "Dato for oprettelse af gruppen",
             "properties": null
@@ -1270,8 +1274,8 @@
             "_max_bytes": 1024,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Komplekstype",
+            "queryable": true,
             "sort_id": 250,
             "desc": "Tekst der beskriver gruppens komplekstype",
             "properties": null
@@ -1284,8 +1288,8 @@
             "_max_bytes": 1024,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Bebyggelsestype",
+            "queryable": true,
             "sort_id": 255,
             "desc": "Tekst der beskriver gruppens bebyggelsestype",
             "properties": null
@@ -1298,8 +1302,8 @@
             "_max_bytes": 4096,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Link",
+            "queryable": true,
             "sort_id": 290,
             "desc": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "properties": null
@@ -1312,8 +1316,8 @@
             "_max_bytes": 4096,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Link 2",
+            "queryable": true,
             "sort_id": 295,
             "desc": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "properties": null
@@ -1326,8 +1330,8 @@
             "_max_bytes": 4096,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Link 3",
+            "queryable": true,
             "sort_id": 300,
             "desc": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "properties": null
@@ -1340,8 +1344,8 @@
             "_max_bytes": 4096,
             "_restriction": null,
             "_is_nullable": true,
-            "alias": "",
-            "queryable": false,
+            "alias": "Link 4",
+            "queryable": true,
             "sort_id": 305,
             "desc": "URL-link. Eksempel: http:\/\/www.link.dk\/123",
             "properties": null

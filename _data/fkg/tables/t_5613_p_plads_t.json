@@ -299,20 +299,14 @@
     ],
     "constraints": [
         {
+            "name": "t_5613_p_plads_t_areal_check",
+            "constraint": "check",
+            "check": "p_antal >= 1 AND p_antal <= 9999"
+        },
+        {
             "name": "t_5613_p_plads_pk",
             "constraint": "primary",
             "columns": [
-                "versions_id"
-            ]
-        },
-        {
-            "name": "t_5613_p_plads_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
                 "versions_id"
             ]
         },
@@ -328,9 +322,15 @@
             ]
         },
         {
-            "name": "t_5613_p_plads_t_areal_check",
-            "constraint": "check",
-            "check": "p_antal >= 1 AND p_antal <= 9999"
+            "name": "t_5613_p_plads_generel_fk",
+            "constraint": "foreign",
+            "columns": [
+                "versions_id"
+            ],
+            "referenced_table": "generel",
+            "referenced_columns": [
+                "versions_id"
+            ]
         }
     ],
     "_type": "TABLE",

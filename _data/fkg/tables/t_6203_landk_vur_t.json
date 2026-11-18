@@ -354,14 +354,25 @@
             ]
         },
         {
-            "name": "t_6203_landk_vur_generel_fk",
+            "name": "t_6203_landk_vur_d_6203_karakterstyrke_fk",
             "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "karakterstyrke_kode"
             ],
-            "referenced_table": "generel",
+            "referenced_table": "d_6203_karakterstyrke",
             "referenced_columns": [
-                "versions_id"
+                "karakterstyrke_kode"
+            ]
+        },
+        {
+            "name": "t_6203_landk_vur_d_6203_saarbarhed_fk",
+            "constraint": "foreign",
+            "columns": [
+                "saarbarhed_kode"
+            ],
+            "referenced_table": "d_6203_saarbarhed",
+            "referenced_columns": [
+                "saarbarhed_kode"
             ]
         },
         {
@@ -376,17 +387,6 @@
             ]
         },
         {
-            "name": "t_6203_landk_vur_d_6203_karakterstyrke_fk",
-            "constraint": "foreign",
-            "columns": [
-                "karakterstyrke_kode"
-            ],
-            "referenced_table": "d_6203_karakterstyrke",
-            "referenced_columns": [
-                "karakterstyrke_kode"
-            ]
-        },
-        {
             "name": "t_6203_landk_vur_d_basis_tilstand_fk",
             "constraint": "foreign",
             "columns": [
@@ -398,14 +398,14 @@
             ]
         },
         {
-            "name": "t_6203_landk_vur_d_6203_saarbarhed_fk",
+            "name": "t_6203_landk_vur_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "saarbarhed_kode"
+                "versions_id"
             ],
-            "referenced_table": "d_6203_saarbarhed",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "saarbarhed_kode"
+                "versions_id"
             ]
         }
     ],

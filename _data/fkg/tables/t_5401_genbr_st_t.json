@@ -308,17 +308,6 @@
             ]
         },
         {
-            "name": "t_5401_genbr_st_generel_fk",
-            "constraint": "foreign",
-            "columns": [
-                "versions_id"
-            ],
-            "referenced_table": "generel",
-            "referenced_columns": [
-                "versions_id"
-            ]
-        },
-        {
             "name": "t_5401_genbr_st_d_5401_gs_type",
             "constraint": "foreign",
             "columns": [
@@ -327,6 +316,17 @@
             "referenced_table": "d_5401_gs_type",
             "referenced_columns": [
                 "gs_type_kode"
+            ]
+        },
+        {
+            "name": "t_5401_genbr_st_d_basis_postnr_fk",
+            "constraint": "foreign",
+            "columns": [
+                "postnr"
+            ],
+            "referenced_table": "d_basis_postnr",
+            "referenced_columns": [
+                "postnr"
             ]
         },
         {
@@ -341,14 +341,14 @@
             ]
         },
         {
-            "name": "t_5401_genbr_st_d_basis_postnr_fk",
+            "name": "t_5401_genbr_st_generel_fk",
             "constraint": "foreign",
             "columns": [
-                "postnr"
+                "versions_id"
             ],
-            "referenced_table": "d_basis_postnr",
+            "referenced_table": "generel",
             "referenced_columns": [
-                "postnr"
+                "versions_id"
             ]
         }
     ],

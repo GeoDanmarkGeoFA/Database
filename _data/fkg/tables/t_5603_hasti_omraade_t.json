@@ -167,6 +167,13 @@
     ],
     "constraints": [
         {
+            "name": "t_5603_hasti_omraade_pk",
+            "constraint": "primary",
+            "columns": [
+                "versions_id"
+            ]
+        },
+        {
             "name": "t_5603_hasti_omraade_d_5603_hastighed_art_fk",
             "constraint": "foreign",
             "columns": [
@@ -178,10 +185,14 @@
             ]
         },
         {
-            "name": "t_5603_hasti_omraade_pk",
-            "constraint": "primary",
+            "name": "t_5603_hasti_omraade_d_basis_hastighed_fk",
+            "constraint": "foreign",
             "columns": [
-                "versions_id"
+                "hastighed_kode"
+            ],
+            "referenced_table": "d_basis_hastighed",
+            "referenced_columns": [
+                "hastighed_kode"
             ]
         },
         {
@@ -193,17 +204,6 @@
             "referenced_table": "generel",
             "referenced_columns": [
                 "versions_id"
-            ]
-        },
-        {
-            "name": "t_5603_hasti_omraade_d_basis_hastighed_fk",
-            "constraint": "foreign",
-            "columns": [
-                "hastighed_kode"
-            ],
-            "referenced_table": "d_basis_hastighed",
-            "referenced_columns": [
-                "hastighed_kode"
             ]
         }
     ],

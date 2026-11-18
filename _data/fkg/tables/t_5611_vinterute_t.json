@@ -317,17 +317,6 @@
             ]
         },
         {
-            "name": "t_5611_vinterute_rutetype_kode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "rutetype_kode"
-            ],
-            "referenced_table": "d_5611_rutetype",
-            "referenced_columns": [
-                "rutetype_kode"
-            ]
-        },
-        {
             "name": "t_5611_vinterute_rute_opgave_kode_fk",
             "constraint": "foreign",
             "columns": [
@@ -336,6 +325,17 @@
             "referenced_table": "d_5611_rute_opgave",
             "referenced_columns": [
                 "rute_opgave_kode"
+            ]
+        },
+        {
+            "name": "t_5611_vinterute_rutetype_kode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "rutetype_kode"
+            ],
+            "referenced_table": "d_5611_rutetype",
+            "referenced_columns": [
+                "rutetype_kode"
             ]
         }
     ],

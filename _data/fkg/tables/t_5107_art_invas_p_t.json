@@ -504,12 +504,12 @@
     ],
     "constraints": [
         {
-            "name": "t_5107_art_invas_p_start_udbredelse_ck",
+            "name": "t_5107_art_invas_p_seneste_tilsyn_udbredelse_ck",
             "constraint": "check",
             "check": "start_udbredelse >= 0 AND start_udbredelse <= 9999"
         },
         {
-            "name": "t_5107_art_invas_p_seneste_tilsyn_udbredelse_ck",
+            "name": "t_5107_art_invas_p_start_udbredelse_ck",
             "constraint": "check",
             "check": "start_udbredelse >= 0 AND start_udbredelse <= 9999"
         },
@@ -518,6 +518,39 @@
             "constraint": "primary",
             "columns": [
                 "versions_id"
+            ]
+        },
+        {
+            "name": "t_5107_art_invas_p_d_basis_ia_status_kode_fk",
+            "constraint": "foreign",
+            "columns": [
+                "ia_status_kode"
+            ],
+            "referenced_table": "d_basis_ia_status",
+            "referenced_columns": [
+                "ia_status_kode"
+            ]
+        },
+        {
+            "name": "t_5107_art_invas_p_d_basis_seneste_tilsyn_antal_fk",
+            "constraint": "foreign",
+            "columns": [
+                "seneste_tilsyn_antal_kode"
+            ],
+            "referenced_table": "d_basis_antal",
+            "referenced_columns": [
+                "antal_kode"
+            ]
+        },
+        {
+            "name": "t_5107_art_invas_p_d_basis_start_antal_fk",
+            "constraint": "foreign",
+            "columns": [
+                "start_antal_kode"
+            ],
+            "referenced_table": "d_basis_antal",
+            "referenced_columns": [
+                "antal_kode"
             ]
         },
         {
@@ -540,39 +573,6 @@
             "referenced_table": "d_basis_invasivart",
             "referenced_columns": [
                 "invasivart_kode"
-            ]
-        },
-        {
-            "name": "t_5107_art_invas_p_d_basis_start_antal_fk",
-            "constraint": "foreign",
-            "columns": [
-                "start_antal_kode"
-            ],
-            "referenced_table": "d_basis_antal",
-            "referenced_columns": [
-                "antal_kode"
-            ]
-        },
-        {
-            "name": "t_5107_art_invas_p_d_basis_seneste_tilsyn_antal_fk",
-            "constraint": "foreign",
-            "columns": [
-                "seneste_tilsyn_antal_kode"
-            ],
-            "referenced_table": "d_basis_antal",
-            "referenced_columns": [
-                "antal_kode"
-            ]
-        },
-        {
-            "name": "t_5107_art_invas_p_d_basis_ia_status_kode_fk",
-            "constraint": "foreign",
-            "columns": [
-                "ia_status_kode"
-            ],
-            "referenced_table": "d_basis_ia_status",
-            "referenced_columns": [
-                "ia_status_kode"
             ]
         }
     ],
