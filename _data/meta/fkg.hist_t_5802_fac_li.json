@@ -35,6 +35,7 @@
     "fields": {
         "beliggenhedskommune": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -49,6 +50,7 @@
         },
         "temakode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -63,6 +65,7 @@
         },
         "temanavn": {
             "_type": "text",
+            "_full_type": "text",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -77,6 +80,7 @@
         },
         "objekt_id": {
             "_type": "uuid",
+            "_full_type": "uuid",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -91,6 +95,7 @@
         },
         "versions_id": {
             "_type": "uuid",
+            "_full_type": "uuid",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -105,6 +110,7 @@
         },
         "systid_fra": {
             "_type": "timestamp with time zone",
+            "_full_type": "timestamp with time zone",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -119,6 +125,7 @@
         },
         "systid_til": {
             "_type": "timestamp with time zone",
+            "_full_type": "timestamp with time zone",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -133,6 +140,7 @@
         },
         "oprettet": {
             "_type": "timestamp with time zone",
+            "_full_type": "timestamp with time zone",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -147,6 +155,7 @@
         },
         "cvr_kode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -850,6 +859,7 @@
         },
         "cvr_navn": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -864,6 +874,7 @@
         },
         "kommunekode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -878,6 +889,7 @@
         },
         "bruger_id": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -892,6 +904,7 @@
         },
         "oprindkode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -963,6 +976,7 @@
         },
         "oprindelse": {
             "_type": "character varying",
+            "_full_type": "character varying(35)",
             "_character_maximum_length": 35,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -977,6 +991,7 @@
         },
         "statuskode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1016,6 +1031,7 @@
         },
         "status": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1030,6 +1046,7 @@
         },
         "off_kode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1061,6 +1078,7 @@
         },
         "offentlig": {
             "_type": "character varying",
+            "_full_type": "character varying(60)",
             "_character_maximum_length": 60,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1075,6 +1093,7 @@
         },
         "noegle": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1089,6 +1108,7 @@
         },
         "note": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1103,6 +1123,7 @@
         },
         "rute_ty_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1198,6 +1219,7 @@
         },
         "rute_ty": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1212,6 +1234,7 @@
         },
         "rute_uty_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1307,6 +1330,7 @@
         },
         "rute_uty": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1321,6 +1345,7 @@
         },
         "navn": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1335,6 +1360,7 @@
         },
         "navn_uk": {
             "_type": "character varying",
+            "_full_type": "character varying(255)",
             "_character_maximum_length": 255,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1349,6 +1375,7 @@
         },
         "navn_d": {
             "_type": "character varying",
+            "_full_type": "character varying(255)",
             "_character_maximum_length": 255,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1363,6 +1390,7 @@
         },
         "navndels": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1377,6 +1405,7 @@
         },
         "straekn_nr": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1391,6 +1420,7 @@
         },
         "afm_rute_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1426,6 +1456,7 @@
         },
         "afm_rute": {
             "_type": "character varying",
+            "_full_type": "character varying(7)",
             "_character_maximum_length": 7,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1440,6 +1471,7 @@
         },
         "laengde": {
             "_type": "double precision",
+            "_full_type": "double precision",
             "_character_maximum_length": null,
             "_numeric_precision": 53,
             "_numeric_scale": null,
@@ -1454,6 +1486,7 @@
         },
         "beskrivels": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1468,6 +1501,7 @@
         },
         "lang_beskr": {
             "_type": "character varying",
+            "_full_type": "character varying(3000)",
             "_character_maximum_length": 3000,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1482,6 +1516,7 @@
         },
         "uk_k_beskr": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1496,6 +1531,7 @@
         },
         "uk_l_beskr": {
             "_type": "character varying",
+            "_full_type": "character varying(3000)",
             "_character_maximum_length": 3000,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1510,6 +1546,7 @@
         },
         "d_k_beskr": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1524,6 +1561,7 @@
         },
         "d_l_beskr": {
             "_type": "character varying",
+            "_full_type": "character varying(3000)",
             "_character_maximum_length": 3000,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1538,6 +1576,7 @@
         },
         "ansvar_org": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1552,6 +1591,7 @@
         },
         "kontak_ved": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1566,6 +1606,7 @@
         },
         "betaling_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1601,6 +1642,7 @@
         },
         "betaling": {
             "_type": "character varying",
+            "_full_type": "character varying(7)",
             "_character_maximum_length": 7,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1615,6 +1657,7 @@
         },
         "belaegn_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1654,6 +1697,7 @@
         },
         "belaegn": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1668,6 +1712,7 @@
         },
         "handicap_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1711,6 +1756,7 @@
         },
         "handikap": {
             "_type": "character varying",
+            "_full_type": "character varying(40)",
             "_character_maximum_length": 40,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1725,6 +1771,7 @@
         },
         "saeson_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1764,6 +1811,7 @@
         },
         "saeson": {
             "_type": "character varying",
+            "_full_type": "character varying(50)",
             "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1778,6 +1826,7 @@
         },
         "saeson_sl": {
             "_type": "character varying",
+            "_full_type": "character varying(25)",
             "_character_maximum_length": 25,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1792,6 +1841,7 @@
         },
         "saeson_st": {
             "_type": "character varying",
+            "_full_type": "character varying(25)",
             "_character_maximum_length": 25,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1806,6 +1856,7 @@
         },
         "saeson_bem": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1820,6 +1871,7 @@
         },
         "ansva_v_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1859,6 +1911,7 @@
         },
         "ansva_v": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1873,6 +1926,7 @@
         },
         "startpkt_x": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1887,6 +1941,7 @@
         },
         "startpkt_y": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1901,6 +1956,7 @@
         },
         "slutpkt_x": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1915,6 +1971,7 @@
         },
         "slutpkt_y": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1929,6 +1986,7 @@
         },
         "svaerhed_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1976,6 +2034,7 @@
         },
         "svaerhed": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1990,6 +2049,7 @@
         },
         "obs": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2004,6 +2064,7 @@
         },
         "kategori_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -2047,6 +2108,7 @@
         },
         "kategori": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2061,6 +2123,7 @@
         },
         "certifi_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -2140,6 +2203,7 @@
         },
         "certifi": {
             "_type": "character varying",
+            "_full_type": "character varying(40)",
             "_character_maximum_length": 40,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2154,6 +2218,7 @@
         },
         "hierarki_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -2201,6 +2266,7 @@
         },
         "hierarki": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2215,6 +2281,7 @@
         },
         "kvalitet_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -2229,6 +2296,7 @@
         },
         "kvalitet": {
             "_type": "character varying",
+            "_full_type": "character varying(35)",
             "_character_maximum_length": 35,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2243,6 +2311,7 @@
         },
         "folder_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -2278,6 +2347,7 @@
         },
         "folder": {
             "_type": "character varying",
+            "_full_type": "character varying(7)",
             "_character_maximum_length": 7,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2292,6 +2362,7 @@
         },
         "folde_link": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2306,6 +2377,7 @@
         },
         "foldelink1": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2320,6 +2392,7 @@
         },
         "foldelink2": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2334,6 +2407,7 @@
         },
         "foldelink3": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2348,6 +2422,7 @@
         },
         "foto_link": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2362,6 +2437,7 @@
         },
         "foto_link1": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2376,6 +2452,7 @@
         },
         "foto_link2": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2390,6 +2467,7 @@
         },
         "foto_link3": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2404,6 +2482,7 @@
         },
         "geofafoto": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2418,6 +2497,7 @@
         },
         "geofafoto1": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2432,6 +2512,7 @@
         },
         "geofafoto2": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2446,6 +2527,7 @@
         },
         "geofafoto3": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2460,6 +2542,7 @@
         },
         "filmlink": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2474,6 +2557,7 @@
         },
         "filmlink1": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2488,6 +2572,7 @@
         },
         "filmlink2": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2502,6 +2587,7 @@
         },
         "filmlink3": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2516,6 +2602,7 @@
         },
         "gpx_link": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2530,6 +2617,7 @@
         },
         "vejkode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -2544,6 +2632,7 @@
         },
         "vejnavn": {
             "_type": "character varying",
+            "_full_type": "character varying(40)",
             "_character_maximum_length": 40,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2558,6 +2647,7 @@
         },
         "cvf_vejkode": {
             "_type": "character",
+            "_full_type": "character(7)",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2572,6 +2662,7 @@
         },
         "husnr": {
             "_type": "character varying",
+            "_full_type": "character varying(4)",
             "_character_maximum_length": 4,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -2586,6 +2677,7 @@
         },
         "postnr": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -6965,6 +7057,7 @@
         },
         "postnr_by": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -6979,6 +7072,7 @@
         },
         "adr_id": {
             "_type": "uuid",
+            "_full_type": "uuid",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -6993,6 +7087,7 @@
         },
         "link": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7007,6 +7102,7 @@
         },
         "link1": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7021,6 +7117,7 @@
         },
         "link2": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7035,6 +7132,7 @@
         },
         "link3": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7049,6 +7147,7 @@
         },
         "tilgaeng_beskriv": {
             "_type": "character varying",
+            "_full_type": "character varying(3000)",
             "_character_maximum_length": 3000,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7063,6 +7162,7 @@
         },
         "tilgaeng_opl": {
             "_type": "jsonb",
+            "_full_type": "jsonb",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7077,6 +7177,7 @@
         },
         "geometri": {
             "_type": "geometry",
+            "_full_type": "geometry(MultiLineString,25832)",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7091,6 +7192,7 @@
         },
         "danmarksnaturstier": {
             "_type": "boolean",
+            "_full_type": "boolean",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7105,6 +7207,7 @@
         },
         "rutefarve_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -7119,6 +7222,7 @@
         },
         "rutefarve": {
             "_type": "character varying",
+            "_full_type": "character varying(25)",
             "_character_maximum_length": 25,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7133,6 +7237,7 @@
         },
         "kvalitetstjekket_k": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -7147,6 +7252,7 @@
         },
         "kvalitetstjekket": {
             "_type": "character varying",
+            "_full_type": "character varying(255)",
             "_character_maximum_length": 255,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -7161,6 +7267,7 @@
         },
         "rundtur": {
             "_type": "boolean",
+            "_full_type": "boolean",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,

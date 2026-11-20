@@ -44,6 +44,7 @@
     "fields": {
         "temakode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -58,6 +59,7 @@
         },
         "temanavn": {
             "_type": "text",
+            "_full_type": "text",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -72,6 +74,7 @@
         },
         "objekt_id": {
             "_type": "uuid",
+            "_full_type": "uuid",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -86,6 +89,7 @@
         },
         "versions_id": {
             "_type": "uuid",
+            "_full_type": "uuid",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -100,6 +104,7 @@
         },
         "systid_fra": {
             "_type": "timestamp with time zone",
+            "_full_type": "timestamp with time zone",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -114,6 +119,7 @@
         },
         "systid_til": {
             "_type": "timestamp with time zone",
+            "_full_type": "timestamp with time zone",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -128,6 +134,7 @@
         },
         "oprettet": {
             "_type": "timestamp with time zone",
+            "_full_type": "timestamp with time zone",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -142,6 +149,7 @@
         },
         "cvr_kode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -846,6 +854,7 @@
         },
         "cvr_navn": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -860,6 +869,7 @@
         },
         "kommunekode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -874,6 +884,7 @@
         },
         "bruger_id": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -888,6 +899,7 @@
         },
         "oprindkode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -960,6 +972,7 @@
         },
         "oprindelse": {
             "_type": "character varying",
+            "_full_type": "character varying(35)",
             "_character_maximum_length": 35,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -974,6 +987,7 @@
         },
         "statuskode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1014,6 +1028,7 @@
         },
         "status": {
             "_type": "character varying",
+            "_full_type": "character varying(30)",
             "_character_maximum_length": 30,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1028,6 +1043,7 @@
         },
         "off_kode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1060,6 +1076,7 @@
         },
         "offentlig": {
             "_type": "character varying",
+            "_full_type": "character varying(60)",
             "_character_maximum_length": 60,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1074,6 +1091,7 @@
         },
         "noegle": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1088,6 +1106,7 @@
         },
         "note": {
             "_type": "character varying",
+            "_full_type": "character varying(254)",
             "_character_maximum_length": 254,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1102,6 +1121,7 @@
         },
         "pleje_type_kode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1198,6 +1218,7 @@
         },
         "pleje_type": {
             "_type": "character varying",
+            "_full_type": "character varying(50)",
             "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1212,6 +1233,7 @@
         },
         "pleje_type_label": {
             "_type": "character varying",
+            "_full_type": "character varying(10)",
             "_character_maximum_length": 10,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1226,6 +1248,7 @@
         },
         "omr_nr": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1240,6 +1263,7 @@
         },
         "omr_navn": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1254,6 +1278,7 @@
         },
         "fortidsmindenr": {
             "_type": "character varying",
+            "_full_type": "character varying(50)",
             "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1268,6 +1293,7 @@
         },
         "facilitet_kode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1348,6 +1374,7 @@
         },
         "facilitet": {
             "_type": "character varying",
+            "_full_type": "character varying(50)",
             "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1362,6 +1389,7 @@
         },
         "aftale_type": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1376,6 +1404,7 @@
         },
         "gyldig_fra": {
             "_type": "date",
+            "_full_type": "date",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1390,6 +1419,7 @@
         },
         "gyldig_til": {
             "_type": "date",
+            "_full_type": "date",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1404,6 +1434,7 @@
         },
         "ejerstatus_kode": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1468,6 +1499,7 @@
         },
         "ejerstatus": {
             "_type": "character varying",
+            "_full_type": "character varying(50)",
             "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1482,6 +1514,7 @@
         },
         "projekt_type": {
             "_type": "character varying",
+            "_full_type": "character varying(50)",
             "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1496,6 +1529,7 @@
         },
         "dyrehold": {
             "_type": "character varying",
+            "_full_type": "character varying(250)",
             "_character_maximum_length": 250,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1510,6 +1544,7 @@
         },
         "antal_moder": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1524,6 +1559,7 @@
         },
         "chr": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1538,6 +1574,7 @@
         },
         "cvr_opslag": {
             "_type": "character varying",
+            "_full_type": "character varying(8)",
             "_character_maximum_length": 8,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1552,6 +1589,7 @@
         },
         "navn": {
             "_type": "character varying",
+            "_full_type": "character varying(50)",
             "_character_maximum_length": 50,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1566,6 +1604,7 @@
         },
         "telefon": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1580,6 +1619,7 @@
         },
         "mobil": {
             "_type": "integer",
+            "_full_type": "integer",
             "_character_maximum_length": null,
             "_numeric_precision": 32,
             "_numeric_scale": 0,
@@ -1594,6 +1634,7 @@
         },
         "mail": {
             "_type": "character varying",
+            "_full_type": "character varying(250)",
             "_character_maximum_length": 250,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1608,6 +1649,7 @@
         },
         "ajour": {
             "_type": "date",
+            "_full_type": "date",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1622,6 +1664,7 @@
         },
         "sagsnr": {
             "_type": "character varying",
+            "_full_type": "character varying(128)",
             "_character_maximum_length": 128,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1636,6 +1679,7 @@
         },
         "link": {
             "_type": "character varying",
+            "_full_type": "character varying(1024)",
             "_character_maximum_length": 1024,
             "_numeric_precision": null,
             "_numeric_scale": null,
@@ -1650,6 +1694,7 @@
         },
         "geometri": {
             "_type": "geometry",
+            "_full_type": "geometry(MultiPolygon,25832)",
             "_character_maximum_length": null,
             "_numeric_precision": null,
             "_numeric_scale": null,
